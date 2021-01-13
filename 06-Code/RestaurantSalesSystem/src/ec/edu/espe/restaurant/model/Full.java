@@ -7,12 +7,24 @@ package ec.edu.espe.restaurant.model;
 
 /**
  *
- * @author DAVID
+ * @author Group3
  */
 public class Full 
 {
     private String ingredient;
     private float price;
+
+    public Full(String ingredient, float price) {
+        this.ingredient = ingredient;
+        this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return "Full{" + "ingredient=" + ingredient + ", price=" + price + '}';
+    }
+    
+    
     
     public void choice()
     {
