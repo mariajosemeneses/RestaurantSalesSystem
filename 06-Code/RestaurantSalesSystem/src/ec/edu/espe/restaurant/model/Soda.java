@@ -7,11 +7,22 @@ package ec.edu.espe.restaurant.model;
 
 /**
  *
- * @author DAVID
+ * @author Group 3
  */
 public class Soda 
 {
     private SodaBrand sodaBrand;
+
+    public Soda(SodaBrand sodaBrand) {
+        this.sodaBrand = sodaBrand;
+    }
+
+    @Override
+    public String toString() {
+        return "Soda{" + "sodaBrand=" + sodaBrand + '}';
+    }
+    
+    
     
     public void add()
     {

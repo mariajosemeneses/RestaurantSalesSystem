@@ -7,13 +7,25 @@ package ec.edu.espe.restaurant.model;
 
 /**
  *
- * @author DAVID
+ * @author Group 3
  */
 public class SodaBrand 
 {
     private String name;
     private int sodaSize;
     private String sodaFlavor;
+
+    public SodaBrand(String name, int sodaSize, String sodaFlavor) {
+        this.name = name;
+        this.sodaSize = sodaSize;
+        this.sodaFlavor = sodaFlavor;
+    }
+
+    @Override
+    public String toString() {
+        return "SodaBrand{" + "name=" + name + ", sodaSize=" + sodaSize + ", sodaFlavor=" + sodaFlavor + '}';
+    }
+    
     
     public void add()
     {

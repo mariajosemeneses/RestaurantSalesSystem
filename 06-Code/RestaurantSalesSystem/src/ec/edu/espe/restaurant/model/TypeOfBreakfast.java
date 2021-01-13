@@ -7,12 +7,23 @@ package ec.edu.espe.restaurant.model;
 
 /**
  *
- * @author DAVID
+ * @author Group 3
  */
 public class TypeOfBreakfast 
 {
     private Continental continental;
     private Full full;
+
+    public TypeOfBreakfast(Continental continental, Full full) {
+        this.continental = continental;
+        this.full = full;
+    }
+
+    @Override
+    public String toString() {
+        return "TypeOfBreakfast{" + "continental=" + continental + ", full=" + full + '}';
+    }
+    
     
     public boolean choice()
     {

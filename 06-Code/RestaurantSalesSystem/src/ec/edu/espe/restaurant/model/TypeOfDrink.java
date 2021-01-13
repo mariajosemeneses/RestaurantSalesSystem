@@ -7,12 +7,23 @@ package ec.edu.espe.restaurant.model;
 
 /**
  *
- * @author DAVID
+ * @author Group 3
  */
 public class TypeOfDrink 
 {
     private Soda soda;
     private Juice juice;
+
+    public TypeOfDrink(Soda soda, Juice juice) {
+        this.soda = soda;
+        this.juice = juice;
+    }
+
+    @Override
+    public String toString() {
+        return "TypeOfDrink{" + "soda=" + soda + ", juice=" + juice + '}';
+    }
+    
     
     public boolean choice()
     {
