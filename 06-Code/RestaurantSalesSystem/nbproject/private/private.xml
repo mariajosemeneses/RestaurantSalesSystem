@@ -5,14 +5,40 @@
             <url>src/ec/edu/espe/restaurant/model/Cashier.java</url>
             <bookmark id="1">
                 <name/>
+<<<<<<< HEAD
                 <line>19</line>
+=======
+<<<<<<< HEAD
+                <line>36</line>
+=======
+                <line>30</line>
+>>>>>>> cd47f1a565b21be8798e4d6207c6be61294768c4
+>>>>>>> 991f73a0779cca63012793ae07e5eb10f6a1d435
                 <key/>
             </bookmark>
         </file>
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/Maria%20José%20Meneses/Documents/GitHub/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/restaurantSalesSystem.java</file>
+=======
+<<<<<<< HEAD
+            <file>file:/C:/Users/ferca/OneDrive/Escritorio/Restaurant/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/restaurantSalesSystem.java</file>
+            <file>file:/C:/Users/ferca/OneDrive/Escritorio/Restaurant/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurant/model/Cashier.java</file>
+            <file>file:/C:/Users/ferca/OneDrive/Escritorio/Restaurant/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurant/model/Customer.java</file>
+=======
+            <file>file:/C:/Users/DAVID/Desktop/POO/Proyects/Nueva%20carpeta/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurant/model/Lunch.java</file>
+            <file>file:/C:/Users/DAVID/Desktop/POO/Proyects/Nueva%20carpeta/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/restaurantSalesSystem.java</file>
+            <file>file:/C:/Users/DAVID/Desktop/POO/Proyects/Nueva%20carpeta/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurant/model/TypeOfBreakfast.java</file>
+            <file>file:/C:/Users/DAVID/Desktop/POO/Proyects/Nueva%20carpeta/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurant/model/Quantity.java</file>
+            <file>file:/C:/Users/DAVID/Desktop/POO/Proyects/Nueva%20carpeta/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurant/model/Order.java</file>
+            <file>file:/C:/Users/DAVID/Desktop/POO/Proyects/Nueva%20carpeta/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurant/model/Juice.java</file>
+            <file>file:/C:/Users/DAVID/Desktop/POO/Proyects/Nueva%20carpeta/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurant/model/TypeOfDrink.java</file>
+            <file>file:/C:/Users/DAVID/Desktop/POO/Proyects/Nueva%20carpeta/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurant/model/Snack.java</file>
+            <file>file:/C:/Users/DAVID/Desktop/POO/Proyects/Nueva%20carpeta/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurant/model/Soda.java</file>
+>>>>>>> cd47f1a565b21be8798e4d6207c6be61294768c4
+>>>>>>> 991f73a0779cca63012793ae07e5eb10f6a1d435
         </group>
     </open-files>
 </project-private>
