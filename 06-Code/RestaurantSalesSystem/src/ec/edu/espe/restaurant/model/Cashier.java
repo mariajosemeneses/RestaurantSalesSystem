@@ -14,7 +14,9 @@ public class Cashier
     private String name;
 
     public Cashier() {
+    this.name="Felipe";
     }
+    
 
     
     public Cashier(String name) {
