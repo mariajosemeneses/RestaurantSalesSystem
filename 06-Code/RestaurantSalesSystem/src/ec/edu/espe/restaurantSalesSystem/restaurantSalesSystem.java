@@ -93,7 +93,23 @@ public class restaurantSalesSystem {
         String jsonChicken;
         String jsonCustomer;
            
-       
+       //serialization
+        jsonChicken = gson.toJson(cashier);
+
+        System.out.println("cashier  in json format -> " + jsonChicken);
+
+        jsonChicken = gson.toJson(cashier2);
+
+        System.out.println("cashier  in json format -> " + jsonChicken);
+
+        //serialization
+        jsonCustomer = gson.toJson(customer);
+
+        System.out.println("cashier  in json format -> " + jsonCustomer);
+
+        jsonCustomer = gson.toJson(customer2);
+
+        System.out.println("cashier  in json format -> " + jsonCustomer);
         
         
     }
