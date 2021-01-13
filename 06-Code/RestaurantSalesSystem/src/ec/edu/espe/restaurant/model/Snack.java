@@ -19,6 +19,9 @@ public class Snack
         this.price = price;
     }
 
+    public Snack() {
+    }
+
     @Override
     public String toString() {
         return "Snack{" + "name=" + name + ", price=" + price + '}';

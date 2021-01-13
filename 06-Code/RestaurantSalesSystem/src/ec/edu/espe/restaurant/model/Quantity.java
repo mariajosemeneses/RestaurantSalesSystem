@@ -13,6 +13,9 @@ public class Quantity
 {
     private int stock;
 
+    public Quantity() {
+    }
+
     public Quantity(int stock) {
         this.stock = stock;
     }

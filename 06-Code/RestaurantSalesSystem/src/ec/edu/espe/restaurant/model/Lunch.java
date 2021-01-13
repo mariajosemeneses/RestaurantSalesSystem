@@ -17,6 +17,9 @@ public class Lunch
     private Course mainCourse;
     private String other;
 
+    public Lunch() {
+    }
+
     public Lunch(String soup, Drink drink, Dessert dessert, Course mainCourse, String other) {
         this.soup = soup;
         this.drink = drink;

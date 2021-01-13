@@ -25,6 +25,9 @@ public class Order
         this.tableNumber = tableNumber;
     }
 
+    public Order() {
+    }
+
     @Override
     public String toString() {
         return "Order{" + "numberOrder=" + numberOrder + ", customer=" + customer + ", course=" + course + ", price=" + price + ", tableNumber=" + tableNumber + '}';
