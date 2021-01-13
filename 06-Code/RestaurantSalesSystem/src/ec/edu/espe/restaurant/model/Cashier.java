@@ -7,11 +7,22 @@ package ec.edu.espe.restaurant.model;
 
 /**
  *
- * @author DAVID
+ * @author Group3
  */
 public class Cashier 
 {
     private String name;
+
+    public Cashier(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Cashier{" + "name=" + name + '}';
+    }
+    
+    
     
     public void registerCustomer(Customer customer)
     {
