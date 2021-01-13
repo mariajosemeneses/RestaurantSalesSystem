@@ -7,7 +7,7 @@ package ec.edu.espe.restaurant.model;
 
 /**
  *
- * @author Anthony
+ * @author Group3
  */
 public class Ingredient {
     
@@ -16,6 +16,20 @@ public class Ingredient {
     private int size;
     private float price;
 
+    public Ingredient(String name, int quantity, int size, float price) {
+        this.name = name;
+        this.quantity = quantity;
+        this.size = size;
+        this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return "Ingredient{" + "name=" + name + ", quantity=" + quantity + ", size=" + size + ", price=" + price + '}';
+    }
+
+    
+    
     /**
      * @return the name
      */

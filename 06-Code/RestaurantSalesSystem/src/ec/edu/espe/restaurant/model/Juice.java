@@ -7,12 +7,24 @@ package ec.edu.espe.restaurant.model;
 
 /**
  *
- * @author Anthony
+ * @author Group3
  */
 public class Juice 
 {
     private String flavor;
     private int juiceSize;
+
+    public Juice(String flavor, int juiceSize) {
+        this.flavor = flavor;
+        this.juiceSize = juiceSize;
+    }
+
+    @Override
+    public String toString() {
+        return "Juice{" + "flavor=" + flavor + ", juiceSize=" + juiceSize + '}';
+    }
+    
+    
     
     public void add()
     {

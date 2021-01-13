@@ -7,10 +7,11 @@ package ec.edu.espe.restaurant.model;
 
 /**
  *
- * @author DAVID
+ * @author Group3
  */
 public class Food 
 {
-    
-    
+
+    public Food() {
+    } 
 }
