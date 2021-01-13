@@ -73,6 +73,25 @@ public class restaurantSalesSystem {
             System.out.println("cashiers (" + (++counter) + ") -> " + ch);
         }
         
+        for (int i = 0; i < customers.length; i++) {
+            customers[i] = new Customer("Pepe","sangolqui","pepe@gamil.com","032114");
+        }
+        System.out.println("customers --> " + customers[0]);
+        System.out.println("customers --> " + customers[1]);
+        
+
+        int counter1 = 0;
+
+        for (Customer ch : customers) {
+            System.out.println("customers (" + (++counter1) + ") -> " + ch);
+        }
+        
+        
+        
+        //library : GSON
+        Gson gson = new Gson();
+        String jsonChicken;
+        String jsonCustomer;
            
        
         
