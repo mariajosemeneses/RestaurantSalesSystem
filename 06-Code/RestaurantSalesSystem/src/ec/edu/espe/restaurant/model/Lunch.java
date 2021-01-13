@@ -16,6 +16,21 @@ public class Lunch
     private Dessert dessert;
     private Course mainCourse;
     private String other;
+
+    public Lunch(String soup, Drink drink, Dessert dessert, Course mainCourse, String other) {
+        this.soup = soup;
+        this.drink = drink;
+        this.dessert = dessert;
+        this.mainCourse = mainCourse;
+        this.other = other;
+    }
+
+    @Override
+    public String toString() {
+        return "Lunch{" + "soup=" + soup + ", drink=" + drink + ", dessert=" + dessert + ", mainCourse=" + mainCourse + ", other=" + other + '}';
+    }
+    
+    
     
     public void choice()
     {

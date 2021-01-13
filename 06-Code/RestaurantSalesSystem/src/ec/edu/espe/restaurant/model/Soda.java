@@ -7,7 +7,11 @@ package ec.edu.espe.restaurant.model;
 
 /**
  *
+<<<<<<< HEAD
  * @author Group 3
+=======
+ * @author Group3
+>>>>>>> fd2b4d4846fe03454b216f2e753bbbe84312c113
  */
 public class Soda 
 {

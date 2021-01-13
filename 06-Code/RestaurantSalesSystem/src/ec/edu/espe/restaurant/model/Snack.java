@@ -7,12 +7,22 @@ package ec.edu.espe.restaurant.model;
 
 /**
  *
- * @author DAVID
+ * @author Group3
  */
 public class Snack 
 {
     private String name;
     private float price;
+
+    public Snack(String name, float price) {
+        this.name = name;
+        this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return "Snack{" + "name=" + name + ", price=" + price + '}';
+    }
     
     public void modify()
     {
