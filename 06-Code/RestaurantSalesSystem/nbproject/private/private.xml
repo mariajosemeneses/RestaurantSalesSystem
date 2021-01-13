@@ -5,7 +5,7 @@
             <url>src/ec/edu/espe/restaurant/model/Cashier.java</url>
             <bookmark id="1">
                 <name/>
-                <line>34</line>
+                <line>36</line>
                 <key/>
             </bookmark>
         </file>
@@ -14,17 +14,7 @@
         <group>
             <file>file:/C:/Users/ferca/OneDrive/Escritorio/Restaurant/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/restaurantSalesSystem.java</file>
             <file>file:/C:/Users/ferca/OneDrive/Escritorio/Restaurant/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurant/model/Cashier.java</file>
-            <file>file:/C:/Users/ferca/OneDrive/Escritorio/Restaurant/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurant/model/Drink.java</file>
-            <file>file:/C:/Users/ferca/OneDrive/Escritorio/Restaurant/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurant/model/Continental.java</file>
-            <file>file:/C:/Users/ferca/OneDrive/Escritorio/Restaurant/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurant/model/Course.java</file>
-            <file>file:/C:/Users/ferca/OneDrive/Escritorio/Restaurant/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurant/model/Ingredient.java</file>
-            <file>file:/C:/Users/ferca/OneDrive/Escritorio/Restaurant/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurant/model/Juice.java</file>
-            <file>file:/C:/Users/ferca/OneDrive/Escritorio/Restaurant/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurant/model/Breakfast.java</file>
-            <file>file:/C:/Users/ferca/OneDrive/Escritorio/Restaurant/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurant/model/Food.java</file>
-            <file>file:/C:/Users/ferca/OneDrive/Escritorio/Restaurant/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurant/model/Dessert.java</file>
             <file>file:/C:/Users/ferca/OneDrive/Escritorio/Restaurant/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurant/model/Customer.java</file>
-            <file>file:/C:/Users/ferca/OneDrive/Escritorio/Restaurant/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurant/model/SodaBrand.java</file>
-            <file>file:/C:/Users/ferca/OneDrive/Escritorio/Restaurant/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurant/model/Full.java</file>
         </group>
     </open-files>
 </project-private>
