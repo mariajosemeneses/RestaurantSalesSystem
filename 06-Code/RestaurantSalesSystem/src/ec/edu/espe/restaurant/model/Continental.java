@@ -7,12 +7,25 @@ package ec.edu.espe.restaurant.model;
 
 /**
  *
- * @author DAVID
+ * @author Group3
  */
 public class Continental 
 {
     private String ingredient;
     private float price;
+
+    public Continental(String ingredient, float price) {
+        this.ingredient = ingredient;
+        this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return "Continental{" + "ingredient=" + ingredient + ", price=" + price + '}';
+    }
+    
+    
+    
     
     public void choice()
     {

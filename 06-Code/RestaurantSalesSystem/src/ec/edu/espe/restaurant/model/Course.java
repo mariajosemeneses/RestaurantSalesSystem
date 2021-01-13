@@ -7,7 +7,7 @@ package ec.edu.espe.restaurant.model;
 
 /**
  *
- * @author DAVID
+ * @author Group3
  */
 public class Course 
 {
@@ -16,6 +16,21 @@ public class Course
     private float price;
     private int quantity;
     private Food type;
+
+    public Course(String id, String description, float price, int quantity, Food type) {
+        this.id = id;
+        this.description = description;
+        this.price = price;
+        this.quantity = quantity;
+        this.type = type;
+    }
+
+    @Override
+    public String toString() {
+        return "Course{" + "id=" + id + ", description=" + description + ", price=" + price + ", quantity=" + quantity + ", type=" + type + '}';
+    }
+    
+    
     
     public void buy ()
     {

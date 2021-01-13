@@ -7,13 +7,26 @@ package ec.edu.espe.restaurant.model;
 
 /**
  *
- * @author DAVID
+ * @author Group3
  */
 public class Dessert 
 {
     private int code;
     private String type;
     private int quantity;
+
+    public Dessert(int code, String type, int quantity) {
+        this.code = code;
+        this.type = type;
+        this.quantity = quantity;
+    }
+
+    @Override
+    public String toString() {
+        return "Dessert{" + "code=" + code + ", type=" + type + ", quantity=" + quantity + '}';
+    }
+    
+    
     
     public void add()
     {

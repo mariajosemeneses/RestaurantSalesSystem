@@ -7,12 +7,25 @@ package ec.edu.espe.restaurant.model;
 
 /**
  *
- * @author DAVID
+ * @author Group3
  */
 public class Drink 
 {
     private TypeOfDrink tupeOfDrink;
     private float price;
+
+    public Drink(TypeOfDrink tupeOfDrink, float price) {
+        this.tupeOfDrink = tupeOfDrink;
+        this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return "Drink{" + "tupeOfDrink=" + tupeOfDrink + ", price=" + price + '}';
+    }
+    
+    
+    
     
     public void buy()
     {
