@@ -30,9 +30,13 @@ public class restaurantSalesSystem {
         System.out.println("toys size --> " + food.length);
 
         int[] numberCustomer = {2, 3, 2, 1, 4, 1};
-
-        
-
+       
+        try {
+            System.out.println("numbers[7] -> " + numberCustomer[6]);
+        } catch (Exception ex) {
+            
+            System.out.println("cannot read more than six items ");
+                }
     }
 
    
