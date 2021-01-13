@@ -111,6 +111,22 @@ public class restaurantSalesSystem {
 
         System.out.println("cashier  in json format -> " + jsonCustomer);
         
+        //deserialization
         
+        String jsonCh= "{\"name\":\"Juanita\"}";
+        
+        Cashier cashier4;
+        cashier4 = gson.fromJson(jsonCh, Cashier.class);
+        
+        System.out.println("cashier 4 -> " + cashier4);
+        
+        
+        String jsonC = "{\"name\":\"Francisco\",\"adress\":\"Machachi\","
+                + "\"email\":\"fracis@gmail.com\",\"phoneNumber\":\"098563211\"}";
+        
+        Customer customer3;
+        customer3 = gson.fromJson(jsonC, Customer.class);
+        
+        System.out.println("customer3 -> " + customer3);
     }
 }
