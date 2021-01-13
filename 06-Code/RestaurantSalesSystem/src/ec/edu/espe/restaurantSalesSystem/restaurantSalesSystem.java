@@ -7,7 +7,7 @@ package ec.edu.espe.restaurantSalesSystem;
 
 /**
  *
- * @author Anthony
+ * @author Group3
  */
 public class restaurantSalesSystem {
     

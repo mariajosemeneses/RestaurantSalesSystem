@@ -7,11 +7,20 @@ package ec.edu.espe.restaurant.model;
 
 /**
  *
- * @author DAVID
+ * @author Group3
  */
 public class Quantity 
 {
     private int stock;
+
+    public Quantity(int stock) {
+        this.stock = stock;
+    }
+
+    @Override
+    public String toString() {
+        return "Quantity{" + "stock=" + stock + '}';
+    }
     
     public void editQuantity()
     {

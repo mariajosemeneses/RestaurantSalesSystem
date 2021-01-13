@@ -7,7 +7,7 @@ package ec.edu.espe.restaurant.model;
 
 /**
  *
- * @author DAVID
+ * @author Group3
  */
 public class Order 
 {
@@ -16,6 +16,19 @@ public class Order
     private Course course;
     private float price;
     private int tableNumber;
+
+    public Order(int numberOrder, Customer customer, Course course, float price, int tableNumber) {
+        this.numberOrder = numberOrder;
+        this.customer = customer;
+        this.course = course;
+        this.price = price;
+        this.tableNumber = tableNumber;
+    }
+
+    @Override
+    public String toString() {
+        return "Order{" + "numberOrder=" + numberOrder + ", customer=" + customer + ", course=" + course + ", price=" + price + ", tableNumber=" + tableNumber + '}';
+    }
     
     public void generateOrder()
     {
