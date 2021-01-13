@@ -18,12 +18,15 @@ public class Customer
     
     public void placedOfOrder( Food food)
     { 
+        
     }
     public void cancelOrder (Food food)
     {
+        
     }
     public void editOrder(Food food)
     {
+        
     }
 
     /**

@@ -5,6 +5,10 @@
  */
 package ec.edu.espe.restaurantSalesSystem;
 
+import ec.edu.espe.restaurant.model.Cashier;
+
+
+
 /**
  *
  * @author Group3
@@ -13,8 +17,8 @@ public class restaurantSalesSystem {
     
     public static void main(String[] args) {
         
-        
-        
+        Cashier cashier;
+        cashier = new Cashier();
         
         
     }

@@ -13,6 +13,10 @@ public class Cashier
 {
     private String name;
 
+    public Cashier() {
+    }
+
+    
     public Cashier(String name) {
         this.name = name;
     }
