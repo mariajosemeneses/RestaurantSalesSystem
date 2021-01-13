@@ -15,6 +15,27 @@ public class Customer
     private String adress;
     private String email;
     private String phoneNumber;
+
+    public Customer() {
+    }
+
+    
+    
+    public Customer(String name, String adress, String email, String phoneNumber) {
+        this.name = name;
+        this.adress = adress;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" + "name=" + name + ", adress=" + adress + ", email=" + email + ", phoneNumber=" + phoneNumber + '}';
+    }
+    
+    
+    
+    
     
     public void placedOfOrder( Food food)
     { 
