@@ -27,7 +27,7 @@ public class restaurantSalesSystem {
         Customer customer2 = new Customer("Maria", "Av. Simón Bolívar ", "maria2006@gmail.com ", "0946523647");
 
         String[] food = {"Hamburguesa", "Sandwitch", "Pizza", "Chicken Rice"};
-        System.out.println("toys size --> " + food.length);
+        System.out.println("food size --> " + food.length);
 
         int[] numberCustomer = {2, 3, 2, 1, 4, 1};
        
@@ -37,9 +37,16 @@ public class restaurantSalesSystem {
             
             System.out.println("cannot read more than six items ");
                 }
-    }
-
+    
+            System.out.println("cashiers --> " + cashiers[0]);
+            System.out.println("cashiers --> " + cashiers[1]);
+            System.out.println("cashiers --> " + cashiers[2]);
+        
+         for (int i = 0; i < food.length; i++) {
+              System.out.println("food[" + (i + 1) + "] -> " + food[i]);
+        }
    
 
     
+}
 }
