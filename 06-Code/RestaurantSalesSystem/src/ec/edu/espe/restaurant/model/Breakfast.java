@@ -5,6 +5,8 @@
  */
 package ec.edu.espe.restaurant.model;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Group3
@@ -15,17 +17,19 @@ public class Breakfast
     private String content;
     private float price;
     private Drink drink;
+    private ArrayList<Full> fl = new ArrayList<>();
 
     public Breakfast(TypeOfBreakfast typeOfBreakfast, String content, float price, Drink drink) {
         this.typeOfBreakfast = typeOfBreakfast;
         this.content = content;
         this.price = price;
         this.drink = drink;
+        
     }
 
     @Override
     public String toString() {
-        return "Breakfast{" + "typeOfBreakfast=" + typeOfBreakfast + ", content=" + content + ", price=" + price + ", drink=" + drink + '}';
+        return "Breakfast{" + "typeOfBreakfast=" + getTypeOfBreakfast() + ", content=" + getContent() + ", price=" + getPrice() + ", drink=" + getDrink() + '}';
     }
     
     
@@ -98,6 +102,20 @@ public class Breakfast
      */
     public void setDrink(Drink drink) {
         this.drink = drink;
+    }
+
+    /**
+     * @return the fl
+     */
+    public ArrayList<Full> getFl() {
+        return fl;
+    }
+
+    /**
+     * @param fl the fl to set
+     */
+    public void setFl(ArrayList<Full> fl) {
+        this.fl = fl;
     }
     
     
