@@ -11,18 +11,24 @@ package ec.edu.espe.restaurant.model;
  */
 public class Juice 
 {
-    private String flavor;
-    private int juiceSize;
+  
+     private JuiceFlavor[] juiceFlavor= new JuiceFlavor[6];
+     private float price;
 
-    public Juice(String flavor, int juiceSize) {
-        this.flavor = flavor;
-        this.juiceSize = juiceSize;
+    public Juice() {
+    }
+
+    public Juice(float price, JuiceFlavor[] juiceFlavor) {
+        this.price = price;
+        this.juiceFlavor = juiceFlavor;
     }
 
     @Override
     public String toString() {
-        return "Juice{" + "flavor=" + flavor + ", juiceSize=" + juiceSize + '}';
+        return "Juice{" + "juiceFlavor=" + juiceFlavor + ", price=" + price + '}';
     }
+
+     
     
     
     
@@ -40,32 +46,34 @@ public class Juice
     }
 
     /**
-     * @return the flavor
+     * @return the juiceFlavor
      */
-    public String getFlavor() {
-        return flavor;
+    public JuiceFlavor[] getJuiceFlavor() {
+        return juiceFlavor;
     }
 
     /**
-     * @param flavor the flavor to set
+     * @param juiceFlavor the juiceFlavor to set
      */
-    public void setFlavor(String flavor) {
-        this.flavor = flavor;
+    public void setJuiceFlavor(JuiceFlavor[] juiceFlavor) {
+        this.juiceFlavor = juiceFlavor;
     }
 
     /**
-     * @return the juiceSize
+     * @return the price
      */
-    public int getJuiceSize() {
-        return juiceSize;
+    public float getPrice() {
+        return price;
     }
 
     /**
-     * @param juiceSize the juiceSize to set
+     * @param price the price to set
      */
-    public void setJuiceSize(int juiceSize) {
-        this.juiceSize = juiceSize;
+    public void setPrice(float price) {
+        this.price = price;
     }
+
+    
     
     
 }

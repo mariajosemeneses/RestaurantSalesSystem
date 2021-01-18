@@ -5,66 +5,88 @@
  */
 package ec.edu.espe.restaurant.model;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Group3
  */
 public class Drink 
 {
-    private TypeOfDrink tupeOfDrink;
-    private float price;
+    private ArrayList<Soda> sodas = new ArrayList<>();
+    private ArrayList<Juice> juices = new ArrayList<>();
+    private ArrayList<SizeCup> sizeCups = new ArrayList<>();
 
-    public Drink(TypeOfDrink tupeOfDrink, float price) {
-        this.tupeOfDrink = tupeOfDrink;
-        this.price = price;
+    public Drink() {
+    }
+
+    public Drink(ArrayList<Soda> sodas,ArrayList<Juice> juices,ArrayList<SizeCup> sizeCups) {
+        this.juices = juices;
+        this.sizeCups = sizeCups;
+        this.sodas = sodas;
     }
 
     @Override
     public String toString() {
-        return "Drink{" + "tupeOfDrink=" + tupeOfDrink + ", price=" + price + '}';
+        return "Drink{" + "sodas=" + sodas + ", juices=" + juices + ", sizeCups=" + sizeCups + '}';
     }
     
-    
-    
-    
-    public void buy()
-    {
+    public Drink(Juice juice, Soda soda,SizeCup sizeCup){
+        int buy=0;
+        
+        
         
     }
-    public float computeCost(int a)
-    {
-        return a;
-    }
-    public boolean availability(TypeOfDrink typeOfDrink)
-    {
-        return true;
+    
+    /**
+     * @return the sodas
+     */
+    public ArrayList<Soda> getSodas() {
+        return sodas;
     }
 
     /**
-     * @return the tupeOfDrink
+     * @param sodas the sodas to set
      */
-    public TypeOfDrink getTupeOfDrink() {
-        return tupeOfDrink;
+    public void setSodas(ArrayList<Soda> sodas) {
+        this.sodas = sodas;
     }
 
     /**
-     * @param tupeOfDrink the tupeOfDrink to set
+     * @return the juices
      */
-    public void setTupeOfDrink(TypeOfDrink tupeOfDrink) {
-        this.tupeOfDrink = tupeOfDrink;
+    public ArrayList<Juice> getJuices() {
+        return juices;
     }
 
     /**
-     * @return the price
+     * @param juices the juices to set
      */
-    public float getPrice() {
-        return price;
+    public void setJuices(ArrayList<Juice> juices) {
+        this.juices = juices;
     }
 
     /**
-     * @param price the price to set
+     * @return the sizeCups
      */
-    public void setPrice(float price) {
-        this.price = price;
+    public ArrayList<SizeCup> getSizeCups() {
+        return sizeCups;
     }
+
+    /**
+     * @param sizeCups the sizeCups to set
+     */
+    public void setSizeCups(ArrayList<SizeCup> sizeCups) {
+        this.sizeCups = sizeCups;
+    }
+
+    
+    
+
+    
+
+    
+    
+    
+    
 }
