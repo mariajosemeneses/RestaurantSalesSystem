@@ -5,44 +5,38 @@
  */
 package ec.edu.espe.restaurant.model;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Group3
  */
 public class Full 
 {
-    private String ingredient;
+    private ArrayList<Ingredient> ingredients = new ArrayList <>();
     private float price;
 
-    public Full(String ingredient, float price) {
-        this.ingredient = ingredient;
+    public Full(float price) {
         this.price = price;
     }
 
     @Override
     public String toString() {
-        return "Full{" + "ingredient=" + ingredient + ", price=" + price + '}';
-    }
-    
-    
-    
-    public void choice()
-    {
-        
+        return "Full{" + "ingredients=" + getIngredients() + ", price=" + getPrice() + '}';
     }
 
     /**
-     * @return the ingredient
+     * @return the ingredients
      */
-    public String getIngredient() {
-        return ingredient;
+    public ArrayList<Ingredient> getIngredients() {
+        return ingredients;
     }
 
     /**
-     * @param ingredient the ingredient to set
+     * @param ingredients the ingredients to set
      */
-    public void setIngredient(String ingredient) {
-        this.ingredient = ingredient;
+    public void setIngredients(ArrayList<Ingredient> ingredients) {
+        this.ingredients = ingredients;
     }
 
     /**
@@ -57,5 +51,6 @@ public class Full
      */
     public void setPrice(float price) {
         this.price = price;
-    }
+    } 
+
 }

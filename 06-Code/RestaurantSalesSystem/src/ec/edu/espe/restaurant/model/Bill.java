@@ -15,35 +15,34 @@ public class Bill
     private String date;
     private float identificationCard;
     private int cellPhone;
+    private String description;
     private String direction;
-    private int order;
-    
     
   
     public void checkIn()
     {
         
     }
-
-    public Bill() {
+    
+    public void calculateTotal(int quantity, float price) 
+    {
+        
     }
 
-    public Bill(String name, String date, float identificationCard, int cellPhone, String direction, int order) {
+    public Bill(String name, String date, float identificationCard, int cellPhone, String direction, String description) {
         this.name = name;
         this.date = date;
         this.identificationCard = identificationCard;
         this.cellPhone = cellPhone;
         this.direction = direction;
-        this.order = order;
+        this.description = description;
     }
 
     @Override
     public String toString() {
-        return "Bill{" + "name=" + name + ", date=" + date + ", identificationCard=" + identificationCard + ", cellPhone=" + cellPhone + ", direction=" + direction + ", order=" + order + '}';
+        return "Bill{" + "name=" + name + ", date=" + date + ", identificationCard=" + identificationCard + ", cellPhone=" + cellPhone + ", description=" + description + ", direction=" + direction + '}';
     }
-    
-    
-    
+
     
     /**
      * @return the name
@@ -116,16 +115,16 @@ public class Bill
     }
 
     /**
-     * @return the order
+     * @return the description
      */
-    public int getOrder() {
-        return order;
+    public String getDescription() {
+        return description;
     }
 
     /**
-     * @param order the order to set
+     * @param description the description to set
      */
-    public void setOrder(int order) {
-        this.order = order;
+    public void setDescription(String description) {
+        this.description = description;
     }
 }

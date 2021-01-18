@@ -11,79 +11,19 @@ package ec.edu.espe.restaurant.model;
  */
 public class Breakfast 
 {
-    private TypeOfBreakfast typeOfBreakfast;
-    private String content;
-    private float price;
     private Drink drink;
+    private Full full;
+    private Continental continental;
 
-    public Breakfast(TypeOfBreakfast typeOfBreakfast, String content, float price, Drink drink) {
-        this.typeOfBreakfast = typeOfBreakfast;
-        this.content = content;
-        this.price = price;
+    public Breakfast(Drink drink, Full full, Continental continental) {
         this.drink = drink;
+        this.full = full;
+        this.continental = continental;
     }
 
     @Override
     public String toString() {
-        return "Breakfast{" + "typeOfBreakfast=" + typeOfBreakfast + ", content=" + content + ", price=" + price + ", drink=" + drink + '}';
-    }
-    
-    
-    
-    
-    public void choice()
-    {
-        
-    }
-    public void billin()
-    {
-        
-    }
-    public void buy()
-    {
-        
-    }
-
-    /**
-     * @return the typeOfBreakfast
-     */
-    public TypeOfBreakfast getTypeOfBreakfast() {
-        return typeOfBreakfast;
-    }
-
-    /**
-     * @param typeOfBreakfast the typeOfBreakfast to set
-     */
-    public void setTypeOfBreakfast(TypeOfBreakfast typeOfBreakfast) {
-        this.typeOfBreakfast = typeOfBreakfast;
-    }
-
-    /**
-     * @return the content
-     */
-    public String getContent() {
-        return content;
-    }
-
-    /**
-     * @param content the content to set
-     */
-    public void setContent(String content) {
-        this.content = content;
-    }
-
-    /**
-     * @return the price
-     */
-    public float getPrice() {
-        return price;
-    }
-
-    /**
-     * @param price the price to set
-     */
-    public void setPrice(float price) {
-        this.price = price;
+        return "Breakfast{" + "drink=" + getDrink() + ", full=" + getFull() + ", continental=" + getContinental() + '}';
     }
 
     /**
@@ -99,6 +39,34 @@ public class Breakfast
     public void setDrink(Drink drink) {
         this.drink = drink;
     }
-    
-    
+
+    /**
+     * @return the full
+     */
+    public Full getFull() {
+        return full;
+    }
+
+    /**
+     * @param full the full to set
+     */
+    public void setFull(Full full) {
+        this.full = full;
+    }
+
+    /**
+     * @return the continental
+     */
+    public Continental getContinental() {
+        return continental;
+    }
+
+    /**
+     * @param continental the continental to set
+     */
+    public void setContinental(Continental continental) {
+        this.continental = continental;
+    }
 }
+   
+   
