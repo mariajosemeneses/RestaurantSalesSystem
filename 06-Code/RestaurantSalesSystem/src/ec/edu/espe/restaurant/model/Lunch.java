@@ -11,55 +11,24 @@ package ec.edu.espe.restaurant.model;
  */
 public class Lunch 
 {
-    private String soup;
     private Drink drink;
     private Dessert dessert;
     private Course mainCourse;
-    private String other;
+    private String others;
 
     public Lunch() {
     }
 
-    public Lunch(String soup, Drink drink, Dessert dessert, Course mainCourse, String other) {
-        this.soup = soup;
+    public Lunch(Drink drink, Dessert dessert, Course mainCourse, String others) {
         this.drink = drink;
         this.dessert = dessert;
         this.mainCourse = mainCourse;
-        this.other = other;
+        this.others = others;
     }
 
     @Override
     public String toString() {
-        return "Lunch{" + "soup=" + soup + ", drink=" + drink + ", dessert=" + dessert + ", mainCourse=" + mainCourse + ", other=" + other + '}';
-    }
-    
-    
-    
-    public void choice()
-    {
-        
-    }
-    public void billin()
-    {
-        
-    }
-    public void buy()
-    {
-        
-    }
-
-    /**
-     * @return the soup
-     */
-    public String getSoup() {
-        return soup;
-    }
-
-    /**
-     * @param soup the soup to set
-     */
-    public void setSoup(String soup) {
-        this.soup = soup;
+        return "Lunch{" + "drink=" + getDrink() + ", dessert=" + getDessert() + ", mainCourse=" + getMainCourse() + ", others=" + getOthers() + '}';
     }
 
     /**
@@ -105,18 +74,18 @@ public class Lunch
     }
 
     /**
-     * @return the other
+     * @return the others
      */
-    public String getOther() {
-        return other;
+    public String getOthers() {
+        return others;
     }
 
     /**
-     * @param other the other to set
+     * @param others the others to set
      */
-    public void setOther(String other) {
-        this.other = other;
+    public void setOthers(String others) {
+        this.others = others;
     }
-    
-    
 }
+    
+  

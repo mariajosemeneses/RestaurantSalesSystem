@@ -23,6 +23,10 @@ public class Cashier
         this.courses = courses;
     }
 
+    public Cashier(String javier) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     @Override
     public String toString() {
         return "Cashier{" + "name=" + name + ", customers=" + customers + ", courses=" + courses + '}';
