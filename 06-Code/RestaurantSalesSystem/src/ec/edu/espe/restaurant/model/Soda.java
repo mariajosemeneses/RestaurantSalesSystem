@@ -18,6 +18,7 @@ public class Soda
     private ArrayList<SodaFlavor> sodaflavor= new ArrayList<>();
 
     public Soda() {
+        
     }
 
     public Soda(float price, ArrayList<SodaBrand> sodabrand,ArrayList<SodaFlavor> sodaflavor) {
