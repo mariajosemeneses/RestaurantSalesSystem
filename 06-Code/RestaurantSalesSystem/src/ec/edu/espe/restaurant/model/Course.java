@@ -15,9 +15,9 @@ public class Course
     private String description;
     private float price;
     private int quantity;
-    private Food type;
+    private TypeOfFood type;
 
-    public Course(String id, String description, float price, int quantity, Food type) {
+    public Course(String id, String description, float price, int quantity, TypeOfFood type) {
         this.id = id;
         this.description = description;
         this.price = price;
@@ -25,12 +25,53 @@ public class Course
         this.type = type;
     }
 
+    public Course() {
+    }
+
     @Override
     public String toString() {
         return "Course{" + "id=" + id + ", description=" + description + ", price=" + price + ", quantity=" + quantity + ", type=" + type + '}';
     }
-    
-    
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public float getPrice() {
+        return price;
+    }
+
+    public void setPrice(float price) {
+        this.price = price;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    public TypeOfFood getType() {
+        return type;
+    }
+
+    public void setType(TypeOfFood type) {
+        this.type = type;
+    }
     
     public void buy ()
     {
@@ -49,75 +90,6 @@ public class Course
         
     }
 
-    /**
-     * @return the id
-     */
-    public String getId() {
-        return id;
-    }
-
-    /**
-     * @param id the id to set
-     */
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    /**
-     * @return the description
-     */
-    public String getDescription() {
-        return description;
-    }
-
-    /**
-     * @param description the description to set
-     */
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    /**
-     * @return the price
-     */
-    public float getPrice() {
-        return price;
-    }
-
-    /**
-     * @param price the price to set
-     */
-    public void setPrice(float price) {
-        this.price = price;
-    }
-
-    /**
-     * @return the quantity
-     */
-    public int getQuantity() {
-        return quantity;
-    }
-
-    /**
-     * @param quantity the quantity to set
-     */
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
-
-    /**
-     * @return the type
-     */
-    public Food getType() {
-        return type;
-    }
-
-    /**
-     * @param type the type to set
-     */
-    public void setType(Food type) {
-        this.type = type;
-    }
     
     
 }
