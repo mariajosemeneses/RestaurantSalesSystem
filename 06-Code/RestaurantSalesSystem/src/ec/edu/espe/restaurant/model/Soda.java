@@ -5,22 +5,32 @@
  */
 package ec.edu.espe.restaurant.model;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Group 3
  */
 public class Soda 
 {
-    private SodaBrand sodaBrand;
+    private float price;
+    private ArrayList<SodaBrand> sodabrand= new ArrayList<>();
+    private ArrayList<SodaFlavor> sodaflavor= new ArrayList<>();
 
-    public Soda(SodaBrand sodaBrand) {
-        this.sodaBrand = sodaBrand;
+    public Soda() {
+    }
+
+    public Soda(float price, ArrayList<SodaBrand> sodabrand,ArrayList<SodaFlavor> sodaflavor) {
+        this.price = price;
+        this.sodabrand = sodabrand;
+        this.sodaflavor = sodaflavor;
     }
 
     @Override
     public String toString() {
-        return "Soda{" + "sodaBrand=" + sodaBrand + '}';
+        return "Soda{" + "price=" + getPrice() + ", sodabrand=" + getSodabrand() + ", sodaflavor=" + getSodaflavor() + '}';
     }
+
     
     
     
@@ -38,17 +48,47 @@ public class Soda
     }
 
     /**
-     * @return the sodaBrand
+     * @return the price
      */
-    public SodaBrand getSodaBrand() {
-        return sodaBrand;
+    public float getPrice() {
+        return price;
     }
 
     /**
-     * @param sodaBrand the sodaBrand to set
+     * @param price the price to set
      */
-    public void setSodaBrand(SodaBrand sodaBrand) {
-        this.sodaBrand = sodaBrand;
+    public void setPrice(float price) {
+        this.price = price;
     }
+
+    /**
+     * @return the sodabrand
+     */
+    public ArrayList<SodaBrand> getSodabrand() {
+        return sodabrand;
+    }
+
+    /**
+     * @param sodabrand the sodabrand to set
+     */
+    public void setSodabrand(ArrayList<SodaBrand> sodabrand) {
+        this.sodabrand = sodabrand;
+    }
+
+    /**
+     * @return the sodaflavor
+     */
+    public ArrayList<SodaFlavor> getSodaflavor() {
+        return sodaflavor;
+    }
+
+    /**
+     * @param sodaflavor the sodaflavor to set
+     */
+    public void setSodaflavor(ArrayList<SodaFlavor> sodaflavor) {
+        this.sodaflavor = sodaflavor;
+    }
+
+    
     
 }
