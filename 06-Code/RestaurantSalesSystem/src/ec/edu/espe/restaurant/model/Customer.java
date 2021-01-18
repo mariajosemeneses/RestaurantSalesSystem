@@ -15,10 +15,19 @@ public class Customer
     private String adress;
     private String email;
     private String phoneNumber;
-
-    public Customer() {
+    
+    public Order placedOfOrder()
+    { 
+        return new Order();
     }
-
+    public void cancelOrder ()
+    {
+        
+    }
+    public Order editOrder()
+    {
+        return new Order();
+    }
     
     
     public Customer(String name, String adress, String email, String phoneNumber) {
@@ -32,23 +41,7 @@ public class Customer
     public String toString() {
         return "Customer{" + "name=" + name + ", adress=" + adress + ", email=" + email + ", phoneNumber=" + phoneNumber + '}';
     }
-    
-    
-    
-    
-    
-    public void placedOfOrder( Food food)
-    { 
-        
-    }
-    public void cancelOrder (Food food)
-    {
-        
-    }
-    public void editOrder(Food food)
-    {
-        
-    }
+
 
     /**
      * @return the name
