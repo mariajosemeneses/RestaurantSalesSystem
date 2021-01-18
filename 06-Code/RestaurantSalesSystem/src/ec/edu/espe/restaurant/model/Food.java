@@ -15,19 +15,19 @@ public class Food
     private Lunch lunch;
     private Snack snack;
     private Dessert desert;
-    private Quantity quantity;
+   
 
-    public Food(Breakfast breakfast, Lunch lunch, Snack snack, Dessert desert, Quantity quantity) {
+    public Food(Breakfast breakfast, Lunch lunch, Snack snack, Dessert desert) {
         this.breakfast = breakfast;
         this.lunch = lunch;
         this.snack = snack;
         this.desert = desert;
-        this.quantity = quantity;
+       
     }
 
     @Override
     public String toString() {
-        return "Food{" + "breakfast=" + breakfast + ", lunch=" + lunch + ", snack=" + snack + ", desert=" + desert + ", quantity=" + quantity + '}';
+        return "Food{" + "breakfast=" + breakfast + ", lunch=" + lunch + ", snack=" + snack + ", desert=" + desert + '}';
     }
     
     public Food() {
