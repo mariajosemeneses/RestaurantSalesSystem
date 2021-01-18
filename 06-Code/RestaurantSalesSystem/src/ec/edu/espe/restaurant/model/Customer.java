@@ -29,6 +29,10 @@ public class Customer
         return new Order();
     }
     
+    public void viewOrder()
+    {
+        
+    }
     
     public Customer(String name, String adress, String email, String phoneNumber) {
         this.name = name;
