@@ -12,9 +12,13 @@ package ec.edu.espe.restaurant.model;
 public class Customer 
 {
     private String name;
-    private String adress;
+    private String address;
     private String email;
     private String phoneNumber;
+
+    public Customer() {
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     public Order placedOfOrder()
     { 
@@ -36,14 +40,14 @@ public class Customer
     
     public Customer(String name, String adress, String email, String phoneNumber) {
         this.name = name;
-        this.adress = adress;
+        this.address = adress;
         this.email = email;
         this.phoneNumber = phoneNumber;
     }
 
     @Override
     public String toString() {
-        return "Customer{" + "name=" + name + ", adress=" + adress + ", email=" + email + ", phoneNumber=" + phoneNumber + '}';
+        return "Customer{" + "name=" + name + ", adress=" + address + ", email=" + email + ", phoneNumber=" + phoneNumber + '}';
     }
 
 
@@ -62,17 +66,17 @@ public class Customer
     }
 
     /**
-     * @return the adress
+     * @return the address
      */
-    public String getAdress() {
-        return adress;
+    public String getAddress() {
+        return address;
     }
 
     /**
-     * @param adress the adress to set
+     * @param address the address to set
      */
-    public void setAdress(String adress) {
-        this.adress = adress;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     /**

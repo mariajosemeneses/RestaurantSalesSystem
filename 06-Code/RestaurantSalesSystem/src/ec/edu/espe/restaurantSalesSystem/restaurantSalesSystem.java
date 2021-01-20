@@ -20,14 +20,17 @@ public class restaurantSalesSystem {
         Cashier cashier = new Cashier("JAVIER");
         Cashier cashier2 = new Cashier("MARCO");
         Cashier cashier3 = new Cashier("VINICIO");
-
+        
+        
         Cashier[] cashiers;
         cashiers = new Cashier[3];
 
         Customer[] customers;
         customers = new Customer[2];
-        Customer customer = new Customer("Andres", "street 10 the December", "andres@gmail.com ", "0986124565");
+        Customer customer = new Customer();
         Customer customer2 = new Customer("Maria", "Av. Simón Bolívar ", "maria2006@gmail.com ", "0946523647");
+        System.out.println("****Customer Registration****");
+        cashier.registerCustomer(customer);
 
         String[] foods = {"Hamburguesa", "Sandwitch", "Pizza", "Chicken Rice"};
         System.out.println("food size --> " + foods.length);
@@ -54,7 +57,6 @@ public class restaurantSalesSystem {
         }
 
         for (int number : numberCustomer) {
-            number = number * 10;
             System.out.println(number);
         }
 
@@ -88,8 +90,6 @@ public class restaurantSalesSystem {
         }
         
         
-        
-        //library : GSON
         Gson gson = new Gson();
         String jsonCashier;
         String jsonCustomer;
