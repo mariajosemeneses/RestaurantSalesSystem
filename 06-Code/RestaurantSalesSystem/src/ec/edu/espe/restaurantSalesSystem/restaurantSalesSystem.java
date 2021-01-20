@@ -91,17 +91,17 @@ public class restaurantSalesSystem {
         
         //library : GSON
         Gson gson = new Gson();
-        String jsonChicken;
+        String jsonCashier;
         String jsonCustomer;
            
        //serialization
-        jsonChicken = gson.toJson(cashier);
+        jsonCashier = gson.toJson(cashier);
 
-        System.out.println("cashier  in json format -> " + jsonChicken);
+        System.out.println("cashier  in json format -> " + jsonCashier);
 
-        jsonChicken = gson.toJson(cashier2);
+        jsonCashier = gson.toJson(cashier2);
 
-        System.out.println("cashier  in json format -> " + jsonChicken);
+        System.out.println("cashier  in json format -> " + jsonCashier);
 
         //serialization
         jsonCustomer = gson.toJson(customer);
