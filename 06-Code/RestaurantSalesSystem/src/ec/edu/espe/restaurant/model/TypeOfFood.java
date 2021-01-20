@@ -14,7 +14,7 @@ import java.util.ArrayList;
 public class TypeOfFood 
 {
     private Lunch lunch;
-    private ArrayList<Snack> na= new ArrayList<>();
+    private ArrayList<Snack> snacks = new ArrayList();
     private Dessert dessert;
     private int quantity;
     private Breakfast breakfast;
@@ -27,16 +27,17 @@ public class TypeOfFood
     public TypeOfFood() {
     }
 
-    public TypeOfFood(Lunch lunch, Dessert dessert, int quantity, Breakfast breakfast) {
+    public TypeOfFood(Lunch lunch, Dessert dessert, int quantity, Breakfast breakfast, ArrayList<Snack> snacks) {
         this.lunch = lunch;
         this.dessert = dessert;
         this.quantity = quantity;
         this.breakfast = breakfast;
+        this.snacks = snacks;
     }
 
     @Override
     public String toString() {
-        return "TypeOfFood{" + "lunch=" + lunch + ", na=" + na + ", dessert=" + dessert + ", quantity=" + quantity + ", breakfast=" + breakfast + '}';
+        return "TypeOfFood{" + "lunch=" + lunch + ", snacks=" + snacks + ", dessert=" + dessert + ", quantity=" + quantity + ", breakfast=" + breakfast + '}';
     }
 
     public Lunch getLunch() {
@@ -47,12 +48,12 @@ public class TypeOfFood
         this.lunch = lunch;
     }
 
-    public ArrayList<Snack> getNa() {
-        return na;
+    public ArrayList<Snack> getSnacks() {
+        return snacks;
     }
 
-    public void setNa(ArrayList<Snack> na) {
-        this.na = na;
+    public void setSnacks(ArrayList<Snack> snacks) {
+        this.snacks = snacks;
     }
 
     public Dessert getDessert() {

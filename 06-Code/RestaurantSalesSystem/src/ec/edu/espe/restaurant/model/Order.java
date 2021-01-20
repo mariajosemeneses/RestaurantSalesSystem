@@ -15,23 +15,24 @@ public class Order
 {
     private int numberOrder;
     private Customer customer;
-    private ArrayList<Course> na= new ArrayList<>();
+    private ArrayList<Course> courses= new ArrayList();
     private float price;
     private int tableNumber;
 
     public Order() {
     }
 
-    public Order(int numberOrder, Customer customer, float price, int tableNumber) {
+    public Order(int numberOrder, Customer customer, float price, int tableNumber, ArrayList<Course> courses) {
         this.numberOrder = numberOrder;
         this.customer = customer;
         this.price = price;
         this.tableNumber = tableNumber;
+        this.courses = courses;
     }
 
     @Override
     public String toString() {
-        return "Order{" + "numberOrder=" + numberOrder + ", customer=" + customer + ", na=" + na + ", price=" + price + ", tableNumber=" + tableNumber + '}';
+        return "Order{" + "numberOrder=" + numberOrder + ", customer=" + customer + ", courses=" + courses + ", price=" + price + ", tableNumber=" + tableNumber + '}';
     }
 
     public int getNumberOrder() {
@@ -50,12 +51,12 @@ public class Order
         this.customer = customer;
     }
 
-    public ArrayList<Course> getNa() {
-        return na;
+    public ArrayList<Course> getCourses() {
+        return courses;
     }
 
-    public void setNa(ArrayList<Course> na) {
-        this.na = na;
+    public void setCourses(ArrayList<Course> courses) {
+        this.courses = courses;
     }
 
     public float getPrice() {
