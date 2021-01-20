@@ -16,8 +16,9 @@ public class Continental
     private ArrayList<Ingredient> ingredients = new ArrayList<> ();
     private float price;
 
-    public Continental(float price) {
+    public Continental(float price, ArrayList<Ingredient> ingredients) {
         this.price = price;
+        this.ingredients = ingredients;
     }
 
     @Override

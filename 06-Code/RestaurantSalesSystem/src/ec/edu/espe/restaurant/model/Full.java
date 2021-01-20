@@ -16,8 +16,9 @@ public class Full
     private ArrayList<Ingredient> ingredients = new ArrayList <>();
     private float price;
 
-    public Full(float price) {
+    public Full(float price, ArrayList<Ingredient> ingredients ) {
         this.price = price;
+        this.ingredients = ingredients;
     }
 
     @Override
