@@ -58,6 +58,7 @@ public class restaurantSalesSystem {
             System.out.println(number);
         }
 
+        
         System.out.println("customers --> " + customers[0]);
         System.out.println("customers --> " + customers[1]);
 
