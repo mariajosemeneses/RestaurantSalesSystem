@@ -37,6 +37,10 @@ public class Customer
     {
         
     }
+    public void viewMenu(Course course)
+    {
+        
+    }
     
     public Customer(String name, String adress, String email, String phoneNumber) {
         this.name = name;

@@ -56,6 +56,10 @@ public class Cashier
     {
         
     }
+    public void viewMenu(Course course)
+    {
+        
+    }
 
     /**
      * @return the name
