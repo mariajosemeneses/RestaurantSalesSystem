@@ -18,6 +18,7 @@ public class Snack
         this.name = name;
         this.price = price;
     }
+    
 
     public Snack() {
     }

@@ -20,6 +20,7 @@ public class Soda
     public Soda() {
         
     }
+    
 
     public Soda(float price, ArrayList<SodaBrand> sodabrand,ArrayList<SodaFlavor> sodaflavor) {
         this.price = price;

@@ -13,6 +13,7 @@ import java.util.ArrayList;
  */
 public class TypeOfFood 
 {
+    
     private Lunch lunch;
     private ArrayList<Snack> snacks = new ArrayList();
     private Dessert dessert;

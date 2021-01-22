@@ -5,6 +5,7 @@
  */
 package ec.edu.espe.restaurantsalessystem.model;
 
+
 /**
  *
  * @author Group3

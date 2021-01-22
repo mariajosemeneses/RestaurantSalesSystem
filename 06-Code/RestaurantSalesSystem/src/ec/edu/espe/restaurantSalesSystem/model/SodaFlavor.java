@@ -16,6 +16,7 @@ public class SodaFlavor {
     public SodaFlavor() {
     }
 
+    
     public SodaFlavor(String name) {
         this.name = name;
     }

@@ -15,6 +15,7 @@ public class Waiter {
     private int age;
     private String cellphone;
 
+    
     public Waiter(String name, String id, int age, String cellphone) {
         this.name = name;
         this.id = id;
