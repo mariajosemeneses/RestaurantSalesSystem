@@ -55,7 +55,7 @@ public class Cashier
                 PrintWriter line = new PrintWriter(write);
                 System.out.print("Enter name: ");
                 customer.setName(input.nextLine());
-                System.out.print("Enter adress: ");
+                System.out.print("Enter address: ");
                 customer.setAddress(input.nextLine());
                 System.out.print("Enter email: ");
                 customer.setEmail(input.nextLine());

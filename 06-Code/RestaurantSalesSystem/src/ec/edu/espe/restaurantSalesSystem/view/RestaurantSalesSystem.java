@@ -21,7 +21,6 @@ public class RestaurantSalesSystem {
 
     public static void main(String[] args) {
 
-        //cashier.registerCustomer1(customer);
         Cashier[] cashiers;
         cashiers = new Cashier[3];
 
@@ -33,14 +32,14 @@ public class RestaurantSalesSystem {
        int option; 
        
        while(!exit){
-           
-           System.out.println("1. Save Data");
+           System.out.println("****Restaurant Sales System****");
+           System.out.println("\n1. Register Customer");
            System.out.println("2. Find Data");          
            System.out.println("3. Exit");
            
            try{
            
-           System.out.println("Write one of the options: ");
+           System.out.println("\nEnter one of the options: ");
            option = sn.nextInt();
 
            switch(option){
