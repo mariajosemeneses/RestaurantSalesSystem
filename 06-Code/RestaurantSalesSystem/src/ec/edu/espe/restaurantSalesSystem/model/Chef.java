@@ -9,6 +9,7 @@ package ec.edu.espe.restaurantsalessystem.model;
  *
  * @author Group3
  */
+
 public class Chef {
     private String name;
     private String id;
