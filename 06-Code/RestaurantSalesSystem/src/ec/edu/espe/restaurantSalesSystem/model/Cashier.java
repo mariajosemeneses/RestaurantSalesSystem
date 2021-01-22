@@ -64,7 +64,7 @@ public class Cashier
                 customers.add(customer);
                 
 
-                line.println(getName());
+                line.println(customer.getName()+","+customer.getAddress()+","+customer.getEmail()+","+customer.getPhoneNumber());
                 line.close();
                 write.close();
 
@@ -88,7 +88,7 @@ public class Cashier
                 customers.add(customer);
                 
 
-                line.println(getName());
+                line.println(customer.getName()+","+customer.getAddress()+","+customer.getEmail()+","+customer.getPhoneNumber());line.println(getName());
                 line.close();
                 write.close();
 
