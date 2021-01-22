@@ -26,65 +26,65 @@ public class RestaurantSalesSystem {
 
         //library : GSON
         String jsonType;
-        
-       Scanner sn = new Scanner(System.in);
-       boolean exit = false;
-       int option; 
-       
-       while(!exit){
-           System.out.println("****Restaurant Sales System****");
-           System.out.println("\n1. Register Customer");
-           System.out.println("2. Find Data");          
-           System.out.println("3. Exit");
-           
-           try{
-           
-           System.out.println("\nEnter one of the options: ");
-           option = sn.nextInt();
 
-           switch(option){
-               
-               case 1:
-                   
-                   Cashier object1 = new Cashier();
-                   Customer object2 =new Customer();                     
-                   object1.registerCustomer(object2);
-                   
-                   String dataToSave   =  object1.toString();
-                   
-                   System.out.println(" ");
-                   System.out.println(" ");
-                   Data.save("Customer.csv", dataToSave);
-                   System.out.println(" ");                  
-                   break;
-                   
-               case 2:
-                   File file = new File("Customer.csv");
-                   Scanner keyboard = new Scanner(System.in);
-                   System.out.println(" ");
-                   System.out.print("Write the word to search in the file: ");
-                   String data = keyboard.nextLine();
-                   System.out.println("");
-                   Data.find(file, data);
-                   System.out.println(" ");
-                   break;
-                   
-               case 3:
-                   System.out.println("Thanks!!!");
-                   exit=true;
-                   System.out.println(" ");
-                   break;
-                       
-               default:
-                   System.out.println("Only numbers between  1 - 3");
-                   System.out.println(" ");
-                   }
+        Scanner sn = new Scanner(System.in);
+        boolean exit = false;
+        int option;
+
+        while (!exit) {
+            System.out.println("****Restaurant Sales System****");
+            System.out.println("\n1. Register Customer");
+            System.out.println("2. Find Data");
+            System.out.println("3. Exit");
+
+            try {
+
+                System.out.println("\nEnter one of the options: ");
+                option = sn.nextInt();
+
+                switch (option) {
+
+                    case 1:
+
+                        Cashier object1 = new Cashier();
+                        Customer object2 = new Customer();
+                        object1.registerCustomer(object2);
+
+                        String dataToSave = object1.toString();
+
+                        System.out.println(" ");
+                        System.out.println(" ");
+                        Data.save("Customer.csv", dataToSave);
+                        System.out.println(" ");
+                        break;
+
+                    case 2:
+                        File file = new File("Customer.csv");
+                        Scanner keyboard = new Scanner(System.in);
+                        System.out.println(" ");
+                        System.out.print("Write the word to search in the file: ");
+                        String data = keyboard.nextLine();
+                        System.out.println("");
+                        Data.find(file, data);
+                        System.out.println(" ");
+                        break;
+
+                    case 3:
+                        System.out.println("Thanks!!!");
+                        exit = true;
+                        System.out.println(" ");
+                        break;
+
+                    default:
+                        System.out.println("Only numbers between  1 - 3");
+                        System.out.println(" ");
+                }
             } catch (InputMismatchException e) {
                 System.out.println("You must insert a number!!");
                 System.out.println(" ");
                 sn.next();
-                
-           } 
-       }
+
+            }
+        }
     }
 }
