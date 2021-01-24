@@ -5,6 +5,14 @@
  */
 package ec.edu.espe.restaurantsalessystem.model;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 
 /**
  *
@@ -50,6 +58,60 @@ public class Customer
         this.phoneNumber = phoneNumber;
     }
 
+    public void registerCustomer(Customer customer) {
+
+        Scanner input = new Scanner(System.in);
+        File file = new File("Customer.csv");
+   
+
+        if (!file.exists()) {
+            try {
+                file.createNewFile();
+                FileWriter write = new FileWriter(file, true);
+                PrintWriter line = new PrintWriter(write);
+                System.out.print("Enter name: ");
+                customer.setName(input.nextLine());
+                System.out.print("Enter address: ");
+                customer.setAddress(input.nextLine());
+                System.out.print("Enter email: ");
+                customer.setEmail(input.nextLine());
+                System.out.print("Enter phone number: ");
+                customer.setPhoneNumber(input.nextLine());
+                
+
+                line.println(customer.getName()+","+customer.getAddress()+","+customer.getEmail()+","+customer.getPhoneNumber());
+                line.close();
+                write.close();
+
+            } catch (IOException ex) {
+                Logger.getLogger(Customer.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+        } else {
+            try {
+                file.createNewFile();
+                FileWriter write = new FileWriter(file, true);
+                PrintWriter line = new PrintWriter(write);
+                System.out.print("Enter name: ");
+                customer.setName(input.nextLine());
+                System.out.print("Enter adress: ");
+                customer.setAddress(input.nextLine());
+                System.out.print("Enter email: ");
+                customer.setEmail(input.nextLine());
+                System.out.print("Enter phone number: ");
+                customer.setPhoneNumber(input.nextLine());
+              
+
+                line.println(customer.getName()+","+customer.getAddress()+","+customer.getEmail()+","+customer.getPhoneNumber());
+                line.close();
+                write.close();
+
+            } catch (IOException ex) {
+                Logger.getLogger(Customer.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    }
+    
     @Override
     public String toString() {
         return "Customer{" + "name=" + name + ", address=" + address + ", email=" + email + ", phoneNumber=" + phoneNumber + '}';

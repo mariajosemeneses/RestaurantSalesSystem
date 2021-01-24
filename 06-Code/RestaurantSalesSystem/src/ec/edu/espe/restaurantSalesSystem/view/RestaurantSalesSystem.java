@@ -26,8 +26,7 @@ public class RestaurantSalesSystem {
 
     public static void main(String[] args) {
 
-        Cashier[] cashiers;
-        cashiers = new Cashier[3];
+      
 
         //library : GSON
         String jsonType;
@@ -55,12 +54,11 @@ public class RestaurantSalesSystem {
                 switch (option) {
 
                     case 1:
-
-                        Cashier cashier = new Cashier();
+                     
                         Customer customer = new Customer();
-                        cashier.registerCustomer(customer);
+                        customer.registerCustomer(customer);
 
-                        String dataToSave = cashier.toString();
+                        String dataToSave = customer.toString();
 
                         System.out.println(" ");
                         System.out.println(" ");
@@ -70,8 +68,11 @@ public class RestaurantSalesSystem {
 
                     case 2:
                         TypeOfFood food = new TypeOfFood();
-                        //cashier.registerCustomer(customer);
+                       
 
+                        
+                        
+                        
                         //String dataToSave = cashier.toString();
                         System.out.println(" ");
                         System.out.println(" ");
@@ -81,7 +82,7 @@ public class RestaurantSalesSystem {
                         break;
                     case 3:
 
-                        Cashier cashier1 = new Cashier();
+                        Cashier cashier = new Cashier();
                       
 
                         //String dataToSave = cashier.toString();
@@ -143,7 +144,7 @@ public class RestaurantSalesSystem {
                         break;
 
                     default:
-                        System.out.println("Only numbers between  1 - 4");
+                        System.out.println("Only numbers between  1 - 8");
                         System.out.println(" ");
                 }
             } catch (InputMismatchException e) {

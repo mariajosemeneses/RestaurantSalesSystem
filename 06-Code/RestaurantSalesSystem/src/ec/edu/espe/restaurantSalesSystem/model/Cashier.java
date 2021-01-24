@@ -39,76 +39,22 @@ public class Cashier
     public Cashier() {
     }
         
-    public void registerCustomer(Customer customer) {
-
-        Scanner input = new Scanner(System.in);
-        File file = new File("Customer.csv");
    
+//   // public void registerCustomer1(Customer customer)
+//   // {
+//        Scanner input = new Scanner(System.in);
+//        
+//        System.out.print("Enter name: ");
+//        customer.setName(input.nextLine());
+//        System.out.print("Enter adress: ");
+//        customer.setAddress(input.nextLine());
+//        System.out.print("Enter email: ");
+//        customer.setEmail(input.nextLine());
+//        System.out.print("Enter phone number: ");
+//        customer.setPhoneNumber(input.nextLine());
+//        customers.add(customer);
+//    }
 
-        if (!file.exists()) {
-            try {
-                file.createNewFile();
-                FileWriter write = new FileWriter(file, true);
-                PrintWriter line = new PrintWriter(write);
-                System.out.print("Enter name: ");
-                customer.setName(input.nextLine());
-                System.out.print("Enter address: ");
-                customer.setAddress(input.nextLine());
-                System.out.print("Enter email: ");
-                customer.setEmail(input.nextLine());
-                System.out.print("Enter phone number: ");
-                customer.setPhoneNumber(input.nextLine());
-                customers.add(customer);
-                
-
-                line.println(customer.getName()+","+customer.getAddress()+","+customer.getEmail()+","+customer.getPhoneNumber());
-                line.close();
-                write.close();
-
-            } catch (IOException ex) {
-                Logger.getLogger(Customer.class.getName()).log(Level.SEVERE, null, ex);
-            }
-
-        } else {
-            try {
-                file.createNewFile();
-                FileWriter write = new FileWriter(file, true);
-                PrintWriter line = new PrintWriter(write);
-                System.out.print("Enter name: ");
-                customer.setName(input.nextLine());
-                System.out.print("Enter adress: ");
-                customer.setAddress(input.nextLine());
-                System.out.print("Enter email: ");
-                customer.setEmail(input.nextLine());
-                System.out.print("Enter phone number: ");
-                customer.setPhoneNumber(input.nextLine());
-                customers.add(customer);
-                
-
-                line.println(customer.getName()+","+customer.getAddress()+","+customer.getEmail()+","+customer.getPhoneNumber());
-                line.close();
-                write.close();
-
-            } catch (IOException ex) {
-                Logger.getLogger(Customer.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        }
-    }
-    
-    public void registerCustomer1(Customer customer)
-    {
-        Scanner input = new Scanner(System.in);
-        
-        System.out.print("Enter name: ");
-        customer.setName(input.nextLine());
-        System.out.print("Enter adress: ");
-        customer.setAddress(input.nextLine());
-        System.out.print("Enter email: ");
-        customer.setEmail(input.nextLine());
-        System.out.print("Enter phone number: ");
-        customer.setPhoneNumber(input.nextLine());
-        customers.add(customer);
-    }
     public void registerOrder(Order order)
     {
         
