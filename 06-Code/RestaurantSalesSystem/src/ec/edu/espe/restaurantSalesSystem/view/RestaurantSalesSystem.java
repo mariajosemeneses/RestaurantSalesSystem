@@ -39,18 +39,18 @@ public class RestaurantSalesSystem {
 
             try {
 
-                System.out.println("\nEnter one of the options: ");
+                System.out.print("\nEnter one of the options: ");
                 option = sn.nextInt();
 
                 switch (option) {
 
                     case 1:
 
-                        Cashier object1 = new Cashier();
-                        Customer object2 = new Customer();
-                        object1.registerCustomer(object2);
+                        Cashier cashier = new Cashier();
+                        Customer customer = new Customer();
+                        cashier.registerCustomer(customer);
 
-                        String dataToSave = object1.toString();
+                        String dataToSave = cashier.toString();
 
                         System.out.println(" ");
                         System.out.println(" ");

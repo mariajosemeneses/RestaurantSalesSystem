@@ -52,7 +52,7 @@ public class Customer
 
     @Override
     public String toString() {
-        return "Customer{" + "name=" + name + ", adress=" + address + ", email=" + email + ", phoneNumber=" + phoneNumber + '}';
+        return "Customer{" + "name=" + name + ", address=" + address + ", email=" + email + ", phoneNumber=" + phoneNumber + '}';
     }
 
 
