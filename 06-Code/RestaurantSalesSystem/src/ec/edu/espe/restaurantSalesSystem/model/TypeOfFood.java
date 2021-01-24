@@ -35,7 +35,7 @@ public class TypeOfFood
     public TypeOfFood() {
     }
 
-    public TypeOfFood(Lunch lunch, Dessert dessert, int quantity, Breakfast breakfast, ArrayList<Snack> snacks) {
+    public void registerTypeOfFood(Lunch lunch, Dessert dessert, int quantity, Breakfast breakfast, ArrayList<Snack> snacks) {
         this.lunch = lunch;
         this.dessert = dessert;
         this.quantity = quantity;
@@ -54,11 +54,11 @@ public class TypeOfFood
                 FileWriter write = new FileWriter(file, true);
                 PrintWriter line = new PrintWriter(write);
                 System.out.print("Enter lunch: ");
-                TypeOfFood.setName(input.nextLine());
+                TypeOfFood.setLunch(input.nextLine());
                 System.out.print("Enter quantity: ");
-                TypeOfFood.setAddress(input.nextLine());
+                TypeOfFood.setQuantity(input.nextLine());
                 System.out.print("Enter breakfast: ");
-                TypeOfFood.setEmail(input.nextLine());
+                TypeOfFood.setBreakfast(input.nextLine());
                 
                 
                 line.close();
