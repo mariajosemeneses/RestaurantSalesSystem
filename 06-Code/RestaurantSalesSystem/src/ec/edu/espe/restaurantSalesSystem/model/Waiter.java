@@ -54,7 +54,7 @@ public class Waiter {
                 write.close();
 
             } catch (IOException ex) {
-                Logger.getLogger(TypeOfFood.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Waiter.class.getName()).log(Level.SEVERE, null, ex);
             }
 
         } else {
@@ -75,7 +75,7 @@ public class Waiter {
                 write.close();
 
             } catch (IOException ex) {
-                Logger.getLogger(TypeOfFood.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Waiter.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
     }

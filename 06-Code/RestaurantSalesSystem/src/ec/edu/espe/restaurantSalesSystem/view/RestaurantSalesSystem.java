@@ -89,7 +89,7 @@ public class RestaurantSalesSystem {
                         }
                         System.out.println(" ");
                         System.out.println(" ");
-                        Data.save("TypeOfFood.json", jsonObject2);
+                        Data.save("Waiter.json", jsonObject2);
                         System.out.println(" ");
                         break;
                         

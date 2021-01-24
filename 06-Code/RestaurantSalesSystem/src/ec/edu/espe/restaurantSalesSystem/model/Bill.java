@@ -77,7 +77,7 @@ public void registerBill(Bill bill) {
                 write.close();
 
             } catch (IOException ex) {
-                Logger.getLogger(TypeOfFood.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Bill.class.getName()).log(Level.SEVERE, null, ex);
             }
 
         } else {
@@ -102,7 +102,7 @@ public void registerBill(Bill bill) {
                 write.close();
 
             } catch (IOException ex) {
-                Logger.getLogger(TypeOfFood.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Bill.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
     }
