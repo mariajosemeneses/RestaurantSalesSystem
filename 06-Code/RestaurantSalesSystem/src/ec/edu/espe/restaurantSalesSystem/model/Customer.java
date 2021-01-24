@@ -174,9 +174,6 @@ public class Customer
         this.phoneNumber = phoneNumber;
     }
 
-    void setCustomers(String nextLine) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
     
 }
     
