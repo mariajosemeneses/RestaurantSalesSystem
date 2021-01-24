@@ -39,8 +39,8 @@ public class Cashier
     public Cashier() {
     }
         
-   
-
+    
+    
 
     public void registerOrder(Order order)
     {
