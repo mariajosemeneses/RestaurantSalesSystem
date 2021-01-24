@@ -144,13 +144,22 @@ public class RestaurantSalesSystem {
                     case 7:
                         Ingredient ingredient = new Ingredient();
 
-                        // String dataToSave = cashier.toString();
+                        ingredient.registerIngredient(ingredient);                     
+                        File file1 =new File("Ingredient.json");                        
+             
+                        String jsonObject1 = gson.toJson(ingredient);
+                        try (BufferedWriter bw = new BufferedWriter(new FileWriter(file1.getAbsoluteFile(), true))) {
+                            bw.write(jsonObject1);
+                            bw.write('\n');
+                        } catch (IOException ex) {
+                            Logger.getLogger(Ingredient.class.getName()).log(Level.SEVERE, null, ex);
+                        }
                         System.out.println(" ");
                         System.out.println(" ");
-                        //Data.save("Ingredient.csv", dataToSave);
+                        Data.save("Ingredient.json", jsonObject1);
                         System.out.println(" ");
-
                         break;
+              
 
                     case 8:
                         System.out.println(" Thanks for trusting us!!!");
