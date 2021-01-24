@@ -5,6 +5,14 @@
  */
 package ec.edu.espe.restaurantsalessystem.model;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author Group3
@@ -26,7 +34,55 @@ public class Chef {
 
     public Chef() {
     }
+    
+    public void registerChef(Chef chef) {
 
+        Scanner input = new Scanner(System.in);
+        File file = new File("Chef.json");
+
+        if (!file.exists()) {
+            try {
+                file.createNewFile();
+                FileWriter write = new FileWriter(file, true);
+                PrintWriter line = new PrintWriter(write);
+                System.out.print("Enter name: ");
+                chef.setName(input.nextLine());
+                System.out.print("Enter ID: ");
+                chef.setId(input.nextLine());
+                System.out.print("Enter age: ");
+                chef.setAge(input.nextInt());
+                input.nextLine();
+                System.out.print("Enter phone number: ");
+                chef.setCellphone(input.nextLine());
+                line.close();
+                write.close();
+
+            } catch (IOException ex) {
+                Logger.getLogger(TypeOfFood.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+        } else {
+            try {
+                file.createNewFile();
+                FileWriter write = new FileWriter(file, true);
+                PrintWriter line = new PrintWriter(write);
+                System.out.print("Enter name: ");
+                chef.setName(input.nextLine());
+                System.out.print("Enter ID: ");
+                chef.setId(input.nextLine());
+                System.out.print("Enter aget: ");
+                chef.setAge(input.nextInt());
+                input.nextLine();
+                System.out.print("Enter phone number: ");
+                chef.setCellphone(input.nextLine());
+                line.close();
+                write.close();
+
+            } catch (IOException ex) {
+                Logger.getLogger(TypeOfFood.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    }
     
     @Override
     public String toString() {

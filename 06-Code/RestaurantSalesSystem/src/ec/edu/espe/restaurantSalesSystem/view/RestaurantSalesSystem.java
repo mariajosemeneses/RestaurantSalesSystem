@@ -1,6 +1,6 @@
 /*
  * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
+ * To change this template file4, choose Tools | Templates
  * and open the template in the editor.
  */
 package ec.edu.espe.restaurantsalessystem.view;
@@ -31,10 +31,8 @@ public class RestaurantSalesSystem {
 
     public static void main(String[] args) throws IOException {
 
-        //library : GSON
-        String jsonType;
         Gson gson = new Gson();
-
+        
         Scanner sn = new Scanner(System.in);
         boolean exit = false;
         int option;
@@ -100,19 +98,25 @@ public class RestaurantSalesSystem {
                         //String dataToSave = cashier.toString();
                         System.out.println(" ");
                         System.out.println(" ");
-                        Data.save("Cashier.csv", dataToSave);
+                        //Data.save("Cashier.csv", dataToSave);
                         System.out.println(" ");
                         break;
 
                     case 4:
                         Chef chef = new Chef();
-
-                        //String dataToSave = cashier.toString();
+                        chef.registerChef(chef);                     
+                        File file4 =new File("Chef.json");                        
+                        String jsonChef = gson.toJson(chef);
+                        try (BufferedWriter bw = new BufferedWriter(new FileWriter(file4.getAbsoluteFile(), true))) {
+                            bw.write(jsonChef);
+                            bw.write('\n');
+                        } catch (IOException ex) {
+                            Logger.getLogger(Customer.class.getName()).log(Level.SEVERE, null, ex);
+                        }
                         System.out.println(" ");
                         System.out.println(" ");
-                        Data.save("Chef.csv", dataToSave);
+                        Data.save("Chef.json", jsonChef);
                         System.out.println(" ");
-
                         break;
 
                     case 5:
@@ -132,7 +136,7 @@ public class RestaurantSalesSystem {
                         // String dataToSave = cashier.toString();
                         System.out.println(" ");
                         System.out.println(" ");
-                        Data.save("Soda.csv", dataToSave);
+                        //Data.save("Soda.csv", dataToSave);
                         System.out.println(" ");
 
                         break;
@@ -143,7 +147,7 @@ public class RestaurantSalesSystem {
                         // String dataToSave = cashier.toString();
                         System.out.println(" ");
                         System.out.println(" ");
-                        Data.save("Ingredient.csv", dataToSave);
+                        //Data.save("Ingredient.csv", dataToSave);
                         System.out.println(" ");
 
                         break;
