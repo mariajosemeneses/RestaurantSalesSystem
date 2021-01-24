@@ -39,7 +39,6 @@ public class Cashier {
     public Cashier() {
     }
 
-
     public void addCashier() {
         Cashier cashier = new Cashier();
 
@@ -57,12 +56,12 @@ public class Cashier {
 
                 System.out.print("Enter name the Cashier: ");
                 cashier.setName(input.nextLine());
-                System.out.print("\n Date the customer: ");
-                customer.registerCustomer(customer);
+                System.out.print("Enter customer: ");
+                customer.setCustomers(input.nextLine());
                 customers.add(customer);
                 System.out.print("Enter course: ");
-               // course.setCourses(input.nextLine());
-                //courses.add(course);
+                course.setCourses(input.nextLine());
+                courses.add(course);
 
                 line.close();
                 write.close();
@@ -80,11 +79,11 @@ public class Cashier {
                 System.out.print("Enter name the Cashier: ");
                 cashier.setName(input.nextLine());
                 System.out.print("Enter customer: ");
-                customer.registerCustomer(customer);
+                customer.setCustomers(input.nextLine());
                 customers.add(customer);
                 System.out.print("Enter course: ");
-                //course.setCourses(input.nextLine());
-                //courses.add(course);
+                course.setCourses(input.nextLine());
+                courses.add(course);
                 
 
                 line.close();
@@ -98,7 +97,6 @@ public class Cashier {
 
     public void registerOrder(Order order) {
 
- 
     }
 
     public void generate(Bill bill) {
