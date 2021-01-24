@@ -43,11 +43,11 @@ public void registerIngredient(Ingredient ingredient) {
                 file.createNewFile();
                 FileWriter write = new FileWriter(file, true);
                 PrintWriter line = new PrintWriter(write);
-                System.out.print("Enter name: ");
+                System.out.print("Enter name ingredient: ");
                 ingredient.setName(input.nextLine());
-                System.out.print("Enter quantity: ");
+                System.out.print("Enter quantity the ingredient: ");
                 ingredient.setQuantity(input.nextInt());
-                System.out.print("Enter size: ");
+                System.out.print("Enter size : ");
                 ingredient.setSize(input.nextInt());
                 
 
@@ -63,11 +63,11 @@ public void registerIngredient(Ingredient ingredient) {
                 file.createNewFile();
                 FileWriter write = new FileWriter(file, true);
                 PrintWriter line = new PrintWriter(write);
-                System.out.print("Enter name: ");
+                 System.out.print("Enter name ingredient: ");
                 ingredient.setName(input.nextLine());
-                System.out.print("Enter quantity: ");
+                System.out.print("Enter quantity the ingredient: ");
                 ingredient.setQuantity(input.nextInt());
-                System.out.print("Enter size: ");
+                System.out.print("Enter size : ");
                 ingredient.setSize(input.nextInt());
               
 
