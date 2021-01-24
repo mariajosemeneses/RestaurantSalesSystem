@@ -5,7 +5,14 @@
  */
 package ec.edu.espe.restaurantsalessystem.model;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -35,7 +42,54 @@ public class TypeOfFood
         this.breakfast = breakfast;
         this.snacks = snacks;
     }
+    public void TypeOfFood(TypeOfFood typeOfFood) {
 
+        Scanner input = new Scanner(System.in);
+        File file = new File("TypeOfFood.json");
+   
+
+        if (!file.exists()) {
+            try {
+                file.createNewFile();
+                FileWriter write = new FileWriter(file, true);
+                PrintWriter line = new PrintWriter(write);
+                System.out.print("Enter lunch: ");
+                TypeOfFood.setName(input.nextLine());
+                System.out.print("Enter quantity: ");
+                TypeOfFood.setAddress(input.nextLine());
+                System.out.print("Enter breakfast: ");
+                TypeOfFood.setEmail(input.nextLine());
+                
+                
+                line.close();
+                write.close();
+
+            } catch (IOException ex) {
+                Logger.getLogger(TypeOfFood.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+        } else {
+            try {
+                file.createNewFile();
+                FileWriter write = new FileWriter(file, true);
+                PrintWriter line = new PrintWriter(write);
+                System.out.print("Enter lunch: ");
+                TypeOfFood.setLunch(input.nextLine());
+                System.out.print("Enter quantity: ");
+                TypeOfFood.setQuantity(input.nextLine());
+                System.out.print("Enter breakfast: ");
+                TypeOfFood.setBreakfast(input.nextLine());
+                
+              
+
+                line.close();
+                write.close();
+
+            } catch (IOException ex) {
+                Logger.getLogger(TypeOfFood.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    }
     @Override
     public String toString() {
         return "TypeOfFood{" + "lunch=" + lunch + ", snacks=" + snacks + ", dessert=" + dessert + ", quantity=" + quantity + ", breakfast=" + breakfast + '}';

@@ -76,14 +76,21 @@ public class RestaurantSalesSystem {
                         break;
 
                     case 2:
-                        TypeOfFood food = new TypeOfFood();
-
-                        
+                       TypeOfFood typeOfFood = new TypeOfFood();
+                        typeOfFood.registerCustomer(typeOfFood);                     
+                        File file =new File("TypeOfFood.json");                        
+                        Gson gson = new Gson();
+                        String jsonObject = gson.toJson(typeOfFood);
+                        try (BufferedWriter bw = new BufferedWriter(new FileWriter(file.getAbsoluteFile(), true))) {
+                            bw.write(jsonObject);
+                            bw.write('\n');
+                        } catch (IOException ex) {
+                            Logger.getLogger(TypeOfFood.class.getName()).log(Level.SEVERE, null, ex);
+                        }
                         System.out.println(" ");
                         System.out.println(" ");
-                        //Data.save("TypeOfFood.csv", jsonObject);
+                        Data.save("TypeOfFood.json", jsonObject);
                         System.out.println(" ");
-
                         break;
                     case 3:
 
