@@ -19,12 +19,12 @@ import java.util.logging.Logger;
  *
  * @author Group3
  */
-public class Cashier 
-{
+public class Cashier {
+
     private String name;
     private ArrayList<Customer> customers = new ArrayList();
     private ArrayList<Course> courses = new ArrayList();
-    
+
     public Cashier(String name, ArrayList<Customer> customers, ArrayList<Course> courses) {
         this.name = name;
         this.customers = customers;
@@ -38,21 +38,73 @@ public class Cashier
 
     public Cashier() {
     }
-        
-   
 
+    public void addCashier() {
+        Cashier cashier = new Cashier();
 
-    public void registerOrder(Order order)
-    {
-        
+        Customer customer = new Customer();
+        Course course = new Course();
+
+        Scanner input = new Scanner(System.in);
+        File file = new File("Cashier.json");
+
+        if (!file.exists()) {
+            try {
+                file.createNewFile();
+                FileWriter write = new FileWriter(file, true);
+                PrintWriter line = new PrintWriter(write);
+
+                System.out.print("Enter name the Cashier: ");
+                cashier.setName(input.nextLine());
+                System.out.print("Enter customer: ");
+                customer.setCustomers(input.nextLine());
+                customers.add(customer);
+                System.out.print("Enter course: ");
+                course.setCourses(input.nextLine());
+                courses.add(course);
+
+                line.close();
+                write.close();
+
+            } catch (IOException ex) {
+                Logger.getLogger(Soda.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+        } else {
+            try {
+                file.createNewFile();
+                FileWriter write = new FileWriter(file, true);
+                PrintWriter line = new PrintWriter(write);
+
+                System.out.print("Enter name the Cashier: ");
+                cashier.setName(input.nextLine());
+                System.out.print("Enter customer: ");
+                customer.setCustomers(input.nextLine());
+                customers.add(customer);
+                System.out.print("Enter course: ");
+                course.setCourses(input.nextLine());
+                courses.add(course);
+                
+
+                line.close();
+                write.close();
+
+            } catch (IOException ex) {
+                Logger.getLogger(Soda.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
     }
-    public void generate(Bill bill)
-    {
-        
+
+    public void registerOrder(Order order) {
+
     }
-    public void viewMenu(Course course)
-    {
-        
+
+    public void generate(Bill bill) {
+
+    }
+
+    public void viewMenu(Course course) {
+
     }
 
     /**

@@ -22,7 +22,7 @@ public class Soda {
 
     private ArrayList<SodaBrand> sodabrands = new ArrayList();
     private ArrayList<SodaFlavor> sodaflavors = new ArrayList();
-    private float price;
+    private float price = 0;
 
     public Soda() {
 
@@ -41,9 +41,10 @@ public class Soda {
 
     public void add() {
         Soda soda = new Soda();
+        
         SodaBrand sodaBrand = new SodaBrand();
         SodaFlavor sodaFlavor = new SodaFlavor();
-        
+
         Scanner input = new Scanner(System.in);
         File file = new File("Soda.json");
 
@@ -81,7 +82,7 @@ public class Soda {
                 sodaflavors.add(sodaFlavor);
                 System.out.print("Enter price: ");
                 soda.setPrice(input.nextFloat());
-
+                
                 line.close();
                 write.close();
 

@@ -46,7 +46,7 @@ public class RestaurantSalesSystem {
             System.out.println("  3. Register Cashier");
             System.out.println("  4. Register Chef");
             System.out.println("  5. Register Bill");
-            System.out.println("  6. Register ");
+            System.out.println("  6. Register Soda");
             System.out.println("  7. Register Ingredient");
             System.out.println("  8. Exit");
 
@@ -95,14 +95,20 @@ public class RestaurantSalesSystem {
                         
                     case 3:
 
-                        Cashier cashier = new Cashier();
-
-                        //String dataToSave = cashier.toString();
+                       Cashier cashier = new Cashier();
+                        cashier.addCashier();                     
+                        File file3 =new File("cashier.json");
+                        String jsonCashier = gson.toJson(cashier);
+                        try (BufferedWriter bw = new BufferedWriter(new FileWriter(file3.getAbsoluteFile(), true))) {
+                            bw.write(jsonCashier);
+                            bw.write('\n');
+                        } catch (IOException ex) {
+                            Logger.getLogger(Cashier.class.getName()).log(Level.SEVERE, null, ex);
+                        }
                         System.out.println(" ");
                         System.out.println(" ");
-                        //Data.save("Cashier.csv", dataToSave);
+                        Data.save("Cashier.json", jsonCashier);
                         System.out.println(" ");
-                        break;
 
                     case 4:
                         Chef chef = new Chef();
