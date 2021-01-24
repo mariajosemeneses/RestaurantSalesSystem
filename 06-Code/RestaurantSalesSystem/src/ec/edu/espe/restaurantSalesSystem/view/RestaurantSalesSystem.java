@@ -45,7 +45,7 @@ public class RestaurantSalesSystem {
             System.out.println("  2. Register Waiter");
             System.out.println("  3. Register Cashier");
             System.out.println("  4. Register Chef");
-            System.out.println("  5. Register Juice");
+            System.out.println("  5. Register Bill");
             System.out.println("  6. Register ");
             System.out.println("  7. Register Ingredient");
             System.out.println("  8. Exit");
