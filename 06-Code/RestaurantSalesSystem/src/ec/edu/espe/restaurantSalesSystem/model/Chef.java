@@ -58,7 +58,7 @@ public class Chef {
                 write.close();
 
             } catch (IOException ex) {
-                Logger.getLogger(TypeOfFood.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Chef.class.getName()).log(Level.SEVERE, null, ex);
             }
 
         } else {
@@ -79,7 +79,7 @@ public class Chef {
                 write.close();
 
             } catch (IOException ex) {
-                Logger.getLogger(TypeOfFood.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Chef.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
     }

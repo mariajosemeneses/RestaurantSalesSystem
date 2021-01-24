@@ -5,6 +5,14 @@
  */
 package ec.edu.espe.restaurantsalessystem.model;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author Group3
@@ -21,6 +29,59 @@ public class Waiter {
         this.id = id;
         this.age = age;
         this.cellphone = cellphone;
+    }
+
+     public void registerWaiter(Waiter waiter) {
+
+        Scanner input = new Scanner(System.in);
+        File file = new File("Waiter.json");
+
+        if (!file.exists()) {
+            try {
+                file.createNewFile();
+                FileWriter write = new FileWriter(file, true);
+                PrintWriter line = new PrintWriter(write);
+                System.out.print("Enter name the waiter: ");
+                waiter.setName(input.nextLine());
+                System.out.print("Enter ID: ");
+                waiter.setId(input.nextLine());
+                System.out.print("Enter age: ");
+                waiter.setAge(input.nextInt());
+                input.nextLine();
+                System.out.print("Enter phone number: ");
+                waiter.setCellphone(input.nextLine());
+                line.close();
+                write.close();
+
+            } catch (IOException ex) {
+                Logger.getLogger(Waiter.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+        } else {
+            try {
+                file.createNewFile();
+                FileWriter write = new FileWriter(file, true);
+                PrintWriter line = new PrintWriter(write);
+                System.out.print("Enter name the waiter : ");
+                waiter.setName(input.nextLine());
+                System.out.print("Enter ID: ");
+                waiter.setId(input.nextLine());
+                System.out.print("Enter aget: ");
+                waiter.setAge(input.nextInt());
+                input.nextLine();
+                System.out.print("Enter phone number: ");
+                waiter.setCellphone(input.nextLine());
+                line.close();
+                write.close();
+
+            } catch (IOException ex) {
+                Logger.getLogger(Waiter.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    }
+   
+    
+    public Waiter() {
     }
 
     @Override

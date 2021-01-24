@@ -7,6 +7,7 @@ package ec.edu.espe.restaurantsalessystem.view;
 
 import com.google.gson.Gson;
 import ec.edu.espe.filemanager.utils.Data;
+import ec.edu.espe.restaurantsalessystem.model.Bill;
 import ec.edu.espe.restaurantsalessystem.model.Cashier;
 import ec.edu.espe.restaurantsalessystem.model.Chef;
 import ec.edu.espe.restaurantsalessystem.model.Customer;
@@ -14,6 +15,7 @@ import ec.edu.espe.restaurantsalessystem.model.Ingredient;
 import ec.edu.espe.restaurantsalessystem.model.Juice;
 import ec.edu.espe.restaurantsalessystem.model.Soda;
 import ec.edu.espe.restaurantsalessystem.model.TypeOfFood;
+import ec.edu.espe.restaurantsalessystem.model.Waiter;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -40,11 +42,11 @@ public class RestaurantSalesSystem {
         while (!exit) {
             System.out.println("****Restaurant Sales System****");
             System.out.println("\n  1. Register Customer");
-            System.out.println("  2. Register Food");
+            System.out.println("  2. Register Waiter");
             System.out.println("  3. Register Cashier");
             System.out.println("  4. Register Chef");
-            System.out.println("  5. Register Juice");
-            System.out.println("  6. Register Soda");
+            System.out.println("  5. Register Bill");
+            System.out.println("  6. Register ");
             System.out.println("  7. Register Ingredient");
             System.out.println("  8. Exit");
 
@@ -74,20 +76,20 @@ public class RestaurantSalesSystem {
                         break;
 
                     case 2:
-                       TypeOfFood typeOfFood = new TypeOfFood();
-                        typeOfFood.registerTypeOfFood(typeOfFood);                     
-                        File file1 =new File("TypeOfFood.json");                        
+                       Waiter waiter = new Waiter();
+                        waiter.registerWaiter(waiter);                     
+                        File file2 =new File("Waiter.json");                        
              
-                        String jsonObject1 = gson.toJson(typeOfFood);
-                        try (BufferedWriter bw = new BufferedWriter(new FileWriter(file1.getAbsoluteFile(), true))) {
-                            bw.write(jsonObject1);
+                        String jsonObject2 = gson.toJson(waiter);
+                        try (BufferedWriter bw = new BufferedWriter(new FileWriter(file2.getAbsoluteFile(), true))) {
+                            bw.write(jsonObject2);
                             bw.write('\n');
                         } catch (IOException ex) {
                             Logger.getLogger(TypeOfFood.class.getName()).log(Level.SEVERE, null, ex);
                         }
                         System.out.println(" ");
                         System.out.println(" ");
-                        Data.save("TypeOfFood.json", jsonObject1);
+                        Data.save("Waiter.json", jsonObject2);
                         System.out.println(" ");
                         break;
                         
@@ -111,7 +113,7 @@ public class RestaurantSalesSystem {
                             bw.write(jsonChef);
                             bw.write('\n');
                         } catch (IOException ex) {
-                            Logger.getLogger(Customer.class.getName()).log(Level.SEVERE, null, ex);
+                            Logger.getLogger(Chef.class.getName()).log(Level.SEVERE, null, ex);
                         }
                         System.out.println(" ");
                         System.out.println(" ");
@@ -120,14 +122,20 @@ public class RestaurantSalesSystem {
                         break;
 
                     case 5:
-                        Juice juice = new Juice();
-
-                        //String dataToSave = cashier.toString();
+                        Bill bill = new Bill();
+                        bill.registerBill(bill);                     
+                        File file5 =new File("Bill.json");                        
+                        String jsonBill = gson.toJson(bill);
+                        try (BufferedWriter bw = new BufferedWriter(new FileWriter(file5.getAbsoluteFile(), true))) {
+                            bw.write(jsonBill);
+                            bw.write('\n');
+                        } catch (IOException ex) {
+                            Logger.getLogger(Bill.class.getName()).log(Level.SEVERE, null, ex);
+                        }
                         System.out.println(" ");
                         System.out.println(" ");
-                        Data.save("Juice.csv", dataToSave);
+                        Data.save("Bill.json", jsonBill);
                         System.out.println(" ");
-
                         break;
 
                     case 6:
@@ -151,18 +159,18 @@ public class RestaurantSalesSystem {
                         Ingredient ingredient = new Ingredient();
 
                         ingredient.registerIngredient(ingredient);                     
-                        File file1 =new File("Ingredient.json");                        
+                        File file7 =new File("Ingredient.json");                        
              
-                        String jsonObject1 = gson.toJson(ingredient);
-                        try (BufferedWriter bw = new BufferedWriter(new FileWriter(file1.getAbsoluteFile(), true))) {
-                            bw.write(jsonObject1);
+                        String jsonObject7 = gson.toJson(ingredient);
+                        try (BufferedWriter bw = new BufferedWriter(new FileWriter(file7.getAbsoluteFile(), true))) {
+                            bw.write(jsonObject7);
                             bw.write('\n');
                         } catch (IOException ex) {
                             Logger.getLogger(Ingredient.class.getName()).log(Level.SEVERE, null, ex);
                         }
                         System.out.println(" ");
                         System.out.println(" ");
-                        Data.save("Ingredient.json", jsonObject1);
+                        Data.save("Ingredient.json", jsonObject7);
                         System.out.println(" ");
                         break;
               
