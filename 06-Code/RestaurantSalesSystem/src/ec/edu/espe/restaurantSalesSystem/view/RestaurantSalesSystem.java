@@ -139,14 +139,20 @@ public class RestaurantSalesSystem {
                         break;
 
                     case 6:
-                        Soda sado = new Soda();
-
-                        // String dataToSave = cashier.toString();
+                        Soda soda = new Soda();
+                        soda.add();                     
+                        File file6 =new File("Soda.json");
+                        String jsonSoda = gson.toJson(soda);
+                        try (BufferedWriter bw = new BufferedWriter(new FileWriter(file6.getAbsoluteFile(), true))) {
+                            bw.write(jsonSoda);
+                            bw.write('\n');
+                        } catch (IOException ex) {
+                            Logger.getLogger(Soda.class.getName()).log(Level.SEVERE, null, ex);
+                        }
                         System.out.println(" ");
                         System.out.println(" ");
-                        //Data.save("Soda.csv", dataToSave);
+                        Data.save("Soda.json", jsonSoda);
                         System.out.println(" ");
-
                         break;
 
                     case 7:
