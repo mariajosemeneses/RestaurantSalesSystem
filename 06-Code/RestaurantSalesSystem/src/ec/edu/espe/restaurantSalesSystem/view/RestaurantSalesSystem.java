@@ -7,6 +7,7 @@ package ec.edu.espe.restaurantsalessystem.view;
 
 import com.google.gson.Gson;
 import ec.edu.espe.filemanager.utils.Data;
+import ec.edu.espe.restaurantsalessystem.model.Bill;
 import ec.edu.espe.restaurantsalessystem.model.Cashier;
 import ec.edu.espe.restaurantsalessystem.model.Chef;
 import ec.edu.espe.restaurantsalessystem.model.Customer;
@@ -112,7 +113,7 @@ public class RestaurantSalesSystem {
                             bw.write(jsonChef);
                             bw.write('\n');
                         } catch (IOException ex) {
-                            Logger.getLogger(Customer.class.getName()).log(Level.SEVERE, null, ex);
+                            Logger.getLogger(Chef.class.getName()).log(Level.SEVERE, null, ex);
                         }
                         System.out.println(" ");
                         System.out.println(" ");
@@ -121,14 +122,20 @@ public class RestaurantSalesSystem {
                         break;
 
                     case 5:
-                        Juice juice = new Juice();
-
-                        //String dataToSave = cashier.toString();
+                        Bill bill = new Bill();
+                        bill.registerBill(bill);                     
+                        File file5 =new File("Bill.json");                        
+                        String jsonBill = gson.toJson(bill);
+                        try (BufferedWriter bw = new BufferedWriter(new FileWriter(file5.getAbsoluteFile(), true))) {
+                            bw.write(jsonBill);
+                            bw.write('\n');
+                        } catch (IOException ex) {
+                            Logger.getLogger(Bill.class.getName()).log(Level.SEVERE, null, ex);
+                        }
                         System.out.println(" ");
                         System.out.println(" ");
-                        Data.save("Juice.csv", dataToSave);
+                        Data.save("Bill.json", jsonBill);
                         System.out.println(" ");
-
                         break;
 
                     case 6:

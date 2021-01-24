@@ -27,6 +27,9 @@ public class Bill
     private String cellPhone;
     private String description;
     private String direction;
+
+    public Bill() {
+    }
     
   
     public void checkIn()
