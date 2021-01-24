@@ -56,12 +56,12 @@ public class Cashier {
 
                 System.out.print("Enter name the Cashier: ");
                 cashier.setName(input.nextLine());
-                System.out.print("Enter customer: ");
-                customer.setCustomers(input.nextLine());
+                System.out.print("\nEnter information the Customer: \n");
+                customer.registerCustomer(customer);
                 customers.add(customer);
                 System.out.print("Enter course: ");
-                course.setCourses(input.nextLine());
-                courses.add(course);
+                //course.setCourses(input.nextLine());
+                //courses.add(course);
 
                 line.close();
                 write.close();
@@ -76,15 +76,14 @@ public class Cashier {
                 FileWriter write = new FileWriter(file, true);
                 PrintWriter line = new PrintWriter(write);
 
-                System.out.print("Enter name the Cashier: ");
+                 System.out.print("Enter name the Cashier: ");
                 cashier.setName(input.nextLine());
-                System.out.print("Enter customer: ");
-                customer.setCustomers(input.nextLine());
+                System.out.print("\nEnter information the Customer: \n");
+                customer.registerCustomer(customer);
                 customers.add(customer);
                 System.out.print("Enter course: ");
-                course.setCourses(input.nextLine());
-                courses.add(course);
-                
+                //course.setCourses(input.nextLine());
+                //courses.add(course);
 
                 line.close();
                 write.close();
