@@ -38,6 +38,7 @@ public class Cashier {
 
     public Cashier() {
     }
+<<<<<<< HEAD
 
     public void addCashier() {
         Cashier cashier = new Cashier();
@@ -96,6 +97,11 @@ public class Cashier {
     }
 
     public void registerOrder(Order order) {
+=======
+        
+    
+    
+>>>>>>> 80e365ef9c1bf73ec81508912bbe751685a62045
 
     }
 
