@@ -5,48 +5,99 @@
  */
 package ec.edu.espe.restaurantsalessystem.model;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
  * @author Group 3
  */
-public class Soda 
-{
-    private float price;
-    private ArrayList<SodaBrand> sodabrand= new ArrayList<>();
-    private ArrayList<SodaFlavor> sodaflavor= new ArrayList<>();
+public class Soda {
+
+    private ArrayList<SodaBrand> sodabrands = new ArrayList();
+    private ArrayList<SodaFlavor> sodaflavors = new ArrayList();
+    private float price = 0;
 
     public Soda() {
-        
-    }
-    
 
-    public Soda(float price, ArrayList<SodaBrand> sodabrand,ArrayList<SodaFlavor> sodaflavor) {
+    }
+
+    public Soda(ArrayList<SodaBrand> sodabrands, ArrayList<SodaFlavor> sodaflavors, float price) {
+        this.sodabrands = sodabrands;
+        this.sodaflavors = sodaflavors;
         this.price = price;
-        this.sodabrand = sodabrand;
-        this.sodaflavor = sodaflavor;
     }
 
     @Override
     public String toString() {
-        return "Soda{" + "price=" + getPrice() + ", sodabrand=" + getSodabrand() + ", sodaflavor=" + getSodaflavor() + '}';
+        return "Soda{" + "sodabrands=" + sodabrands + ", sodaflavors=" + sodaflavors + ", price=" + price + '}';
     }
 
-    
-    
-    
-    public void add()
-    {
+    public void add() {
+        Soda soda = new Soda();
         
+        SodaBrand sodaBrand = new SodaBrand();
+        SodaFlavor sodaFlavor = new SodaFlavor();
+
+        Scanner input = new Scanner(System.in);
+        File file = new File("Soda.json");
+
+        if (!file.exists()) {
+            try {
+                file.createNewFile();
+                FileWriter write = new FileWriter(file, true);
+                PrintWriter line = new PrintWriter(write);
+                System.out.print("Enter Soda Brand: ");
+                sodaBrand.setName(input.nextLine());
+                sodabrands.add(sodaBrand);
+                System.out.print("Enter Soda Flavor: ");
+                sodaFlavor.setName(input.nextLine());
+                sodaflavors.add(sodaFlavor);
+                System.out.print("Enter price: ");
+                soda.setPrice(input.nextFloat());
+
+                line.close();
+                write.close();
+
+            } catch (IOException ex) {
+                Logger.getLogger(Soda.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+        } else {
+            try {
+                file.createNewFile();
+                FileWriter write = new FileWriter(file, true);
+                PrintWriter line = new PrintWriter(write);
+                System.out.print("Enter Soda Brand: ");
+                sodaBrand.setName(input.nextLine());
+                sodabrands.add(sodaBrand);
+                System.out.print("Enter Soda Flavor: ");
+                sodaFlavor.setName(input.nextLine());
+                sodaflavors.add(sodaFlavor);
+                System.out.print("Enter price: ");
+                soda.setPrice(input.nextFloat());
+                
+                line.close();
+                write.close();
+
+            } catch (IOException ex) {
+                Logger.getLogger(Soda.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
     }
-    public void delete()
-    {
-        
+
+    public void delete() {
+
     }
-    public void modify()
-    {
-        
+
+    public void modify() {
+
     }
 
     /**
@@ -67,30 +118,28 @@ public class Soda
      * @return the sodabrand
      */
     public ArrayList<SodaBrand> getSodabrand() {
-        return sodabrand;
+        return sodabrands;
     }
 
     /**
-     * @param sodabrand the sodabrand to set
+     * @param sodabrands the sodabrand to set
      */
-    public void setSodabrand(ArrayList<SodaBrand> sodabrand) {
-        this.sodabrand = sodabrand;
+    public void setSodabrand(ArrayList<SodaBrand> sodabrands) {
+        this.sodabrands = sodabrands;
     }
 
     /**
      * @return the sodaflavor
      */
     public ArrayList<SodaFlavor> getSodaflavor() {
-        return sodaflavor;
+        return sodaflavors;
     }
 
     /**
-     * @param sodaflavor the sodaflavor to set
+     * @param sodaflavors the sodaflavor to set
      */
-    public void setSodaflavor(ArrayList<SodaFlavor> sodaflavor) {
-        this.sodaflavor = sodaflavor;
+    public void setSodaflavor(ArrayList<SodaFlavor> sodaflavors) {
+        this.sodaflavors = sodaflavors;
     }
 
-    
-    
 }

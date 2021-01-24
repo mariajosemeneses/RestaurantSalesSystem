@@ -12,12 +12,12 @@ package ec.edu.espe.restaurantsalessystem.model;
 public class SodaBrand 
 {
     private String name;
- 
 
-    
-    public SodaBrand(String name, int sodaSize, String sodaFlavor) {
-        this.name = name;
-   
+    public SodaBrand() {
+    }
+ 
+    public SodaBrand(String name) {
+        this.name = name;  
     }
     
 
