@@ -5,6 +5,14 @@
  */
 package ec.edu.espe.restaurantsalessystem.model;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 
 /**
  *
@@ -24,7 +32,53 @@ public class Ingredient {
         this.quantity = quantity;
         this.size = size;
     }
+public void registerIngredient(Ingredient ingredient) {
 
+        Scanner input = new Scanner(System.in);
+        File file = new File("Ingredient.json");
+   
+
+        if (!file.exists()) {
+            try {
+                file.createNewFile();
+                FileWriter write = new FileWriter(file, true);
+                PrintWriter line = new PrintWriter(write);
+                System.out.print("Enter name: ");
+                Ingredient.setName(input.nextLine());
+                System.out.print("Enter quantity: ");
+                Ingredient.setQuantity(input.nextLine());
+                System.out.print("Enter size: ");
+                Ingredient.setSize(input.nextLine());
+                
+
+                line.close();
+                write.close();
+
+            } catch (IOException ex) {
+                Logger.getLogger(Ingredient.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+        } else {
+            try {
+                file.createNewFile();
+                FileWriter write = new FileWriter(file, true);
+                PrintWriter line = new PrintWriter(write);
+                System.out.print("Enter name: ");
+                Ingredient.setName(input.nextLine());
+                System.out.print("Enter quantity: ");
+                Ingredient.setQuantity(input.nextLine());
+                System.out.print("Enter size: ");
+                Ingredient.setSize(input.nextLine());
+              
+
+                line.close();
+                write.close();
+
+            } catch (IOException ex) {
+                Logger.getLogger(Ingredient.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    }
     @Override
     public String toString() {
         return "Ingredient{" + "name=" + name + ", quantity=" + quantity + ", size=" + size + '}';
