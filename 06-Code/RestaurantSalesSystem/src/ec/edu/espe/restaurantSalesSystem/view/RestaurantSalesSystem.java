@@ -34,7 +34,7 @@ public class RestaurantSalesSystem {
     public static void main(String[] args) throws IOException {
 
         Gson gson = new Gson();
-        
+
         Scanner sn = new Scanner(System.in);
         boolean exit = false;
         int option;
@@ -60,8 +60,8 @@ public class RestaurantSalesSystem {
                     case 1:
 
                         Customer customer = new Customer();
-                        customer.registerCustomer(customer);                     
-                        File file =new File("Customer.json");                        
+                        customer.registerCustomer(customer);
+                        File file = new File("Customer.json");
                         String jsonCustomer = gson.toJson(customer);
                         try (BufferedWriter bw = new BufferedWriter(new FileWriter(file.getAbsoluteFile(), true))) {
                             bw.write(jsonCustomer);
@@ -76,10 +76,10 @@ public class RestaurantSalesSystem {
                         break;
 
                     case 2:
-                       Waiter waiter = new Waiter();
-                        waiter.registerWaiter(waiter);                     
-                        File file2 =new File("Waiter.json");                        
-             
+                        Waiter waiter = new Waiter();
+                        waiter.registerWaiter(waiter);
+                        File file2 = new File("Waiter.json");
+
                         String jsonWaiter = gson.toJson(waiter);
                         try (BufferedWriter bw = new BufferedWriter(new FileWriter(file2.getAbsoluteFile(), true))) {
                             bw.write(jsonWaiter);
@@ -92,12 +92,12 @@ public class RestaurantSalesSystem {
                         Data.save("Waiter.json", jsonWaiter);
                         System.out.println(" ");
                         break;
-                        
+
                     case 3:
 
-                       Cashier cashier = new Cashier();
-                        cashier.addCashier();                     
-                        File file3 =new File("cashier.json");
+                        Cashier cashier = new Cashier();
+                        cashier.addCashier();
+                        File file3 = new File("cashier.json");
                         String jsonCashier = gson.toJson(cashier);
                         try (BufferedWriter bw = new BufferedWriter(new FileWriter(file3.getAbsoluteFile(), true))) {
                             bw.write(jsonCashier);
@@ -112,8 +112,8 @@ public class RestaurantSalesSystem {
 
                     case 4:
                         Chef chef = new Chef();
-                        chef.registerChef(chef);                     
-                        File file4 =new File("Chef.json");                        
+                        chef.registerChef(chef);
+                        File file4 = new File("Chef.json");
                         String jsonChef = gson.toJson(chef);
                         try (BufferedWriter bw = new BufferedWriter(new FileWriter(file4.getAbsoluteFile(), true))) {
                             bw.write(jsonChef);
@@ -129,8 +129,8 @@ public class RestaurantSalesSystem {
 
                     case 5:
                         Bill bill = new Bill();
-                        bill.registerBill(bill);                     
-                        File file5 =new File("Bill.json");                        
+                        bill.registerBill(bill);
+                        File file5 = new File("Bill.json");
                         String jsonBill = gson.toJson(bill);
                         try (BufferedWriter bw = new BufferedWriter(new FileWriter(file5.getAbsoluteFile(), true))) {
                             bw.write(jsonBill);
@@ -146,8 +146,8 @@ public class RestaurantSalesSystem {
 
                     case 6:
                         Soda soda = new Soda();
-                        soda.add();                     
-                        File file6 =new File("Soda.json");
+                        soda.add();
+                        File file6 = new File("Soda.json");
                         String jsonSoda = gson.toJson(soda);
                         try (BufferedWriter bw = new BufferedWriter(new FileWriter(file6.getAbsoluteFile(), true))) {
                             bw.write(jsonSoda);
@@ -164,9 +164,9 @@ public class RestaurantSalesSystem {
                     case 7:
                         Ingredient ingredient = new Ingredient();
 
-                        ingredient.registerIngredient(ingredient);                     
-                        File file7 =new File("Ingredient.json");                        
-             
+                        ingredient.registerIngredient(ingredient);
+                        File file7 = new File("Ingredient.json");
+
                         String jsonIngredient = gson.toJson(ingredient);
                         try (BufferedWriter bw = new BufferedWriter(new FileWriter(file7.getAbsoluteFile(), true))) {
                             bw.write(jsonIngredient);
@@ -179,7 +179,6 @@ public class RestaurantSalesSystem {
                         Data.save("Ingredient.json", jsonIngredient);
                         System.out.println(" ");
                         break;
-              
 
                     case 8:
                         System.out.println(" Thanks for trusting us!!!");
