@@ -145,18 +145,18 @@ public class RestaurantSalesSystem {
                         Ingredient ingredient = new Ingredient();
 
                         ingredient.registerIngredient(ingredient);                     
-                        File file1 =new File("Ingredient.json");                        
+                        File file7 =new File("Ingredient.json");                        
              
-                        String jsonObject1 = gson.toJson(ingredient);
-                        try (BufferedWriter bw = new BufferedWriter(new FileWriter(file1.getAbsoluteFile(), true))) {
-                            bw.write(jsonObject1);
+                        String jsonObject7 = gson.toJson(ingredient);
+                        try (BufferedWriter bw = new BufferedWriter(new FileWriter(file7.getAbsoluteFile(), true))) {
+                            bw.write(jsonObject7);
                             bw.write('\n');
                         } catch (IOException ex) {
                             Logger.getLogger(Ingredient.class.getName()).log(Level.SEVERE, null, ex);
                         }
                         System.out.println(" ");
                         System.out.println(" ");
-                        Data.save("Ingredient.json", jsonObject1);
+                        Data.save("Ingredient.json", jsonObject7);
                         System.out.println(" ");
                         break;
               
