@@ -61,7 +61,7 @@ public class Customer
     public void registerCustomer(Customer customer) {
 
         Scanner input = new Scanner(System.in);
-        File file = new File("Customer.csv");
+        File file = new File("Customer.json");
    
 
         if (!file.exists()) {
@@ -79,7 +79,6 @@ public class Customer
                 customer.setPhoneNumber(input.nextLine());
                 
 
-                line.println(customer.getName()+","+customer.getAddress()+","+customer.getEmail()+","+customer.getPhoneNumber());
                 line.close();
                 write.close();
 
@@ -102,7 +101,6 @@ public class Customer
                 customer.setPhoneNumber(input.nextLine());
               
 
-                line.println(customer.getName()+","+customer.getAddress()+","+customer.getEmail()+","+customer.getPhoneNumber());
                 line.close();
                 write.close();
 
@@ -111,6 +109,8 @@ public class Customer
             }
         }
     }
+    
+    
     
     @Override
     public String toString() {

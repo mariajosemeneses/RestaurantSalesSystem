@@ -14,9 +14,14 @@ import ec.edu.espe.restaurantsalessystem.model.Ingredient;
 import ec.edu.espe.restaurantsalessystem.model.Juice;
 import ec.edu.espe.restaurantsalessystem.model.Soda;
 import ec.edu.espe.restaurantsalessystem.model.TypeOfFood;
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -24,9 +29,7 @@ import java.util.Scanner;
  */
 public class RestaurantSalesSystem {
 
-    public static void main(String[] args) {
-
-      
+    public static void main(String[] args) throws IOException {
 
         //library : GSON
         String jsonType;
@@ -54,39 +57,39 @@ public class RestaurantSalesSystem {
                 switch (option) {
 
                     case 1:
-                     
+
                         Customer customer = new Customer();
-                        customer.registerCustomer(customer);
-
-                        String dataToSave = customer.toString();
-
+                        customer.registerCustomer(customer);                     
+                        File file =new File("Customer.json");                        
+                        Gson gson = new Gson();
+                        String jsonObject = gson.toJson(customer);
+                        try (BufferedWriter bw = new BufferedWriter(new FileWriter(file.getAbsoluteFile(), true))) {
+                            bw.write(jsonObject);
+                            bw.write('\n');
+                        } catch (IOException ex) {
+                            Logger.getLogger(Customer.class.getName()).log(Level.SEVERE, null, ex);
+                        }
                         System.out.println(" ");
                         System.out.println(" ");
-                        Data.save("Customer.csv", dataToSave);
+                        Data.save("Customer.json", jsonObject);
                         System.out.println(" ");
                         break;
 
                     case 2:
                         TypeOfFood food = new TypeOfFood();
-                       
 
                         
-                        
-                        
-                        //String dataToSave = cashier.toString();
                         System.out.println(" ");
                         System.out.println(" ");
-                        Data.save("TypeOfFood.csv", dataToSave);
+                        //Data.save("TypeOfFood.csv", jsonObject);
                         System.out.println(" ");
 
                         break;
                     case 3:
 
                         Cashier cashier = new Cashier();
-                      
 
                         //String dataToSave = cashier.toString();
-
                         System.out.println(" ");
                         System.out.println(" ");
                         Data.save("Cashier.csv", dataToSave);
@@ -154,10 +157,7 @@ public class RestaurantSalesSystem {
 
             }
         }
-              
-        
+
     }
-    
-    
 
 }

@@ -40,20 +40,7 @@ public class Cashier
     }
         
    
-//   // public void registerCustomer1(Customer customer)
-//   // {
-//        Scanner input = new Scanner(System.in);
-//        
-//        System.out.print("Enter name: ");
-//        customer.setName(input.nextLine());
-//        System.out.print("Enter adress: ");
-//        customer.setAddress(input.nextLine());
-//        System.out.print("Enter email: ");
-//        customer.setEmail(input.nextLine());
-//        System.out.print("Enter phone number: ");
-//        customer.setPhoneNumber(input.nextLine());
-//        customers.add(customer);
-//    }
+
 
     public void registerOrder(Order order)
     {
