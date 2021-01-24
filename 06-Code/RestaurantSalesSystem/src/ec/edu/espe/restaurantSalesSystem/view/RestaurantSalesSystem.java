@@ -41,7 +41,7 @@ public class RestaurantSalesSystem {
         while (!exit) {
             System.out.println("****Restaurant Sales System****");
             System.out.println("\n  1. Register Customer");
-            System.out.println("  2. Register Food");
+            System.out.println("  2. Register Waiter");
             System.out.println("  3. Register Cashier");
             System.out.println("  4. Register Chef");
             System.out.println("  5. Register Juice");
