@@ -8,7 +8,12 @@ package ec.edu.espe.restaurantsalessystem.view;
 import com.google.gson.Gson;
 import ec.edu.espe.filemanager.utils.Data;
 import ec.edu.espe.restaurantsalessystem.model.Cashier;
+import ec.edu.espe.restaurantsalessystem.model.Chef;
 import ec.edu.espe.restaurantsalessystem.model.Customer;
+import ec.edu.espe.restaurantsalessystem.model.Ingredient;
+import ec.edu.espe.restaurantsalessystem.model.Juice;
+import ec.edu.espe.restaurantsalessystem.model.Soda;
+import ec.edu.espe.restaurantsalessystem.model.TypeOfFood;
 import java.io.File;
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -33,9 +38,14 @@ public class RestaurantSalesSystem {
 
         while (!exit) {
             System.out.println("****Restaurant Sales System****");
-            System.out.println("\n1. Register Customer");
-            System.out.println("2. Find Data");
-            System.out.println("3. Exit");
+            System.out.println("\n  1. Register Customer");
+            System.out.println("  2. Register Food");
+            System.out.println("  3. Register Cashier");
+            System.out.println("  4. Register Chef");
+            System.out.println("  5. Register Juice");
+            System.out.println("  6. Register Soda");
+            System.out.println("  7. Register Ingredient");
+            System.out.println("  8. Exit");
 
             try {
 
@@ -59,24 +69,81 @@ public class RestaurantSalesSystem {
                         break;
 
                     case 2:
-                        File file = new File("Customer.csv");
-                        Scanner keyboard = new Scanner(System.in);
+                        TypeOfFood food = new TypeOfFood();
+                        //cashier.registerCustomer(customer);
+
+                        //String dataToSave = cashier.toString();
                         System.out.println(" ");
-                        System.out.print("Write the word to search in the file: ");
-                        String data = keyboard.nextLine();
-                        System.out.println("");
-                        Data.find(file, data);
+                        System.out.println(" ");
+                        Data.save("TypeOfFood.csv", dataToSave);
+                        System.out.println(" ");
+
+                        break;
+                    case 3:
+
+                        Cashier cashier1 = new Cashier();
+                      
+
+                        //String dataToSave = cashier.toString();
+
+                        System.out.println(" ");
+                        System.out.println(" ");
+                        Data.save("Cashier.csv", dataToSave);
                         System.out.println(" ");
                         break;
 
-                    case 3:
-                        System.out.println("Thanks!!!");
+                    case 4:
+                        Chef chef = new Chef();
+
+                        //String dataToSave = cashier.toString();
+                        System.out.println(" ");
+                        System.out.println(" ");
+                        Data.save("Chef.csv", dataToSave);
+                        System.out.println(" ");
+
+                        break;
+
+                    case 5:
+                        Juice juice = new Juice();
+
+                        //String dataToSave = cashier.toString();
+                        System.out.println(" ");
+                        System.out.println(" ");
+                        Data.save("Juice.csv", dataToSave);
+                        System.out.println(" ");
+
+                        break;
+
+                    case 6:
+                        Soda sado = new Soda();
+
+                        // String dataToSave = cashier.toString();
+                        System.out.println(" ");
+                        System.out.println(" ");
+                        Data.save("Soda.csv", dataToSave);
+                        System.out.println(" ");
+
+                        break;
+
+                    case 7:
+                        Ingredient ingredient = new Ingredient();
+
+                        // String dataToSave = cashier.toString();
+                        System.out.println(" ");
+                        System.out.println(" ");
+                        Data.save("Ingredient.csv", dataToSave);
+                        System.out.println(" ");
+
+                        break;
+
+                    case 8:
+                        System.out.println(" Thanks for trusting us!!!");
                         exit = true;
                         System.out.println(" ");
                         break;
 
                     default:
-                        System.out.println("Only numbers between  1 - 3");
+                        System.out.println("Only numbers between  1 - 4");
                         System.out.println(" ");
                 }
             } catch (InputMismatchException e) {
@@ -86,5 +153,10 @@ public class RestaurantSalesSystem {
 
             }
         }
+              
+        
     }
+    
+    
+
 }

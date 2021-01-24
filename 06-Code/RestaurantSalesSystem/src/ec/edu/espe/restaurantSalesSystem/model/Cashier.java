@@ -94,6 +94,7 @@ public class Cashier
             }
         }
     }
+    
     public void registerCustomer1(Customer customer)
     {
         Scanner input = new Scanner(System.in);

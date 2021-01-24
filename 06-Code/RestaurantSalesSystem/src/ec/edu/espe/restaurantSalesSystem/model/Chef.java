@@ -24,6 +24,9 @@ public class Chef {
         this.cellphone = cellphone;
     }
 
+    public Chef() {
+    }
+
     
     @Override
     public String toString() {
