@@ -33,6 +33,7 @@ public class RestaurantSalesSystem {
 
         //library : GSON
         String jsonType;
+        Gson gson = new Gson();
 
         Scanner sn = new Scanner(System.in);
         boolean exit = false;
@@ -61,7 +62,6 @@ public class RestaurantSalesSystem {
                         Customer customer = new Customer();
                         customer.registerCustomer(customer);                     
                         File file =new File("Customer.json");                        
-                        Gson gson = new Gson();
                         String jsonObject = gson.toJson(customer);
                         try (BufferedWriter bw = new BufferedWriter(new FileWriter(file.getAbsoluteFile(), true))) {
                             bw.write(jsonObject);
@@ -77,21 +77,22 @@ public class RestaurantSalesSystem {
 
                     case 2:
                        TypeOfFood typeOfFood = new TypeOfFood();
-                        typeOfFood.registerCustomer(typeOfFood);                     
-                        File file =new File("TypeOfFood.json");                        
-                        Gson gson = new Gson();
-                        String jsonObject = gson.toJson(typeOfFood);
-                        try (BufferedWriter bw = new BufferedWriter(new FileWriter(file.getAbsoluteFile(), true))) {
-                            bw.write(jsonObject);
+                        typeOfFood.registerTypeOfFood(typeOfFood);                     
+                        File file1 =new File("TypeOfFood.json");                        
+             
+                        String jsonObject1 = gson.toJson(typeOfFood);
+                        try (BufferedWriter bw = new BufferedWriter(new FileWriter(file1.getAbsoluteFile(), true))) {
+                            bw.write(jsonObject1);
                             bw.write('\n');
                         } catch (IOException ex) {
                             Logger.getLogger(TypeOfFood.class.getName()).log(Level.SEVERE, null, ex);
                         }
                         System.out.println(" ");
                         System.out.println(" ");
-                        Data.save("TypeOfFood.json", jsonObject);
+                        Data.save("TypeOfFood.json", jsonObject1);
                         System.out.println(" ");
                         break;
+                        
                     case 3:
 
                         Cashier cashier = new Cashier();

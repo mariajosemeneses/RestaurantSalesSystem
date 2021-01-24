@@ -42,54 +42,12 @@ public class TypeOfFood
         this.breakfast = breakfast;
         this.snacks = snacks;
     }
-    public void TypeOfFood(TypeOfFood typeOfFood) {
 
-        Scanner input = new Scanner(System.in);
-        File file = new File("TypeOfFood.json");
-   
-
-        if (!file.exists()) {
-            try {
-                file.createNewFile();
-                FileWriter write = new FileWriter(file, true);
-                PrintWriter line = new PrintWriter(write);
-                System.out.print("Enter lunch: ");
-                TypeOfFood.setName(input.nextLine());
-                System.out.print("Enter quantity: ");
-                TypeOfFood.setAddress(input.nextLine());
-                System.out.print("Enter breakfast: ");
-                TypeOfFood.setEmail(input.nextLine());
-                
-                
-                line.close();
-                write.close();
-
-            } catch (IOException ex) {
-                Logger.getLogger(TypeOfFood.class.getName()).log(Level.SEVERE, null, ex);
-            }
-
-        } else {
-            try {
-                file.createNewFile();
-                FileWriter write = new FileWriter(file, true);
-                PrintWriter line = new PrintWriter(write);
-                System.out.print("Enter lunch: ");
-                TypeOfFood.setLunch(input.nextLine());
-                System.out.print("Enter quantity: ");
-                TypeOfFood.setQuantity(input.nextLine());
-                System.out.print("Enter breakfast: ");
-                TypeOfFood.setBreakfast(input.nextLine());
-                
-              
-
-                line.close();
-                write.close();
-
-            } catch (IOException ex) {
-                Logger.getLogger(TypeOfFood.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        }
+    public TypeOfFood(int quantity) {
+        this.quantity = quantity;
     }
+   
+    
     @Override
     public String toString() {
         return "TypeOfFood{" + "lunch=" + lunch + ", snacks=" + snacks + ", dessert=" + dessert + ", quantity=" + quantity + ", breakfast=" + breakfast + '}';
@@ -135,7 +93,47 @@ public class TypeOfFood
         this.breakfast = breakfast;
     }
     
+ public void registerTypeOfFood(TypeOfFood typeOfFood) {
 
+        Scanner input = new Scanner(System.in);
+        File file = new File("TypeOfFood.json");
+   
+
+        if (!file.exists()) {
+            try {
+                file.createNewFile();
+                FileWriter write = new FileWriter(file, true);
+                PrintWriter line = new PrintWriter(write);
+                
+                System.out.print("Enter quantity: ");
+                typeOfFood.setQuantity(input.nextInt());
+                
+                line.close();
+                write.close();
+
+            } catch (IOException ex) {
+                Logger.getLogger(TypeOfFood.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+        } else {
+            try {
+                file.createNewFile();
+                FileWriter write = new FileWriter(file, true);
+                PrintWriter line = new PrintWriter(write);
+                
+                System.out.print("Enter quantity: ");
+                typeOfFood.setQuantity(input.nextInt());
+                
+              
+                line.close();
+                write.close();
+
+            } catch (IOException ex) {
+                Logger.getLogger(TypeOfFood.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    }
+    
    
     
 }
