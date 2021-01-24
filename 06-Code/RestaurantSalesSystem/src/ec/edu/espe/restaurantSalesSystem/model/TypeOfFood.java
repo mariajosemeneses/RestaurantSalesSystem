@@ -35,14 +35,14 @@ public class TypeOfFood
     public TypeOfFood() {
     }
 
-    public void registerTypeOfFood(Lunch lunch, Dessert dessert, int quantity, Breakfast breakfast, ArrayList<Snack> snacks) {
+    public TypeOfFood(Lunch lunch, Dessert dessert, int quantity, Breakfast breakfast, ArrayList<Snack> snacks) {
         this.lunch = lunch;
         this.dessert = dessert;
         this.quantity = quantity;
         this.breakfast = breakfast;
         this.snacks = snacks;
     }
-    public void TypeOfFood(TypeOfFood typeOfFood) {
+    public void registerTypeOfFood(TypeOfFood typeOfFood) {
 
         Scanner input = new Scanner(System.in);
         File file = new File("TypeOfFood.json");
