@@ -29,6 +29,9 @@ public class Person {
                 + cellPhone + '}';
     }
     
+    public void viewOrder() {
+        
+    }
     
     /**
      * @return the name
@@ -85,7 +88,5 @@ public class Person {
     public void setCellPhone(String cellPhone) {
         this.cellPhone = cellPhone;
     }
-    
-    
     
 }

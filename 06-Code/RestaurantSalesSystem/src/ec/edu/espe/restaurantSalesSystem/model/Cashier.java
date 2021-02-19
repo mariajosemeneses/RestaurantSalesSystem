@@ -19,28 +19,28 @@ import java.util.logging.Logger;
  *
  * @author Group3
  */
-public class Cashier {
+public class Cashier extends Employee{
 
-    private String name;
     private ArrayList<Customer> customers = new ArrayList();
     private ArrayList<Course> courses = new ArrayList();
 
-    public Cashier(String name, ArrayList<Customer> customers, ArrayList<Course> courses) {
-        this.name = name;
+    public Cashier(String id, int age, String name, String address, String email, String cellPhone, 
+            ArrayList<Customer> customers, ArrayList<Course> courses) {
+        
+        super(id, age, name, address, email, cellPhone);
         this.customers = customers;
         this.courses = courses;
+        
     }
 
     @Override
     public String toString() {
-        return "Cashier{" + "name=" + name + ", customers=" + customers + ", courses=" + courses + '}';
-    }
-
-    public Cashier() {
+        return "Cashier{" + "id=" + id + ", age=" + age + ", customers=" + customers + ", courses=" 
+                + courses + '}';
     }
 
     public void addCashier() {
-        Cashier cashier = new Cashier();
+        //Cashier cashier = new Cashier();
 
         Customer customer = new Customer();
         Course course = new Course();
@@ -55,7 +55,7 @@ public class Cashier {
                 PrintWriter line = new PrintWriter(write);
 
                 System.out.print("Enter name the Cashier: ");
-                cashier.setName(input.nextLine());
+                //cashier.setName(input.nextLine());
                 System.out.print("\nEnter information the Customer: \n");
                 customer.registerCustomer(customer);
                 customers.add(customer);
@@ -77,7 +77,7 @@ public class Cashier {
                 PrintWriter line = new PrintWriter(write);
 
                  System.out.print("Enter name the Cashier: ");
-                cashier.setName(input.nextLine());
+                //cashier.setName(input.nextLine());
                 System.out.print("\nEnter information the Customer: \n");
                 customer.registerCustomer(customer);
                 customers.add(customer);
@@ -93,33 +93,19 @@ public class Cashier {
             }
         }
     }
+    
+    public void registerCustomer(Customer customer) {
+
+    }
 
     public void registerOrder(Order order) {
 
     }
 
-    public void generate(Bill bill) {
+    public void generateBill(Bill bill) {
 
     }
-
-    public void viewMenu(Course course) {
-
-    }
-
-    /**
-     * @return the name
-     */
-    public String getName() {
-        return name;
-    }
-
-    /**
-     * @param name the name to set
-     */
-    public void setName(String name) {
-        this.name = name;
-    }
-
+    
     /**
      * @return the customers
      */
