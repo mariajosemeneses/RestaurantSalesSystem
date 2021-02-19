@@ -7,17 +7,14 @@ package ec.edu.espe.restaurantSalesSystem.model;
 
 /**
  *
- * @author Group 3
+ * @author Group 3 
  */
-public class Soda extends Drink{
+public class Juice extends Drink{
     
-    String brand;
-    String flavor;
+    private String fruit;
 
-    public Soda(String brand, String flavor, String sizeCup, String name, float price, int quantity) {
+    public Juice(String sizeCup, String name, float price, int quantity) {
         super(sizeCup, name, price, quantity);
-        this.brand = brand;
-        this.flavor = flavor;
     }
     
     
