@@ -7,8 +7,18 @@ package ec.edu.espe.restaurantSalesSystem.model;
 
 /**
  *
- * @author user
+ * @author Group 3
  */
-public class Snack {
+public class Snack extends Product{
+    
+    String brand;
+    String size;
+
+    public Snack(String brand, String size, String name, float price, int quantity) {
+        super(name, price, quantity);
+        this.brand = brand;
+        this.size = size;
+    }
+    
     
 }
