@@ -7,8 +7,20 @@ package ec.edu.espe.restaurantSalesSystem.model;
 
 /**
  *
- * @author user
+ * @author Group 3 
  */
-public class Drink {
+public class Drink extends Product{
+    
+    String sizeCup;
+    
+    public void choice (Juice juice, Soda soda){
+        
+    }
+
+    public Drink(String sizeCup, String name, float price, int quantity) {
+        super(name, price, quantity);
+        this.sizeCup = sizeCup;
+    }
+    
     
 }
