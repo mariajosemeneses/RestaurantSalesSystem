@@ -14,7 +14,7 @@ import ec.edu.espe.restaurantsalessystem.model.Customer;
 import ec.edu.espe.restaurantsalessystem.model.Ingredient;
 import ec.edu.espe.restaurantsalessystem.model.Juice;
 import ec.edu.espe.restaurantsalessystem.model.Soda;
-import ec.edu.espe.restaurantsalessystem.model.TypeOfFood;
+import ec.edu.espe.restaurantsalessystem.model.Food;
 import ec.edu.espe.restaurantsalessystem.model.Waiter;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -85,7 +85,7 @@ public class RestaurantSalesSystem {
                             bw.write(jsonWaiter);
                             bw.write('\n');
                         } catch (IOException ex) {
-                            Logger.getLogger(TypeOfFood.class.getName()).log(Level.SEVERE, null, ex);
+                            Logger.getLogger(Food.class.getName()).log(Level.SEVERE, null, ex);
                         }
                         System.out.println(" ");
                         System.out.println(" ");

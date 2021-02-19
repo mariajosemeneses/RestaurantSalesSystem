@@ -16,9 +16,9 @@ public class Course
     private String description;
     private float price;
     private int quantity;
-    private TypeOfFood type;
+    private Food type;
 
-    public Course(String id, String description, float price, int quantity, TypeOfFood type) {
+    public Course(String id, String description, float price, int quantity, Food type) {
         this.id = id;
         this.description = description;
         this.price = price;
@@ -66,11 +66,11 @@ public class Course
         this.quantity = quantity;
     }
 
-    public TypeOfFood getType() {
+    public Food getType() {
         return type;
     }
 
-    public void setType(TypeOfFood type) {
+    public void setType(Food type) {
         this.type = type;
     }
     
