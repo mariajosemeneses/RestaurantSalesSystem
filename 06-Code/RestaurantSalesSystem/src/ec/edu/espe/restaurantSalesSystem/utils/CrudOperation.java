@@ -15,7 +15,7 @@ import java.util.Scanner;
  *
  * @author Group3
  */
-public class FileManager {
+public class CrudOperation {
 
     //Add a new document
     public static void add(DB db, String cashier, String name, String address, String email, String cellPhone,

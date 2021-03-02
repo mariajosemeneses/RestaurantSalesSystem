@@ -6,6 +6,7 @@
 package ec.edu.espe.restaurantsalessystem.view;
 
 import com.google.gson.Gson;
+import com.mongodb.MongoClient;
 import ec.edu.espe.restaurantsalessystem.model.Bill;
 import ec.edu.espe.restaurantsalessystem.model.Cashier;
 import ec.edu.espe.restaurantsalessystem.model.Chef;
@@ -14,6 +15,7 @@ import ec.edu.espe.restaurantsalessystem.model.Customer;
 //import ec.edu.espe.restaurantsalessystem.model.Juice;
 import ec.edu.espe.restaurantSalesSystem.model.Soda;
 import ec.edu.espe.restaurantSalesSystem.model.Food;
+import static ec.edu.espe.restaurantSalesSystem.utils.Connection.createConnection;
 import ec.edu.espe.restaurantsalessystem.model.Waiter;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -33,7 +35,9 @@ public class RestaurantSalesSystem {
     public static void main(String[] args) throws IOException {
 
         Gson gson = new Gson();
-
+        
+        MongoClient mongo = createConnection();
+        
         Scanner sn = new Scanner(System.in);
         boolean exit = false;
         int option;
