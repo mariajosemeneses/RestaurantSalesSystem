@@ -6,13 +6,12 @@
 package ec.edu.espe.restaurantsalessystem.view;
 
 import com.google.gson.Gson;
-import ec.edu.espe.filemanager.utils.Data;
 import ec.edu.espe.restaurantsalessystem.model.Bill;
 import ec.edu.espe.restaurantsalessystem.model.Cashier;
 import ec.edu.espe.restaurantsalessystem.model.Chef;
 import ec.edu.espe.restaurantsalessystem.model.Customer;
-import ec.edu.espe.restaurantsalessystem.model.Ingredient;
-import ec.edu.espe.restaurantsalessystem.model.Juice;
+//import ec.edu.espe.restaurantsalessystem.model.Ingredient;
+//import ec.edu.espe.restaurantsalessystem.model.Juice;
 import ec.edu.espe.restaurantSalesSystem.model.Soda;
 import ec.edu.espe.restaurantSalesSystem.model.Food;
 import ec.edu.espe.restaurantsalessystem.model.Waiter;
