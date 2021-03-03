@@ -21,6 +21,8 @@ public class Waiter extends Employee
         super(id, age, name, address, email, cellPhone);
     }
 
+   
+
     public ArrayList<Order> getOrders() {
         return orders;
     }
@@ -31,6 +33,10 @@ public class Waiter extends Employee
     
     public void delieverOrder(Order order){
         
+    }
+
+    public void registerWaiter(Waiter waiter) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     
