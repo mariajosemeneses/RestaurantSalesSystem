@@ -7,7 +7,7 @@ package ec.edu.espe.restaurantsalessystem.model;
 
 /**
  *
- * @author Group 3
+ * @author Group3
  */
 public abstract class Person {
     

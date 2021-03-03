@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author user
+ * @author Group3
  */
 public class Coffee extends Drink {
     ArrayList<String> coffees = new ArrayList();

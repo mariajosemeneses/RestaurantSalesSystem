@@ -11,7 +11,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Group 3
+ * @author Group3
  */
 public class Food extends Product {
     

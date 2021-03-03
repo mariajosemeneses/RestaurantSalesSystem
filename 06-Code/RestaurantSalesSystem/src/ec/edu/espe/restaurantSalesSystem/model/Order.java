@@ -16,24 +16,19 @@ public class Order
 {
     private int numberOrder;
     private Customer customer;
-    private ArrayList<Course> courses= new ArrayList();
+    private ArrayList<Product> products= new ArrayList();
     private float price;
     private int tableNumber;
 
-    public Order() {
-    }
-
-    public Order(int numberOrder, Customer customer, float price, int tableNumber, ArrayList<Course> courses) {
+    public Order(int numberOrder, Customer customer, float price, int tableNumber) {
         this.numberOrder = numberOrder;
         this.customer = customer;
         this.price = price;
         this.tableNumber = tableNumber;
-        this.courses = courses;
     }
 
-    @Override
-    public String toString() {
-        return "Order{" + "numberOrder=" + numberOrder + ", customer=" + customer + ", courses=" + courses + ", price=" + price + ", tableNumber=" + tableNumber + '}';
+    Order() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     public int getNumberOrder() {
@@ -52,12 +47,12 @@ public class Order
         this.customer = customer;
     }
 
-    public ArrayList<Course> getCourses() {
-        return courses;
+    public ArrayList<Product> getProducts() {
+        return products;
     }
 
-    public void setCourses(ArrayList<Course> courses) {
-        this.courses = courses;
+    public void setProducts(ArrayList<Product> products) {
+        this.products = products;
     }
 
     public float getPrice() {
@@ -77,21 +72,5 @@ public class Order
     }
 
     
-    public void generateOrder()
-    {
-        
-    }
-    public void removeOrder()
-    {
-        
-    }
-    public void visualize()
-    {
-        
-    }
-    public void calculateTotal(int quantity, float price)
-    {
-        
-    }
 
 }
