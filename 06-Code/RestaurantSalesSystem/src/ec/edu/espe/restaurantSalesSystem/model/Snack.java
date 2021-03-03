@@ -5,20 +5,21 @@
  */
 package ec.edu.espe.restaurantSalesSystem.model;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Group 3
  */
 public class Snack extends Product{
     
-    String brand;
-    String size;
+    ArrayList<String> choppeds = new ArrayList();
+    ArrayList<String> salads = new ArrayList();
+    ArrayList<String> hamburguers = new ArrayList();
+    ArrayList<String> sandwitches = new ArrayList();
 
-    public Snack(String brand, String size, String name, float price, int quantity) {
+    public Snack(String name, float price, int quantity) {
         super(name, price, quantity);
-        this.brand = brand;
-        this.size = size;
     }
-    
     
 }
