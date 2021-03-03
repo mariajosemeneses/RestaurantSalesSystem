@@ -11,16 +11,16 @@ package ec.edu.espe.restaurantSalesSystem.model;
  */
 public class Drink extends Product{
     
-    String sizeCup;
     
-    public void choice (Juice juice, Soda soda){
+    public void choice (Coffee coffee, Juice juice, Soda soda){
         
     }
 
-    public Drink(String sizeCup, String name, float price, int quantity) {
+    public Drink(String name, float price, int quantity) {
         super(name, price, quantity);
-        this.sizeCup = sizeCup;
     }
+
+    
     
     
 }

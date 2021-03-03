@@ -9,15 +9,12 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Group 3 
+ * @author user
  */
-public class Juice extends Drink{
-    
-    ArrayList<String> fruits = new ArrayList();
+public class Coffee extends Drink {
+    ArrayList<String> coffees = new ArrayList();
 
-    public Juice(String name, float price, int quantity) {
+    public Coffee(String name, float price, int quantity) {
         super(name, price, quantity);
     }
-    
-    
 }
