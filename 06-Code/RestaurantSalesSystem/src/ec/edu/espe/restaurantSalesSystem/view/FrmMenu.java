@@ -339,7 +339,7 @@ public class FrmMenu extends javax.swing.JFrame {
 
     private void itmMnuSave1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmMnuSave1ActionPerformed
         this.setVisible(false);
-        FrmRegisterOrder1  frmRegisterOrder = new FrmRegisterOrder1 ();
+        FrmRegisterOrder  frmRegisterOrder = new FrmRegisterOrder ();
         frmRegisterOrder .setVisible(true);
     }//GEN-LAST:event_itmMnuSave1ActionPerformed
 

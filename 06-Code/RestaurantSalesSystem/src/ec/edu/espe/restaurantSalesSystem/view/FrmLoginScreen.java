@@ -179,7 +179,9 @@ public class FrmLoginScreen extends javax.swing.JFrame {
             } else {
                 JOptionPane.showMessageDialog(null, "User or Password inorrect");
             }
-
+             this.setVisible(false);
+            FrmResgisterEmployee  frmResgisterEmployee = new FrmResgisterEmployee ();
+            frmResgisterEmployee .setVisible(true);
         }
 
     }//GEN-LAST:event_btnLoginActionPerformed
