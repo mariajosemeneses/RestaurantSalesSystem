@@ -89,7 +89,7 @@ public class Chef {
         return "Chef{" + "name=" + name + ", id=" + id + ", age=" + age + ", cellphone=" + cellphone + '}';
     }
 
-    public void prepareCourse(Ingredient ingredient){
+    public void prepareCourse(){
        
     }
     
