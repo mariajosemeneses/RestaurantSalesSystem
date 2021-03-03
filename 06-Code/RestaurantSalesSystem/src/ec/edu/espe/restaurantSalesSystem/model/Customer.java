@@ -27,9 +27,13 @@ public class Customer extends Person{
         return new Order();
     }
     
-    public void viewMenu(Course course) {
+    public void viewMenu(Product product) {
         
     }    
+    
+    public void viewOrder(Order order) {
+        
+    }
     
 }
     

@@ -10,16 +10,22 @@ import com.mongodb.MongoClientURI;
 
 /**
  *
- * @author Sebas
+ * @author Group3
  */
 public class Connection {
 
     public static MongoClient createConnection() {
-        System.out.println("\nESTABLISHED CONNECTION");
-        MongoClientURI uri = new MongoClientURI(
-                "mongodb+srv://unitedByCode:group3@data.j0bvg.mongodb.net/<dbname>?retryWrites=true&w=majority");
+        try {
+            System.out.println("\nESTABLISHED CONNECTION");
+            MongoClientURI uri = new MongoClientURI(
+                    "mongodb+srv://unitedByCode:group3@data.j0bvg.mongodb.net/<dbname>?retryWrites"
+                            + "=true&w=majority");
 
-        MongoClient mongo = new MongoClient(uri);
-        return mongo;
+            MongoClient mongo = new MongoClient(uri);
+            return mongo;
+        } catch (Exception ex) {
+            System.out.println("\nCONNECTION REFUSED");
+            return null;
+        }
     }
 }

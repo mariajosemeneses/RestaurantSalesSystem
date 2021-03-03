@@ -9,7 +9,7 @@ package ec.edu.espe.restaurantsalessystem.model;
  *
  * @author Group 3
  */
-public class Person {
+public abstract class Person {
     
     private String name;
     private String address;
@@ -22,17 +22,7 @@ public class Person {
         this.email = email;
         this.cellPhone = cellPhone;
     }
-
-    @Override
-    public String toString() {
-        return "Person{" + "name=" + name + ", address=" + address + ", email=" + email + ", cellPhone=" 
-                + cellPhone + '}';
-    }
-    
-    public void viewOrder() {
         
-    }
-    
     /**
      * @return the name
      */

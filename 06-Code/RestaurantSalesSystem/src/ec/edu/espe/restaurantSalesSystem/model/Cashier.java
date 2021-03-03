@@ -16,14 +16,14 @@ import java.util.Scanner;
 public class Cashier extends Employee {
 
     private ArrayList<Customer> customers = new ArrayList();
-    private ArrayList<Course> courses = new ArrayList();
+    private ArrayList<Product> products = new ArrayList();
 
     public Cashier(String id, int age, String name, String address, String email, String cellPhone,
-            ArrayList<Customer> customers, ArrayList<Course> courses) {
+            ArrayList<Customer> customers, ArrayList<Product> products) {
 
         super(id, age, name, address, email, cellPhone);
         this.customers = customers;
-        this.courses = courses;
+        this.products = products;
 
     }
 
@@ -79,16 +79,17 @@ public class Cashier extends Employee {
     }
 
     /**
-     * @return the courses
+     * @return the products
      */
-    public ArrayList<Course> getCourses() {
-        return courses;
+    public ArrayList<Product> getProducts() {
+        return products;
     }
 
     /**
-     * @param courses the courses to set
+     * @param products the products to set
      */
-    public void setCourses(ArrayList<Course> courses) {
-        this.courses = courses;
+    public void setProducts(ArrayList<Product> products) {
+        this.products = products;
     }
+    
 }
