@@ -19,10 +19,6 @@ public class Employee extends Person{
         this.age = age;
     }
 
-    public Employee(String name, String address, String email, String cellPhone) {
-        super(name, address, email, cellPhone);
-    }
-
     @Override
     public String toString() {
         return "Employee{" + "id=" + id + ", age=" + age + '}';

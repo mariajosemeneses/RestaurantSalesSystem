@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Group 3
+ * @author Group3
  */
 public class Lunch extends Food{
     

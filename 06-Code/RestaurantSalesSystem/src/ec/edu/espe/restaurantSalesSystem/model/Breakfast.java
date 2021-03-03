@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Maria José Meneses
+ * @author Group3
  */
 public class Breakfast extends Food{
     

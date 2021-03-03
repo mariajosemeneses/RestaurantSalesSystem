@@ -7,7 +7,7 @@ package ec.edu.espe.restaurantSalesSystem.model;
 
 /**
  *
- * @author Group 3 
+ * @author Group3 
  */
 public class Drink extends Product{
     

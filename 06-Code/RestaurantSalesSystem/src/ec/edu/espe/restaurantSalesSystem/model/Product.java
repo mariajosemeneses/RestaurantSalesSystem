@@ -7,7 +7,7 @@ package ec.edu.espe.restaurantSalesSystem.model;
 
 /**
  *
- * @author Maria José Meneses
+ * @author Group3
  */
 public abstract class Product {
     private String name;
