@@ -12,7 +12,6 @@ import ec.edu.espe.restaurantsalessystem.model.Cashier;
 import ec.edu.espe.restaurantsalessystem.model.Chef;
 import ec.edu.espe.restaurantsalessystem.model.Customer;
 //import ec.edu.espe.restaurantsalessystem.model.Juice;
-import ec.edu.espe.restaurantSalesSystem.model.Soda;
 import ec.edu.espe.restaurantSalesSystem.model.Food;
 import ec.edu.espe.restaurantSalesSystem.model.Product;
 import static ec.edu.espe.restaurantSalesSystem.utils.Connection.createConnection;
@@ -51,9 +50,7 @@ public class RestaurantSalesSystem {
             System.out.println("  3. Register Cashier");
             System.out.println("  4. Register Chef");
             System.out.println("  5. Register Bill");
-            System.out.println("  6. Register Soda");
-            System.out.println("  7. Register Ingredient");
-            System.out.println("  8. Exit");
+            System.out.println("  6. Exit");
 
             try {
 
@@ -173,26 +170,6 @@ public class RestaurantSalesSystem {
                         break;
 
                     case 6:
-                        Soda soda = new Soda();
-                        soda.add();
-                        File file6 = new File("Soda.json");
-                        String jsonSoda = gson.toJson(soda);
-                        try (BufferedWriter bw = new BufferedWriter(new FileWriter(file6.getAbsoluteFile(), true))) {
-                            bw.write(jsonSoda);
-                            bw.write('\n');
-                        } catch (IOException ex) {
-                            Logger.getLogger(Soda.class.getName()).log(Level.SEVERE, null, ex);
-                        }
-                        System.out.println(" ");
-                        System.out.println(" ");
-                        Data.save("Soda.json", jsonSoda);
-                        System.out.println(" ");
-                        break;
-
-                    case 7:
-                        break;
-
-                    case 8:
                         System.out.println(" Thanks for trusting us!!!");
                         exit = true;
                         System.out.println(" ");

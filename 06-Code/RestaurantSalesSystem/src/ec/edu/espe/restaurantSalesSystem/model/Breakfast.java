@@ -13,14 +13,29 @@ import java.util.ArrayList;
  */
 public class Breakfast extends Food{
     
-    ArrayList<String> components  = new ArrayList(); 
+    private ArrayList<String> components  = new ArrayList(); 
 
-    public Breakfast(String name, float price, int quantity) {
+    public Breakfast(String name, float price, int quantity, ArrayList<String> components) {
         super(name, price, quantity);
+        this.components = components;
+    }
+
+    /**
+     * @return the components
+     */
+    public ArrayList<String> getComponents() {
+        return components;
+    }
+
+    /**
+     * @param components the components to set
+     */
+    public void setComponents(ArrayList<String> components) {
+        this.components = components;
     }
 
     
-    }
+}
     
     
 

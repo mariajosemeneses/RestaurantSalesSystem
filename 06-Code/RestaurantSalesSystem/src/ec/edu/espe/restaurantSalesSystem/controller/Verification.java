@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
  * @author Group3
  */
 public class Verification {
-    FrmLoginScreen login=  new FrmLoginScreen();
+    FrmLoginScreen login =  new FrmLoginScreen();
     String message;
     
     public void VerfiyUser(String users[], String user, String password, int attempts) {

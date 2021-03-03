@@ -13,13 +13,74 @@ import java.util.ArrayList;
  */
 public class Snack extends Product{
     
-    ArrayList<String> choppeds = new ArrayList();
-    ArrayList<String> salads = new ArrayList();
-    ArrayList<String> hamburguers = new ArrayList();
-    ArrayList<String> sandwitches = new ArrayList();
+    private ArrayList<String> choppeds = new ArrayList();
+    private ArrayList<String> salads = new ArrayList();
+    private ArrayList<String> hamburguers = new ArrayList();
+    private ArrayList<String> sandwitches = new ArrayList();
 
-    public Snack(String name, float price, int quantity) {
+    public Snack(String name, float price, int quantity, ArrayList<String> choppeds, ArrayList<String> salads, 
+            ArrayList<String> hamburguers, ArrayList<String> sandwitches) {
         super(name, price, quantity);
+        this.choppeds = choppeds;
+        this.salads = salads;
+        this.hamburguers = hamburguers;
+        this.sandwitches = sandwitches;
+    }
+
+    /**
+     * @return the choppeds
+     */
+    public ArrayList<String> getChoppeds() {
+        return choppeds;
+    }
+
+    /**
+     * @param choppeds the choppeds to set
+     */
+    public void setChoppeds(ArrayList<String> choppeds) {
+        this.choppeds = choppeds;
+    }
+
+    /**
+     * @return the salads
+     */
+    public ArrayList<String> getSalads() {
+        return salads;
+    }
+
+    /**
+     * @param salads the salads to set
+     */
+    public void setSalads(ArrayList<String> salads) {
+        this.salads = salads;
+    }
+
+    /**
+     * @return the hamburguers
+     */
+    public ArrayList<String> getHamburguers() {
+        return hamburguers;
+    }
+
+    /**
+     * @param hamburguers the hamburguers to set
+     */
+    public void setHamburguers(ArrayList<String> hamburguers) {
+        this.hamburguers = hamburguers;
+    }
+
+    /**
+     * @return the sandwitches
+     */
+    public ArrayList<String> getSandwitches() {
+        return sandwitches;
+    }
+
+    /**
+     * @param sandwitches the sandwitches to set
+     */
+    public void setSandwitches(ArrayList<String> sandwitches) {
+        this.sandwitches = sandwitches;
     }
     
 }

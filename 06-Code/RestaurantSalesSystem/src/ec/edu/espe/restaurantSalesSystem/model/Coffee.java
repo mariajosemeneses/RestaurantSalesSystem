@@ -12,9 +12,24 @@ import java.util.ArrayList;
  * @author Group3
  */
 public class Coffee extends Drink {
-    ArrayList<String> coffees = new ArrayList();
+    private ArrayList<String> coffees = new ArrayList();
 
-    public Coffee(String name, float price, int quantity) {
+    public Coffee(String name, float price, int quantity, ArrayList<String> coffees) {
         super(name, price, quantity);
+        this.coffees = coffees;
+    }
+
+    /**
+     * @return the coffees
+     */
+    public ArrayList<String> getCoffees() {
+        return coffees;
+    }
+
+    /**
+     * @param coffees the coffees to set
+     */
+    public void setCoffees(ArrayList<String> coffees) {
+        this.coffees = coffees;
     }
 }

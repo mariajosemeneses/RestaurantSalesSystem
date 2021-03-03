@@ -5,25 +5,19 @@
  */
 package ec.edu.espe.restaurantSalesSystem.view;
 
-import ec.edu.espe.restaurantSalesSystem.controller.Verification;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
 import java.util.Scanner;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 /**
  *
  * @author user
  */
 public class FrmLoginScreen extends javax.swing.JFrame {
+
     private static Scanner scan;
     private static int attempts;
     private static String user, pass;
-    
+
     public FrmLoginScreen() {
         initComponents();
     }
@@ -41,7 +35,7 @@ public class FrmLoginScreen extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         txtUsername = new javax.swing.JTextField();
-        pfdlPassword = new javax.swing.JPasswordField();
+        txtPassword = new javax.swing.JPasswordField();
         jPanel2 = new javax.swing.JPanel();
         btnLogin = new javax.swing.JButton();
         btnCancel = new javax.swing.JButton();
@@ -61,8 +55,6 @@ public class FrmLoginScreen extends javax.swing.JFrame {
             }
         });
 
-        pfdlPassword.setText("jPasswordField1");
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -75,7 +67,7 @@ public class FrmLoginScreen extends javax.swing.JFrame {
                 .addGap(41, 41, 41)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(txtUsername)
-                    .addComponent(pfdlPassword, javax.swing.GroupLayout.DEFAULT_SIZE, 156, Short.MAX_VALUE))
+                    .addComponent(txtPassword, javax.swing.GroupLayout.DEFAULT_SIZE, 156, Short.MAX_VALUE))
                 .addContainerGap(42, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -88,7 +80,7 @@ public class FrmLoginScreen extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(pfdlPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -170,45 +162,26 @@ public class FrmLoginScreen extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCancelActionPerformed
 
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
-        FileReader fr = null;
-        try {
-            int nLines = 0;
-            int i = 0;
-            String[] users = null;
-            String line;
-            scan = new Scanner(new File("D:\\users.txt"));
-            File file = new File("D:\\users.txt");
-            fr = new FileReader(file);
-            BufferedReader buffereader = new BufferedReader(fr);
+        String user = txtUsername.getText();
+        String password = txtPassword.getText();
 
-            try {
-                while ((line = buffereader.readLine()) != null) {
-                    nLines++;
-                }
-            } catch (IOException ex) {
-                Logger.getLogger(FrmLoginScreen.class.getName()).log(Level.SEVERE, null, ex);
-            }
-            users = new String[nLines];
-
-            while (scan.hasNextLine()) {
-                users[i++] = scan.nextLine();
+        if (user.isEmpty() || password.isEmpty()) {
+            JOptionPane.showMessageDialog(null, "FILL ALL THE FIELDS");
+        } else {
+            if (user.equals("admin") && password.equals("admin123")) {
+                JOptionPane.showMessageDialog(null, "Welcome " + user);
+                this.dispose();
+            } else if (user.equals("juan") && password.equals("juanito")) {
+                JOptionPane.showMessageDialog(null, "Welcome " + user);
+                FrmMenu  frmMenu  = new FrmMenu ();
+                frmMenu .setVisible(true);
+                this.dispose();
+            } else {
+                JOptionPane.showMessageDialog(null, "User or Password inorrect");
             }
 
-            attempts++;
-            user = txtUsername.getText();
-            pass = pfdlPassword.getText();
-            Verification verification = new Verification();
-            verification.VerfiyUser(users, user, pass, attempts);
-            
-            } catch (FileNotFoundException ex) {
-            Logger.getLogger(FrmLoginScreen.class.getName()).log(Level.SEVERE, null, ex);
-        } finally {
-            try {
-                fr.close();
-            } catch (IOException ex) {
-                Logger.getLogger(FrmLoginScreen.class.getName()).log(Level.SEVERE, null, ex);
-            }
         }
+
     }//GEN-LAST:event_btnLoginActionPerformed
 
     /**
@@ -254,7 +227,7 @@ public class FrmLoginScreen extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPasswordField pfdlPassword;
+    private javax.swing.JPasswordField txtPassword;
     private javax.swing.JTextField txtUsername;
     // End of variables declaration//GEN-END:variables
 }
