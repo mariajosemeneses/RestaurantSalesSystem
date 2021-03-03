@@ -9,7 +9,7 @@ package ec.edu.espe.restaurantSalesSystem.model;
  *
  * @author Maria José Meneses
  */
-public class Product {
+public abstract class Product {
     private String name;
     private float price;
     private int quantity;
@@ -31,6 +31,11 @@ public class Product {
     }
     
     public void buy(){
+        
+    }
+    
+    public boolean availability(Food food, Drink drink, Snack snack , Dessert dessert){
+        return true;
         
     }
 
