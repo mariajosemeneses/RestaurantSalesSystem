@@ -5,149 +5,36 @@
  */
 package ec.edu.espe.restaurantsalessystem.model;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.Scanner;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import java.util.ArrayList;
+
+
 
 /**
  *
  * @author Group3
  */
-public class Waiter {
-    private String name;
-    private String id;
-    private int age;
-    private String cellphone;
+public class Waiter extends Employee
+{
+    ArrayList<Order> orders=new ArrayList();
 
-    
-    public Waiter(String name, String id, int age, String cellphone) {
-        this.name = name;
-        this.id = id;
-        this.age = age;
-        this.cellphone = cellphone;
+    public Waiter(String id, int age, String name, String address, String email, String cellPhone) {
+        super(id, age, name, address, email, cellPhone);
     }
 
-     public void registerWaiter(Waiter waiter) {
-
-        Scanner input = new Scanner(System.in);
-        File file = new File("Waiter.json");
-
-        if (!file.exists()) {
-            try {
-                file.createNewFile();
-                FileWriter write = new FileWriter(file, true);
-                PrintWriter line = new PrintWriter(write);
-                System.out.print("Enter name the waiter: ");
-                waiter.setName(input.nextLine());
-                System.out.print("Enter ID: ");
-                waiter.setId(input.nextLine());
-                System.out.print("Enter age: ");
-                waiter.setAge(input.nextInt());
-                input.nextLine();
-                System.out.print("Enter phone number: ");
-                waiter.setCellphone(input.nextLine());
-                line.close();
-                write.close();
-
-            } catch (IOException ex) {
-                Logger.getLogger(Waiter.class.getName()).log(Level.SEVERE, null, ex);
-            }
-
-        } else {
-            try {
-                file.createNewFile();
-                FileWriter write = new FileWriter(file, true);
-                PrintWriter line = new PrintWriter(write);
-                System.out.print("Enter name the waiter : ");
-                waiter.setName(input.nextLine());
-                System.out.print("Enter ID: ");
-                waiter.setId(input.nextLine());
-                System.out.print("Enter aget: ");
-                waiter.setAge(input.nextInt());
-                input.nextLine();
-                System.out.print("Enter phone number: ");
-                waiter.setCellphone(input.nextLine());
-                line.close();
-                write.close();
-
-            } catch (IOException ex) {
-                Logger.getLogger(Waiter.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        }
-    }
-   
-    
-    public Waiter() {
+    public ArrayList<Order> getOrders() {
+        return orders;
     }
 
-    @Override
-    public String toString() {
-        return "Waiter{" + "name=" + name + ", id=" + id + ", age=" + age + ", cellphone=" + cellphone + '}';
+    public void setOrders(ArrayList<Order> orders) {
+        this.orders = orders;
     }
     
-    
-    public void deliverOrder(Order order){
+    public void delieverOrder(Order order){
         
     }
-    /**
-     * @return the name
-     */
-    public String getName() {
-        return name;
-    }
-
-    /**
-     * @param name the name to set
-     */
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    /**
-     * @return the id
-     */
-    public String getId() {
-        return id;
-    }
-
-    /**
-     * @param id the id to set
-     */
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    /**
-     * @return the age
-     */
-    public int getAge() {
-        return age;
-    }
-
-    /**
-     * @param age the age to set
-     */
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    /**
-     * @return the cellphone
-     */
-    public String getCellphone() {
-        return cellphone;
-    }
-
-    /**
-     * @param cellphone the cellphone to set
-     */
-    public void setCellphone(String cellphone) {
-        this.cellphone = cellphone;
-    }
+    
+    
+    
     
     
 }
