@@ -11,16 +11,8 @@ import java.util.ArrayList;
  *
  * @author Maria José Meneses
  */
-public class Breakfast extends Food{
+public class Dessert {
     
-    ArrayList<String> components  = new ArrayList(); 
-
-    public Breakfast(String name, float price, int quantity) {
-        super(name, price, quantity);
-    }
-
+    ArrayList<String> desserts = new ArrayList();
     
-    }
-    
-    
-
+}

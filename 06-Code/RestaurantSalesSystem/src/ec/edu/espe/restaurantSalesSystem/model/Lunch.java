@@ -5,24 +5,26 @@
  */
 package ec.edu.espe.restaurantSalesSystem.model;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Group 3
  */
 public class Lunch extends Food{
     
-    String soup;
-    String mainCourse;
+    ArrayList<String> soups = new ArrayList();
+    ArrayList<String> mainCourses = new ArrayList();
     Drink drink;
-    String dessert;
+    Dessert dessert;
 
-    public Lunch(String soup, String mainCourse, Drink drink, String dessert, String name, float price, int quantity) {
+    public Lunch(Drink drink, Dessert dessert, String name, float price, int quantity) {
         super(name, price, quantity);
-        this.soup = soup;
-        this.mainCourse = mainCourse;
         this.drink = drink;
         this.dessert = dessert;
     }
+
+    
     
     
 }
