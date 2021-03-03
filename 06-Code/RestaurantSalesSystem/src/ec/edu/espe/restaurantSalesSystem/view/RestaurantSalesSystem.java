@@ -11,10 +11,10 @@ import ec.edu.espe.restaurantsalessystem.model.Bill;
 import ec.edu.espe.restaurantsalessystem.model.Cashier;
 import ec.edu.espe.restaurantsalessystem.model.Chef;
 import ec.edu.espe.restaurantsalessystem.model.Customer;
-//import ec.edu.espe.restaurantsalessystem.model.Ingredient;
 //import ec.edu.espe.restaurantsalessystem.model.Juice;
 import ec.edu.espe.restaurantSalesSystem.model.Soda;
 import ec.edu.espe.restaurantSalesSystem.model.Food;
+import ec.edu.espe.restaurantSalesSystem.model.Product;
 import static ec.edu.espe.restaurantSalesSystem.utils.Connection.createConnection;
 import ec.edu.espe.restaurantsalessystem.model.Waiter;
 import java.io.BufferedWriter;
@@ -25,6 +25,8 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import static ec.edu.espe.restaurantsalessystem.utils.CrudOperation.create;
+import java.util.ArrayList;
 
 /**
  *
@@ -35,9 +37,9 @@ public class RestaurantSalesSystem {
     public static void main(String[] args) throws IOException {
 
         Gson gson = new Gson();
-        
+
         MongoClient mongo = createConnection();
-        
+        ArrayList<Customer> customers = new ArrayList();
         Scanner sn = new Scanner(System.in);
         boolean exit = false;
         int option;
@@ -62,20 +64,29 @@ public class RestaurantSalesSystem {
 
                     case 1:
 
-                        Customer customer = new Customer();
-                        customer.registerCustomer(customer);
-                        File file = new File("Customer.json");
-                        String jsonCustomer = gson.toJson(customer);
-                        try (BufferedWriter bw = new BufferedWriter(new FileWriter(file.getAbsoluteFile(), true))) {
-                            bw.write(jsonCustomer);
-                            bw.write('\n');
-                        } catch (IOException ex) {
-                            Logger.getLogger(Customer.class.getName()).log(Level.SEVERE, null, ex);
+                        Customer customer = new Customer("", "", "", "");
+                        try {
+                            if (mongo != null) {
+                                
+                                System.out.println("\nADD CUSTOMER");
+                                sn.nextLine();
+                                System.out.print("Enter name: ");
+                                customer.setName(sn.nextLine());
+                                System.out.print("Enter address: ");
+                                customer.setAddress(sn.nextLine());
+                                System.out.print("Enter email: ");
+                                customer.setEmail(sn.nextLine());
+                                System.out.print("Enter phone number: ");
+                                customer.setCellPhone(sn.nextLine());
+                                customers.add(customer);
+                                create(mongo, "Person", "customers", customer.getName(), customer.getAddress(), 
+                                        customer.getEmail(), customer.getCellPhone(), 0, "");
+                                System.out.println("\nNEW CUSTOMER ADDED!\n");
+                                break;
+                            }
+                        } catch (Exception ex) {
+                            System.out.println("Database could not be created");
                         }
-                        System.out.println(" ");
-                        System.out.println(" ");
-                        Data.save("Customer.json", jsonCustomer);
-                        System.out.println(" ");
                         break;
 
                     case 2:
@@ -97,21 +108,35 @@ public class RestaurantSalesSystem {
                         break;
 
                     case 3:
-
-                        Cashier cashier = new Cashier();
-                        cashier.addCashier();
-                        File file3 = new File("cashier.json");
-                        String jsonCashier = gson.toJson(cashier);
-                        try (BufferedWriter bw = new BufferedWriter(new FileWriter(file3.getAbsoluteFile(), true))) {
-                            bw.write(jsonCashier);
-                            bw.write('\n');
-                        } catch (IOException ex) {
-                            Logger.getLogger(Cashier.class.getName()).log(Level.SEVERE, null, ex);
+                        ArrayList<Product> products = new ArrayList();
+                        Cashier cashier = new Cashier("", 0, "", "", "", "", customers);
+                        try {
+                            if (mongo != null) {
+                                System.out.println("\nADD CASHIER");
+                                sn.nextLine();
+                                System.out.print("Enter name: ");
+                                cashier.setName(sn.nextLine());
+                                System.out.print("Enter address: ");
+                                cashier.setAddress(sn.nextLine());
+                                System.out.print("Enter email: ");
+                                cashier.setEmail(sn.nextLine());
+                                System.out.print("Enter phone number: ");
+                                cashier.setCellPhone(sn.nextLine());
+                                System.out.print("Enter age: ");
+                                cashier.setAge(sn.nextInt());
+                                sn.nextLine();
+                                System.out.print("Enter id: ");
+                                cashier.setId(sn.nextLine());
+                                create(mongo, "Employee", "cashiers", cashier.getName(), cashier.getAddress(), 
+                                        cashier.getEmail(), cashier.getCellPhone(), cashier.getAge(), 
+                                        cashier.getId());
+                                System.out.println("\nNEW CASHIER ADDED!\n");
+                                break;
+                            }
+                        } catch (Exception ex) {
+                            System.out.println("Database could not be created");
                         }
-                        System.out.println(" ");
-                        System.out.println(" ");
-                        Data.save("Cashier.json", jsonCashier);
-                        System.out.println(" ");
+                        break;
 
                     case 4:
                         Chef chef = new Chef();
@@ -165,22 +190,6 @@ public class RestaurantSalesSystem {
                         break;
 
                     case 7:
-                        Ingredient ingredient = new Ingredient();
-
-                        ingredient.registerIngredient(ingredient);
-                        File file7 = new File("Ingredient.json");
-
-                        String jsonIngredient = gson.toJson(ingredient);
-                        try (BufferedWriter bw = new BufferedWriter(new FileWriter(file7.getAbsoluteFile(), true))) {
-                            bw.write(jsonIngredient);
-                            bw.write('\n');
-                        } catch (IOException ex) {
-                            Logger.getLogger(Ingredient.class.getName()).log(Level.SEVERE, null, ex);
-                        }
-                        System.out.println(" ");
-                        System.out.println(" ");
-                        Data.save("Ingredient.json", jsonIngredient);
-                        System.out.println(" ");
                         break;
 
                     case 8:

@@ -16,16 +16,17 @@ import java.util.Scanner;
 public class Cashier extends Employee {
 
     private ArrayList<Customer> customers = new ArrayList();
-    private ArrayList<Product> products = new ArrayList();
+    //private ArrayList<Product> products = new ArrayList();
 
     public Cashier(String id, int age, String name, String address, String email, String cellPhone,
-            ArrayList<Customer> customers, ArrayList<Product> products) {
+            ArrayList<Customer> customers) {
 
         super(id, age, name, address, email, cellPhone);
         this.customers = customers;
-        this.products = products;
+        //this.products = products;
 
     }
+
 
     public void registerCustomer(Customer customer) {
 
@@ -78,18 +79,18 @@ public class Cashier extends Employee {
         this.customers = customers;
     }
 
-    /**
-     * @return the products
-     */
-    public ArrayList<Product> getProducts() {
-        return products;
-    }
-
-    /**
-     * @param products the products to set
-     */
-    public void setProducts(ArrayList<Product> products) {
-        this.products = products;
-    }
+//    /**
+//     * @return the products
+//     */
+//    public ArrayList<Product> getProducts() {
+//        return products;
+//    }
+//
+//    /**
+//     * @param products the products to set
+//     */
+//    public void setProducts(ArrayList<Product> products) {
+//        this.products = products;
+//    }
     
 }
