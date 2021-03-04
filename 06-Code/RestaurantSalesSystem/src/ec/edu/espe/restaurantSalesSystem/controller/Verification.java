@@ -5,38 +5,41 @@
  */
 package ec.edu.espe.restaurantSalesSystem.controller;
 
-import ec.edu.espe.restaurantSalesSystem.view.FrmLoginScreen;
-import javax.swing.JOptionPane;
-
 /**
  *
  * @author Group3
  */
 public class Verification {
-    FrmLoginScreen login =  new FrmLoginScreen();
-    String message;
-    
-    public void VerfiyUser(String users[], String user, String password, int attempts) {
-        boolean findOut = false;
 
-        for (int i = 0; i < users.length; i++) {
-            if (users[i].equalsIgnoreCase(user) && users[i + 1].equals(password)) {
-                message = "Bienvenido ---> " + user;
-                findOut = true;
-                JOptionPane.showMessageDialog(null, message, "LOGIN", JOptionPane.INFORMATION_MESSAGE);
-                attempts=0;
+    private String user;
+    private String password;
 
-                break;
-            } 
-        }
-        if (findOut == false) {
-            message = " Key y/o users incorrects ... go " + attempts + " attempts wrong";
-            JOptionPane.showMessageDialog(null, message, "LOGIN", JOptionPane.ERROR_MESSAGE);
-        }
-        if (attempts > 2) {
-            JOptionPane.showMessageDialog(null, "3 attempts Wrongs ", "LOGIN", JOptionPane.ERROR_MESSAGE);
-            System.exit(0);
-
-        }
+    /**
+     * @return the user
+     */
+    public String getUser() {
+        return user;
     }
+
+    /**
+     * @param user the user to set
+     */
+    public void setUser(String user) {
+        this.user = user;
+    }
+
+    /**
+     * @return the password
+     */
+    public String getPassword() {
+        return password;
+    }
+
+    /**
+     * @param password the password to set
+     */
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
 }

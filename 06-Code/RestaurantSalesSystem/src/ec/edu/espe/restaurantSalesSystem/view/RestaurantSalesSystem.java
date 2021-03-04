@@ -15,7 +15,7 @@ import ec.edu.espe.restaurantsalessystem.model.Customer;
 //import ec.edu.espe.restaurantsalessystem.model.Juice;
 import ec.edu.espe.restaurantSalesSystem.model.Food;
 import ec.edu.espe.restaurantSalesSystem.model.Product;
-import static ec.edu.espe.restaurantSalesSystem.utils.Connection.createConnection;
+import static ec.edu.espe.restaurantSalesSystem.controller.Connection.createConnection;
 import ec.edu.espe.restaurantsalessystem.model.Waiter;
 import java.io.BufferedWriter;
 import java.io.File;

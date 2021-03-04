@@ -17,13 +17,12 @@ public class FrmMenu extends javax.swing.JFrame {
      * Creates new form FrmMenu
      */
     public FrmMenu() {
-        
+
         initComponents();
-        
+
         //Color JFrame
         this.getContentPane().setBackground(Color.WHITE);
 
-    
     }
 
     /**
@@ -66,6 +65,7 @@ public class FrmMenu extends javax.swing.JFrame {
         jList8 = new javax.swing.JList<>();
         jScrollPane9 = new javax.swing.JScrollPane();
         jList9 = new javax.swing.JList<>();
+        btnReturn = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         mnuSystem = new javax.swing.JMenu();
         itmMnuSave1 = new javax.swing.JMenuItem();
@@ -183,6 +183,13 @@ public class FrmMenu extends javax.swing.JFrame {
         });
         jScrollPane9.setViewportView(jList9);
 
+        btnReturn.setText("Return");
+        btnReturn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnReturnActionPerformed(evt);
+            }
+        });
+
         mnuSystem.setText("Order");
 
         itmMnuSave1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_MASK));
@@ -228,19 +235,20 @@ public class FrmMenu extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(169, 169, 169)
                         .addComponent(jLabel10))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 417, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(45, 45, 45)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 6, Short.MAX_VALUE)
+                    .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 417, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(26, 26, 26))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jLabel13)
-                        .addGap(105, 105, 105))))
+                        .addGap(105, 105, 105))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(btnReturn)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(26, 26, 26))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -303,8 +311,8 @@ public class FrmMenu extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(1, 1, 1)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel5)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(jLabel6))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -331,7 +339,9 @@ public class FrmMenu extends javax.swing.JFrame {
                     .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(324, Short.MAX_VALUE))
+                .addGap(21, 21, 21)
+                .addComponent(btnReturn)
+                .addContainerGap(30, Short.MAX_VALUE))
         );
 
         pack();
@@ -339,9 +349,15 @@ public class FrmMenu extends javax.swing.JFrame {
 
     private void itmMnuSave1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmMnuSave1ActionPerformed
         this.setVisible(false);
-        FrmRegisterOrder  frmRegisterOrder = new FrmRegisterOrder ();
-        frmRegisterOrder .setVisible(true);
+        FrmRegisterOrder frmRegisterOrder = new FrmRegisterOrder();
+        frmRegisterOrder.setVisible(true);
     }//GEN-LAST:event_itmMnuSave1ActionPerformed
+
+    private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturnActionPerformed
+        FrmMainScreen frmMainScreen = new FrmMainScreen();
+        this.setVisible(false);
+        frmMainScreen.setVisible(true);
+    }//GEN-LAST:event_btnReturnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -379,6 +395,7 @@ public class FrmMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnReturn;
     private javax.swing.JMenuItem itmMnuSave1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;

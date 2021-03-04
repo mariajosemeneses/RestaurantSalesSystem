@@ -9,12 +9,12 @@ package ec.edu.espe.restaurantSalesSystem.view;
  *
  * @author Maria José Meneses
  */
-public class FrmMain extends javax.swing.JFrame {
+public class FrmMainScreen extends javax.swing.JFrame {
 
     /**
      * Creates new form FrmMain
      */
-    public FrmMain() {
+    public FrmMainScreen() {
         initComponents();
     }
 
@@ -28,6 +28,7 @@ public class FrmMain extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         mnuSystem = new javax.swing.JMenu();
         itmMnuSave = new javax.swing.JMenuItem();
@@ -38,6 +39,10 @@ public class FrmMain extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 3, 24)); // NOI18N
         jLabel1.setText("RESTAURANT SALES SYSTEM");
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 3, 24)); // NOI18N
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("WELCOME");
 
         mnuSystem.setText("System");
 
@@ -72,15 +77,19 @@ public class FrmMain extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(62, 62, 62)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 359, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 359, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 359, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(72, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(78, 78, 78)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(135, Short.MAX_VALUE))
+                .addGap(98, 98, 98)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel1)
+                .addContainerGap(117, Short.MAX_VALUE))
         );
 
         pack();
@@ -88,16 +97,14 @@ public class FrmMain extends javax.swing.JFrame {
 
     private void itmMnuSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmMnuSaveActionPerformed
         this.setVisible(false);
-
-        FrmLoginScreen frmLoginScreen = new FrmLoginScreen();
-        frmLoginScreen.setVisible(true);
+        FrmResgisterEmployee frmResgisterEmployee = new FrmResgisterEmployee();
+        frmResgisterEmployee.setVisible(true);
     }//GEN-LAST:event_itmMnuSaveActionPerformed
 
     private void itmMnuSave1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmMnuSave1ActionPerformed
         this.setVisible(false);
-
-        FrmLoginScreen frmLoginScreen = new FrmLoginScreen();
-        frmLoginScreen.setVisible(true);
+        FrmMenu frmMenu = new FrmMenu();
+        frmMenu.setVisible(true);
     }//GEN-LAST:event_itmMnuSave1ActionPerformed
 
     /**
@@ -117,20 +124,21 @@ public class FrmMain extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FrmMain.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmMainScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FrmMain.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmMainScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FrmMain.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmMainScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FrmMain.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmMainScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FrmMain().setVisible(true);
+                new FrmMainScreen().setVisible(true);
             }
         });
     }
@@ -139,6 +147,7 @@ public class FrmMain extends javax.swing.JFrame {
     private javax.swing.JMenuItem itmMnuSave;
     private javax.swing.JMenuItem itmMnuSave1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenu mnuSystem;

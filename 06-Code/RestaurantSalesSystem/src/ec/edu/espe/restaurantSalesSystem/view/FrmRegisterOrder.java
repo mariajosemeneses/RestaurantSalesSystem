@@ -55,10 +55,10 @@ public class FrmRegisterOrder extends javax.swing.JFrame {
         name = new javax.swing.JLabel();
         id = new javax.swing.JLabel();
         jCheckBox24 = new javax.swing.JCheckBox();
-        txtName = new javax.swing.JTextField();
+        txtNumberTable = new javax.swing.JTextField();
         jCheckBox27 = new javax.swing.JCheckBox();
         jCheckBox28 = new javax.swing.JCheckBox();
-        txtNumberTable = new javax.swing.JTextField();
+        txtName = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jCheckBox29 = new javax.swing.JCheckBox();
@@ -104,6 +104,11 @@ public class FrmRegisterOrder extends javax.swing.JFrame {
         jCheckBox5.setText("3");
 
         jCheckBox1.setText("Continental");
+        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox1ActionPerformed(evt);
+            }
+        });
 
         jCheckBox6.setText("3");
 
@@ -228,7 +233,6 @@ public class FrmRegisterOrder extends javax.swing.JFrame {
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(99, 99, 99)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel2)
                                             .addGroup(layout.createSequentialGroup()
                                                 .addComponent(jCheckBox5)
                                                 .addGap(18, 18, 18)
@@ -243,22 +247,24 @@ public class FrmRegisterOrder extends javax.swing.JFrame {
                                                 .addComponent(jCheckBox26))
                                             .addComponent(jCheckBox23)))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel10)
-                                        .addGap(94, 94, 94)
+                                        .addGap(122, 122, 122)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(jLabel3)
                                             .addComponent(jLabel8))))
-                                .addGap(0, 0, Short.MAX_VALUE))
+                                .addGap(0, 91, Short.MAX_VALUE))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addGap(12, 12, 12)
-                                        .addComponent(jLabel4)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGap(12, 12, 12)
+                                                .addComponent(jLabel4))
+                                            .addComponent(jLabel10))
                                         .addGap(26, 26, 26)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addGroup(layout.createSequentialGroup()
                                                 .addGap(75, 75, 75)
-                                                .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addComponent(txtNumberTable, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGroup(layout.createSequentialGroup()
                                                 .addGap(75, 75, 75)
                                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -295,7 +301,7 @@ public class FrmRegisterOrder extends javax.swing.JFrame {
                                                             .addComponent(jCheckBox16)))))
                                             .addGroup(layout.createSequentialGroup()
                                                 .addGap(75, 75, 75)
-                                                .addComponent(txtNumberTable, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGroup(layout.createSequentialGroup()
                                                 .addGap(179, 179, 179)
                                                 .addComponent(jLabel5))
@@ -304,7 +310,8 @@ public class FrmRegisterOrder extends javax.swing.JFrame {
                                                 .addComponent(jButton2)
                                                 .addGap(125, 125, 125)
                                                 .addComponent(jButton1)
-                                                .addGap(10, 10, 10))))
+                                                .addGap(10, 10, 10))
+                                            .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING)))
                                     .addComponent(jCheckBox1)
                                     .addComponent(jCheckBox2)
                                     .addComponent(jCheckBox18))
@@ -316,11 +323,11 @@ public class FrmRegisterOrder extends javax.swing.JFrame {
                             .addComponent(jCheckBox9)
                             .addComponent(jCheckBox10)
                             .addComponent(jCheckBox11))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(57, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(29, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 395, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(21, 21, 21))
+                .addGap(24, 24, 24))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -330,11 +337,11 @@ public class FrmRegisterOrder extends javax.swing.JFrame {
                 .addGap(5, 5, 5)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(name)
-                    .addComponent(txtNumberTable, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(id)
-                    .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtNumberTable, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(49, 49, 49)
@@ -344,7 +351,6 @@ public class FrmRegisterOrder extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(17, 17, 17)
                         .addComponent(jLabel3)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(12, 12, 12)
@@ -360,9 +366,9 @@ public class FrmRegisterOrder extends javax.swing.JFrame {
                                 .addComponent(jCheckBox8)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jCheckBox6)))
-                        .addGap(19, 19, 19)
+                        .addGap(22, 22, 22)
                         .addComponent(jLabel10)
-                        .addGap(5, 5, 5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jCheckBox12)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jCheckBox13)
@@ -431,11 +437,15 @@ public class FrmRegisterOrder extends javax.swing.JFrame {
                     .addComponent(jButton1))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 18, Short.MAX_VALUE))
+                .addGap(0, 24, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox1ActionPerformed
 
     /**
      * @param args the command line arguments
