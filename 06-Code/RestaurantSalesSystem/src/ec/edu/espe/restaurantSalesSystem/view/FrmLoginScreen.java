@@ -184,12 +184,12 @@ public class FrmLoginScreen extends javax.swing.JFrame {
                     } else {
                         if (user.equals(verification.getUser()) && password.equals(verification.getPassword())) {
                             JOptionPane.showMessageDialog(null, "Welcome " + user);
-                            FrmMainScreen frmMain = new FrmMainScreen();
-                            frmMain.setVisible(true);
+                            FrmOptionsOwner frmOptions = new FrmOptionsOwner();
+                            frmOptions.setVisible(true);
                             this.dispose();
                             break;
                         } else {
-                            JOptionPane.showMessageDialog(null, "User or Password inorrect");
+                            JOptionPane.showMessageDialog(null, "User or Password incorrect");
  
                         }
                     }

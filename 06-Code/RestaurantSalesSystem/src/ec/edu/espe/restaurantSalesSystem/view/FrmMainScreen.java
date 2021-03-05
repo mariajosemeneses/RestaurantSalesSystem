@@ -56,7 +56,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
         mnuSystem.add(itmMnuSave);
 
         itmMnuSave1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.CTRL_MASK));
-        itmMnuSave1.setText("Course");
+        itmMnuSave1.setText("Cutomer");
         itmMnuSave1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 itmMnuSave1ActionPerformed(evt);
@@ -97,8 +97,8 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
     private void itmMnuSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmMnuSaveActionPerformed
         this.setVisible(false);
-        FrmResgisterEmployee frmResgisterEmployee = new FrmResgisterEmployee();
-        frmResgisterEmployee.setVisible(true);
+        FrmLoginScreen frmLoginScreen = new FrmLoginScreen();
+        frmLoginScreen.setVisible(true);
     }//GEN-LAST:event_itmMnuSaveActionPerformed
 
     private void itmMnuSave1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmMnuSave1ActionPerformed
