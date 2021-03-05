@@ -109,13 +109,13 @@ public class FrmLunch extends javax.swing.JFrame {
         jLabel6.setFont(new java.awt.Font("Consolas", 3, 14)); // NOI18N
         jLabel6.setText("Price:  $ 2.50");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3" }));
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3" }));
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3" }));
 
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3" }));
+        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3" }));
 
-        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3" }));
+        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3" }));
 
         jLabel7.setText("Soup");
 
@@ -273,7 +273,7 @@ public class FrmLunch extends javax.swing.JFrame {
 
     private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturnActionPerformed
         this.setVisible(false);
-        FrmOptionsMenuCustomer frmOptionsMenuCustomer = new FrmOptionsMenuCustomer();
+        FrmMenu frmOptionsMenuCustomer = new FrmMenu();
         frmOptionsMenuCustomer.setVisible(true);
     }//GEN-LAST:event_btnReturnActionPerformed
 

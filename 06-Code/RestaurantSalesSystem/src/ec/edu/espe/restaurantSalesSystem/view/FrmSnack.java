@@ -159,7 +159,7 @@ public class FrmSnack extends javax.swing.JFrame {
 
     private void bntReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntReturnActionPerformed
         this.setVisible(false);
-        FrmOptionsMenuCustomer frmOptionsMenuCustomer = new FrmOptionsMenuCustomer();
+        FrmMenu frmOptionsMenuCustomer = new FrmMenu();
         frmOptionsMenuCustomer.setVisible(true);
     }//GEN-LAST:event_bntReturnActionPerformed
 

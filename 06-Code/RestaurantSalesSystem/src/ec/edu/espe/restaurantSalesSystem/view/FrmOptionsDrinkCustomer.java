@@ -112,7 +112,7 @@ public class FrmOptionsDrinkCustomer extends javax.swing.JFrame {
 
     private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturnActionPerformed
          this.setVisible(false);
-        FrmOptionsMenuCustomer frmOptionsMenuCustomer = new FrmOptionsMenuCustomer();
+        FrmMenu frmOptionsMenuCustomer = new FrmMenu();
         frmOptionsMenuCustomer.setVisible(true);
     }//GEN-LAST:event_btnReturnActionPerformed
 

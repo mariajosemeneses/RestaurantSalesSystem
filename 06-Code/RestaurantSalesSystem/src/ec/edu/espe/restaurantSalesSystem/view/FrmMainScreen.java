@@ -32,6 +32,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         mnuSystem = new javax.swing.JMenu();
         itmMnuSave = new javax.swing.JMenuItem();
+        itmMnuSave2 = new javax.swing.JMenuItem();
         itmMnuSave1 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
 
@@ -54,6 +55,15 @@ public class FrmMainScreen extends javax.swing.JFrame {
             }
         });
         mnuSystem.add(itmMnuSave);
+
+        itmMnuSave2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_L, java.awt.event.InputEvent.CTRL_MASK));
+        itmMnuSave2.setText("Employee");
+        itmMnuSave2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                itmMnuSave2ActionPerformed(evt);
+            }
+        });
+        mnuSystem.add(itmMnuSave2);
 
         itmMnuSave1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.CTRL_MASK));
         itmMnuSave1.setText("Cutomer");
@@ -107,6 +117,10 @@ public class FrmMainScreen extends javax.swing.JFrame {
         frmMenu.setVisible(true);
     }//GEN-LAST:event_itmMnuSave1ActionPerformed
 
+    private void itmMnuSave2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmMnuSave2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_itmMnuSave2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -146,6 +160,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem itmMnuSave;
     private javax.swing.JMenuItem itmMnuSave1;
+    private javax.swing.JMenuItem itmMnuSave2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu2;
