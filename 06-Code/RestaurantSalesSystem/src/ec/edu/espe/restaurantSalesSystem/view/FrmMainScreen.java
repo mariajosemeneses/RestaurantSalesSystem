@@ -33,6 +33,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
         mnuSystem = new javax.swing.JMenu();
         itmMnuSave = new javax.swing.JMenuItem();
         itmMnuSave1 = new javax.swing.JMenuItem();
+        itmMnuCashier = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -44,7 +45,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("WELCOME");
 
-        mnuSystem.setText("System");
+        mnuSystem.setText("Login");
 
         itmMnuSave.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_MASK));
         itmMnuSave.setText("Owner");
@@ -63,6 +64,15 @@ public class FrmMainScreen extends javax.swing.JFrame {
             }
         });
         mnuSystem.add(itmMnuSave1);
+
+        itmMnuCashier.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_MASK));
+        itmMnuCashier.setText("Cashier");
+        itmMnuCashier.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                itmMnuCashierActionPerformed(evt);
+            }
+        });
+        mnuSystem.add(itmMnuCashier);
 
         jMenuBar1.add(mnuSystem);
 
@@ -103,9 +113,15 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
     private void itmMnuSave1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmMnuSave1ActionPerformed
         this.setVisible(false);
-        FrmMenu frmMenu = new FrmMenu();
-        frmMenu.setVisible(true);
+        FrmOptionsMenuCustomer frmOptionsMenuCustomer = new FrmOptionsMenuCustomer();
+        frmOptionsMenuCustomer.setVisible(true);
     }//GEN-LAST:event_itmMnuSave1ActionPerformed
+
+    private void itmMnuCashierActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmMnuCashierActionPerformed
+        this.setVisible(false);
+        FrmOptionsCashier frmOptionsCashier = new FrmOptionsCashier();
+        frmOptionsCashier.setVisible(true);
+    }//GEN-LAST:event_itmMnuCashierActionPerformed
 
     /**
      * @param args the command line arguments
@@ -144,6 +160,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem itmMnuCashier;
     private javax.swing.JMenuItem itmMnuSave;
     private javax.swing.JMenuItem itmMnuSave1;
     private javax.swing.JLabel jLabel1;
