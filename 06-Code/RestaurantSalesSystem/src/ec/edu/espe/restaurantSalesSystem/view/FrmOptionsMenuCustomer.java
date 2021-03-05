@@ -9,12 +9,12 @@ package ec.edu.espe.restaurantSalesSystem.view;
  *
  * @author Maria José Meneses
  */
-public class FrmOptionsMenuCustumer extends javax.swing.JFrame {
+public class FrmOptionsMenuCustomer extends javax.swing.JFrame {
 
     /**
      * Creates new form FrmOptionsMenuCustumer
      */
-    public FrmOptionsMenuCustumer() {
+    public FrmOptionsMenuCustomer() {
         initComponents();
     }
 
@@ -31,9 +31,12 @@ public class FrmOptionsMenuCustumer extends javax.swing.JFrame {
         btnLunch = new javax.swing.JButton();
         btnSnack = new javax.swing.JButton();
         btnDrink = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        btnBreakfast.setFont(new java.awt.Font("Baskerville Old Face", 0, 14)); // NOI18N
         btnBreakfast.setText("BREAKFAST");
         btnBreakfast.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -41,11 +44,25 @@ public class FrmOptionsMenuCustumer extends javax.swing.JFrame {
             }
         });
 
+        btnLunch.setFont(new java.awt.Font("Baskerville Old Face", 0, 14)); // NOI18N
         btnLunch.setText("LUNCH");
+        btnLunch.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLunchActionPerformed(evt);
+            }
+        });
 
+        btnSnack.setFont(new java.awt.Font("Baskerville Old Face", 0, 14)); // NOI18N
         btnSnack.setText("SNACK");
 
+        btnDrink.setFont(new java.awt.Font("Baskerville Old Face", 0, 14)); // NOI18N
         btnDrink.setText("DRINK");
+
+        jButton1.setFont(new java.awt.Font("Baskerville Old Face", 0, 14)); // NOI18N
+        jButton1.setText("DESSERT");
+
+        jLabel1.setFont(new java.awt.Font("Javanese Text", 0, 24)); // NOI18N
+        jLabel1.setText("MENU");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -54,28 +71,45 @@ public class FrmOptionsMenuCustumer extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(134, 134, 134)
-                        .addComponent(btnBreakfast))
+                        .addGap(66, 66, 66)
+                        .addComponent(btnSnack))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(147, 147, 147)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(btnLunch)
-                            .addComponent(btnSnack)
-                            .addComponent(btnDrink))))
-                .addContainerGap(177, Short.MAX_VALUE))
+                        .addGap(31, 31, 31)
+                        .addComponent(btnBreakfast)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 88, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(btnDrink)
+                        .addGap(87, 87, 87))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(btnLunch)
+                        .addGap(52, 52, 52))))
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(145, 145, 145)
+                        .addComponent(jButton1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(165, 165, 165)
+                        .addComponent(jLabel1)))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(80, 80, 80)
-                .addComponent(btnBreakfast)
-                .addGap(18, 18, 18)
-                .addComponent(btnLunch)
-                .addGap(18, 18, 18)
-                .addComponent(btnSnack)
-                .addGap(18, 18, 18)
-                .addComponent(btnDrink)
-                .addContainerGap(74, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(jLabel1)
+                .addGap(24, 24, 24)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnBreakfast)
+                    .addComponent(btnLunch))
+                .addGap(58, 58, 58)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnSnack)
+                    .addComponent(btnDrink))
+                .addGap(49, 49, 49)
+                .addComponent(jButton1)
+                .addContainerGap(34, Short.MAX_VALUE))
         );
 
         pack();
@@ -86,6 +120,12 @@ public class FrmOptionsMenuCustumer extends javax.swing.JFrame {
         FrmBreakfast frmBreakfast = new FrmBreakfast();
         frmBreakfast.setVisible(true);
     }//GEN-LAST:event_btnBreakfastActionPerformed
+
+    private void btnLunchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLunchActionPerformed
+        this.setVisible(false);
+        FrmLunch frmLunch = new FrmLunch();
+        frmLunch.setVisible(true);
+    }//GEN-LAST:event_btnLunchActionPerformed
 
     /**
      * @param args the command line arguments
@@ -104,20 +144,21 @@ public class FrmOptionsMenuCustumer extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FrmOptionsMenuCustumer.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmOptionsMenuCustomer.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FrmOptionsMenuCustumer.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmOptionsMenuCustomer.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FrmOptionsMenuCustumer.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmOptionsMenuCustomer.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FrmOptionsMenuCustumer.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmOptionsMenuCustomer.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FrmOptionsMenuCustumer().setVisible(true);
+                new FrmOptionsMenuCustomer().setVisible(true);
             }
         });
     }
@@ -127,5 +168,7 @@ public class FrmOptionsMenuCustumer extends javax.swing.JFrame {
     private javax.swing.JButton btnDrink;
     private javax.swing.JButton btnLunch;
     private javax.swing.JButton btnSnack;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
