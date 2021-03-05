@@ -102,9 +102,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
     }//GEN-LAST:event_itmMnuSaveActionPerformed
 
     private void itmMnuSave1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmMnuSave1ActionPerformed
-        this.setVisible(false);
-        FrmOptionsMenuCustomer frmOptionsMenuCustomer = new FrmOptionsMenuCustomer();
-        frmOptionsMenuCustomer.setVisible(true);
+
     }//GEN-LAST:event_itmMnuSave1ActionPerformed
 
     /**

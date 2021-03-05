@@ -5,11 +5,28 @@
  */
 package ec.edu.espe.restaurantSalesSystem.view;
 
+import com.mongodb.BasicDBObject;
+import com.mongodb.DB;
+import com.mongodb.DBCollection;
+import com.mongodb.MongoClient;
+import static ec.edu.espe.restaurantSalesSystem.controller.Connection.createConnection;
+import static ec.edu.espe.restaurantsalessystem.utils.CrudOperation.create;
+import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
+
+
+
 /**
  *
  * @author DAVID
  */
 public class FrmEditBreakfast extends javax.swing.JFrame {
+    DefaultTableModel modelo;
+    DB db;
+    DBCollection collection;
+    BasicDBObject document = new BasicDBObject();
+
+    MongoClient mongo = createConnection();
 
     /**
      * Creates new form FrmEditBreakfast
@@ -29,20 +46,20 @@ public class FrmEditBreakfast extends javax.swing.JFrame {
 
         jButton3 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        btnSave = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTextPane1 = new javax.swing.JTextPane();
-        jButton2 = new javax.swing.JButton();
+        txtContinental = new javax.swing.JTextPane();
+        btnReturn = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextPane2 = new javax.swing.JTextPane();
+        txtFull = new javax.swing.JTextPane();
         jLabel4 = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
-        jTextPane3 = new javax.swing.JTextPane();
+        txtPriceContinental = new javax.swing.JTextPane();
         jLabel5 = new javax.swing.JLabel();
         jScrollPane4 = new javax.swing.JScrollPane();
-        jTextPane4 = new javax.swing.JTextPane();
+        txtPriceFull = new javax.swing.JTextPane();
 
         jButton3.setText("jButton3");
 
@@ -50,20 +67,20 @@ public class FrmEditBreakfast extends javax.swing.JFrame {
 
         jLabel1.setText("Breakfast");
 
-        jButton1.setText("Save");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnSave.setText("Save");
+        btnSave.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnSaveActionPerformed(evt);
             }
         });
 
-        jTextPane1.setText("- Cafe, te o leche\n- Huevos : revueltos o cocidos\n- Sandwiche : queso o jamón\n- Fruta: manzana o fresas");
-        jScrollPane2.setViewportView(jTextPane1);
+        txtContinental.setText("- Cafe, te o leche\n- Huevos : revueltos o cocidos\n- Sandwiche : queso o jamón\n- Fruta: manzana o fresas");
+        jScrollPane2.setViewportView(txtContinental);
 
-        jButton2.setText("Return");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnReturn.setText("Return");
+        btnReturn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnReturnActionPerformed(evt);
             }
         });
 
@@ -71,16 +88,18 @@ public class FrmEditBreakfast extends javax.swing.JFrame {
 
         jLabel3.setText("Full");
 
-        jTextPane2.setText("- Cafe, te o leche\n- Jugo: mora o melon\n- Seco: pollo o carne\n- Huevos : revueltos o cocidos\n- Fruta : manzana o fresas");
-        jScrollPane1.setViewportView(jTextPane2);
+        txtFull.setText("- Cafe, te o leche\n- Jugo: mora o melon\n- Seco: pollo o carne\n- Huevos : revueltos o cocidos\n- Fruta : manzana o fresas");
+        jScrollPane1.setViewportView(txtFull);
 
         jLabel4.setText("Price");
 
-        jScrollPane3.setViewportView(jTextPane3);
+        txtPriceContinental.setText("$ 2,00");
+        jScrollPane3.setViewportView(txtPriceContinental);
 
         jLabel5.setText("Price");
 
-        jScrollPane4.setViewportView(jTextPane4);
+        txtPriceFull.setText("$ 2,50");
+        jScrollPane4.setViewportView(txtPriceFull);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -95,9 +114,9 @@ public class FrmEditBreakfast extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(78, 78, 78)
-                        .addComponent(jButton1)
+                        .addComponent(btnSave)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 94, Short.MAX_VALUE)
-                        .addComponent(jButton2)
+                        .addComponent(btnReturn)
                         .addGap(151, 151, 151))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -142,23 +161,49 @@ public class FrmEditBreakfast extends javax.swing.JFrame {
                     .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(68, 68, 68)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton2)
-                    .addComponent(jButton1))
+                    .addComponent(btnReturn)
+                    .addComponent(btnSave))
                 .addGap(38, 38, 38))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
+      if (txtContinental.getText().isEmpty() || txtFull.getText().isEmpty()||txtPriceContinental.getText().isEmpty() ||txtPriceFull.getText().isEmpty()) {
+            JOptionPane.showMessageDialog(null, "FILL ALL THE FIELDS");
+      }else {
+            String dataToSave = "Do you want to save this information?: \nContinental: " + txtContinental.getText()
+            + "\nFull: " + txtFull.getText()+"price"+txtPriceContinental.getText()+"Price"+txtPriceFull.getText();
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+            int selection = JOptionPane.showConfirmDialog(null, dataToSave, "Breakfast Saving",
+                    JOptionPane.YES_NO_CANCEL_OPTION);
+
+            switch (selection) {
+                case 0:
+                    JOptionPane.showMessageDialog(null, "Information was saved", txtContinental.getText() + "Saved",
+                            JOptionPane.INFORMATION_MESSAGE);
+                        create(mongo, "Menu", "Breakfast", txtContinental.getText(), txtFull.getText());
+                   
+                    break;
+                case 1:
+                    JOptionPane.showMessageDialog(null, "Information was NOT saved", txtContinental.getText() + "NOT saved",
+                            JOptionPane.INFORMATION_MESSAGE);
+                    emptyFields();
+                    break;
+                default:
+                    JOptionPane.showMessageDialog(null, "Action was cancelled", txtContinental.getText() + "Cancelled",
+                            JOptionPane.INFORMATION_MESSAGE);
+                    break;
+            }
+        }
+    }//GEN-LAST:event_btnSaveActionPerformed
+
+    private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturnActionPerformed
         this.setVisible(false);
         FrmOptionsMenu frmOptionsMenu = new FrmOptionsMenu();
         frmOptionsMenu.setVisible(true);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnReturnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -196,8 +241,8 @@ public class FrmEditBreakfast extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton btnReturn;
+    private javax.swing.JButton btnSave;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -208,9 +253,9 @@ public class FrmEditBreakfast extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JTextPane jTextPane1;
-    private javax.swing.JTextPane jTextPane2;
-    private javax.swing.JTextPane jTextPane3;
-    private javax.swing.JTextPane jTextPane4;
+    private javax.swing.JTextPane txtContinental;
+    private javax.swing.JTextPane txtFull;
+    private javax.swing.JTextPane txtPriceContinental;
+    private javax.swing.JTextPane txtPriceFull;
     // End of variables declaration//GEN-END:variables
 }
