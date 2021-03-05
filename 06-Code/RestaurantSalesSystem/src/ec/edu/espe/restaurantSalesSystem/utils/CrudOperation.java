@@ -102,4 +102,26 @@ public class CrudOperation {
         DBCollection dbCollection = db.getCollection(collection);
         dbCollection.remove(new BasicDBObject().append("name", name));
     }
+    
+    public static void createOrder(MongoClient mongo, String dataBase, String collection1, String name, String id,
+            String quantity, String price) {
+
+        DB db = mongo.getDB(dataBase);
+        DBCollection dbCollection = db.getCollection(collection1);
+        BasicDBObject document1 = new BasicDBObject();
+        if (dataBase.equals("Order")) {
+            document1.put("name", name);
+            document1.put("id", id);
+            document1.put("quantity", quantity);
+            document1.put("price", price);
+            
+        } else {
+            document1.put("name", name);
+            document1.put("id", id);
+            document1.put("quantity", quantity);
+            document1.put("price", price);
+        }
+        dbCollection.insert(document1);
+    }
+    
 }
