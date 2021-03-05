@@ -51,7 +51,7 @@ public class FrmSoda extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Monospaced", 0, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Baskerville Old Face", 3, 24)); // NOI18N
         jLabel1.setText("SODA");
 
         jList9.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N

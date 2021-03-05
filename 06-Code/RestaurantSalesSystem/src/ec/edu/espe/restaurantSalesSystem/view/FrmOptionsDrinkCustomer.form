@@ -26,7 +26,7 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
               <Component id="btnCoffee" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="142" max="32767" attributes="0"/>
+              <EmptySpace pref="80" max="32767" attributes="0"/>
               <Component id="btnJuice" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
           </Group>
@@ -58,7 +58,7 @@
                   <Component id="btnJuice" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="btnCoffee" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="46" max="32767" attributes="0"/>
+              <EmptySpace pref="38" max="32767" attributes="0"/>
               <Component id="btnSoda" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
               <Component id="btnReturn" min="-2" max="-2" attributes="0"/>
@@ -78,6 +78,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnCoffee">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Baskerville Old Face" size="18" style="3"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="COFFEE"/>
       </Properties>
       <Events>
@@ -86,6 +89,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnJuice">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Baskerville Old Face" size="18" style="3"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="JUICE"/>
       </Properties>
       <Events>
@@ -94,6 +100,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnSoda">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Baskerville Old Face" size="18" style="3"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SODA"/>
       </Properties>
       <Events>
