@@ -40,6 +40,8 @@ public class Bill
     public void calculateTotal(int quantity, float price) 
     {
         
+        
+        
     }
 
     public Bill(String name, String date, float identificationCard, String cellPhone, String direction, String description) {

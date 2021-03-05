@@ -19,6 +19,11 @@ public class Employee extends Person{
         this.age = age;
     }
 
+    public Employee() {
+    }
+
+    
+
     @Override
     public String toString() {
         return "Employee{" + "id=" + id + ", age=" + age + '}';

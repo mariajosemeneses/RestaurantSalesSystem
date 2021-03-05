@@ -412,9 +412,9 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
     }//GEN-LAST:event_typeEmployeeActionPerformed
 
     private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturnActionPerformed
-        FrmMainScreen frmMainScreen = new FrmMainScreen();
+        FrmOptionsOwner frmOptionsOwner = new FrmOptionsOwner();
         this.setVisible(false);
-        frmMainScreen.setVisible(true);
+        frmOptionsOwner.setVisible(true);
     }//GEN-LAST:event_btnReturnActionPerformed
 
     private void txtAddressActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAddressActionPerformed
