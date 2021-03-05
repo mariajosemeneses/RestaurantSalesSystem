@@ -38,6 +38,7 @@ public class FrmOptionsDrinkCustomer extends javax.swing.JFrame {
         txtSnack.setFont(new java.awt.Font("Monospaced", 0, 24)); // NOI18N
         txtSnack.setText("DRINK");
 
+        btnCoffee.setFont(new java.awt.Font("Baskerville Old Face", 3, 18)); // NOI18N
         btnCoffee.setText("COFFEE");
         btnCoffee.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -45,6 +46,7 @@ public class FrmOptionsDrinkCustomer extends javax.swing.JFrame {
             }
         });
 
+        btnJuice.setFont(new java.awt.Font("Baskerville Old Face", 3, 18)); // NOI18N
         btnJuice.setText("JUICE");
         btnJuice.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -52,6 +54,7 @@ public class FrmOptionsDrinkCustomer extends javax.swing.JFrame {
             }
         });
 
+        btnSoda.setFont(new java.awt.Font("Baskerville Old Face", 3, 18)); // NOI18N
         btnSoda.setText("SODA");
         btnSoda.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -73,7 +76,7 @@ public class FrmOptionsDrinkCustomer extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(54, 54, 54)
                 .addComponent(btnCoffee)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 142, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 80, Short.MAX_VALUE)
                 .addComponent(btnJuice)
                 .addGap(72, 72, 72))
             .addGroup(layout.createSequentialGroup()
@@ -97,7 +100,7 @@ public class FrmOptionsDrinkCustomer extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnJuice)
                     .addComponent(btnCoffee))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
                 .addComponent(btnSoda)
                 .addGap(64, 64, 64)
                 .addComponent(btnReturn)
@@ -109,7 +112,7 @@ public class FrmOptionsDrinkCustomer extends javax.swing.JFrame {
 
     private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturnActionPerformed
          this.setVisible(false);
-        FrmOptionsMenuCustomer frmOptionsMenuCustomer = new FrmOptionsMenuCustomer();
+        FrmMenu frmOptionsMenuCustomer = new FrmMenu();
         frmOptionsMenuCustomer.setVisible(true);
     }//GEN-LAST:event_btnReturnActionPerformed
 
