@@ -29,8 +29,8 @@ public class FrmOptionsDrinkCustomer extends javax.swing.JFrame {
 
         txtSnack = new javax.swing.JLabel();
         btnCoffee = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        btnJuice = new javax.swing.JButton();
+        btnSoda = new javax.swing.JButton();
         btnReturn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -39,10 +39,25 @@ public class FrmOptionsDrinkCustomer extends javax.swing.JFrame {
         txtSnack.setText("DRINK");
 
         btnCoffee.setText("COFFEE");
+        btnCoffee.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCoffeeActionPerformed(evt);
+            }
+        });
 
-        jButton2.setText("JUICE");
+        btnJuice.setText("JUICE");
+        btnJuice.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnJuiceActionPerformed(evt);
+            }
+        });
 
-        jButton3.setText("SODA");
+        btnSoda.setText("SODA");
+        btnSoda.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSodaActionPerformed(evt);
+            }
+        });
 
         btnReturn.setText("Return");
         btnReturn.addActionListener(new java.awt.event.ActionListener() {
@@ -59,7 +74,7 @@ public class FrmOptionsDrinkCustomer extends javax.swing.JFrame {
                 .addGap(54, 54, 54)
                 .addComponent(btnCoffee)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 142, Short.MAX_VALUE)
-                .addComponent(jButton2)
+                .addComponent(btnJuice)
                 .addGap(72, 72, 72))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -69,7 +84,7 @@ public class FrmOptionsDrinkCustomer extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton3, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(btnSoda, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(btnReturn, javax.swing.GroupLayout.Alignment.TRAILING))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -80,10 +95,10 @@ public class FrmOptionsDrinkCustomer extends javax.swing.JFrame {
                 .addComponent(txtSnack)
                 .addGap(31, 31, 31)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2)
+                    .addComponent(btnJuice)
                     .addComponent(btnCoffee))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
-                .addComponent(jButton3)
+                .addComponent(btnSoda)
                 .addGap(64, 64, 64)
                 .addComponent(btnReturn)
                 .addGap(34, 34, 34))
@@ -97,6 +112,24 @@ public class FrmOptionsDrinkCustomer extends javax.swing.JFrame {
         FrmOptionsMenuCustomer frmOptionsMenuCustomer = new FrmOptionsMenuCustomer();
         frmOptionsMenuCustomer.setVisible(true);
     }//GEN-LAST:event_btnReturnActionPerformed
+
+    private void btnCoffeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCoffeeActionPerformed
+         this.setVisible(false);
+        FrmCoffee frmCoffee = new FrmCoffee();
+        frmCoffee.setVisible(true);
+    }//GEN-LAST:event_btnCoffeeActionPerformed
+
+    private void btnJuiceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJuiceActionPerformed
+        this.setVisible(false);
+        FrmJuice frmJuice = new FrmJuice();
+        frmJuice.setVisible(true);
+    }//GEN-LAST:event_btnJuiceActionPerformed
+
+    private void btnSodaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSodaActionPerformed
+        this.setVisible(false);
+        FrmSoda frmSoda = new FrmSoda();
+        frmSoda.setVisible(true);
+    }//GEN-LAST:event_btnSodaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -138,9 +171,9 @@ public class FrmOptionsDrinkCustomer extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCoffee;
+    private javax.swing.JButton btnJuice;
     private javax.swing.JButton btnReturn;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton btnSoda;
     private javax.swing.JLabel txtSnack;
     // End of variables declaration//GEN-END:variables
 }
