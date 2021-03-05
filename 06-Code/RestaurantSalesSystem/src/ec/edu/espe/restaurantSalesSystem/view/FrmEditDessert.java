@@ -250,13 +250,13 @@ public void emptyFields() {
         try {
             String[] Datos = new String[4];
             
-            Datos[1] = txtNumber.getText();
+            Datos[0] = txtNumber.getText();
             txtNumber.setName(null);
             
-            Datos[2] = txtDessert.getText();
+            Datos[1] = txtDessert.getText();
             txtDessert.setName(null);
             
-            Datos[3] = txtPrice.getText();
+            Datos[2] = txtPrice.getText();
             txtPrice.setName(null);
      
             modelo.addRow(Datos);
