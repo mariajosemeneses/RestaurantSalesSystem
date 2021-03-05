@@ -128,6 +128,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Save"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton2">
       <Properties>
@@ -144,7 +147,7 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="javax.swing.JTextPane" name="jTextPane1">
+        <Component class="javax.swing.JTextPane" name="txtSoup">
           <Properties>
             <Property name="text" type="java.lang.String" value="1. Locro : sopa de papacon queso fresco y aguacate&#xa;2. Tomate : coliflor, brocolo, zanahoria y crema de tomate&#xa;3. Pollo : pechuga de pollo picada, alverja, zanahoria y apio"/>
           </Properties>
@@ -168,7 +171,7 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="javax.swing.JTextPane" name="jTextPane2">
+        <Component class="javax.swing.JTextPane" name="txtMainCourse">
           <Properties>
             <Property name="text" type="java.lang.String" value="1. Chuleta de cerdo : acompa&#xf1;ada con papas fritas y ensalada&#xa;2.Camarones apanados : acompa&#xf1;ado de salsa ranch, arroz, maduro frito y ensalada.&#xa;3. Lasagna: acompa&#xf1;ado con ensalada"/>
           </Properties>
@@ -187,7 +190,7 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="javax.swing.JTextPane" name="jTextPane3">
+        <Component class="javax.swing.JTextPane" name="txtDrink">
           <Properties>
             <Property name="text" type="java.lang.String" value="1. Pi&#xf1;a&#xa;2. Mora&#xa;3. Sandia"/>
           </Properties>
@@ -206,7 +209,7 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="javax.swing.JTextPane" name="jTextPane4">
+        <Component class="javax.swing.JTextPane" name="txtDessert">
           <Properties>
             <Property name="text" type="java.lang.String" value="1. Brownie&#xa;2. Chesecake : fresa y mayacuya&#xa;3. Tres leches"/>
           </Properties>
@@ -220,9 +223,9 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="javax.swing.JTextPane" name="jTextPane5">
+        <Component class="javax.swing.JTextPane" name="txtPriceLunch">
           <Properties>
-            <Property name="text" type="java.lang.String" value="$ 2,50"/>
+            <Property name="text" type="java.lang.String" value="2.50"/>
           </Properties>
         </Component>
       </SubComponents>

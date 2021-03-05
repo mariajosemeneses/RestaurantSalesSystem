@@ -11,6 +11,7 @@ import com.mongodb.DBCollection;
 import com.mongodb.MongoClient;
 import static ec.edu.espe.restaurantSalesSystem.controller.Connection.createConnection;
 import static ec.edu.espe.restaurantsalessystem.utils.CrudOperation.create;
+import static ec.edu.espe.restaurantsalessystem.utils.CrudOperation.createMenu;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -173,17 +174,18 @@ public class FrmEditBreakfast extends javax.swing.JFrame {
       if (txtContinental.getText().isEmpty() || txtFull.getText().isEmpty()||txtPriceContinental.getText().isEmpty() ||txtPriceFull.getText().isEmpty()) {
             JOptionPane.showMessageDialog(null, "FILL ALL THE FIELDS");
       }else {
-            String dataToSave = "Do you want to save this information?: \nContinental: " + txtContinental.getText()
-            + "\nFull: " + txtFull.getText()+"price"+txtPriceContinental.getText()+"Price"+txtPriceFull.getText();
+            String dataToSave = "Do you want to save this information?: \nContinental\n" + txtContinental.getText()
+            +"\nprice"+txtPriceContinental.getText()+"\nFull\n" + txtFull.getText()+"\nPrice"+txtPriceFull.getText();
 
             int selection = JOptionPane.showConfirmDialog(null, dataToSave, "Breakfast Saving",
-                    JOptionPane.YES_NO_CANCEL_OPTION);
-
+            JOptionPane.YES_NO_CANCEL_OPTION);
             switch (selection) {
                 case 0:
+                    float priceContinental = Float.parseFloat(txtPriceContinental.getText());
+                    float priceFull = Float.parseFloat(txtPriceFull.getText());
                     JOptionPane.showMessageDialog(null, "Information was saved", txtContinental.getText() + "Saved",
-                            JOptionPane.INFORMATION_MESSAGE);
-                        create(mongo, "Menu", "Breakfast", txtContinental.getText(), txtFull.getText());
+                    JOptionPane.INFORMATION_MESSAGE);
+                    createMenu(mongo,"Menu","Breakfast", txtContinental.getText(),priceContinental,txtFull.getText(),priceFull);
                    
                     break;
                 case 1:
@@ -198,7 +200,12 @@ public class FrmEditBreakfast extends javax.swing.JFrame {
             }
         }
     }//GEN-LAST:event_btnSaveActionPerformed
-
+    public void emptyFields() {
+        txtContinental.setText("");
+        txtPriceContinental.setText("");
+        txtFull.setText("");
+        txtPriceFull.setText("");
+    }
     private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturnActionPerformed
         this.setVisible(false);
         FrmOptionsMenu frmOptionsMenu = new FrmOptionsMenu();
@@ -239,6 +246,7 @@ public class FrmEditBreakfast extends javax.swing.JFrame {
             }
         });
     }
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnReturn;

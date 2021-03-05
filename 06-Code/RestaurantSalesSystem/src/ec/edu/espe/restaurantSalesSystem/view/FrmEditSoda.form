@@ -125,7 +125,7 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="javax.swing.JTextPane" name="jTextPane1">
+        <Component class="javax.swing.JTextPane" name="txtSoda">
           <Properties>
             <Property name="text" type="java.lang.String" value="1. Coca Cola : Normal. light o Zero&#xa;&#xa;2. Fanta&#xa;&#xa;3. Sprite&#xa;&#xa;4. Big Cola: Negra, Fresa, Limon o Pi&#xf1;a&#xa;&#xa;5. Seven UP"/>
           </Properties>

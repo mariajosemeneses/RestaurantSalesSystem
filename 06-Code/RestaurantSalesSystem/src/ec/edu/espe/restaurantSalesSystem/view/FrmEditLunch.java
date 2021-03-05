@@ -5,11 +5,26 @@
  */
 package ec.edu.espe.restaurantSalesSystem.view;
 
+import com.mongodb.BasicDBObject;
+import com.mongodb.DB;
+import com.mongodb.DBCollection;
+import com.mongodb.MongoClient;
+import static ec.edu.espe.restaurantSalesSystem.controller.Connection.createConnection;
+import static ec.edu.espe.restaurantsalessystem.utils.CrudOperation.createLunch;
+import static ec.edu.espe.restaurantsalessystem.utils.CrudOperation.createMenu;
+import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
+
 /**
  *
  * @author DAVID
  */
 public class FrmEditLunch extends javax.swing.JFrame {
+    DefaultTableModel modelo;
+    DB db;
+    DBCollection collection;
+    BasicDBObject document = new BasicDBObject();
+    MongoClient mongo = createConnection();
 
     /**
      * Creates new form FrmEditLunch
@@ -31,19 +46,19 @@ public class FrmEditLunch extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextPane1 = new javax.swing.JTextPane();
+        txtSoup = new javax.swing.JTextPane();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTextPane2 = new javax.swing.JTextPane();
+        txtMainCourse = new javax.swing.JTextPane();
         jLabel4 = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
-        jTextPane3 = new javax.swing.JTextPane();
+        txtDrink = new javax.swing.JTextPane();
         jLabel5 = new javax.swing.JLabel();
         jScrollPane4 = new javax.swing.JScrollPane();
-        jTextPane4 = new javax.swing.JTextPane();
+        txtDessert = new javax.swing.JTextPane();
         jScrollPane5 = new javax.swing.JScrollPane();
-        jTextPane5 = new javax.swing.JTextPane();
+        txtPriceLunch = new javax.swing.JTextPane();
         jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -51,6 +66,11 @@ public class FrmEditLunch extends javax.swing.JFrame {
         jLabel1.setText("Lunch");
 
         jButton1.setText("Save");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setText("Return");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -59,28 +79,28 @@ public class FrmEditLunch extends javax.swing.JFrame {
             }
         });
 
-        jTextPane1.setText("1. Locro : sopa de papacon queso fresco y aguacate\n2. Tomate : coliflor, brocolo, zanahoria y crema de tomate\n3. Pollo : pechuga de pollo picada, alverja, zanahoria y apio");
-        jScrollPane1.setViewportView(jTextPane1);
+        txtSoup.setText("1. Locro : sopa de papacon queso fresco y aguacate\n2. Tomate : coliflor, brocolo, zanahoria y crema de tomate\n3. Pollo : pechuga de pollo picada, alverja, zanahoria y apio");
+        jScrollPane1.setViewportView(txtSoup);
 
         jLabel2.setText("Soup");
 
         jLabel3.setText("Main Course");
 
-        jTextPane2.setText("1. Chuleta de cerdo : acompañada con papas fritas y ensalada\n2.Camarones apanados : acompañado de salsa ranch, arroz, maduro frito y ensalada.\n3. Lasagna: acompañado con ensalada");
-        jScrollPane2.setViewportView(jTextPane2);
+        txtMainCourse.setText("1. Chuleta de cerdo : acompañada con papas fritas y ensalada\n2.Camarones apanados : acompañado de salsa ranch, arroz, maduro frito y ensalada.\n3. Lasagna: acompañado con ensalada");
+        jScrollPane2.setViewportView(txtMainCourse);
 
         jLabel4.setText("Dessert");
 
-        jTextPane3.setText("1. Piña\n2. Mora\n3. Sandia");
-        jScrollPane3.setViewportView(jTextPane3);
+        txtDrink.setText("1. Piña\n2. Mora\n3. Sandia");
+        jScrollPane3.setViewportView(txtDrink);
 
         jLabel5.setText("Drink");
 
-        jTextPane4.setText("1. Brownie\n2. Chesecake : fresa y mayacuya\n3. Tres leches");
-        jScrollPane4.setViewportView(jTextPane4);
+        txtDessert.setText("1. Brownie\n2. Chesecake : fresa y mayacuya\n3. Tres leches");
+        jScrollPane4.setViewportView(txtDessert);
 
-        jTextPane5.setText("$ 2,50");
-        jScrollPane5.setViewportView(jTextPane5);
+        txtPriceLunch.setText("2.50");
+        jScrollPane5.setViewportView(txtPriceLunch);
 
         jLabel6.setText("Price:");
 
@@ -172,6 +192,47 @@ public class FrmEditLunch extends javax.swing.JFrame {
         frmOptionsMenu.setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        if (txtSoup.getText().isEmpty() || txtMainCourse.getText().isEmpty()||
+                txtDrink.getText().isEmpty() ||txtDessert.getText().isEmpty()||
+                txtPriceLunch.getText().isEmpty()) {
+                JOptionPane.showMessageDialog(null, "FILL ALL THE FIELDS");
+      }else {
+            String dataToSave = "Do you want to save this information?: \nSoup\n" + txtSoup.getText()
+            +"\nMain Course\n"+txtMainCourse.getText()+"\nDrink\n" + txtDrink.getText()+"\nDessert\n" 
+            + txtDessert.getText()+"\nPrice: "+txtPriceLunch.getText();
+
+            int selection = JOptionPane.showConfirmDialog(null, dataToSave, "Breakfast Saving",
+            JOptionPane.YES_NO_CANCEL_OPTION);
+
+            switch (selection) {
+                case 0:
+                    float priceLunch = Float.parseFloat(txtPriceLunch.getText());
+                  
+                    JOptionPane.showMessageDialog(null, "Information was saved", txtSoup.getText() + "Saved",
+                    JOptionPane.INFORMATION_MESSAGE);
+                    createLunch(mongo,"Menu","Lunch", txtSoup.getText(),txtMainCourse.getText(),txtDrink.getText(),txtDessert.getText(),priceLunch);
+                   
+                    break;
+                case 1:
+                    JOptionPane.showMessageDialog(null, "Information was NOT saved", txtSoup.getText() + "NOT saved",
+                    JOptionPane.INFORMATION_MESSAGE);
+                    emptyFields();
+                    break;
+                default:
+                    JOptionPane.showMessageDialog(null, "Action was cancelled", txtSoup.getText() + "Cancelled",
+                    JOptionPane.INFORMATION_MESSAGE);
+                    break;
+            }
+        }
+    }//GEN-LAST:event_jButton1ActionPerformed
+public void emptyFields() {
+        txtSoup.setText("");
+        txtMainCourse.setText("");
+        txtDrink.setText("");
+        txtDessert.setText("");
+        txtPriceLunch.setText("");
+    }
     /**
      * @param args the command line arguments
      */
@@ -221,10 +282,10 @@ public class FrmEditLunch extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
-    private javax.swing.JTextPane jTextPane1;
-    private javax.swing.JTextPane jTextPane2;
-    private javax.swing.JTextPane jTextPane3;
-    private javax.swing.JTextPane jTextPane4;
-    private javax.swing.JTextPane jTextPane5;
+    private javax.swing.JTextPane txtDessert;
+    private javax.swing.JTextPane txtDrink;
+    private javax.swing.JTextPane txtMainCourse;
+    private javax.swing.JTextPane txtPriceLunch;
+    private javax.swing.JTextPane txtSoup;
     // End of variables declaration//GEN-END:variables
 }

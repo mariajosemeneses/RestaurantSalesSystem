@@ -17,6 +17,7 @@ import java.util.Scanner;
  * @author Group3
  */
 public class CrudOperation {
+    
 
     //Create a new document
     public static void create(MongoClient mongo, String dataBase, String collection, String name, String address,
@@ -40,7 +41,58 @@ public class CrudOperation {
         }
         dbCollection.insert(document);
     }
+    public static void createMenu(MongoClient mongo, String dataBase, String collection, String continental, float priceContinental,
+        String full, float priceFull) {
 
+        DB db = mongo.getDB(dataBase);
+        DBCollection dbCollection = db.getCollection(collection);
+        BasicDBObject document = new BasicDBObject();
+
+        document.put("Continental", continental);
+        document.put("Price Continental", priceContinental);
+        document.put("Full", full);
+        document.put("Price Full",priceFull);
+        dbCollection.insert(document);
+    }
+    public static void createLunch(MongoClient mongo, String dataBase, String collection, String soup,String mainCourse,
+    String drink,String dessert,float priceLunch) 
+    {
+
+        DB db = mongo.getDB(dataBase);
+        DBCollection dbCollection = db.getCollection(collection);
+        BasicDBObject document = new BasicDBObject();
+
+        document.put("Soup", soup);
+        document.put("Main Course", mainCourse);
+        document.put("Drink", drink);
+        document.put("Dessert",dessert);
+        document.put("Price",priceLunch);
+        dbCollection.insert(document);
+    }
+    public static void createDessert(MongoClient mongo, String dataBase, String collection, int number,String dessert,float price) 
+    {
+
+        DB db = mongo.getDB(dataBase);
+        DBCollection dbCollection = db.getCollection(collection);
+        BasicDBObject document = new BasicDBObject();
+        
+        document.put("Number", number);
+        document.put("Dessert", dessert);
+        document.put("Price", price);
+        dbCollection.insert(document);
+    }
+    public static void createSnack(MongoClient mongo, String dataBase, String collection, int number,String snack,float price) 
+    {
+
+        DB db = mongo.getDB(dataBase);
+        DBCollection dbCollection = db.getCollection(collection);
+        BasicDBObject document = new BasicDBObject();
+        
+        document.put("Number", number);
+        document.put("Snack", snack);
+        document.put("Price", price);
+        dbCollection.insert(document);
+    }
     //Show All the documents
     public static void showAll(MongoClient mongo, String dataBase, String collection) {
         DB db = mongo.getDB(dataBase);

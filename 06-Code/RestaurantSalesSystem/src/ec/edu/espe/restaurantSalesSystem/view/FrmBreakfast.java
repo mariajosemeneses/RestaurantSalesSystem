@@ -49,6 +49,7 @@ public class FrmBreakfast extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JSeparator();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         jLabel1.setFont(new java.awt.Font("Baskerville Old Face", 3, 24)); // NOI18N
         jLabel1.setText("Breakfast");

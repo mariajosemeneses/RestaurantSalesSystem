@@ -31,7 +31,7 @@ public class FrmEditSoda extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextPane1 = new javax.swing.JTextPane();
+        txtSoda = new javax.swing.JTextPane();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextPane2 = new javax.swing.JTextPane();
         jLabel1 = new javax.swing.JLabel();
@@ -58,8 +58,8 @@ public class FrmEditSoda extends javax.swing.JFrame {
             }
         });
 
-        jTextPane1.setText("1. Coca Cola : Normal. light o Zero\n\n2. Fanta\n\n3. Sprite\n\n4. Big Cola: Negra, Fresa, Limon o Piña\n\n5. Seven UP");
-        jScrollPane1.setViewportView(jTextPane1);
+        txtSoda.setText("1. Coca Cola : Normal. light o Zero\n\n2. Fanta\n\n3. Sprite\n\n4. Big Cola: Negra, Fresa, Limon o Piña\n\n5. Seven UP");
+        jScrollPane1.setViewportView(txtSoda);
 
         jTextPane2.setText("$ 0,50\n\n$ 0,50\n\n$ 0,50\n\n$ 0,50\n\n$ 0,50\n\n");
         jScrollPane2.setViewportView(jTextPane2);
@@ -187,8 +187,8 @@ public class FrmEditSoda extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JTextPane jTextPane1;
     private javax.swing.JTextPane jTextPane2;
     private javax.swing.JTextPane jTextPane3;
+    private javax.swing.JTextPane txtSoda;
     // End of variables declaration//GEN-END:variables
 }
