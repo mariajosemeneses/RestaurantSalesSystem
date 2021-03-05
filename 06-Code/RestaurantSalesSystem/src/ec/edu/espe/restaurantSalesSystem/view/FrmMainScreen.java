@@ -27,14 +27,61 @@ public class FrmMainScreen extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jMenu1 = new javax.swing.JMenu();
+        jMenuBar2 = new javax.swing.JMenuBar();
+        jMenu3 = new javax.swing.JMenu();
+        jMenu4 = new javax.swing.JMenu();
+        jMenuBar3 = new javax.swing.JMenuBar();
+        jMenu5 = new javax.swing.JMenu();
+        jMenu6 = new javax.swing.JMenu();
+        jMenuBar4 = new javax.swing.JMenuBar();
+        jMenu7 = new javax.swing.JMenu();
+        jMenu8 = new javax.swing.JMenu();
+        jMenuBar5 = new javax.swing.JMenuBar();
+        jMenu9 = new javax.swing.JMenu();
+        jMenu10 = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenu11 = new javax.swing.JMenu();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         mnuSystem = new javax.swing.JMenu();
-        itmMnuSave = new javax.swing.JMenuItem();
-        itmMnuSave2 = new javax.swing.JMenuItem();
-        itmMnuSave1 = new javax.swing.JMenuItem();
-        jMenu2 = new javax.swing.JMenu();
+        itmMnuExit = new javax.swing.JMenuItem();
+        mnuLogin = new javax.swing.JMenu();
+        itmMnuOwner = new javax.swing.JMenuItem();
+        itmMnuCashier = new javax.swing.JMenuItem();
+        itmMnuCustomer = new javax.swing.JMenuItem();
+        jMenu12 = new javax.swing.JMenu();
+
+        jMenu1.setText("jMenu1");
+
+        jMenu3.setText("File");
+        jMenuBar2.add(jMenu3);
+
+        jMenu4.setText("Edit");
+        jMenuBar2.add(jMenu4);
+
+        jMenu5.setText("File");
+        jMenuBar3.add(jMenu5);
+
+        jMenu6.setText("Edit");
+        jMenuBar3.add(jMenu6);
+
+        jMenu7.setText("File");
+        jMenuBar4.add(jMenu7);
+
+        jMenu8.setText("Edit");
+        jMenuBar4.add(jMenu8);
+
+        jMenu9.setText("File");
+        jMenuBar5.add(jMenu9);
+
+        jMenu10.setText("Edit");
+        jMenuBar5.add(jMenu10);
+
+        jMenuItem1.setText("jMenuItem1");
+
+        jMenu11.setText("jMenu11");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -47,37 +94,50 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
         mnuSystem.setText("System");
 
-        itmMnuSave.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_MASK));
-        itmMnuSave.setText("Owner");
-        itmMnuSave.addActionListener(new java.awt.event.ActionListener() {
+        itmMnuExit.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_E, java.awt.event.InputEvent.CTRL_MASK));
+        itmMnuExit.setText("Exit");
+        itmMnuExit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                itmMnuSaveActionPerformed(evt);
+                itmMnuExitActionPerformed(evt);
             }
         });
-        mnuSystem.add(itmMnuSave);
-
-        itmMnuSave2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_L, java.awt.event.InputEvent.CTRL_MASK));
-        itmMnuSave2.setText("Employee");
-        itmMnuSave2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                itmMnuSave2ActionPerformed(evt);
-            }
-        });
-        mnuSystem.add(itmMnuSave2);
-
-        itmMnuSave1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.CTRL_MASK));
-        itmMnuSave1.setText("Cutomer");
-        itmMnuSave1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                itmMnuSave1ActionPerformed(evt);
-            }
-        });
-        mnuSystem.add(itmMnuSave1);
+        mnuSystem.add(itmMnuExit);
 
         jMenuBar1.add(mnuSystem);
 
-        jMenu2.setText("Suggestions");
-        jMenuBar1.add(jMenu2);
+        mnuLogin.setText("Login");
+
+        itmMnuOwner.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_MASK));
+        itmMnuOwner.setText("Owner");
+        itmMnuOwner.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                itmMnuOwnerActionPerformed(evt);
+            }
+        });
+        mnuLogin.add(itmMnuOwner);
+
+        itmMnuCashier.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_MASK));
+        itmMnuCashier.setText("Cashier");
+        itmMnuCashier.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                itmMnuCashierActionPerformed(evt);
+            }
+        });
+        mnuLogin.add(itmMnuCashier);
+
+        itmMnuCustomer.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.CTRL_MASK));
+        itmMnuCustomer.setText("Cutomer");
+        itmMnuCustomer.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                itmMnuCustomerActionPerformed(evt);
+            }
+        });
+        mnuLogin.add(itmMnuCustomer);
+
+        jMenuBar1.add(mnuLogin);
+
+        jMenu12.setText("Suggestions");
+        jMenuBar1.add(jMenu12);
 
         setJMenuBar(jMenuBar1);
 
@@ -99,27 +159,33 @@ public class FrmMainScreen extends javax.swing.JFrame {
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel1)
-                .addContainerGap(117, Short.MAX_VALUE))
+                .addContainerGap(119, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void itmMnuSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmMnuSaveActionPerformed
+    private void itmMnuOwnerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmMnuOwnerActionPerformed
         this.setVisible(false);
         FrmLoginScreen frmLoginScreen = new FrmLoginScreen();
         frmLoginScreen.setVisible(true);
-    }//GEN-LAST:event_itmMnuSaveActionPerformed
+    }//GEN-LAST:event_itmMnuOwnerActionPerformed
 
-    private void itmMnuSave1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmMnuSave1ActionPerformed
+    private void itmMnuCustomerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmMnuCustomerActionPerformed
         this.setVisible(false);
         FrmMenu frmMenu = new FrmMenu();
         frmMenu.setVisible(true);
-    }//GEN-LAST:event_itmMnuSave1ActionPerformed
+    }//GEN-LAST:event_itmMnuCustomerActionPerformed
 
-    private void itmMnuSave2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmMnuSave2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itmMnuSave2ActionPerformed
+    private void itmMnuCashierActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmMnuCashierActionPerformed
+        this.setVisible(false);
+        FrmOptionsCashier frmOptionsCashier = new FrmOptionsCashier();
+        frmOptionsCashier.setVisible(true);
+    }//GEN-LAST:event_itmMnuCashierActionPerformed
+
+    private void itmMnuExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmMnuExitActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_itmMnuExitActionPerformed
 
     /**
      * @param args the command line arguments
@@ -158,13 +224,30 @@ public class FrmMainScreen extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenuItem itmMnuSave;
-    private javax.swing.JMenuItem itmMnuSave1;
-    private javax.swing.JMenuItem itmMnuSave2;
+    private javax.swing.JMenuItem itmMnuCashier;
+    private javax.swing.JMenuItem itmMnuCustomer;
+    private javax.swing.JMenuItem itmMnuExit;
+    private javax.swing.JMenuItem itmMnuOwner;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu10;
+    private javax.swing.JMenu jMenu11;
+    private javax.swing.JMenu jMenu12;
+    private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenu jMenu5;
+    private javax.swing.JMenu jMenu6;
+    private javax.swing.JMenu jMenu7;
+    private javax.swing.JMenu jMenu8;
+    private javax.swing.JMenu jMenu9;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuBar jMenuBar2;
+    private javax.swing.JMenuBar jMenuBar3;
+    private javax.swing.JMenuBar jMenuBar4;
+    private javax.swing.JMenuBar jMenuBar5;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenu mnuLogin;
     private javax.swing.JMenu mnuSystem;
     // End of variables declaration//GEN-END:variables
 }

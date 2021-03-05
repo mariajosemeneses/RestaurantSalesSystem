@@ -192,7 +192,6 @@ public class FrmLoginScreen extends javax.swing.JFrame {
                             break;
                         } else {
                             JOptionPane.showMessageDialog(null, "User or Password incorrect");
-
                         }
                     }
                 }
