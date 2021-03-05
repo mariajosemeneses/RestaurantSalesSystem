@@ -21,6 +21,11 @@ public class Waiter extends Employee
         super(id, age, name, address, email, cellPhone);
     }
 
+    public Waiter() {
+        
+    
+    }
+
    
 
     public ArrayList<Order> getOrders() {

@@ -22,7 +22,11 @@ public abstract class Person {
         this.email = email;
         this.cellPhone = cellPhone;
     }
+
+    public Person() {
+    }
         
+    
     /**
      * @return the name
      */
