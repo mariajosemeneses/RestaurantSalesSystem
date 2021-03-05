@@ -59,6 +59,11 @@ public class FrmOptionsCashier extends javax.swing.JFrame {
 
         btnRegisterOrder.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btnRegisterOrder.setText("Register Order");
+        btnRegisterOrder.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegisterOrderActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -110,6 +115,14 @@ public class FrmOptionsCashier extends javax.swing.JFrame {
         FrmMainScreen frmMainScreen = new FrmMainScreen();
         frmMainScreen.setVisible(true);
     }//GEN-LAST:event_btnReturnActionPerformed
+
+    private void btnRegisterOrderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegisterOrderActionPerformed
+        // FrmRegisterOrder
+        this.setVisible(false);
+        FrmRegisterOrder frmRegisterOrder = new FrmRegisterOrder();
+        frmRegisterOrder.setVisible(true);
+        
+    }//GEN-LAST:event_btnRegisterOrderActionPerformed
 
     /**
      * @param args the command line arguments
