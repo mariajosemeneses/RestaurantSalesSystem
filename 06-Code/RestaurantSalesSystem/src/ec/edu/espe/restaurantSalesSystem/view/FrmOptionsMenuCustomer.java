@@ -33,6 +33,7 @@ public class FrmOptionsMenuCustomer extends javax.swing.JFrame {
         btnDrink = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        btnExit = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -54,9 +55,19 @@ public class FrmOptionsMenuCustomer extends javax.swing.JFrame {
 
         btnSnack.setFont(new java.awt.Font("Baskerville Old Face", 0, 14)); // NOI18N
         btnSnack.setText("SNACK");
+        btnSnack.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSnackActionPerformed(evt);
+            }
+        });
 
         btnDrink.setFont(new java.awt.Font("Baskerville Old Face", 0, 14)); // NOI18N
         btnDrink.setText("DRINK");
+        btnDrink.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDrinkActionPerformed(evt);
+            }
+        });
 
         jButton1.setFont(new java.awt.Font("Baskerville Old Face", 0, 14)); // NOI18N
         jButton1.setText("DESSERT");
@@ -64,35 +75,46 @@ public class FrmOptionsMenuCustomer extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Javanese Text", 0, 24)); // NOI18N
         jLabel1.setText("MENU");
 
+        btnExit.setText("EXIT");
+        btnExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnExitActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(23, 23, 23)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(66, 66, 66)
-                        .addComponent(btnSnack))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(35, 35, 35)
+                                .addComponent(btnSnack))
+                            .addComponent(btnBreakfast))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(btnDrink)
+                                .addGap(35, 35, 35))
+                            .addComponent(btnLunch, javax.swing.GroupLayout.Alignment.TRAILING)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(31, 31, 31)
-                        .addComponent(btnBreakfast)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 88, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(btnDrink)
-                        .addGap(87, 87, 87))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(btnLunch)
-                        .addGap(52, 52, 52))))
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(145, 145, 145)
-                        .addComponent(jButton1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(165, 165, 165)
-                        .addComponent(jLabel1)))
-                .addGap(0, 0, Short.MAX_VALUE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(134, 134, 134)
+                                .addComponent(jLabel1))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(114, 114, 114)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jButton1)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(19, 19, 19)
+                                        .addComponent(btnExit)))))
+                        .addGap(108, 108, 108)))
+                .addGap(60, 60, 60))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -109,7 +131,9 @@ public class FrmOptionsMenuCustomer extends javax.swing.JFrame {
                     .addComponent(btnDrink))
                 .addGap(49, 49, 49)
                 .addComponent(jButton1)
-                .addContainerGap(34, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
+                .addComponent(btnExit)
+                .addGap(32, 32, 32))
         );
 
         pack();
@@ -126,6 +150,24 @@ public class FrmOptionsMenuCustomer extends javax.swing.JFrame {
         FrmLunch frmLunch = new FrmLunch();
         frmLunch.setVisible(true);
     }//GEN-LAST:event_btnLunchActionPerformed
+
+    private void btnSnackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSnackActionPerformed
+        this.setVisible(false);
+        FrmSnack frmSnack = new FrmSnack();
+        frmSnack.setVisible(true);
+    }//GEN-LAST:event_btnSnackActionPerformed
+
+    private void btnDrinkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDrinkActionPerformed
+          this.setVisible(false);
+        FrmOptionsDrinkCustomer frmOptionsDrinkCustomer = new FrmOptionsDrinkCustomer();
+        frmOptionsDrinkCustomer.setVisible(true);
+    }//GEN-LAST:event_btnDrinkActionPerformed
+
+    private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
+            this.setVisible(false);
+        FrmMainScreen frmMainScreen = new FrmMainScreen();
+        frmMainScreen.setVisible(true);
+    }//GEN-LAST:event_btnExitActionPerformed
 
     /**
      * @param args the command line arguments
@@ -166,6 +208,7 @@ public class FrmOptionsMenuCustomer extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBreakfast;
     private javax.swing.JButton btnDrink;
+    private javax.swing.JButton btnExit;
     private javax.swing.JButton btnLunch;
     private javax.swing.JButton btnSnack;
     private javax.swing.JButton jButton1;
