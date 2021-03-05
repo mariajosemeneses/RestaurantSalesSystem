@@ -7,12 +7,12 @@ package ec.edu.espe.restaurantSalesSystem.view;
 
 /**
  *
- * @author Maria José Meneses
+ * @author Sebas
  */
 public class FrmMainScreen extends javax.swing.JFrame {
 
     /**
-     * Creates new form FrmMain
+     * Creates new form FrmMainScreen1
      */
     public FrmMainScreen() {
         initComponents();
@@ -31,43 +31,67 @@ public class FrmMainScreen extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         mnuSystem = new javax.swing.JMenu();
-        itmMnuSave = new javax.swing.JMenuItem();
-        itmMnuSave1 = new javax.swing.JMenuItem();
-        jMenu2 = new javax.swing.JMenu();
+        itmMnuExit = new javax.swing.JMenuItem();
+        mnuLogin = new javax.swing.JMenu();
+        itmMnuOwner = new javax.swing.JMenuItem();
+        itmMnuCashier = new javax.swing.JMenuItem();
+        itmMnuCustomer = new javax.swing.JMenuItem();
+        jMenu3 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 3, 24)); // NOI18N
-        jLabel1.setText("RESTAURANT SALES SYSTEM");
+        jLabel1.setText("WELCOME");
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 3, 24)); // NOI18N
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("WELCOME");
+        jLabel2.setText("RESTAURANT SALES SYSTEM");
 
         mnuSystem.setText("System");
 
-        itmMnuSave.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_MASK));
-        itmMnuSave.setText("Owner");
-        itmMnuSave.addActionListener(new java.awt.event.ActionListener() {
+        itmMnuExit.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_E, java.awt.event.InputEvent.CTRL_MASK));
+        itmMnuExit.setText("Exit");
+        itmMnuExit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                itmMnuSaveActionPerformed(evt);
+                itmMnuExitActionPerformed(evt);
             }
         });
-        mnuSystem.add(itmMnuSave);
-
-        itmMnuSave1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.CTRL_MASK));
-        itmMnuSave1.setText("Cutomer");
-        itmMnuSave1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                itmMnuSave1ActionPerformed(evt);
-            }
-        });
-        mnuSystem.add(itmMnuSave1);
+        mnuSystem.add(itmMnuExit);
 
         jMenuBar1.add(mnuSystem);
 
-        jMenu2.setText("Suggestions");
-        jMenuBar1.add(jMenu2);
+        mnuLogin.setText("Login");
+
+        itmMnuOwner.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_MASK));
+        itmMnuOwner.setText("Owner");
+        itmMnuOwner.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                itmMnuOwnerActionPerformed(evt);
+            }
+        });
+        mnuLogin.add(itmMnuOwner);
+
+        itmMnuCashier.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_MASK));
+        itmMnuCashier.setText("Cashier");
+        itmMnuCashier.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                itmMnuCashierActionPerformed(evt);
+            }
+        });
+        mnuLogin.add(itmMnuCashier);
+
+        itmMnuCustomer.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_L, java.awt.event.InputEvent.CTRL_MASK));
+        itmMnuCustomer.setText("Customer");
+        itmMnuCustomer.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                itmMnuCustomerActionPerformed(evt);
+            }
+        });
+        mnuLogin.add(itmMnuCustomer);
+
+        jMenuBar1.add(mnuLogin);
+
+        jMenu3.setText("Suggestions");
+        jMenuBar1.add(jMenu3);
 
         setJMenuBar(jMenuBar1);
 
@@ -76,34 +100,49 @@ public class FrmMainScreen extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(62, 62, 62)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 359, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 359, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(72, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(171, 171, 171)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(49, 49, 49)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 365, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(74, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(98, 98, 98)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(100, 100, 100)
                 .addComponent(jLabel1)
-                .addContainerGap(117, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel2)
+                .addContainerGap(125, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void itmMnuSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmMnuSaveActionPerformed
+    private void itmMnuCustomerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmMnuCustomerActionPerformed
+        this.setVisible(false);
+        FrmMenu frmMenu = new FrmMenu();
+        frmMenu.setVisible(true);
+    }//GEN-LAST:event_itmMnuCustomerActionPerformed
+
+    private void itmMnuCashierActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmMnuCashierActionPerformed
+        this.setVisible(false);
+        FrmOptionsCashier frmOptionsCashier = new FrmOptionsCashier();
+        frmOptionsCashier.setVisible(true);
+    }//GEN-LAST:event_itmMnuCashierActionPerformed
+
+    private void itmMnuExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmMnuExitActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_itmMnuExitActionPerformed
+
+    private void itmMnuOwnerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmMnuOwnerActionPerformed
         this.setVisible(false);
         FrmLoginScreen frmLoginScreen = new FrmLoginScreen();
         frmLoginScreen.setVisible(true);
-    }//GEN-LAST:event_itmMnuSaveActionPerformed
-
-    private void itmMnuSave1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmMnuSave1ActionPerformed
-
-    }//GEN-LAST:event_itmMnuSave1ActionPerformed
+    }//GEN-LAST:event_itmMnuOwnerActionPerformed
 
     /**
      * @param args the command line arguments
@@ -142,12 +181,15 @@ public class FrmMainScreen extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenuItem itmMnuSave;
-    private javax.swing.JMenuItem itmMnuSave1;
+    private javax.swing.JMenuItem itmMnuCashier;
+    private javax.swing.JMenuItem itmMnuCustomer;
+    private javax.swing.JMenuItem itmMnuExit;
+    private javax.swing.JMenuItem itmMnuOwner;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenu mnuLogin;
     private javax.swing.JMenu mnuSystem;
     // End of variables declaration//GEN-END:variables
 }
