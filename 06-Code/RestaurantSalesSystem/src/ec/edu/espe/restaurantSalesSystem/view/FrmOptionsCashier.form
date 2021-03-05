@@ -110,6 +110,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Register Order"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRegisterOrderActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
