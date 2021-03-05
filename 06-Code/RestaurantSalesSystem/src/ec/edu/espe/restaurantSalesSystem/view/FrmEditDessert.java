@@ -40,8 +40,10 @@ public class FrmEditDessert extends javax.swing.JFrame {
 
         jLabel1.setText("Dessert");
 
+        jTextPane1.setText("1. Frutillas con crema\n2. Porcion de pastel de mora\n3.  Porcion de chocolate\n4.  Porcion de pastel de Vainilla\n5. Banana Split\n6.  Porcion de pie de mora\n7.  Porcion de pie de chocolate\n8. Ensalada de frutas ");
         jScrollPane1.setViewportView(jTextPane1);
 
+        jTextPane2.setText("1. $ 1,50\n2. $ 2,20\n3. $ 2,85\n4. $ 2,50\n5. $ 3,50\n6. $ 4,00\n7. $ 4,00\n8. $ 2,00\n");
         jScrollPane2.setViewportView(jTextPane2);
 
         jButton1.setText("Save");
@@ -72,13 +74,10 @@ public class FrmEditDessert extends javax.swing.JFrame {
                         .addGap(87, 87, 87)
                         .addComponent(jButton3))
                     .addGroup(layout.createSequentialGroup()
+                        .addGap(24, 24, 24)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(24, 24, 24)
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(56, 56, 56)
-                                .addComponent(jLabel1)))
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel1))
                         .addGap(28, 28, 28)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2)

@@ -79,6 +79,7 @@ public class FrmEditLunch extends javax.swing.JFrame {
         jTextPane4.setText("1. Brownie\n2. Chesecake : fresa y mayacuya\n3. Tres leches");
         jScrollPane4.setViewportView(jTextPane4);
 
+        jTextPane5.setText("$ 2,50");
         jScrollPane5.setViewportView(jTextPane5);
 
         jLabel6.setText("Price:");

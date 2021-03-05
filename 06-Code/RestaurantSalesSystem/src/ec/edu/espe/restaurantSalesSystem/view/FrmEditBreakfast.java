@@ -76,10 +76,12 @@ public class FrmEditBreakfast extends javax.swing.JFrame {
 
         jLabel4.setText("Price");
 
+        jTextPane3.setText("$ 2,00");
         jScrollPane3.setViewportView(jTextPane3);
 
         jLabel5.setText("Price");
 
+        jTextPane4.setText("$ 2,50");
         jScrollPane4.setViewportView(jTextPane4);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -151,7 +153,7 @@ public class FrmEditBreakfast extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
