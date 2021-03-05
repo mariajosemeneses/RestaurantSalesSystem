@@ -112,7 +112,7 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
 
         txtName.setToolTipText("Name and Lastname");
 
-        typeEmployee.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Chef", "Cashier", "Waiter", "Other" }));
+        typeEmployee.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Chef", "Cashier", "Waiter" }));
         typeEmployee.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 typeEmployeeActionPerformed(evt);
@@ -345,7 +345,7 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
                     JOptionPane.showMessageDialog(null, "Information was saved", txtName.getText() + "Saved",
                             JOptionPane.INFORMATION_MESSAGE);
                     int age = Integer.parseInt(txtAge.getText());
-                    if (typeEmployee.getSelectedItem().equals("Casher")) {
+                    if (typeEmployee.getSelectedItem().equals("Cashier")) {
                         create(mongo, "Employee", "cashiers", txtName.getText(), txtAddress.getText(),
                                 txtEmail.getText(), txtCell.getText(), age, txtId.getText());
                     } else if ((typeEmployee.getSelectedItem().equals("Waiter"))) {
