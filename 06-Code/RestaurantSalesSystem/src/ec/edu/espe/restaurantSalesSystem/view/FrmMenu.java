@@ -129,7 +129,6 @@ public class FrmMenu extends javax.swing.JFrame {
         jLabel8.setText("Continental");
 
 <<<<<<< HEAD
-<<<<<<< HEAD
         jList5.setBackground(new java.awt.Color(153, 204, 255));
         jList5.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "* Cafe, te o leche", "* Huevos : revueltos o cocidos", "* Sandwiche : queso o jamón", "* Fruta: manzana o fresas" };
@@ -138,8 +137,6 @@ public class FrmMenu extends javax.swing.JFrame {
         });
         jScrollPane5.setViewportView(jList5);
 
-=======
->>>>>>> b13449167c002de02195a3fbb2466f306fae1a2a
 =======
 >>>>>>> b13449167c002de02195a3fbb2466f306fae1a2a
         jLabel9.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N

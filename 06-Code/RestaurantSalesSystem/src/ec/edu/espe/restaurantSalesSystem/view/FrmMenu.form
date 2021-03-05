@@ -398,7 +398,6 @@
       </Properties>
     </Component>
 <<<<<<< HEAD
-<<<<<<< HEAD
     <Container class="javax.swing.JScrollPane" name="jScrollPane5">
       <AuxValues>
         <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
@@ -426,8 +425,6 @@
         </Component>
       </SubComponents>
     </Container>
-=======
->>>>>>> b13449167c002de02195a3fbb2466f306fae1a2a
 =======
 >>>>>>> b13449167c002de02195a3fbb2466f306fae1a2a
     <Component class="javax.swing.JLabel" name="jLabel9">
