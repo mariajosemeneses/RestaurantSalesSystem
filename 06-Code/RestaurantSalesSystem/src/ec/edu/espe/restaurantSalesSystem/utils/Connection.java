@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ec.edu.espe.restaurantSalesSystem.controller;
+package ec.edu.espe.restaurantSalesSystem.utils;
 
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;

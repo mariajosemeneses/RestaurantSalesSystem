@@ -48,6 +48,7 @@ public class FrmLoginScreen extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel1.setText("Username:");
@@ -178,22 +179,21 @@ public class FrmLoginScreen extends javax.swing.JFrame {
                 BufferedReader readFile = new BufferedReader(new FileReader(file));
                 String readLine;
                 Gson gson = new Gson();
-                while ((readLine = readFile.readLine()) != null) {
-                    Verification verification = gson.fromJson(readLine, Verification.class);
-                    if (user.isEmpty() || password.isEmpty()) {
-                        JOptionPane.showMessageDialog(null, "FILL ALL THE FIELDS");
-                        break;
-                    } else {
-                        if (user.equals(verification.getUser()) && password.equals(verification.getPassword())) {
-                            JOptionPane.showMessageDialog(null, "Welcome " + user);
-                            FrmOptionsOwner frmOptions = new FrmOptionsOwner();
-                            frmOptions.setVisible(true);
-                            this.dispose();
-                            break;
-                        } else {
-                            JOptionPane.showMessageDialog(null, "User or Password incorrect");
-                        }
-                    }
+                readLine = readFile.readLine();
+                Verification verification = gson.fromJson(readLine, Verification.class);
+                if (user.isEmpty() || password.isEmpty()) {
+                    JOptionPane.showMessageDialog(null, "FILL ALL THE FIELDS");
+                } else if (user.equals(verification.getUser()) && password.equals(verification.getPassword())) {
+                    JOptionPane.showMessageDialog(null, "Welcome " + user);
+                    FrmOptionsOwner frmOptions = new FrmOptionsOwner();
+                    frmOptions.setVisible(true);
+                    this.dispose();
+                } else if (user.equals(verification.getUser()) == false && password.equals(verification.getPassword()) == false) {
+                    JOptionPane.showMessageDialog(null, "User and Password are incorrect");
+                } else if (user.equals(verification.getUser()) == false) {
+                    JOptionPane.showMessageDialog(null, "User incorrect");
+                } else {
+                    JOptionPane.showMessageDialog(null, "Password incorrect");
                 }
             }
         } catch (IOException ex) {

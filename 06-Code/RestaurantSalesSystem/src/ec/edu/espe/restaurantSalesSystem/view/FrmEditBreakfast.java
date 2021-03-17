@@ -9,7 +9,7 @@ import com.mongodb.BasicDBObject;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
 import com.mongodb.MongoClient;
-import static ec.edu.espe.restaurantSalesSystem.controller.Connection.createConnection;
+import static ec.edu.espe.restaurantSalesSystem.utils.Connection.createConnection;
 import static ec.edu.espe.restaurantsalessystem.utils.CrudOperation.create;
 import static ec.edu.espe.restaurantsalessystem.utils.CrudOperation.createMenu;
 import javax.swing.JOptionPane;

@@ -11,7 +11,7 @@ import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
-import static ec.edu.espe.restaurantSalesSystem.controller.Connection.createConnection;
+import static ec.edu.espe.restaurantSalesSystem.utils.Connection.createConnection;
 import javax.swing.table.DefaultTableModel;
 
 
