@@ -18,6 +18,14 @@ public class Juice extends Drink{
     public Juice(String name, float price, int quantity) {
         super(name, price, quantity);
     }
+
+    public ArrayList<String> getFruits() {
+        return fruits;
+    }
+
+    public void setFruits(ArrayList<String> fruits) {
+        this.fruits = fruits;
+    }
     
     
 }

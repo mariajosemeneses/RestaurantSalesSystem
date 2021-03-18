@@ -12,7 +12,6 @@ import ec.edu.espe.restaurantsalessystem.model.Bill;
 import ec.edu.espe.restaurantsalessystem.model.Cashier;
 import ec.edu.espe.restaurantsalessystem.model.Chef;
 import ec.edu.espe.restaurantsalessystem.model.Customer;
-//import ec.edu.espe.restaurantsalessystem.model.Juice;
 import ec.edu.espe.restaurantSalesSystem.model.Food;
 import ec.edu.espe.restaurantSalesSystem.model.Product;
 import static ec.edu.espe.restaurantSalesSystem.utils.Connection.createConnection;
@@ -89,7 +88,6 @@ public class RestaurantSalesSystem {
 
                     case 2:
                         Waiter waiter = new Waiter();
-                        waiter.registerWaiter(waiter);
                         File file2 = new File("Waiter.json");
 
                         String jsonWaiter = gson.toJson(waiter);
@@ -138,7 +136,6 @@ public class RestaurantSalesSystem {
 
                     case 4:
                         Chef chef = new Chef();
-                        chef.registerChef(chef);
                         File file4 = new File("Chef.json");
                         String jsonChef = gson.toJson(chef);
                         try (BufferedWriter bw = new BufferedWriter(new FileWriter(file4.getAbsoluteFile(), true))) {

@@ -9,10 +9,15 @@ package ec.edu.espe.restaurantSalesSystem.model;
  *
  * @author Group3
  */
-public  class Product {
+public abstract class Product {
     private String name;
     private float price;
     private int quantity;
+
+    public Product() {
+    }
+    
+    
     
     public void add(){
         
@@ -45,12 +50,7 @@ public  class Product {
         this.quantity = quantity;
     }
 
-    @Override
-    public String toString() {
-        return "Product{" + "name=" + name + ", price=" + price + ", quantity=" + quantity + '}';
-    }
 
-    
     
     /**
      * @return the name

@@ -2,33 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/DAVID/Desktop/POO/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/view/FrmEditSoda.java</file>
-            <file>file:/C:/Users/DAVID/Desktop/POO/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/view/RestaurantSalesSystem.java</file>
-            <file>file:/C:/Users/DAVID/Desktop/POO/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/view/FrmSoda.java</file>
-            <file>file:/C:/Users/DAVID/Desktop/POO/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/view/FrmEditJuice.java</file>
-            <file>file:/C:/Users/DAVID/Desktop/POO/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/model/Breakfast.java</file>
-            <file>file:/C:/Users/DAVID/Desktop/POO/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/view/FrmEditCoffee.java</file>
-            <file>file:/C:/Users/DAVID/Desktop/POO/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/model/Product.java</file>
-            <file>file:/C:/Users/DAVID/Desktop/POO/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/model/Person.java</file>
-            <file>file:/C:/Users/DAVID/Desktop/POO/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/view/FrmResgisterEmployee.java</file>
-            <file>file:/C:/Users/DAVID/Desktop/POO/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/view/FrmBreakfast.java</file>
-            <file>file:/C:/Users/DAVID/Desktop/POO/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/view/FrmOptionsOwner.java</file>
-            <file>file:/C:/Users/DAVID/Desktop/POO/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/view/FrmEditSnack.java</file>
-            <file>file:/C:/Users/DAVID/Desktop/POO/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/view/FrmOptionsMenu.java</file>
-            <file>file:/C:/Users/DAVID/Desktop/POO/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/utils/CrudOperation.java</file>
-            <file>file:/C:/Users/DAVID/Desktop/POO/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/view/FrmJuice.java</file>
-            <file>file:/C:/Users/DAVID/Desktop/POO/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/controller/Connection.java</file>
-            <file>file:/C:/Users/DAVID/Desktop/POO/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/view/FrmDessert.java</file>
-            <file>file:/C:/Users/DAVID/Desktop/POO/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/view/FrmEditLunch.java</file>
-            <file>file:/C:/Users/DAVID/Desktop/POO/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/model/Food.java</file>
-            <file>file:/C:/Users/DAVID/Desktop/POO/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/view/FrmEditBreakfast.java</file>
-            <file>file:/C:/Users/DAVID/Desktop/POO/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/view/FrmRegisterCustomer.java</file>
-            <file>file:/C:/Users/DAVID/Desktop/POO/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/view/FrmLunch.java</file>
-            <file>file:/C:/Users/DAVID/Desktop/POO/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/view/FrmCoffee.java</file>
-            <file>file:/C:/Users/DAVID/Desktop/POO/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/view/FrmRegisterOrder.java</file>
-            <file>file:/C:/Users/DAVID/Desktop/POO/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/view/FrmEditDessert.java</file>
-            <file>file:/C:/Users/DAVID/Desktop/POO/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/view/FrmLoginScreen.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

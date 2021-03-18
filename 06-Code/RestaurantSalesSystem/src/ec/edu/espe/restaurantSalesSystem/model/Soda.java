@@ -19,6 +19,14 @@ public class Soda extends Drink{
         super(name, price, quantity);
     }
 
+    public ArrayList<String> getFlavorsAndBrands() {
+        return flavorsAndBrands;
+    }
+
+    public void setFlavorsAndBrands(ArrayList<String> flavorsAndBrands) {
+        this.flavorsAndBrands = flavorsAndBrands;
+    }
+
     
     }
     

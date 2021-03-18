@@ -11,8 +11,26 @@ import java.util.ArrayList;
  *
  * @author Group3
  */
-public class Dessert {
+public class Dessert extends Product{
     
-    ArrayList<String> desserts = new ArrayList();
+    private ArrayList<String> desserts = new ArrayList();
+
+    public Dessert(String name, float price, int quantity) {
+        super(name, price, quantity);
+    }
+
+    /**
+     * @return the desserts
+     */
+    public ArrayList<String> getDesserts() {
+        return desserts;
+    }
+
+    /**
+     * @param desserts the desserts to set
+     */
+    public void setDesserts(ArrayList<String> desserts) {
+        this.desserts = desserts;
+    }
     
 }

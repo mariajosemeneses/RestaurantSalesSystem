@@ -18,7 +18,7 @@ public class Owner extends Person{
     
     private ArrayList<Cashier> cashiers = new ArrayList();
     private ArrayList<Customer> customers = new ArrayList();
-    private ArrayList<Course> courses = new ArrayList();
+    private ArrayList<Product> products = new ArrayList();
     private ArrayList<Chef> chefs = new ArrayList();
     private ArrayList<Waiter> waiters = new ArrayList();
 
@@ -35,24 +35,26 @@ public class Owner extends Person{
     public void edit(){
         
     }
-    public void createCourse(Course course){
+    public void createProduct(Product product){
         
     }
     public void reportSale(){
         
     }
-    public Owner(String name, String address, String email, String cellPhone, ArrayList<Cashier> cashiers, ArrayList<Customer> customers, ArrayList<Course> courses, ArrayList<Chef> chefs, ArrayList<Waiter> waiters) {
+    public Owner(String name, String address, String email, String cellPhone, ArrayList<Cashier> 
+            cashiers, ArrayList<Customer> customers, ArrayList<Product> products, ArrayList<Chef> chefs, 
+            ArrayList<Waiter> waiters) {
         super(name, address, email, cellPhone);
         this.cashiers = cashiers;
         this.customers = customers;
-        this.courses = courses;
+        this.products = products;
         this.chefs = chefs;
         this.waiters = waiters;
     }
 
     @Override
     public String toString() {
-        return "Owner{" + "cashiers=" + cashiers + ", customers=" + customers + ", courses=" + courses + ", chefs=" + chefs + ", waiters=" + waiters + '}';
+        return "Owner{" + "cashiers=" + cashiers + ", customers=" + customers + ", products=" + products + ", chefs=" + chefs + ", waiters=" + waiters + '}';
     }
     
     
@@ -73,12 +75,12 @@ public class Owner extends Person{
         this.customers = customers;
     }
 
-    public ArrayList<Course> getCourses() {
-        return courses;
+    public ArrayList<Product> getProducts() {
+        return products;
     }
 
-    public void setCourses(ArrayList<Course> courses) {
-        this.courses = courses;
+    public void setCourses(ArrayList<Product> products) {
+        this.products = products;
     }
 
     public ArrayList<Chef> getChefs() {

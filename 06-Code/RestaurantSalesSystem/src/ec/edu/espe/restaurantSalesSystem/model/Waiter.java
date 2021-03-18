@@ -40,12 +40,5 @@ public class Waiter extends Employee
         
     }
 
-    public void registerWaiter(Waiter waiter) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
-    
-    
-    
-    
+
 }
