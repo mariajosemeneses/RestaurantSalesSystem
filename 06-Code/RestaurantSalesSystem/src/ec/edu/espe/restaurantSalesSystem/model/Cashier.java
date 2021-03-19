@@ -21,10 +21,8 @@ public class Cashier extends Person {
 
         super(id, age, name, address, email, cellPhone);
         this.customers = customers;
-        
-    }
 
-    
+    }
 
     /**
      * @return the customers
@@ -39,5 +37,5 @@ public class Cashier extends Person {
     public void setCustomers(ArrayList<Customer> customers) {
         this.customers = customers;
     }
-    
+
 }

@@ -5,37 +5,36 @@
  */
 package ec.edu.espe.restaurantSalesSystem.model;
 
-import ec.edu.espe.restaurantsalessystem.model.Cashier;
 import ec.edu.espe.restaurantsalessystem.model.Customer;
 import java.util.ArrayList;
+import junit.framework.Assert;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 /**
  *
- * @author Maria José Meneses
+ * @author Group 3
  */
 public class CashierTest {
-    
+
     public CashierTest() {
     }
-    
+
     @BeforeClass
     public static void setUpClass() {
     }
-    
+
     @AfterClass
     public static void tearDownClass() {
     }
-    
+
     @Before
     public void setUp() {
     }
-    
+
     @After
     public void tearDown() {
     }
@@ -46,12 +45,12 @@ public class CashierTest {
     @Test
     public void testGetCustomers() {
         System.out.println("getCustomers");
-        Cashier instance = null;
-        ArrayList<Customer> expResult = null;
-        ArrayList<Customer> result = instance.getCustomers();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        ArrayList<Customer> expResult = new ArrayList();
+        Customer customer = new Customer("5", 30, "Jorge", "Av. 6 December", 
+                "jjorge@gmail.com", "0983641574");
+        Assert.assertEquals(0, expResult.size());
+        expResult.add(customer);
+        Assert.assertEquals(1, expResult.size());
     }
 
     /**
@@ -60,11 +59,16 @@ public class CashierTest {
     @Test
     public void testSetCustomers() {
         System.out.println("setCustomers");
-        ArrayList<Customer> customers = null;
-        Cashier instance = null;
-        instance.setCustomers(customers);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        ArrayList<Customer> expResult = new ArrayList();
+        Customer customer = new Customer("1", 25, "Juan", "Barrionuevo", 
+                "juan@gmail.com", "0993122574");
+        Customer customer1 = new Customer("2", 27, "Pedro", "La Tola", 
+                "pedro@hotmail.com", "0976285821");
+        Assert.assertEquals(0, expResult.size());
+        expResult.add(customer);
+        expResult.add(customer1);
+        Assert.assertEquals(2, expResult.size());
+
     }
-    
+
 }

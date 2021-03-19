@@ -15,25 +15,25 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Maria José Meneses
+ * @author Group 3
  */
 public class BillTest {
-    
+
     public BillTest() {
     }
-    
+
     @BeforeClass
     public static void setUpClass() {
     }
-    
+
     @AfterClass
     public static void tearDownClass() {
     }
-    
+
     @Before
     public void setUp() {
     }
-    
+
     @After
     public void tearDown() {
     }
@@ -45,11 +45,10 @@ public class BillTest {
     public void testGetName() {
         System.out.println("getName");
         Bill instance = new Bill();
-        String expResult = "Andres";
+        String expResult = "Jose";
         String result = instance.getName();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-      
+        assertEquals(expResult, result, null);
+
     }
 
     /**
@@ -58,11 +57,10 @@ public class BillTest {
     @Test
     public void testSetName() {
         System.out.println("setName");
-        String name = "";
+        String name = "Jose";
         Bill instance = new Bill();
         instance.setName(name);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+
     }
 
     /**
@@ -72,11 +70,10 @@ public class BillTest {
     public void testGetDate() {
         System.out.println("getDate");
         Bill instance = new Bill();
-        String expResult = "";
+        String expResult = "2021/03/17";
         String result = instance.getDate();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(expResult, result, null);
+
     }
 
     /**
@@ -85,11 +82,10 @@ public class BillTest {
     @Test
     public void testSetDate() {
         System.out.println("setDate");
-        String date = "";
+        String date = "2021/03/17";
         Bill instance = new Bill();
         instance.setDate(date);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+
     }
 
     /**
@@ -99,11 +95,10 @@ public class BillTest {
     public void testGetIdentificationCard() {
         System.out.println("getIdentificationCard");
         Bill instance = new Bill();
-        float expResult = 0.0F;
-        float result = instance.getIdentificationCard();
-        assertEquals(expResult, result, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        int expResult = 44857;
+        int result = instance.getIdentificationCard();
+        assertEquals(expResult, result, 44857);
+
     }
 
     /**
@@ -112,11 +107,10 @@ public class BillTest {
     @Test
     public void testSetIdentificationCard() {
         System.out.println("setIdentificationCard");
-        float identificationCard = 0.0F;
+        int identificationCard = 44857;
         Bill instance = new Bill();
         instance.setIdentificationCard(identificationCard);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+
     }
 
     /**
@@ -126,11 +120,10 @@ public class BillTest {
     public void testGetCellPhone() {
         System.out.println("getCellPhone");
         Bill instance = new Bill();
-        String expResult = "";
+        String expResult = "0983023247";
         String result = instance.getCellPhone();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(expResult, result, null);
+
     }
 
     /**
@@ -139,65 +132,10 @@ public class BillTest {
     @Test
     public void testSetCellPhone() {
         System.out.println("setCellPhone");
-        String cellPhone = "";
+        String cellPhone = "0983023247";
         Bill instance = new Bill();
         instance.setCellPhone(cellPhone);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+
     }
 
-    /**
-     * Test of getDirection method, of class Bill.
-     */
-    @Test
-    public void testGetDirection() {
-        System.out.println("getDirection");
-        Bill instance = new Bill();
-        String expResult = "";
-        String result = instance.getDirection();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setDirection method, of class Bill.
-     */
-    @Test
-    public void testSetDirection() {
-        System.out.println("setDirection");
-        String direction = "";
-        Bill instance = new Bill();
-        instance.setDirection(direction);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getDescription method, of class Bill.
-     */
-    @Test
-    public void testGetDescription() {
-        System.out.println("getDescription");
-        Bill instance = new Bill();
-        String expResult = "";
-        String result = instance.getDescription();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setDescription method, of class Bill.
-     */
-    @Test
-    public void testSetDescription() {
-        System.out.println("setDescription");
-        String description = "";
-        Bill instance = new Bill();
-        instance.setDescription(description);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-    
 }

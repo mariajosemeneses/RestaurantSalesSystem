@@ -5,14 +5,10 @@
  */
 package ec.edu.espe.restaurantsalessystem.model;
 
-
-
 /**
  *
  * @author Group3
  */
-
-
 public class Chef extends Person {
 
     public Chef(String id, int age, String name, String address, String email, String cellPhone) {
@@ -21,7 +17,5 @@ public class Chef extends Person {
 
     public Chef() {
     }
-    
- 
-    
+
 }
