@@ -11,8 +11,7 @@ import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
 import com.mongodb.MongoClient;
 import static ec.edu.espe.Connection.utils.Conection.createConnection;
-
-import static ec.edu.espe.restaurantsalessystem.utils.CrudOperation.create;
+import ec.edu.espe.restaurantSalesSystem.utils.MongoManager;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -285,7 +284,8 @@ public class FrmRegisterCustomer extends javax.swing.JFrame {
                 case 0:
                     JOptionPane.showMessageDialog(null, "Information was saved", txtName.getText() + "Saved",
                             JOptionPane.INFORMATION_MESSAGE);
-                    create(mongo, "Person", "customers", txtName.getText(), txtAddress.getText(),
+                    MongoManager registerCustomer = new MongoManager();
+                    registerCustomer.create(mongo, "Person", "customers", txtName.getText(), txtAddress.getText(),
                             txtEmail.getText(), txtCellPhone.getText(), 0, "");
                     break;
                 case 1:

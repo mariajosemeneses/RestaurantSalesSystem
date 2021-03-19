@@ -11,7 +11,7 @@ import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
 import com.mongodb.MongoClient;
 import static ec.edu.espe.Connection.utils.Conection.createConnection;
-import static ec.edu.espe.restaurantsalessystem.utils.CrudOperation.create;
+import ec.edu.espe.restaurantSalesSystem.utils.MongoManager;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -212,10 +212,10 @@ public class FrmEditDessert extends javax.swing.JFrame {
                 case 0:
                     int numberDessert = Integer.parseInt(txtNumber.getText());
                     float priceDessert = Float.parseFloat(txtPrice.getText());
-             
+                    MongoManager createDessert=new MongoManager();
                     JOptionPane.showMessageDialog(null, "Information was saved", txtNumber.getText() + "Saved",
                     JOptionPane.INFORMATION_MESSAGE);
-                    create(mongo,"Menu","Dessert",numberDessert,txtDessert.getText(),priceDessert);
+                    createDessert.create(mongo,"Menu","Dessert",numberDessert,txtDessert.getText(),priceDessert);
                    
                     break;
                 case 1:

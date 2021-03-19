@@ -12,7 +12,7 @@ import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
 import com.mongodb.MongoClient;
 import static ec.edu.espe.Connection.utils.Conection.createConnection;
-import static ec.edu.espe.restaurantsalessystem.utils.CrudOperation.create;
+import ec.edu.espe.restaurantSalesSystem.utils.MongoManager;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -273,8 +273,9 @@ public class FrmEditSnack extends javax.swing.JFrame {
              
                     JOptionPane.showMessageDialog(null, "Information was saved", txtNumber.getText() + "Saved",
                     JOptionPane.INFORMATION_MESSAGE);
-                    create(mongo,"Menu","Dessert",numberSnack,txtSnack.getText(),priceSnack);
-                   
+                    MongoManager createSnack=new MongoManager();
+                    createSnack.create(mongo,"Menu","Dessert",numberSnack,txtSnack.getText(),priceSnack);
+  
                     break;
                 case 1:
                     JOptionPane.showMessageDialog(null, "Information was NOT saved", txtNumber.getText() + "NOT saved",

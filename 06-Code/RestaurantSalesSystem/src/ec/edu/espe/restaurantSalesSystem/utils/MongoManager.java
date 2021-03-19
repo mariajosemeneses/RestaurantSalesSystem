@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ec.edu.espe.restaurantsalessystem.utils;
+package ec.edu.espe.restaurantSalesSystem.utils;
 
 import com.mongodb.BasicDBObject;
 import com.mongodb.DB;
@@ -14,15 +14,15 @@ import java.util.Scanner;
 
 /**
  *
- * @author Group3
+ * @author DAVID
  */
-public class CrudOperation {
-    
+public class MongoManager implements Persistence{
 
-    //Create a new document
-    public static void create(MongoClient mongo, String dataBase, String collection, String name, String address,
-            String email, String cellPhone, int age, String id) {
-
+    @Override
+    public void create(String data){
+    }
+    public void create(MongoClient mongo, String dataBase, String collection, String name,
+            String address, String email, String cellPhone, int age, String id) {
         DB db = mongo.getDB(dataBase);
         DBCollection dbCollection = db.getCollection(collection);
         BasicDBObject document = new BasicDBObject();
@@ -39,10 +39,10 @@ public class CrudOperation {
             document.put("email", email);
             document.put("cellPhone", cellPhone);
         }
-        dbCollection.insert(document);
+        dbCollection.insert(document);   
     }
     
-    public static void create(MongoClient mongo, String dataBase, String collection, String continental, float priceContinental,
+    public void create(MongoClient mongo, String dataBase, String collection, String continental, float priceContinental,
         String full, float priceFull) {
 
         DB db = mongo.getDB(dataBase);
@@ -55,7 +55,7 @@ public class CrudOperation {
         document.put("Price Full",priceFull);
         dbCollection.insert(document);
     }
-    public static void create(MongoClient mongo, String dataBase, String collection, String soup,String mainCourse,
+    public void create(MongoClient mongo, String dataBase, String collection, String soup,String mainCourse,
     String drink,String dessert,float priceLunch) 
     {
 
@@ -70,7 +70,7 @@ public class CrudOperation {
         document.put("Price",priceLunch);
         dbCollection.insert(document);
     }
-    public static void create(MongoClient mongo, String dataBase, String collection, int number,String dessert,float price) 
+    public void create(MongoClient mongo, String dataBase, String collection, int number,String dessert,float price) 
     {
 
         DB db = mongo.getDB(dataBase);
@@ -82,70 +82,7 @@ public class CrudOperation {
         document.put("Price", price);
         dbCollection.insert(document);
     }
-   
-    //Show All the documents
-    public static void showAll(MongoClient mongo, String dataBase, String collection) {
-        DB db = mongo.getDB(dataBase);
-        DBCollection dbCollection = db.getCollection(collection);
-        DBCursor cursor = dbCollection.find();
-
-        while (cursor.hasNext()) {
-            if (collection.equals("Employee")) {
-                System.out.println(cursor.next().get("id") + "  " + cursor.curr().get("name") + "  "
-                        + cursor.curr().get("address") + "  " + cursor.curr().get("email") + "  "
-                        + cursor.curr().get("cellPhone") + "  " + cursor.curr().get("age"));
-            } else {
-                System.out.println(cursor.next().get("name") + "  " + cursor.curr().get("address") + "  "
-                        + cursor.curr().get("email") + "  " + cursor.curr().get("cellPhone"));
-            }
-        }
-    }
-
-    //Find a name in the documents
-    public static void findName(MongoClient mongo, String dataBase, String collection, String name) {
-        DB db = mongo.getDB(dataBase);
-        DBCollection dbCollection = db.getCollection(collection);
-        BasicDBObject query = new BasicDBObject();
-        query.put("name", name);
-
-        DBCursor cursor = dbCollection.find(query);
-        while (cursor.hasNext()) {
-            if (collection.equals("Employee")) {
-                System.out.println(cursor.next().get("id") + "  " + cursor.curr().get("name") + "  "
-                        + cursor.curr().get("address") + "  " + cursor.curr().get("email") + "  "
-                        + cursor.curr().get("cellPhone") + "  " + cursor.curr().get("age"));
-            } else {
-                System.out.println(cursor.next().get("name") + "  " + cursor.curr().get("address") + "  "
-                        + cursor.curr().get("email") + "  " + cursor.curr().get("cellPhone"));
-            }
-        }
-    }
-
-    //Update a name in the documents
-    public static void update(MongoClient mongo, String dataBase, String collection, String data) {
-        DB db = mongo.getDB(dataBase);
-        DBCollection dbCollection = db.getCollection(collection);
-        Scanner input = new Scanner(System.in);
-        String newName = "";
-
-        BasicDBObject searchedName = new BasicDBObject();
-        searchedName.append("name", data);
-
-        System.out.print("Enter new Name: ");
-        newName = input.nextLine();
-        BasicDBObject updateData = new BasicDBObject();
-        updateData.append("$set", new BasicDBObject().append("name", newName));
-        dbCollection.updateMulti(searchedName, updateData);
-    }
-
-    //Delete a name in the documents
-    public static void delete(MongoClient mongo, String dataBase, String collection, String name) {
-        DB db = mongo.getDB(dataBase);
-        DBCollection dbCollection = db.getCollection(collection);
-        dbCollection.remove(new BasicDBObject().append("name", name));
-    }
-    
-    public static void create(MongoClient mongo, String dataBase, String collection1, String name, String id,
+    public void create(MongoClient mongo, String dataBase, String collection1, String name, String id,
             String quantity, String price) {
 
         DB db = mongo.getDB(dataBase);
@@ -165,5 +102,75 @@ public class CrudOperation {
         }
         dbCollection.insert(document1);
     }
+
+    @Override
+    public void read() {
+    }
+    public void read(MongoClient mongo, String dataBase, String collection) {
+        DB db = mongo.getDB(dataBase);
+        DBCollection dbCollection = db.getCollection(collection);
+        DBCursor cursor = dbCollection.find();
+
+        while (cursor.hasNext()) {
+            if (collection.equals("Employee")) {
+                System.out.println(cursor.next().get("id") + "  " + cursor.curr().get("name") + "  "
+                        + cursor.curr().get("address") + "  " + cursor.curr().get("email") + "  "
+                        + cursor.curr().get("cellPhone") + "  " + cursor.curr().get("age"));
+            } else {
+                System.out.println(cursor.next().get("name") + "  " + cursor.curr().get("address") + "  "
+                        + cursor.curr().get("email") + "  " + cursor.curr().get("cellPhone"));
+            }
+        }
+    }
     
+    @Override
+    public void update(String dataToFind, String datatoUpdate) {
+    }
+    public void update(MongoClient mongo, String dataBase, String collection, String data) {
+        DB db = mongo.getDB(dataBase);
+        DBCollection dbCollection = db.getCollection(collection);
+        Scanner input = new Scanner(System.in);
+        String newName = "";
+
+        BasicDBObject searchedName = new BasicDBObject();
+        searchedName.append("name", data);
+
+        System.out.print("Enter new Name: ");
+        newName = input.nextLine();
+        BasicDBObject updateData = new BasicDBObject();
+        updateData.append("$set", new BasicDBObject().append("name", newName));
+        dbCollection.updateMulti(searchedName, updateData);
+    }
+    
+    @Override
+    public void delete(String dataToDelete) {
+    }
+    public void delete(MongoClient mongo, String dataBase, String collection, String name) {
+        DB db = mongo.getDB(dataBase);
+        DBCollection dbCollection = db.getCollection(collection);
+        dbCollection.remove(new BasicDBObject().append("name", name));
+    }
+
+
+    @Override
+    public void findName(String dataToFind) {
+    }
+    public void findName(MongoClient mongo, String dataBase, String collection, String name) {
+        DB db = mongo.getDB(dataBase);
+        DBCollection dbCollection = db.getCollection(collection);
+        BasicDBObject query = new BasicDBObject();
+        query.put("name", name);
+
+        DBCursor cursor = dbCollection.find(query);
+        while (cursor.hasNext()) {
+            if (collection.equals("Employee")) {
+                System.out.println(cursor.next().get("id") + "  " + cursor.curr().get("name") + "  "
+                        + cursor.curr().get("address") + "  " + cursor.curr().get("email") + "  "
+                        + cursor.curr().get("cellPhone") + "  " + cursor.curr().get("age"));
+            } else {
+                System.out.println(cursor.next().get("name") + "  " + cursor.curr().get("address") + "  "
+                        + cursor.curr().get("email") + "  " + cursor.curr().get("cellPhone"));
+            }
+        }
+    }        
 }

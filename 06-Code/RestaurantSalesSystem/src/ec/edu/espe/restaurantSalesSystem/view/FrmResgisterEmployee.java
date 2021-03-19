@@ -11,7 +11,7 @@ import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
 import com.mongodb.MongoClient;
 import static ec.edu.espe.Connection.utils.Conection.createConnection;
-import static ec.edu.espe.restaurantsalessystem.utils.CrudOperation.create;
+import ec.edu.espe.restaurantSalesSystem.utils.MongoManager;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -344,15 +344,17 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
                 case 0:
                     JOptionPane.showMessageDialog(null, "Information was saved", txtName.getText() + "Saved",
                             JOptionPane.INFORMATION_MESSAGE);
+                    MongoManager registerEmployee =new MongoManager();
                     int age = Integer.parseInt(txtAge.getText());
                     if (typeEmployee.getSelectedItem().equals("Cashier")) {
-                        create(mongo, "Employee", "cashiers", txtName.getText(), txtAddress.getText(),
+                        
+                        registerEmployee.create(mongo, "Employee", "cashiers", txtName.getText(), txtAddress.getText(),
                                 txtEmail.getText(), txtCell.getText(), age, txtId.getText());
                     } else if ((typeEmployee.getSelectedItem().equals("Waiter"))) {
-                        create(mongo, "Employee", "waiters", txtName.getText(), txtAddress.getText(),
+                        registerEmployee.create(mongo, "Employee", "waiters", txtName.getText(), txtAddress.getText(),
                                 txtEmail.getText(), txtCell.getText(), age, txtId.getText());
                     } else {
-                        create(mongo, "Employee", "chefs", txtName.getText(), txtAddress.getText(),
+                        registerEmployee.create(mongo, "Employee", "chefs", txtName.getText(), txtAddress.getText(),
                                 txtEmail.getText(), txtCell.getText(), age, txtId.getText());
                     }
                     break;

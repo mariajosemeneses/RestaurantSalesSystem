@@ -7,6 +7,7 @@ package ec.edu.espe.restaurantSalesSystem.view;
 
 import com.google.gson.Gson;
 import ec.edu.espe.restaurantSalesSystem.controller.Verification;
+import ec.edu.espe.restaurantSalesSystem.utils.FileManager;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -172,8 +173,9 @@ public class FrmLoginScreen extends javax.swing.JFrame {
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
         String user = txtUsername.getText();
         String password = txtPassword.getText();
-
         File file = new File("Users.json");
+        FileManager read=new FileManager();
+        
         try {
             if (file.exists()) {
                 BufferedReader readFile = new BufferedReader(new FileReader(file));
