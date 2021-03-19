@@ -6,15 +6,21 @@
 package ec.edu.espe.restaurantSalesSystem.utils;
 
 import com.google.gson.Gson;
-import com.mongodb.MongoClient;
 import ec.edu.espe.restaurantSalesSystem.controller.Verification;
 import ec.edu.espe.restaurantSalesSystem.view.FrmLoginScreen;
 import ec.edu.espe.restaurantSalesSystem.view.FrmOptionsOwner;
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Properties;
+import java.util.Random;
 import java.util.Scanner;
+import java.util.Set;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 /**
@@ -24,11 +30,22 @@ import javax.swing.JOptionPane;
 public class FileManager implements Persistence{
 
     @Override
-    public void create(String data) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    public void create(){
-        
+    public void create(String data){
+         File file = new File("User.json");
+            if(!file.exists()){
+            try {    
+                file.createNewFile();
+            } catch (IOException ex) {
+                Logger.getLogger(FileManager.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            }      
+        try {              
+            FileWriter fw = new FileWriter(file.getAbsoluteFile(),true);
+            fw.write(data);
+            fw.close();
+        } catch (IOException ex) {
+            System.out.println(ex);
+        }   
         
     }
 
@@ -45,18 +62,90 @@ public class FileManager implements Persistence{
         
         bufferedreader.close();
         }catch(Exception e){
-            System.out.println("Archivo no econtrado");            
+            System.out.println("File don't found");            
         }
-        return true;
     }
     @Override
     public void update(String dataToFind, String datatoUpdate) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        File fAntiguo = new File("User.json");
+        Random numaleatorio = new Random(3816L);
+        String nFnuevo = fAntiguo.getParent()+"/auxiliar"+String.valueOf(Math.abs(numaleatorio.nextInt()))+".txt";
+        File fNuevo= new File(nFnuevo);
+        BufferedReader br;
+        try
+        {
+            if(fAntiguo.exists())
+            {
+                br = new BufferedReader(new FileReader(fAntiguo));
+                String linea;
+                while((linea=br.readLine()) != null)
+                {
+                    if(linea.equals(dataToFind))
+                    {
+                        create("User.json");
+                      
+                    }
+                    else
+                    {
+                        create("User.json");
+                    }
+                }
+                br.close();
+                String nAntiguo = fAntiguo.getName();
+                delete("User.json");
+                fNuevo.renameTo(fAntiguo);
+            }
+            else
+            {
+                System.out.println("File doesn't exist");
+            }
+
+        }catch(Exception e)
+        {
+            System.out.println(e);
+        }
     }
 
     @Override
     public void delete(String dataToDelete) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        boolean deleted = false;
+        boolean ignore = false;
+        String newLine = "";
+        Gson gson = new Gson();
+        
+        try{
+            FileReader readFile= new FileReader("User.json");
+            BufferedReader read = new BufferedReader(readFile);
+            String line;
+            while ((line= read.readLine()) !=null) {
+                
+                Properties properties = (Properties)gson.fromJson(line, Properties.class);
+                Set<String> keys = properties.stringPropertyNames();
+                        
+                for (String key : keys){
+                    if (dataToDelete.equals(properties.getProperty(key))){
+                       
+                        ignore= true;
+                        deleted= true;
+                    }
+                }
+                if (!ignore){
+                    newLine= newLine + line + "\n";
+                    
+                }
+                ignore = false;
+            }
+            read.close();
+            try(FileWriter writer = new FileWriter("User.json")){
+                writer.write(newLine);
+                writer.close();
+          
+            }
+        }catch (FileNotFoundException ex){
+            System.out.println( ex );
+        } catch (IOException ex) {
+            Logger.getLogger(FileManager.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     @Override
