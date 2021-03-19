@@ -11,12 +11,13 @@ import java.util.ArrayList;
  *
  * @author Group3
  */
-public class Dessert extends Product{
-    
+public class Dessert extends Product {
+
     private ArrayList<String> desserts = new ArrayList();
 
-    public Dessert(String name, float price, int quantity) {
+    public Dessert(String name, float price, int quantity, ArrayList<String> desserts) {
         super(name, price, quantity);
+        this.desserts = desserts;
     }
 
     /**
@@ -32,5 +33,5 @@ public class Dessert extends Product{
     public void setDesserts(ArrayList<String> desserts) {
         this.desserts = desserts;
     }
-    
+
 }

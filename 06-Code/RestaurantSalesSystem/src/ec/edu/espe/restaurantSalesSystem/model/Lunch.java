@@ -11,8 +11,8 @@ import java.util.ArrayList;
  *
  * @author Group3
  */
-public class Lunch extends Food{
-    
+public class Lunch extends Food {
+
     ArrayList<String> soups = new ArrayList();
     ArrayList<String> mainCourses = new ArrayList();
     Drink drink;
@@ -56,7 +56,4 @@ public class Lunch extends Food{
         this.dessert = dessert;
     }
 
-    
-    
-    
 }

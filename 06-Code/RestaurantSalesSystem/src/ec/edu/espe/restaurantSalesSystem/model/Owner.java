@@ -7,15 +7,12 @@ package ec.edu.espe.restaurantsalessystem.model;
 
 import java.util.ArrayList;
 
-
-
-
 /**
  *
  * @author Group3
  */
-public class Owner extends Person{
-    
+public class Owner extends Person {
+
     private ArrayList<Cashier> cashiers = new ArrayList();
     private ArrayList<Customer> customers = new ArrayList();
     private ArrayList<Product> products = new ArrayList();
@@ -29,7 +26,6 @@ public class Owner extends Person{
     public Owner() {
     }
 
-    
     public ArrayList<Cashier> getCashiers() {
         return cashiers;
     }
@@ -69,5 +65,5 @@ public class Owner extends Person{
     public void setWaiters(ArrayList<Waiter> waiters) {
         this.waiters = waiters;
     }
-    
+
 }

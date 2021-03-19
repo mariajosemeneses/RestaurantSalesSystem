@@ -10,24 +10,20 @@ package ec.edu.espe.restaurantSalesSystem.model;
  * @author Group3
  */
 public abstract class Product {
+
     private String name;
     private float price;
     private int quantity;
 
     public Product() {
     }
-    
-  
-    
-   
+
     public Product(String name, float price, int quantity) {
         this.name = name;
         this.price = price;
         this.quantity = quantity;
     }
 
-
-    
     /**
      * @return the name
      */
@@ -69,6 +65,5 @@ public abstract class Product {
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
-    
-    
+
 }

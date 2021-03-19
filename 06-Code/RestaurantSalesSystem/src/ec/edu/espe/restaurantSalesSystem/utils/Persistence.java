@@ -5,17 +5,20 @@
  */
 package ec.edu.espe.restaurantSalesSystem.utils;
 
-import com.mongodb.MongoClient;
-
 /**
  *
  * @author DAVID
  */
 public interface Persistence {
+
     public void create(String data);
+
     public void read();
+
     public void update(String dataToFind, String datatoUpdate);
+
     public void delete(String dataToDelete);
-    public void findName(String dataToFind);
-    
+
+    public String findName(String dataToFind);
+
 }

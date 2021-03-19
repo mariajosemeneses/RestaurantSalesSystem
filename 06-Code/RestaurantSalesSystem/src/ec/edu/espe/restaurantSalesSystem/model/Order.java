@@ -7,16 +7,15 @@ package ec.edu.espe.restaurantsalessystem.model;
 
 import java.util.ArrayList;
 
-
 /**
  *
  * @author Group3
  */
-public class Order 
-{
+public class Order {
+
     private int numberOrder;
     private Customer customer;
-    private ArrayList<Product> products= new ArrayList();
+    private ArrayList<Product> products = new ArrayList();
     private float price;
     private int tableNumber;
 
@@ -28,10 +27,8 @@ public class Order
     }
 
     Order() {
-        
-    }
 
-   
+    }
 
     public int getNumberOrder() {
         return numberOrder;
@@ -72,7 +69,5 @@ public class Order
     public void setTableNumber(int tableNumber) {
         this.tableNumber = tableNumber;
     }
-
-    
 
 }

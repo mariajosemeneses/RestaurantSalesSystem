@@ -153,7 +153,9 @@ public class MongoManager implements Persistence{
 
 
     @Override
-    public void findName(String dataToFind) {
+    public String findName(String dataToFind) {
+        String name = "";
+        return name;
     }
     public void findName(MongoClient mongo, String dataBase, String collection, String name) {
         DB db = mongo.getDB(dataBase);

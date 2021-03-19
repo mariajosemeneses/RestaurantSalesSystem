@@ -10,7 +10,7 @@ package ec.edu.espe.restaurantsalessystem.model;
  * @author Group3
  */
 public abstract class Person {
-    
+
     private String id;
     private int age;
     private String name;
@@ -27,11 +27,9 @@ public abstract class Person {
         this.cellPhone = cellPhone;
     }
 
-   
     public Person() {
     }
-        
-    
+
     /**
      * @return the name
      */
@@ -87,5 +85,33 @@ public abstract class Person {
     public void setCellPhone(String cellPhone) {
         this.cellPhone = cellPhone;
     }
-    
+
+    /**
+     * @return the id
+     */
+    public String getId() {
+        return id;
+    }
+
+    /**
+     * @param id the id to set
+     */
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    /**
+     * @return the age
+     */
+    public int getAge() {
+        return age;
+    }
+
+    /**
+     * @param age the age to set
+     */
+    public void setAge(int age) {
+        this.age = age;
+    }
+
 }

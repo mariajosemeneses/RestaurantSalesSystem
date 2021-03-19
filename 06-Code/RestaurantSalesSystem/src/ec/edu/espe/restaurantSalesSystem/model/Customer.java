@@ -5,12 +5,11 @@
  */
 package ec.edu.espe.restaurantsalessystem.model;
 
-
 /**
  *
  * @author Group3
  */
-public class Customer extends Person{
+public class Customer extends Person {
 
     public Customer(String id, int age, String name, String address, String email, String cellPhone) {
         super(id, age, name, address, email, cellPhone);
@@ -19,8 +18,4 @@ public class Customer extends Person{
     public Customer() {
     }
 
-   
-    
-    
 }
-    
