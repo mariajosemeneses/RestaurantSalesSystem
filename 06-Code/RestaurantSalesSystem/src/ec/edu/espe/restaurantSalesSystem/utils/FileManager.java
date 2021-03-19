@@ -34,19 +34,20 @@ public class FileManager implements Persistence{
 
     @Override
     public void read() {
-        File file = new File("Users.json");
-        FileManager read = new FileManager();
-        try {
-            if (file.exists()) {
-                BufferedReader readFile = new BufferedReader(new FileReader(file));
-                String readLine;
-                Gson gson = new Gson();
-                readLine = readFile.readLine();
-                Verification verification = gson.fromJson(readLine, Verification.class);
-            }
-        }catch (IOException ex) {
-            System.out.println(ex.getMessage());
+        try{
+        String user;
+        File file = new File("User.json");
+        FileReader reader = new FileReader(file);
+        BufferedReader bufferedreader = new BufferedReader(reader);
+        while ((user = bufferedreader.readLine()) != null) {
+            System.out.println(user);
         }
+        
+        bufferedreader.close();
+        }catch(Exception e){
+            System.out.println("Archivo no econtrado");            
+        }
+        return true;
     }
     @Override
     public void update(String dataToFind, String datatoUpdate) {
