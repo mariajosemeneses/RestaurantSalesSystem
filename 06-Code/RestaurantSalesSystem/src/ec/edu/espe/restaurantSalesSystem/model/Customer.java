@@ -12,9 +12,14 @@ package ec.edu.espe.restaurantsalessystem.model;
  */
 public class Customer extends Person{
 
-    public Customer(String name, String address, String email, String cellPhone) {
-        super(name, address, email, cellPhone);
+    public Customer(String id, int age, String name, String address, String email, String cellPhone) {
+        super(id, age, name, address, email, cellPhone);
     }
+
+    public Customer() {
+    }
+
+   
     
     public Order generateOrder() {
         

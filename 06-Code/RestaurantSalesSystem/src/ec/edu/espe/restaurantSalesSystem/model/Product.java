@@ -17,20 +17,7 @@ public abstract class Product {
     public Product() {
     }
     
-    
-    
-    public void add(){
-        
-    }
-    
-    public void modiffy(){
-        
-    }
-    
-    public void delete(){
-        
-    }
-    
+  
     public void visualize(){
         
     }
@@ -39,11 +26,7 @@ public abstract class Product {
         
     }
     
-    public boolean availability(Food food, Drink drink, Snack snack , Dessert dessert){
-        return true;
-        
-    }
-
+   
     public Product(String name, float price, int quantity) {
         this.name = name;
         this.price = price;

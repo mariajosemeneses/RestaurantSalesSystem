@@ -22,43 +22,14 @@ public class Owner extends Person{
     private ArrayList<Chef> chefs = new ArrayList();
     private ArrayList<Waiter> waiters = new ArrayList();
 
-    public Owner(String name, String address, String email, String cellPhone) {
-        super(name, address, email, cellPhone);
-    }
-    public void add(){
-        
-    }
-    
-    public void delete(){
-        
-    } 
-    public void edit(){
-        
-    }
-    public void createProduct(Product product){
-        
-    }
-    public void reportSale(){
-        
-    }
-    public Owner(String name, String address, String email, String cellPhone, ArrayList<Cashier> 
-            cashiers, ArrayList<Customer> customers, ArrayList<Product> products, ArrayList<Chef> chefs, 
-            ArrayList<Waiter> waiters) {
-        super(name, address, email, cellPhone);
-        this.cashiers = cashiers;
-        this.customers = customers;
-        this.products = products;
-        this.chefs = chefs;
-        this.waiters = waiters;
+    public Owner(String id, int age, String name, String address, String email, String cellPhone) {
+        super(id, age, name, address, email, cellPhone);
     }
 
-    @Override
-    public String toString() {
-        return "Owner{" + "cashiers=" + cashiers + ", customers=" + customers + ", products=" + products + ", chefs=" + chefs + ", waiters=" + waiters + '}';
+    public Owner() {
     }
-    
-    
 
+    
     public ArrayList<Cashier> getCashiers() {
         return cashiers;
     }

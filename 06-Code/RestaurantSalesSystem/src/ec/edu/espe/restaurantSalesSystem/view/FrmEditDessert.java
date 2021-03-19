@@ -10,9 +10,8 @@ import com.mongodb.DB;
 import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
 import com.mongodb.MongoClient;
-import static ec.edu.espe.restaurantSalesSystem.utils.Connection.createConnection;
-import static ec.edu.espe.restaurantsalessystem.utils.CrudOperation.createDessert;
-import static ec.edu.espe.restaurantsalessystem.utils.CrudOperation.createMenu;
+import static ec.edu.espe.Connection.utils.Conection.createConnection;
+import static ec.edu.espe.restaurantsalessystem.utils.CrudOperation.create;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -216,7 +215,7 @@ public class FrmEditDessert extends javax.swing.JFrame {
              
                     JOptionPane.showMessageDialog(null, "Information was saved", txtNumber.getText() + "Saved",
                     JOptionPane.INFORMATION_MESSAGE);
-                    createDessert(mongo,"Menu","Dessert",numberDessert,txtDessert.getText(),priceDessert);
+                    create(mongo,"Menu","Dessert",numberDessert,txtDessert.getText(),priceDessert);
                    
                     break;
                 case 1:

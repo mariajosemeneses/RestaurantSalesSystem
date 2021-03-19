@@ -13,89 +13,15 @@ package ec.edu.espe.restaurantsalessystem.model;
  */
 
 
-public class Chef {
-    private String name;
-    private String id;
-    private int age;
-    private String cellphone;
+public class Chef extends Person {
 
-    public Chef(String name, String id, int age, String cellphone) {
-        this.name = name;
-        this.id = id;
-        this.age = age;
-        this.cellphone = cellphone;
+    public Chef(String id, int age, String name, String address, String email, String cellPhone) {
+        super(id, age, name, address, email, cellPhone);
     }
 
     public Chef() {
     }
-  
-    @Override
-    public String toString() {
-        return "Chef{" + "name=" + name + ", id=" + id + ", age=" + age + ", cellphone=" + cellphone + '}';
-    }
-
-    public void prepareCourse(){
-       
-    }
     
-    public void viewOrder(Order order){
-        
-    }
-    /**
-     * @return the name
-     */
-    public String getName() {
-        return name;
-    }
-
-    /**
-     * @param name the name to set
-     */
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    /**
-     * @return the id
-     */
-    public String getId() {
-        return id;
-    }
-
-    /**
-     * @param id the id to set
-     */
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    /**
-     * @return the age
-     */
-    public int getAge() {
-        return age;
-    }
-
-    /**
-     * @param age the age to set
-     */
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    /**
-     * @return the cellphone
-     */
-    public String getCellphone() {
-        return cellphone;
-    }
-
-    /**
-     * @param cellphone the cellphone to set
-     */
-    public void setCellphone(String cellphone) {
-        this.cellphone = cellphone;
-    }
-    
+ 
     
 }

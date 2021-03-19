@@ -10,7 +10,8 @@ import com.mongodb.DB;
 import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
 import com.mongodb.MongoClient;
-import static ec.edu.espe.restaurantSalesSystem.utils.Connection.createConnection;
+import static ec.edu.espe.Connection.utils.Conection.createConnection;
+
 import static ec.edu.espe.restaurantsalessystem.utils.CrudOperation.create;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;

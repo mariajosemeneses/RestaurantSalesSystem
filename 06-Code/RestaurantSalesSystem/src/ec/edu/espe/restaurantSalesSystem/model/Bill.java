@@ -32,17 +32,6 @@ public class Bill
     }
     
   
-    public void checkIn()
-    {
-        
-    }
-    
-    public void calculateTotal(int quantity, float price) 
-    {
-        
-        
-        
-    }
 
     public Bill(String name, String date, float identificationCard, String cellPhone, String direction, String description) {
         this.name = name;
@@ -52,68 +41,7 @@ public class Bill
         this.direction = direction;
         this.description = description;
     }
-public void registerBill(Bill bill) {
 
-        Scanner input = new Scanner(System.in);
-        File file = new File("Bill.json");
-
-        if (!file.exists()) {
-            try {
-                file.createNewFile();
-                FileWriter write = new FileWriter(file, true);
-                PrintWriter line = new PrintWriter(write);
-                System.out.print("Enter name: ");
-                bill.setName(input.nextLine());
-                System.out.print("Enter ID: ");
-                bill.setDate(input.nextLine());
-                System.out.print("Enter age: ");
-                bill.setIdentificationCard(input.nextInt());
-                input.nextLine();
-                System.out.print("Enter phone number: ");
-                bill.setCellPhone(input.nextLine());
-                System.out.print("Enter descriptionr: ");
-                bill.setDescription(input.nextLine());
-                System.out.print("Enter direction: ");
-                bill.setDirection(input.nextLine());
-                line.close();
-                write.close();
-
-            } catch (IOException ex) {
-                Logger.getLogger(Bill.class.getName()).log(Level.SEVERE, null, ex);
-            }
-
-        } else {
-            try {
-                file.createNewFile();
-                FileWriter write = new FileWriter(file, true);
-                PrintWriter line = new PrintWriter(write);
-                System.out.print("Enter name: ");
-                bill.setName(input.nextLine());
-                System.out.print("Enter ID: ");
-                bill.setDate(input.nextLine());
-                System.out.print("Enter age: ");
-                bill.setIdentificationCard(input.nextInt());
-                input.nextLine();
-                System.out.print("Enter phone number: ");
-                bill.setCellPhone(input.nextLine());
-                System.out.print("Enter descriptionr: ");
-                bill.setDescription(input.nextLine());
-                System.out.print("Enter direction: ");
-                bill.setDirection(input.nextLine());
-                line.close();
-                write.close();
-
-            } catch (IOException ex) {
-                Logger.getLogger(Bill.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        }
-    }
-    @Override
-    public String toString() {
-        return "Bill{" + "name=" + name + ", date=" + date + ", identificationCard=" + identificationCard + ", cellPhone=" + cellPhone + ", description=" + description + ", direction=" + direction + '}';
-    }
-
-    
     /**
      * @return the name
      */

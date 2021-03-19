@@ -13,7 +13,7 @@ import java.util.ArrayList;
  *
  * @author Group3
  */
-public class Waiter extends Employee
+public class Waiter extends Person
 {
     ArrayList<Order> orders=new ArrayList();
 
@@ -22,11 +22,7 @@ public class Waiter extends Employee
     }
 
     public Waiter() {
-        
-    
     }
-
-   
 
     public ArrayList<Order> getOrders() {
         return orders;
@@ -35,10 +31,9 @@ public class Waiter extends Employee
     public void setOrders(ArrayList<Order> orders) {
         this.orders = orders;
     }
-    
-    public void delieverOrder(Order order){
-        
-    }
 
+    
+
+    
 
 }

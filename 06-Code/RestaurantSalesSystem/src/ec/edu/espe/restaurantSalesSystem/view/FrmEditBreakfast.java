@@ -9,9 +9,8 @@ import com.mongodb.BasicDBObject;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
 import com.mongodb.MongoClient;
-import static ec.edu.espe.restaurantSalesSystem.utils.Connection.createConnection;
+import static ec.edu.espe.Connection.utils.Conection.createConnection;
 import static ec.edu.espe.restaurantsalessystem.utils.CrudOperation.create;
-import static ec.edu.espe.restaurantsalessystem.utils.CrudOperation.createMenu;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -185,7 +184,7 @@ public class FrmEditBreakfast extends javax.swing.JFrame {
                     float priceFull = Float.parseFloat(txtPriceFull.getText());
                     JOptionPane.showMessageDialog(null, "Information was saved", txtContinental.getText() + "Saved",
                     JOptionPane.INFORMATION_MESSAGE);
-                    createMenu(mongo,"Menu","Breakfast", txtContinental.getText(),priceContinental,txtFull.getText(),priceFull);
+                    create(mongo,"Menu","Breakfast", txtContinental.getText(),priceContinental,txtFull.getText(),priceFull);
                    
                     break;
                 case 1:

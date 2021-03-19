@@ -11,18 +11,23 @@ package ec.edu.espe.restaurantsalessystem.model;
  */
 public abstract class Person {
     
+    private String id;
+    private int age;
     private String name;
     private String address;
     private String email;
     private String cellPhone;
 
-    public Person(String name, String address, String email, String cellPhone) {
+    public Person(String id, int age, String name, String address, String email, String cellPhone) {
+        this.id = id;
+        this.age = age;
         this.name = name;
         this.address = address;
         this.email = email;
         this.cellPhone = cellPhone;
     }
 
+   
     public Person() {
     }
         

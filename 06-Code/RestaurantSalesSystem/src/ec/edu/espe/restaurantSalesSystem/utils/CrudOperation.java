@@ -41,7 +41,8 @@ public class CrudOperation {
         }
         dbCollection.insert(document);
     }
-    public static void createMenu(MongoClient mongo, String dataBase, String collection, String continental, float priceContinental,
+    
+    public static void create(MongoClient mongo, String dataBase, String collection, String continental, float priceContinental,
         String full, float priceFull) {
 
         DB db = mongo.getDB(dataBase);
@@ -54,7 +55,7 @@ public class CrudOperation {
         document.put("Price Full",priceFull);
         dbCollection.insert(document);
     }
-    public static void createLunch(MongoClient mongo, String dataBase, String collection, String soup,String mainCourse,
+    public static void create(MongoClient mongo, String dataBase, String collection, String soup,String mainCourse,
     String drink,String dessert,float priceLunch) 
     {
 
@@ -69,7 +70,7 @@ public class CrudOperation {
         document.put("Price",priceLunch);
         dbCollection.insert(document);
     }
-    public static void createDessert(MongoClient mongo, String dataBase, String collection, int number,String dessert,float price) 
+    public static void create(MongoClient mongo, String dataBase, String collection, int number,String dessert,float price) 
     {
 
         DB db = mongo.getDB(dataBase);
@@ -81,18 +82,7 @@ public class CrudOperation {
         document.put("Price", price);
         dbCollection.insert(document);
     }
-    public static void createSnack(MongoClient mongo, String dataBase, String collection, int number,String snack,float price) 
-    {
-
-        DB db = mongo.getDB(dataBase);
-        DBCollection dbCollection = db.getCollection(collection);
-        BasicDBObject document = new BasicDBObject();
-        
-        document.put("Number", number);
-        document.put("Snack", snack);
-        document.put("Price", price);
-        dbCollection.insert(document);
-    }
+   
     //Show All the documents
     public static void showAll(MongoClient mongo, String dataBase, String collection) {
         DB db = mongo.getDB(dataBase);
@@ -155,7 +145,7 @@ public class CrudOperation {
         dbCollection.remove(new BasicDBObject().append("name", name));
     }
     
-    public static void createOrder(MongoClient mongo, String dataBase, String collection1, String name, String id,
+    public static void create(MongoClient mongo, String dataBase, String collection1, String name, String id,
             String quantity, String price) {
 
         DB db = mongo.getDB(dataBase);

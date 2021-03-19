@@ -10,7 +10,7 @@ import com.mongodb.DB;
 import com.mongodb.DBCollection;
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
-import static ec.edu.espe.restaurantSalesSystem.utils.Connection.createConnection;
+import static ec.edu.espe.Connection.utils.Conection.createConnection;
 import java.awt.Color;
 import javax.swing.JOptionPane;
 
