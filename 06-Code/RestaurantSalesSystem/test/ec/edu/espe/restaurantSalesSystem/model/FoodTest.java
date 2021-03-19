@@ -47,8 +47,16 @@ public class FoodTest {
         Breakfast breakfast = null;
         Food instance = null;
         instance.choice(lunch, breakfast);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
     
+     @Test
+    public void testChoice2() {
+        System.out.println("choice2");
+        Lunch lunch = null;
+        Breakfast breakfast = null;
+        Food instance = null;
+        instance.choice(lunch, breakfast);
+        
+    }
 }

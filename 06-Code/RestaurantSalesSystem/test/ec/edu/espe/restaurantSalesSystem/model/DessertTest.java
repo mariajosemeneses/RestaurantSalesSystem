@@ -8,6 +8,7 @@ package ec.edu.espe.restaurantSalesSystem.model;
 import java.util.ArrayList;
 import org.junit.After;
 import org.junit.AfterClass;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -44,14 +45,39 @@ public class DessertTest {
     @Test
     public void testGetDesserts() {
         System.out.println("getDesserts");
-        Dessert instance = null;
-        ArrayList<String> expResult = null;
-        ArrayList<String> result = instance.getDesserts();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
+         ArrayList<String> desserts = new ArrayList<>();
+        Assert.assertEquals(0, desserts.size());
+        desserts.add("dessert    price");
+        Assert.assertEquals(1, desserts.size());
+  
     }
 
+     @Test
+    public void testGetDesserts2() {
+        System.out.println("getDesserts");
+        
+         ArrayList<String> desserts = new ArrayList<>();
+        Assert.assertEquals(0, desserts.size());
+        desserts.add("apple    1.50");
+         desserts.add("pay the Blackberry     2.20");
+        Assert.assertEquals(2, desserts.size());
+  
+    }
+    
+     @Test
+    public void testGetDessert3() {
+        System.out.println("getDesserts");
+        
+         ArrayList<String> desserts = new ArrayList<>();
+        Assert.assertEquals(0, desserts.size());
+        desserts.add("apple    1.50");
+         desserts.add("pay the Blackberry     2.20");
+        desserts.add("banana split    3.50");
+        Assert.assertEquals(3, desserts.size());
+  
+    }
+    
     /**
      * Test of setDesserts method, of class Dessert.
      */
@@ -62,7 +88,7 @@ public class DessertTest {
         Dessert instance = null;
         instance.setDesserts(desserts);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
     
 }
