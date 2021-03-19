@@ -21,24 +21,6 @@ public class Customer extends Person{
 
    
     
-    public Order generateOrder() {
-        
-        return new Order();
-    }
-    public void cancelOrder () {
-        
-    }
-    public Order editOrder() {
-        return new Order();
-    }
-    
-    public void viewMenu(Product product) {
-        
-    }    
-    
-    public void viewOrder(Order order) {
-        
-    }
     
 }
     

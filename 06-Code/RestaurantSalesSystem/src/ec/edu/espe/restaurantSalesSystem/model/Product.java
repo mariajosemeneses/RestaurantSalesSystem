@@ -18,13 +18,6 @@ public abstract class Product {
     }
     
   
-    public void visualize(){
-        
-    }
-    
-    public void buy(){
-        
-    }
     
    
     public Product(String name, float price, int quantity) {

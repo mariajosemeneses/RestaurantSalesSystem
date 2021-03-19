@@ -5,8 +5,6 @@
  */
 package ec.edu.espe.restaurantSalesSystem.model;
 
-import ec.edu.espe.restaurantsalessystem.model.Customer;
-import ec.edu.espe.restaurantsalessystem.model.Order;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -39,68 +37,8 @@ public class CustomerTest {
     public void tearDown() {
     }
 
-    /**
-     * Test of generateOrder method, of class Customer.
-     */
     @Test
-    public void testGenerateOrder() {
-        System.out.println("generateOrder");
-        Customer instance = new Customer();
-        Order expResult = null;
-        Order result = instance.generateOrder();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of cancelOrder method, of class Customer.
-     */
-    @Test
-    public void testCancelOrder() {
-        System.out.println("cancelOrder");
-        Customer instance = new Customer();
-        instance.cancelOrder();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of editOrder method, of class Customer.
-     */
-    @Test
-    public void testEditOrder() {
-        System.out.println("editOrder");
-        Customer instance = new Customer();
-        Order expResult = null;
-        Order result = instance.editOrder();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of viewMenu method, of class Customer.
-     */
-    @Test
-    public void testViewMenu() {
-        System.out.println("viewMenu");
-        Product product = null;
-        Customer instance = new Customer();
-        instance.viewMenu(product);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of viewOrder method, of class Customer.
-     */
-    @Test
-    public void testViewOrder() {
-        System.out.println("viewOrder");
-        Order order = null;
-        Customer instance = new Customer();
-        instance.viewOrder(order);
+    public void testSomeMethod() {
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }

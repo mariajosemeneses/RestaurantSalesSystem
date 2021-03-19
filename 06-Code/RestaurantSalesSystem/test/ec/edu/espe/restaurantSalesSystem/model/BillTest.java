@@ -45,11 +45,11 @@ public class BillTest {
     public void testGetName() {
         System.out.println("getName");
         Bill instance = new Bill();
-        String expResult = "";
+        String expResult = "Andres";
         String result = instance.getName();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+      
     }
 
     /**
