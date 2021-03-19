@@ -7,6 +7,7 @@ package ec.edu.espe.restaurantSalesSystem.model;
 
 import java.util.ArrayList;
 import org.junit.AfterClass;
+import org.junit.Assert;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -29,12 +30,10 @@ public class SnackTest {
     @Test
     public void testGetChoppeds() {
         System.out.println("getChoppeds");
-        Snack instance = null;
-        ArrayList<String> expResult = null;
-        ArrayList<String> result = instance.getChoppeds();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        ArrayList<String> choppeds = new ArrayList<>();
+        Assert.assertEquals(0, choppeds.size());
+        choppeds.add("Alitas: BBQ O BUFALO con papas y tiras de apio y zanahoria");
+        Assert.assertEquals(1, choppeds.size());
     }
 
     /**
@@ -43,25 +42,22 @@ public class SnackTest {
     @Test
     public void testSetChoppeds() {
         System.out.println("setChoppeds");
-        ArrayList<String> choppeds = null;
-        Snack instance = null;
-        instance.setChoppeds(choppeds);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        ArrayList<String> choppeds = new ArrayList<>();
+        Assert.assertEquals(0, choppeds.size());
+        choppeds.add("Picaditas: papas con picado de pollo salchica y carne");
+        Assert.assertEquals(1, choppeds.size());
     }
-
     /**
      * Test of getSalads method, of class Snack.
      */
     @Test
     public void testGetSalads() {
         System.out.println("getSalads");
-        Snack instance = null;
-        ArrayList<String> expResult = null;
-        ArrayList<String> result = instance.getSalads();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        ArrayList<String> salads= new ArrayList<>();
+        Assert.assertEquals(0, salads.size());
+        salads.add("Nachos con queso: nachos con queso rallado");
+        Assert.assertEquals(1, salads.size());
+       
     }
 
     /**
@@ -70,11 +66,10 @@ public class SnackTest {
     @Test
     public void testSetSalads() {
         System.out.println("setSalads");
-        ArrayList<String> salads = null;
-        Snack instance = null;
-        instance.setSalads(salads);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        ArrayList<String> salads= new ArrayList<>();
+        Assert.assertEquals(0, salads.size());
+        salads.add("Andinacho: lechuga, tomate, queso rallado,frejol refrito y nachos");
+        Assert.assertEquals(1, salads.size());
     }
 
     /**
@@ -83,12 +78,10 @@ public class SnackTest {
     @Test
     public void testGetHamburguers() {
         System.out.println("getHamburguers");
-        Snack instance = null;
-        ArrayList<String> expResult = null;
-        ArrayList<String> result = instance.getHamburguers();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        ArrayList<String> hamburguers= new ArrayList<>();
+        Assert.assertEquals(0, hamburguers.size());
+        hamburguers.add("Hamburguesas: clasica, queso, tocino o pollo con papas y soda");
+        Assert.assertEquals(1, hamburguers.size());
     }
 
     /**
@@ -97,11 +90,10 @@ public class SnackTest {
     @Test
     public void testSetHamburguers() {
         System.out.println("setHamburguers");
-        ArrayList<String> hamburguers = null;
-        Snack instance = null;
-        instance.setHamburguers(hamburguers);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        ArrayList<String> hamburguers = new ArrayList<>();
+        Assert.assertEquals(0, hamburguers.size());
+        hamburguers.add("Hamburguesas: cheese, queso Americano");
+        Assert.assertEquals(1, hamburguers.size());
     }
 
     /**
@@ -110,12 +102,10 @@ public class SnackTest {
     @Test
     public void testGetSandwitches() {
         System.out.println("getSandwitches");
-        Snack instance = null;
-        ArrayList<String> expResult = null;
-        ArrayList<String> result = instance.getSandwitches();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        ArrayList<String> sandwitches = new ArrayList<>();
+        Assert.assertEquals(0, sandwitches.size());
+        sandwitches.add("Pechuga de pollo: lechuga, tomate, queso, mayonesa, pechuga de pollo");
+        Assert.assertEquals(1, sandwitches.size());
     }
 
     /**
@@ -124,11 +114,10 @@ public class SnackTest {
     @Test
     public void testSetSandwitches() {
         System.out.println("setSandwitches");
-        ArrayList<String> sandwitches = null;
-        Snack instance = null;
-        instance.setSandwitches(sandwitches);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        ArrayList<String> sandwitches = new ArrayList<>();
+        Assert.assertEquals(0, sandwitches.size());
+        sandwitches.add("Queso a la plancha: lechuga, tomate, queso mozzarella");
+        Assert.assertEquals(1, sandwitches.size());
     }
     
 }
