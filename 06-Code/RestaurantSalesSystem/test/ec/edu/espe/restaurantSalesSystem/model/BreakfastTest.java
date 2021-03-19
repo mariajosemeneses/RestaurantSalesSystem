@@ -5,36 +5,16 @@
  */
 package ec.edu.espe.restaurantSalesSystem.model;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
  *
- * @author Maria José Meneses
+ * @author Group 3
  */
 public class BreakfastTest {
-    
+
     public BreakfastTest() {
-    }
-    
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
     }
 
     /**
@@ -43,12 +23,11 @@ public class BreakfastTest {
     @Test
     public void testGetContinental() {
         System.out.println("getContinental");
-        Breakfast instance = null;
-        String expResult = "";
+        Breakfast instance = new Breakfast("", "", 0, 0, "", 0, 0);
+        String expResult = "coffee" + ", bread " + "and Fruits";
         String result = instance.getContinental();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(expResult, result, result);
+
     }
 
     /**
@@ -57,11 +36,10 @@ public class BreakfastTest {
     @Test
     public void testSetContinental() {
         System.out.println("setContinental");
-        String continental = "";
-        Breakfast instance = null;
+        String continental = "coffee, bread and Fruits";
+        Breakfast instance = new Breakfast("", "", 0, 0, "", 0, 0);
         instance.setContinental(continental);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+
     }
 
     /**
@@ -70,12 +48,11 @@ public class BreakfastTest {
     @Test
     public void testGetFull() {
         System.out.println("getFull");
-        Breakfast instance = null;
-        String expResult = "";
+        Breakfast instance = new Breakfast("", "", 0, 0, "", 0, 0);
+        String expResult = "Rice with chicken, coffee and Bolon";
         String result = instance.getFull();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(expResult, result, result);
+
     }
 
     /**
@@ -84,11 +61,10 @@ public class BreakfastTest {
     @Test
     public void testSetFull() {
         System.out.println("setFull");
-        String full = "";
-        Breakfast instance = null;
+        String full = "Rice with chicken, coffee and Bolon";
+        Breakfast instance = new Breakfast("", "", 0, 0, "", 0, 0);
         instance.setFull(full);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+
     }
 
     /**
@@ -97,12 +73,11 @@ public class BreakfastTest {
     @Test
     public void testGetPriceContinental() {
         System.out.println("getPriceContinental");
-        Breakfast instance = null;
-        float expResult = 0.0F;
+        Breakfast instance = new Breakfast("", "", 0, 0, "", 0, 0);
+        float expResult = 2.5F;
         float result = instance.getPriceContinental();
-        assertEquals(expResult, result, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(expResult, result, 2.5);
+        
     }
 
     /**
@@ -111,11 +86,10 @@ public class BreakfastTest {
     @Test
     public void testSetPriceContinental() {
         System.out.println("setPriceContinental");
-        float priceContinental = 0.0F;
-        Breakfast instance = null;
+        float priceContinental = 2.5F;
+        Breakfast instance = new Breakfast("", "", 0, 0, "", 0, 0);
         instance.setPriceContinental(priceContinental);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -124,12 +98,11 @@ public class BreakfastTest {
     @Test
     public void testGetPriceFull() {
         System.out.println("getPriceFull");
-        Breakfast instance = null;
-        float expResult = 0.0F;
+        Breakfast instance = new Breakfast("", "", 0, 0, "", 0, 0);
+        float expResult = 5.5F;
         float result = instance.getPriceFull();
-        assertEquals(expResult, result, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(expResult, result, 5.5);
+
     }
 
     /**
@@ -138,11 +111,9 @@ public class BreakfastTest {
     @Test
     public void testSetPriceFull() {
         System.out.println("setPriceFull");
-        float priceFull = 0.0F;
-        Breakfast instance = null;
+        float priceFull = 5.5F;
+        Breakfast instance = new Breakfast("", "", 0, 0, "", 0, 0);
         instance.setPriceFull(priceFull);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
-    
+
 }

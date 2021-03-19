@@ -6,34 +6,23 @@
  */
 package ec.edu.espe.restaurantsalessystem.model;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.Scanner;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
-
 /**
  *
  * @author Group3
  */
-public class Bill 
-{
+public class Bill {
+
     private String name;
     private String date;
-    private float identificationCard;
+    private int identificationCard;
     private String cellPhone;
     private String description;
     private String direction;
 
     public Bill() {
     }
-    
-  
 
-    public Bill(String name, String date, float identificationCard, String cellPhone, String direction, String description) {
+    public Bill(String name, String date, int identificationCard, String cellPhone, String direction, String description) {
         this.name = name;
         this.date = date;
         this.identificationCard = identificationCard;
@@ -73,14 +62,14 @@ public class Bill
     /**
      * @return the identificationCard
      */
-    public float getIdentificationCard() {
+    public int getIdentificationCard() {
         return identificationCard;
     }
 
     /**
      * @param identificationCard the identificationCard to set
      */
-    public void setIdentificationCard(float identificationCard) {
+    public void setIdentificationCard(int identificationCard) {
         this.identificationCard = identificationCard;
     }
 

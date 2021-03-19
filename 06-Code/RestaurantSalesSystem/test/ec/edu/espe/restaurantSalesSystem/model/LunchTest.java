@@ -6,6 +6,7 @@
 package ec.edu.espe.restaurantSalesSystem.model;
 
 import java.util.ArrayList;
+import junit.framework.Assert;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -44,12 +45,10 @@ public class LunchTest {
     @Test
     public void testGetSoups() {
         System.out.println("getSoups");
-        Lunch instance = null;
-        ArrayList<String> expResult = null;
-        ArrayList<String> result = instance.getSoups();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        ArrayList<String> soups = new ArrayList<>();
+        Assert.assertEquals(0 , soups.size());
+        soups.add("1. Locro : sopa de papacon queso fresco y aguacate");
+        Assert.assertEquals(1 , soups.size());
     }
 
     /**
@@ -58,11 +57,12 @@ public class LunchTest {
     @Test
     public void testSetSoups() {
         System.out.println("setSoups");
-        ArrayList<String> soups = null;
-        Lunch instance = null;
-        instance.setSoups(soups);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        ArrayList<String> soups = new ArrayList<>();
+        Assert.assertEquals(0 , soups.size());
+        soups.add("1. Locro : sopa de papacon queso fresco y aguacate");
+        soups.add("2. Tomate : coliflor, brocolo, zanahoria y crema de tomate");
+        soups.add("3. Pollo : pechuga de pollo picada, alverja, zanahoria y apio");
+        Assert.assertEquals(3 , soups.size());
     }
 
     /**
@@ -71,12 +71,10 @@ public class LunchTest {
     @Test
     public void testGetMainCourses() {
         System.out.println("getMainCourses");
-        Lunch instance = null;
-        ArrayList<String> expResult = null;
-        ArrayList<String> result = instance.getMainCourses();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        ArrayList<String> mainCourses = new ArrayList<>();
+        Assert.assertEquals(0,mainCourses.size() );
+        mainCourses.add("1. Chuleta de cerdo : acompañada con papas fritas y ensalada");
+        Assert.assertEquals(1,mainCourses.size() );
     }
 
     /**
@@ -85,11 +83,12 @@ public class LunchTest {
     @Test
     public void testSetMainCourses() {
         System.out.println("setMainCourses");
-        ArrayList<String> mainCourses = null;
-        Lunch instance = null;
-        instance.setMainCourses(mainCourses);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        ArrayList<String> mainCourses = new ArrayList<>();
+        Assert.assertEquals(0,mainCourses.size() );
+        mainCourses.add("1. Chuleta de cerdo : acompañada con papas fritas y ensalada");
+        mainCourses.add("2.Camarones apanados : acompañado de salsa ranch, arroz, maduro frito y ensalada.");
+        mainCourses.add("3. Lasagna: acompañado con ensalada");
+        Assert.assertEquals(3,mainCourses.size() );
     }
 
     /**
@@ -98,12 +97,10 @@ public class LunchTest {
     @Test
     public void testGetDrink() {
         System.out.println("getDrink");
-        Lunch instance = null;
-        Drink expResult = null;
-        Drink result = instance.getDrink();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        ArrayList<String> drink = new ArrayList<>();
+        Assert.assertEquals(0,drink.size() );
+        drink.add("1. Piña");
+        Assert.assertEquals(1,drink.size() );
     }
 
     /**
@@ -112,11 +109,12 @@ public class LunchTest {
     @Test
     public void testSetDrink() {
         System.out.println("setDrink");
-        Drink drink = null;
-        Lunch instance = null;
-        instance.setDrink(drink);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        ArrayList<String> drink = new ArrayList<>();
+        Assert.assertEquals(0,drink.size() );
+        drink.add("1. Piña");
+        drink.add("2. Mora");
+        drink.add("3. Sandia");
+        Assert.assertEquals(3,drink.size() );
     }
 
     /**
@@ -125,12 +123,10 @@ public class LunchTest {
     @Test
     public void testGetDessert() {
         System.out.println("getDessert");
-        Lunch instance = null;
-        Dessert expResult = null;
-        Dessert result = instance.getDessert();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        ArrayList<String> dessert = new ArrayList<>();
+        Assert.assertEquals(0,dessert.size() );
+        dessert.add("1. Brownie");
+        Assert.assertEquals(1,dessert.size() );
     }
 
     /**
@@ -139,11 +135,13 @@ public class LunchTest {
     @Test
     public void testSetDessert() {
         System.out.println("setDessert");
-        Dessert dessert = null;
-        Lunch instance = null;
-        instance.setDessert(dessert);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        ArrayList<String> dessert = new ArrayList<>();
+        Assert.assertEquals(0,dessert.size() );
+        dessert.add("1. Brownie");
+        dessert.add("2. Chesecake : fresa y mayacuya");
+        dessert.add("3. Tres leches");
+        Assert.assertEquals(3,dessert.size() );
+    }
     }
     
-}
+

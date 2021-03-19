@@ -6,6 +6,7 @@
 package ec.edu.espe.restaurantSalesSystem.model;
 
 import java.util.ArrayList;
+import junit.framework.Assert;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -44,12 +45,10 @@ public class JuiceTest {
     @Test
     public void testGetFruits() {
         System.out.println("getFruits");
-        Juice instance = null;
-        ArrayList<String> expResult = null;
-        ArrayList<String> result = instance.getFruits();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        ArrayList<String> fruits = new ArrayList<>();
+        Assert.assertEquals(0,fruits.size() );
+        fruits.add("1. Papaya  $1.00");
+        Assert.assertEquals(1,fruits.size() );
     }
 
     /**
@@ -57,12 +56,19 @@ public class JuiceTest {
      */
     @Test
     public void testSetFruits() {
-        System.out.println("setFruits");
-        ArrayList<String> fruits = null;
-        Juice instance = null;
-        instance.setFruits(fruits);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+          System.out.println("getFruits");
+        ArrayList<String> fruits = new ArrayList<>();
+        Assert.assertEquals(0,fruits.size() );
+        fruits.add("1. Papaya  $1.00");
+        fruits.add("2. Tomate de arbol  $1.00");
+        fruits.add("3. Sandia  $1.00");
+        fruits.add("4. Mora  $1.00");
+        fruits.add("5. Naranjilla  $1.00");
+        fruits.add("6. Melon  $1.00");
+        fruits.add("7. Maracuya  $1.00");
+        Assert.assertEquals(7,fruits.size() );
+    }
+
     }
     
-}
+

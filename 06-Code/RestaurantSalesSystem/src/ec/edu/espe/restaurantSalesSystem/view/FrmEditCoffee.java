@@ -66,12 +66,12 @@ public class FrmEditCoffee extends javax.swing.JFrame {
         jTextPane2.setText("1. $3,00\n2. $2,00\n3. $2,00\n4. $3,25\n5. $2,50\n6. $3,50\n7. $3,00\n8. $3,00");
         jScrollPane2.setViewportView(jTextPane2);
 
-        jLabel2.setText("Price Small ");
+        jLabel2.setText("Small Price");
 
         jTextPane3.setText("1. $6,00\n2. $5,00\n3. $5,00\n4. $7,25\n5. $4,50\n6. $5,50\n7. $6,00\n8. $6,00");
         jScrollPane3.setViewportView(jTextPane3);
 
-        jLabel3.setText("Price Big");
+        jLabel3.setText("Big Price");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -103,8 +103,10 @@ public class FrmEditCoffee extends javax.swing.JFrame {
                                 .addComponent(jLabel2)))))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3)
-                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(8, 8, 8)
+                        .addComponent(jLabel3)))
                 .addContainerGap(83, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(

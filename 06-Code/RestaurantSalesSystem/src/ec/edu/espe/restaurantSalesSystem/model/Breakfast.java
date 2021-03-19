@@ -5,21 +5,17 @@
  */
 package ec.edu.espe.restaurantSalesSystem.model;
 
-
-
 /**
  *
  * @author Group3
  */
-public class Breakfast extends Food{
-    
+public class Breakfast extends Food {
+
     private String continental;
     private String full;
     private float priceContinental;
     private float priceFull;
-    
 
-    
     public Breakfast(String continental, String full, float priceContinental, float priceFull, String name, float price, int quantity) {
         super(name, price, quantity);
         this.continental = continental;
@@ -27,9 +23,6 @@ public class Breakfast extends Food{
         this.priceContinental = priceContinental;
         this.priceFull = priceFull;
     }
-
-    
-    
 
     /**
      * @return the continental
@@ -86,10 +79,5 @@ public class Breakfast extends Food{
     public void setPriceFull(float priceFull) {
         this.priceFull = priceFull;
     }
-    
 
-    
 }
-    
-    
-
