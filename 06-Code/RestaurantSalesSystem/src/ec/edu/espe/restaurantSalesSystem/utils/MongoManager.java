@@ -14,13 +14,10 @@ import java.util.Scanner;
 
 /**
  *
- * @author DAVID
+ * @author Group 3
  */
 public class MongoManager implements Persistence{
 
-    @Override
-    public void create(String data){
-    }
     public void create(MongoClient mongo, String dataBase, String collection, String name,
             String address, String email, String cellPhone, int age, String id) {
         DB db = mongo.getDB(dataBase);
@@ -103,9 +100,6 @@ public class MongoManager implements Persistence{
         dbCollection.insert(document1);
     }
 
-    @Override
-    public void read() {
-    }
     public void read(MongoClient mongo, String dataBase, String collection) {
         DB db = mongo.getDB(dataBase);
         DBCollection dbCollection = db.getCollection(collection);
@@ -122,10 +116,7 @@ public class MongoManager implements Persistence{
             }
         }
     }
-    
-    @Override
-    public void update(String dataToFind, String datatoUpdate) {
-    }
+   
     public void update(MongoClient mongo, String dataBase, String collection, String data) {
         DB db = mongo.getDB(dataBase);
         DBCollection dbCollection = db.getCollection(collection);
@@ -141,22 +132,13 @@ public class MongoManager implements Persistence{
         updateData.append("$set", new BasicDBObject().append("name", newName));
         dbCollection.updateMulti(searchedName, updateData);
     }
-    
-    @Override
-    public void delete(String dataToDelete) {
-    }
+
     public void delete(MongoClient mongo, String dataBase, String collection, String name) {
         DB db = mongo.getDB(dataBase);
         DBCollection dbCollection = db.getCollection(collection);
         dbCollection.remove(new BasicDBObject().append("name", name));
     }
 
-
-    @Override
-    public String findName(String dataToFind) {
-        String name = "";
-        return name;
-    }
     public void findName(MongoClient mongo, String dataBase, String collection, String name) {
         DB db = mongo.getDB(dataBase);
         DBCollection dbCollection = db.getCollection(collection);
@@ -175,4 +157,29 @@ public class MongoManager implements Persistence{
             }
         }
     }        
+
+    @Override
+    public boolean create(String data, String table) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public String find(String dataToFind, String field, String table) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public boolean update(String dataToFind, String newData, String table) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public boolean delete(String dataToFind, String table) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public String read(String table) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

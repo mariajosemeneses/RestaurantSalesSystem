@@ -14,6 +14,11 @@ public class Verification {
     private String user;
     private String password;
 
+    public Verification(String user, String password) {
+        this.user = user;
+        this.password = password;
+    }
+
     /**
      * @return the user
      */

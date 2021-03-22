@@ -7,6 +7,7 @@ package ec.edu.espe.restaurantSalesSystem.view;
 
 import com.google.gson.Gson;
 import ec.edu.espe.restaurantSalesSystem.controller.Verification;
+import ec.edu.espe.restaurantSalesSystem.controller.VerificationController;
 import ec.edu.espe.restaurantSalesSystem.utils.FileManager;
 import java.io.BufferedReader;
 import java.io.File;
@@ -173,33 +174,11 @@ public class FrmLoginScreen extends javax.swing.JFrame {
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
         String user = txtUsername.getText();
         String password = txtPassword.getText();
-        File file = new File("Users.json");
-        FileManager read=new FileManager();
-        
-        try {
-            if (file.exists()) {
-                BufferedReader readFile = new BufferedReader(new FileReader(file));
-                String readLine;
-                Gson gson = new Gson();
-                readLine = readFile.readLine();
-                Verification verification = gson.fromJson(readLine, Verification.class);
-                if (user.isEmpty() || password.isEmpty()) {
-                    JOptionPane.showMessageDialog(null, "FILL ALL THE FIELDS");
-                } else if (user.equals(verification.getUser()) && password.equals(verification.getPassword())) {
-                    JOptionPane.showMessageDialog(null, "Welcome " + user);
-                    FrmOptionsOwner frmOptions = new FrmOptionsOwner();
-                    frmOptions.setVisible(true);
-                    this.dispose();
-                } else if (user.equals(verification.getUser()) == false && password.equals(verification.getPassword()) == false) {
-                    JOptionPane.showMessageDialog(null, "User and Password are incorrect");
-                } else if (user.equals(verification.getUser()) == false) {
-                    JOptionPane.showMessageDialog(null, "User incorrect");
-                } else {
-                    JOptionPane.showMessageDialog(null, "Password incorrect");
-                }
-            }
-        } catch (IOException ex) {
-            System.out.println(ex.getMessage());
+        Verification verification;
+        VerificationController verificationController = new VerificationController();
+        verification = new Verification(user, password);
+        if (verificationController.login(verification, user, password)) {
+            dispose();
         }
     }//GEN-LAST:event_btnLoginActionPerformed
 

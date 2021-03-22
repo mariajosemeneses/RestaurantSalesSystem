@@ -10,7 +10,7 @@ import com.mongodb.MongoClientURI;
 
 /**
  *
- * @author DAVID
+ * @author Group 3
  */
 public class NoSQL {
     public static MongoClient createConnection() {

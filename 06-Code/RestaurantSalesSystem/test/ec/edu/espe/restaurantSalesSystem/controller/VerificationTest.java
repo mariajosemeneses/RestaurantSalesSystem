@@ -43,9 +43,10 @@ public class VerificationTest {
     @Test
     public void testGetUser() {
         System.out.println("getUser");
-        Verification instance = new Verification();
+        Verification instance = new Verification("admin","");
         String expResult = "admin";
         String result = instance.getUser();
+        assertEquals(expResult, result);
     }
 
     /**
@@ -55,7 +56,7 @@ public class VerificationTest {
     public void testSetUser() {
         System.out.println("setUser");
         String user = "admin";
-        Verification instance = new Verification();
+        Verification instance = new Verification(user,"");
         instance.setUser(user);
     }
 
@@ -65,9 +66,10 @@ public class VerificationTest {
     @Test
     public void testGetPassword() {
         System.out.println("getPassword");
-        Verification instance = new Verification();
+        Verification instance = new Verification("","admin123");
         String expResult = "admin123";
         String result = instance.getPassword();
+        assertEquals(expResult, result);
     }
 
     /**
@@ -77,7 +79,7 @@ public class VerificationTest {
     public void testSetPassword() {
         System.out.println("setPassword");
         String password = "admin123";
-        Verification instance = new Verification();
+        Verification instance = new Verification("",password);
         instance.setPassword(password);
     }
     

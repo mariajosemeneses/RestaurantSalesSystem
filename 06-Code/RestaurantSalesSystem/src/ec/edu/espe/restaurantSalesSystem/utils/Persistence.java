@@ -7,18 +7,18 @@ package ec.edu.espe.restaurantSalesSystem.utils;
 
 /**
  *
- * @author DAVID
+ * @author Group 3
  */
 public interface Persistence {
 
-    public void create(String data);
+    boolean create(String data, String table);
 
-    public void read();
+    String find(String dataToFind, String field, String table);
 
-    public void update(String dataToFind, String datatoUpdate);
+    boolean update(String dataToFind, String newData, String table);
 
-    public void delete(String dataToDelete);
+    boolean delete(String dataToFind, String table);
 
-    public String findName(String dataToFind);
+    String read(String table);
 
 }
