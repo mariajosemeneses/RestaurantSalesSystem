@@ -40,7 +40,7 @@ public class FrmBreakfast extends javax.swing.JFrame {
         initComponents();
                 //Color JFrame
                 SpinnerNumberModel nm = new SpinnerNumberModel();
-                nm.setMaximum(10);
+                nm.setMaximum(100);
                 nm.setMinimum(0);
                 nm.setStepSize(1);
                 spiValor.setModel(nm);
