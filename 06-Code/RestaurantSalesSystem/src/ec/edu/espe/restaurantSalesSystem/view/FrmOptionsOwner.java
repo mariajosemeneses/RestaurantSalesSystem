@@ -148,7 +148,7 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
         jPanel6.add(jScrollPane4);
         jScrollPane4.setBounds(140, 230, 380, 230);
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fondo-product_1.jpg"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/restaurantSalesSystem/images/fondo-product_1.jpg"))); // NOI18N
         jPanel6.add(jLabel4);
         jLabel4.setBounds(0, 0, 620, 620);
 
@@ -241,7 +241,7 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
         jPanel7.add(products);
         products.setBounds(160, 70, 126, 16);
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fondo-Addproduct.jpg"))); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/restaurantSalesSystem/images/fondo-Addproduct.jpg"))); // NOI18N
         jPanel7.add(jLabel6);
         jLabel6.setBounds(0, 0, 960, 400);
 
@@ -290,7 +290,7 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
         jPanel8.add(jLabel17);
         jLabel17.setBounds(130, 90, 36, 16);
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fondo-Addproduct.jpg"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/restaurantSalesSystem/images/fondo-Addproduct.jpg"))); // NOI18N
         jPanel8.add(jLabel5);
         jLabel5.setBounds(0, 0, 630, 300);
 
@@ -498,7 +498,7 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
             }
             tblProducts.setModel(modelTable);
             cursor.close();
-        } catch (NumberFormatException ex) {
+        } catch (Exception ex) {
             System.out.println("Error printing tables");
         }
     }//GEN-LAST:event_btnViewProducts1ActionPerformed

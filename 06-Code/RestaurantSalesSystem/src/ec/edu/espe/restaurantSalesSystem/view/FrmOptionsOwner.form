@@ -183,7 +183,7 @@
                 <Component class="javax.swing.JLabel" name="jLabel4">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/img/fondo-product_1.jpg"/>
+                      <Image iconType="3" name="/ec/edu/espe/restaurantSalesSystem/images/fondo-product_1.jpg"/>
                     </Property>
                   </Properties>
                   <Constraints>
@@ -382,7 +382,7 @@
             <Component class="javax.swing.JLabel" name="jLabel6">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/img/fondo-Addproduct.jpg"/>
+                  <Image iconType="3" name="/ec/edu/espe/restaurantSalesSystem/images/fondo-Addproduct.jpg"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -494,7 +494,7 @@
             <Component class="javax.swing.JLabel" name="jLabel5">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/img/fondo-Addproduct.jpg"/>
+                  <Image iconType="3" name="/ec/edu/espe/restaurantSalesSystem/images/fondo-Addproduct.jpg"/>
                 </Property>
               </Properties>
               <Constraints>
