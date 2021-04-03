@@ -6,6 +6,7 @@
 package ec.edu.espe.restaurantSalesSystem.view;
 
 import java.awt.Color;
+import javax.swing.SpinnerNumberModel;
 
 /**
  *
@@ -19,6 +20,78 @@ public class FrmLunch extends javax.swing.JFrame {
     public FrmLunch() {
         initComponents();
                 //Color JFrame
+                SpinnerNumberModel nm = new SpinnerNumberModel();
+                nm.setMaximum(100);
+                nm.setMinimum(0);
+                nm.setStepSize(1);
+                spiValor.setModel(nm);
+                
+                SpinnerNumberModel nm2 = new SpinnerNumberModel();
+                nm2.setMaximum(100);
+                nm2.setMinimum(0);
+                nm2.setStepSize(1);
+                spiValor2.setModel(nm2);
+                
+                SpinnerNumberModel nm3 = new SpinnerNumberModel();
+                nm3.setMaximum(100);
+                nm3.setMinimum(0);
+                nm3.setStepSize(1);
+                spiValor3.setModel(nm3);
+                
+                SpinnerNumberModel nm4 = new SpinnerNumberModel();
+                nm4.setMaximum(100);
+                nm4.setMinimum(0);
+                nm4.setStepSize(1);
+                spiValor4.setModel(nm4);
+                
+                SpinnerNumberModel nm5 = new SpinnerNumberModel();
+                nm5.setMaximum(100);
+                nm5.setMinimum(0);
+                nm5.setStepSize(1);
+                spiValor5.setModel(nm5);
+                
+                SpinnerNumberModel nm6 = new SpinnerNumberModel();
+                nm6.setMaximum(100);
+                nm6.setMinimum(0);
+                nm6.setStepSize(1);
+                spiValor6.setModel(nm6);
+                
+                SpinnerNumberModel nm7 = new SpinnerNumberModel();
+                nm7.setMaximum(100);
+                nm7.setMinimum(0);
+                nm7.setStepSize(1);
+                spiValor7.setModel(nm7);
+               
+                SpinnerNumberModel nm8 = new SpinnerNumberModel();
+                nm8.setMaximum(100);
+                nm8.setMinimum(0);
+                nm8.setStepSize(1);
+                spiValor8.setModel(nm8);
+                
+                SpinnerNumberModel nm9 = new SpinnerNumberModel();
+                nm9.setMaximum(100);
+                nm9.setMinimum(0);
+                nm9.setStepSize(1);
+                spiValor9.setModel(nm9);
+                
+                SpinnerNumberModel nm10 = new SpinnerNumberModel();
+                nm10.setMaximum(100);
+                nm10.setMinimum(0);
+                nm10.setStepSize(1);
+                spiValor10.setModel(nm10);
+                
+                SpinnerNumberModel nm11 = new SpinnerNumberModel();
+                nm11.setMaximum(100);
+                nm11.setMinimum(0);
+                nm11.setStepSize(1);
+                spiValor11.setModel(nm11);
+                
+                SpinnerNumberModel nm12= new SpinnerNumberModel();
+                nm12.setMaximum(100);
+                nm12.setMinimum(0);
+                nm12.setStepSize(1);
+                spiValor12.setModel(nm12);
+                
         this.getContentPane().setBackground(Color.WHITE);
     }
 
@@ -42,27 +115,27 @@ public class FrmLunch extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jSpinner1 = new javax.swing.JSpinner();
-        jSpinner2 = new javax.swing.JSpinner();
-        jSpinner5 = new javax.swing.JSpinner();
+        spiValor6 = new javax.swing.JSpinner();
+        spiValor5 = new javax.swing.JSpinner();
+        spiValor4 = new javax.swing.JSpinner();
         jLabel6 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
-        jSpinner3 = new javax.swing.JSpinner();
-        jSpinner4 = new javax.swing.JSpinner();
-        jSpinner6 = new javax.swing.JSpinner();
+        spiValor = new javax.swing.JSpinner();
+        spiValor2 = new javax.swing.JSpinner();
+        spiValor3 = new javax.swing.JSpinner();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        jSpinner7 = new javax.swing.JSpinner();
-        jSpinner8 = new javax.swing.JSpinner();
-        jSpinner9 = new javax.swing.JSpinner();
+        spiValor7 = new javax.swing.JSpinner();
+        spiValor8 = new javax.swing.JSpinner();
+        spiValor9 = new javax.swing.JSpinner();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
-        jSpinner10 = new javax.swing.JSpinner();
-        jSpinner11 = new javax.swing.JSpinner();
-        jSpinner12 = new javax.swing.JSpinner();
+        spiValor12 = new javax.swing.JSpinner();
+        spiValor11 = new javax.swing.JSpinner();
+        spiValor10 = new javax.swing.JSpinner();
         jSeparator2 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
 
@@ -154,9 +227,9 @@ public class FrmLunch extends javax.swing.JFrame {
                                     .addComponent(jLabel11))
                                 .addGap(30, 30, 30)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jSpinner3)
-                                    .addComponent(jSpinner4)
-                                    .addComponent(jSpinner6, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(spiValor)
+                                    .addComponent(spiValor2)
+                                    .addComponent(spiValor3, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(305, 305, 305)
                                 .addComponent(jLabel2))))
@@ -177,9 +250,9 @@ public class FrmLunch extends javax.swing.JFrame {
                             .addComponent(jLabel9))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jSpinner2, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jSpinner5, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(spiValor5, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(spiValor4, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(spiValor6, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addContainerGap())
                     .addComponent(jSeparator3)
                     .addGroup(layout.createSequentialGroup()
@@ -194,15 +267,15 @@ public class FrmLunch extends javax.swing.JFrame {
                                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                             .addComponent(jLabel14)
                                             .addGap(18, 18, 18)
-                                            .addComponent(jSpinner9))
+                                            .addComponent(spiValor9))
                                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                             .addComponent(jLabel13)
                                             .addGap(18, 18, 18)
-                                            .addComponent(jSpinner8))
+                                            .addComponent(spiValor8))
                                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                             .addComponent(jLabel12)
                                             .addGap(18, 18, 18)
-                                            .addComponent(jSpinner7, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                            .addComponent(spiValor7, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(169, 169, 169)
                                         .addComponent(jLabel4)))
@@ -221,9 +294,9 @@ public class FrmLunch extends javax.swing.JFrame {
                                         .addGap(67, 67, 67)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                                .addComponent(jSpinner11)
-                                                .addComponent(jSpinner10, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addComponent(jSpinner12, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                                .addComponent(spiValor11)
+                                                .addComponent(spiValor12, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(spiValor10, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                         .addContainerGap(37, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
@@ -237,16 +310,16 @@ public class FrmLunch extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(31, 31, 31)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jSpinner4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(spiValor2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel10)))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel6)
-                            .addComponent(jSpinner3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(spiValor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(44, 44, 44)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel11)
-                            .addComponent(jSpinner6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(spiValor3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(18, 18, 18)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -260,11 +333,11 @@ public class FrmLunch extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel9))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jSpinner5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(spiValor4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jSpinner2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(spiValor5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(17, 17, 17)
-                        .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(spiValor6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -273,35 +346,34 @@ public class FrmLunch extends javax.swing.JFrame {
                         .addComponent(jLabel5)
                         .addGap(13, 13, 13)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jSpinner12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(spiValor10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel15))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel16)
-                            .addComponent(jSpinner11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(spiValor11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel17)
-                            .addComponent(jSpinner10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(spiValor12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel17))
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel4)
-                                .addGap(18, 18, 18)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                         .addComponent(jLabel12)
-                                        .addComponent(jSpinner7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(spiValor7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(32, 32, 32)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(jSpinner8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(spiValor8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(jLabel13))))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel14)
-                                    .addComponent(jSpinner9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(spiValor9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -381,17 +453,17 @@ public class FrmLunch extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
-    private javax.swing.JSpinner jSpinner1;
-    private javax.swing.JSpinner jSpinner10;
-    private javax.swing.JSpinner jSpinner11;
-    private javax.swing.JSpinner jSpinner12;
-    private javax.swing.JSpinner jSpinner2;
-    private javax.swing.JSpinner jSpinner3;
-    private javax.swing.JSpinner jSpinner4;
-    private javax.swing.JSpinner jSpinner5;
-    private javax.swing.JSpinner jSpinner6;
-    private javax.swing.JSpinner jSpinner7;
-    private javax.swing.JSpinner jSpinner8;
-    private javax.swing.JSpinner jSpinner9;
+    private javax.swing.JSpinner spiValor;
+    private javax.swing.JSpinner spiValor10;
+    private javax.swing.JSpinner spiValor11;
+    private javax.swing.JSpinner spiValor12;
+    private javax.swing.JSpinner spiValor2;
+    private javax.swing.JSpinner spiValor3;
+    private javax.swing.JSpinner spiValor4;
+    private javax.swing.JSpinner spiValor5;
+    private javax.swing.JSpinner spiValor6;
+    private javax.swing.JSpinner spiValor7;
+    private javax.swing.JSpinner spiValor8;
+    private javax.swing.JSpinner spiValor9;
     // End of variables declaration//GEN-END:variables
 }
