@@ -15,9 +15,14 @@ public class Soda extends Drink{
     
     ArrayList<String> flavorsAndBrands = new ArrayList();
 
-    public Soda(String name, float price, int quantity) {
-        super(name, price, quantity);
+    public Soda() {
     }
+
+    public Soda(String typeOfProduct, String description, float price) {
+        super(typeOfProduct, description, price);
+    }
+
+    
 
     public ArrayList<String> getFlavorsAndBrands() {
         return flavorsAndBrands;

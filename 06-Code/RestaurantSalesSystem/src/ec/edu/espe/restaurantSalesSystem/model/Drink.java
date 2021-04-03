@@ -16,10 +16,14 @@ public class Drink extends Product{
         
     }
 
-    public Drink(String name, float price, int quantity) {
-        super(name, price, quantity);
+    public Drink() {
     }
 
+    public Drink(String typeOfProduct, String description, float price) {
+        super(typeOfProduct, description, price);
+    }
+
+    
     
     
     

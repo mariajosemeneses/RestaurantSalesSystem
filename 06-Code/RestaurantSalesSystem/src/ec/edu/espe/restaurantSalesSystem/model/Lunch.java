@@ -18,12 +18,12 @@ public class Lunch extends Food {
     Drink drink;
     Dessert dessert;
 
-    public Lunch(Drink drink, Dessert dessert, String name, float price, int quantity) {
-        super(name, price, quantity);
+    public Lunch(Drink drink, Dessert dessert) {
         this.drink = drink;
         this.dessert = dessert;
     }
 
+    
     public ArrayList<String> getSoups() {
         return soups;
     }

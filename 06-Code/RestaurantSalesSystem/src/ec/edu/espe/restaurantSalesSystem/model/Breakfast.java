@@ -16,68 +16,48 @@ public class Breakfast extends Food {
     private float priceContinental;
     private float priceFull;
 
-    public Breakfast(String continental, String full, float priceContinental, float priceFull, String name, float price, int quantity) {
-        super(name, price, quantity);
+    
+
+    public Breakfast(String continental, String full, float priceContinental, float priceFull, String typeOfProduct, String description, float price) {
+        super(typeOfProduct, description, price);
         this.continental = continental;
         this.full = full;
         this.priceContinental = priceContinental;
         this.priceFull = priceFull;
     }
 
-    /**
-     * @return the continental
-     */
     public String getContinental() {
         return continental;
     }
 
-    /**
-     * @param continental the continental to set
-     */
     public void setContinental(String continental) {
         this.continental = continental;
     }
 
-    /**
-     * @return the full
-     */
     public String getFull() {
         return full;
     }
 
-    /**
-     * @param full the full to set
-     */
     public void setFull(String full) {
         this.full = full;
     }
 
-    /**
-     * @return the priceContinental
-     */
     public float getPriceContinental() {
         return priceContinental;
     }
 
-    /**
-     * @param priceContinental the priceContinental to set
-     */
     public void setPriceContinental(float priceContinental) {
         this.priceContinental = priceContinental;
     }
 
-    /**
-     * @return the priceFull
-     */
     public float getPriceFull() {
         return priceFull;
     }
 
-    /**
-     * @param priceFull the priceFull to set
-     */
     public void setPriceFull(float priceFull) {
         this.priceFull = priceFull;
     }
 
-}
+    
+    }
+

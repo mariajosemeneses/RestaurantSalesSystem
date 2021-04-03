@@ -12,106 +12,74 @@ package ec.edu.espe.restaurantsalessystem.model;
  */
 public class Bill {
 
-    private String name;
-    private String date;
-    private int identificationCard;
-    private String cellPhone;
-    private String description;
-    private String direction;
+ private Double iva;
 
-    public Bill() {
+  private Double propina;
+
+   private Double precio;
+
+    private String concepto;
+
+    private int cantidad;
+
+    private Double total;
+    public int numventas;
+    
+
+    public int getNumventas(){
+        return numventas;
+    }
+    public void setNumventas(){
+        this.numventas= numventas;
     }
 
-    public Bill(String name, String date, int identificationCard, String cellPhone, String direction, String description) {
-        this.name = name;
-        this.date = date;
-        this.identificationCard = identificationCard;
-        this.cellPhone = cellPhone;
-        this.direction = direction;
-        this.description = description;
+    public Double getIva() {
+        return iva;
+        
+    }
+    public void setIva(Double iva) {
+        this.iva = iva;
+        
     }
 
-    /**
-     * @return the name
-     */
-    public String getName() {
-        return name;
+    
+    public Double getPropina() {
+        return propina;
+    }
+    public void setPropina(Double propina) {
+        this.propina = propina;
     }
 
-    /**
-     * @param name the name to set
-     */
-    public void setName(String name) {
-        this.name = name;
+    
+    public Double getPrecio() {
+        return precio;
+    }
+    public void setPrecio(Double precio) {
+        this.precio = precio;
+    }
+    
+     public void setConcepto(String concepto) {
+        this.concepto = concepto;
+    }
+    
+    public String getConcepto() {
+        return concepto;
+    }
+    
+    public void setCantidad(int cantidad) {
+        this.cantidad = cantidad;
+    }
+    public int getCantidad() {
+        return cantidad;
     }
 
-    /**
-     * @return the date
-     */
-    public String getDate() {
-        return date;
+    public Double getTotal() {
+        return total;
+    }
+    public void setTotal(Double total) {
+        this.total = total;
     }
 
-    /**
-     * @param date the date to set
-     */
-    public void setDate(String date) {
-        this.date = date;
-    }
-
-    /**
-     * @return the identificationCard
-     */
-    public int getIdentificationCard() {
-        return identificationCard;
-    }
-
-    /**
-     * @param identificationCard the identificationCard to set
-     */
-    public void setIdentificationCard(int identificationCard) {
-        this.identificationCard = identificationCard;
-    }
-
-    /**
-     * @return the cellPhone
-     */
-    public String getCellPhone() {
-        return cellPhone;
-    }
-
-    /**
-     * @param cellPhone the cellPhone to set
-     */
-    public void setCellPhone(String cellPhone) {
-        this.cellPhone = cellPhone;
-    }
-
-    /**
-     * @return the direction
-     */
-    public String getDirection() {
-        return direction;
-    }
-
-    /**
-     * @param direction the direction to set
-     */
-    public void setDirection(String direction) {
-        this.direction = direction;
-    }
-
-    /**
-     * @return the description
-     */
-    public String getDescription() {
-        return description;
-    }
-
-    /**
-     * @param description the description to set
-     */
-    public void setDescription(String description) {
-        this.description = description;
-    }
+ 
+    
 }
