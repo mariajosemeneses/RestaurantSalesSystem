@@ -16,8 +16,8 @@ public class Breakfast extends Food {
     private float priceContinental;
     private float priceFull;
 
-    public Breakfast(String continental, String full, float priceContinental, float priceFull, String name, float price, int quantity) {
-        super(name, price, quantity);
+    public Breakfast(String continental, String full, float priceContinental, float priceFull, String typeOfProduct, String description, float price) {
+        super(typeOfProduct, description, price);
         this.continental = continental;
         this.full = full;
         this.priceContinental = priceContinental;

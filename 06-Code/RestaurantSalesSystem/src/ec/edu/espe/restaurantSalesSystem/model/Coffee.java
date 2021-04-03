@@ -14,9 +14,8 @@ import java.util.ArrayList;
 public class Coffee extends Drink {
     private ArrayList<String> coffees = new ArrayList();
 
-    public Coffee(String name, float price, int quantity, ArrayList<String> coffees) {
-        super(name, price, quantity);
-        this.coffees = coffees;
+    public Coffee(String typeOfProduct, String description, float price) {
+        super(typeOfProduct, description, price);
     }
 
     /**

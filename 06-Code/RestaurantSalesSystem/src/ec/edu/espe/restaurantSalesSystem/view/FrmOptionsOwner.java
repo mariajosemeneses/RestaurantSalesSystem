@@ -15,20 +15,21 @@ import static ec.edu.espe.Connection.utils.Conection.createConnection;
 import static ec.edu.espe.restaurantSalesSystem.utils.FileManager.create;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
+
 /**
  *
  * @author DAVID
  */
 public class FrmOptionsOwner extends javax.swing.JFrame {
+
     MongoClient mongo = createConnection();
+
     /**
      * Creates new form frmOptions
      */
     public FrmOptionsOwner() {
         initComponents();
-        
-   
-       
+
     }
 
     /**
@@ -43,11 +44,12 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
         FrmStockProducts = new javax.swing.JFrame();
         jPanel4 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
+        btnFindProducts = new javax.swing.JButton();
+        txtProducts = new javax.swing.JTextField();
         btnAddProduct1 = new javax.swing.JButton();
         btnDeleteProduct1 = new javax.swing.JButton();
         btnViewProducts1 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        jButton9 = new javax.swing.JButton();
         jScrollPane4 = new javax.swing.JScrollPane();
         tblProducts = new javax.swing.JTable();
         jLabel4 = new javax.swing.JLabel();
@@ -88,6 +90,17 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
         jPanel6.setName(""); // NOI18N
         jPanel6.setLayout(null);
 
+        btnFindProducts.setText("FIND PRODUCTS");
+        btnFindProducts.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFindProductsActionPerformed(evt);
+            }
+        });
+        jPanel6.add(btnFindProducts);
+        btnFindProducts.setBounds(360, 190, 140, 30);
+        jPanel6.add(txtProducts);
+        txtProducts.setBounds(200, 190, 140, 30);
+
         btnAddProduct1.setText("ADD PRODUCT");
         btnAddProduct1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -95,7 +108,7 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
             }
         });
         jPanel6.add(btnAddProduct1);
-        btnAddProduct1.setBounds(170, 140, 120, 23);
+        btnAddProduct1.setBounds(170, 130, 120, 30);
 
         btnDeleteProduct1.setText("DELETE PRODUCT");
         btnDeleteProduct1.addActionListener(new java.awt.event.ActionListener() {
@@ -104,7 +117,7 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
             }
         });
         jPanel6.add(btnDeleteProduct1);
-        btnDeleteProduct1.setBounds(370, 140, 140, 23);
+        btnDeleteProduct1.setBounds(360, 130, 140, 30);
 
         btnViewProducts1.setText("VIEW PRODUCTS");
         btnViewProducts1.addActionListener(new java.awt.event.ActionListener() {
@@ -113,23 +126,13 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
             }
         });
         jPanel6.add(btnViewProducts1);
-        btnViewProducts1.setBounds(250, 90, 150, 23);
+        btnViewProducts1.setBounds(250, 83, 150, 30);
 
         jLabel2.setFont(new java.awt.Font("Perpetua Titling MT", 3, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("PRODUCTS");
         jPanel6.add(jLabel2);
         jLabel2.setBounds(210, 10, 230, 44);
-
-        jButton9.setContentAreaFilled(false);
-        jButton9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
-            }
-        });
-        jPanel6.add(jButton9);
-        jButton9.setBounds(20, 340, 50, 50);
 
         tblProducts.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         tblProducts.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
@@ -146,7 +149,7 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
         jScrollPane4.setViewportView(tblProducts);
 
         jPanel6.add(jScrollPane4);
-        jScrollPane4.setBounds(140, 230, 380, 230);
+        jScrollPane4.setBounds(140, 240, 380, 230);
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/restaurantSalesSystem/images/fondo-product_1.jpg"))); // NOI18N
         jPanel6.add(jLabel4);
@@ -386,7 +389,7 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
     private void btnEditMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditMenuActionPerformed
         FrmStockProducts.setVisible(true);
         this.dispose();
-        FrmStockProducts.setLocationRelativeTo(null); 
+        FrmStockProducts.setLocationRelativeTo(null);
     }//GEN-LAST:event_btnEditMenuActionPerformed
 
     private void btnReportSaleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReportSaleActionPerformed
@@ -396,16 +399,11 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
     private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturnActionPerformed
         this.setVisible(false);
         FrmLoginScreen frmLoginScreen = new FrmLoginScreen();
-        frmLoginScreen.setVisible(true); 
+        frmLoginScreen.setVisible(true);
     }//GEN-LAST:event_btnReturnActionPerformed
 
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        FrmStockProducts.setVisible(false);
-        this.setVisible(true);
-    }//GEN-LAST:event_jButton9ActionPerformed
-
     private void btnAddProduct1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddProduct1ActionPerformed
-         dlgAddProduct.setVisible(true);
+        dlgAddProduct.setVisible(true);
         dlgAddProduct.setLocationRelativeTo(null);
     }//GEN-LAST:event_btnAddProduct1ActionPerformed
 
@@ -415,32 +413,31 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
     }//GEN-LAST:event_btnDeleteProduct1ActionPerformed
 
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
-       
-        
-            String dataToSave = "Do you want to save this information?: \n Procustc" + "\nType Of Product: " + cmbTypeOfProduct.getSelectedItem()
-                    + "\nDescription: " + txtDescription.getText() + "\nPrice: " + txtPrice.getText();
 
-            int selection = JOptionPane.showConfirmDialog(null, dataToSave, "Product added successfully",
-                    JOptionPane.YES_NO_CANCEL_OPTION);
+        String dataToSave = "Do you want to save this information?: \n Procustc" + "\nType Of Product: " + cmbTypeOfProduct.getSelectedItem()
+                + "\nDescription: " + txtDescription.getText() + "\nPrice: " + txtPrice.getText();
 
-            switch (selection) {
-                case 0:
-                    JOptionPane.showMessageDialog(null, "Information was saved",  cmbTypeOfProduct.getSelectedItem() + "Saved",
-                            JOptionPane.INFORMATION_MESSAGE);
-                    float price = Float.parseFloat(txtPrice.getText());
-                    create(mongo, "Products", "Food", (String) cmbTypeOfProduct.getSelectedItem(), txtDescription.getText(), price);
-                    emptyFields();
-                    break;
-                case 1:
-                    JOptionPane.showMessageDialog(null, "Information was NOT saved", cmbTypeOfProduct.getSelectedItem() + "NOT saved",
-                            JOptionPane.INFORMATION_MESSAGE);
-                    emptyFields();
-                    break;
-                default:
-                    JOptionPane.showMessageDialog(null, "Action was cancelled", cmbTypeOfProduct.getSelectedItem() + "Cancelled",
-                            JOptionPane.INFORMATION_MESSAGE);
-                    break;
-            
+        int selection = JOptionPane.showConfirmDialog(null, dataToSave, "Product added successfully",
+                JOptionPane.YES_NO_CANCEL_OPTION);
+
+        switch (selection) {
+            case 0:
+                JOptionPane.showMessageDialog(null, "Information was saved", cmbTypeOfProduct.getSelectedItem() + "Saved",
+                        JOptionPane.INFORMATION_MESSAGE);
+                float price = Float.parseFloat(txtPrice.getText());
+                create(mongo, "Products", "Food", (String) cmbTypeOfProduct.getSelectedItem(), txtDescription.getText(), price);
+                emptyFields();
+                break;
+            case 1:
+                JOptionPane.showMessageDialog(null, "Information was NOT saved", cmbTypeOfProduct.getSelectedItem() + "NOT saved",
+                        JOptionPane.INFORMATION_MESSAGE);
+                emptyFields();
+                break;
+            default:
+                JOptionPane.showMessageDialog(null, "Action was cancelled", cmbTypeOfProduct.getSelectedItem() + "Cancelled",
+                        JOptionPane.INFORMATION_MESSAGE);
+                break;
+
         }
         /*DefaultTableModel model = (DefaultTableModel) tblProducts.getModel();
 
@@ -466,14 +463,14 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
 
     private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
         DefaultTableModel model = (DefaultTableModel) tblProducts.getModel();
-        int row=tblProducts.getSelectedRow();
-        if (row>=0){
+        int row = tblProducts.getSelectedRow();
+        if (row >= 0) {
             model.removeRow(row);
             JOptionPane.showMessageDialog(null, "Product removed.");
-             dlgAddProduct.dispose();
-        }else {
-            JOptionPane.showMessageDialog(null,"Select row");
-           
+            dlgAddProduct.dispose();
+        } else {
+            JOptionPane.showMessageDialog(null, "Select row");
+
         }
     }//GEN-LAST:event_btnDeleteActionPerformed
 
@@ -482,18 +479,18 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
     }//GEN-LAST:event_txtPriceActionPerformed
 
     private void btnViewProducts1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewProducts1ActionPerformed
-         DBCursor cursor = null;
+        DBCursor cursor = null;
         DB db = mongo.getDB("Products");
-        DBCollection dbCollection3 = db.getCollection("Food");
+        DBCollection dbCollection = db.getCollection("Food");
         try {
-            cursor = dbCollection3.find();
-            String[] columnNames = {"Type of Product", "Description","Price"};
+            cursor = dbCollection.find();
+            String[] columnNames = {"Type of Product", "Description", "Price"};
             DefaultTableModel modelTable = new DefaultTableModel(columnNames, 0);
             while (cursor.hasNext()) {
                 DBObject obj = cursor.next();
-                String typeOfProduct = (String) obj.get("typeOfProduct");
-                String description = (String) obj.get("description");
-                float price = Float.valueOf(obj.get("price").toString());
+                String typeOfProduct = (String) obj.get("Type of Product");
+                String description = (String) obj.get("Description");
+                float price = Float.valueOf(obj.get("Price").toString());
                 modelTable.addRow(new Object[]{typeOfProduct, description, price});
             }
             tblProducts.setModel(modelTable);
@@ -502,13 +499,44 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
             System.out.println("Error printing tables");
         }
     }//GEN-LAST:event_btnViewProducts1ActionPerformed
- public void emptyFields() {
-        
+
+    private void btnFindProductsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFindProductsActionPerformed
+        if (txtProducts.getText().isEmpty()) {
+            JOptionPane.showMessageDialog(null, "FILL THE FIELD");
+        } else {
+            DB db = mongo.getDB("Products");
+            DBCollection dbCollection = db.getCollection("Food");
+            BasicDBObject query = new BasicDBObject();
+            query.put("Type of Product", txtProducts.getText().toUpperCase());
+
+            DBCursor cursor = null;
+
+            try {
+                cursor = dbCollection.find(query);
+                String[] columnNames = {"Type of Product", "Description", "Price"};
+                DefaultTableModel modelTable = new DefaultTableModel(columnNames, 0);
+                while (cursor.hasNext()) {
+                    DBObject obj = cursor.next();
+                    String typeOfProduct = (String) obj.get("Type of Product");
+                    String description = (String) obj.get("Description");
+                    float price = Float.valueOf(obj.get("Price").toString());
+                    modelTable.addRow(new Object[]{typeOfProduct, description, price});
+                }
+                tblProducts.setModel(modelTable);
+                cursor.close();
+            } catch (Exception ex) {
+                System.out.println("Error printing tables");
+            }
+        }
+    }//GEN-LAST:event_btnFindProductsActionPerformed
+    public void emptyFields() {
+
         cmbTypeOfProduct.setSelectedIndex(0);
         txtDescription.setText("");
         txtPrice.setText("");
-        
+
     }
+
     /**
      * @param args the command line arguments
      */
@@ -554,6 +582,7 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
     private javax.swing.JButton btnDelete;
     private javax.swing.JButton btnDeleteProduct1;
     private javax.swing.JButton btnEditMenu;
+    private javax.swing.JButton btnFindProducts;
     private javax.swing.JButton btnRegisterEmployee;
     private javax.swing.JButton btnReportSale;
     private javax.swing.JButton btnReturn;
@@ -562,7 +591,6 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
     private javax.swing.JLabel description2;
     private javax.swing.JDialog dlgAddProduct;
     private javax.swing.JDialog dlgDeleteProduct;
-    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel16;
@@ -580,6 +608,7 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
     private javax.swing.JTable tblProducts;
     private javax.swing.JTextField txtDescription;
     private javax.swing.JTextField txtPrice;
+    private javax.swing.JTextField txtProducts;
     private javax.swing.JTextField txtRow2;
     // End of variables declaration//GEN-END:variables
 }

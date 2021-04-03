@@ -15,8 +15,8 @@ public class Juice extends Drink{
     
     ArrayList<String> fruits = new ArrayList();
 
-    public Juice(String name, float price, int quantity) {
-        super(name, price, quantity);
+    public Juice(String typeOfProduct, String description, float price) {
+        super(typeOfProduct, description, price);
     }
 
     public ArrayList<String> getFruits() {

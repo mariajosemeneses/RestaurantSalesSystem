@@ -18,13 +18,8 @@ public class Snack extends Product{
     private ArrayList<String> hamburguers = new ArrayList();
     private ArrayList<String> sandwitches = new ArrayList();
 
-    public Snack(String name, float price, int quantity, ArrayList<String> choppeds, ArrayList<String> salads, 
-            ArrayList<String> hamburguers, ArrayList<String> sandwitches) {
-        super(name, price, quantity);
-        this.choppeds = choppeds;
-        this.salads = salads;
-        this.hamburguers = hamburguers;
-        this.sandwitches = sandwitches;
+    public Snack(String typeOfProduct, String description, float price) {
+        super(typeOfProduct, description, price);
     }
 
     /**

@@ -13,9 +13,9 @@ public class Food extends Product {
     public void choice (Lunch lunch, Breakfast breakfast){
         
     }
-    
-    public Food(String name, float price, int quantity) {
-        super(name, price, quantity);
+
+    public Food(String typeOfProduct, String description, float price) {
+        super(typeOfProduct, description, price);
     }
     
    
