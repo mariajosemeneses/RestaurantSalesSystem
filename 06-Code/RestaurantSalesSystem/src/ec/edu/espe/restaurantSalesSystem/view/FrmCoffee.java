@@ -5,7 +5,9 @@
  */
 package ec.edu.espe.restaurantSalesSystem.view;
 
+import static ec.edu.espe.restaurantSalesSystem.view.FrmLunch.validationSpinner;
 import java.awt.Color;
+import javax.swing.JSpinner;
 import javax.swing.SpinnerNumberModel;
 
 /**
@@ -17,105 +19,33 @@ public class FrmCoffee extends javax.swing.JFrame {
     /**
      * Creates new form FrmCoffee
      */
+    public static void validationSpinner(JSpinner spinner) {
+        SpinnerNumberModel nm = new SpinnerNumberModel();
+        nm.setMaximum(100);
+        nm.setMinimum(0);
+        nm.setStepSize(1);
+        spinner.setModel(nm);
+    }
     public FrmCoffee() {
         initComponents();
                 //Color JFrame
-                SpinnerNumberModel nm = new SpinnerNumberModel();
-                nm.setMaximum(100);
-                nm.setMinimum(0);
-                nm.setStepSize(1);
-                spiValor.setModel(nm);
-                
-                SpinnerNumberModel nm2 = new SpinnerNumberModel();
-                nm2.setMaximum(100);
-                nm2.setMinimum(0);
-                nm2.setStepSize(1);
-                spiValor2.setModel(nm2);
-                
-                SpinnerNumberModel nm3 = new SpinnerNumberModel();
-                nm3.setMaximum(100);
-                nm3.setMinimum(0);
-                nm3.setStepSize(1);
-                spiValor3.setModel(nm3);
-                
-                SpinnerNumberModel nm4 = new SpinnerNumberModel();
-                nm4.setMaximum(100);
-                nm4.setMinimum(0);
-                nm4.setStepSize(1);
-                spiValor4.setModel(nm4);
-                
-                SpinnerNumberModel nm5 = new SpinnerNumberModel();
-                nm5.setMaximum(100);
-                nm5.setMinimum(0);
-                nm5.setStepSize(1);
-                spiValor5.setModel(nm5);
-                
-                SpinnerNumberModel nm6 = new SpinnerNumberModel();
-                nm6.setMaximum(100);
-                nm6.setMinimum(0);
-                nm6.setStepSize(1);
-                spiValor6.setModel(nm6);
-                
-                SpinnerNumberModel nm7 = new SpinnerNumberModel();
-                nm7.setMaximum(100);
-                nm7.setMinimum(0);
-                nm7.setStepSize(1);
-                spiValor7.setModel(nm7);
-                
-                SpinnerNumberModel nm8 = new SpinnerNumberModel();
-                nm8.setMaximum(100);
-                nm8.setMinimum(0);
-                nm8.setStepSize(1);
-                spiValor8.setModel(nm8);
-                
-                SpinnerNumberModel nm9 = new SpinnerNumberModel();
-                nm9.setMaximum(100);
-                nm9.setMinimum(0);
-                nm9.setStepSize(1);
-                spiValor9.setModel(nm9);
-                
-                SpinnerNumberModel nm10 = new SpinnerNumberModel();
-                nm10.setMaximum(100);
-                nm10.setMinimum(0);
-                nm10.setStepSize(1);
-                spiValor10.setModel(nm10);
-                
-                SpinnerNumberModel nm11 = new SpinnerNumberModel();
-                nm11.setMaximum(100);
-                nm11.setMinimum(0);
-                nm11.setStepSize(1);
-                spiValor11.setModel(nm11);
-                
-                SpinnerNumberModel nm12 = new SpinnerNumberModel();
-                nm12.setMaximum(100);
-                nm12.setMinimum(0);
-                nm12.setStepSize(1);
-                spiValor12.setModel(nm12);
-                
-                SpinnerNumberModel nm13 = new SpinnerNumberModel();
-                nm13.setMaximum(100);
-                nm13.setMinimum(0);
-                nm13.setStepSize(1);
-                spiValor13.setModel(nm13);
-                
-                SpinnerNumberModel nm14 = new SpinnerNumberModel();
-                nm14.setMaximum(100);
-                nm14.setMinimum(0);
-                nm14.setStepSize(1);
-                spiValor14.setModel(nm14);
-                
-                SpinnerNumberModel nm15 = new SpinnerNumberModel();
-                nm15.setMaximum(100);
-                nm15.setMinimum(0);
-                nm15.setStepSize(1);
-                spiValor15.setModel(nm15);
-                
-                SpinnerNumberModel nm16 = new SpinnerNumberModel();
-                nm16.setMaximum(100);
-                nm16.setMinimum(0);
-                nm16.setStepSize(1);
-                spiValor16.setModel(nm16);
-                
+            validationSpinner(spiValor);
+            validationSpinner(spiValor2);
+            validationSpinner(spiValor3);
+            validationSpinner(spiValor4);
+            validationSpinner(spiValor5);
+            validationSpinner(spiValor6);
+            validationSpinner(spiValor7);
+            validationSpinner(spiValor8);
+            validationSpinner(spiValor9);
+            validationSpinner(spiValor10);
+            validationSpinner(spiValor11);
+            validationSpinner(spiValor12);
+            validationSpinner(spiValor13);
+            validationSpinner(spiValor14);
+            validationSpinner(spiValor15);
+            validationSpinner(spiValor16);
+         
         this.getContentPane().setBackground(Color.WHITE);
     }
 
