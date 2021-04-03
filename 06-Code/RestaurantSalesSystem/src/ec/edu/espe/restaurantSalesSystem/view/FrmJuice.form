@@ -41,8 +41,8 @@
                               </Group>
                               <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="spiValor3" max="32767" attributes="0"/>
-                                  <Component id="spiValor4" min="-2" pref="61" max="-2" attributes="0"/>
+                                  <Component id="jSpinner5" max="32767" attributes="0"/>
+                                  <Component id="jSpinner6" min="-2" pref="61" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
@@ -53,8 +53,8 @@
                               </Group>
                               <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                  <Component id="spiValor" pref="61" max="32767" attributes="0"/>
-                                  <Component id="spiValor2" max="32767" attributes="0"/>
+                                  <Component id="jSpinner1" pref="61" max="32767" attributes="0"/>
+                                  <Component id="jSpinner2" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -62,12 +62,12 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace pref="22" max="32767" attributes="0"/>
-                                  <Component id="spiValor6" min="-2" pref="61" max="-2" attributes="0"/>
+                                  <Component id="jSpinner9" min="-2" pref="61" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" attributes="0">
                                   <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="spiValor5" min="-2" pref="61" max="-2" attributes="0"/>
+                                  <Component id="jSpinner10" min="-2" pref="61" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -94,8 +94,8 @@
                                       </Group>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="spiValor10" min="-2" pref="61" max="-2" attributes="0"/>
-                                          <Component id="spiValor9" min="-2" pref="61" max="-2" attributes="0"/>
+                                          <Component id="jSpinner8" min="-2" pref="61" max="-2" attributes="0"/>
+                                          <Component id="jSpinner7" min="-2" pref="61" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <Component id="jLabel14" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -112,8 +112,8 @@
                                       </Group>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="spiValor11" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="spiValor12" alignment="0" min="-2" pref="61" max="-2" attributes="0"/>
+                                          <Component id="jSpinner11" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="jSpinner12" alignment="0" min="-2" pref="61" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
@@ -124,8 +124,8 @@
                                       </Group>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="spiValor8" max="32767" attributes="0"/>
-                                          <Component id="spiValor7" min="-2" pref="61" max="-2" attributes="0"/>
+                                          <Component id="jSpinner4" max="32767" attributes="0"/>
+                                          <Component id="jSpinner3" min="-2" pref="61" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -160,35 +160,31 @@
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="spiValor7" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jSpinner3" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-<<<<<<< HEAD
-                                  <Component id="spiValor8" alignment="0" min="-2" max="-2" attributes="0"/>
-=======
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jSpinner4" alignment="0" min="-2" max="-2" attributes="0"/>
->>>>>>> parent of 08ca20b (Revert "Refactor Classes in the package view")
-                                  <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="32767" attributes="0"/>
                               <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="spiValor9" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jSpinner7" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="spiValor10" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jSpinner8" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
                                   <Group type="102" alignment="1" attributes="0">
-                                      <Component id="spiValor11" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jSpinner11" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="spiValor12" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jSpinner12" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
                                       <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
@@ -213,19 +209,19 @@
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="spiValor" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jSpinner1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="spiValor2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jSpinner2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
                       <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <Component id="spiValor3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jSpinner5" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
@@ -233,7 +229,7 @@
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="spiValor4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jSpinner6" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -242,12 +238,12 @@
                       <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="spiValor5" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jSpinner10" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel16" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="spiValor6" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jSpinner9" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
@@ -364,9 +360,9 @@
         <Property name="text" type="java.lang.String" value="MORA"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JSpinner" name="spiValor">
+    <Component class="javax.swing.JSpinner" name="jSpinner1">
     </Component>
-    <Component class="javax.swing.JSpinner" name="spiValor2">
+    <Component class="javax.swing.JSpinner" name="jSpinner2">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
@@ -384,17 +380,17 @@
         <Property name="text" type="java.lang.String" value="Glass of juice..........$0,75"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JSpinner" name="spiValor7">
+    <Component class="javax.swing.JSpinner" name="jSpinner3">
     </Component>
-    <Component class="javax.swing.JSpinner" name="spiValor8">
+    <Component class="javax.swing.JSpinner" name="jSpinner4">
     </Component>
-    <Component class="javax.swing.JSpinner" name="spiValor3">
+    <Component class="javax.swing.JSpinner" name="jSpinner5">
     </Component>
-    <Component class="javax.swing.JSpinner" name="spiValor4">
+    <Component class="javax.swing.JSpinner" name="jSpinner6">
     </Component>
-    <Component class="javax.swing.JSpinner" name="spiValor9">
+    <Component class="javax.swing.JSpinner" name="jSpinner7">
     </Component>
-    <Component class="javax.swing.JSpinner" name="spiValor10">
+    <Component class="javax.swing.JSpinner" name="jSpinner8">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel15">
       <Properties>
@@ -436,13 +432,13 @@
         <Property name="text" type="java.lang.String" value="Glass of juice..........$0,75"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JSpinner" name="spiValor6">
+    <Component class="javax.swing.JSpinner" name="jSpinner9">
     </Component>
-    <Component class="javax.swing.JSpinner" name="spiValor5">
+    <Component class="javax.swing.JSpinner" name="jSpinner10">
     </Component>
-    <Component class="javax.swing.JSpinner" name="spiValor11">
+    <Component class="javax.swing.JSpinner" name="jSpinner11">
     </Component>
-    <Component class="javax.swing.JSpinner" name="spiValor12">
+    <Component class="javax.swing.JSpinner" name="jSpinner12">
     </Component>
     <Component class="javax.swing.JSeparator" name="jSeparator1">
       <Properties>
