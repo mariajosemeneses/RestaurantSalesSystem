@@ -106,7 +106,7 @@ public class FrmOptionsCashier extends javax.swing.JFrame {
 
     private void btnRegisterCustomerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegisterCustomerActionPerformed
         this.setVisible(false);
-        FrmRegisterCustomer frmRegisterCustomer = new FrmRegisterCustomer();
+        FrmRegisterOrder frmRegisterCustomer = new FrmRegisterOrder();
         frmRegisterCustomer.setVisible(true);
     }//GEN-LAST:event_btnRegisterCustomerActionPerformed
 
