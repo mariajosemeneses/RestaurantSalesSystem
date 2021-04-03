@@ -21,18 +21,13 @@ import javax.swing.table.DefaultTableModel;
  */
 public class FrmOptionsOwner extends javax.swing.JFrame {
     MongoClient mongo = createConnection();
-    DefaultTableModel modelo;
     /**
      * Creates new form frmOptions
      */
     public FrmOptionsOwner() {
         initComponents();
         
-        modelo = new DefaultTableModel();
-        modelo.addColumn("Type Of Product");
-        modelo.addColumn("Description");
-        modelo.addColumn("Price");
-        this.tblProducts.setModel(modelo);
+   
        
     }
 
