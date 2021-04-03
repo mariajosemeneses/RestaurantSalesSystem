@@ -11,6 +11,7 @@ import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
 import com.mongodb.MongoClient;
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -125,13 +126,13 @@ public class MongoManager implements Persistence{
 
         BasicDBObject searchedName = new BasicDBObject();
         searchedName.append("name", data);
-
-        System.out.print("Enter new Name: ");
+        System.out.println("Enter new Name: ");
         newName = input.nextLine();
         BasicDBObject updateData = new BasicDBObject();
         updateData.append("$set", new BasicDBObject().append("name", newName));
         dbCollection.updateMulti(searchedName, updateData);
     }
+    
 
     public void delete(MongoClient mongo, String dataBase, String collection, String name) {
         DB db = mongo.getDB(dataBase);

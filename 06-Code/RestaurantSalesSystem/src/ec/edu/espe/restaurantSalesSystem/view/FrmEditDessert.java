@@ -203,8 +203,8 @@ public class FrmEditDessert extends javax.swing.JFrame {
         if (txtNumber.getText().isEmpty() || txtDessert.getText().isEmpty() || txtPrice.getText().isEmpty()) {
             JOptionPane.showMessageDialog(null, "FILL ALL THE FIELDS");
         }else {
-            String dataToSave = "Do you want to save this information?:\nNumber: "+txtNumber.getText()+"\nDessert\n" 
-            + txtDessert.getText()+"\nPrice: " + txtPrice.getText();
+            String dataToSave = "Do you want to save this information?:\nNumber: "+txtNumber.getText()+"\nDessert: " 
+            + txtDessert.getText()+"\nPrice: $" + txtPrice.getText();
 
             int selection = JOptionPane.showConfirmDialog(null, dataToSave, "Breakfast Saving",
             JOptionPane.YES_NO_CANCEL_OPTION);

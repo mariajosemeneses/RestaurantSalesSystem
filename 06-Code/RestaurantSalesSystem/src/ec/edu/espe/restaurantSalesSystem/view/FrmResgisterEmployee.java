@@ -12,6 +12,7 @@ import com.mongodb.DBCursor;
 import com.mongodb.MongoClient;
 import static ec.edu.espe.Connection.utils.Conection.createConnection;
 import ec.edu.espe.restaurantSalesSystem.utils.MongoManager;
+import java.util.Random;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -74,6 +75,7 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         btnSave = new javax.swing.JButton();
         btnView = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
@@ -111,6 +113,16 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
         employee.setText("Type Of Employee");
 
         txtName.setToolTipText("Name and Lastname");
+        txtName.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNameActionPerformed(evt);
+            }
+        });
+        txtName.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtNameKeyTyped(evt);
+            }
+        });
 
         typeEmployee.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Chef", "Cashier", "Waiter" }));
         typeEmployee.addActionListener(new java.awt.event.ActionListener() {
@@ -125,6 +137,17 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
 
         jLabel2.setText("Age:");
 
+        txtAge.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtAgeActionPerformed(evt);
+            }
+        });
+        txtAge.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtAgeKeyTyped(evt);
+            }
+        });
+
         jLabel3.setText("Address: ");
 
         txtAddress.addActionListener(new java.awt.event.ActionListener() {
@@ -134,6 +157,17 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
         });
 
         jLabel4.setText("Email: ");
+
+        txtCell.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtCellActionPerformed(evt);
+            }
+        });
+        txtCell.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtCellKeyTyped(evt);
+            }
+        });
 
         jLabel5.setText("Cellphone:");
 
@@ -148,6 +182,13 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
         btnView.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnViewActionPerformed(evt);
+            }
+        });
+
+        jButton1.setText("Generate");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
             }
         });
 
@@ -177,9 +218,12 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(txtCell, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(typeEmployee, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtAge, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtId, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(0, 53, Short.MAX_VALUE))))
+                                    .addComponent(txtAge, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(0, 53, Short.MAX_VALUE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(txtId)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jButton1))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(89, 89, 89)
                         .addComponent(btnSave)
@@ -202,7 +246,9 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(id)
-                    .addComponent(txtId, javax.swing.GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(txtId, javax.swing.GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE)
+                        .addComponent(jButton1)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
@@ -445,6 +491,81 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtColumnActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        Random rnd = new Random();
+        int random=0;
+        random=((int)(rnd.nextDouble()*1234567));
+        txtId.setText("L00"+random);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void txtNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNameActionPerformed
+
+    }//GEN-LAST:event_txtNameActionPerformed
+
+    private void txtNameKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNameKeyTyped
+        char C = evt.getKeyChar();
+        if(Character.isDigit(C))
+        {
+            getToolkit().beep();
+            evt.consume();
+            //JOptionPane.showMessageDialog(this, "Ingrese solo letras");
+            txtName.setCursor(null);
+        }
+        else if((int)evt.getKeyChar()>32 && (int)evt.getKeyChar()<=47
+                ||(int)evt.getKeyChar()>=58 && (int)evt.getKeyChar()<=64
+                ||(int)evt.getKeyChar()>=91 && (int)evt.getKeyChar()<=96
+                ||(int)evt.getKeyChar()>=123 && (int)evt.getKeyChar()<=255){
+                getToolkit().beep();
+                evt.consume();
+                //JOptionPane.showMessageDialog(this, "Ingrese solo letras");
+                txtName.setCursor(null);
+            }
+    }//GEN-LAST:event_txtNameKeyTyped
+
+    private void txtAgeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAgeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtAgeActionPerformed
+
+    private void txtAgeKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtAgeKeyTyped
+        char C= evt.getKeyChar();
+        if(Character.isLetter(C)){
+            getToolkit().beep();
+            evt.consume();
+            //JOptionPane.showMessageDialog(this, "Ingrese solo numeros");
+            txtAge.setCursor(null);
+        }else if((int)evt.getKeyChar()>32 && (int)evt.getKeyChar()<=47
+                ||(int)evt.getKeyChar()>=58 && (int)evt.getKeyChar()<=64
+                ||(int)evt.getKeyChar()>=91 && (int)evt.getKeyChar()<=96
+                ||(int)evt.getKeyChar()>=123 && (int)evt.getKeyChar()<=255){
+                getToolkit().beep();
+                evt.consume();
+                //JOptionPane.showMessageDialog(this, "Ingrese solo numeros");
+                txtAge.setCursor(null);
+            }
+    }//GEN-LAST:event_txtAgeKeyTyped
+
+    private void txtCellKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCellKeyTyped
+        char C= evt.getKeyChar();
+        if(Character.isLetter(C)){
+            getToolkit().beep();
+            evt.consume();
+            //JOptionPane.showMessageDialog(this, "Ingrese solo numeros");
+            txtCell.setCursor(null);
+        }else if((int)evt.getKeyChar()>32 && (int)evt.getKeyChar()<=47
+                ||(int)evt.getKeyChar()>=58 && (int)evt.getKeyChar()<=64
+                ||(int)evt.getKeyChar()>=91 && (int)evt.getKeyChar()<=96
+                ||(int)evt.getKeyChar()>=123 && (int)evt.getKeyChar()<=255){
+                getToolkit().beep();
+                evt.consume();
+                //JOptionPane.showMessageDialog(this, "Ingrese solo numeros");
+                txtCell.setCursor(null);
+            }
+    }//GEN-LAST:event_txtCellKeyTyped
+
+    private void txtCellActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCellActionPerformed
+        
+    }//GEN-LAST:event_txtCellActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -488,6 +609,7 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
     private javax.swing.JButton btnView;
     private javax.swing.JLabel employee;
     private javax.swing.JLabel id;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
