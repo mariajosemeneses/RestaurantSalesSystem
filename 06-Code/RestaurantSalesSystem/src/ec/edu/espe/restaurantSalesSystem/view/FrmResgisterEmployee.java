@@ -5,10 +5,10 @@
  */
 package ec.edu.espe.restaurantSalesSystem.view;
 
-import com.mongodb.BasicDBObject;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
+import com.mongodb.DBObject;
 import com.mongodb.MongoClient;
 import static ec.edu.espe.Connection.utils.Conection.createConnection;
 import ec.edu.espe.restaurantSalesSystem.utils.MongoManager;
@@ -22,27 +22,12 @@ import javax.swing.table.DefaultTableModel;
  */
 public class FrmResgisterEmployee extends javax.swing.JFrame {
 
-    DefaultTableModel modelo;
-    DB db;
-    DBCollection collection;
-    BasicDBObject document = new BasicDBObject();
-
     MongoClient mongo = createConnection();
 
     public FrmResgisterEmployee() {
 
         initComponents();
 
-        modelo = new DefaultTableModel();
-        modelo.addColumn("Type Of Employee");
-        modelo.addColumn("Name");
-        modelo.addColumn("ID");
-        modelo.addColumn("Age");
-        modelo.addColumn("Address");
-        modelo.addColumn("Email");
-        modelo.addColumn("CellPhone");
-
-        this.jTable1.setModel(modelo);
     }
 
     /**
@@ -56,7 +41,7 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
 
         jSeparator1 = new javax.swing.JSeparator();
         jScrollPane4 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        tblEmployee = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
         btnReturn = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
@@ -75,8 +60,9 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
         txtCell = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         btnSave = new javax.swing.JButton();
-        btnView = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
+        cmbEmployee = new javax.swing.JComboBox<>();
+        btnView = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
@@ -85,10 +71,11 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
         txtRow = new javax.swing.JTextField();
         txtColumn = new javax.swing.JTextField();
         txtNewdata = new javax.swing.JTextField();
+        btnClean = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tblEmployee.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {},
                 {},
@@ -99,7 +86,7 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
 
             }
         ));
-        jScrollPane4.setViewportView(jTable1);
+        jScrollPane4.setViewportView(tblEmployee);
 
         jLabel1.setFont(new java.awt.Font("Perpetua Titling MT", 0, 18)); // NOI18N
         jLabel1.setText("Register Employee");
@@ -179,17 +166,24 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
             }
         });
 
-        btnView.setText("view");
-        btnView.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnViewActionPerformed(evt);
-            }
-        });
-
         jButton1.setText("Generate");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
+            }
+        });
+
+        cmbEmployee.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "cashier", "chef", "waiter" }));
+        cmbEmployee.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbEmployeeActionPerformed(evt);
+            }
+        });
+
+        btnView.setText("View");
+        btnView.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnViewActionPerformed(evt);
             }
         });
 
@@ -228,9 +222,12 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(89, 89, 89)
                         .addComponent(btnSave)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnView)
-                        .addGap(37, 37, 37)))
+                        .addGap(101, 101, 101)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnView)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(cmbEmployee, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE)))))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -251,26 +248,31 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
                         .addComponent(txtId, javax.swing.GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE)
                         .addComponent(jButton1)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(txtAge, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(9, 9, 9)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(txtAddress, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4)
-                    .addComponent(txtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtCell, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5))
-                .addGap(41, 41, 41)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnSave)
-                    .addComponent(btnView))
-                .addGap(41, 41, 41))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel2)
+                            .addComponent(txtAge, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(9, 9, 9)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel3)
+                            .addComponent(txtAddress, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel4)
+                            .addComponent(txtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtCell, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel5))
+                        .addGap(41, 41, 41)
+                        .addComponent(btnSave)
+                        .addGap(25, 25, 25))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(cmbEmployee, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnView)
+                        .addContainerGap())))
         );
 
         jLabel6.setText("Row");
@@ -296,6 +298,13 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
         txtColumn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtColumnActionPerformed(evt);
+            }
+        });
+
+        btnClean.setText("Clean");
+        btnClean.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCleanActionPerformed(evt);
             }
         });
 
@@ -331,11 +340,12 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(txtRow, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE)
                                     .addComponent(txtColumn)
-                                    .addComponent(txtNewdata)))))
+                                    .addComponent(txtNewdata)))
+                            .addComponent(btnClean)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(253, 253, 253)
                         .addComponent(jLabel1)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(161, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -360,13 +370,15 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel8)
                             .addComponent(txtNewdata, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(48, 48, 48)
+                        .addComponent(btnClean)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnEdit)
                             .addComponent(btnDelete))
                         .addGap(45, 45, 45)))
                 .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
                 .addComponent(btnReturn)
                 .addContainerGap())
         );
@@ -391,18 +403,21 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
                 case 0:
                     JOptionPane.showMessageDialog(null, "Information was saved", txtName.getText() + "Saved",
                             JOptionPane.INFORMATION_MESSAGE);
-                    MongoManager registerEmployee =new MongoManager();
+                    MongoManager registerEmployee = new MongoManager();
                     int age = Integer.parseInt(txtAge.getText());
                     if (typeEmployee.getSelectedItem().equals("Cashier")) {
-                        
+
                         registerEmployee.create(mongo, "Employee", "cashiers", txtName.getText(), txtAddress.getText(),
                                 txtEmail.getText(), txtCell.getText(), age, txtId.getText());
+                        emptyFields();
                     } else if ((typeEmployee.getSelectedItem().equals("Waiter"))) {
                         registerEmployee.create(mongo, "Employee", "waiters", txtName.getText(), txtAddress.getText(),
                                 txtEmail.getText(), txtCell.getText(), age, txtId.getText());
+                        emptyFields();
                     } else {
                         registerEmployee.create(mongo, "Employee", "chefs", txtName.getText(), txtAddress.getText(),
                                 txtEmail.getText(), txtCell.getText(), age, txtId.getText());
+                        emptyFields();
                     }
                     break;
                 case 1:
@@ -427,35 +442,6 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
         txtAge.setText("");
         txtId.setText("");
     }
-    private void btnViewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewActionPerformed
-
-        try {
-            String[] Datos = new String[7];
-            Datos[0] = (String) typeEmployee.getSelectedItem();
-            typeEmployee.setName(null);
-            Datos[1] = txtName.getText();
-            txtName.setName(null);
-            Datos[2] = txtId.getText();
-            txtId.setName(null);
-            Datos[3] = txtAge.getText();
-            txtAge.setName(null);
-            Datos[4] = txtAddress.getText();
-            txtAddress.setName(null);
-            Datos[5] = txtEmail.getText();
-            txtEmail.setName(null);
-            Datos[6] = txtCell.getText();
-            txtCell.setName(null);
-            modelo.addRow(Datos);
-
-            DBCursor cursor = collection.find();
-            while (cursor.hasNext()) {
-                jTable1.setToolTipText(jTable1.getToolTipText() + "\n" + cursor.next());
-            }
-        } catch (Exception ex) {
-            System.out.println("ERROR");
-        }
-    }//GEN-LAST:event_btnViewActionPerformed
-
     private void typeEmployeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_typeEmployeeActionPerformed
 
     }//GEN-LAST:event_typeEmployeeActionPerformed
@@ -472,19 +458,19 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
 
     private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
         // TODO add your handling code here:
-        int row=jTable1.getSelectedRow();
-        if (row>=0){
+        int row = tblEmployee.getSelectedRow();
+        if (row >= 0) {
             modelo.removeRow(row);
-        }else{
-            JOptionPane.showMessageDialog(null,"Select row");
-            
+        } else {
+            JOptionPane.showMessageDialog(null, "Select row");
+
         }
     }//GEN-LAST:event_btnDeleteActionPerformed
 
     private void btnEditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditActionPerformed
         // TODO add your handling code here:
-        int row=Integer.parseInt(txtRow.getText());
-        int column=Integer.parseInt(txtColumn.getText());
+        int row = Integer.parseInt(txtRow.getText());
+        int column = Integer.parseInt(txtColumn.getText());
         modelo.setValueAt(txtNewdata.getText(), row, column);
     }//GEN-LAST:event_btnEditActionPerformed
 
@@ -494,9 +480,21 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         Random rnd = new Random();
+<<<<<<< Updated upstream
         int random=0;
-        random=((int)(rnd.nextDouble()*1234567));
-        txtId.setText("L00"+random);
+        random=((int)(rnd.nextInt(9999-0+1)+0));
+        if (random>=0&&random<=99)
+        txtId.setText("L0000"+random);
+        else if(random>=100&&random<=999){
+            txtId.setText("L000"+random);
+        }else if(random>=1000&&random<=9990){
+            txtId.setText("L00"+random);
+        }
+=======
+        int random = 0;
+        random = ((int) (rnd.nextDouble() * 1234567));
+        txtId.setText("L00" + random);
+>>>>>>> Stashed changes
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void txtNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNameActionPerformed
@@ -505,22 +503,20 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
 
     private void txtNameKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNameKeyTyped
         char C = evt.getKeyChar();
-        if(Character.isDigit(C))
-        {
+        if (Character.isDigit(C)) {
+            getToolkit().beep();
+            evt.consume();
+            //JOptionPane.showMessageDialog(this, "Ingrese solo letras");
+            txtName.setCursor(null);
+        } else if ((int) evt.getKeyChar() > 32 && (int) evt.getKeyChar() <= 47
+                || (int) evt.getKeyChar() >= 58 && (int) evt.getKeyChar() <= 64
+                || (int) evt.getKeyChar() >= 91 && (int) evt.getKeyChar() <= 96
+                || (int) evt.getKeyChar() >= 123 && (int) evt.getKeyChar() <= 255) {
             getToolkit().beep();
             evt.consume();
             //JOptionPane.showMessageDialog(this, "Ingrese solo letras");
             txtName.setCursor(null);
         }
-        else if((int)evt.getKeyChar()>32 && (int)evt.getKeyChar()<=47
-                ||(int)evt.getKeyChar()>=58 && (int)evt.getKeyChar()<=64
-                ||(int)evt.getKeyChar()>=91 && (int)evt.getKeyChar()<=96
-                ||(int)evt.getKeyChar()>=123 && (int)evt.getKeyChar()<=255){
-                getToolkit().beep();
-                evt.consume();
-                //JOptionPane.showMessageDialog(this, "Ingrese solo letras");
-                txtName.setCursor(null);
-            }
     }//GEN-LAST:event_txtNameKeyTyped
 
     private void txtAgeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAgeActionPerformed
@@ -528,44 +524,77 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
     }//GEN-LAST:event_txtAgeActionPerformed
 
     private void txtAgeKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtAgeKeyTyped
-        char C= evt.getKeyChar();
-        if(Character.isLetter(C)){
+        char C = evt.getKeyChar();
+        if (Character.isLetter(C)) {
             getToolkit().beep();
             evt.consume();
             //JOptionPane.showMessageDialog(this, "Ingrese solo numeros");
             txtAge.setCursor(null);
-        }else if((int)evt.getKeyChar()>32 && (int)evt.getKeyChar()<=47
-                ||(int)evt.getKeyChar()>=58 && (int)evt.getKeyChar()<=64
-                ||(int)evt.getKeyChar()>=91 && (int)evt.getKeyChar()<=96
-                ||(int)evt.getKeyChar()>=123 && (int)evt.getKeyChar()<=255){
-                getToolkit().beep();
-                evt.consume();
-                //JOptionPane.showMessageDialog(this, "Ingrese solo numeros");
-                txtAge.setCursor(null);
-            }
+        } else if ((int) evt.getKeyChar() > 32 && (int) evt.getKeyChar() <= 47
+                || (int) evt.getKeyChar() >= 58 && (int) evt.getKeyChar() <= 64
+                || (int) evt.getKeyChar() >= 91 && (int) evt.getKeyChar() <= 96
+                || (int) evt.getKeyChar() >= 123 && (int) evt.getKeyChar() <= 255) {
+            getToolkit().beep();
+            evt.consume();
+            //JOptionPane.showMessageDialog(this, "Ingrese solo numeros");
+            txtAge.setCursor(null);
+        }
     }//GEN-LAST:event_txtAgeKeyTyped
 
     private void txtCellKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCellKeyTyped
-        char C= evt.getKeyChar();
-        if(Character.isLetter(C)){
+        char C = evt.getKeyChar();
+        if (Character.isLetter(C)) {
             getToolkit().beep();
             evt.consume();
             //JOptionPane.showMessageDialog(this, "Ingrese solo numeros");
             txtCell.setCursor(null);
-        }else if((int)evt.getKeyChar()>32 && (int)evt.getKeyChar()<=47
-                ||(int)evt.getKeyChar()>=58 && (int)evt.getKeyChar()<=64
-                ||(int)evt.getKeyChar()>=91 && (int)evt.getKeyChar()<=96
-                ||(int)evt.getKeyChar()>=123 && (int)evt.getKeyChar()<=255){
-                getToolkit().beep();
-                evt.consume();
-                //JOptionPane.showMessageDialog(this, "Ingrese solo numeros");
-                txtCell.setCursor(null);
-            }
+        } else if ((int) evt.getKeyChar() > 32 && (int) evt.getKeyChar() <= 47
+                || (int) evt.getKeyChar() >= 58 && (int) evt.getKeyChar() <= 64
+                || (int) evt.getKeyChar() >= 91 && (int) evt.getKeyChar() <= 96
+                || (int) evt.getKeyChar() >= 123 && (int) evt.getKeyChar() <= 255) {
+            getToolkit().beep();
+            evt.consume();
+            //JOptionPane.showMessageDialog(this, "Ingrese solo numeros");
+            txtCell.setCursor(null);
+        }
     }//GEN-LAST:event_txtCellKeyTyped
 
     private void txtCellActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCellActionPerformed
-        
+
     }//GEN-LAST:event_txtCellActionPerformed
+
+    private void btnViewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewActionPerformed
+        DBCursor cursor = null;        
+        DB db = mongo.getDB("Employee");
+        DBCollection dbCollection = db.getCollection(cmbEmployee.getSelectedItem().toString() + "s");
+        try {
+            cursor = dbCollection.find();
+            String[] columnNames = {"Name", "Address", "Email", "Phone Number", "Age", "ID"};
+            DefaultTableModel modelTable = new DefaultTableModel(columnNames, 0);
+            while (cursor.hasNext()) {
+                DBObject obj = cursor.next();
+                String name = (String) obj.get("name");
+                String address = (String) obj.get("address");
+                String email = (String) obj.get("email");
+                String cellPhone = (String) obj.get("cellPhone");
+                int age = Integer.valueOf(obj.get("age").toString());
+                String id = (String) obj.get("id");
+                modelTable.addRow(new Object[]{name, address, email, cellPhone, age, id});
+            }
+            tblEmployee.setModel(modelTable);
+            cursor.close();
+        } catch (Exception ex) {
+            System.out.println("Error printing tables");
+        }
+    }//GEN-LAST:event_btnViewActionPerformed
+
+    private void cmbEmployeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbEmployeeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cmbEmployeeActionPerformed
+
+    private void btnCleanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCleanActionPerformed
+        emptyFields();
+    }//GEN-LAST:event_btnCleanActionPerformed
 
     /**
      * @param args the command line arguments
@@ -603,11 +632,13 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnClean;
     private javax.swing.JButton btnDelete;
     private javax.swing.JButton btnEdit;
     private javax.swing.JButton btnReturn;
     private javax.swing.JButton btnSave;
     private javax.swing.JButton btnView;
+    private javax.swing.JComboBox<String> cmbEmployee;
     private javax.swing.JLabel employee;
     private javax.swing.JLabel id;
     private javax.swing.JButton jButton1;
@@ -622,8 +653,8 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JTable jTable1;
     private javax.swing.JLabel name;
+    private javax.swing.JTable tblEmployee;
     private javax.swing.JTextField txtAddress;
     private javax.swing.JTextField txtAge;
     private javax.swing.JTextField txtCell;

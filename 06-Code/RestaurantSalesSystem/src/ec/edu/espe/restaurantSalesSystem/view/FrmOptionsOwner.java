@@ -15,20 +15,21 @@ import static ec.edu.espe.Connection.utils.Conection.createConnection;
 import static ec.edu.espe.restaurantSalesSystem.utils.FileManager.create;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
+
 /**
  *
  * @author DAVID
  */
 public class FrmOptionsOwner extends javax.swing.JFrame {
-    MongoClient mongo = Connection();
+
+    MongoClient mongo = createConnection();
+
     /**
      * Creates new form frmOptions
      */
     public FrmOptionsOwner() {
         initComponents();
-        
-   
-       
+
     }
 
     /**
@@ -43,11 +44,12 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
         FrmStockProducts = new javax.swing.JFrame();
         jPanel4 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
+        btnFindProducts = new javax.swing.JButton();
+        txtProducts = new javax.swing.JTextField();
         btnAddProduct1 = new javax.swing.JButton();
         btnDeleteProduct1 = new javax.swing.JButton();
         btnViewProducts1 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        jButton9 = new javax.swing.JButton();
         jScrollPane4 = new javax.swing.JScrollPane();
         tblProducts = new javax.swing.JTable();
         jLabel4 = new javax.swing.JLabel();
@@ -69,12 +71,10 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
         txtRow2 = new javax.swing.JTextField();
         jLabel17 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
-        btnExit = new javax.swing.JButton();
-        btnEditMenu = new javax.swing.JButton();
         btnRegisterEmployee = new javax.swing.JButton();
+        btnEditMenu = new javax.swing.JButton();
         btnReportSale = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        btnReturn = new javax.swing.JButton();
 
         FrmStockProducts.setTitle("STOCK");
         FrmStockProducts.setMinimumSize(new java.awt.Dimension(622, 633));
@@ -90,6 +90,17 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
         jPanel6.setName(""); // NOI18N
         jPanel6.setLayout(null);
 
+        btnFindProducts.setText("FIND PRODUCTS");
+        btnFindProducts.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFindProductsActionPerformed(evt);
+            }
+        });
+        jPanel6.add(btnFindProducts);
+        btnFindProducts.setBounds(360, 190, 140, 30);
+        jPanel6.add(txtProducts);
+        txtProducts.setBounds(200, 190, 140, 30);
+
         btnAddProduct1.setText("ADD PRODUCT");
         btnAddProduct1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -97,7 +108,7 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
             }
         });
         jPanel6.add(btnAddProduct1);
-        btnAddProduct1.setBounds(170, 140, 120, 23);
+        btnAddProduct1.setBounds(170, 130, 120, 30);
 
         btnDeleteProduct1.setText("DELETE PRODUCT");
         btnDeleteProduct1.addActionListener(new java.awt.event.ActionListener() {
@@ -106,7 +117,7 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
             }
         });
         jPanel6.add(btnDeleteProduct1);
-        btnDeleteProduct1.setBounds(370, 140, 140, 23);
+        btnDeleteProduct1.setBounds(360, 130, 140, 30);
 
         btnViewProducts1.setText("VIEW PRODUCTS");
         btnViewProducts1.addActionListener(new java.awt.event.ActionListener() {
@@ -115,23 +126,13 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
             }
         });
         jPanel6.add(btnViewProducts1);
-        btnViewProducts1.setBounds(250, 90, 150, 23);
+        btnViewProducts1.setBounds(250, 83, 150, 30);
 
         jLabel2.setFont(new java.awt.Font("Perpetua Titling MT", 3, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("PRODUCTS");
         jPanel6.add(jLabel2);
         jLabel2.setBounds(210, 10, 230, 44);
-
-        jButton9.setContentAreaFilled(false);
-        jButton9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
-            }
-        });
-        jPanel6.add(jButton9);
-        jButton9.setBounds(20, 340, 50, 50);
 
         tblProducts.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         tblProducts.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
@@ -143,17 +144,12 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
 
             }
         ));
-        tblProducts.setInheritsPopupMenu(true);
+        tblProducts.setGridColor(new java.awt.Color(255, 255, 255));
         tblProducts.setSelectionBackground(new java.awt.Color(204, 204, 0));
-        tblProducts.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                tblProductsMouseClicked(evt);
-            }
-        });
         jScrollPane4.setViewportView(tblProducts);
 
         jPanel6.add(jScrollPane4);
-        jScrollPane4.setBounds(140, 230, 380, 230);
+        jScrollPane4.setBounds(140, 240, 380, 230);
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/restaurantSalesSystem/images/fondo-product_1.jpg"))); // NOI18N
         jPanel6.add(jLabel4);
@@ -235,8 +231,6 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
         });
         jPanel7.add(cmbTypeOfProduct);
         cmbTypeOfProduct.setBounds(330, 70, 95, 20);
-        cmbTypeOfProduct.getAccessibleContext().setAccessibleName("");
-        cmbTypeOfProduct.getAccessibleContext().setAccessibleParent(this);
 
         txtDescription.setBackground(new java.awt.Color(0, 0, 0));
         txtDescription.setForeground(new java.awt.Color(255, 255, 255));
@@ -317,84 +311,99 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        btnExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/restaurantSalesSystem/images/back (1).png"))); // NOI18N
-        btnExit.setContentAreaFilled(false);
-        btnExit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnExit.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnExitActionPerformed(evt);
-            }
-        });
-        jPanel1.add(btnExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 300, 60, 30));
-
-        btnEditMenu.setBackground(new java.awt.Color(255, 255, 102));
-        btnEditMenu.setFont(new java.awt.Font("Baskerville Old Face", 3, 14)); // NOI18N
-        btnEditMenu.setForeground(new java.awt.Color(255, 255, 204));
-        btnEditMenu.setText("EDIT MENU");
-        btnEditMenu.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
-        btnEditMenu.setContentAreaFilled(false);
-        btnEditMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnEditMenu.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnEditMenuActionPerformed(evt);
-            }
-        });
-        jPanel1.add(btnEditMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 140, 30));
-
-        btnRegisterEmployee.setBackground(new java.awt.Color(255, 255, 102));
-        btnRegisterEmployee.setFont(new java.awt.Font("Baskerville Old Face", 3, 14)); // NOI18N
-        btnRegisterEmployee.setText("REGISTER EMPLOYEE");
-        btnRegisterEmployee.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
-        btnRegisterEmployee.setContentAreaFilled(false);
-        btnRegisterEmployee.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnRegisterEmployee.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btnRegisterEmployee.setText("Register Employee");
         btnRegisterEmployee.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRegisterEmployeeActionPerformed(evt);
             }
         });
-        jPanel1.add(btnRegisterEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 140, 200, 30));
 
-        btnReportSale.setBackground(new java.awt.Color(255, 255, 102));
-        btnReportSale.setFont(new java.awt.Font("Baskerville Old Face", 3, 14)); // NOI18N
-        btnReportSale.setForeground(new java.awt.Color(255, 255, 204));
-        btnReportSale.setText("REPORT SALE");
-        btnReportSale.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
-        btnReportSale.setContentAreaFilled(false);
-        btnReportSale.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnEditMenu.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btnEditMenu.setText("Edit Menu");
+        btnEditMenu.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEditMenuActionPerformed(evt);
+            }
+        });
+
+        btnReportSale.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btnReportSale.setText("Report Sale");
         btnReportSale.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnReportSaleActionPerformed(evt);
             }
         });
-        jPanel1.add(btnReportSale, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 300, 140, 30));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/restaurantSalesSystem/images/fondo_ownerOptionsq.jpg"))); // NOI18N
-        jLabel1.setToolTipText("");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-80, -90, 490, 463));
+        btnReturn.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btnReturn.setText("Exit");
+        btnReturn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnReturnActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(87, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnRegisterEmployee)
+                        .addGap(98, 98, 98))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(btnEditMenu)
+                            .addComponent(btnReportSale))
+                        .addGap(123, 123, 123))))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(132, 132, 132)
+                .addComponent(btnReturn)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(33, 33, 33)
+                .addComponent(btnRegisterEmployee)
+                .addGap(42, 42, 42)
+                .addComponent(btnEditMenu)
+                .addGap(31, 31, 31)
+                .addComponent(btnReportSale)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 63, Short.MAX_VALUE)
+                .addComponent(btnReturn)
+                .addGap(31, 31, 31))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        FrmStockProducts.setVisible(false);
-        this.setVisible(true);
-    }//GEN-LAST:event_jButton9ActionPerformed
+    private void btnRegisterEmployeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegisterEmployeeActionPerformed
+        this.setVisible(false);
+        FrmResgisterEmployee frmResgisterEmployee = new FrmResgisterEmployee();
+        frmResgisterEmployee.setVisible(true);        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRegisterEmployeeActionPerformed
+
+    private void btnEditMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditMenuActionPerformed
+        FrmStockProducts.setVisible(true);
+        this.dispose();
+        FrmStockProducts.setLocationRelativeTo(null);
+    }//GEN-LAST:event_btnEditMenuActionPerformed
+
+    private void btnReportSaleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReportSaleActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnReportSaleActionPerformed
+
+    private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturnActionPerformed
+        this.setVisible(false);
+        FrmLoginScreen frmLoginScreen = new FrmLoginScreen();
+        frmLoginScreen.setVisible(true);
+    }//GEN-LAST:event_btnReturnActionPerformed
 
     private void btnAddProduct1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddProduct1ActionPerformed
-         dlgAddProduct.setVisible(true);
+        dlgAddProduct.setVisible(true);
         dlgAddProduct.setLocationRelativeTo(null);
     }//GEN-LAST:event_btnAddProduct1ActionPerformed
 
@@ -404,35 +413,31 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
     }//GEN-LAST:event_btnDeleteProduct1ActionPerformed
 
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
-       
-        
-            String dataToSave = "Do you want to save this information?: \n *******PRODUCTS*******" + "\nType Of Product: " + cmbTypeOfProduct.getSelectedItem()
-                    + "\nDescription: " + txtDescription.getText() + "\nPrice: " + txtPrice.getText();
 
-            int selection = JOptionPane.showConfirmDialog(null, dataToSave, "Product added successfully",
-                    JOptionPane.YES_NO_CANCEL_OPTION);
+        String dataToSave = "Do you want to save this information?: \n Procustc" + "\nType Of Product: " + cmbTypeOfProduct.getSelectedItem()
+                + "\nDescription: " + txtDescription.getText() + "\nPrice: " + txtPrice.getText();
 
-            switch (selection) {
-                case 0:
-                    JOptionPane.showMessageDialog(null, "Information was saved",  cmbTypeOfProduct.getSelectedItem() + "Saved",
-                            JOptionPane.INFORMATION_MESSAGE);
-                    
-                    cmbTypeOfProduct.getSelectedItem();
-                    float price = Float.parseFloat(txtPrice.getText());
-                    
-                    create(mongo, "Products", "Food", cmbTypeOfProduct.getSelectedItem().toString(), txtDescription.getText(), price);
-                    emptyFields();
-                    break;
-                case 1:
-                    JOptionPane.showMessageDialog(null, "Information was NOT saved", cmbTypeOfProduct.getSelectedItem().toString() + "NOT saved",
-                            JOptionPane.INFORMATION_MESSAGE);
-                    emptyFields();
-                    break;
-                default:
-                    JOptionPane.showMessageDialog(null, "Action was cancelled", cmbTypeOfProduct.getSelectedItem().toString() + "Cancelled",
-                            JOptionPane.INFORMATION_MESSAGE);
-                    break;
-            
+        int selection = JOptionPane.showConfirmDialog(null, dataToSave, "Product added successfully",
+                JOptionPane.YES_NO_CANCEL_OPTION);
+
+        switch (selection) {
+            case 0:
+                JOptionPane.showMessageDialog(null, "Information was saved", cmbTypeOfProduct.getSelectedItem() + "Saved",
+                        JOptionPane.INFORMATION_MESSAGE);
+                float price = Float.parseFloat(txtPrice.getText());
+                create(mongo, "Products", "Food", (String) cmbTypeOfProduct.getSelectedItem(), txtDescription.getText(), price);
+                emptyFields();
+                break;
+            case 1:
+                JOptionPane.showMessageDialog(null, "Information was NOT saved", cmbTypeOfProduct.getSelectedItem() + "NOT saved",
+                        JOptionPane.INFORMATION_MESSAGE);
+                emptyFields();
+                break;
+            default:
+                JOptionPane.showMessageDialog(null, "Action was cancelled", cmbTypeOfProduct.getSelectedItem() + "Cancelled",
+                        JOptionPane.INFORMATION_MESSAGE);
+                break;
+
         }
         /*DefaultTableModel model = (DefaultTableModel) tblProducts.getModel();
 
@@ -458,14 +463,14 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
 
     private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
         DefaultTableModel model = (DefaultTableModel) tblProducts.getModel();
-        int row=tblProducts.getSelectedRow();
-        if (row>=0){
+        int row = tblProducts.getSelectedRow();
+        if (row >= 0) {
             model.removeRow(row);
             JOptionPane.showMessageDialog(null, "Product removed.");
-             dlgAddProduct.dispose();
-        }else {
-            JOptionPane.showMessageDialog(null,"Select row");
-           
+            dlgAddProduct.dispose();
+        } else {
+            JOptionPane.showMessageDialog(null, "Select row");
+
         }
     }//GEN-LAST:event_btnDeleteActionPerformed
 
@@ -474,60 +479,64 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
     }//GEN-LAST:event_txtPriceActionPerformed
 
     private void btnViewProducts1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewProducts1ActionPerformed
-         
-         DBCursor cursor = null;
+        DBCursor cursor = null;
         DB db = mongo.getDB("Products");
         DBCollection dbCollection = db.getCollection("Food");
-       
-            String[] columnNames = {"Type of Product", "Description","Price"};
-            DefaultTableModel modelTable = new DefaultTableModel(columnNames, 0);
+        try {
             cursor = dbCollection.find();
-            
+            String[] columnNames = {"Type of Product", "Description", "Price"};
+            DefaultTableModel modelTable = new DefaultTableModel(columnNames, 0);
             while (cursor.hasNext()) {
                 DBObject obj = cursor.next();
-                String typeOfProduct = (String) obj.get("typeOfProduct");
-                String description = (String) obj.get("description");
-                String price = ( String) obj.get("price");
+                String typeOfProduct = (String) obj.get("Type of Product");
+                String description = (String) obj.get("Description");
+                float price = Float.valueOf(obj.get("Price").toString());
                 modelTable.addRow(new Object[]{typeOfProduct, description, price});
             }
-            tblProducts.setModel(modelTable ) ;
+            tblProducts.setModel(modelTable);
             cursor.close();
-              
-       
+        } catch (Exception ex) {
+            System.out.println("Error printing tables");
+        }
     }//GEN-LAST:event_btnViewProducts1ActionPerformed
 
-    private void tblProductsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblProductsMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_tblProductsMouseClicked
+    private void btnFindProductsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFindProductsActionPerformed
+        if (txtProducts.getText().isEmpty()) {
+            JOptionPane.showMessageDialog(null, "FILL THE FIELD");
+        } else {
+            DB db = mongo.getDB("Products");
+            DBCollection dbCollection = db.getCollection("Food");
+            BasicDBObject query = new BasicDBObject();
+            query.put("Type of Product", txtProducts.getText().toUpperCase());
 
-    private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
-         this.setVisible(false);
-        FrmMainScreen frmMainScreen = new FrmMainScreen();
-        frmMainScreen.setVisible(true); 
-    }//GEN-LAST:event_btnExitActionPerformed
+            DBCursor cursor = null;
 
-    private void btnEditMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditMenuActionPerformed
-        FrmStockProducts.setVisible(true);
-        this.dispose();
-        FrmStockProducts.setLocationRelativeTo(null); 
-    }//GEN-LAST:event_btnEditMenuActionPerformed
+            try {
+                cursor = dbCollection.find(query);
+                String[] columnNames = {"Type of Product", "Description", "Price"};
+                DefaultTableModel modelTable = new DefaultTableModel(columnNames, 0);
+                while (cursor.hasNext()) {
+                    DBObject obj = cursor.next();
+                    String typeOfProduct = (String) obj.get("Type of Product");
+                    String description = (String) obj.get("Description");
+                    float price = Float.valueOf(obj.get("Price").toString());
+                    modelTable.addRow(new Object[]{typeOfProduct, description, price});
+                }
+                tblProducts.setModel(modelTable);
+                cursor.close();
+            } catch (Exception ex) {
+                System.out.println("Error printing tables");
+            }
+        }
+    }//GEN-LAST:event_btnFindProductsActionPerformed
+    public void emptyFields() {
 
-    private void btnRegisterEmployeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegisterEmployeeActionPerformed
-        this.setVisible(false);
-        FrmResgisterEmployee frmResgisterEmployee = new FrmResgisterEmployee();
-        frmResgisterEmployee.setVisible(true);  
-    }//GEN-LAST:event_btnRegisterEmployeeActionPerformed
-
-    private void btnReportSaleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReportSaleActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnReportSaleActionPerformed
- public void emptyFields() {
-        
         cmbTypeOfProduct.setSelectedIndex(0);
         txtDescription.setText("");
         txtPrice.setText("");
-        
+
     }
+
     /**
      * @param args the command line arguments
      */
@@ -573,16 +582,15 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
     private javax.swing.JButton btnDelete;
     private javax.swing.JButton btnDeleteProduct1;
     private javax.swing.JButton btnEditMenu;
-    private javax.swing.JButton btnExit;
+    private javax.swing.JButton btnFindProducts;
     private javax.swing.JButton btnRegisterEmployee;
     private javax.swing.JButton btnReportSale;
+    private javax.swing.JButton btnReturn;
     private javax.swing.JButton btnViewProducts1;
     private javax.swing.JComboBox<String> cmbTypeOfProduct;
     private javax.swing.JLabel description2;
     private javax.swing.JDialog dlgAddProduct;
     private javax.swing.JDialog dlgDeleteProduct;
-    private javax.swing.JButton jButton9;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel16;
@@ -591,7 +599,6 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
@@ -601,6 +608,7 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
     private javax.swing.JTable tblProducts;
     private javax.swing.JTextField txtDescription;
     private javax.swing.JTextField txtPrice;
+    private javax.swing.JTextField txtProducts;
     private javax.swing.JTextField txtRow2;
     // End of variables declaration//GEN-END:variables
 }

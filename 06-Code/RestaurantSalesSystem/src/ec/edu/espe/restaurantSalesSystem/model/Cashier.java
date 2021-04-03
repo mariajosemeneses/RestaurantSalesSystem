@@ -16,12 +16,8 @@ public class Cashier extends Person {
 
     private ArrayList<Customer> customers = new ArrayList();
 
-    public Cashier(String id, int age, String name, String address, String email, String cellPhone,
-            ArrayList<Customer> customers) {
-
+    public Cashier(String id, int age, String name, String address, String email, String cellPhone) {
         super(id, age, name, address, email, cellPhone);
-        this.customers = customers;
-
     }
 
     /**

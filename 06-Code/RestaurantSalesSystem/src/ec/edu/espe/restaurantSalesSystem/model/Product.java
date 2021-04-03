@@ -15,10 +15,6 @@ public abstract class Product {
     private String description;
     private float price;
     
-
-    public Product() {
-    }
-
     public Product(String typeOfProduct, String description, float price) {
         this.typeOfProduct = typeOfProduct;
         this.description = description;

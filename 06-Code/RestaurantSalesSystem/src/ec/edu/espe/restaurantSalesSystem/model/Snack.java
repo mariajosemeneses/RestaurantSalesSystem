@@ -18,14 +18,9 @@ public class Snack extends Product{
     private ArrayList<String> hamburguers = new ArrayList();
     private ArrayList<String> sandwitches = new ArrayList();
 
-    public Snack() {
-    }
-
     public Snack(String typeOfProduct, String description, float price) {
         super(typeOfProduct, description, price);
     }
-
-   
 
     /**
      * @return the choppeds

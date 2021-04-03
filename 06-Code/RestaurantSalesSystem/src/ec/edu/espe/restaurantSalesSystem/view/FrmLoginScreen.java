@@ -5,16 +5,9 @@
  */
 package ec.edu.espe.restaurantSalesSystem.view;
 
-import com.google.gson.Gson;
 import ec.edu.espe.restaurantSalesSystem.controller.Verification;
 import ec.edu.espe.restaurantSalesSystem.controller.VerificationController;
-import ec.edu.espe.restaurantSalesSystem.utils.FileManager;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
 import java.util.Scanner;
-import javax.swing.JOptionPane;
 
 /**
  *

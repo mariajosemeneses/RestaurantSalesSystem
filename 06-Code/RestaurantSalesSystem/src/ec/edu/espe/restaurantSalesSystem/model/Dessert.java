@@ -15,15 +15,9 @@ public class Dessert extends Product {
 
     private ArrayList<String> desserts = new ArrayList();
 
-    public Dessert() {
-    }
-
     public Dessert(String typeOfProduct, String description, float price) {
         super(typeOfProduct, description, price);
     }
-
-   
-    
 
     /**
      * @return the desserts

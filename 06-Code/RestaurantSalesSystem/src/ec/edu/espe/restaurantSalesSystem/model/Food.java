@@ -14,14 +14,9 @@ public class Food extends Product {
         
     }
 
-    public Food() {
-    }
-
     public Food(String typeOfProduct, String description, float price) {
         super(typeOfProduct, description, price);
     }
-    
-   
     
    
 }
