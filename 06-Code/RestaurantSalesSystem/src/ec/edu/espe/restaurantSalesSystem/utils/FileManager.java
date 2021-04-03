@@ -143,15 +143,16 @@ public class FileManager implements Persistence {
 
         return created;
     }
-    public static void create(MongoClient mongo, String dataBase, String collection3, String typeOfProduct, String description, float price) {
+    public static void create(MongoClient mongo, String dataBase, String collection, String typeOfProduct, 
+                                String description, float price) {
         try {
             DB db = mongo.getDB(dataBase);
-            DBCollection dbCollection3 = db.getCollection(collection3);
+            DBCollection dbCollection = db.getCollection(collection);
             BasicDBObject document = new BasicDBObject();
             document.put("Type of Product", typeOfProduct);
             document.put("Description", description);
             document.put("Price", price);
-            dbCollection3.insert(document);
+            dbCollection.insert(document);
         } catch (Exception ex) {
             System.out.println("CANNOT CREATE DOCUMENT");
         }
@@ -193,10 +194,10 @@ public class FileManager implements Persistence {
         return readLine;
     }
     
-     public static void readAll(MongoClient mongo, String dataBase, String collection3) {
+     public static void readAll(MongoClient mongo, String dataBase, String collection) {
         DB db = mongo.getDB(dataBase);
-        DBCollection dbCollection3 = db.getCollection(collection3);
-        DBCursor cursor = dbCollection3.find();
+        DBCollection dbCollection = db.getCollection(collection);
+        DBCursor cursor = dbCollection.find();
 
         while (cursor.hasNext()) {
             System.out.println(cursor.next().get("typeOfProduct") + "  " + cursor.curr().get("description") + "  "
