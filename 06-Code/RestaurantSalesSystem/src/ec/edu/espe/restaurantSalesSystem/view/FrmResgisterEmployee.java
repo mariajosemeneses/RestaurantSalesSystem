@@ -495,14 +495,8 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         Random rnd = new Random();
         int random=0;
-        random=((int)(rnd.nextInt(9999-0+1)+0));
-        if (random>=0&&random<=99)
-        txtId.setText("L0000"+random);
-        else if(random>=100&&random<=999){
-            txtId.setText("L000"+random);
-        }else if(random>=1000&&random<=9990){
-            txtId.setText("L00"+random);
-        }
+        random=((int)(rnd.nextDouble()*1234567));
+        txtId.setText("L00"+random);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void txtNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNameActionPerformed
