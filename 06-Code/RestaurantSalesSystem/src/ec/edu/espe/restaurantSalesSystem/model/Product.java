@@ -11,59 +11,45 @@ package ec.edu.espe.restaurantSalesSystem.model;
  */
 public abstract class Product {
 
-    private String name;
+    private String typeOfProduct;
+    private String description;
     private float price;
-    private int quantity;
+    
 
     public Product() {
     }
 
-    public Product(String name, float price, int quantity) {
-        this.name = name;
+    public Product(String typeOfProduct, String description, float price) {
+        this.typeOfProduct = typeOfProduct;
+        this.description = description;
         this.price = price;
-        this.quantity = quantity;
     }
 
-    /**
-     * @return the name
-     */
-    public String getName() {
-        return name;
+    public String getTypeOfProduct() {
+        return typeOfProduct;
     }
 
-    /**
-     * @param name the name to set
-     */
-    public void setName(String name) {
-        this.name = name;
+    public void setTypeOfProduct(String typeOfProduct) {
+        this.typeOfProduct = typeOfProduct;
     }
 
-    /**
-     * @return the price
-     */
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
     public float getPrice() {
         return price;
     }
 
-    /**
-     * @param price the price to set
-     */
     public void setPrice(float price) {
         this.price = price;
     }
 
-    /**
-     * @return the quantity
-     */
-    public int getQuantity() {
-        return quantity;
-    }
+   
 
-    /**
-     * @param quantity the quantity to set
-     */
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
-
+    
 }
