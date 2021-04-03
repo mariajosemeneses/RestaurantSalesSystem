@@ -170,8 +170,8 @@ public class FrmMenu extends javax.swing.JFrame {
 
     private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
             this.setVisible(false);
-        FrmMainScreen frmMainScreen = new FrmMainScreen();
-        frmMainScreen.setVisible(true);
+        FrmRegisterOrder frmRegisterOrder = new FrmRegisterOrder();
+        frmRegisterOrder.setVisible(true);
     }//GEN-LAST:event_btnExitActionPerformed
 
     private void btnDessertActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDessertActionPerformed

@@ -6,6 +6,11 @@
 package ec.edu.espe.restaurantSalesSystem.utils;
 
 import com.google.gson.Gson;
+import com.mongodb.BasicDBObject;
+import com.mongodb.DB;
+import com.mongodb.DBCollection;
+import com.mongodb.DBCursor;
+import com.mongodb.MongoClient;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -138,6 +143,22 @@ public class FileManager implements Persistence {
 
         return created;
     }
+    public static void create(MongoClient mongo, String dataBase, String collection3, String typeOfProduct, String description, float price) {
+        try {
+            DB db = mongo.getDB(dataBase);
+            DBCollection dbCollection3 = db.getCollection(collection3);
+            BasicDBObject document = new BasicDBObject();
+            document.put("Type of Product", typeOfProduct);
+            document.put("Description", description);
+            document.put("Price", price);
+            dbCollection3.insert(document);
+        } catch (Exception ex) {
+            System.out.println("CANNOT CREATE DOCUMENT");
+        }
+
+
+       
+    }
 
     @Override
     public String find(String dataToFind, String field, String table) {
@@ -170,6 +191,17 @@ public class FileManager implements Persistence {
             System.out.println("File don't found");
         }
         return readLine;
+    }
+    
+     public static void readAll(MongoClient mongo, String dataBase, String collection3) {
+        DB db = mongo.getDB(dataBase);
+        DBCollection dbCollection3 = db.getCollection(collection3);
+        DBCursor cursor = dbCollection3.find();
+
+        while (cursor.hasNext()) {
+            System.out.println(cursor.next().get("typeOfProduct") + "  " + cursor.curr().get("description") + "  "
+                    + cursor.curr().get("price"));
+        }
     }
 
 }
