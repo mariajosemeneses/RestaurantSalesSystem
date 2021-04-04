@@ -11,14 +11,15 @@ import com.mongodb.DBCursor;
 import com.mongodb.DBObject;
 import com.mongodb.MongoClient;
 import static ec.edu.espe.Connection.utils.Conection.createConnection;
-import ec.edu.espe.restaurantSalesSystem.utils.MongoManager;
+import ec.edu.espe.restaurantSalesSystem.controller.OwnerController;
+import ec.edu.espe.restaurantsalessystem.model.Cashier;
 import java.util.Random;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Maria José Meneses
+ * @author Group 3
  */
 public class FrmResgisterEmployee extends javax.swing.JFrame {
 
@@ -47,7 +48,6 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         employee = new javax.swing.JLabel();
         txtName = new javax.swing.JTextField();
-        typeEmployee = new javax.swing.JComboBox<>();
         name = new javax.swing.JLabel();
         txtId = new javax.swing.JTextField();
         id = new javax.swing.JLabel();
@@ -59,19 +59,19 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
         txtEmail = new javax.swing.JTextField();
         txtCell = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        btnSave = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
-        cmbEmployee = new javax.swing.JComboBox<>();
+        btnClean = new javax.swing.JButton();
+        btnSave = new javax.swing.JButton();
         btnView = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         btnDelete = new javax.swing.JButton();
-        btnEdit = new javax.swing.JButton();
-        txtRow = new javax.swing.JTextField();
-        txtColumn = new javax.swing.JTextField();
+        txtData = new javax.swing.JTextField();
+        txtField = new javax.swing.JTextField();
         txtNewdata = new javax.swing.JTextField();
-        btnClean = new javax.swing.JButton();
+        btnEdit = new javax.swing.JButton();
+        cmbEmployee = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -109,13 +109,6 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
         txtName.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtNameKeyTyped(evt);
-            }
-        });
-
-        typeEmployee.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Chef", "Cashier", "Waiter" }));
-        typeEmployee.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                typeEmployeeActionPerformed(evt);
             }
         });
 
@@ -159,13 +152,6 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
 
         jLabel5.setText("Cellphone:");
 
-        btnSave.setText("Save");
-        btnSave.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSaveActionPerformed(evt);
-            }
-        });
-
         jButton1.setText("Generate");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -173,10 +159,17 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
             }
         });
 
-        cmbEmployee.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "cashier", "chef", "waiter" }));
-        cmbEmployee.addActionListener(new java.awt.event.ActionListener() {
+        btnClean.setText("Clean");
+        btnClean.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cmbEmployeeActionPerformed(evt);
+                btnCleanActionPerformed(evt);
+            }
+        });
+
+        btnSave.setText("Save");
+        btnSave.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSaveActionPerformed(evt);
             }
         });
 
@@ -192,51 +185,45 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGap(34, 34, 34)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(id)
+                    .addComponent(name, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel5)
+                    .addComponent(btnSave))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txtName)
+                    .addComponent(txtAddress)
+                    .addComponent(txtEmail)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(employee)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(id)
-                                .addComponent(name, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel2)
-                                .addComponent(jLabel3)
-                                .addComponent(jLabel4)
-                                .addComponent(jLabel5)))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtName)
-                            .addComponent(txtAddress)
-                            .addComponent(txtEmail)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtCell, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(typeEmployee, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtAge, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(0, 53, Short.MAX_VALUE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(txtId)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jButton1))))
+                        .addComponent(txtId)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jButton1))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(89, 89, 89)
-                        .addComponent(btnSave)
-                        .addGap(101, 101, 101)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnView)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(cmbEmployee, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE)))))
+                            .addComponent(txtCell, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtAge, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 53, Short.MAX_VALUE)))
                 .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnClean)
+                .addGap(63, 63, 63)
+                .addComponent(btnView)
+                .addGap(30, 30, 30))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(employee))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(employee)
-                    .addComponent(typeEmployee, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(employee)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -248,36 +235,32 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
                         .addComponent(txtId, javax.swing.GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE)
                         .addComponent(jButton1)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(txtAge, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(9, 9, 9)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(txtAddress, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel2)
-                            .addComponent(txtAge, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(9, 9, 9)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel3)
-                            .addComponent(txtAddress, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel4)
-                            .addComponent(txtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(txtCell, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel5))
-                        .addGap(41, 41, 41)
-                        .addComponent(btnSave)
-                        .addGap(25, 25, 25))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(cmbEmployee, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnView)
-                        .addContainerGap())))
+                    .addComponent(jLabel4)
+                    .addComponent(txtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtCell, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel5))
+                .addGap(34, 34, 34)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnClean)
+                    .addComponent(btnSave)
+                    .addComponent(btnView))
+                .addGap(32, 32, 32))
         );
 
-        jLabel6.setText("Row");
+        jLabel6.setText("Data:");
 
-        jLabel7.setText("Column");
+        jLabel7.setText("Field:");
 
         jLabel8.setText("New Data");
 
@@ -288,6 +271,12 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
             }
         });
 
+        txtField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtFieldActionPerformed(evt);
+            }
+        });
+
         btnEdit.setText("Edit");
         btnEdit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -295,16 +284,10 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
             }
         });
 
-        txtColumn.addActionListener(new java.awt.event.ActionListener() {
+        cmbEmployee.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Chef", "Cashier", "Waiter" }));
+        cmbEmployee.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtColumnActionPerformed(evt);
-            }
-        });
-
-        btnClean.setText("Clean");
-        btnClean.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCleanActionPerformed(evt);
+                cmbEmployeeActionPerformed(evt);
             }
         });
 
@@ -313,39 +296,47 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 623, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btnReturn)
-                    .addComponent(btnDelete))
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(btnReturn)
                 .addGap(60, 60, 60))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane4)
                 .addContainerGap())
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGap(46, 46, 46)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(46, 46, 46)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(58, 58, 58)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnEdit, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
+                                .addComponent(btnEdit, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(128, 128, 128))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(btnDelete)
+                                .addGap(124, 124, 124))))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addGap(59, 59, 59)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel6)
                                     .addComponent(jLabel8)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel6)
-                                        .addComponent(jLabel7)))
+                                    .addComponent(jLabel7))
                                 .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(txtRow, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE)
-                                    .addComponent(txtColumn)
-                                    .addComponent(txtNewdata)))
-                            .addComponent(btnClean)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(253, 253, 253)
-                        .addComponent(jLabel1)))
-                .addContainerGap(161, Short.MAX_VALUE))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtData, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtNewdata, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtField, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(cmbEmployee, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap(40, Short.MAX_VALUE))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(270, 270, 270))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -358,27 +349,27 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(4, 4, 4))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(7, 7, 7)
+                        .addGap(8, 8, 8)
+                        .addComponent(cmbEmployee, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(33, 33, 33)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(txtRow, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel6))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel7)
-                            .addComponent(txtColumn, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel8)
-                            .addComponent(txtNewdata, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(48, 48, 48)
-                        .addComponent(btnClean)
+                            .addComponent(txtField, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btnEdit)
-                            .addComponent(btnDelete))
-                        .addGap(45, 45, 45)))
+                            .addComponent(txtData, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel6))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnDelete)
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtNewdata, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel8))
+                        .addGap(18, 18, 18)
+                        .addComponent(btnEdit)
+                        .addGap(54, 54, 54)))
                 .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
                 .addComponent(btnReturn)
                 .addContainerGap())
         );
@@ -388,45 +379,52 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
 
     private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
 
-        if (txtName.getText().isEmpty() || txtId.getText().isEmpty() || txtAge.getText().isEmpty()
-                || txtAddress.getText().isEmpty() || txtEmail.getText().isEmpty() || txtCell.getText().isEmpty()) {
+        String name = txtName.getText();
+        String id = txtId.getText();
+        String address = txtAddress.getText();
+        String email = txtEmail.getText();
+        int age = Integer.parseInt(txtAge.getText());
+        String cellPhone = txtCell.getText();
+        String typeEmployee = cmbEmployee.getSelectedItem().toString();
+
+        if (name.isEmpty() || id.isEmpty() || txtAge.getText().isEmpty() || address.isEmpty() || email.isEmpty()
+                || cellPhone.isEmpty()) {
             JOptionPane.showMessageDialog(null, "FILL ALL THE FIELDS");
         } else {
-            String dataToSave = "Do you want to save this information?: \nEmployee: " + typeEmployee.getSelectedItem()
-                    + "\nName: " + txtName.getText() + "\nID: " + txtId.getText() + "\nAge: " + txtAge.getText()
-                    + "\nAddress: " + txtAddress.getText() + "\nEmail: " + txtEmail.getText() + "\nCellphone: " + txtCell.getText();
+            String dataToSave = "Do you want to save this information?: \nEmployee: " + typeEmployee + "\nName: "
+                    + name + "\nID: " + id + "\nAge: " + txtAge.getText() + "\nAddress: " + address + "\nEmail: "
+                    + email + "\nCellphone: " + cellPhone;
 
             int selection = JOptionPane.showConfirmDialog(null, dataToSave, "Employee Saving",
                     JOptionPane.YES_NO_CANCEL_OPTION);
 
             switch (selection) {
                 case 0:
-                    JOptionPane.showMessageDialog(null, "Information was saved", txtName.getText() + "Saved",
+                    JOptionPane.showMessageDialog(null, "Information was saved", name + "Saved",
                             JOptionPane.INFORMATION_MESSAGE);
-                    MongoManager registerEmployee = new MongoManager();
-                    int age = Integer.parseInt(txtAge.getText());
-                    if (typeEmployee.getSelectedItem().equals("Cashier")) {
 
-                        registerEmployee.create(mongo, "Employee", "cashiers", txtName.getText(), txtAddress.getText(),
-                                txtEmail.getText(), txtCell.getText(), age, txtId.getText());
+                    OwnerController ownerController = new OwnerController();
+                    Cashier cashier = new Cashier(id, age, name, address, email, cellPhone);
+
+                    if (typeEmployee.equals("Cashier")) {
+                        ownerController.addEmployee(typeEmployee, cashier);
                         emptyFields();
-                    } else if ((typeEmployee.getSelectedItem().equals("Waiter"))) {
-                        registerEmployee.create(mongo, "Employee", "waiters", txtName.getText(), txtAddress.getText(),
-                                txtEmail.getText(), txtCell.getText(), age, txtId.getText());
+                    } else if ((typeEmployee.equals("Waiter"))) {
+                        ownerController.addEmployee(typeEmployee, cashier);
                         emptyFields();
                     } else {
-                        registerEmployee.create(mongo, "Employee", "chefs", txtName.getText(), txtAddress.getText(),
-                                txtEmail.getText(), txtCell.getText(), age, txtId.getText());
+                        ownerController.addEmployee(typeEmployee, cashier);
                         emptyFields();
                     }
                     break;
+
                 case 1:
-                    JOptionPane.showMessageDialog(null, "Information was NOT saved", txtName.getText() + "NOT saved",
+                    JOptionPane.showMessageDialog(null, "Information was NOT saved", name + "NOT saved",
                             JOptionPane.INFORMATION_MESSAGE);
                     emptyFields();
                     break;
                 default:
-                    JOptionPane.showMessageDialog(null, "Action was cancelled", txtName.getText() + "Cancelled",
+                    JOptionPane.showMessageDialog(null, "Action was cancelled", name + "Cancelled",
                             JOptionPane.INFORMATION_MESSAGE);
                     break;
             }
@@ -442,9 +440,9 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
         txtAge.setText("");
         txtId.setText("");
     }
-    private void typeEmployeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_typeEmployeeActionPerformed
+    private void cmbEmployeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbEmployeeActionPerformed
 
-    }//GEN-LAST:event_typeEmployeeActionPerformed
+    }//GEN-LAST:event_cmbEmployeeActionPerformed
 
     private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturnActionPerformed
         FrmOptionsOwner frmOptionsOwner = new FrmOptionsOwner();
@@ -457,44 +455,39 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
     }//GEN-LAST:event_txtAddressActionPerformed
 
     private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
-        // TODO add your handling code here:
-        int row = tblEmployee.getSelectedRow();
-        if (row >= 0) {
-            modelo.removeRow(row);
-        } else {
-            JOptionPane.showMessageDialog(null, "Select row");
+        String typeEmployee = cmbEmployee.getSelectedItem().toString();
+        String dataToFind = txtData.getText();
+        String field = txtField.getText().toLowerCase();
 
-        }
+        OwnerController ownerController = new OwnerController();
+        ownerController.deleteEmployee(typeEmployee, dataToFind, field);
     }//GEN-LAST:event_btnDeleteActionPerformed
 
     private void btnEditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditActionPerformed
-        // TODO add your handling code here:
-        int row = Integer.parseInt(txtRow.getText());
-        int column = Integer.parseInt(txtColumn.getText());
-        modelo.setValueAt(txtNewdata.getText(), row, column);
+        String typeEmployee = cmbEmployee.getSelectedItem().toString();
+        String dataToFind = txtData.getText();
+        String field = txtField.getText().toLowerCase();
+        String newData = txtNewdata.getText();
+
+        OwnerController ownerController = new OwnerController();
+        ownerController.updateEmployee(typeEmployee, dataToFind, newData, field);
     }//GEN-LAST:event_btnEditActionPerformed
 
-    private void txtColumnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtColumnActionPerformed
+    private void txtFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtColumnActionPerformed
+    }//GEN-LAST:event_txtFieldActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         Random rnd = new Random();
-<<<<<<< Updated upstream
-        int random=0;
-        random=((int)(rnd.nextInt(9999-0+1)+0));
-        if (random>=0&&random<=99)
-        txtId.setText("L0000"+random);
-        else if(random>=100&&random<=999){
-            txtId.setText("L000"+random);
-        }else if(random>=1000&&random<=9990){
-            txtId.setText("L00"+random);
-        }
-=======
         int random = 0;
-        random = ((int) (rnd.nextDouble() * 1234567));
-        txtId.setText("L00" + random);
->>>>>>> Stashed changes
+        random = ((int) (rnd.nextInt(9999 - 0 + 1) + 0));
+        if (random >= 0 && random <= 99) {
+            txtId.setText("L0000" + random);
+        } else if (random >= 100 && random <= 999) {
+            txtId.setText("L000" + random);
+        } else if (random >= 1000 && random <= 9990) {
+            txtId.setText("L00" + random);
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void txtNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNameActionPerformed
@@ -564,9 +557,9 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
     }//GEN-LAST:event_txtCellActionPerformed
 
     private void btnViewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewActionPerformed
-        DBCursor cursor = null;        
+        DBCursor cursor = null;
         DB db = mongo.getDB("Employee");
-        DBCollection dbCollection = db.getCollection(cmbEmployee.getSelectedItem().toString() + "s");
+        DBCollection dbCollection = db.getCollection(cmbEmployee.getSelectedItem().toString().toLowerCase() + "s");
         try {
             cursor = dbCollection.find();
             String[] columnNames = {"Name", "Address", "Email", "Phone Number", "Age", "ID"};
@@ -587,10 +580,6 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
             System.out.println("Error printing tables");
         }
     }//GEN-LAST:event_btnViewActionPerformed
-
-    private void cmbEmployeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbEmployeeActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cmbEmployeeActionPerformed
 
     private void btnCleanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCleanActionPerformed
         emptyFields();
@@ -658,12 +647,11 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
     private javax.swing.JTextField txtAddress;
     private javax.swing.JTextField txtAge;
     private javax.swing.JTextField txtCell;
-    private javax.swing.JTextField txtColumn;
+    private javax.swing.JTextField txtData;
     private javax.swing.JTextField txtEmail;
+    private javax.swing.JTextField txtField;
     private javax.swing.JTextField txtId;
     private javax.swing.JTextField txtName;
     private javax.swing.JTextField txtNewdata;
-    private javax.swing.JTextField txtRow;
-    private javax.swing.JComboBox<String> typeEmployee;
     // End of variables declaration//GEN-END:variables
 }

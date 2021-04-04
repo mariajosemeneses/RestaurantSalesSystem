@@ -14,16 +14,19 @@ public class Bill {
 
  private Double iva;
 
-  private Double propina;
+  private float propina;
 
-   private Double precio;
+   private float precio;
 
     private String concepto;
 
     private int cantidad;
 
-    private Double total;
+    private float total;
     public int numventas;
+
+    public Bill() {
+    }
     
 
     public int getNumventas(){
@@ -43,18 +46,18 @@ public class Bill {
     }
 
     
-    public Double getPropina() {
+    public float getPropina() {
         return propina;
     }
-    public void setPropina(Double propina) {
+    public void setPropina(float propina) {
         this.propina = propina;
     }
 
     
-    public Double getPrecio() {
+    public float getPrecio() {
         return precio;
     }
-    public void setPrecio(Double precio) {
+    public void setPrecio(float precio) {
         this.precio = precio;
     }
     
@@ -73,10 +76,10 @@ public class Bill {
         return cantidad;
     }
 
-    public Double getTotal() {
+    public float getTotal() {
         return total;
     }
-    public void setTotal(Double total) {
+    public void setTotal(float total) {
         this.total = total;
     }
 

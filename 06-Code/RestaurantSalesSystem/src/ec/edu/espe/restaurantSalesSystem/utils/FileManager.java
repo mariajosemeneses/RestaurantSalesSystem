@@ -7,10 +7,6 @@ package ec.edu.espe.restaurantSalesSystem.utils;
 
 import com.google.gson.Gson;
 import com.mongodb.BasicDBObject;
-import com.mongodb.DB;
-import com.mongodb.DBCollection;
-import com.mongodb.DBCursor;
-import com.mongodb.MongoClient;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -28,85 +24,8 @@ import java.util.logging.Logger;
  */
 public class FileManager implements Persistence {
 
-//    @Override
-//    public void update(String dataToFind, String dataToUpdate) {
-//        boolean update = false;
-//        String newLine = "";
-//        Gson gson = new Gson();
-//
-//        try {
-//            FileReader readFile = new FileReader("Users.json");
-//            BufferedReader reader = new BufferedReader(readFile);
-//            String line;
-//            while ((line = reader.readLine()) != null) {
-//
-//                Properties properties = (Properties) gson.fromJson(line, Properties.class);
-//                Set<String> keys = properties.stringPropertyNames();
-//
-//                for (String key : keys) {
-//                    if (dataToFind.equals(properties.getProperty(key))) {
-//                        properties.setProperty(key, dataToUpdate);
-//                        line = gson.toJson(properties);
-//                        update = true;
-//                    }
-//                }
-//                newLine = newLine + line + "\n";
-//            }
-//            reader.close();
-//            try (FileWriter writer = new FileWriter("Users.json")) {
-//                writer.write(newLine);
-//            }
-//        } catch (FileNotFoundException ex) {
-//            System.out.println(ex);
-//        } catch (IOException ex) {
-//            Logger.getLogger(FileManager.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//    }
-//
-//    @Override
-//    public void delete(String dataToDelete) {
-//        boolean deleted = false;
-//        boolean ignore = false;
-//        String newLine = "";
-//        Gson gson = new Gson();
-//
-//        try {
-//            FileReader readFile = new FileReader("Users.json");
-//            BufferedReader read = new BufferedReader(readFile);
-//            String line;
-//            while ((line = read.readLine()) != null) {
-//
-//                Properties properties = (Properties) gson.fromJson(line, Properties.class);
-//                Set<String> keys = properties.stringPropertyNames();
-//
-//                for (String key : keys) {
-//                    if (dataToDelete.equals(properties.getProperty(key))) {
-//
-//                        ignore = true;
-//                        deleted = true;
-//                    }
-//                }
-//                if (!ignore) {
-//                    newLine = newLine + line + "\n";
-//
-//                }
-//                ignore = false;
-//            }
-//            read.close();
-//            try (FileWriter writer = new FileWriter("Users.json")) {
-//                writer.write(newLine);
-//                writer.close();
-//
-//            }
-//        } catch (FileNotFoundException ex) {
-//            System.out.println(ex);
-//        } catch (IOException ex) {
-//            Logger.getLogger(FileManager.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//    }
-
     @Override
-    public boolean create(String data, String table) {
+    public boolean create(String data, String table, BasicDBObject document) {
         boolean saved = false;
         createFile(table);
 
@@ -123,6 +42,7 @@ public class FileManager implements Persistence {
         }
 
         return saved;
+
     }
 
     public boolean createFile(String fileName) {
@@ -143,41 +63,95 @@ public class FileManager implements Persistence {
 
         return created;
     }
-    public static void create(MongoClient mongo, String dataBase, String collection, String typeOfProduct, 
-                                String description, float price) {
+
+    @Override
+    public String find(String dataBase, String dataToFind, String field, String table) {
+        return null;
+    }
+
+    @Override
+    public boolean update(String dataBase, String dataToFind, String newData, String field, String table) {
+        boolean updated = false;
+        String newLine = "";
+        Gson gson = new Gson();
+
         try {
-            DB db = mongo.getDB(dataBase);
-            DBCollection dbCollection = db.getCollection(collection);
-            BasicDBObject document = new BasicDBObject();
-            document.put("Type of Product", typeOfProduct);
-            document.put("Description", description);
-            document.put("Price", price);
-            dbCollection.insert(document);
-        } catch (Exception ex) {
-            System.out.println("CANNOT CREATE DOCUMENT");
+            FileReader readFile = new FileReader("Users.json");
+            BufferedReader reader = new BufferedReader(readFile);
+            String line;
+            while ((line = reader.readLine()) != null) {
+
+                Properties properties = (Properties) gson.fromJson(line, Properties.class);
+                Set<String> keys = properties.stringPropertyNames();
+
+                for (String key : keys) {
+                    if (dataToFind.equals(properties.getProperty(key))) {
+                        properties.setProperty(key, dataToFind);
+                        line = gson.toJson(properties);
+                        updated = true;
+                    }
+                }
+                newLine = newLine + line + "\n";
+            }
+            reader.close();
+            try (FileWriter writer = new FileWriter("Users.json")) {
+                writer.write(newLine);
+            }
+        } catch (FileNotFoundException ex) {
+            System.out.println(ex);
+        } catch (IOException ex) {
+            Logger.getLogger(FileManager.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return updated;
+    }
+
+    @Override
+    public boolean delete(String dataBase, String dataToFind, String field, String table) {
+        boolean deleted = false;
+        boolean ignore = false;
+        String newLine = "";
+        Gson gson = new Gson();
+
+        try {
+            FileReader readFile = new FileReader("Users.json");
+            BufferedReader read = new BufferedReader(readFile);
+            String line;
+            while ((line = read.readLine()) != null) {
+
+                Properties properties = (Properties) gson.fromJson(line, Properties.class);
+                Set<String> keys = properties.stringPropertyNames();
+
+                for (String key : keys) {
+                    if (dataToFind.equals(properties.getProperty(key))) {
+
+                        ignore = true;
+                        deleted = true;
+                    }
+                }
+                if (!ignore) {
+                    newLine = newLine + line + "\n";
+
+                }
+                ignore = false;
+            }
+            read.close();
+            try (FileWriter writer = new FileWriter("Users.json")) {
+                writer.write(newLine);
+                writer.close();
+
+            }
+        } catch (FileNotFoundException ex) {
+            System.out.println(ex);
+        } catch (IOException ex) {
+            Logger.getLogger(FileManager.class.getName()).log(Level.SEVERE, null, ex);
         }
 
-
-       
+        return deleted;
     }
 
     @Override
-    public String find(String dataToFind, String field, String table) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    public String read(String dataBase, String table) {
 
-    @Override
-    public boolean update(String dataToFind, String newData, String table) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public boolean delete(String dataToFind, String table) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public String read(String table) {
         String readLine = "";
 
         try {
@@ -192,17 +166,6 @@ public class FileManager implements Persistence {
             System.out.println("File don't found");
         }
         return readLine;
-    }
-    
-     public static void readAll(MongoClient mongo, String dataBase, String collection) {
-        DB db = mongo.getDB(dataBase);
-        DBCollection dbCollection = db.getCollection(collection);
-        DBCursor cursor = dbCollection.find();
-
-        while (cursor.hasNext()) {
-            System.out.println(cursor.next().get("typeOfProduct") + "  " + cursor.curr().get("description") + "  "
-                    + cursor.curr().get("price"));
-        }
     }
 
 }

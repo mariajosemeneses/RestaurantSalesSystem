@@ -6,25 +6,15 @@
 package ec.edu.espe.restaurantSalesSystem.utils;
 
 import com.mongodb.MongoClient;
-import com.mongodb.MongoClientURI;
 
 /**
  *
  * @author Group 3
  */
-public class NoSQL {
-    public static MongoClient createConnection() {
-        try {
-            System.out.println("\nESTABLISHED CONNECTION");
-            MongoClientURI uri = new MongoClientURI(
-                    "mongodb+srv://unitedByCode:group3@data.j0bvg.mongodb.net/<dbname>?retryWrites"
-                            + "=true&w=majority");
+public interface NoSQL extends Persistence {
 
-            MongoClient mongo = new MongoClient(uri);
-            return mongo;
-        } catch (Exception ex) {
-            System.out.println("\nCONNECTION REFUSED");
-            return null;
-        }
-    }    
+    MongoClient openConnection(String URL);
+
+    boolean closeConnection(MongoClient mongo);
+    
 }
