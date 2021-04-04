@@ -192,6 +192,43 @@ public class FrmMenu extends javax.swing.JFrame {
         PROPINA = new javax.swing.JLabel();
         btnPay = new javax.swing.JButton();
         txtNameCashier = new javax.swing.JTextField();
+        OptionsDrink = new javax.swing.JDialog();
+        btnSoda = new javax.swing.JButton();
+        btnReturn6 = new javax.swing.JButton();
+        btnCoffee = new javax.swing.JButton();
+        btnJuice = new javax.swing.JButton();
+        MenuSoda = new javax.swing.JFrame();
+        btnAdd = new javax.swing.JButton();
+        spiValor41 = new javax.swing.JSpinner();
+        jSeparator12 = new javax.swing.JSeparator();
+        spiValor42 = new javax.swing.JSpinner();
+        btnReturn7 = new javax.swing.JButton();
+        spiValor43 = new javax.swing.JSpinner();
+        spiValor44 = new javax.swing.JSpinner();
+        spiValor45 = new javax.swing.JSpinner();
+        jLabel69 = new javax.swing.JLabel();
+        spiValor46 = new javax.swing.JSpinner();
+        spiValor47 = new javax.swing.JSpinner();
+        spiValor48 = new javax.swing.JSpinner();
+        jComboBox2 = new javax.swing.JComboBox<>();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jLabel70 = new javax.swing.JLabel();
+        jLabel71 = new javax.swing.JLabel();
+        jLabel72 = new javax.swing.JLabel();
+        jLabel73 = new javax.swing.JLabel();
+        jLabel74 = new javax.swing.JLabel();
+        jLabel75 = new javax.swing.JLabel();
+        jLabel76 = new javax.swing.JLabel();
+        jLabel77 = new javax.swing.JLabel();
+        jimage4 = new javax.swing.JLabel();
+        jLabel78 = new javax.swing.JLabel();
+        jimage3 = new javax.swing.JLabel();
+        jLabel79 = new javax.swing.JLabel();
+        jimage2 = new javax.swing.JLabel();
+        jLabel80 = new javax.swing.JLabel();
+        jimage = new javax.swing.JLabel();
+        jLabel81 = new javax.swing.JLabel();
+        jSeparator13 = new javax.swing.JSeparator();
         btnBreakfast = new javax.swing.JButton();
         btnLunch = new javax.swing.JButton();
         btnSnack = new javax.swing.JButton();
@@ -1321,6 +1358,303 @@ public class FrmMenu extends javax.swing.JFrame {
 
         Bill.getContentPane().add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 680, 710));
 
+        btnSoda.setFont(new java.awt.Font("Baskerville Old Face", 3, 18)); // NOI18N
+        btnSoda.setText("SODA");
+        btnSoda.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSodaActionPerformed(evt);
+            }
+        });
+
+        btnReturn6.setText("Return");
+        btnReturn6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnReturn6ActionPerformed(evt);
+            }
+        });
+
+        btnCoffee.setFont(new java.awt.Font("Baskerville Old Face", 3, 18)); // NOI18N
+        btnCoffee.setText("COFFEE");
+        btnCoffee.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCoffeeActionPerformed(evt);
+            }
+        });
+
+        btnJuice.setFont(new java.awt.Font("Baskerville Old Face", 3, 18)); // NOI18N
+        btnJuice.setText("JUICE");
+        btnJuice.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnJuiceActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout OptionsDrinkLayout = new javax.swing.GroupLayout(OptionsDrink.getContentPane());
+        OptionsDrink.getContentPane().setLayout(OptionsDrinkLayout);
+        OptionsDrinkLayout.setHorizontalGroup(
+            OptionsDrinkLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(OptionsDrinkLayout.createSequentialGroup()
+                .addGap(61, 61, 61)
+                .addGroup(OptionsDrinkLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(OptionsDrinkLayout.createSequentialGroup()
+                        .addComponent(btnCoffee)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnJuice))
+                    .addGroup(OptionsDrinkLayout.createSequentialGroup()
+                        .addGap(80, 80, 80)
+                        .addGroup(OptionsDrinkLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnSoda, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(btnReturn6, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 107, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(65, 65, 65))
+        );
+        OptionsDrinkLayout.setVerticalGroup(
+            OptionsDrinkLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(OptionsDrinkLayout.createSequentialGroup()
+                .addGap(39, 39, 39)
+                .addGroup(OptionsDrinkLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnJuice)
+                    .addComponent(btnCoffee))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
+                .addComponent(btnSoda)
+                .addGap(64, 64, 64)
+                .addComponent(btnReturn6)
+                .addGap(82, 82, 82))
+        );
+
+        MenuSoda.setTitle("Menu Soda");
+
+        btnAdd.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnAdd.setText("Add Order");
+
+        btnReturn7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnReturn7.setText("Return");
+        btnReturn7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnReturn7ActionPerformed(evt);
+            }
+        });
+
+        jLabel69.setFont(new java.awt.Font("Baskerville Old Face", 3, 24)); // NOI18N
+        jLabel69.setText("SODA");
+
+        jComboBox2.setFont(new java.awt.Font("Consolas", 2, 14)); // NOI18N
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Negra", "Fresa", "Limon", "Piña" }));
+
+        jComboBox1.setFont(new java.awt.Font("Consolas", 2, 14)); // NOI18N
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Normal", "Zero", "Light" }));
+
+        jLabel70.setFont(new java.awt.Font("Consolas", 2, 14)); // NOI18N
+        jLabel70.setText("1lt................................$1,35");
+
+        jLabel71.setFont(new java.awt.Font("Consolas", 2, 14)); // NOI18N
+        jLabel71.setText("Personal...........................$0,50");
+
+        jLabel72.setFont(new java.awt.Font("Pristina", 1, 24)); // NOI18N
+        jLabel72.setText("Big Cola");
+
+        jLabel73.setFont(new java.awt.Font("Consolas", 2, 14)); // NOI18N
+        jLabel73.setText("1lt................................$1,35");
+
+        jLabel74.setFont(new java.awt.Font("Consolas", 2, 14)); // NOI18N
+        jLabel74.setText("Personal...........................$0,50");
+
+        jLabel75.setFont(new java.awt.Font("Pristina", 1, 24)); // NOI18N
+        jLabel75.setText("Sprite");
+
+        jLabel76.setFont(new java.awt.Font("Consolas", 2, 14)); // NOI18N
+        jLabel76.setText("1lt................................$1,20");
+
+        jLabel77.setFont(new java.awt.Font("Consolas", 2, 14)); // NOI18N
+        jLabel77.setText("Personal...........................$0,50");
+
+        jimage4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jLabel78.setFont(new java.awt.Font("Pristina", 1, 24)); // NOI18N
+        jLabel78.setText("Fanta");
+
+        jimage3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jLabel79.setFont(new java.awt.Font("Consolas", 2, 14)); // NOI18N
+        jLabel79.setText("1lt................................$1,35");
+
+        jimage2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jLabel80.setFont(new java.awt.Font("Consolas", 2, 14)); // NOI18N
+        jLabel80.setText("Personal...........................$0,50");
+
+        jimage.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jLabel81.setFont(new java.awt.Font("Pristina", 1, 24)); // NOI18N
+        jLabel81.setText("Coca-Cola");
+
+        jSeparator13.setOrientation(javax.swing.SwingConstants.VERTICAL);
+
+        javax.swing.GroupLayout MenuSodaLayout = new javax.swing.GroupLayout(MenuSoda.getContentPane());
+        MenuSoda.getContentPane().setLayout(MenuSodaLayout);
+        MenuSodaLayout.setHorizontalGroup(
+            MenuSodaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(MenuSodaLayout.createSequentialGroup()
+                .addGap(39, 39, 39)
+                .addGroup(MenuSodaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jimage, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel81)
+                    .addComponent(jLabel78)
+                    .addComponent(jimage2, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(27, 27, 27)
+                .addGroup(MenuSodaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(MenuSodaLayout.createSequentialGroup()
+                        .addGap(158, 158, 158)
+                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(MenuSodaLayout.createSequentialGroup()
+                        .addComponent(jLabel80)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(spiValor41, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(MenuSodaLayout.createSequentialGroup()
+                        .addComponent(jLabel79)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(spiValor42, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(MenuSodaLayout.createSequentialGroup()
+                        .addGroup(MenuSodaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel77)
+                            .addComponent(jLabel76))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(MenuSodaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(spiValor46, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(spiValor45, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
+                .addComponent(jSeparator13, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(MenuSodaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(MenuSodaLayout.createSequentialGroup()
+                        .addGroup(MenuSodaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel72)
+                            .addComponent(jimage3, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jimage4, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(MenuSodaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(MenuSodaLayout.createSequentialGroup()
+                                .addGap(37, 37, 37)
+                                .addGroup(MenuSodaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(MenuSodaLayout.createSequentialGroup()
+                                        .addGroup(MenuSodaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel71)
+                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MenuSodaLayout.createSequentialGroup()
+                                                .addComponent(jLabel70)
+                                                .addGap(10, 10, 10)))
+                                        .addGroup(MenuSodaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(spiValor44, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(spiValor43, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGroup(MenuSodaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addGroup(MenuSodaLayout.createSequentialGroup()
+                                            .addComponent(jLabel73)
+                                            .addGap(18, 18, 18)
+                                            .addComponent(spiValor48, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(MenuSodaLayout.createSequentialGroup()
+                                            .addComponent(jLabel74)
+                                            .addGap(18, 18, 18)
+                                            .addComponent(spiValor47, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MenuSodaLayout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(114, 114, 114))))
+                    .addComponent(jLabel75))
+                .addGap(75, 75, 75))
+            .addGroup(MenuSodaLayout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jSeparator12)
+                .addContainerGap())
+            .addGroup(MenuSodaLayout.createSequentialGroup()
+                .addGap(64, 64, 64)
+                .addComponent(btnReturn7, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnAdd)
+                .addGap(117, 117, 117))
+            .addGroup(MenuSodaLayout.createSequentialGroup()
+                .addGap(567, 567, 567)
+                .addComponent(jLabel69)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        MenuSodaLayout.setVerticalGroup(
+            MenuSodaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(MenuSodaLayout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addComponent(jLabel69)
+                .addGroup(MenuSodaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(MenuSodaLayout.createSequentialGroup()
+                        .addGap(42, 42, 42)
+                        .addGroup(MenuSodaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, MenuSodaLayout.createSequentialGroup()
+                                .addGroup(MenuSodaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(MenuSodaLayout.createSequentialGroup()
+                                        .addComponent(jLabel81)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jimage, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(jLabel78)
+                                        .addGap(13, 13, 13))
+                                    .addGroup(MenuSodaLayout.createSequentialGroup()
+                                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addGroup(MenuSodaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                            .addComponent(jLabel80)
+                                            .addComponent(spiValor41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addGroup(MenuSodaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                            .addComponent(jLabel79)
+                                            .addComponent(spiValor42, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
+                                .addGroup(MenuSodaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jimage2, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(MenuSodaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addGroup(MenuSodaLayout.createSequentialGroup()
+                                            .addComponent(spiValor45, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                            .addComponent(spiValor46, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(MenuSodaLayout.createSequentialGroup()
+                                            .addComponent(jLabel77)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                            .addComponent(jLabel76)))))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, MenuSodaLayout.createSequentialGroup()
+                                .addComponent(jLabel72)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jimage3, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(13, 13, 13)
+                                .addComponent(jLabel75)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jimage4, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(MenuSodaLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jSeparator13, javax.swing.GroupLayout.PREFERRED_SIZE, 285, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
+                .addComponent(jSeparator12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(36, 36, 36)
+                .addGroup(MenuSodaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnAdd)
+                    .addComponent(btnReturn7))
+                .addGap(27, 27, 27))
+            .addGroup(MenuSodaLayout.createSequentialGroup()
+                .addGap(87, 87, 87)
+                .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(MenuSodaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel71)
+                    .addComponent(spiValor43, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(MenuSodaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel70)
+                    .addComponent(spiValor44, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(90, 90, 90)
+                .addGroup(MenuSodaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel74)
+                    .addComponent(spiValor47, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(MenuSodaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel73)
+                    .addComponent(spiValor48, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         btnBreakfast.setFont(new java.awt.Font("Baskerville Old Face", 0, 14)); // NOI18N
@@ -1485,21 +1819,20 @@ public class FrmMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_btnLunchActionPerformed
 
     private void btnSnackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSnackActionPerformed
-        this.setVisible(false);
-        FrmSnack frmSnack = new FrmSnack();
-        frmSnack.setVisible(true);
+        MenuSnack.setVisible(true);
+        MenuSnack.setLocationRelativeTo(null);
     }//GEN-LAST:event_btnSnackActionPerformed
 
     private void btnDrinkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDrinkActionPerformed
           this.setVisible(false);
-        FrmOptionsDrinkCustomer frmOptionsDrinkCustomer = new FrmOptionsDrinkCustomer();
-        frmOptionsDrinkCustomer.setVisible(true);
+        OptionsDrink.setVisible(true);
+        OptionsDrink.setLocationRelativeTo(null);;
     }//GEN-LAST:event_btnDrinkActionPerformed
 
     private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
             this.setVisible(false);
-        FrmRegisterOrder frmRegisterOrder = new FrmRegisterOrder();
-        frmRegisterOrder.setVisible(true);
+        FrmMainScreen frmMainScreen = new FrmMainScreen();
+        frmMainScreen.setVisible(true);
     }//GEN-LAST:event_btnExitActionPerformed
 
     private void btnDessertActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDessertActionPerformed
@@ -2762,6 +3095,36 @@ public class FrmMenu extends javax.swing.JFrame {
         frmOptionsMenuCustomer.setVisible(true);
     }//GEN-LAST:event_btnReturn2ActionPerformed
 
+    private void btnSodaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSodaActionPerformed
+        this.setVisible(false);
+        FrmSoda frmSoda = new FrmSoda();
+        frmSoda.setVisible(true);
+    }//GEN-LAST:event_btnSodaActionPerformed
+
+    private void btnReturn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturn6ActionPerformed
+        this.setVisible(false);
+        FrmMenu frmOptionsMenuCustomer = new FrmMenu();
+        frmOptionsMenuCustomer.setVisible(true);
+    }//GEN-LAST:event_btnReturn6ActionPerformed
+
+    private void btnCoffeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCoffeeActionPerformed
+        this.setVisible(false);
+        FrmCoffee frmCoffee = new FrmCoffee();
+        frmCoffee.setVisible(true);
+    }//GEN-LAST:event_btnCoffeeActionPerformed
+
+    private void btnJuiceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJuiceActionPerformed
+        this.setVisible(false);
+        FrmJuice frmJuice = new FrmJuice();
+        frmJuice.setVisible(true);
+    }//GEN-LAST:event_btnJuiceActionPerformed
+
+    private void btnReturn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturn7ActionPerformed
+        this.setVisible(false);
+        FrmOptionsDrinkCustomer frmOptionsDrinkCustomer = new FrmOptionsDrinkCustomer();
+        frmOptionsDrinkCustomer.setVisible(true);
+    }//GEN-LAST:event_btnReturn7ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -2806,16 +3169,21 @@ public class FrmMenu extends javax.swing.JFrame {
     private javax.swing.JLabel IVA;
     private javax.swing.JFrame MenuBreakfast;
     private javax.swing.JFrame MenuLunch;
+    private javax.swing.JFrame MenuSoda;
+    private javax.swing.JDialog OptionsDrink;
     private javax.swing.JDialog Order;
     private javax.swing.JLabel PROPINA;
     private javax.swing.JLabel TOTALtot;
     private javax.swing.JButton bntOrderBreakfast;
+    private javax.swing.JButton btnAdd;
     private javax.swing.JButton btnBreakfast;
     private javax.swing.JTextField btnCellphoneCostumer;
+    private javax.swing.JButton btnCoffee;
     private javax.swing.JButton btnDessert;
     private javax.swing.JButton btnDrink;
     private javax.swing.JButton btnExit;
     private javax.swing.JButton btnGenerateBill;
+    private javax.swing.JButton btnJuice;
     private javax.swing.JButton btnLunch;
     private javax.swing.JButton btnOrderLunch;
     private javax.swing.JButton btnOtherOrder;
@@ -2825,8 +3193,11 @@ public class FrmMenu extends javax.swing.JFrame {
     private javax.swing.JButton btnReturn2;
     private javax.swing.JButton btnReturn3;
     private javax.swing.JButton btnReturn4;
+    private javax.swing.JButton btnReturn6;
+    private javax.swing.JButton btnReturn7;
     private javax.swing.JButton btnSendOrder;
     private javax.swing.JButton btnSnack;
+    private javax.swing.JButton btnSoda;
     private javax.swing.JButton btngenerateBill;
     private javax.swing.JLabel cafeEnAgua;
     private javax.swing.JLabel cafeEnLeche;
@@ -2841,6 +3212,8 @@ public class FrmMenu extends javax.swing.JFrame {
     private javax.swing.JLabel jCamaron;
     private javax.swing.JLabel jChesecake;
     private javax.swing.JLabel jChuleta;
+    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jCremaTomato;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -2894,8 +3267,21 @@ public class FrmMenu extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel54;
     private javax.swing.JLabel jLabel55;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel70;
+    private javax.swing.JLabel jLabel71;
+    private javax.swing.JLabel jLabel72;
+    private javax.swing.JLabel jLabel73;
+    private javax.swing.JLabel jLabel74;
+    private javax.swing.JLabel jLabel75;
+    private javax.swing.JLabel jLabel76;
+    private javax.swing.JLabel jLabel77;
+    private javax.swing.JLabel jLabel78;
+    private javax.swing.JLabel jLabel79;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel80;
+    private javax.swing.JLabel jLabel81;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel jLasaña;
     private javax.swing.JLabel jLocro;
@@ -2910,6 +3296,8 @@ public class FrmMenu extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator12;
+    private javax.swing.JSeparator jSeparator13;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
@@ -2920,6 +3308,10 @@ public class FrmMenu extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator9;
     private javax.swing.JLabel jTextField40;
     private javax.swing.JLabel jThreeMilksCake;
+    private javax.swing.JLabel jimage;
+    private javax.swing.JLabel jimage2;
+    private javax.swing.JLabel jimage3;
+    private javax.swing.JLabel jimage4;
     private javax.swing.JLabel leche;
     private javax.swing.JTextField numMesa;
     private javax.swing.JLabel numMesa2;
@@ -2951,6 +3343,14 @@ public class FrmMenu extends javax.swing.JFrame {
     private javax.swing.JSpinner spiValor31;
     private javax.swing.JSpinner spiValor32;
     private javax.swing.JSpinner spiValor4;
+    private javax.swing.JSpinner spiValor41;
+    private javax.swing.JSpinner spiValor42;
+    private javax.swing.JSpinner spiValor43;
+    private javax.swing.JSpinner spiValor44;
+    private javax.swing.JSpinner spiValor45;
+    private javax.swing.JSpinner spiValor46;
+    private javax.swing.JSpinner spiValor47;
+    private javax.swing.JSpinner spiValor48;
     private javax.swing.JSpinner spiValor5;
     private javax.swing.JSpinner spiValor6;
     private javax.swing.JSpinner spiValor7;
