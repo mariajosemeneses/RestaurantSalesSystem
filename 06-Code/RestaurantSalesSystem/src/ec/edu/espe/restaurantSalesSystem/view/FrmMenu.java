@@ -1853,7 +1853,10 @@ public class FrmMenu extends javax.swing.JFrame {
        
         limpiarTabla(datosTable);
         numMesa.getText();
-        MenuBreakfast.setVisible(true);
+        
+        FrmMenu frmMenu = new FrmMenu();
+        frmMenu.setVisible(true);
+        
         viewOrder.setVisible(false);
         spiValor.getValue();
         spiValor2.getValue();
@@ -1879,10 +1882,16 @@ public class FrmMenu extends javax.swing.JFrame {
         spiValor22.getValue();
         spiValor23.getValue();
         spiValor24.getValue();
+        spiValor25.getValue();
+        spiValor26.getValue();
+        spiValor27.getValue();
+        spiValor28.getValue();
+        spiValor29.getValue();
+        spiValor30.getValue();
+        spiValor31.getValue();
+        spiValor32.getValue();
+        spiValor1.getValue();
         
-        
-        
-       
     }//GEN-LAST:event_btnOtherOrderActionPerformed
 
     private void btnGenerateBillActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerateBillActionPerformed
