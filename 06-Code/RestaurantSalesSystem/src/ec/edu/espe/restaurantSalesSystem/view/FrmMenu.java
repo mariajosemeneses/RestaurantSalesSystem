@@ -5,12 +5,7 @@
  */
 package ec.edu.espe.restaurantSalesSystem.view;
 
-import java.awt.event.ItemEvent;
-import java.util.Date;
-import java.awt.event.KeyEvent;
-import java.io.*;
-import java.net.URL;
-import java.util.*;
+
 import ec.edu.espe.restaurantsalessystem.model.Bill;
 import java.awt.event.KeyEvent;
 import java.util.Date;
@@ -19,7 +14,7 @@ import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
 /**
- *
+ * factTable.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
  * @author Maria José Meneses
  */
 public class FrmMenu extends javax.swing.JFrame {
@@ -573,13 +568,12 @@ int contador = 0;
         Order.setModal(true);
         Order.setResizable(false);
 
-        jPanel3.setBackground(new java.awt.Color(105, 92, 100));
+        jPanel3.setBackground(new java.awt.Color(204, 204, 204));
         jPanel3.setForeground(new java.awt.Color(255, 255, 255));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel31.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel31.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel31.setText("Numero de mesa: ");
+        jLabel31.setText("Number table:");
         jPanel3.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 160, -1));
 
         numMesa.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -633,7 +627,6 @@ int contador = 0;
         jPanel3.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(-370, -30, 500, 570));
 
         jLabel34.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
-        jLabel34.setForeground(new java.awt.Color(255, 255, 255));
         jLabel34.setText("ORDER");
         jPanel3.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 30, 200, -1));
 
@@ -662,7 +655,7 @@ int contador = 0;
         viewOrder.setMinimumSize(new java.awt.Dimension(928, 393));
         viewOrder.setResizable(false);
 
-        jPanel9.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel9.setBackground(new java.awt.Color(153, 153, 153));
         jPanel9.setMaximumSize(new java.awt.Dimension(781, 393));
         jPanel9.setMinimumSize(new java.awt.Dimension(781, 393));
         jPanel9.setLayout(null);
@@ -720,7 +713,7 @@ int contador = 0;
         generaFact.setBounds(470, 80, 230, 40);
 
         jLabel32.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel32.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel32.setForeground(new java.awt.Color(204, 204, 204));
         jPanel9.add(jLabel32);
         jLabel32.setBounds(343, 0, 590, 390);
 
@@ -838,7 +831,7 @@ int contador = 0;
                 return canEdit [columnIndex];
             }
         });
-        factTable.setSelectionMode();
+        factTable.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         jScrollPane5.setViewportView(factTable);
 
         jPanel10.add(jScrollPane5);
@@ -1116,6 +1109,11 @@ int contador = 0;
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    void limpiarTabla(JTable table) {
+        DefaultTableModel model = (DefaultTableModel) table.getModel();
+        model.setRowCount(0);
+    }
+
     private void btnBreakfastActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBreakfastActionPerformed
        MenuBreakfast.setVisible(true);
        MenuBreakfast.setLocationRelativeTo(null);
@@ -1154,34 +1152,31 @@ int contador = 0;
     private void bntOrderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntOrderActionPerformed
 
         DefaultTableModel model = (DefaultTableModel) datosTable.getModel();
-
-        if (spiValor.getValue().hashCode() > 0) {
+    
+        if ( spiValor.getValue().hashCode() > 0) {
             String x = cafeEnAgua.getText();
-            String[] y;
-            y = x.split("..................");
-
-            model.addRow(new Object[]{y[0], y[1], spiValor.getValue()});
+            float y;
+            y = (float) 0.50 ;
+            model.addRow(new Object[]{x, y,spiValor.getValue().hashCode()});
         }
-
-        if (spiValor2.getValue().hashCode() > 0) {
+        if (spiValor2.getValue().hashCode()> 0) {
             String x = cafeEnLeche.getText();
-            String[] y;
-            y = x.split(".................");
-            model.addRow(new Object[]{y[0], y[1], spiValor2.getValue()});
+            float y;
+            y = (float) 0.75;
+            model.addRow(new Object[]{x, y, spiValor2.getValue().hashCode()});
         }
-        if (spiValor3.getValue().hashCode() > 0) {
-            String x = teConLimon.getText();
-            String[] y;
-            y = x.split("..................");
-            model.addRow(new Object[]{y[0], y[1], spiValor3.getValue()});
-        }
+       /* if (spiValor3.getValue().hashCode() > 0) {
+            String n = teConLimon.getText();
+            String m;
+            m = teConLimon.getText();
+            model.addRow(new Object[]{n, m, spiValor3.getValue().hashCode()});
+        } 
         if (spiValor4.getValue().hashCode() > 0) {
-            String x = leche.getText();
-            String[] y;
-            y = x.split(".........................");
-
-            model.addRow(new Object[]{y[0], y[1], spiValor4.getValue()});
-        }
+            String a = leche.getText();
+            String b;
+            b = leche.getText();
+            model.addRow(new Object[]{a, b, spiValor4.getValue().hashCode()});
+        }*/
         /*if (damaBlanca.getSelectedIndex() > 0) {
             String x = dblanca.getText();
             String[] y;
@@ -1227,7 +1222,7 @@ int contador = 0;
                 numMesa.setSelectedIndex(0);
 
             
-        } else if (numMesa.getSelectedIndex() ==4) {
+        } else if (numMesa.getSelectedIndex() == 4) {
             JOptionPane.showMessageDialog(null, "Numero de mesa invalido para mesero " );
             numMesa.setSelectedIndex(0);
         }
@@ -1242,28 +1237,28 @@ int contador = 0;
 
         //LLENAMOS TABLA DE COCINA
         DefaultTableModel model2 = (DefaultTableModel) datosTable2.getModel();
-
+ 
         if (spiValor.getValue().hashCode() > 0) {
             String x = cafeEnAgua.getText();
-            String[] y;
-            y = x.split("..................");
+            String y;
+            y = "Cafe en Agua";
             if (numMesa.getSelectedIndex() >= 0) {
-                model2.addRow(new Object[]{y[0], spiValor.getValue(), numMesa.getSelectedIndex()});
+                model2.addRow(new Object[]{x, spiValor.getValue().hashCode(), numMesa.getSelectedIndex()});
             }
         }
         if (spiValor2.getValue().hashCode() > 0) {
             String x = cafeEnLeche.getText();
             String[] y;
-            y = x.split(".................");
+            y = x.split(".");
             if (numMesa.getSelectedIndex() >= 0) {
-                model2.addRow(new Object[]{y[0], spiValor2.getValue(), numMesa.getSelectedIndex()});
+                model2.addRow(new Object[]{x, spiValor2.getValue().hashCode(), numMesa.getSelectedIndex()});
             }
 
         }
         if (spiValor3.getValue().hashCode() > 0) {
             String x = teConLimon.getText();
             String[] y;
-            y = x.split("..................");
+            y = x.split("Te con Limon");
             if (numMesa.getSelectedIndex() >= 0) {
                 model2.addRow(new Object[]{y[0], spiValor3.getValue(), numMesa.getSelectedIndex()});
             }
@@ -1686,7 +1681,5 @@ int contador = 0;
     private javax.swing.JDialog viewOrder;
     // End of variables declaration//GEN-END:variables
 
-    private void limpiarTabla(JTable datosTable) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+
 }
