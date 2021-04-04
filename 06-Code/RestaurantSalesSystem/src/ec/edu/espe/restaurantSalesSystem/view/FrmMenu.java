@@ -100,22 +100,20 @@ int contador = 0;
         Order = new javax.swing.JDialog();
         jPanel3 = new javax.swing.JPanel();
         jLabel31 = new javax.swing.JLabel();
-        numMesa = new javax.swing.JComboBox<>();
         jButton7 = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         datosTable = new javax.swing.JTable();
-        jLabel33 = new javax.swing.JLabel();
         jLabel34 = new javax.swing.JLabel();
         btnSendOrder = new javax.swing.JButton();
+        numMesa = new javax.swing.JTextField();
         viewOrder = new javax.swing.JDialog();
         jPanel9 = new javax.swing.JPanel();
         jScrollPane4 = new javax.swing.JScrollPane();
         datosTable2 = new javax.swing.JTable();
-        jButton11 = new javax.swing.JButton();
-        generaFact = new javax.swing.JButton();
-        jLabel32 = new javax.swing.JLabel();
+        btnOtherOrder = new javax.swing.JButton();
+        btnGenerateBill = new javax.swing.JButton();
         jLabel35 = new javax.swing.JLabel();
-        jButton15 = new javax.swing.JButton();
+        btnReturn3 = new javax.swing.JButton();
         GenerateBill = new javax.swing.JDialog();
         jPanel12 = new javax.swing.JPanel();
         jLabel36 = new javax.swing.JLabel();
@@ -576,17 +574,8 @@ int contador = 0;
         jLabel31.setText("Number table:");
         jPanel3.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 160, -1));
 
-        numMesa.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        numMesa.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", " " }));
-        numMesa.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        numMesa.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                numMesaActionPerformed(evt);
-            }
-        });
-        jPanel3.add(numMesa, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 120, 100, -1));
-
         jButton7.setForeground(new java.awt.Color(255, 255, 255));
+        jButton7.setText("return");
         jButton7.setContentAreaFilled(false);
         jButton7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton7.addActionListener(new java.awt.event.ActionListener() {
@@ -624,7 +613,6 @@ int contador = 0;
         jScrollPane2.setViewportView(datosTable);
 
         jPanel3.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 200, 400, 230));
-        jPanel3.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(-370, -30, 500, 570));
 
         jLabel34.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
         jLabel34.setText("ORDER");
@@ -639,6 +627,7 @@ int contador = 0;
             }
         });
         jPanel3.add(btnSendOrder, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 470, 190, 30));
+        jPanel3.add(numMesa, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 120, 100, 30));
 
         javax.swing.GroupLayout OrderLayout = new javax.swing.GroupLayout(Order.getContentPane());
         Order.getContentPane().setLayout(OrderLayout);
@@ -651,7 +640,7 @@ int contador = 0;
             .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        viewOrder.setTitle("COCINA");
+        viewOrder.setTitle("View Order");
         viewOrder.setMinimumSize(new java.awt.Dimension(928, 393));
         viewOrder.setResizable(false);
 
@@ -690,49 +679,44 @@ int contador = 0;
         jPanel9.add(jScrollPane4);
         jScrollPane4.setBounds(90, 50, 310, 300);
 
-        jButton11.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        jButton11.setText("REGISTRAR OTRO PEDIDO");
-        jButton11.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton11.addActionListener(new java.awt.event.ActionListener() {
+        btnOtherOrder.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        btnOtherOrder.setText("REGISTRAR OTRO PEDIDO");
+        btnOtherOrder.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnOtherOrder.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton11ActionPerformed(evt);
+                btnOtherOrderActionPerformed(evt);
             }
         });
-        jPanel9.add(jButton11);
-        jButton11.setBounds(480, 180, 230, 40);
+        jPanel9.add(btnOtherOrder);
+        btnOtherOrder.setBounds(480, 180, 230, 40);
 
-        generaFact.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        generaFact.setText("GENERAR FACTURA");
-        generaFact.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        generaFact.addActionListener(new java.awt.event.ActionListener() {
+        btnGenerateBill.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        btnGenerateBill.setText("GENERAR FACTURA");
+        btnGenerateBill.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnGenerateBill.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                generaFactActionPerformed(evt);
+                btnGenerateBillActionPerformed(evt);
             }
         });
-        jPanel9.add(generaFact);
-        generaFact.setBounds(470, 80, 230, 40);
-
-        jLabel32.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel32.setForeground(new java.awt.Color(204, 204, 204));
-        jPanel9.add(jLabel32);
-        jLabel32.setBounds(343, 0, 590, 390);
+        jPanel9.add(btnGenerateBill);
+        btnGenerateBill.setBounds(470, 80, 230, 40);
 
         jLabel35.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel35.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel35.setText("PEDIDOS:");
+        jLabel35.setText("Orders:");
         jPanel9.add(jLabel35);
         jLabel35.setBounds(90, 30, 100, 17);
 
-        jButton15.setText("jButton15");
-        jButton15.setContentAreaFilled(false);
-        jButton15.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton15.addActionListener(new java.awt.event.ActionListener() {
+        btnReturn3.setText("Return");
+        btnReturn3.setContentAreaFilled(false);
+        btnReturn3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnReturn3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton15ActionPerformed(evt);
+                btnReturn3ActionPerformed(evt);
             }
         });
-        jPanel9.add(jButton15);
-        jButton15.setBounds(10, 331, 60, 50);
+        jPanel9.add(btnReturn3);
+        btnReturn3.setBounds(10, 331, 60, 50);
 
         javax.swing.GroupLayout viewOrderLayout = new javax.swing.GroupLayout(viewOrder.getContentPane());
         viewOrder.getContentPane().setLayout(viewOrderLayout);
@@ -1154,45 +1138,112 @@ int contador = 0;
         DefaultTableModel model = (DefaultTableModel) datosTable.getModel();
     
         if ( spiValor.getValue().hashCode() > 0) {
-            String x = cafeEnAgua.getText();
+            String x = "Cafe en Agua";
             float y;
             y = (float) 0.50 ;
             model.addRow(new Object[]{x, y,spiValor.getValue().hashCode()});
         }
         if (spiValor2.getValue().hashCode()> 0) {
-            String x = cafeEnLeche.getText();
+            String x = "Cafe en Leche";
             float y;
             y = (float) 0.75;
             model.addRow(new Object[]{x, y, spiValor2.getValue().hashCode()});
         }
-       /* if (spiValor3.getValue().hashCode() > 0) {
-            String n = teConLimon.getText();
-            String m;
-            m = teConLimon.getText();
-            model.addRow(new Object[]{n, m, spiValor3.getValue().hashCode()});
+        if (spiValor3.getValue().hashCode() > 0) {
+            String x = "Te con Limon";
+            float y = (float) 0.50;
+            model.addRow(new Object[]{x, y, spiValor3.getValue().hashCode()});
         } 
         if (spiValor4.getValue().hashCode() > 0) {
-            String a = leche.getText();
-            String b;
-            b = leche.getText();
-            model.addRow(new Object[]{a, b, spiValor4.getValue().hashCode()});
-        }*/
-        /*if (damaBlanca.getSelectedIndex() > 0) {
-            String x = dblanca.getText();
-            String[] y;
-            y = x.split(":");
-
-            model.addRow(new Object[]{y[0], y[1], damaBlanca.getSelectedIndex()});
-
+            String x = "Leche";
+            float y =(float) 0.60;
+            model.addRow(new Object[]{x, y, spiValor4.getValue().hashCode()});
         }
-        if (bebidaCant.getSelectedIndex() > 0) {
-            String x = (String) tiposBebidas.getSelectedItem();
-            String[] y;
-            y = x.split(":");
-
-            model.addRow(new Object[]{y[0], y[1], bebidaCant.getSelectedIndex()});
-        }*/
-
+        if (spiValor5.getValue().hashCode() > 0) {
+            String x = "Pan Simple";
+            float y = (float) 0.10;
+            model.addRow(new Object[]{x, y, spiValor5.getValue().hashCode() > 0});
+        }
+        if (spiValor6.getValue().hashCode() > 0) {
+            String x = "Pan con Jamón";
+            float y = (float) 0.25;
+            model.addRow(new Object[]{x, y, spiValor6.getValue().hashCode() > 0});
+        }
+        if (spiValor7.getValue().hashCode() > 0) {
+            String x = "Pan con Mortadela";
+            float y = (float) 0.25;
+            model.addRow(new Object[]{x, y, spiValor7.getValue().hashCode() > 0});
+        }
+        if (spiValor8.getValue().hashCode() > 0) {
+            String x = "Pan Integral";
+            float y = (float) 0.25;
+            model.addRow(new Object[]{x, y, spiValor8.getValue().hashCode() > 0});
+        }
+        if (spiValor9.getValue().hashCode() > 0) {
+            String x = "Jugo de Mora";
+            float y = (float) 0.75;
+            model.addRow(new Object[]{x, y, spiValor9.getValue().hashCode() > 0});
+        }
+        if (spiValor10.getValue().hashCode() > 0) {
+            String x = "Jugo de Naranjilla";
+            float y = (float) 0.75;
+            model.addRow(new Object[]{x, y, spiValor10.getValue().hashCode() > 0});
+        }
+        if (spiValor11.getValue().hashCode() > 0) {
+            String x = "Jugo de Tomate de Arbol";
+            float y = (float) 0.75;
+            model.addRow(new Object[]{x, y, spiValor11.getValue().hashCode() > 0});
+        }
+        if (spiValor12.getValue().hashCode() > 0) {
+            String x = "Huevos Cocidos";
+            float y = (float) 0.20;
+            model.addRow(new Object[]{x, y, spiValor12.getValue().hashCode() > 0});
+        }
+        if (spiValor13.getValue().hashCode() > 0) {
+            String x = "Huevos Tibios";
+            float y = (float) 0.20;
+            model.addRow(new Object[]{x, y, spiValor13.getValue().hashCode() > 0});
+        }
+        if (spiValor14.getValue().hashCode() > 0) {
+            String x = "Torta de Huevo";
+            float y = (float) 0.20;
+            model.addRow(new Object[]{x, y, spiValor14.getValue().hashCode() > 0});
+        }
+        if (spiValor15.getValue().hashCode() > 0) {
+            String x = "Huevos Fritos";
+            float y = (float) 0.20;
+            model.addRow(new Object[]{x, y, spiValor15.getValue().hashCode() > 0});
+        }
+        if (spiValor16.getValue().hashCode() > 0) {
+            String x = "Hevos Rvueltos";
+            float y = (float) 0.20;
+            model.addRow(new Object[]{x, y, spiValor16.getValue().hashCode() > 0});
+        }
+        if (spiValor17.getValue().hashCode() > 0) {
+            String x = "Manzana";
+            float y = (float) 0.35;
+            model.addRow(new Object[]{x, y, spiValor17.getValue().hashCode() > 0});
+        }
+        if (spiValor18.getValue().hashCode() > 0) {
+            String x = "Pera";
+            float y = (float) 0.25;
+            model.addRow(new Object[]{x, y, spiValor18.getValue().hashCode() > 0});
+        }
+        if (spiValor19.getValue().hashCode() > 0) {
+            String x = "Banana";
+            float y = (float) 0.25;
+            model.addRow(new Object[]{x, y, spiValor19.getValue().hashCode() > 0});
+        }
+        if (spiValor20.getValue().hashCode() > 0) {
+            String x = "Estofado de carne";
+            float y = (float) 1.50;
+            model.addRow(new Object[]{x, y, spiValor20.getValue().hashCode() > 0});
+        }
+         if (spiValor21.getValue().hashCode() > 0) {
+            String x = "Estofado de pollo";
+            float y = (float) 1.50;
+            model.addRow(new Object[]{x, y, spiValor21.getValue().hashCode() > 0});
+        }
         Order.setVisible(true);
         MenuBreakfast.dispose();
     }//GEN-LAST:event_bntOrderActionPerformed
@@ -1203,31 +1254,6 @@ int contador = 0;
         frmMenu.setVisible(true);
     }//GEN-LAST:event_btnReturnActionPerformed
 
-    private void numMesaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_numMesaActionPerformed
-
-        //INDICE DE MESA SEGUN EL MESERIO COMBOBOX DE MESA
-        
-            if (numMesa.getSelectedIndex() == 1) {
-                JOptionPane.showMessageDialog(null, "Numero de mesa invalido para mesero " );
-                numMesa.setSelectedIndex(0);
-            }
-
-        else if (numMesa.getSelectedIndex() ==2 || numMesa.getSelectedIndex() < 6) {
-                JOptionPane.showMessageDialog(null, "Numero de mesa invalido para mesero " );
-                numMesa.setSelectedIndex(0);
-            }
-
-         else if (numMesa.getSelectedIndex() == 3) {
-                JOptionPane.showMessageDialog(null, "Numero de mesa invalido para mesero " );
-                numMesa.setSelectedIndex(0);
-
-            
-        } else if (numMesa.getSelectedIndex() == 4) {
-            JOptionPane.showMessageDialog(null, "Numero de mesa invalido para mesero " );
-            numMesa.setSelectedIndex(0);
-        }
-    }//GEN-LAST:event_numMesaActionPerformed
-
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         Order.setVisible(false);
         this.setVisible(true);
@@ -1235,86 +1261,186 @@ int contador = 0;
 
     private void btnSendOrderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSendOrderActionPerformed
 
-        //LLENAMOS TABLA DE COCINA
+       
         DefaultTableModel model2 = (DefaultTableModel) datosTable2.getModel();
  
         if (spiValor.getValue().hashCode() > 0) {
-            String x = cafeEnAgua.getText();
-            String y;
-            y = "Cafe en Agua";
-            if (numMesa.getSelectedIndex() >= 0) {
-                model2.addRow(new Object[]{x, spiValor.getValue().hashCode(), numMesa.getSelectedIndex()});
+            String x = "Cafe en Agua";
+            if (Integer.parseInt(numMesa.getText()) >= 0) {
+                model2.addRow(new Object[]{x, spiValor.getValue().hashCode(), numMesa.getText()});
             }
         }
-        if (spiValor2.getValue().hashCode() > 0) {
-            String x = cafeEnLeche.getText();
-            String[] y;
-            y = x.split(".");
-            if (numMesa.getSelectedIndex() >= 0) {
-                model2.addRow(new Object[]{x, spiValor2.getValue().hashCode(), numMesa.getSelectedIndex()});
+        if (spiValor2.getValue().hashCode()> 0) {
+            String x = "Cafe en Leche";
+            if (Integer.parseInt(numMesa.getText()) >= 0) {
+                model2.addRow(new Object[]{x, spiValor2.getValue().hashCode(), numMesa.getText()});
             }
 
         }
         if (spiValor3.getValue().hashCode() > 0) {
-            String x = teConLimon.getText();
-            String[] y;
-            y = x.split("Te con Limon");
-            if (numMesa.getSelectedIndex() >= 0) {
-                model2.addRow(new Object[]{y[0], spiValor3.getValue(), numMesa.getSelectedIndex()});
+            String x = "Te con Limon";
+            if (Integer.parseInt(numMesa.getText()) >= 0) {
+                model2.addRow(new Object[]{x, spiValor3.getValue(), numMesa.getText()});
             }
         }
         if (spiValor4.getValue().hashCode() > 0) {
-            String x = leche.getText();
-            String[] y;
-            y = x.split(".........................");
-        
-            if (numMesa.getSelectedIndex() >= 0) {
-                model2.addRow(new Object[]{y[0], spiValor4.getValue(), numMesa.getSelectedIndex()});
+            String x = "Leche";
+            if (Integer.parseInt(numMesa.getText()) >= 0) {
+                model2.addRow(new Object[]{x, spiValor4.getValue(), numMesa.getText()});
+            }
+        }
+        if (spiValor5.getValue().hashCode() > 0) {
+            String x = "Pan Simple";
+            if (Integer.parseInt(numMesa.getText()) >= 0) {
+                model2.addRow(new Object[]{x, spiValor6.getValue(), numMesa.getText()});
+            }
+        }
+        if (spiValor6.getValue().hashCode() > 0) {
+            String x = "Pan con Jamon";
+            if (Integer.parseInt(numMesa.getText()) >= 0) {
+                model2.addRow(new Object[]{x, spiValor6.getValue(), numMesa.getText()});
+            }
+        }
+        if (spiValor7.getValue().hashCode() > 0) {
+            String x = "Pan con Mortadela";
+            if (Integer.parseInt(numMesa.getText()) >= 0) {
+                model2.addRow(new Object[]{x, spiValor7.getValue(), numMesa.getText()});
+            }
+        }
+        if (spiValor8.getValue().hashCode() > 0) {
+            String x = "Pan Integral";
+            if (Integer.parseInt(numMesa.getText()) >= 0) {
+                model2.addRow(new Object[]{x, spiValor8.getValue(), numMesa.getText()});
+            }
+        }
+        if (spiValor9.getValue().hashCode() > 0) {
+            String x = "Jugo de Mora";
+            if (Integer.parseInt(numMesa.getText()) >= 0) {
+                model2.addRow(new Object[]{x, spiValor9.getValue(), numMesa.getText()});
+            }
+        }
+        if (spiValor10.getValue().hashCode() > 0) {
+            String x = "Jugo de Naranjilla";
+            if (Integer.parseInt(numMesa.getText()) >= 0) {
+                model2.addRow(new Object[]{x, spiValor10.getValue(), numMesa.getText()});
+            }
+        }
+        if (spiValor11.getValue().hashCode() > 0) {
+            String x = "Jugo de Tomate de Arbol";
+            if (Integer.parseInt(numMesa.getText()) >= 0) {
+                model2.addRow(new Object[]{x, spiValor11.getValue(), numMesa.getText()});
+            }
+        }
+        if (spiValor12.getValue().hashCode() > 0) {
+            String x = "Huevos Cocidos";
+            if (Integer.parseInt(numMesa.getText()) >= 0) {
+                model2.addRow(new Object[]{x, spiValor12.getValue(), numMesa.getText()});
+            }
+        }
+        if (spiValor13.getValue().hashCode() > 0) {
+            String x = "Huevos Tibiosos";
+            if (Integer.parseInt(numMesa.getText()) >= 0) {
+                model2.addRow(new Object[]{x, spiValor13.getValue(), numMesa.getText()});
+            }
+        }
+        if (spiValor14.getValue().hashCode() > 0) {
+            String x = "Torta de Huevo";
+            if (Integer.parseInt(numMesa.getText()) >= 0) {
+                model2.addRow(new Object[]{x, spiValor14.getValue(), numMesa.getText()});
+            }
+        }
+        if (spiValor15.getValue().hashCode() > 0) {
+            String x = "Huevos Fritos";
+            if (Integer.parseInt(numMesa.getText()) >= 0) {
+                model2.addRow(new Object[]{x, spiValor15.getValue(), numMesa.getText()});
+            }
+        }
+        if (spiValor16.getValue().hashCode() > 0) {
+            String x = "Huevos Revueltos";
+            if (Integer.parseInt(numMesa.getText()) >= 0) {
+                model2.addRow(new Object[]{x, spiValor16.getValue(), numMesa.getText()});
             }
         }
         
-        /*if (damaBlanca.getSelectedIndex() > 0) {
-            String x = dblanca.getText();
-            String[] y;
-            y = x.split(":");
-            if (numMesa.getSelectedIndex() >= 0) {
-                model2.addRow(new Object[]{y[0], damaBlanca.getSelectedIndex(), numMesa.getSelectedIndex()});
-            }*/
-        
+        if (spiValor17.getValue().hashCode() > 0) {
+            String x = "Manzana";
+            if (Integer.parseInt(numMesa.getText()) >= 0) {
+                model2.addRow(new Object[]{x, spiValor17.getValue(), numMesa.getText()});
+            }
+        }
+        if (spiValor18.getValue().hashCode() > 0) {
+            String x = "Pera";
+            if (Integer.parseInt(numMesa.getText()) >= 0) {
+                model2.addRow(new Object[]{x, spiValor18.getValue(), numMesa.getText()});
+            }
+        }
+        if (spiValor19.getValue().hashCode() > 0) {
+            String x = "Banana";
+            if (Integer.parseInt(numMesa.getText()) >= 0) {
+                model2.addRow(new Object[]{x, spiValor19.getValue(), numMesa.getText()});
+            }
+        }
+        if (spiValor20.getValue().hashCode() > 0) {
+            String x = "Estofado de Carne";
+            if (Integer.parseInt(numMesa.getText()) >= 0) {
+                model2.addRow(new Object[]{x, spiValor20.getValue(), numMesa.getText()});
+            }
+        }
+         if (spiValor21.getValue().hashCode() > 0) {
+            String x = "Estofado de Pollo";
+            if (Integer.parseInt(numMesa.getText()) >= 0) {
+                model2.addRow(new Object[]{x, spiValor21.getValue(), numMesa.getText()});
+            }
+        }
         viewOrder.setVisible(true);
 
         Order.setVisible(false);
     }//GEN-LAST:event_btnSendOrderActionPerformed
 
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+    private void btnOtherOrderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOtherOrderActionPerformed
 
         //Reset valores de pedido tabla de pedidos
         
         limpiarTabla(datosTable);
-        numMesa.setSelectedIndex(0);
+        numMesa.getText();
         MenuBreakfast.setVisible(true);
         viewOrder.setVisible(false);
         spiValor.getValue();
         spiValor2.getValue();
         spiValor3.getValue();
         spiValor4.getValue();
-        
+        spiValor5.getValue();
+        spiValor6.getValue();
+        spiValor7.getValue();
+        spiValor8.getValue();
+        spiValor9.getValue();
+        spiValor10.getValue();
+        spiValor11.getValue();
+        spiValor12.getValue();
+        spiValor13.getValue();
+        spiValor14.getValue();
+        spiValor15.getValue();
+        spiValor16.getValue();
+        spiValor17.getValue();
+        spiValor18.getValue();
+        spiValor19.getValue();
+        spiValor20.getValue();
+        spiValor21.getValue();
+    }//GEN-LAST:event_btnOtherOrderActionPerformed
 
-    }//GEN-LAST:event_jButton11ActionPerformed
-
-    private void generaFactActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_generaFactActionPerformed
+    private void btnGenerateBillActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerateBillActionPerformed
         int filas = datosTable2.getRowCount();
 
         GenerateBill.setVisible(true);
         GenerateBill.setLocationRelativeTo(null);
         viewOrder.setVisible(false);
 
-    }//GEN-LAST:event_generaFactActionPerformed
+    }//GEN-LAST:event_btnGenerateBillActionPerformed
 
-    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+    private void btnReturn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturn3ActionPerformed
         viewOrder.setVisible(false);
         MenuBreakfast.setVisible(true);
-    }//GEN-LAST:event_jButton15ActionPerformed
+    }//GEN-LAST:event_btnReturn3ActionPerformed
 
     private void txtTableNumberActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTableNumberActionPerformed
         // TODO add your handling code here:
@@ -1329,31 +1455,40 @@ int contador = 0;
 
     private void btngenerateBillActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btngenerateBillActionPerformed
         //FACTURA
-        int contTotal = 0;
-        int c1 = numMesa.getSelectedIndex(), c2 = Integer.parseInt(txtTableNumber.getText());
-        int cant4 = spiValor4.getValue().hashCode(), cant = spiValor.getValue().hashCode(), cant3 = spiValor3.getValue().hashCode();
-        int cant2 = spiValor2.getValue().hashCode();
-
+        float contTotal = (float)0.0;
+        int c1 = Integer.parseInt(numMesa.getText()), c2 = Integer.parseInt(txtTableNumber.getText());
+        int cant = spiValor.getValue().hashCode(),cant2 = spiValor2.getValue().hashCode(),
+            cant3 = spiValor3.getValue().hashCode(),cant4 = spiValor4.getValue().hashCode();
+        int cant5 = spiValor5.getValue().hashCode(),cant6 = spiValor6.getValue().hashCode(),
+            cant7 = spiValor7.getValue().hashCode(),cant8 = spiValor8.getValue().hashCode();
+        int cant9 = spiValor9.getValue().hashCode(),cant10 = spiValor10.getValue().hashCode(),
+            cant11 = spiValor11.getValue().hashCode();
+        int cant12 = spiValor12.getValue().hashCode(),cant13 = spiValor13.getValue().hashCode(),
+            cant14 = spiValor14.getValue().hashCode(),cant15 = spiValor15.getValue().hashCode(),cant16 = spiValor16.getValue().hashCode();   
+        int cant17 = spiValor17.getValue().hashCode(),cant18 = spiValor18.getValue().hashCode(),cant19 = spiValor19.getValue().hashCode();
+        int cant20 = spiValor20.getValue().hashCode(),cant21 = spiValor21.getValue().hashCode();
+   
         if (c1 == c2) {
             if (cant > 0) {
 
-                String x = cafeEnAgua.getText();
-                String[] y;
-                y = x.split("..................");
+            String x = "Cafe en Agua";
+            float y;
+            y = (float) 0.50 ;
+;
 
                 Bill fact = new Bill();
-                fact.setConcepto(y[0]);
+                fact.setConcepto(y);
 
-                Double precio = Double.parseDouble(y[1].substring(2));
+                float precio = y;
                 fact.setPrecio(precio);
 
                 fact.setCantidad(cant);
 
-                Double total = precio * cant;
+                float total = precio * cant;
                 fact.setTotal(total);
-                contTotal = contTotal + total.intValue(); //contador total
+                contTotal = (float) (contTotal + total); //contador total
 
-                //Asignamos valores a cada columna de la tabla
+                //valores de cada columna de la tabla
                 DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
                 model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
                 factTable.setModel(model3);
@@ -1362,21 +1497,19 @@ int contador = 0;
 
             if (cant2 > 0) {
 
-                String x = cafeEnLeche.getText();
-                String[] y;
-                y = x.split(".................");
-
+                String x = "Cafe en Leche";
+                float  y = (float) 0.75;;
+               
                 Bill fact = new Bill();
-                fact.setConcepto(y[0]);
+                fact.setConcepto(y);
 
-                Double precio = Double.parseDouble(y[1].substring(2));
+                float precio = y;
                 fact.setPrecio(precio);
-
                 fact.setCantidad(cant2);
 
-                Double total = cant2 * precio;
+                float total = cant2 * precio;
                 fact.setTotal(total);
-                contTotal = contTotal + total.intValue();
+                contTotal = (float) (contTotal + total);
 
                 DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
                 model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
@@ -1384,21 +1517,19 @@ int contador = 0;
             }
 
             if (cant3 > 0) {
-                String x = teConLimon.getText();
-                String[] y;
-                y = x.split("..................");
+                String x = "Te con Limon";
+                float y = (float) 0.50;
 
                 Bill fact = new Bill();
-                fact.setConcepto(y[0]);
+                fact.setConcepto(y);
 
-                Double precio = Double.parseDouble(y[1].substring(2));
+                float precio = y;
                 fact.setPrecio(precio);
-
                 fact.setCantidad(cant3);
 
-                Double total = cant3 * precio;
+                float total = cant3 * precio;
                 fact.setTotal(total);
-                contTotal = contTotal + total.intValue();
+                contTotal = (float) (contTotal + total);
 
                 DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
                 model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
@@ -1407,31 +1538,363 @@ int contador = 0;
             }
 
             if (cant4 > 0) {
-                String x = leche.getText();
-                String[] y;
-                y = x.split(".........................");
-
+                String x = "Leche";
+                float y =(float) 0.60;
+                
                 Bill fact = new Bill();
-                fact.setConcepto(y[0]);
+                fact.setConcepto(y);
 
-                Double precio = Double.parseDouble(y[1].substring(2));
+                float precio = y;
                 fact.setPrecio(precio);
-
                 fact.setCantidad(cant4);
 
-                Double total = cant4 * precio;
+                float total = cant4 * precio;
                 fact.setTotal(total);
-                contTotal = contTotal + total.intValue();
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+            }
+            if (cant5 > 0) {
+                String x = "Pan Simple";
+                float y = (float) 0.10;
+                
+                Bill fact = new Bill();
+                fact.setConcepto(y);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant5);
+
+                float total = cant5 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+                
+            }if (cant6 > 0) {
+               String x = "Pan con Jamón";
+               float y = (float) 0.25;
+
+                Bill fact = new Bill();
+                fact.setConcepto(y);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant6);
+
+                float total = cant6 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+                
+            }if (cant7 > 0) {
+                String x = "Pan con Mortadela";
+                float y = (float) 0.25;
+
+                
+                Bill fact = new Bill();
+                fact.setConcepto(y);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant7);
+
+                float total = cant7 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+                
+            }if (cant8 > 0) {
+                String x = "Pan Integral";
+                float y = (float) 0.25;
+
+                
+                Bill fact = new Bill();
+                fact.setConcepto(y);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant8);
+
+                float total = cant8 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+                
+            }if (cant9 > 0) {
+                String x = "Jugo de Mora";
+                float y = (float) 0.75;
+
+                
+                Bill fact = new Bill();
+                fact.setConcepto(y);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant9);
+
+                float total = cant9 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+                
+            }if (cant10 > 0) {
+                String x = "Jugo de Naranjilla";
+                float y = (float) 0.75;
+
+                Bill fact = new Bill();
+                fact.setConcepto(y);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant10);
+
+                float total = cant10 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+                
+            }if (cant11 > 0) {
+                String x = "Jugo de Tomate de Arbol";
+                float y = (float) 0.75;
+
+                
+                Bill fact = new Bill();
+                fact.setConcepto(y);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant11);
+
+                float total = cant11 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+                
+            }if (cant12 > 0) {
+                String x = "Huevos Cocidos";
+                float y = (float) 0.20;
+
+                
+                Bill fact = new Bill();
+                fact.setConcepto(y);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant12);
+
+                float total = cant12 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+                
+            }if (cant13 > 0) {
+                String x = "Huevos Tibios";
+                float y = (float) 0.20;
+
+                Bill fact = new Bill();
+                fact.setConcepto(y);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant13);
+
+                float total = cant13 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+                
+            }if (cant14 > 0) {
+                String x = "Torta de Huevo";
+                float y = (float) 0.20;
+
+                Bill fact = new Bill();
+                fact.setConcepto(y);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant14);
+
+                float total = cant14 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+                
+            }if (cant15 > 0) {
+                String x = "Huevos Fritos";
+                float y = (float) 0.20;
+
+                Bill fact = new Bill();
+                fact.setConcepto(y);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant15);
+
+                float total = cant15 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+                
+            }if (cant16 > 0) {
+                String x = "Hevos Rvueltos";
+                float y = (float) 0.20;
+
+                
+                Bill fact = new Bill();
+                fact.setConcepto(y);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant16);
+
+                float total = cant16 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+                
+            }if (cant17 > 0) {
+                String x = "Manzana";
+                float y = (float) 0.35;
+
+                
+                Bill fact = new Bill();
+                fact.setConcepto(y);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant17);
+
+                float total = cant17 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+                
+            }if (cant18 > 0) {
+                String x = "Pera";
+                float y = (float) 0.25;
+            
+                Bill fact = new Bill();
+                fact.setConcepto(y);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant18);
+
+                float total = cant18 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+                
+            }if (cant19 > 0) {
+                String x = "Banana";
+                float y = (float) 0.25;
+
+                
+                Bill fact = new Bill();
+                fact.setConcepto(y);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant19);
+
+                float total = cant19 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+                
+            }if (cant20 > 0) {
+                String x = "Estofado de carne";
+                float y = (float) 1.50;
+
+                
+                Bill fact = new Bill();
+                fact.setConcepto(y);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant20);
+
+                float total = cant20 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+                
+            }if (cant21 > 0) {
+                String x = "Estofado de Pollo";
+                float y = (float) 1.50;
+
+                
+                Bill fact = new Bill();
+                fact.setConcepto(y);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant21);
+
+                float total = cant21 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
 
                 DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
                 model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
                 factTable.setModel(model3);
             }
 
+
            
-            //Asignacion de iva prop y total a labels factura
-            Double iva = contTotal * 0.19;
-            Double prop = contTotal * 0.10;
+            //iva prop y total a labels factura
+            Double iva = contTotal * 0.12;
+            Double prop = contTotal * 0.05;
             Double tot = iva + prop + contTotal;
             IVA.setText(String.valueOf(iva));
             PROPINA.setText(String.valueOf(prop));
@@ -1446,12 +1909,12 @@ int contador = 0;
             String fecha1 = (new Date()).toString();
 
         } else {
-            JOptionPane.showMessageDialog(null, "No coinciden las mesas, verifique nuevamente");
+            JOptionPane.showMessageDialog(null, "Tables do not match, check again");
             txtTableNumber.setText("");
         }
 
         if (txtTableNumber.getText().equals("")) {
-            JOptionPane.showMessageDialog(null, "No ha ingresa numero de mesa para generar factura.");
+            JOptionPane.showMessageDialog(null, "You have not entered a table number to generate an invoice.");
         }
     }//GEN-LAST:event_btngenerateBillActionPerformed
 
@@ -1570,9 +2033,12 @@ int contador = 0;
     private javax.swing.JButton btnDessert;
     private javax.swing.JButton btnDrink;
     private javax.swing.JButton btnExit;
+    private javax.swing.JButton btnGenerateBill;
     private javax.swing.JButton btnLunch;
+    private javax.swing.JButton btnOtherOrder;
     private javax.swing.JButton btnReturn;
     private javax.swing.JButton btnReturn1;
+    private javax.swing.JButton btnReturn3;
     private javax.swing.JButton btnSendOrder;
     private javax.swing.JButton btnSnack;
     private javax.swing.JButton btngenerateBill;
@@ -1583,12 +2049,9 @@ int contador = 0;
     private javax.swing.JTable datosTable2;
     private javax.swing.JLabel fac;
     private javax.swing.JTable factTable;
-    private javax.swing.JButton generaFact;
     private javax.swing.JLabel horario;
     private javax.swing.JLabel infoFact;
-    private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
     private javax.swing.JButton jButton19;
     private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel1;
@@ -1615,8 +2078,6 @@ int contador = 0;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
@@ -1650,7 +2111,7 @@ int contador = 0;
     private javax.swing.JLabel leche;
     private javax.swing.JTextField nombreCli;
     private javax.swing.JLabel nombreMese;
-    private javax.swing.JComboBox<String> numMesa;
+    private javax.swing.JTextField numMesa;
     private javax.swing.JLabel numMesa2;
     private javax.swing.JSpinner spiValor;
     private javax.swing.JSpinner spiValor10;
