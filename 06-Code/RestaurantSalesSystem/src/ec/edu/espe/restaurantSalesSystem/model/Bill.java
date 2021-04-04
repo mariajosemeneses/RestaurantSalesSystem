@@ -18,7 +18,7 @@ public class Bill {
 
    private float precio;
 
-    private float concepto;
+    private String concepto;
 
     private int cantidad;
 
@@ -58,11 +58,11 @@ public class Bill {
         this.precio = precio;
     }
     
-     public void setConcepto(float concepto) {
+     public void setConcepto(String concepto) {
         this.concepto = concepto;
     }
     
-    public float getConcepto() {
+    public String getConcepto() {
         return concepto;
     }
     
