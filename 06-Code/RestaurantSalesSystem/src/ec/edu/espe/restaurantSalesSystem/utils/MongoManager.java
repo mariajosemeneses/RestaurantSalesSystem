@@ -8,39 +8,17 @@ package ec.edu.espe.restaurantSalesSystem.utils;
 import com.mongodb.BasicDBObject;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
-import com.mongodb.DBCursor;
 import com.mongodb.MongoClient;
-import java.util.Scanner;
+import com.mongodb.MongoClientURI;
 
 /**
  *
  * @author Group 3
  */
-public class MongoManager implements Persistence{
+public class MongoManager implements NoSQL {
 
-    public void create(MongoClient mongo, String dataBase, String collection, String name,
-            String address, String email, String cellPhone, int age, String id) {
-        DB db = mongo.getDB(dataBase);
-        DBCollection dbCollection = db.getCollection(collection);
-        BasicDBObject document = new BasicDBObject();
-        if (dataBase.equals("Employee")) {
-            document.put("name", name);
-            document.put("address", address);
-            document.put("email", email);
-            document.put("cellPhone", cellPhone);
-            document.put("age", age);
-            document.put("id", id);
-        } else {
-            document.put("name", name);
-            document.put("address", address);
-            document.put("email", email);
-            document.put("cellPhone", cellPhone);
-        }
-        dbCollection.insert(document);   
-    }
-    
     public void create(MongoClient mongo, String dataBase, String collection, String continental, float priceContinental,
-        String full, float priceFull) {
+            String full, float priceFull) {
 
         DB db = mongo.getDB(dataBase);
         DBCollection dbCollection = db.getCollection(collection);
@@ -49,12 +27,12 @@ public class MongoManager implements Persistence{
         document.put("Continental", continental);
         document.put("Price Continental", priceContinental);
         document.put("Full", full);
-        document.put("Price Full",priceFull);
+        document.put("Price Full", priceFull);
         dbCollection.insert(document);
     }
-    public void create(MongoClient mongo, String dataBase, String collection, String soup,String mainCourse,
-    String drink,String dessert,float priceLunch) 
-    {
+
+    public void create(MongoClient mongo, String dataBase, String collection, String soup, String mainCourse,
+            String drink, String dessert, float priceLunch) {
 
         DB db = mongo.getDB(dataBase);
         DBCollection dbCollection = db.getCollection(collection);
@@ -63,22 +41,23 @@ public class MongoManager implements Persistence{
         document.put("Soup", soup);
         document.put("Main Course", mainCourse);
         document.put("Drink", drink);
-        document.put("Dessert",dessert);
-        document.put("Price",priceLunch);
+        document.put("Dessert", dessert);
+        document.put("Price", priceLunch);
         dbCollection.insert(document);
     }
-    public void create(MongoClient mongo, String dataBase, String collection, int number,String dessert,float price) 
-    {
+
+    public void create(MongoClient mongo, String dataBase, String collection, int number, String dessert, float price) {
 
         DB db = mongo.getDB(dataBase);
         DBCollection dbCollection = db.getCollection(collection);
         BasicDBObject document = new BasicDBObject();
-        
+
         document.put("Number", number);
         document.put("Dessert", dessert);
         document.put("Price", price);
         dbCollection.insert(document);
     }
+
     public void create(MongoClient mongo, String dataBase, String collection1, String name, String id,
             String quantity, String price) {
 
@@ -90,7 +69,7 @@ public class MongoManager implements Persistence{
             document1.put("id", id);
             document1.put("quantity", quantity);
             document1.put("price", price);
-            
+
         } else {
             document1.put("name", name);
             document1.put("id", id);
@@ -100,86 +79,97 @@ public class MongoManager implements Persistence{
         dbCollection.insert(document1);
     }
 
-    public void read(MongoClient mongo, String dataBase, String collection) {
-        DB db = mongo.getDB(dataBase);
-        DBCollection dbCollection = db.getCollection(collection);
-        DBCursor cursor = dbCollection.find();
+    @Override
+    public MongoClient openConnection(String URL) {
+        try {
+            MongoClientURI uri = new MongoClientURI(URL);
+            MongoClient mongo = new MongoClient(uri);
+            return mongo;
 
-        while (cursor.hasNext()) {
-            if (collection.equals("Employee")) {
-                System.out.println(cursor.next().get("id") + "  " + cursor.curr().get("name") + "  "
-                        + cursor.curr().get("address") + "  " + cursor.curr().get("email") + "  "
-                        + cursor.curr().get("cellPhone") + "  " + cursor.curr().get("age"));
-            } else {
-                System.out.println(cursor.next().get("name") + "  " + cursor.curr().get("address") + "  "
-                        + cursor.curr().get("email") + "  " + cursor.curr().get("cellPhone"));
-            }
+        } catch (Exception ex) {
+            return null;
         }
     }
-   
-    public void update(MongoClient mongo, String dataBase, String collection, String data) {
-        DB db = mongo.getDB(dataBase);
-        DBCollection dbCollection = db.getCollection(collection);
-        Scanner input = new Scanner(System.in);
-        String newName = "";
 
-        BasicDBObject searchedName = new BasicDBObject();
-        searchedName.append("name", data);
-        System.out.println("Enter new Name: ");
-        newName = input.nextLine();
-        BasicDBObject updateData = new BasicDBObject();
-        updateData.append("$set", new BasicDBObject().append("name", newName));
-        dbCollection.updateMulti(searchedName, updateData);
-    }
-    
+    @Override
+    public boolean closeConnection(MongoClient mongo) {
+        boolean closed = false;
+        try {
+            mongo.close();
+            closed = true;
 
-    public void delete(MongoClient mongo, String dataBase, String collection, String name) {
-        DB db = mongo.getDB(dataBase);
-        DBCollection dbCollection = db.getCollection(collection);
-        dbCollection.remove(new BasicDBObject().append("name", name));
-    }
-
-    public void findName(MongoClient mongo, String dataBase, String collection, String name) {
-        DB db = mongo.getDB(dataBase);
-        DBCollection dbCollection = db.getCollection(collection);
-        BasicDBObject query = new BasicDBObject();
-        query.put("name", name);
-
-        DBCursor cursor = dbCollection.find(query);
-        while (cursor.hasNext()) {
-            if (collection.equals("Employee")) {
-                System.out.println(cursor.next().get("id") + "  " + cursor.curr().get("name") + "  "
-                        + cursor.curr().get("address") + "  " + cursor.curr().get("email") + "  "
-                        + cursor.curr().get("cellPhone") + "  " + cursor.curr().get("age"));
-            } else {
-                System.out.println(cursor.next().get("name") + "  " + cursor.curr().get("address") + "  "
-                        + cursor.curr().get("email") + "  " + cursor.curr().get("cellPhone"));
-            }
+        } catch (Exception ex) {
+            closed = false;
         }
-    }        
-
-    @Override
-    public boolean create(String data, String table) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return closed;
     }
 
     @Override
-    public String find(String dataToFind, String field, String table) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public boolean create(String data, String table, BasicDBObject document) {
+        boolean created = false;
+        try {
+            MongoClient mongo = openConnection("mongodb+srv://unitedByCode:group3@data.j0bvg.mongodb.net"
+                    + "/<dbname>?retryWrites=true&w=majority");
+            DB db = mongo.getDB(data);
+            DBCollection dbCollection = db.getCollection(table);
+            dbCollection.insert(document);
+        } catch (Exception ex) {
+            System.out.println("Could not create");
+            created = false;
+        }
+        return created;
     }
 
     @Override
-    public boolean update(String dataToFind, String newData, String table) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public String find(String dataBase, String dataToFind, String field, String table) {
+        return null;
     }
 
     @Override
-    public boolean delete(String dataToFind, String table) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public boolean update(String dataBase, String dataToFind, String newData, String field, String table) {
+        boolean updated = false;
+
+        try {
+            MongoClient mongo = openConnection("mongodb+srv://unitedByCode:group3@data.j0bvg.mongodb.net"
+                    + "/<dbname>?retryWrites=true&w=majority");
+            DB db = mongo.getDB(dataBase);
+            DBCollection dbCollection = db.getCollection(table);
+
+            BasicDBObject searchedName = new BasicDBObject();
+            searchedName.append(field, dataToFind);
+
+            BasicDBObject updateData = new BasicDBObject();
+            updateData.append("$set", new BasicDBObject().append(field, newData));
+            dbCollection.updateMulti(searchedName, updateData);
+            updated = true;
+
+        } catch (Exception ex) {
+            System.out.println("Data not found");
+            updated = false;
+        }
+        return updated;
+
     }
 
     @Override
-    public String read(String table) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public boolean delete(String dataBase, String dataToFind, String field, String table) {
+        boolean deleted = false;
+        try {
+            MongoClient mongo = openConnection("mongodb+srv://unitedByCode:group3@data.j0bvg.mongodb.net"
+                    + "/<dbname>?retryWrites=true&w=majority");
+            DB db = mongo.getDB(dataBase);
+            DBCollection dbCollection = db.getCollection(table);
+            dbCollection.remove(new BasicDBObject().append(field, dataToFind));
+        } catch (Exception ex) {
+            System.out.println("Data not found");
+            deleted = false;
+        }
+        return deleted;
     }
+
+    @Override
+    public String read(String dataBase, String table) {
+        return null;
+    }
+
 }

@@ -9,7 +9,7 @@ package ec.edu.espe.restaurantSalesSystem.model;
  *
  * @author Group3
  */
-public abstract class Product {
+public class Product {
 
     private String typeOfProduct;
     private String description;
