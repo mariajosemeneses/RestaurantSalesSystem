@@ -25,48 +25,6 @@ public class FrmMenu extends javax.swing.JFrame {
      */
     public FrmMenu() {
         initComponents();
-        
-        this.setLocationRelativeTo(null);
-        
-//        rsscalelabel.RSScaleLabel.setScaleLabel(jLocro,
-//        "src/ec/edu/espe/restaurantSalesSystem/images/Locro.jpg" );
-//        
-//        rsscalelabel.RSScaleLabel.setScaleLabel(jCremaTomato,
-//        "src/ec/edu/espe/restaurantSalesSystem/images/CremaTomato.jpg" );
-//        
-//        rsscalelabel.RSScaleLabel.setScaleLabel(jCaldoGallina,
-//        "src/ec/edu/espe/restaurantSalesSystem/images/CaldoGallina.jpg" );
-//        
-//        rsscalelabel.RSScaleLabel.setScaleLabel(jChuleta,
-//        "src/ec/edu/espe/restaurantSalesSystem/images/Chuleta.jpg" );
-//
-//        rsscalelabel.RSScaleLabel.setScaleLabel(jCamaron,
-//        "src/ec/edu/espe/restaurantSalesSystem/images/Camaron.jpg" );
-//        
-//        rsscalelabel.RSScaleLabel.setScaleLabel(jLasaña,
-//        "src/ec/edu/espe/restaurantSalesSystem/images/Lasaña.jpg" );
-//        
-//        
-//        
-//        rsscalelabel.RSScaleLabel.setScaleLabel(jPineapple,
-//        "src/ec/edu/espe/restaurantSalesSystem/images/Pineapple.jpg" );
-//        
-//        rsscalelabel.RSScaleLabel.setScaleLabel(jBabaco,
-//        "src/ec/edu/espe/restaurantSalesSystem/images/Babaco.jpg" );
-//        
-//        rsscalelabel.RSScaleLabel.setScaleLabel(jNaranjilla,
-//        "src/ec/edu/espe/restaurantSalesSystem/images/Naranjillas.jpg" );
-//        
-//        rsscalelabel.RSScaleLabel.setScaleLabel(jBrownies,
-//        "src/ec/edu/espe/restaurantSalesSystem/images/Brownie.jpg" );
-//        
-//        rsscalelabel.RSScaleLabel.setScaleLabel(jChesecake,
-//        "src/ec/edu/espe/restaurantSalesSystem/images/Chesecake.jpg" );
-//        
-//        rsscalelabel.RSScaleLabel.setScaleLabel(jThreeMilksCake,
-//        "src/ec/edu/espe/restaurantSalesSystem/images/ThreeMilksCake.jpg" );
-        
-        
     }
 
     /**
@@ -139,6 +97,54 @@ public class FrmMenu extends javax.swing.JFrame {
         spiValor20 = new javax.swing.JSpinner();
         spiValor21 = new javax.swing.JSpinner();
         jSeparator5 = new javax.swing.JSeparator();
+        MenuLunch = new javax.swing.JFrame();
+        jLabel53 = new javax.swing.JLabel();
+        spiValor32 = new javax.swing.JSpinner();
+        jLabel49 = new javax.swing.JLabel();
+        jNaranjilla = new javax.swing.JLabel();
+        spiValor26 = new javax.swing.JSpinner();
+        spiValor23 = new javax.swing.JSpinner();
+        jLabel46 = new javax.swing.JLabel();
+        spiValor28 = new javax.swing.JSpinner();
+        jCaldoGallina = new javax.swing.JLabel();
+        jLabel50 = new javax.swing.JLabel();
+        jSeparator9 = new javax.swing.JSeparator();
+        jLasaña = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jChuleta = new javax.swing.JLabel();
+        spiValor24 = new javax.swing.JSpinner();
+        jLabel48 = new javax.swing.JLabel();
+        jLabel40 = new javax.swing.JLabel();
+        jSeparator7 = new javax.swing.JSeparator();
+        jLabel42 = new javax.swing.JLabel();
+        jLabel54 = new javax.swing.JLabel();
+        jLabel52 = new javax.swing.JLabel();
+        jLocro = new javax.swing.JLabel();
+        jLabel51 = new javax.swing.JLabel();
+        spiValor25 = new javax.swing.JSpinner();
+        jChesecake = new javax.swing.JLabel();
+        jSeparator8 = new javax.swing.JSeparator();
+        jSeparator6 = new javax.swing.JSeparator();
+        jBabaco = new javax.swing.JLabel();
+        jPineapple = new javax.swing.JLabel();
+        spiValor22 = new javax.swing.JSpinner();
+        spiValor1 = new javax.swing.JSpinner();
+        btnOrderLunch = new javax.swing.JButton();
+        spiValor29 = new javax.swing.JSpinner();
+        jLabel8 = new javax.swing.JLabel();
+        jCremaTomato = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jBrownies = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        spiValor30 = new javax.swing.JSpinner();
+        spiValor31 = new javax.swing.JSpinner();
+        jLabel55 = new javax.swing.JLabel();
+        btnReturn2 = new javax.swing.JButton();
+        spiValor27 = new javax.swing.JSpinner();
+        jLabel47 = new javax.swing.JLabel();
+        jThreeMilksCake = new javax.swing.JLabel();
+        jCamaron = new javax.swing.JLabel();
         Order = new javax.swing.JDialog();
         jPanel3 = new javax.swing.JPanel();
         jLabel31 = new javax.swing.JLabel();
@@ -186,55 +192,6 @@ public class FrmMenu extends javax.swing.JFrame {
         PROPINA = new javax.swing.JLabel();
         btnPay = new javax.swing.JButton();
         txtNameCashier = new javax.swing.JTextField();
-        MenuLunch = new javax.swing.JFrame();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel53 = new javax.swing.JLabel();
-        jLabel54 = new javax.swing.JLabel();
-        jSeparator6 = new javax.swing.JSeparator();
-        jLabel55 = new javax.swing.JLabel();
-        jLabel42 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel46 = new javax.swing.JLabel();
-        jNaranjilla = new javax.swing.JLabel();
-        jLabel47 = new javax.swing.JLabel();
-        spiValor25 = new javax.swing.JSpinner();
-        jLabel48 = new javax.swing.JLabel();
-        jBabaco = new javax.swing.JLabel();
-        spiValor26 = new javax.swing.JSpinner();
-        spiValor27 = new javax.swing.JSpinner();
-        spiValor28 = new javax.swing.JSpinner();
-        jSeparator7 = new javax.swing.JSeparator();
-        jLabel49 = new javax.swing.JLabel();
-        jPineapple = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jSeparator8 = new javax.swing.JSeparator();
-        spiValor22 = new javax.swing.JSpinner();
-        jLabel50 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        spiValor29 = new javax.swing.JSpinner();
-        jLabel32 = new javax.swing.JLabel();
-        jLabel51 = new javax.swing.JLabel();
-        jSeparator9 = new javax.swing.JSeparator();
-        jLabel33 = new javax.swing.JLabel();
-        spiValor30 = new javax.swing.JSpinner();
-        jLabel40 = new javax.swing.JLabel();
-        spiValor23 = new javax.swing.JSpinner();
-        jLabel52 = new javax.swing.JLabel();
-        spiValor24 = new javax.swing.JSpinner();
-        btnReturn2 = new javax.swing.JButton();
-        spiValor31 = new javax.swing.JSpinner();
-        spiValor32 = new javax.swing.JSpinner();
-        spiValor1 = new javax.swing.JSpinner();
-        jBrownies = new javax.swing.JLabel();
-        jChesecake = new javax.swing.JLabel();
-        jThreeMilksCake = new javax.swing.JLabel();
-        btnOrderLunch = new javax.swing.JButton();
-        jChuleta = new javax.swing.JLabel();
-        jCamaron = new javax.swing.JLabel();
-        jLasaña = new javax.swing.JLabel();
-        jLocro = new javax.swing.JLabel();
-        jCremaTomato = new javax.swing.JLabel();
-        jCaldoGallina = new javax.swing.JLabel();
         btnBreakfast = new javax.swing.JButton();
         btnLunch = new javax.swing.JButton();
         btnSnack = new javax.swing.JButton();
@@ -648,6 +605,320 @@ public class FrmMenu extends javax.swing.JFrame {
                         .addGap(26, 26, 26))))
         );
 
+        jLabel53.setFont(new java.awt.Font("Consolas", 3, 14)); // NOI18N
+        jLabel53.setText("CALDO DE GALLINA (PECHUGA DE POLLO PICADA, ALVERJA, PAPAS, ZANAHORIA Y APIO)........$1,25");
+
+        jLabel49.setFont(new java.awt.Font("Consolas", 3, 14)); // NOI18N
+        jLabel49.setText("LASAÑA DE POLLO (ENSALADA, PAPAS FRITAS).............................................$3,20");
+
+        jNaranjilla.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jLabel46.setFont(new java.awt.Font("Consolas", 3, 14)); // NOI18N
+        jLabel46.setText("BROWNIE..................$0,75");
+
+        jCaldoGallina.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jLabel50.setFont(new java.awt.Font("Consolas", 3, 14)); // NOI18N
+        jLabel50.setText("CAMARONES APANADOS (SALSA RANCH, ARROZ, MADURO FRITO, PAPAS FRITAS Y ENSALADA).......$2,20");
+
+        jLasaña.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jLabel10.setFont(new java.awt.Font("Pristina", 0, 24)); // NOI18N
+        jLabel10.setText("Dessert");
+
+        jLabel9.setFont(new java.awt.Font("Baskerville Old Face", 3, 24)); // NOI18N
+        jLabel9.setText("LUNCH");
+
+        jChuleta.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jLabel48.setFont(new java.awt.Font("Pristina", 0, 24)); // NOI18N
+        jLabel48.setText("Main Course");
+
+        jLabel40.setFont(new java.awt.Font("Consolas", 3, 14)); // NOI18N
+        jLabel40.setText("VASO DE JUGO DE PIÑA...............$0,50");
+
+        jLabel42.setFont(new java.awt.Font("Consolas", 3, 14)); // NOI18N
+        jLabel42.setText("CHESECAKE................$0,75");
+
+        jLabel54.setFont(new java.awt.Font("Consolas", 3, 14)); // NOI18N
+        jLabel54.setText("CREMA DE TOMATE (COLIFLOR, BRÓCOLI, ZANAHORIA Y CREMA DE TOMATE)....................$1,25");
+
+        jLabel52.setFont(new java.awt.Font("Consolas", 3, 14)); // NOI18N
+        jLabel52.setText("PASTEL TRES LECHES.......$0,75");
+
+        jLocro.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jLabel51.setFont(new java.awt.Font("Consolas", 3, 14)); // NOI18N
+        jLabel51.setText("CHULETA DE CERDO (ARROZ, PAPAS FRITAS Y ENSALADA)....................................$2,00");
+
+        jChesecake.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jSeparator8.setOrientation(javax.swing.SwingConstants.VERTICAL);
+
+        jBabaco.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jPineapple.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        btnOrderLunch.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnOrderLunch.setText("Add Order");
+        btnOrderLunch.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnOrderLunchActionPerformed(evt);
+            }
+        });
+
+        jLabel8.setFont(new java.awt.Font("Pristina", 0, 24)); // NOI18N
+        jLabel8.setText("Soup");
+
+        jCremaTomato.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jLabel32.setFont(new java.awt.Font("Consolas", 3, 14)); // NOI18N
+        jLabel32.setText("VASO DE JUGO DE NARANJILLA.........$0,50");
+
+        jBrownies.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jLabel33.setFont(new java.awt.Font("Consolas", 3, 14)); // NOI18N
+        jLabel33.setText("VASO DE JUGO DE BABACO.............$0,50");
+
+        jLabel55.setFont(new java.awt.Font("Consolas", 3, 14)); // NOI18N
+        jLabel55.setText("LOCRO DE PAPAS CON QUESO Y AGUACATE.................................................$1,25");
+
+        btnReturn2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnReturn2.setText("Return");
+        btnReturn2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnReturn2ActionPerformed(evt);
+            }
+        });
+
+        jLabel47.setFont(new java.awt.Font("Pristina", 0, 24)); // NOI18N
+        jLabel47.setText("Juice");
+
+        jThreeMilksCake.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jCamaron.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        javax.swing.GroupLayout MenuLunchLayout = new javax.swing.GroupLayout(MenuLunch.getContentPane());
+        MenuLunch.getContentPane().setLayout(MenuLunchLayout);
+        MenuLunchLayout.setHorizontalGroup(
+            MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(MenuLunchLayout.createSequentialGroup()
+                .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(MenuLunchLayout.createSequentialGroup()
+                        .addGap(337, 337, 337)
+                        .addComponent(jLabel8))
+                    .addGroup(MenuLunchLayout.createSequentialGroup()
+                        .addGap(17, 17, 17)
+                        .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel55)
+                            .addComponent(jLabel54)
+                            .addComponent(jLabel53, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addGap(18, 18, 18)
+                        .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(spiValor22, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(spiValor23, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(spiValor24, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(83, 83, 83)
+                        .addComponent(jLocro, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jCremaTomato, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jCaldoGallina, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 1194, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(MenuLunchLayout.createSequentialGroup()
+                        .addGap(313, 313, 313)
+                        .addComponent(jLabel48))
+                    .addGroup(MenuLunchLayout.createSequentialGroup()
+                        .addGap(24, 24, 24)
+                        .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel51)
+                            .addComponent(jLabel50)
+                            .addComponent(jLabel49, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addGap(18, 18, 18)
+                        .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(spiValor25, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(spiValor26, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(spiValor27, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(72, 72, 72)
+                        .addComponent(jChuleta, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jCamaron, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLasaña, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jSeparator7, javax.swing.GroupLayout.PREFERRED_SIZE, 1194, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(MenuLunchLayout.createSequentialGroup()
+                        .addGap(24, 24, 24)
+                        .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(MenuLunchLayout.createSequentialGroup()
+                                .addGap(169, 169, 169)
+                                .addComponent(jLabel47))
+                            .addComponent(jLabel40)
+                            .addComponent(jLabel33)
+                            .addComponent(jLabel32))
+                        .addGap(18, 18, 18)
+                        .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(spiValor28, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(spiValor29, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(spiValor30, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(MenuLunchLayout.createSequentialGroup()
+                                .addComponent(jPineapple, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jBabaco, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(MenuLunchLayout.createSequentialGroup()
+                                .addGap(58, 58, 58)
+                                .addComponent(jNaranjilla, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(21, 21, 21)
+                        .addComponent(jSeparator8, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(MenuLunchLayout.createSequentialGroup()
+                                .addGap(105, 105, 105)
+                                .addComponent(jLabel10))
+                            .addGroup(MenuLunchLayout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel46)
+                                    .addComponent(jLabel42)
+                                    .addComponent(jLabel52))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(spiValor31, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(spiValor32, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(spiValor1, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(22, 22, 22)
+                        .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(MenuLunchLayout.createSequentialGroup()
+                                .addComponent(jBrownies, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jChesecake, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(MenuLunchLayout.createSequentialGroup()
+                                .addGap(57, 57, 57)
+                                .addComponent(jThreeMilksCake, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(MenuLunchLayout.createSequentialGroup()
+                        .addGap(487, 487, 487)
+                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(MenuLunchLayout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jSeparator9, javax.swing.GroupLayout.PREFERRED_SIZE, 1194, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(MenuLunchLayout.createSequentialGroup()
+                                .addComponent(btnReturn2, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btnOrderLunch, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(208, 208, 208)))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        MenuLunchLayout.setVerticalGroup(
+            MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(MenuLunchLayout.createSequentialGroup()
+                .addGap(11, 11, 11)
+                .addComponent(jLabel9)
+                .addGap(6, 6, 6)
+                .addComponent(jLabel8)
+                .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(MenuLunchLayout.createSequentialGroup()
+                        .addGap(2, 2, 2)
+                        .addComponent(jLabel55)
+                        .addGap(14, 14, 14)
+                        .addComponent(jLabel54))
+                    .addGroup(MenuLunchLayout.createSequentialGroup()
+                        .addComponent(spiValor22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(11, 11, 11)
+                        .addComponent(spiValor23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(11, 11, 11)
+                        .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(spiValor24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel53)))
+                    .addGroup(MenuLunchLayout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addComponent(jLocro, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(MenuLunchLayout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addComponent(jCremaTomato, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(MenuLunchLayout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addComponent(jCaldoGallina, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(18, 18, 18)
+                .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(6, 6, 6)
+                .addComponent(jLabel48)
+                .addGap(11, 11, 11)
+                .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(MenuLunchLayout.createSequentialGroup()
+                        .addGap(2, 2, 2)
+                        .addComponent(jLabel51)
+                        .addGap(14, 14, 14)
+                        .addComponent(jLabel50))
+                    .addGroup(MenuLunchLayout.createSequentialGroup()
+                        .addComponent(spiValor25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(11, 11, 11)
+                        .addComponent(spiValor26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(11, 11, 11)
+                        .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(spiValor27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel49)))
+                    .addComponent(jChuleta, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jCamaron, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLasaña, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jSeparator7, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(13, 13, 13)
+                .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(MenuLunchLayout.createSequentialGroup()
+                        .addGap(5, 5, 5)
+                        .addComponent(jLabel47)
+                        .addGap(9, 9, 9)
+                        .addComponent(jLabel40)
+                        .addGap(14, 14, 14)
+                        .addComponent(jLabel33)
+                        .addGap(14, 14, 14)
+                        .addComponent(jLabel32))
+                    .addGroup(MenuLunchLayout.createSequentialGroup()
+                        .addGap(41, 41, 41)
+                        .addComponent(spiValor28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(11, 11, 11)
+                        .addComponent(spiValor29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(11, 11, 11)
+                        .addComponent(spiValor30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(MenuLunchLayout.createSequentialGroup()
+                        .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jPineapple, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jBabaco, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addComponent(jNaranjilla, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jSeparator8, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(MenuLunchLayout.createSequentialGroup()
+                        .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jBrownies, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jChesecake, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addComponent(jThreeMilksCake, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(MenuLunchLayout.createSequentialGroup()
+                        .addComponent(jLabel10)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(MenuLunchLayout.createSequentialGroup()
+                                .addComponent(spiValor31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(11, 11, 11)
+                                .addComponent(spiValor32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(11, 11, 11)
+                                .addComponent(spiValor1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(MenuLunchLayout.createSequentialGroup()
+                                .addGap(3, 3, 3)
+                                .addComponent(jLabel46)
+                                .addGap(14, 14, 14)
+                                .addComponent(jLabel42)
+                                .addGap(14, 14, 14)
+                                .addComponent(jLabel52)))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jSeparator9, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(6, 6, 6)
+                .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnReturn2)
+                    .addComponent(btnOrderLunch)))
+        );
+
         Order.setTitle("PEDIDOS");
         Order.setMinimumSize(new java.awt.Dimension(840, 580));
         Order.setModal(true);
@@ -1050,331 +1321,6 @@ public class FrmMenu extends javax.swing.JFrame {
 
         Bill.getContentPane().add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 680, 710));
 
-        jLabel53.setFont(new java.awt.Font("Consolas", 3, 14)); // NOI18N
-        jLabel53.setText("CALDO DE GALLINA (PECHUGA DE POLLO PICADA, ALVERJA, PAPAS, ZANAHORIA Y APIO)........$1,25");
-
-        jLabel54.setFont(new java.awt.Font("Consolas", 3, 14)); // NOI18N
-        jLabel54.setText("CREMA DE TOMATE (COLIFLOR, BRÓCOLI, ZANAHORIA Y CREMA DE TOMATE)....................$1,25");
-
-        jLabel55.setFont(new java.awt.Font("Consolas", 3, 14)); // NOI18N
-        jLabel55.setText("LOCRO DE PAPAS CON QUESO Y AGUACATE.................................................$1,25");
-
-        jLabel42.setFont(new java.awt.Font("Consolas", 3, 14)); // NOI18N
-        jLabel42.setText("CHESECAKE................$0,75");
-
-        jLabel10.setFont(new java.awt.Font("Pristina", 0, 24)); // NOI18N
-        jLabel10.setText("Dessert");
-
-        jLabel46.setFont(new java.awt.Font("Consolas", 3, 14)); // NOI18N
-        jLabel46.setText("BROWNIE..................$0,75");
-
-        jNaranjilla.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        jLabel47.setFont(new java.awt.Font("Pristina", 0, 24)); // NOI18N
-        jLabel47.setText("Juice");
-
-        jLabel48.setFont(new java.awt.Font("Pristina", 0, 24)); // NOI18N
-        jLabel48.setText("Main Course");
-
-        jBabaco.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        jLabel49.setFont(new java.awt.Font("Consolas", 3, 14)); // NOI18N
-        jLabel49.setText("LASAÑA DE POLLO (ENSALADA, PAPAS FRITAS).............................................$3,20");
-
-        jPineapple.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        jLabel8.setFont(new java.awt.Font("Pristina", 0, 24)); // NOI18N
-        jLabel8.setText("Soup");
-
-        jSeparator8.setOrientation(javax.swing.SwingConstants.VERTICAL);
-
-        jLabel50.setFont(new java.awt.Font("Consolas", 3, 14)); // NOI18N
-        jLabel50.setText("CAMARONES APANADOS (SALSA RANCH, ARROZ, MADURO FRITO, PAPAS FRITAS Y ENSALADA).......$2,20");
-
-        jLabel9.setFont(new java.awt.Font("Baskerville Old Face", 3, 24)); // NOI18N
-        jLabel9.setText("LUNCH");
-
-        jLabel32.setFont(new java.awt.Font("Consolas", 3, 14)); // NOI18N
-        jLabel32.setText("VASO DE JUGO DE NARANJILLA.........$0,50");
-
-        jLabel51.setFont(new java.awt.Font("Consolas", 3, 14)); // NOI18N
-        jLabel51.setText("CHULETA DE CERDO (ARROZ, PAPAS FRITAS Y ENSALADA)....................................$2,00");
-
-        jLabel33.setFont(new java.awt.Font("Consolas", 3, 14)); // NOI18N
-        jLabel33.setText("VASO DE JUGO DE BABACO.............$0,50");
-
-        jLabel40.setFont(new java.awt.Font("Consolas", 3, 14)); // NOI18N
-        jLabel40.setText("VASO DE JUGO DE PIÑA...............$0,50");
-
-        jLabel52.setFont(new java.awt.Font("Consolas", 3, 14)); // NOI18N
-        jLabel52.setText("PASTEL TRES LECHES.......$0,75");
-
-        btnReturn2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        btnReturn2.setText("Return");
-        btnReturn2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnReturn2ActionPerformed(evt);
-            }
-        });
-
-        jBrownies.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        jChesecake.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        jThreeMilksCake.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        btnOrderLunch.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        btnOrderLunch.setText("Add Order");
-        btnOrderLunch.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnOrderLunchActionPerformed(evt);
-            }
-        });
-
-        jChuleta.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        jCamaron.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        jLasaña.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        jLocro.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        jCremaTomato.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        jCaldoGallina.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(347, 347, 347)
-                .addComponent(jLabel8))
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(31, 31, 31)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel55)
-                    .addComponent(jLabel54)
-                    .addComponent(jLabel53))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(spiValor22, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(spiValor23, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(spiValor24, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(83, 83, 83)
-                .addComponent(jLocro, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jCremaTomato, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jCaldoGallina, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 1194, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(323, 323, 323)
-                .addComponent(jLabel48))
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(34, 34, 34)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel51)
-                    .addComponent(jLabel50)
-                    .addComponent(jLabel49))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(spiValor25, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(spiValor26, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(spiValor27, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(72, 72, 72)
-                .addComponent(jChuleta, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jCamaron, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLasaña, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(jSeparator7, javax.swing.GroupLayout.PREFERRED_SIZE, 1194, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(34, 34, 34)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(169, 169, 169)
-                        .addComponent(jLabel47))
-                    .addComponent(jLabel40)
-                    .addComponent(jLabel33)
-                    .addComponent(jLabel32))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(spiValor28, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(spiValor29, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(spiValor30, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jPineapple, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jBabaco, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(58, 58, 58)
-                        .addComponent(jNaranjilla, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(21, 21, 21)
-                .addComponent(jSeparator8, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(105, 105, 105)
-                        .addComponent(jLabel10))
-                    .addComponent(jLabel46)
-                    .addComponent(jLabel42)
-                    .addComponent(jLabel52))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(spiValor31, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(spiValor32, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(spiValor1, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jBrownies, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jChesecake, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(57, 57, 57)
-                        .addComponent(jThreeMilksCake, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))))
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(jSeparator9, javax.swing.GroupLayout.PREFERRED_SIZE, 1194, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(btnReturn2, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(840, 840, 840)
-                .addComponent(btnOrderLunch, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(11, 11, 11)
-                .addComponent(jLabel9)
-                .addGap(6, 6, 6)
-                .addComponent(jLabel8)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(2, 2, 2)
-                        .addComponent(jLabel55)
-                        .addGap(14, 14, 14)
-                        .addComponent(jLabel54)
-                        .addGap(14, 14, 14)
-                        .addComponent(jLabel53))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(spiValor22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(11, 11, 11)
-                        .addComponent(spiValor23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(11, 11, 11)
-                        .addComponent(spiValor24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(1, 1, 1)
-                        .addComponent(jLocro, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(1, 1, 1)
-                        .addComponent(jCremaTomato, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(1, 1, 1)
-                        .addComponent(jCaldoGallina, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
-                .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(6, 6, 6)
-                .addComponent(jLabel48)
-                .addGap(11, 11, 11)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(2, 2, 2)
-                        .addComponent(jLabel51)
-                        .addGap(14, 14, 14)
-                        .addComponent(jLabel50)
-                        .addGap(14, 14, 14)
-                        .addComponent(jLabel49))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(spiValor25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(11, 11, 11)
-                        .addComponent(spiValor26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(11, 11, 11)
-                        .addComponent(spiValor27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jChuleta, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jCamaron, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLasaña, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(jSeparator7, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(13, 13, 13)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(5, 5, 5)
-                        .addComponent(jLabel47)
-                        .addGap(9, 9, 9)
-                        .addComponent(jLabel40)
-                        .addGap(14, 14, 14)
-                        .addComponent(jLabel33)
-                        .addGap(14, 14, 14)
-                        .addComponent(jLabel32))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(41, 41, 41)
-                        .addComponent(spiValor28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(11, 11, 11)
-                        .addComponent(spiValor29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(11, 11, 11)
-                        .addComponent(spiValor30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPineapple, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBabaco, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addComponent(jNaranjilla, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jSeparator8, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel10)
-                        .addGap(20, 20, 20)
-                        .addComponent(jLabel46)
-                        .addGap(14, 14, 14)
-                        .addComponent(jLabel42)
-                        .addGap(14, 14, 14)
-                        .addComponent(jLabel52))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(47, 47, 47)
-                        .addComponent(spiValor31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(11, 11, 11)
-                        .addComponent(spiValor32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(11, 11, 11)
-                        .addComponent(spiValor1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jBrownies, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jChesecake, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addComponent(jThreeMilksCake, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
-                .addComponent(jSeparator9, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(6, 6, 6)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnReturn2)
-                    .addComponent(btnOrderLunch)))
-        );
-
-        javax.swing.GroupLayout MenuLunchLayout = new javax.swing.GroupLayout(MenuLunch.getContentPane());
-        MenuLunch.getContentPane().setLayout(MenuLunchLayout);
-        MenuLunchLayout.setHorizontalGroup(
-            MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(MenuLunchLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        MenuLunchLayout.setVerticalGroup(
-            MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(MenuLunchLayout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 647, Short.MAX_VALUE))
-        );
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         btnBreakfast.setFont(new java.awt.Font("Baskerville Old Face", 0, 14)); // NOI18N
@@ -1495,8 +1441,47 @@ public class FrmMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_btnBreakfastActionPerformed
 
     private void btnLunchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLunchActionPerformed
+       
        MenuLunch.setVisible(true);
        MenuLunch.setLocationRelativeTo(null);
+       this.setLocationRelativeTo(null);
+        
+        rsscalelabel.RSScaleLabel.setScaleLabel(jLocro,
+        "src/ec/edu/espe/restaurantSalesSystem/images/Locro.jpg");
+        
+        rsscalelabel.RSScaleLabel.setScaleLabel(jCremaTomato,
+        "src/ec/edu/espe/restaurantSalesSystem/images/CremaTomato.jpg");
+        
+        rsscalelabel.RSScaleLabel.setScaleLabel(jCaldoGallina,
+        "src/ec/edu/espe/restaurantSalesSystem/images/CaldoGallina.jpg");
+        
+        rsscalelabel.RSScaleLabel.setScaleLabel(jChuleta,
+        "src/ec/edu/espe/restaurantSalesSystem/images/Chuleta.jpg");
+
+        rsscalelabel.RSScaleLabel.setScaleLabel(jCamaron,
+        "src/ec/edu/espe/restaurantSalesSystem/images/Camaron.jpg");
+        
+        rsscalelabel.RSScaleLabel.setScaleLabel(jLasaña,
+        "src/ec/edu/espe/restaurantSalesSystem/images/Lasaña.jpg");
+        
+        
+        rsscalelabel.RSScaleLabel.setScaleLabel(jPineapple,
+        "src/ec/edu/espe/restaurantSalesSystem/images/Pineapple.jpg");
+        
+        rsscalelabel.RSScaleLabel.setScaleLabel(jBabaco,
+        "src/ec/edu/espe/restaurantSalesSystem/images/Babaco.jpg");
+        
+        rsscalelabel.RSScaleLabel.setScaleLabel(jNaranjilla,
+        "src/ec/edu/espe/restaurantSalesSystem/images/Naranjillas.jpg");
+        
+        rsscalelabel.RSScaleLabel.setScaleLabel(jBrownies,
+        "src/ec/edu/espe/restaurantSalesSystem/images/Brownie.jpg");
+        
+        rsscalelabel.RSScaleLabel.setScaleLabel(jChesecake,
+        "src/ec/edu/espe/restaurantSalesSystem/images/Chesecake.jpg");
+        
+        rsscalelabel.RSScaleLabel.setScaleLabel(jThreeMilksCake,
+        "src/ec/edu/espe/restaurantSalesSystem/images/ThreeMilksCake.jpg");
     }//GEN-LAST:event_btnLunchActionPerformed
 
     private void btnSnackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSnackActionPerformed
@@ -1527,7 +1512,7 @@ public class FrmMenu extends javax.swing.JFrame {
 
         DefaultTableModel model = (DefaultTableModel) datosTable.getModel();
     
-        if ( spiValor.getValue().hashCode() > 0) {
+        if (spiValor.getValue().hashCode() > 0) {
             String x = "Cafe en Agua";
             float y;
             y = (float) 0.50 ;
@@ -1778,14 +1763,14 @@ public class FrmMenu extends javax.swing.JFrame {
                 model2.addRow(new Object[]{x, spiValor20.getValue(), numMesa.getText()});
             }
         }
-         if (spiValor21.getValue().hashCode() > 0) {
+        if (spiValor21.getValue().hashCode() > 0) {
             String x = "Estofado de Pollo";
             if (Integer.parseInt(numMesa.getText()) >= 0) {
                 model2.addRow(new Object[]{x, spiValor21.getValue(), numMesa.getText()});
             }
         }
          //lunch
-         if (spiValor22.getValue().hashCode() > 0) {
+        if (spiValor22.getValue().hashCode() > 0) {
             String x = "Locro de Papas";
             if (Integer.parseInt(numMesa.getText()) >= 0) {
                 model2.addRow(new Object[]{x, spiValor22.getValue(), numMesa.getText()});
@@ -1797,10 +1782,67 @@ public class FrmMenu extends javax.swing.JFrame {
                 model2.addRow(new Object[]{x, spiValor23.getValue(), numMesa.getText()});
             }
         }
-         
-         
+        if (spiValor24.getValue().hashCode() > 0) {
+            String x = "Caldo de gallina";
+            if (Integer.parseInt(numMesa.getText()) >= 0) {
+                model2.addRow(new Object[]{x, spiValor24.getValue(), numMesa.getText()});
+            }
+        }
+        if (spiValor25.getValue().hashCode() > 0) {
+            String x = "Chuleta de Cerdo";
+            if (Integer.parseInt(numMesa.getText()) >= 0) {
+                model2.addRow(new Object[]{x, spiValor25.getValue(), numMesa.getText()});
+            }
+        }
+        if (spiValor26.getValue().hashCode() > 0) {
+            String x = "Camarones Apanados";
+            if (Integer.parseInt(numMesa.getText()) >= 0) {
+                model2.addRow(new Object[]{x, spiValor26.getValue(), numMesa.getText()});
+            }
+        }
+        if (spiValor27.getValue().hashCode() > 0) {
+            String x = "Lasaña de Pollo";
+            if (Integer.parseInt(numMesa.getText()) >= 0) {
+                model2.addRow(new Object[]{x, spiValor27.getValue(), numMesa.getText()});
+            }
+        }
+        if (spiValor28.getValue().hashCode() > 0) {
+            String x = "Jugo de Piña";
+            if (Integer.parseInt(numMesa.getText()) >= 0) {
+                model2.addRow(new Object[]{x, spiValor28.getValue(), numMesa.getText()});
+            }
+        }
+        if (spiValor29.getValue().hashCode() > 0) {
+            String x = "Jugo de Babaco";
+            if (Integer.parseInt(numMesa.getText()) >= 0) {
+                model2.addRow(new Object[]{x, spiValor29.getValue(), numMesa.getText()});
+            }
+        }
+        if (spiValor30.getValue().hashCode() > 0) {
+            String x = "Jugo de Naranjilla";
+            if (Integer.parseInt(numMesa.getText()) >= 0) {
+                model2.addRow(new Object[]{x, spiValor30.getValue(), numMesa.getText()});
+            }
+        }
+        if (spiValor31.getValue().hashCode() > 0) {
+            String x = "Brownie";
+            if (Integer.parseInt(numMesa.getText()) >= 0) {
+                model2.addRow(new Object[]{x, spiValor31.getValue(), numMesa.getText()});
+            }
+        }
+        if (spiValor32.getValue().hashCode() > 0) {
+            String x = "ChesseCake";
+            if (Integer.parseInt(numMesa.getText()) >= 0) {
+                model2.addRow(new Object[]{x, spiValor32.getValue(), numMesa.getText()});
+            }
+        }
+        if (spiValor1.getValue().hashCode() > 0) {
+            String x = "Pastel Tres Leches";
+            if (Integer.parseInt(numMesa.getText()) >= 0) {
+                model2.addRow(new Object[]{x, spiValor1.getValue(), numMesa.getText()});
+            }
+        }   
         viewOrder.setVisible(true);
-
         Order.setVisible(false);
     }//GEN-LAST:event_btnSendOrderActionPerformed
 
@@ -1836,6 +1878,9 @@ public class FrmMenu extends javax.swing.JFrame {
         spiValor21.getValue();
         spiValor22.getValue();
         spiValor23.getValue();
+        spiValor24.getValue();
+        
+        
         
        
     }//GEN-LAST:event_btnOtherOrderActionPerformed
@@ -1881,6 +1926,12 @@ public class FrmMenu extends javax.swing.JFrame {
         int cant20 = spiValor20.getValue().hashCode(),cant21 = spiValor21.getValue().hashCode();
         //lunch
         int cant22=spiValor22.getValue().hashCode(), cant23 = spiValor23.getValue().hashCode();
+        int cant24=spiValor24.getValue().hashCode(), cant25=spiValor25.getValue().hashCode();
+        int cant26=spiValor26.getValue().hashCode(), cant27=spiValor27.getValue().hashCode();
+        int cant28=spiValor28.getValue().hashCode(), cant29=spiValor29.getValue().hashCode();
+        int cant30=spiValor30.getValue().hashCode(), cant31=spiValor31.getValue().hashCode();
+        int cant32=spiValor32.getValue().hashCode(), cant1=spiValor1.getValue().hashCode();
+        
    
         if (c1 == c2) {
             if (cant > 0) {
@@ -2307,9 +2358,8 @@ public class FrmMenu extends javax.swing.JFrame {
             //lunch
             if (cant22 > 0) {
                 String x ="Locro de papas";
-                float y = (float) 1.50;
-
-                
+                float y = (float) 1.25;
+           
                 Bill fact = new Bill();
                 fact.setConcepto(x);
 
@@ -2327,7 +2377,7 @@ public class FrmMenu extends javax.swing.JFrame {
             }
             if (cant23 > 0) {
                 String x = "Crema de Tomate";
-                float y = (float) 1.50;
+                float y = (float) 1.25;
 
                 
                 Bill fact = new Bill();
@@ -2338,6 +2388,206 @@ public class FrmMenu extends javax.swing.JFrame {
                 fact.setCantidad(cant23);
 
                 float total = cant23 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+            }
+            if (cant24 > 0) {
+                String x = "Caldo de Gallina";
+                float y = (float) 1.25;
+
+                
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant24);
+
+                float total = cant24 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+            }
+            if (cant25 > 0) {
+                String x = "Chuleta de Cerdo";
+                float y = (float) 2.00;
+
+                
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant25);
+
+                float total = cant25 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+            }
+            if (cant26 > 0) {
+                String x = "Camarones Apanados";
+                float y = (float) 2.20;
+
+                
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant26);
+
+                float total = cant26 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+            }
+            if (cant27 > 0) {
+                String x = "Lasaña de Pollo";
+                float y = (float) 3.20;
+
+                
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant27);
+
+                float total = cant27 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+            }
+            if (cant28 > 0) {
+                String x = "Jugo de Piña";
+                float y = (float) 0.50;
+
+                
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant28);
+
+                float total = cant28 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+            }
+            if (cant29 > 0) {
+                String x = "Jugo de Babaco";
+                float y = (float) 0.50;
+
+                
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant29);
+
+                float total = cant29 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+            }
+            if (cant30 > 0) {
+                String x = "Jugo de Naranjilla";
+                float y = (float) 0.50;
+
+                
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant30);
+
+                float total = cant30 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+            }
+            if (cant31 > 0) {
+                String x = "Brownie";
+                float y = (float) 0.75;
+
+                
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant31);
+
+                float total = cant31 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+            }
+            if (cant32 > 0) {
+                String x = "ChesseCake";
+                float y = (float) 0.75;
+
+                
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant32);
+
+                float total = cant32 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+            }
+            if (cant1 > 0) {
+                String x = "Pastel Tres Leches";
+                float y = (float) 0.75;
+
+                
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant1);
+
+                float total = cant1 * precio;
                 fact.setTotal(total);
                 contTotal = (float) (contTotal + total);
 
@@ -2451,6 +2701,57 @@ public class FrmMenu extends javax.swing.JFrame {
             float y = (float) 1.25;
             model.addRow(new Object[]{x, y, spiValor23.getValue().hashCode()});
         }
+        if (spiValor24.getValue().hashCode() > 0) {
+            String x = "Caldo de Gallina";
+            float y = (float) 1.25;
+            model.addRow(new Object[]{x, y, spiValor24.getValue().hashCode()});
+        }
+        if (spiValor25.getValue().hashCode() > 0) {
+            String x = "Chuleta de Cerdo";
+            float y = (float) 2.00;
+            model.addRow(new Object[]{x, y, spiValor25.getValue().hashCode()});
+        }
+        if (spiValor26.getValue().hashCode() > 0) {
+            String x = "Camarones Apanados";
+            float y = (float) 2.20;
+            model.addRow(new Object[]{x, y, spiValor26.getValue().hashCode()});
+        }
+        if (spiValor27.getValue().hashCode() > 0) {
+            String x = "Lasaña de Pollo";
+            float y = (float) 3.20;
+            model.addRow(new Object[]{x, y, spiValor27.getValue().hashCode()});
+        }
+        if (spiValor28.getValue().hashCode() > 0) {
+            String x = "Jugo de Piña";
+            float y = (float) 0.50;
+            model.addRow(new Object[]{x, y, spiValor28.getValue().hashCode()});
+        }
+        if (spiValor29.getValue().hashCode() > 0) {
+            String x = "Jugo de Babaco";
+            float y = (float) 0.50;
+            model.addRow(new Object[]{x, y, spiValor29.getValue().hashCode()});
+        }
+        if (spiValor30.getValue().hashCode() > 0) {
+            String x = "Jugo de Naranjilla";
+            float y = (float) 0.50;
+            model.addRow(new Object[]{x, y, spiValor30.getValue().hashCode()});
+        }
+        if (spiValor31.getValue().hashCode() > 0) {
+            String x = "Brownie";
+            float y = (float) 0.75;
+            model.addRow(new Object[]{x, y, spiValor31.getValue().hashCode()});
+        }
+        if (spiValor32.getValue().hashCode() > 0) {
+            String x = "ChesseCake";
+            float y = (float) 0.75;
+            model.addRow(new Object[]{x, y, spiValor32.getValue().hashCode()});
+        }
+        if (spiValor1.getValue().hashCode() > 0) {
+            String x = "Pastel Tres Leches";
+            float y = (float) 0.75;
+            model.addRow(new Object[]{x, y, spiValor1.getValue().hashCode()});
+        }
+        
         Order.setVisible(true);
         MenuLunch.dispose();
     }//GEN-LAST:event_btnOrderLunchActionPerformed
@@ -2602,7 +2903,6 @@ public class FrmMenu extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel9;
     private javax.swing.JLabel jPineapple;
