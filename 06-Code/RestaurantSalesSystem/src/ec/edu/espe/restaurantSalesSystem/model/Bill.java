@@ -24,6 +24,9 @@ public class Bill {
 
     private float total;
     public int numventas;
+
+    public Bill() {
+    }
     
 
     public int getNumventas(){

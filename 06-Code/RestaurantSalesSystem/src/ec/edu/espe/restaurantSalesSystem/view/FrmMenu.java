@@ -40,7 +40,7 @@ int contador = 0;
         txtBreakfast = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        bntOrder = new javax.swing.JButton();
+        bntOrderBreakfast = new javax.swing.JButton();
         btnReturn = new javax.swing.JButton();
         txtDescription = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
@@ -100,7 +100,7 @@ int contador = 0;
         Order = new javax.swing.JDialog();
         jPanel3 = new javax.swing.JPanel();
         jLabel31 = new javax.swing.JLabel();
-        jButton7 = new javax.swing.JButton();
+        btnReturn4 = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         datosTable = new javax.swing.JTable();
         jLabel34 = new javax.swing.JLabel();
@@ -110,10 +110,10 @@ int contador = 0;
         jPanel9 = new javax.swing.JPanel();
         jScrollPane4 = new javax.swing.JScrollPane();
         datosTable2 = new javax.swing.JTable();
-        btnOtherOrder = new javax.swing.JButton();
         btnGenerateBill = new javax.swing.JButton();
         jLabel35 = new javax.swing.JLabel();
         btnReturn3 = new javax.swing.JButton();
+        btnOtherOrder = new javax.swing.JButton();
         GenerateBill = new javax.swing.JDialog();
         jPanel12 = new javax.swing.JPanel();
         jLabel36 = new javax.swing.JLabel();
@@ -124,30 +124,61 @@ int contador = 0;
         jScrollPane5 = new javax.swing.JScrollPane();
         factTable = new javax.swing.JTable();
         jPanel11 = new javax.swing.JPanel();
-        telCli = new javax.swing.JTextField();
-        cedulaCli = new javax.swing.JTextField();
+        btnCellphoneCostumer = new javax.swing.JTextField();
+        txtIdCostumer = new javax.swing.JTextField();
         jLabel37 = new javax.swing.JLabel();
         jLabel38 = new javax.swing.JLabel();
         jLabel39 = new javax.swing.JLabel();
-        nombreCli = new javax.swing.JTextField();
+        txtNameCostumer = new javax.swing.JTextField();
         btnReturn1 = new javax.swing.JButton();
         infoFact = new javax.swing.JLabel();
         fac = new javax.swing.JLabel();
-        jLabel40 = new javax.swing.JLabel();
         jLabel41 = new javax.swing.JLabel();
-        jButton14 = new javax.swing.JButton();
         jTextField40 = new javax.swing.JLabel();
-        nombreMese = new javax.swing.JLabel();
         numMesa2 = new javax.swing.JLabel();
-        horario = new javax.swing.JLabel();
-        jLabel42 = new javax.swing.JLabel();
         jLabel43 = new javax.swing.JLabel();
         jLabel44 = new javax.swing.JLabel();
         jLabel45 = new javax.swing.JLabel();
         TOTALtot = new javax.swing.JLabel();
         IVA = new javax.swing.JLabel();
         PROPINA = new javax.swing.JLabel();
-        jButton19 = new javax.swing.JButton();
+        btnPay = new javax.swing.JButton();
+        txtNameCashier = new javax.swing.JTextField();
+        MenuLunch = new javax.swing.JFrame();
+        jLabel8 = new javax.swing.JLabel();
+        spiValor22 = new javax.swing.JSpinner();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel40 = new javax.swing.JLabel();
+        spiValor23 = new javax.swing.JSpinner();
+        spiValor24 = new javax.swing.JSpinner();
+        btnReturn2 = new javax.swing.JButton();
+        btnOrderLunch = new javax.swing.JButton();
+        jSeparator6 = new javax.swing.JSeparator();
+        jLabel42 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
+        jLabel47 = new javax.swing.JLabel();
+        spiValor25 = new javax.swing.JSpinner();
+        jLabel48 = new javax.swing.JLabel();
+        spiValor26 = new javax.swing.JSpinner();
+        spiValor27 = new javax.swing.JSpinner();
+        spiValor28 = new javax.swing.JSpinner();
+        jSeparator7 = new javax.swing.JSeparator();
+        jLabel49 = new javax.swing.JLabel();
+        jSeparator8 = new javax.swing.JSeparator();
+        jLabel50 = new javax.swing.JLabel();
+        spiValor29 = new javax.swing.JSpinner();
+        jLabel51 = new javax.swing.JLabel();
+        spiValor30 = new javax.swing.JSpinner();
+        spiValor31 = new javax.swing.JSpinner();
+        jLabel52 = new javax.swing.JLabel();
+        spiValor1 = new javax.swing.JSpinner();
+        jLabel53 = new javax.swing.JLabel();
+        jLabel54 = new javax.swing.JLabel();
+        jLabel55 = new javax.swing.JLabel();
+        spiValor32 = new javax.swing.JSpinner();
         btnBreakfast = new javax.swing.JButton();
         btnLunch = new javax.swing.JButton();
         btnSnack = new javax.swing.JButton();
@@ -168,11 +199,11 @@ int contador = 0;
         jLabel3.setFont(new java.awt.Font("Pristina", 0, 36)); // NOI18N
         jLabel3.setText("Huevos");
 
-        bntOrder.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        bntOrder.setText("Add Order");
-        bntOrder.addActionListener(new java.awt.event.ActionListener() {
+        bntOrderBreakfast.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        bntOrderBreakfast.setText("Add Order");
+        bntOrderBreakfast.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bntOrderActionPerformed(evt);
+                bntOrderBreakfastActionPerformed(evt);
             }
         });
 
@@ -398,7 +429,7 @@ int contador = 0;
                                 .addGap(0, 0, Short.MAX_VALUE))
                             .addGroup(MenuBreakfastLayout.createSequentialGroup()
                                 .addGroup(MenuBreakfastLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(bntOrder)
+                                    .addComponent(bntOrderBreakfast)
                                     .addGroup(MenuBreakfastLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(jLabel24)
                                         .addComponent(jLabel23)
@@ -557,7 +588,7 @@ int contador = 0;
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(MenuBreakfastLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(btnReturn)
-                            .addComponent(bntOrder))
+                            .addComponent(bntOrderBreakfast))
                         .addGap(26, 26, 26))))
         );
 
@@ -574,16 +605,16 @@ int contador = 0;
         jLabel31.setText("Number table:");
         jPanel3.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 160, -1));
 
-        jButton7.setForeground(new java.awt.Color(255, 255, 255));
-        jButton7.setText("return");
-        jButton7.setContentAreaFilled(false);
-        jButton7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        btnReturn4.setForeground(new java.awt.Color(255, 255, 255));
+        btnReturn4.setText("return");
+        btnReturn4.setContentAreaFilled(false);
+        btnReturn4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnReturn4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+                btnReturn4ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 460, 70, 70));
+        jPanel3.add(btnReturn4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 470, 70, 70));
 
         datosTable.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         datosTable.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -626,7 +657,7 @@ int contador = 0;
                 btnSendOrderActionPerformed(evt);
             }
         });
-        jPanel3.add(btnSendOrder, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 470, 190, 30));
+        jPanel3.add(btnSendOrder, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 200, 190, 30));
         jPanel3.add(numMesa, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 120, 100, 30));
 
         javax.swing.GroupLayout OrderLayout = new javax.swing.GroupLayout(Order.getContentPane());
@@ -677,18 +708,7 @@ int contador = 0;
         jScrollPane4.setViewportView(datosTable2);
 
         jPanel9.add(jScrollPane4);
-        jScrollPane4.setBounds(90, 50, 310, 300);
-
-        btnOtherOrder.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        btnOtherOrder.setText("REGISTRAR OTRO PEDIDO");
-        btnOtherOrder.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnOtherOrder.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnOtherOrderActionPerformed(evt);
-            }
-        });
-        jPanel9.add(btnOtherOrder);
-        btnOtherOrder.setBounds(480, 180, 230, 40);
+        jScrollPane4.setBounds(110, 60, 430, 300);
 
         btnGenerateBill.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         btnGenerateBill.setText("GENERAR FACTURA");
@@ -699,7 +719,7 @@ int contador = 0;
             }
         });
         jPanel9.add(btnGenerateBill);
-        btnGenerateBill.setBounds(470, 80, 230, 40);
+        btnGenerateBill.setBounds(620, 180, 230, 40);
 
         jLabel35.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel35.setForeground(new java.awt.Color(255, 255, 255));
@@ -716,7 +736,18 @@ int contador = 0;
             }
         });
         jPanel9.add(btnReturn3);
-        btnReturn3.setBounds(10, 331, 60, 50);
+        btnReturn3.setBounds(10, 331, 80, 50);
+
+        btnOtherOrder.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        btnOtherOrder.setText("REGISTER OTHER ORDER");
+        btnOtherOrder.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnOtherOrder.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnOtherOrderActionPerformed(evt);
+            }
+        });
+        jPanel9.add(btnOtherOrder);
+        btnOtherOrder.setBounds(620, 260, 230, 40);
 
         javax.swing.GroupLayout viewOrderLayout = new javax.swing.GroupLayout(viewOrder.getContentPane());
         viewOrder.getContentPane().setLayout(viewOrderLayout);
@@ -733,14 +764,14 @@ int contador = 0;
         GenerateBill.setUndecorated(true);
         GenerateBill.setResizable(false);
 
-        jPanel12.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel12.setBackground(new java.awt.Color(204, 204, 204));
         jPanel12.setLayout(null);
 
         jLabel36.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel36.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel36.setText("FACTURA DE LA MESA NO. ");
+        jLabel36.setText("TABLE BILL N°:");
         jPanel12.add(jLabel36);
-        jLabel36.setBounds(40, 40, 190, 30);
+        jLabel36.setBounds(40, 40, 140, 30);
 
         txtTableNumber.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -753,11 +784,11 @@ int contador = 0;
             }
         });
         jPanel12.add(txtTableNumber);
-        txtTableNumber.setBounds(230, 40, 70, 30);
+        txtTableNumber.setBounds(190, 40, 70, 30);
 
         btngenerateBill.setBackground(java.awt.Color.white);
         btngenerateBill.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        btngenerateBill.setText("GENERAR");
+        btngenerateBill.setText("Generate");
         btngenerateBill.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btngenerateBill.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -765,7 +796,7 @@ int contador = 0;
             }
         });
         jPanel12.add(btngenerateBill);
-        btngenerateBill.setBounds(110, 90, 140, 30);
+        btngenerateBill.setBounds(90, 90, 140, 30);
 
         javax.swing.GroupLayout GenerateBillLayout = new javax.swing.GroupLayout(GenerateBill.getContentPane());
         GenerateBill.getContentPane().setLayout(GenerateBillLayout);
@@ -784,7 +815,7 @@ int contador = 0;
         Bill.setResizable(false);
         Bill.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel10.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel10.setBackground(new java.awt.Color(204, 204, 204));
         jPanel10.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel10.setMaximumSize(new java.awt.Dimension(620, 400));
         jPanel10.setMinimumSize(new java.awt.Dimension(620, 400));
@@ -797,7 +828,7 @@ int contador = 0;
 
             },
             new String [] {
-                "         CONCEPTO", "            PRECIO", "             UNDS", "         SUBTOTAL"
+                "DESCRIPCION", "            PRICE", "  QUANTITY", "         SUBTOTAL"
             }
         ) {
             Class[] types = new Class [] {
@@ -825,52 +856,52 @@ int contador = 0;
         jPanel11.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(204, 204, 204), null, null));
         jPanel11.setLayout(null);
 
-        telCli.addKeyListener(new java.awt.event.KeyAdapter() {
+        btnCellphoneCostumer.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                telCliKeyTyped(evt);
+                btnCellphoneCostumerKeyTyped(evt);
             }
         });
-        jPanel11.add(telCli);
-        telCli.setBounds(110, 70, 160, 20);
+        jPanel11.add(btnCellphoneCostumer);
+        btnCellphoneCostumer.setBounds(110, 70, 160, 20);
 
-        cedulaCli.addKeyListener(new java.awt.event.KeyAdapter() {
+        txtIdCostumer.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                cedulaCliKeyTyped(evt);
+                txtIdCostumerKeyTyped(evt);
             }
         });
-        jPanel11.add(cedulaCli);
-        cedulaCli.setBounds(110, 40, 160, 20);
+        jPanel11.add(txtIdCostumer);
+        txtIdCostumer.setBounds(110, 40, 160, 20);
 
         jLabel37.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        jLabel37.setText("Telefono:");
+        jLabel37.setText("Cellphone:");
         jPanel11.add(jLabel37);
         jLabel37.setBounds(10, 70, 90, 20);
 
         jLabel38.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        jLabel38.setText("Cedula:");
+        jLabel38.setText("Id:");
         jPanel11.add(jLabel38);
         jLabel38.setBounds(10, 44, 90, 20);
 
         jLabel39.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        jLabel39.setText("Nombre Cliente:");
+        jLabel39.setText("Name:");
         jPanel11.add(jLabel39);
         jLabel39.setBounds(10, 14, 90, 20);
 
-        nombreCli.addActionListener(new java.awt.event.ActionListener() {
+        txtNameCostumer.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nombreCliActionPerformed(evt);
+                txtNameCostumerActionPerformed(evt);
             }
         });
-        nombreCli.addKeyListener(new java.awt.event.KeyAdapter() {
+        txtNameCostumer.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                nombreCliKeyTyped(evt);
+                txtNameCostumerKeyTyped(evt);
             }
         });
-        jPanel11.add(nombreCli);
-        nombreCli.setBounds(110, 10, 160, 20);
+        jPanel11.add(txtNameCostumer);
+        txtNameCostumer.setBounds(110, 10, 160, 20);
 
         jPanel10.add(jPanel11);
-        jPanel11.setBounds(50, 120, 310, 110);
+        jPanel11.setBounds(170, 80, 310, 110);
 
         btnReturn1.setText("return");
         btnReturn1.setToolTipText("Volver");
@@ -885,21 +916,15 @@ int contador = 0;
         btnReturn1.setBounds(50, 570, 70, 70);
 
         infoFact.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        infoFact.setText("Atendido por:");
+        infoFact.setText("Cashier:");
         infoFact.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel10.add(infoFact);
         infoFact.setBounds(340, 290, 110, 30);
 
         fac.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        fac.setText("RESTAURANTE PITAKS");
+        fac.setText("Restaurant Sales System");
         jPanel10.add(fac);
-        fac.setBounds(50, 10, 340, 80);
-
-        jLabel40.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel40.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel40.setText("Teléfono: 30011111 - 31900000");
-        jPanel10.add(jLabel40);
-        jLabel40.setBounds(50, 70, 200, 30);
+        fac.setBounds(220, 10, 220, 80);
 
         jLabel41.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel41.setText("       Factura:            001         Serie:            1             Fecha:   ");
@@ -907,39 +932,19 @@ int contador = 0;
         jPanel10.add(jLabel41);
         jLabel41.setBounds(50, 250, 410, 30);
 
-        jButton14.setContentAreaFilled(false);
-        jPanel10.add(jButton14);
-        jButton14.setBounds(410, 30, 210, 150);
-
         jTextField40.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jTextField40.setText("Mesa: ");
         jTextField40.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel10.add(jTextField40);
         jTextField40.setBounds(50, 290, 60, 30);
 
-        nombreMese.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        nombreMese.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel10.add(nombreMese);
-        nombreMese.setBounds(470, 290, 170, 30);
-
         numMesa2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         numMesa2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel10.add(numMesa2);
         numMesa2.setBounds(120, 290, 60, 30);
 
-        horario.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        horario.setText("Lunes a Sábado 9:00 am a 9:00 pm");
-        jPanel10.add(horario);
-        horario.setBounds(60, 510, 240, 60);
-
-        jLabel42.setFont(new java.awt.Font("Vrinda", 0, 14)); // NOI18N
-        jLabel42.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel42.setText("HORARIO DE ATENCION");
-        jPanel10.add(jLabel42);
-        jLabel42.setBounds(100, 490, 170, 19);
-
         jLabel43.setFont(new java.awt.Font("Courier New", 0, 12)); // NOI18N
-        jLabel43.setText("+PROPINA");
+        jLabel43.setText("+Tip");
         jPanel10.add(jLabel43);
         jLabel43.setBounds(360, 510, 90, 20);
 
@@ -949,7 +954,7 @@ int contador = 0;
         jLabel44.setBounds(360, 490, 90, 20);
 
         jLabel45.setFont(new java.awt.Font("Courier New", 3, 12)); // NOI18N
-        jLabel45.setText("TOTAL COMPRA");
+        jLabel45.setText("Total Purchase");
         jPanel10.add(jLabel45);
         jLabel45.setBounds(360, 540, 110, 20);
 
@@ -971,18 +976,264 @@ int contador = 0;
         jPanel10.add(PROPINA);
         PROPINA.setBounds(520, 510, 80, 14);
 
-        jButton19.setBackground(new java.awt.Color(255, 102, 153));
-        jButton19.setText("pagar");
-        jButton19.setContentAreaFilled(false);
-        jButton19.addActionListener(new java.awt.event.ActionListener() {
+        btnPay.setBackground(new java.awt.Color(255, 102, 153));
+        btnPay.setText("Pay");
+        btnPay.setContentAreaFilled(false);
+        btnPay.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton19ActionPerformed(evt);
+                btnPayActionPerformed(evt);
             }
         });
-        jPanel10.add(jButton19);
-        jButton19.setBounds(550, 590, 70, 70);
+        jPanel10.add(btnPay);
+        btnPay.setBounds(550, 590, 70, 70);
+
+        txtNameCashier.setBackground(new java.awt.Color(204, 204, 204));
+        txtNameCashier.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel10.add(txtNameCashier);
+        txtNameCashier.setBounds(470, 290, 150, 30);
 
         Bill.getContentPane().add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 680, 710));
+
+        jLabel8.setFont(new java.awt.Font("Pristina", 0, 24)); // NOI18N
+        jLabel8.setText("Soup");
+
+        jLabel9.setFont(new java.awt.Font("Baskerville Old Face", 3, 24)); // NOI18N
+        jLabel9.setText("LUNCH");
+
+        jLabel32.setFont(new java.awt.Font("Consolas", 3, 14)); // NOI18N
+        jLabel32.setText("VASO DE JUGO DE NARANJILLA.........$0,50");
+
+        jLabel33.setFont(new java.awt.Font("Consolas", 3, 14)); // NOI18N
+        jLabel33.setText("VASO DE JUGO DE BABACO.............$0,50");
+
+        jLabel40.setFont(new java.awt.Font("Consolas", 3, 14)); // NOI18N
+        jLabel40.setText("VASO DE JUGO DE PIÑA...............$0,50");
+
+        btnReturn2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnReturn2.setText("Return");
+        btnReturn2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnReturn2ActionPerformed(evt);
+            }
+        });
+
+        btnOrderLunch.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnOrderLunch.setText("Add Order");
+        btnOrderLunch.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnOrderLunchActionPerformed(evt);
+            }
+        });
+
+        jLabel42.setFont(new java.awt.Font("Consolas", 3, 14)); // NOI18N
+        jLabel42.setText("CHESECAKE................$0,75");
+
+        jLabel10.setFont(new java.awt.Font("Pristina", 0, 24)); // NOI18N
+        jLabel10.setText("Dessert");
+
+        jLabel46.setFont(new java.awt.Font("Consolas", 3, 14)); // NOI18N
+        jLabel46.setText("BROWNIE..................$0,75");
+
+        jLabel47.setFont(new java.awt.Font("Pristina", 0, 24)); // NOI18N
+        jLabel47.setText("Juice");
+
+        jLabel48.setFont(new java.awt.Font("Pristina", 0, 24)); // NOI18N
+        jLabel48.setText("Main Course");
+
+        jLabel49.setFont(new java.awt.Font("Consolas", 3, 14)); // NOI18N
+        jLabel49.setText("LASAÑA DE POLLO (ENSALADA, PAPAS FRITAS).............................................$3,20");
+
+        jSeparator8.setOrientation(javax.swing.SwingConstants.VERTICAL);
+
+        jLabel50.setFont(new java.awt.Font("Consolas", 3, 14)); // NOI18N
+        jLabel50.setText("CAMARONES APANADOS (SALSA RANCH, ARROZ, MADURO FRITO, PAPAS FRITAS Y ENSALADA).......$2,20");
+
+        jLabel51.setFont(new java.awt.Font("Consolas", 3, 14)); // NOI18N
+        jLabel51.setText("CHULETA DE CERDO (ARROZ, PAPAS FRITAS Y ENSALADA)....................................$2,00");
+
+        jLabel52.setFont(new java.awt.Font("Consolas", 3, 14)); // NOI18N
+        jLabel52.setText("PASTEL TRES LECHES.......$0,75");
+
+        jLabel53.setFont(new java.awt.Font("Consolas", 3, 14)); // NOI18N
+        jLabel53.setText("CALDO DE GALLINA (PECHUGA DE POLLO PICADA, ALVERJA, PAPAS, ZANAHORIA Y APIO)........$1,25");
+
+        jLabel54.setFont(new java.awt.Font("Consolas", 3, 14)); // NOI18N
+        jLabel54.setText("CREMA DE TOMATE (COLIFLOR, BRÓCOLI, ZANAHORIA Y CREMA DE TOMATE)....................$1,25");
+
+        jLabel55.setFont(new java.awt.Font("Consolas", 3, 14)); // NOI18N
+        jLabel55.setText("LOCRO DE PAPAS CON QUESO Y AGUACATE.................................................$1,25");
+
+        javax.swing.GroupLayout MenuLunchLayout = new javax.swing.GroupLayout(MenuLunch.getContentPane());
+        MenuLunch.getContentPane().setLayout(MenuLunchLayout);
+        MenuLunchLayout.setHorizontalGroup(
+            MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jSeparator6, javax.swing.GroupLayout.Alignment.TRAILING)
+            .addGroup(MenuLunchLayout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(MenuLunchLayout.createSequentialGroup()
+                        .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel51)
+                            .addComponent(jLabel50)
+                            .addComponent(jLabel49))
+                        .addGap(18, 18, 18)
+                        .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(spiValor27, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(spiValor25, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(spiValor26, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap())
+                    .addComponent(jSeparator7)
+                    .addGroup(MenuLunchLayout.createSequentialGroup()
+                        .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(MenuLunchLayout.createSequentialGroup()
+                                .addComponent(btnReturn2, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btnOrderLunch, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(MenuLunchLayout.createSequentialGroup()
+                                .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(MenuLunchLayout.createSequentialGroup()
+                                        .addComponent(jLabel32)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(spiValor30, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(MenuLunchLayout.createSequentialGroup()
+                                        .addComponent(jLabel33)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(spiValor29, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(MenuLunchLayout.createSequentialGroup()
+                                        .addComponent(jLabel40)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(spiValor28, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(MenuLunchLayout.createSequentialGroup()
+                                        .addGap(169, 169, 169)
+                                        .addComponent(jLabel47)))
+                                .addGap(18, 18, 18)
+                                .addComponent(jSeparator8, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(MenuLunchLayout.createSequentialGroup()
+                                        .addComponent(jLabel46)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(spiValor31, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(MenuLunchLayout.createSequentialGroup()
+                                        .addGap(132, 132, 132)
+                                        .addComponent(jLabel10)
+                                        .addGap(124, 124, 124))
+                                    .addGroup(MenuLunchLayout.createSequentialGroup()
+                                        .addComponent(jLabel42)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(spiValor32, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(MenuLunchLayout.createSequentialGroup()
+                                        .addComponent(jLabel52)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(spiValor1, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addContainerGap())))
+            .addGroup(MenuLunchLayout.createSequentialGroup()
+                .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(MenuLunchLayout.createSequentialGroup()
+                        .addGap(21, 21, 21)
+                        .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(MenuLunchLayout.createSequentialGroup()
+                                .addGap(305, 305, 305)
+                                .addComponent(jLabel8))
+                            .addGroup(MenuLunchLayout.createSequentialGroup()
+                                .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, MenuLunchLayout.createSequentialGroup()
+                                        .addGap(347, 347, 347)
+                                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabel55)
+                                        .addComponent(jLabel54)
+                                        .addComponent(jLabel53)))
+                                .addGap(30, 30, 30)
+                                .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(spiValor24)
+                                        .addComponent(spiValor23, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(spiValor22, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                    .addGroup(MenuLunchLayout.createSequentialGroup()
+                        .addGap(378, 378, 378)
+                        .addComponent(jLabel48)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        MenuLunchLayout.setVerticalGroup(
+            MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(MenuLunchLayout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jLabel9)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel8)
+                .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(MenuLunchLayout.createSequentialGroup()
+                        .addGap(31, 31, 31)
+                        .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel54)
+                            .addComponent(spiValor23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addComponent(spiValor24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(MenuLunchLayout.createSequentialGroup()
+                        .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel55)
+                            .addComponent(spiValor22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(46, 46, 46)
+                        .addComponent(jLabel53)))
+                .addGap(18, 18, 18)
+                .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(MenuLunchLayout.createSequentialGroup()
+                        .addComponent(jLabel48)
+                        .addGap(33, 33, 33)
+                        .addComponent(jLabel51)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel50)
+                            .addComponent(spiValor26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel49)
+                            .addComponent(spiValor27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(MenuLunchLayout.createSequentialGroup()
+                        .addComponent(spiValor25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(68, 68, 68)))
+                .addComponent(jSeparator7, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(MenuLunchLayout.createSequentialGroup()
+                        .addComponent(jLabel10)
+                        .addGap(15, 15, 15)
+                        .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel46)
+                            .addComponent(spiValor31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel42)
+                            .addComponent(spiValor32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel52)
+                            .addComponent(spiValor1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(MenuLunchLayout.createSequentialGroup()
+                        .addComponent(jLabel47)
+                        .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jLabel40)
+                                .addComponent(spiValor28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(MenuLunchLayout.createSequentialGroup()
+                                .addGap(32, 32, 32)
+                                .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel33)
+                                    .addComponent(spiValor29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel32)
+                            .addComponent(spiValor30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jSeparator8, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(MenuLunchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnReturn2)
+                    .addComponent(btnOrderLunch))
+                .addContainerGap(29, Short.MAX_VALUE))
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -1104,9 +1355,8 @@ int contador = 0;
     }//GEN-LAST:event_btnBreakfastActionPerformed
 
     private void btnLunchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLunchActionPerformed
-        this.setVisible(false);
-        FrmLunch frmLunch = new FrmLunch();
-        frmLunch.setVisible(true);
+       MenuLunch.setVisible(true);
+       MenuLunch.setLocationRelativeTo(null);
     }//GEN-LAST:event_btnLunchActionPerformed
 
     private void btnSnackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSnackActionPerformed
@@ -1133,7 +1383,7 @@ int contador = 0;
         frmDessert.setVisible(true);
     }//GEN-LAST:event_btnDessertActionPerformed
 
-    private void bntOrderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntOrderActionPerformed
+    private void bntOrderBreakfastActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntOrderBreakfastActionPerformed
 
         DefaultTableModel model = (DefaultTableModel) datosTable.getModel();
     
@@ -1162,91 +1412,91 @@ int contador = 0;
         if (spiValor5.getValue().hashCode() > 0) {
             String x = "Pan Simple";
             float y = (float) 0.10;
-            model.addRow(new Object[]{x, y, spiValor5.getValue().hashCode() > 0});
+            model.addRow(new Object[]{x, y, spiValor5.getValue().hashCode() });
         }
         if (spiValor6.getValue().hashCode() > 0) {
             String x = "Pan con Jamón";
             float y = (float) 0.25;
-            model.addRow(new Object[]{x, y, spiValor6.getValue().hashCode() > 0});
+            model.addRow(new Object[]{x, y, spiValor6.getValue().hashCode()});
         }
         if (spiValor7.getValue().hashCode() > 0) {
             String x = "Pan con Mortadela";
             float y = (float) 0.25;
-            model.addRow(new Object[]{x, y, spiValor7.getValue().hashCode() > 0});
+            model.addRow(new Object[]{x, y, spiValor7.getValue().hashCode()});
         }
         if (spiValor8.getValue().hashCode() > 0) {
             String x = "Pan Integral";
             float y = (float) 0.25;
-            model.addRow(new Object[]{x, y, spiValor8.getValue().hashCode() > 0});
+            model.addRow(new Object[]{x, y, spiValor8.getValue().hashCode()});
         }
         if (spiValor9.getValue().hashCode() > 0) {
             String x = "Jugo de Mora";
             float y = (float) 0.75;
-            model.addRow(new Object[]{x, y, spiValor9.getValue().hashCode() > 0});
+            model.addRow(new Object[]{x, y, spiValor9.getValue().hashCode()});
         }
         if (spiValor10.getValue().hashCode() > 0) {
             String x = "Jugo de Naranjilla";
             float y = (float) 0.75;
-            model.addRow(new Object[]{x, y, spiValor10.getValue().hashCode() > 0});
+            model.addRow(new Object[]{x, y, spiValor10.getValue().hashCode()});
         }
         if (spiValor11.getValue().hashCode() > 0) {
             String x = "Jugo de Tomate de Arbol";
             float y = (float) 0.75;
-            model.addRow(new Object[]{x, y, spiValor11.getValue().hashCode() > 0});
+            model.addRow(new Object[]{x, y, spiValor11.getValue().hashCode()});
         }
         if (spiValor12.getValue().hashCode() > 0) {
             String x = "Huevos Cocidos";
             float y = (float) 0.20;
-            model.addRow(new Object[]{x, y, spiValor12.getValue().hashCode() > 0});
+            model.addRow(new Object[]{x, y, spiValor12.getValue().hashCode()});
         }
         if (spiValor13.getValue().hashCode() > 0) {
             String x = "Huevos Tibios";
             float y = (float) 0.20;
-            model.addRow(new Object[]{x, y, spiValor13.getValue().hashCode() > 0});
+            model.addRow(new Object[]{x, y, spiValor13.getValue().hashCode()});
         }
         if (spiValor14.getValue().hashCode() > 0) {
             String x = "Torta de Huevo";
             float y = (float) 0.20;
-            model.addRow(new Object[]{x, y, spiValor14.getValue().hashCode() > 0});
+            model.addRow(new Object[]{x, y, spiValor14.getValue().hashCode() });
         }
         if (spiValor15.getValue().hashCode() > 0) {
             String x = "Huevos Fritos";
             float y = (float) 0.20;
-            model.addRow(new Object[]{x, y, spiValor15.getValue().hashCode() > 0});
+            model.addRow(new Object[]{x, y, spiValor15.getValue().hashCode()});
         }
         if (spiValor16.getValue().hashCode() > 0) {
             String x = "Hevos Rvueltos";
             float y = (float) 0.20;
-            model.addRow(new Object[]{x, y, spiValor16.getValue().hashCode() > 0});
+            model.addRow(new Object[]{x, y, spiValor16.getValue().hashCode()});
         }
         if (spiValor17.getValue().hashCode() > 0) {
             String x = "Manzana";
             float y = (float) 0.35;
-            model.addRow(new Object[]{x, y, spiValor17.getValue().hashCode() > 0});
+            model.addRow(new Object[]{x, y, spiValor17.getValue().hashCode()});
         }
         if (spiValor18.getValue().hashCode() > 0) {
             String x = "Pera";
             float y = (float) 0.25;
-            model.addRow(new Object[]{x, y, spiValor18.getValue().hashCode() > 0});
+            model.addRow(new Object[]{x, y, spiValor18.getValue().hashCode()});
         }
         if (spiValor19.getValue().hashCode() > 0) {
             String x = "Banana";
             float y = (float) 0.25;
-            model.addRow(new Object[]{x, y, spiValor19.getValue().hashCode() > 0});
+            model.addRow(new Object[]{x, y, spiValor19.getValue().hashCode()});
         }
         if (spiValor20.getValue().hashCode() > 0) {
             String x = "Estofado de carne";
             float y = (float) 1.50;
-            model.addRow(new Object[]{x, y, spiValor20.getValue().hashCode() > 0});
+            model.addRow(new Object[]{x, y, spiValor20.getValue().hashCode()});
         }
          if (spiValor21.getValue().hashCode() > 0) {
             String x = "Estofado de pollo";
             float y = (float) 1.50;
-            model.addRow(new Object[]{x, y, spiValor21.getValue().hashCode() > 0});
+            model.addRow(new Object[]{x, y, spiValor21.getValue().hashCode()});
         }
         Order.setVisible(true);
         MenuBreakfast.dispose();
-    }//GEN-LAST:event_bntOrderActionPerformed
+    }//GEN-LAST:event_bntOrderBreakfastActionPerformed
 
     private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturnActionPerformed
         this.setVisible(false);
@@ -1254,13 +1504,15 @@ int contador = 0;
         frmMenu.setVisible(true);
     }//GEN-LAST:event_btnReturnActionPerformed
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+    private void btnReturn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturn4ActionPerformed
         Order.setVisible(false);
         this.setVisible(true);
-    }//GEN-LAST:event_jButton7ActionPerformed
+    }//GEN-LAST:event_btnReturn4ActionPerformed
 
     private void btnSendOrderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSendOrderActionPerformed
-
+    if (numMesa.getText().equals("")) {
+            JOptionPane.showMessageDialog(null, "You must enter the table number");
+        }
        
         DefaultTableModel model2 = (DefaultTableModel) datosTable2.getModel();
  
@@ -1392,6 +1644,21 @@ int contador = 0;
                 model2.addRow(new Object[]{x, spiValor21.getValue(), numMesa.getText()});
             }
         }
+         //lunch
+         if (spiValor22.getValue().hashCode() > 0) {
+            String x = "Locro de Papas";
+            if (Integer.parseInt(numMesa.getText()) >= 0) {
+                model2.addRow(new Object[]{x, spiValor22.getValue(), numMesa.getText()});
+            }
+        }
+         if (spiValor23.getValue().hashCode() > 0) {
+            String x = "Crema de Tomate";
+            if (Integer.parseInt(numMesa.getText()) >= 0) {
+                model2.addRow(new Object[]{x, spiValor23.getValue(), numMesa.getText()});
+            }
+        }
+         
+         
         viewOrder.setVisible(true);
 
         Order.setVisible(false);
@@ -1400,7 +1667,8 @@ int contador = 0;
     private void btnOtherOrderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOtherOrderActionPerformed
 
         //Reset valores de pedido tabla de pedidos
-        
+        this.setVisible(false);
+       
         limpiarTabla(datosTable);
         numMesa.getText();
         MenuBreakfast.setVisible(true);
@@ -1426,6 +1694,10 @@ int contador = 0;
         spiValor19.getValue();
         spiValor20.getValue();
         spiValor21.getValue();
+        spiValor22.getValue();
+        spiValor23.getValue();
+        
+       
     }//GEN-LAST:event_btnOtherOrderActionPerformed
 
     private void btnGenerateBillActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerateBillActionPerformed
@@ -1454,7 +1726,7 @@ int contador = 0;
     }//GEN-LAST:event_txtTableNumberKeyTyped
 
     private void btngenerateBillActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btngenerateBillActionPerformed
-        //FACTURA
+        //Bill
         float contTotal = (float)0.0;
         int c1 = Integer.parseInt(numMesa.getText()), c2 = Integer.parseInt(txtTableNumber.getText());
         int cant = spiValor.getValue().hashCode(),cant2 = spiValor2.getValue().hashCode(),
@@ -1467,6 +1739,8 @@ int contador = 0;
             cant14 = spiValor14.getValue().hashCode(),cant15 = spiValor15.getValue().hashCode(),cant16 = spiValor16.getValue().hashCode();   
         int cant17 = spiValor17.getValue().hashCode(),cant18 = spiValor18.getValue().hashCode(),cant19 = spiValor19.getValue().hashCode();
         int cant20 = spiValor20.getValue().hashCode(),cant21 = spiValor21.getValue().hashCode();
+        //lunch
+        int cant22=spiValor22.getValue().hashCode(), cant23 = spiValor23.getValue().hashCode();
    
         if (c1 == c2) {
             if (cant > 0) {
@@ -1477,7 +1751,7 @@ int contador = 0;
 ;
 
                 Bill fact = new Bill();
-                fact.setConcepto(y);
+                fact.setConcepto(x);
 
                 float precio = y;
                 fact.setPrecio(precio);
@@ -1501,7 +1775,7 @@ int contador = 0;
                 float  y = (float) 0.75;;
                
                 Bill fact = new Bill();
-                fact.setConcepto(y);
+                fact.setConcepto(x);
 
                 float precio = y;
                 fact.setPrecio(precio);
@@ -1521,7 +1795,7 @@ int contador = 0;
                 float y = (float) 0.50;
 
                 Bill fact = new Bill();
-                fact.setConcepto(y);
+                fact.setConcepto(x);
 
                 float precio = y;
                 fact.setPrecio(precio);
@@ -1542,7 +1816,7 @@ int contador = 0;
                 float y =(float) 0.60;
                 
                 Bill fact = new Bill();
-                fact.setConcepto(y);
+                fact.setConcepto(x);
 
                 float precio = y;
                 fact.setPrecio(precio);
@@ -1561,7 +1835,7 @@ int contador = 0;
                 float y = (float) 0.10;
                 
                 Bill fact = new Bill();
-                fact.setConcepto(y);
+                fact.setConcepto(x);
 
                 float precio = y;
                 fact.setPrecio(precio);
@@ -1580,7 +1854,7 @@ int contador = 0;
                float y = (float) 0.25;
 
                 Bill fact = new Bill();
-                fact.setConcepto(y);
+                fact.setConcepto(x);
 
                 float precio = y;
                 fact.setPrecio(precio);
@@ -1600,7 +1874,7 @@ int contador = 0;
 
                 
                 Bill fact = new Bill();
-                fact.setConcepto(y);
+                fact.setConcepto(x);
 
                 float precio = y;
                 fact.setPrecio(precio);
@@ -1620,7 +1894,7 @@ int contador = 0;
 
                 
                 Bill fact = new Bill();
-                fact.setConcepto(y);
+                fact.setConcepto(x);
 
                 float precio = y;
                 fact.setPrecio(precio);
@@ -1640,7 +1914,7 @@ int contador = 0;
 
                 
                 Bill fact = new Bill();
-                fact.setConcepto(y);
+                fact.setConcepto(x);
 
                 float precio = y;
                 fact.setPrecio(precio);
@@ -1659,7 +1933,7 @@ int contador = 0;
                 float y = (float) 0.75;
 
                 Bill fact = new Bill();
-                fact.setConcepto(y);
+                fact.setConcepto(x);
 
                 float precio = y;
                 fact.setPrecio(precio);
@@ -1679,7 +1953,7 @@ int contador = 0;
 
                 
                 Bill fact = new Bill();
-                fact.setConcepto(y);
+                fact.setConcepto(x);
 
                 float precio = y;
                 fact.setPrecio(precio);
@@ -1699,7 +1973,7 @@ int contador = 0;
 
                 
                 Bill fact = new Bill();
-                fact.setConcepto(y);
+                fact.setConcepto(x);
 
                 float precio = y;
                 fact.setPrecio(precio);
@@ -1718,7 +1992,7 @@ int contador = 0;
                 float y = (float) 0.20;
 
                 Bill fact = new Bill();
-                fact.setConcepto(y);
+                fact.setConcepto(x);
 
                 float precio = y;
                 fact.setPrecio(precio);
@@ -1737,7 +2011,7 @@ int contador = 0;
                 float y = (float) 0.20;
 
                 Bill fact = new Bill();
-                fact.setConcepto(y);
+                fact.setConcepto(x);
 
                 float precio = y;
                 fact.setPrecio(precio);
@@ -1756,7 +2030,7 @@ int contador = 0;
                 float y = (float) 0.20;
 
                 Bill fact = new Bill();
-                fact.setConcepto(y);
+                fact.setConcepto(x);
 
                 float precio = y;
                 fact.setPrecio(precio);
@@ -1776,7 +2050,7 @@ int contador = 0;
 
                 
                 Bill fact = new Bill();
-                fact.setConcepto(y);
+                fact.setConcepto(x);
 
                 float precio = y;
                 fact.setPrecio(precio);
@@ -1796,7 +2070,7 @@ int contador = 0;
 
                 
                 Bill fact = new Bill();
-                fact.setConcepto(y);
+                fact.setConcepto(x);
 
                 float precio = y;
                 fact.setPrecio(precio);
@@ -1815,7 +2089,7 @@ int contador = 0;
                 float y = (float) 0.25;
             
                 Bill fact = new Bill();
-                fact.setConcepto(y);
+                fact.setConcepto(x);
 
                 float precio = y;
                 fact.setPrecio(precio);
@@ -1835,7 +2109,7 @@ int contador = 0;
 
                 
                 Bill fact = new Bill();
-                fact.setConcepto(y);
+                fact.setConcepto(x);
 
                 float precio = y;
                 fact.setPrecio(precio);
@@ -1855,7 +2129,7 @@ int contador = 0;
 
                 
                 Bill fact = new Bill();
-                fact.setConcepto(y);
+                fact.setConcepto(x);
 
                 float precio = y;
                 fact.setPrecio(precio);
@@ -1875,13 +2149,55 @@ int contador = 0;
 
                 
                 Bill fact = new Bill();
-                fact.setConcepto(y);
+                fact.setConcepto(x);
 
                 float precio = y;
                 fact.setPrecio(precio);
                 fact.setCantidad(cant21);
 
                 float total = cant21 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+            }
+            
+            //lunch
+            if (cant22 > 0) {
+                String x ="Locro de papas";
+                float y = (float) 1.50;
+
+                
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant22);
+
+                float total = cant22 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+            }
+            if (cant23 > 0) {
+                String x = "Crema de Tomate";
+                float y = (float) 1.50;
+
+                
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant23);
+
+                float total = cant23 * precio;
                 fact.setTotal(total);
                 contTotal = (float) (contTotal + total);
 
@@ -1918,69 +2234,92 @@ int contador = 0;
         }
     }//GEN-LAST:event_btngenerateBillActionPerformed
 
-    private void telCliKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_telCliKeyTyped
+    private void btnCellphoneCostumerKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btnCellphoneCostumerKeyTyped
         int k = (int) evt.getKeyChar();
         if (k >= 97 && k <= 122 || k >= 65 && k <= 90) {
             evt.setKeyChar((char) KeyEvent.VK_CLEAR);
         }
-    }//GEN-LAST:event_telCliKeyTyped
+    }//GEN-LAST:event_btnCellphoneCostumerKeyTyped
 
-    private void cedulaCliKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cedulaCliKeyTyped
+    private void txtIdCostumerKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtIdCostumerKeyTyped
         int k = (int) evt.getKeyChar();
         if (k >= 97 && k <= 122 || k >= 65 && k <= 90) {
             evt.setKeyChar((char) KeyEvent.VK_CLEAR);
         }
-    }//GEN-LAST:event_cedulaCliKeyTyped
+    }//GEN-LAST:event_txtIdCostumerKeyTyped
 
-    private void nombreCliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nombreCliActionPerformed
+    private void txtNameCostumerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNameCostumerActionPerformed
         JOptionPane.showMessageDialog(null, "El pago se ha realizado satisfactoriamente.");
-        cedulaCli.setText("");
-        nombreCli.setText("");
-        telCli.setText("");
+        txtIdCostumer.setText("");
+        txtNameCostumer.setText("");
+        btnCellphoneCostumer.setText("");
         infoFact.setText("");
-    }//GEN-LAST:event_nombreCliActionPerformed
+    }//GEN-LAST:event_txtNameCostumerActionPerformed
 
-    private void nombreCliKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_nombreCliKeyTyped
+    private void txtNameCostumerKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNameCostumerKeyTyped
         char c = evt.getKeyChar();
         if ((c < 'a' || c > 'z') && ((c < 'A') | c > 'Z')) {
             evt.consume();
         }
-    }//GEN-LAST:event_nombreCliKeyTyped
+    }//GEN-LAST:event_txtNameCostumerKeyTyped
 
     private void btnReturn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturn1ActionPerformed
         Bill.setVisible(false);
         this.setVisible(true);
     }//GEN-LAST:event_btnReturn1ActionPerformed
 
-    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
+    private void btnPayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPayActionPerformed
 
         //BOTON FINALIZA FACTURA
         Bill f = new Bill();
         f.numventas = 0;
 
-        if ((nombreCli.getText().equals("")) && (cedulaCli.getText().equals("")) && (telCli.getText().equals(""))) {
-            JOptionPane.showMessageDialog(null, "No ha llenado la informacion del cliente");
+        if ((txtNameCostumer.getText().equals("")) && (txtIdCostumer.getText().equals("")) && (btnCellphoneCostumer.getText().equals(""))) {
+            JOptionPane.showMessageDialog(null, "You have not filled in the customer information");
 
         }
 
-        if (((!nombreCli.getText().equals("")) && (!cedulaCli.getText().equals("")) && (!telCli.getText().equals("")))) {
+        if (((!txtNameCostumer.getText().equals("")) && (!txtIdCostumer.getText().equals("")) && (!btnCellphoneCostumer.getText().equals("")))) {
             contador++;
             suma = (int) (suma + Double.parseDouble(TOTALtot.getText()));
             f.numventas = f.numventas + 1;
-            JOptionPane.showMessageDialog(null, "El pago se ha realizado satisfactoriamente. HASTA LUEGO");
+            JOptionPane.showMessageDialog(null, "The payment has been made successfully. SEE YOU LATER");
             Bill.setVisible(false);
             this.setVisible(true);
 
-            /* nombreCli.setText("");
-            cedulaCli.setText("");
-            telCli.setText("");
-            numMesa2.sertText("");
+            txtNameCostumer.setText("");
+            txtIdCostumer.setText("");
+            btnCellphoneCostumer.setText("");
+            numMesa2.setText("");
             limpiarTabla(datosTable);
             limpiarTabla(factTable);
-            limpiarTabla(datosTable2);*/
+            limpiarTabla(datosTable2);
 
         }
-    }//GEN-LAST:event_jButton19ActionPerformed
+    }//GEN-LAST:event_btnPayActionPerformed
+
+    private void btnReturn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturn2ActionPerformed
+        this.setVisible(false);
+        FrmMenu frmOptionsMenuCustomer = new FrmMenu();
+        frmOptionsMenuCustomer.setVisible(true);
+    }//GEN-LAST:event_btnReturn2ActionPerformed
+
+    private void btnOrderLunchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOrderLunchActionPerformed
+        
+        DefaultTableModel model = (DefaultTableModel) datosTable.getModel();
+        if (spiValor22.getValue().hashCode() > 0) {
+            String x = "Locro de papas";
+            float y = (float) 1.25;
+            model.addRow(new Object[]{x, y, spiValor22.getValue().hashCode()});
+        }
+         if (spiValor23.getValue().hashCode() > 0) {
+            String x = "Crema de Tomate";
+            float y = (float) 1.25;
+            model.addRow(new Object[]{x, y, spiValor23.getValue().hashCode()});
+        }
+        Order.setVisible(true);
+        MenuLunch.dispose();
+    }//GEN-LAST:event_btnOrderLunchActionPerformed
 
     /**
      * @param args the command line arguments
@@ -2025,36 +2364,38 @@ int contador = 0;
     private javax.swing.JDialog GenerateBill;
     private javax.swing.JLabel IVA;
     private javax.swing.JFrame MenuBreakfast;
+    private javax.swing.JFrame MenuLunch;
     private javax.swing.JDialog Order;
     private javax.swing.JLabel PROPINA;
     private javax.swing.JLabel TOTALtot;
-    private javax.swing.JButton bntOrder;
+    private javax.swing.JButton bntOrderBreakfast;
     private javax.swing.JButton btnBreakfast;
+    private javax.swing.JTextField btnCellphoneCostumer;
     private javax.swing.JButton btnDessert;
     private javax.swing.JButton btnDrink;
     private javax.swing.JButton btnExit;
     private javax.swing.JButton btnGenerateBill;
     private javax.swing.JButton btnLunch;
+    private javax.swing.JButton btnOrderLunch;
     private javax.swing.JButton btnOtherOrder;
+    private javax.swing.JButton btnPay;
     private javax.swing.JButton btnReturn;
     private javax.swing.JButton btnReturn1;
+    private javax.swing.JButton btnReturn2;
     private javax.swing.JButton btnReturn3;
+    private javax.swing.JButton btnReturn4;
     private javax.swing.JButton btnSendOrder;
     private javax.swing.JButton btnSnack;
     private javax.swing.JButton btngenerateBill;
     private javax.swing.JLabel cafeEnAgua;
     private javax.swing.JLabel cafeEnLeche;
-    private javax.swing.JTextField cedulaCli;
     private javax.swing.JTable datosTable;
     private javax.swing.JTable datosTable2;
     private javax.swing.JLabel fac;
     private javax.swing.JTable factTable;
-    private javax.swing.JLabel horario;
     private javax.swing.JLabel infoFact;
-    private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton19;
-    private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
@@ -2078,6 +2419,8 @@ int contador = 0;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
@@ -2091,9 +2434,21 @@ int contador = 0;
     private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
@@ -2107,13 +2462,15 @@ int contador = 0;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
+    private javax.swing.JSeparator jSeparator6;
+    private javax.swing.JSeparator jSeparator7;
+    private javax.swing.JSeparator jSeparator8;
     private javax.swing.JLabel jTextField40;
     private javax.swing.JLabel leche;
-    private javax.swing.JTextField nombreCli;
-    private javax.swing.JLabel nombreMese;
     private javax.swing.JTextField numMesa;
     private javax.swing.JLabel numMesa2;
     private javax.swing.JSpinner spiValor;
+    private javax.swing.JSpinner spiValor1;
     private javax.swing.JSpinner spiValor10;
     private javax.swing.JSpinner spiValor11;
     private javax.swing.JSpinner spiValor12;
@@ -2127,7 +2484,18 @@ int contador = 0;
     private javax.swing.JSpinner spiValor2;
     private javax.swing.JSpinner spiValor20;
     private javax.swing.JSpinner spiValor21;
+    private javax.swing.JSpinner spiValor22;
+    private javax.swing.JSpinner spiValor23;
+    private javax.swing.JSpinner spiValor24;
+    private javax.swing.JSpinner spiValor25;
+    private javax.swing.JSpinner spiValor26;
+    private javax.swing.JSpinner spiValor27;
+    private javax.swing.JSpinner spiValor28;
+    private javax.swing.JSpinner spiValor29;
     private javax.swing.JSpinner spiValor3;
+    private javax.swing.JSpinner spiValor30;
+    private javax.swing.JSpinner spiValor31;
+    private javax.swing.JSpinner spiValor32;
     private javax.swing.JSpinner spiValor4;
     private javax.swing.JSpinner spiValor5;
     private javax.swing.JSpinner spiValor6;
@@ -2135,9 +2503,11 @@ int contador = 0;
     private javax.swing.JSpinner spiValor8;
     private javax.swing.JSpinner spiValor9;
     private javax.swing.JLabel teConLimon;
-    private javax.swing.JTextField telCli;
     private javax.swing.JLabel txtBreakfast;
     private javax.swing.JLabel txtDescription;
+    private javax.swing.JTextField txtIdCostumer;
+    private javax.swing.JTextField txtNameCashier;
+    private javax.swing.JTextField txtNameCostumer;
     private javax.swing.JTextField txtTableNumber;
     private javax.swing.JDialog viewOrder;
     // End of variables declaration//GEN-END:variables
