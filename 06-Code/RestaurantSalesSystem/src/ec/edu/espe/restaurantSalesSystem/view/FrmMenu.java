@@ -4211,6 +4211,48 @@ public class FrmMenu extends javax.swing.JFrame {
             contTotal = generateBill(spiValor257, "Fropuccino Big", (float) 6.20, contTotal);
             contTotal = generateBill(spiValor258, "Mocaccino Small", (float) 3.50, contTotal);
             contTotal = generateBill(spiValor259, "Mocaccino Big", (float) 6.20, contTotal);
+
+            //Dessert
+            contTotal = generateBill(spiValor280, "Portion Limon Pie", (float) 2.80, contTotal);
+            contTotal = generateBill(spiValor281, "Medium Limon Pie", (float) 13.25, contTotal);
+            contTotal = generateBill(spiValor282, "Big Limon Pie", (float) 21.80, contTotal);
+            contTotal = generateBill(spiValor283, "Portion Manzana Pie", (float) 1.80, contTotal);
+            contTotal = generateBill(spiValor284, "Medium Manzana Pie", (float) 13.25, contTotal);
+            contTotal = generateBill(spiValor285, "Big Manzana Pie", (float) 21.80, contTotal);
+            contTotal = generateBill(spiValor286, "Portion Chocolate Pie", (float) 4.50, contTotal);
+            contTotal = generateBill(spiValor287, "Medium Chocolate Pie", (float) 15.20, contTotal);
+            contTotal = generateBill(spiValor288, "Big Chocolate Pie", (float) 25.80, contTotal);
+            contTotal = generateBill(spiValor289, "Portion Chocolate Cake", (float) 1.50, contTotal);
+            contTotal = generateBill(spiValor290, "Medium Chocolate Cake", (float) 15.50, contTotal);
+            contTotal = generateBill(spiValor291, "Big Chocolate Cake", (float) 23.50, contTotal);
+            contTotal = generateBill(spiValor292, "Portion Vainilla Cake", (float) 1.25, contTotal);
+            contTotal = generateBill(spiValor293, "Medium Vainilla Cake", (float) 15.20, contTotal);
+            contTotal = generateBill(spiValor294, "Big Vainilla Cake", (float) 20.00, contTotal);
+            contTotal = generateBill(spiValor295, "Portion Naranja Cake", (float) 1.25, contTotal);
+            contTotal = generateBill(spiValor296, "Medium Naranja Cake", (float) 15.20, contTotal);
+            contTotal = generateBill(spiValor297, "Big Naranja Cake", (float) 20.00, contTotal);
+            contTotal = generateBill(spiValor298, "Humitas de Sal", (float) 0.35, contTotal);
+            contTotal = generateBill(spiValor299, "Humitas de Dulce", (float) 0.35, contTotal);
+            contTotal = generateBill(spiValor300, "Tamal Lojano de Pollo", (float) 1.25, contTotal);
+            contTotal = generateBill(spiValor301, "Tamal Lojano de Chancho", (float) 1.50, contTotal);
+            contTotal = generateBill(spiValor302, "Tamal Lojano de Chicharron", (float) 0.75, contTotal);
+            contTotal = generateBill(spiValor303, "Bolon de Queso ", (float) 0.50, contTotal);
+            contTotal = generateBill(spiValor304, "Bolon Mixto", (float) 1.25, contTotal);
+            contTotal = generateBill(spiValor305, "Quimbolito", (float) 0.35, contTotal);
+            contTotal = generateBill(spiValor306, "Porción de tarta de queso Nutella", (float) 3.80, contTotal);
+            contTotal = generateBill(spiValor307, "Medium de tarta de queso Nutella", (float) 14.00, contTotal);
+            contTotal = generateBill(spiValor308, "Big de tarta de queso Nutella", (float) 25.00, contTotal);
+            contTotal = generateBill(spiValor309, "Brownie de porción de tarta de queso", (float) 1.80, contTotal);
+            contTotal = generateBill(spiValor310, "Medium Brownie de tarta de queso", (float) 6.20, contTotal);
+            contTotal = generateBill(spiValor311, "Big Brownie de tarta de queso", (float) 14.50, contTotal);  
+            contTotal = generateBill(spiValor312, " Porción de tarta de queso Coco, caramelo y almendra ", (float) 4.80, contTotal);
+            contTotal = generateBill(spiValor313, " Medium de tarta de queso Coco, caramelo y almendra ", (float) 16.00, contTotal);
+            contTotal = generateBill(spiValor314, " Big de tarta de queso Coco, caramelo y almendra ", (float) 25.50, contTotal);
+            
+
+            
+            
+            
             //iva prop y total a labels factura
             Double iva = contTotal * 0.12;
             Double prop = contTotal * 0.05;
@@ -4428,7 +4470,7 @@ public class FrmMenu extends javax.swing.JFrame {
         addOrder(spiValor312, " Porción de tarta de queso Coco, caramelo y almendra ", (float) 4.80);
         addOrder(spiValor313, " Medium de tarta de queso Coco, caramelo y almendra ", (float) 16.00);
         addOrder(spiValor314, " Big de tarta de queso Coco, caramelo y almendra ", (float) 25.00);
-       
+
         Order.setVisible(true);
         MenuDessert.dispose();
 
