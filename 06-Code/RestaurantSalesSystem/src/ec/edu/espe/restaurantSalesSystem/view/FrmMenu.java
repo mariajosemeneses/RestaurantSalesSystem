@@ -3870,127 +3870,6 @@ public class FrmMenu extends javax.swing.JFrame {
         "src/ec/edu/espe/restaurantSalesSystem/images/Quimbolito.jpg" );
     }//GEN-LAST:event_btnDessertActionPerformed
 
-    private void bntOrderBreakfastActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntOrderBreakfastActionPerformed
-
-        DefaultTableModel model = (DefaultTableModel) datosTable.getModel();
-    
-        if (spiValor201.getValue().hashCode() > 0) {
-            String x = "Cafe en Agua";
-            float y;
-            y = (float) 0.50 ;
-            model.addRow(new Object[]{x, y,spiValor201.getValue().hashCode()});
-        }
-        if (spiValor202.getValue().hashCode()> 0) {
-            String x = "Cafe en Leche";
-            float y;
-            y = (float) 0.75;
-            model.addRow(new Object[]{x, y, spiValor202.getValue().hashCode()});
-        }
-        if (spiValor203.getValue().hashCode() > 0) {
-            String x = "Te con Limon";
-            float y = (float) 0.50;
-            model.addRow(new Object[]{x, y, spiValor203.getValue().hashCode()});
-        } 
-        if (spiValor204.getValue().hashCode() > 0) {
-            String x = "Leche";
-            float y =(float) 0.60;
-            model.addRow(new Object[]{x, y, spiValor204.getValue().hashCode()});
-        }
-        if (spiValor205.getValue().hashCode() > 0) {
-            String x = "Pan Simple";
-            float y = (float) 0.10;
-            model.addRow(new Object[]{x, y, spiValor205.getValue().hashCode() });
-        }
-        if (spiValor206.getValue().hashCode() > 0) {
-            String x = "Pan con Jamón";
-            float y = (float) 0.25;
-            model.addRow(new Object[]{x, y, spiValor206.getValue().hashCode()});
-        }
-        if (spiValor207.getValue().hashCode() > 0) {
-            String x = "Pan con Mortadela";
-            float y = (float) 0.25;
-            model.addRow(new Object[]{x, y, spiValor207.getValue().hashCode()});
-        }
-        if (spiValor208.getValue().hashCode() > 0) {
-            String x = "Pan Integral";
-            float y = (float) 0.25;
-            model.addRow(new Object[]{x, y, spiValor208.getValue().hashCode()});
-        }
-        if (spiValor209.getValue().hashCode() > 0) {
-            String x = "Jugo de Mora";
-            float y = (float) 0.75;
-            model.addRow(new Object[]{x, y, spiValor209.getValue().hashCode()});
-        }
-        if (spiValor210.getValue().hashCode() > 0) {
-            String x = "Jugo de Naranjilla";
-            float y = (float) 0.75;
-            model.addRow(new Object[]{x, y, spiValor210.getValue().hashCode()});
-        }
-        if (spiValor211.getValue().hashCode() > 0) {
-            String x = "Jugo de Tomate de Arbol";
-            float y = (float) 0.75;
-            model.addRow(new Object[]{x, y, spiValor211.getValue().hashCode()});
-        }
-        if (spiValor212.getValue().hashCode() > 0) {
-            String x = "Huevos Cocidos";
-            float y = (float) 0.20;
-            model.addRow(new Object[]{x, y, spiValor212.getValue().hashCode()});
-        }
-        if (spiValor213.getValue().hashCode() > 0) {
-            String x = "Huevos Tibios";
-            float y = (float) 0.20;
-            model.addRow(new Object[]{x, y, spiValor213.getValue().hashCode()});
-        }
-        if (spiValor214.getValue().hashCode() > 0) {
-            String x = "Torta de Huevo";
-            float y = (float) 0.20;
-            model.addRow(new Object[]{x, y, spiValor214.getValue().hashCode() });
-        }
-        if (spiValor215.getValue().hashCode() > 0) {
-            String x = "Huevos Fritos";
-            float y = (float) 0.20;
-            model.addRow(new Object[]{x, y, spiValor215.getValue().hashCode()});
-        }
-        if (spiValor216.getValue().hashCode() > 0) {
-            String x = "Hevos Rvueltos";
-            float y = (float) 0.20;
-            model.addRow(new Object[]{x, y, spiValor216.getValue().hashCode()});
-        }
-        if (spiValor217.getValue().hashCode() > 0) {
-            String x = "Manzana";
-            float y = (float) 0.35;
-            model.addRow(new Object[]{x, y, spiValor217.getValue().hashCode()});
-        }
-        if (spiValor218.getValue().hashCode() > 0) {
-            String x = "Pera";
-            float y = (float) 0.25;
-            model.addRow(new Object[]{x, y, spiValor218.getValue().hashCode()});
-        }
-        if (spiValor219.getValue().hashCode() > 0) {
-            String x = "Banana";
-            float y = (float) 0.25;
-            model.addRow(new Object[]{x, y, spiValor219.getValue().hashCode()});
-        }
-        if (spiValor220.getValue().hashCode() > 0) {
-            String x = "Estofado de carne";
-            float y = (float) 1.50;
-            model.addRow(new Object[]{x, y, spiValor220.getValue().hashCode()});
-        }
-         if (spiValor221.getValue().hashCode() > 0) {
-            String x = "Estofado de pollo";
-            float y = (float) 1.50;
-            model.addRow(new Object[]{x, y, spiValor221.getValue().hashCode()});
-        }
-        Order.setVisible(true);
-        MenuBreakfast.dispose();
-    }//GEN-LAST:event_bntOrderBreakfastActionPerformed
-
-    private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturnActionPerformed
-        this.setVisible(false);
-        FrmMenu frmMenu = new FrmMenu();
-        frmMenu.setVisible(true);
-    }//GEN-LAST:event_btnReturnActionPerformed
-
     private void btnReturn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturn4ActionPerformed
         Order.setVisible(false);
         this.setVisible(true);
@@ -5197,6 +5076,127 @@ public class FrmMenu extends javax.swing.JFrame {
         FrmMenu frmOptionsMenuCustomer = new FrmMenu();
         frmOptionsMenuCustomer.setVisible(true);
     }//GEN-LAST:event_bntReturnActionPerformed
+
+    private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturnActionPerformed
+        this.setVisible(false);
+        FrmMenu frmMenu = new FrmMenu();
+        frmMenu.setVisible(true);
+    }//GEN-LAST:event_btnReturnActionPerformed
+
+    private void bntOrderBreakfastActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntOrderBreakfastActionPerformed
+
+        DefaultTableModel model = (DefaultTableModel) datosTable.getModel();
+
+        if (spiValor201.getValue().hashCode() > 0) {
+            String x = "Cafe en Agua";
+            float y;
+            y = (float) 0.50 ;
+            model.addRow(new Object[]{x, y,spiValor201.getValue().hashCode()});
+        }
+        if (spiValor202.getValue().hashCode()> 0) {
+            String x = "Cafe en Leche";
+            float y;
+            y = (float) 0.75;
+            model.addRow(new Object[]{x, y, spiValor202.getValue().hashCode()});
+        }
+        if (spiValor203.getValue().hashCode() > 0) {
+            String x = "Te con Limon";
+            float y = (float) 0.50;
+            model.addRow(new Object[]{x, y, spiValor203.getValue().hashCode()});
+        }
+        if (spiValor204.getValue().hashCode() > 0) {
+            String x = "Leche";
+            float y =(float) 0.60;
+            model.addRow(new Object[]{x, y, spiValor204.getValue().hashCode()});
+        }
+        if (spiValor205.getValue().hashCode() > 0) {
+            String x = "Pan Simple";
+            float y = (float) 0.10;
+            model.addRow(new Object[]{x, y, spiValor205.getValue().hashCode() });
+        }
+        if (spiValor206.getValue().hashCode() > 0) {
+            String x = "Pan con Jamón";
+            float y = (float) 0.25;
+            model.addRow(new Object[]{x, y, spiValor206.getValue().hashCode()});
+        }
+        if (spiValor207.getValue().hashCode() > 0) {
+            String x = "Pan con Mortadela";
+            float y = (float) 0.25;
+            model.addRow(new Object[]{x, y, spiValor207.getValue().hashCode()});
+        }
+        if (spiValor208.getValue().hashCode() > 0) {
+            String x = "Pan Integral";
+            float y = (float) 0.25;
+            model.addRow(new Object[]{x, y, spiValor208.getValue().hashCode()});
+        }
+        if (spiValor209.getValue().hashCode() > 0) {
+            String x = "Jugo de Mora";
+            float y = (float) 0.75;
+            model.addRow(new Object[]{x, y, spiValor209.getValue().hashCode()});
+        }
+        if (spiValor210.getValue().hashCode() > 0) {
+            String x = "Jugo de Naranjilla";
+            float y = (float) 0.75;
+            model.addRow(new Object[]{x, y, spiValor210.getValue().hashCode()});
+        }
+        if (spiValor211.getValue().hashCode() > 0) {
+            String x = "Jugo de Tomate de Arbol";
+            float y = (float) 0.75;
+            model.addRow(new Object[]{x, y, spiValor211.getValue().hashCode()});
+        }
+        if (spiValor212.getValue().hashCode() > 0) {
+            String x = "Huevos Cocidos";
+            float y = (float) 0.20;
+            model.addRow(new Object[]{x, y, spiValor212.getValue().hashCode()});
+        }
+        if (spiValor213.getValue().hashCode() > 0) {
+            String x = "Huevos Tibios";
+            float y = (float) 0.20;
+            model.addRow(new Object[]{x, y, spiValor213.getValue().hashCode()});
+        }
+        if (spiValor214.getValue().hashCode() > 0) {
+            String x = "Torta de Huevo";
+            float y = (float) 0.20;
+            model.addRow(new Object[]{x, y, spiValor214.getValue().hashCode() });
+        }
+        if (spiValor215.getValue().hashCode() > 0) {
+            String x = "Huevos Fritos";
+            float y = (float) 0.20;
+            model.addRow(new Object[]{x, y, spiValor215.getValue().hashCode()});
+        }
+        if (spiValor216.getValue().hashCode() > 0) {
+            String x = "Hevos Rvueltos";
+            float y = (float) 0.20;
+            model.addRow(new Object[]{x, y, spiValor216.getValue().hashCode()});
+        }
+        if (spiValor217.getValue().hashCode() > 0) {
+            String x = "Manzana";
+            float y = (float) 0.35;
+            model.addRow(new Object[]{x, y, spiValor217.getValue().hashCode()});
+        }
+        if (spiValor218.getValue().hashCode() > 0) {
+            String x = "Pera";
+            float y = (float) 0.25;
+            model.addRow(new Object[]{x, y, spiValor218.getValue().hashCode()});
+        }
+        if (spiValor219.getValue().hashCode() > 0) {
+            String x = "Banana";
+            float y = (float) 0.25;
+            model.addRow(new Object[]{x, y, spiValor219.getValue().hashCode()});
+        }
+        if (spiValor220.getValue().hashCode() > 0) {
+            String x = "Estofado de carne";
+            float y = (float) 1.50;
+            model.addRow(new Object[]{x, y, spiValor220.getValue().hashCode()});
+        }
+        if (spiValor221.getValue().hashCode() > 0) {
+            String x = "Estofado de pollo";
+            float y = (float) 1.50;
+            model.addRow(new Object[]{x, y, spiValor221.getValue().hashCode()});
+        }
+        Order.setVisible(true);
+        MenuBreakfast.dispose();
+    }//GEN-LAST:event_bntOrderBreakfastActionPerformed
 
     /**
      * @param args the command line arguments
