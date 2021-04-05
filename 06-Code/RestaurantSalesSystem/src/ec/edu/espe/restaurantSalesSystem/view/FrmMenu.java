@@ -2264,8 +2264,8 @@ public class FrmMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_btnLunchActionPerformed
 
     private void btnSnackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSnackActionPerformed
-        MenuSnack.setVisible(true);
-        MenuSnack.setLocationRelativeTo(null);
+//        MenuSnack.setVisible(true);
+//        MenuSnack.setLocationRelativeTo(null);
     }//GEN-LAST:event_btnSnackActionPerformed
 
     private void btnDrinkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDrinkActionPerformed
@@ -3571,15 +3571,11 @@ public class FrmMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_btnJuiceActionPerformed
 
     private void btnReturn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturn7ActionPerformed
-        this.setVisible(false);
-        FrmOptionsDrinkCustomer frmOptionsDrinkCustomer = new FrmOptionsDrinkCustomer();
-        frmOptionsDrinkCustomer.setVisible(true);
+        
     }//GEN-LAST:event_btnReturn7ActionPerformed
 
     private void btnReturn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturn5ActionPerformed
-        this.setVisible(false);
-        FrmOptionsDrinkCustomer frmOptionsDrinkCustomer = new FrmOptionsDrinkCustomer();
-        frmOptionsDrinkCustomer.setVisible(true);
+       
     }//GEN-LAST:event_btnReturn5ActionPerformed
 
     private void btnAdd1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdd1ActionPerformed
