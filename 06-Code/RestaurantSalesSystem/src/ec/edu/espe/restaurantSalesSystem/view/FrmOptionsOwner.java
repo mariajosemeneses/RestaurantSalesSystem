@@ -383,12 +383,11 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
         );
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("RESUMEN DE VENTAS pitaks");
+        jLabel3.setText("REPORT SALES");
 
         jButton28.setBackground(java.awt.Color.white);
         jButton28.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jButton28.setText("VER VENTAS");
+        jButton28.setText("View Sales");
         jButton28.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton28.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -407,31 +406,30 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
             .addGroup(SalesLayout.createSequentialGroup()
                 .addGroup(SalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(SalesLayout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addComponent(tablenumber)
-                        .addGap(18, 18, 18)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(155, 155, 155)
+                        .addComponent(jButton28, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(SalesLayout.createSequentialGroup()
                         .addGap(89, 89, 89)
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(tablenumber)
+                        .addGap(30, 30, 30)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(SalesLayout.createSequentialGroup()
-                        .addGap(155, 155, 155)
-                        .addComponent(jButton28, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(111, Short.MAX_VALUE))
+                        .addGap(145, 145, 145)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(154, Short.MAX_VALUE))
         );
         SalesLayout.setVerticalGroup(
             SalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SalesLayout.createSequentialGroup()
-                .addGap(48, 48, 48)
+                .addGap(41, 41, 41)
                 .addComponent(jLabel3)
+                .addGap(61, 61, 61)
                 .addGroup(SalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(SalesLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(SalesLayout.createSequentialGroup()
-                        .addGap(59, 59, 59)
+                        .addGap(8, 8, 8)
                         .addComponent(tablenumber)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 89, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 86, Short.MAX_VALUE)
                 .addComponent(jButton28, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(53, 53, 53))
         );
@@ -572,6 +570,12 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
 
     }//GEN-LAST:event_btnAddActionPerformed
 
+     public void emptyFields() {
+
+        cmbTypeOfProduct.setSelectedIndex(0);
+        txtDescription.setText("");
+        txtPrice.setText("");
+     }
     private void cmbTypeOfProductActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbTypeOfProductActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cmbTypeOfProductActionPerformed
