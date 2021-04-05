@@ -3741,17 +3741,11 @@ public class FrmMenu extends javax.swing.JFrame {
         MenuLunch.setLocationRelativeTo(null);
         this.setLocationRelativeTo(null);
 
-        rsscalelabel.RSScaleLabel.setScaleLabel(jLocro,
-                "src/ec/edu/espe/restaurantSalesSystem/images/Locro.jpg");
+        rsscalelabel.RSScaleLabel.setScaleLabel(jLocro,"src/ec/edu/espe/restaurantSalesSystem/images/Locro.jpg");
+        rsscalelabel.RSScaleLabel.setScaleLabel(jCremaTomato,"src/ec/edu/espe/restaurantSalesSystem/images/CremaTomato.jpg");
+        rsscalelabel.RSScaleLabel.setScaleLabel(jCaldoGallina,"src/ec/edu/espe/restaurantSalesSystem/images/CaldoGallina.jpg");
 
-        rsscalelabel.RSScaleLabel.setScaleLabel(jCremaTomato,
-                "src/ec/edu/espe/restaurantSalesSystem/images/CremaTomato.jpg");
-
-        rsscalelabel.RSScaleLabel.setScaleLabel(jCaldoGallina,
-                "src/ec/edu/espe/restaurantSalesSystem/images/CaldoGallina.jpg");
-
-        rsscalelabel.RSScaleLabel.setScaleLabel(jChuleta,
-                "src/ec/edu/espe/restaurantSalesSystem/images/Chuleta.jpg");
+        rsscalelabel.RSScaleLabel.setScaleLabel(jChuleta,"src/ec/edu/espe/restaurantSalesSystem/images/Chuleta.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jCamaron,
                 "src/ec/edu/espe/restaurantSalesSystem/images/Camaron.jpg");
@@ -3911,68 +3905,17 @@ public class FrmMenu extends javax.swing.JFrame {
         sendOrder(spiValor231, "Brownie");
         sendOrder(spiValor232, "ChesseCake");
         sendOrder(spiValor233, "Pastel Tres Leches");
-
         //Snack
-        if (spiValor234.getValue().hashCode() > 0) {
-            String x = "Hamburguesa de Queso";
-            if (Integer.parseInt(numMesa.getText()) >= 0) {
-                model2.addRow(new Object[]{x, spiValor234.getValue(), numMesa.getText()});
-            }
-        }
-        if (spiValor235.getValue().hashCode() > 0) {
-            String x = "Hamburguesa Simple";
-            if (Integer.parseInt(numMesa.getText()) >= 0) {
-                model2.addRow(new Object[]{x, spiValor235.getValue(), numMesa.getText()});
-            }
-        }
-        if (spiValor236.getValue().hashCode() > 0) {
-            String x = "Hamburguesa de Queso y Tocino";
-            if (Integer.parseInt(numMesa.getText()) >= 0) {
-                model2.addRow(new Object[]{x, spiValor236.getValue(), numMesa.getText()});
-            }
-        }
-        if (spiValor237.getValue().hashCode() > 0) {
-            String x = "Hamburguesa de Pollo";
-            if (Integer.parseInt(numMesa.getText()) >= 0) {
-                model2.addRow(new Object[]{x, spiValor237.getValue(), numMesa.getText()});
-            }
-        }
-        if (spiValor238.getValue().hashCode() > 0) {
-            String x = "Hamburguesa Jack Daniels";
-            if (Integer.parseInt(numMesa.getText()) >= 0) {
-                model2.addRow(new Object[]{x, spiValor238.getValue(), numMesa.getText()});
-            }
-        }
-        if (spiValor239.getValue().hashCode() > 0) {
-            String x = "Alitas BBQ";
-            if (Integer.parseInt(numMesa.getText()) >= 0) {
-                model2.addRow(new Object[]{x, spiValor239.getValue(), numMesa.getText()});
-            }
-        }
-        if (spiValor240.getValue().hashCode() > 0) {
-            String x = "Alitas Picantes";
-            if (Integer.parseInt(numMesa.getText()) >= 0) {
-                model2.addRow(new Object[]{x, spiValor240.getValue(), numMesa.getText()});
-            }
-        }
-        if (spiValor241.getValue().hashCode() > 0) {
-            String x = "Alitas Maracuya";
-            if (Integer.parseInt(numMesa.getText()) >= 0) {
-                model2.addRow(new Object[]{x, spiValor241.getValue(), numMesa.getText()});
-            }
-        }
-        if (spiValor242.getValue().hashCode() > 0) {
-            String x = "Nachos con Queso Chedar";
-            if (Integer.parseInt(numMesa.getText()) >= 0) {
-                model2.addRow(new Object[]{x, spiValor242.getValue(), numMesa.getText()});
-            }
-        }
-        if (spiValor243.getValue().hashCode() > 0) {
-            String x = "Nachos con Guacamole";
-            if (Integer.parseInt(numMesa.getText()) >= 0) {
-                model2.addRow(new Object[]{x, spiValor243.getValue(), numMesa.getText()});
-            }
-        }
+        sendOrder(spiValor234, "Hamburguesa de Queso");
+        sendOrder(spiValor235, "Hamburguesa Simple");
+        sendOrder(spiValor236, "Hamburguesa de Queso y Tocino");
+        sendOrder(spiValor237, "Hamburguesa de Pollo");
+        sendOrder(spiValor238, "Hamburguesa Jack Daniels");
+        sendOrder(spiValor239, "Alitas BBQ");
+        sendOrder(spiValor240, "Alitas Picantes");
+        sendOrder(spiValor241, "Alitas Maracuya");
+        sendOrder(spiValor242, "Nachos con Queso Chedar");
+        sendOrder(spiValor243, "Nachos con Guacamole");
 
         //Juice
         sendOrder(spiValor260, "Jarra Jugo de Papaya");
@@ -5143,59 +5086,19 @@ public class FrmMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_btnReturn8ActionPerformed
 
     private void btnAdd4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdd4ActionPerformed
+        
         DefaultTableModel model = (DefaultTableModel) datosTable.getModel();
-
-        if (spiValor234.getValue().hashCode() > 0) {
-            String x = "Hamburguesa de Queso";
-            float y = (float) 5.75;
-            model.addRow(new Object[]{x, y, spiValor234.getValue().hashCode()});
-        }
-
-        if (spiValor235.getValue().hashCode() > 0) {
-            String x = "Hamburguesa Simple";
-            float y = (float) 5.25;
-            model.addRow(new Object[]{x, y, spiValor235.getValue().hashCode()});
-        }
-        if (spiValor236.getValue().hashCode() > 0) {
-            String x = "Hamburguesa de Queso y Tocino";
-            float y = (float) 6.90;
-            model.addRow(new Object[]{x, y, spiValor236.getValue().hashCode()});
-        }
-        if (spiValor237.getValue().hashCode() > 0) {
-            String x = "Hamburguesa de Pollo";
-            float y = (float) 6.50;
-            model.addRow(new Object[]{x, y, spiValor237.getValue().hashCode()});
-        }
-        if (spiValor238.getValue().hashCode() > 0) {
-            String x = "Hamburguesa Jack Daniels";
-            float y = (float) 7.99;
-            model.addRow(new Object[]{x, y, spiValor238.getValue().hashCode()});
-        }
-        if (spiValor239.getValue().hashCode() > 0) {
-            String x = "Alitas BBQ";
-            float y = (float) 13.50;
-            model.addRow(new Object[]{x, y, spiValor239.getValue().hashCode()});
-        }
-        if (spiValor240.getValue().hashCode() > 0) {
-            String x = "Alitas Picantes";
-            float y = (float) 13.50;
-            model.addRow(new Object[]{x, y, spiValor240.getValue().hashCode()});
-        }
-        if (spiValor241.getValue().hashCode() > 0) {
-            String x = "Alitas Maracuya";
-            float y = (float) 13.50;
-            model.addRow(new Object[]{x, y, spiValor241.getValue().hashCode()});
-        }
-        if (spiValor242.getValue().hashCode() > 0) {
-            String x = "Nachos con Queso Chedar";
-            float y = (float) 6.25;
-            model.addRow(new Object[]{x, y, spiValor242.getValue().hashCode()});
-        }
-        if (spiValor243.getValue().hashCode() > 0) {
-            String x = "Nachos con Guacamole";
-            float y = (float) 6.25;
-            model.addRow(new Object[]{x, y, spiValor243.getValue().hashCode()});
-        }
+        
+        addOrder(spiValor234, "Hamburguesa de Queso", (float) 5.75);
+        addOrder(spiValor235, "Hamburguesa Simple", (float) 5.25);
+        addOrder(spiValor236, "Hamburguesa de Queso y Tocino", (float) 6.90);
+        addOrder(spiValor237, "Hamburguesa de Pollo", (float) 6.50);
+        addOrder(spiValor238, "Hamburguesa Jack Daniels", (float) 7.99);
+        addOrder(spiValor239, "Alitas BBQ", (float) 13.50);
+        addOrder(spiValor240, "Alitas Picantes", (float) 13.50);
+        addOrder(spiValor241, "Alitas Maracuya", (float) 13.50);
+        addOrder(spiValor242, "Nachos con Queso Chedar", (float) 6.25);
+        addOrder(spiValor243, "Nachos con Guacamole", (float) 6.25);
 
         Order.setVisible(true);
         MenuSnack.dispose();
