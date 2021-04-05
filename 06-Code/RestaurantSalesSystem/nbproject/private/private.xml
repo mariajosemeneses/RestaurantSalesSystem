@@ -5,13 +5,11 @@
         <group>
             <file>file:/C:/Users/DAVID/Documents/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/images/fondo-product.jpg</file>
             <file>file:/C:/Users/DAVID/Documents/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/view/FrmJuice.java</file>
-            <file>file:/C:/Users/DAVID/Documents/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/view/FrmGenerateOrder.java</file>
             <file>file:/C:/Users/DAVID/Documents/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/model/Bill.java</file>
             <file>file:/C:/Users/DAVID/Documents/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/view/FrmDessert.java</file>
             <file>file:/C:/Users/DAVID/Documents/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/view/FrmOptionsMenu.java</file>
             <file>file:/C:/Users/DAVID/Documents/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/model/Breakfast.java</file>
             <file>file:/C:/Users/DAVID/Documents/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/view/FrmMenu.java</file>
-            <file>file:/C:/Users/DAVID/Documents/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/view/FrmSoda.java</file>
             <file>file:/C:/Users/DAVID/Documents/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/model/Customer.java</file>
             <file>file:/C:/Users/DAVID/Documents/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/images/CoffeeTinto.jpg</file>
             <file>file:/C:/Users/DAVID/Documents/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/controller/VerificationController.java</file>
@@ -20,6 +18,7 @@
             <file>file:/C:/Users/DAVID/Documents/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/model/Coffee.java</file>
             <file>file:/C:/Users/DAVID/Documents/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/view/FrmOptionsCashier.java</file>
             <file>file:/C:/Users/DAVID/Documents/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/images/back%20(1).png</file>
+            <file>file:/C:/Users/DAVID/Documents/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/controller/OwnerController.java</file>
             <file>file:/C:/Users/DAVID/Documents/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/utils/Persistence.java</file>
             <file>file:/C:/Users/DAVID/Documents/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/images/flrcha.png</file>
             <file>file:/C:/Users/DAVID/Documents/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/images/fondo-product_1.jpg</file>
@@ -34,15 +33,12 @@
             <file>file:/C:/Users/DAVID/Documents/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/test/ec/edu/espe/restaurantSalesSystem/model/BillTest.java</file>
             <file>file:/C:/Users/DAVID/Documents/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/utils/FileManager.java</file>
             <file>file:/C:/Users/DAVID/Documents/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/utils/NoSQL.java</file>
-            <file>file:/C:/Users/DAVID/Documents/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/view/FrmOptionsDrinkCustomer.java</file>
             <file>file:/C:/Users/DAVID/Documents/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/view/FrmOptionsOwner.java</file>
             <file>file:/C:/Users/DAVID/Documents/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/controller/Verification.java</file>
             <file>file:/C:/Users/DAVID/Documents/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/view/FrmResgisterEmployee.java</file>
             <file>file:/C:/Users/DAVID/Documents/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/test/ec/edu/espe/restaurantSalesSystem/model/ProductTest.java</file>
-            <file>file:/C:/Users/DAVID/Documents/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/view/FrmRegisterOrder.java</file>
             <file>file:/C:/Users/DAVID/Documents/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/view/FrmSnack.java</file>
             <file>file:/C:/Users/DAVID/Documents/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/view/FrmMainScreen.java</file>
-            <file>file:/C:/Users/DAVID/Documents/GrupalNoBorrar/RestaurantSalesSystem/06-Code/RestaurantSalesSystem/src/ec/edu/espe/restaurantSalesSystem/view/FrmCoffee.java</file>
         </group>
     </open-files>
 </project-private>

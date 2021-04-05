@@ -1977,7 +1977,7 @@
                   <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
                   <Component id="btnReturn5" min="-2" pref="113" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
-                  <Component id="btnAdd1" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnOrderCoffee" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -2156,7 +2156,7 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="btnReturn5" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="btnAdd1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnOrderCoffee" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
@@ -2225,7 +2225,7 @@
         </Component>
         <Component class="javax.swing.JSpinner" name="spiValor247">
         </Component>
-        <Component class="javax.swing.JButton" name="btnAdd1">
+        <Component class="javax.swing.JButton" name="btnOrderCoffee">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="18" style="0"/>
@@ -2233,7 +2233,7 @@
             <Property name="text" type="java.lang.String" value="Add Order"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAdd1ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnOrderCoffeeActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel61">
@@ -2506,10 +2506,10 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="104" max="-2" attributes="0"/>
-                  <Component id="jButton2" min="-2" pref="315" max="-2" attributes="0"/>
+                  <Component id="btnReturnJuice" min="-2" pref="315" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
-                  <Component id="btnAdd2" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
+                  <Component id="btnOrderJuice" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="79" max="-2" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
@@ -2727,8 +2727,8 @@
                               </Group>
                           </Group>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="btnAdd2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnReturnJuice" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnOrderJuice" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                       </Group>
@@ -2754,6 +2754,15 @@
                           <Component id="jLabel105" min="-2" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="1" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="jimage7" min="-2" pref="78" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="jLabel96" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="jimage8" min="-2" pref="77" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="133" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel97" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -2777,16 +2786,7 @@
                                           <Component id="jLabel100" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <EmptySpace max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="jimage7" min="-2" pref="78" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="jLabel96" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jimage8" min="-2" pref="77" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="133" max="-2" attributes="0"/>
+                                  <EmptySpace min="39" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -2857,13 +2857,16 @@
             <Property name="orientation" type="int" value="1"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton2">
+        <Component class="javax.swing.JButton" name="btnReturnJuice">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="18" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Return"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnReturnJuiceActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jimage1">
           <Properties>
@@ -2919,17 +2922,6 @@
             </Property>
             <Property name="text" type="java.lang.String" value="JUICES"/>
           </Properties>
-        </Component>
-        <Component class="javax.swing.JButton" name="btnAdd2">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="18" style="0"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Add Order"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAdd2ActionPerformed"/>
-          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel101">
           <Properties>
@@ -3049,6 +3041,17 @@
             </Property>
             <Property name="text" type="java.lang.String" value="SANDIA"/>
           </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnOrderJuice">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Add Order"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnOrderJuiceActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
@@ -3514,17 +3517,17 @@
                                               <Group type="102" alignment="0" attributes="0">
                                                   <Component id="jLabel114" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="spiValor94" min="-2" pref="61" max="-2" attributes="0"/>
+                                                  <Component id="spiValor313" min="-2" pref="61" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
                                                   <Component id="jLabel113" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="spiValor75" min="-2" pref="61" max="-2" attributes="0"/>
+                                                  <Component id="spiValor312" min="-2" pref="61" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
                                                   <Component id="jLabel115" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="spiValor96" min="-2" pref="61" max="-2" attributes="0"/>
+                                                  <Component id="spiValor314" min="-2" pref="61" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
@@ -3539,9 +3542,9 @@
                                           </Group>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                              <Component id="spiValor70" alignment="0" max="32767" attributes="0"/>
-                                              <Component id="spiValor71" alignment="0" max="32767" attributes="0"/>
-                                              <Component id="spiValor69" alignment="0" pref="61" max="32767" attributes="0"/>
+                                              <Component id="spiValor307" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="spiValor308" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="spiValor306" alignment="0" pref="61" max="32767" attributes="0"/>
                                           </Group>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
@@ -3554,17 +3557,17 @@
                                               <Group type="102" alignment="0" attributes="0">
                                                   <Component id="jLabel126" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="spiValor73" min="-2" pref="61" max="-2" attributes="0"/>
+                                                  <Component id="spiValor310" min="-2" pref="61" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
                                                   <Component id="jLabel124" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="spiValor72" min="-2" pref="61" max="-2" attributes="0"/>
+                                                  <Component id="spiValor309" min="-2" pref="61" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
                                                   <Component id="jLabel128" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="spiValor74" min="-2" pref="61" max="-2" attributes="0"/>
+                                                  <Component id="spiValor311" min="-2" pref="61" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
@@ -3846,17 +3849,17 @@
                                   <EmptySpace min="28" pref="28" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel164" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="spiValor69" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="spiValor306" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel154" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="spiValor70" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="spiValor307" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel161" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="spiValor71" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="spiValor308" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
@@ -3875,17 +3878,17 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel124" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="spiValor72" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="spiValor309" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel126" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="spiValor73" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="spiValor310" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel128" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="spiValor74" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="spiValor311" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -3899,17 +3902,17 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel113" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="spiValor75" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="spiValor312" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel114" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="spiValor94" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="spiValor313" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel115" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="spiValor96" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="spiValor314" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -4328,19 +4331,19 @@
             <Property name="text" type="java.lang.String" value="Portion.....$1,25"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JSpinner" name="spiValor69">
+        <Component class="javax.swing.JSpinner" name="spiValor306">
         </Component>
-        <Component class="javax.swing.JSpinner" name="spiValor70">
+        <Component class="javax.swing.JSpinner" name="spiValor307">
         </Component>
-        <Component class="javax.swing.JSpinner" name="spiValor71">
+        <Component class="javax.swing.JSpinner" name="spiValor308">
         </Component>
-        <Component class="javax.swing.JSpinner" name="spiValor72">
+        <Component class="javax.swing.JSpinner" name="spiValor309">
         </Component>
-        <Component class="javax.swing.JSpinner" name="spiValor73">
+        <Component class="javax.swing.JSpinner" name="spiValor310">
         </Component>
-        <Component class="javax.swing.JSpinner" name="spiValor74">
+        <Component class="javax.swing.JSpinner" name="spiValor311">
         </Component>
-        <Component class="javax.swing.JSpinner" name="spiValor75">
+        <Component class="javax.swing.JSpinner" name="spiValor312">
         </Component>
         <Component class="javax.swing.JSpinner" name="spiValor294">
         </Component>
@@ -4434,11 +4437,11 @@
         </Component>
         <Component class="javax.swing.JSpinner" name="spiValor298">
         </Component>
-        <Component class="javax.swing.JSpinner" name="spiValor94">
+        <Component class="javax.swing.JSpinner" name="spiValor313">
         </Component>
         <Component class="javax.swing.JSpinner" name="spiValor297">
         </Component>
-        <Component class="javax.swing.JSpinner" name="spiValor96">
+        <Component class="javax.swing.JSpinner" name="spiValor314">
         </Component>
         <Component class="javax.swing.JSeparator" name="jSeparator15">
           <Properties>

@@ -11,80 +11,79 @@ package ec.edu.espe.restaurantsalessystem.model;
  * @author Group3
  */
 public class Bill {
-    
 
     private Double iva;
 
-    private float tip;
+    private float propina;
 
-    private float price;
+    private float precio;
 
-    private String description;
+    private String concepto;
 
-    private int quantity;
+    private int cantidad;
 
-    private float numberSales;
-       
+    private float total;
     public int numventas;
 
     public Bill() {
     }
-    
 
-    public int getNumventas(){
+    public int getNumventas() {
         return numventas;
     }
-    public void setNumventas(){
-        this.numventas= numventas;
+
+    public void setNumventas() {
+        this.numventas = numventas;
     }
 
     public Double getIva() {
         return iva;
-        
+
     }
+
     public void setIva(Double iva) {
         this.iva = iva;
-        
+
     }
 
-    
     public float getPropina() {
-        return tip;
-    }
-    public void setPropina(float propina) {
-        this.tip = propina;
+        return propina;
     }
 
-    
+    public void setPropina(float propina) {
+        this.propina = propina;
+    }
+
     public float getPrecio() {
-        return price;
+        return precio;
     }
+
     public void setPrecio(float precio) {
-        this.price = precio;
+        this.precio = precio;
     }
-    
-     public void setConcepto(String concepto) {
-        this.description = concepto;
+
+    public void setConcepto(String concepto) {
+        this.concepto = concepto;
     }
-    
+
     public String getConcepto() {
-        return description;
+        return concepto;
     }
-    
+
     public void setCantidad(int cantidad) {
-        this.quantity = cantidad;
+        this.cantidad = cantidad;
     }
+
     public int getCantidad() {
-        return quantity;
+        return cantidad;
     }
 
     public float getTotal() {
-        return numberSales;
-    }
-    public void setTotal(float total) {
-        this.numberSales = total;
+        return total;
     }
 
- 
-    
+    public void setTotal(float total) {
+        this.total = total;
+    }
+
 }
