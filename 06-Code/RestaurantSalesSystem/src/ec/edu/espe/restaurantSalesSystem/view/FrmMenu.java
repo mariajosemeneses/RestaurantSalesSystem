@@ -283,6 +283,7 @@ public class FrmMenu extends javax.swing.JFrame {
         jSeparator11 = new javax.swing.JSeparator();
         jAmericano = new javax.swing.JLabel();
         jTinto = new javax.swing.JLabel();
+        MenuJuice = new javax.swing.JFrame();
         btnBreakfast = new javax.swing.JButton();
         btnLunch = new javax.swing.JButton();
         btnSnack = new javax.swing.JButton();
@@ -2088,6 +2089,17 @@ public class FrmMenu extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        javax.swing.GroupLayout MenuJuiceLayout = new javax.swing.GroupLayout(MenuJuice.getContentPane());
+        MenuJuice.getContentPane().setLayout(MenuJuiceLayout);
+        MenuJuiceLayout.setHorizontalGroup(
+            MenuJuiceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 586, Short.MAX_VALUE)
+        );
+        MenuJuiceLayout.setVerticalGroup(
+            MenuJuiceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 390, Short.MAX_VALUE)
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         btnBreakfast.setFont(new java.awt.Font("Baskerville Old Face", 0, 14)); // NOI18N
@@ -3554,9 +3566,8 @@ public class FrmMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCoffeeActionPerformed
 
     private void btnJuiceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJuiceActionPerformed
-        this.setVisible(false);
-        FrmJuice frmJuice = new FrmJuice();
-        frmJuice.setVisible(true);
+        MenuJuice.setVisible(true);
+        MenuJuice.setLocationRelativeTo(null);
     }//GEN-LAST:event_btnJuiceActionPerformed
 
     private void btnReturn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturn7ActionPerformed
@@ -3619,6 +3630,7 @@ public class FrmMenu extends javax.swing.JFrame {
     private javax.swing.JLabel IVA;
     private javax.swing.JFrame MenuBreakfast;
     private javax.swing.JFrame MenuCoffee;
+    private javax.swing.JFrame MenuJuice;
     private javax.swing.JFrame MenuLunch;
     private javax.swing.JFrame MenuSoda;
     private javax.swing.JDialog OptionsDrink;
