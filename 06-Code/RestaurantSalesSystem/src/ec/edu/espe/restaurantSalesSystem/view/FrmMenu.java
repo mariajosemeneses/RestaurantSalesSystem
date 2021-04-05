@@ -247,7 +247,7 @@ public class FrmMenu extends javax.swing.JFrame {
         spiValor246 = new javax.swing.JSpinner();
         jSeparator10 = new javax.swing.JSeparator();
         spiValor247 = new javax.swing.JSpinner();
-        btnAdd1 = new javax.swing.JButton();
+        btnOrderCoffee = new javax.swing.JButton();
         jLabel61 = new javax.swing.JLabel();
         jLabel62 = new javax.swing.JLabel();
         jLabel63 = new javax.swing.JLabel();
@@ -1541,11 +1541,11 @@ public class FrmMenu extends javax.swing.JFrame {
             }
         });
 
-        btnAdd1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        btnAdd1.setText("Add Order");
-        btnAdd1.addActionListener(new java.awt.event.ActionListener() {
+        btnOrderCoffee.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnOrderCoffee.setText("Add Order");
+        btnOrderCoffee.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAdd1ActionPerformed(evt);
+                btnOrderCoffeeActionPerformed(evt);
             }
         });
 
@@ -1757,7 +1757,7 @@ public class FrmMenu extends javax.swing.JFrame {
                 .addGap(37, 37, 37)
                 .addComponent(btnReturn5, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnAdd1)
+                .addComponent(btnOrderCoffee)
                 .addGap(60, 60, 60))
         );
         MenuCoffeeLayout.setVerticalGroup(
@@ -1892,7 +1892,7 @@ public class FrmMenu extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(MenuCoffeeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnReturn5)
-                    .addComponent(btnAdd1))
+                    .addComponent(btnOrderCoffee))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -3916,7 +3916,25 @@ public class FrmMenu extends javax.swing.JFrame {
         sendOrder(spiValor241, "Alitas Maracuya");
         sendOrder(spiValor242, "Nachos con Queso Chedar");
         sendOrder(spiValor243, "Nachos con Guacamole");
-
+        
+        //Coffe
+        sendOrder(spiValor244, "American Small");
+        sendOrder(spiValor245, "American Big");
+        sendOrder(spiValor246, "Tinto Small");
+        sendOrder(spiValor247, "Tinto Big");
+        sendOrder(spiValor248, "Expresso Ristretto Small");
+        sendOrder(spiValor249, "Expresso Ristretto Big");
+        sendOrder(spiValor250, "Capuccino Small");
+        sendOrder(spiValor251, "Capuccino Big");
+        sendOrder(spiValor252, "Latte Macchaiato Small");
+        sendOrder(spiValor253, "Latte Macchaiato Big");
+        sendOrder(spiValor254, "Frapuccino Small");
+        sendOrder(spiValor255, "Frapuccino Big");
+        sendOrder(spiValor256, "Fropaccino Small");
+        sendOrder(spiValor257, "Fropuccino Big");
+        sendOrder(spiValor258, "Mocaccino Small");
+        sendOrder(spiValor259, "Mocaccino Big");
+        
         //Juice
         sendOrder(spiValor260, "Jarra Jugo de Papaya");
         sendOrder(spiValor261, "Vaso Jugo de Papaya");
@@ -4078,6 +4096,22 @@ public class FrmMenu extends javax.swing.JFrame {
         spiValor241.getValue();
         spiValor242.getValue();
         spiValor243.getValue();
+        spiValor244.getValue();
+        spiValor245.getValue();
+        spiValor246.getValue();
+        spiValor247.getValue();
+        spiValor248.getValue();
+        spiValor249.getValue();
+        spiValor250.getValue();
+        spiValor251.getValue();
+        spiValor252.getValue();
+        spiValor253.getValue();
+        spiValor254.getValue();
+        spiValor255.getValue();
+        spiValor256.getValue();
+        spiValor257.getValue();
+        spiValor258.getValue();
+        spiValor259.getValue();
 
 
     }//GEN-LAST:event_btnOtherOrderActionPerformed
@@ -4161,7 +4195,24 @@ public class FrmMenu extends javax.swing.JFrame {
             contTotal = generateBill(spiValor241, "Alitas Maracuya", (float) 13.50, contTotal);
             contTotal = generateBill(spiValor242, "Nachos con Queso Chedar", (float) 6.25, contTotal);
             contTotal = generateBill(spiValor243, "Nachos con Guacamole", (float) 6.25, contTotal);
-
+            
+            //Coffee
+            contTotal = generateBill(spiValor244, "American Small", (float) 3.00, contTotal);
+            contTotal = generateBill(spiValor245, "American Big", (float) 6.00, contTotal);
+            contTotal = generateBill(spiValor246, "Tinto Small", (float) 2.00, contTotal);
+            contTotal = generateBill(spiValor247, "Tinto Big", (float) 5.00, contTotal);
+            contTotal = generateBill(spiValor248, "Expresso Ristretto Small", (float) 2.00, contTotal);
+            contTotal = generateBill(spiValor249, "Expresso Ristretto Big", (float) 5.00, contTotal);
+            contTotal = generateBill(spiValor250, "Capuccino Small", (float) 3.25, contTotal);
+            contTotal = generateBill(spiValor251, "Capuccino Big", (float) 7.25, contTotal);
+            contTotal = generateBill(spiValor252, "Latte Macchaiato Small", (float) 2.50, contTotal);
+            contTotal = generateBill(spiValor253, "Latte Macchaiato Big", (float) 4.50, contTotal);
+            contTotal = generateBill(spiValor254, "Frapuccino Small", (float) 3.00, contTotal);
+            contTotal = generateBill(spiValor255, "Frapuccino Big", (float) 6.20, contTotal);
+            contTotal = generateBill(spiValor256, "Fropaccino Small", (float) 3.00, contTotal);
+            contTotal = generateBill(spiValor257, "Fropuccino Big", (float) 6.20, contTotal);
+            contTotal = generateBill(spiValor258, "Mocaccino Small", (float) 3.50, contTotal);
+            contTotal = generateBill(spiValor259, "Mocaccino Big", (float) 6.20, contTotal);
             //iva prop y total a labels factura
             Double iva = contTotal * 0.12;
             Double prop = contTotal * 0.05;
@@ -4314,9 +4365,27 @@ public class FrmMenu extends javax.swing.JFrame {
 
     }//GEN-LAST:event_btnReturn5ActionPerformed
 
-    private void btnAdd1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdd1ActionPerformed
+    private void btnOrderCoffeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOrderCoffeeActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnAdd1ActionPerformed
+        addOrder(spiValor244, "American Small", (float) 3.00);
+        addOrder(spiValor245, "American Big", (float) 6.00);
+        addOrder(spiValor246, "Tinto Small", (float) 2.00);
+        addOrder(spiValor247, "Tinto Big", (float) 5.00);
+        addOrder(spiValor248, "Expresso Ristretto Small", (float) 2.00);
+        addOrder(spiValor249, "Expresso Ristretto Big", (float) 5.00);
+        addOrder(spiValor250, "Capuccino Small", (float) 3.25);
+        addOrder(spiValor251, "Capuccino Big", (float) 7.25);
+        addOrder(spiValor252, "Latte Macchaiato Small", (float) 2.50);
+        addOrder(spiValor253, "Latte Macchaiato Big", (float) 4.50);
+        addOrder(spiValor254, "Frapuccino Small", (float) 3.00);
+        addOrder(spiValor255, "Frapuccino Big", (float) 6.20);
+        addOrder(spiValor256, "Fropaccino Small", (float) 3.00);
+        addOrder(spiValor257, "Fropuccino Big", (float) 6.20);
+        addOrder(spiValor258, "Mocaccino Small", (float) 3.50);
+        addOrder(spiValor259, "Mocaccino Big", (float) 6.20);
+        Order.setVisible(true);
+        MenuCoffee.dispose();
+    }//GEN-LAST:event_btnOrderCoffeeActionPerformed
 
     private void btnAdd2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdd2ActionPerformed
 
@@ -4681,7 +4750,6 @@ DefaultTableModel model = (DefaultTableModel) datosTable.getModel();
     private javax.swing.JButton bntOrderBreakfast;
     private javax.swing.JButton bntReturn;
     private javax.swing.JButton btnAdd;
-    private javax.swing.JButton btnAdd1;
     private javax.swing.JButton btnAdd3;
     private javax.swing.JButton btnAdd4;
     private javax.swing.JButton btnBreakfast;
@@ -4693,6 +4761,7 @@ DefaultTableModel model = (DefaultTableModel) datosTable.getModel();
     private javax.swing.JButton btnGenerateBill;
     private javax.swing.JButton btnJuice;
     private javax.swing.JButton btnLunch;
+    private javax.swing.JButton btnOrderCoffee;
     private javax.swing.JButton btnOrderJuice;
     private javax.swing.JButton btnOrderLunch;
     private javax.swing.JButton btnOtherOrder;
