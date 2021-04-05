@@ -14,36 +14,143 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jSeparator5" max="32767" attributes="0"/>
+              </Group>
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jLabel11" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel13" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel14" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel16" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel15" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="spiValor216" alignment="0" max="32767" attributes="0"/>
+                              <Component id="spiValor212" alignment="0" max="32767" attributes="0"/>
+                              <Component id="spiValor213" alignment="0" max="32767" attributes="0"/>
+                              <Component id="spiValor214" alignment="0" max="32767" attributes="0"/>
+                              <Component id="spiValor215" alignment="0" min="-2" pref="62" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="136" max="-2" attributes="0"/>
+                          <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                          <Component id="jboiledEgg" min="-2" pref="91" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="jWarmEgg" min="-2" pref="91" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="jOmelette" min="-2" pref="91" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
+                  <Component id="jSeparator3" min="-2" pref="14" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="155" max="-2" attributes="0"/>
-                                  <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
-                                  <Component id="btnReturn" min="-2" pref="113" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="-2" pref="98" max="-2" attributes="0"/>
-                                          <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="121" max="-2" attributes="0"/>
+                                          <Component id="jLabel26" min="-2" max="-2" attributes="0"/>
                                       </Group>
-                                      <Component id="txtDescription" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="jApple1" min="-2" pref="91" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="jPear" min="-2" pref="91" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="jBanano" min="-2" pref="91" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                                  <Component id="jSeparator1" min="-2" pref="11" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="137" max="-2" attributes="0"/>
+                                          <Component id="jLabel27" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="jLabel29" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jLabel30" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace min="-2" pref="89" max="-2" attributes="0"/>
+                                                  <Component id="jBeefStew" min="-2" pref="91" max="-2" attributes="0"/>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="jChickenStew" min="-2" pref="91" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="spiValor220" alignment="0" min="-2" pref="61" max="-2" attributes="0"/>
+                                              <Component id="spiValor221" alignment="0" min="-2" pref="61" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel28" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="spiValor217" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="spiValor218" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="spiValor219" alignment="0" min="-2" pref="61" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="103" max="-2" attributes="0"/>
+                          <Component id="btnReturnBreakfast" min="-2" pref="113" max="-2" attributes="0"/>
+                          <EmptySpace pref="349" max="32767" attributes="0"/>
+                          <Component id="bntOrderBreakfast" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="108" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="177" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="txtDescription" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="98" max="-2" attributes="0"/>
+                                  <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="374" max="-2" attributes="0"/>
-                                  <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="jCoffeWater" min="-2" pref="91" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="jMilkCoffee" min="-2" pref="91" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="jLemonTea" min="-2" pref="91" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="103" alignment="0" groupAlignment="1" attributes="0">
                                           <Component id="cafeEnAgua" alignment="1" min="-2" max="-2" attributes="0"/>
@@ -54,60 +161,28 @@
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                      <Component id="spiValor202" alignment="0" pref="61" max="32767" attributes="0"/>
+                                      <Component id="spiValor202" alignment="0" max="32767" attributes="0"/>
                                       <Component id="spiValor203" alignment="0" max="32767" attributes="0"/>
                                       <Component id="spiValor201" alignment="1" max="32767" attributes="0"/>
-                                      <Component id="spiValor204" alignment="1" max="32767" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="161" max="-2" attributes="0"/>
-                                  <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel11" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel13" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel14" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel16" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel15" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="spiValor216" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="spiValor212" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="spiValor213" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="spiValor214" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="spiValor215" alignment="0" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <Component id="spiValor204" alignment="1" min="-2" pref="61" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
-                          <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jSeparator2" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace pref="11" max="32767" attributes="0"/>
-                                  <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="jSeparator2" min="-2" pref="11" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace max="32767" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="143" pref="143" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jLabel17" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="txtBreakfast" alignment="0" min="-2" pref="168" max="-2" attributes="0"/>
-                                          </Group>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="-2" pref="105" max="-2" attributes="0"/>
-                                          <Component id="jLabel26" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jLabel20" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jLabel21" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jLabel18" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jLabel21" alignment="1" min="-2" max="-2" attributes="0"/>
                                               <Component id="jLabel19" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jLabel18" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jLabel20" alignment="1" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
@@ -119,70 +194,52 @@
                                               <Component id="spiValor208" alignment="0" min="-2" pref="61" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jSeparator3" min="-2" pref="10" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jLabel28" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Group type="102" attributes="0">
+                                                  <EmptySpace min="-2" pref="89" max="-2" attributes="0"/>
+                                                  <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="jSimpleBread" min="-2" pref="91" max="-2" attributes="0"/>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="jBreadWithJam" min="-2" pref="91" max="-2" attributes="0"/>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="jIntegralBread" min="-2" pref="91" max="-2" attributes="0"/>
+                                              </Group>
                                           </Group>
-                                          <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                              <Component id="spiValor217" alignment="0" max="32767" attributes="0"/>
-                                              <Component id="spiValor218" alignment="0" max="32767" attributes="0"/>
-                                              <Component id="spiValor219" alignment="0" min="-2" pref="61" max="-2" attributes="0"/>
-                                          </Group>
-                                      </Group>
-                                      <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace max="32767" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jSeparator4" alignment="0" min="-2" pref="10" max="-2" attributes="0"/>
-                              <Component id="jSeparator1" alignment="0" min="-2" pref="11" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="168" max="-2" attributes="0"/>
-                          <Component id="jLabel22" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel29" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="spiValor220" min="-2" pref="61" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel30" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="spiValor221" min="-2" pref="61" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="161" max="-2" attributes="0"/>
-                                  <Component id="jLabel27" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="1" attributes="0">
-                                      <Component id="bntOrderBreakfast" alignment="1" min="-2" max="-2" attributes="0"/>
-                                      <Group type="103" alignment="1" groupAlignment="0" attributes="0">
-                                          <Component id="jLabel24" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel23" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel25" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <EmptySpace max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+                                  <Component id="txtBreakfast" min="-2" pref="168" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
+                          <Component id="jSeparator4" min="-2" pref="10" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="157" max="-2" attributes="0"/>
+                                  <Component id="jLabel22" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+                                  <Component id="jBlackberryJuice" min="-2" pref="91" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="jTreeTomato" min="-2" pref="91" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="jNaranjillasq" min="-2" pref="91" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jLabel24" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel23" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel25" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="spiValor211" alignment="0" min="-2" pref="61" max="-2" attributes="0"/>
                                       <Component id="spiValor209" alignment="0" min="-2" pref="61" max="-2" attributes="0"/>
@@ -190,13 +247,9 @@
                                   </Group>
                               </Group>
                           </Group>
-                          <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
-              </Group>
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jSeparator5" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -204,194 +257,225 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="txtBreakfast" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Component id="txtBreakfast" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
-                                          <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                      <Group type="102" attributes="0">
+                                          <Component id="jSeparator4" max="32767" attributes="0"/>
+                                          <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
                                       </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="spiValor201" alignment="3" min="-2" max="-2" attributes="0"/>
-                                              <Component id="cafeEnAgua" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Group type="102" alignment="0" attributes="0">
+                                                          <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
+                                                          <Group type="103" groupAlignment="3" attributes="0">
+                                                              <Component id="jSimpleBread" alignment="1" min="-2" pref="83" max="-2" attributes="0"/>
+                                                              <Component id="jBreadWithJam" alignment="3" min="-2" pref="83" max="-2" attributes="0"/>
+                                                              <Component id="jIntegralBread" alignment="3" min="-2" pref="83" max="-2" attributes="0"/>
+                                                          </Group>
+                                                          <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
+                                                          <Group type="103" groupAlignment="3" attributes="0">
+                                                              <Component id="spiValor205" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                              <Component id="jLabel18" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                          </Group>
+                                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                          <Group type="103" groupAlignment="0" attributes="0">
+                                                              <Component id="spiValor206" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                              <Component id="jLabel19" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                          </Group>
+                                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                          <Group type="103" groupAlignment="3" attributes="0">
+                                                              <Component id="jLabel20" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                              <Component id="spiValor207" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                          </Group>
+                                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                          <Group type="103" groupAlignment="3" attributes="0">
+                                                              <Component id="jLabel21" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                              <Component id="spiValor208" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                          </Group>
+                                                      </Group>
+                                                      <Group type="102" attributes="0">
+                                                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                                                          <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                                                      </Group>
+                                                  </Group>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="3" attributes="0">
+                                                      <Component id="jMilkCoffee" alignment="3" min="-2" pref="83" max="-2" attributes="0"/>
+                                                      <Component id="jCoffeWater" alignment="3" min="-2" pref="83" max="-2" attributes="0"/>
+                                                      <Component id="jLemonTea" alignment="3" min="-2" pref="83" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="3" attributes="0">
+                                                      <Component id="spiValor201" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="cafeEnAgua" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="3" attributes="0">
+                                                      <Component id="spiValor202" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="cafeEnLeche" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="3" attributes="0">
+                                                      <Component id="spiValor203" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="teConLimon" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="3" attributes="0">
+                                                      <Component id="spiValor204" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="leche" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                              <Component id="jSeparator2" alignment="1" min="-2" pref="249" max="-2" attributes="0"/>
                                           </Group>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="spiValor202" alignment="3" min="-2" max="-2" attributes="0"/>
-                                              <Component id="cafeEnLeche" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="spiValor203" alignment="3" min="-2" max="-2" attributes="0"/>
-                                              <Component id="teConLimon" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="spiValor204" alignment="3" min="-2" max="-2" attributes="0"/>
-                                              <Component id="leche" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace max="32767" attributes="0"/>
+                                          <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
                               </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="spiValor209" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+                                  <Component id="spiValor210" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="spiValor211" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="jSeparator5" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                          <Component id="jLabel22" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jBlackberryJuice" alignment="3" min="-2" pref="83" max="-2" attributes="0"/>
+                              <Component id="jTreeTomato" alignment="3" min="-2" pref="83" max="-2" attributes="0"/>
+                              <Component id="jNaranjillasq" alignment="3" min="-2" pref="83" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                          <Component id="jLabel23" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                          <Component id="jLabel24" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="jLabel25" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jSeparator3" alignment="0" min="-2" pref="349" max="-2" attributes="0"/>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="spiValor205" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel18" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
+                                  <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jLabel19" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="spiValor206" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jboiledEgg" alignment="3" min="-2" pref="83" max="-2" attributes="0"/>
+                                      <Component id="jWarmEgg" alignment="3" min="-2" pref="83" max="-2" attributes="0"/>
+                                      <Component id="jOmelette" alignment="3" min="-2" pref="83" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="jLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="spiValor212" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="spiValor213" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="spiValor214" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="jLabel16" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="spiValor215" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="spiValor216" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jSeparator1" alignment="0" min="-2" pref="257" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jLabel27" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel26" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel20" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Group type="102" alignment="0" attributes="0">
-                                          <Component id="spiValor207" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="spiValor208" alignment="3" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jLabel21" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jPear" alignment="3" min="-2" pref="83" max="-2" attributes="0"/>
+                                              <Component id="jApple1" alignment="3" min="-2" pref="83" max="-2" attributes="0"/>
+                                              <Component id="jBanano" alignment="3" min="-2" pref="83" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="3" attributes="0">
+                                              <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="spiValor217" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="1" attributes="0">
+                                              <Component id="spiValor218" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jLabel5" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="3" attributes="0">
+                                              <Component id="jLabel28" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="spiValor219" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="3" attributes="0">
+                                              <Component id="jChickenStew" alignment="3" min="-2" pref="83" max="-2" attributes="0"/>
+                                              <Component id="jBeefStew" alignment="3" min="-2" pref="83" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="3" attributes="0">
+                                              <Component id="jLabel29" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="spiValor220" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="3" attributes="0">
+                                              <Component id="jLabel30" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="spiValor221" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                   </Group>
                               </Group>
-                              <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                                  <Component id="jSeparator4" alignment="1" pref="184" max="32767" attributes="0"/>
-                                  <Component id="jSeparator2" alignment="1" max="32767" attributes="0"/>
-                              </Group>
                           </Group>
+                          <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                          <Component id="bntOrderBreakfast" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
-                          <Component id="jLabel22" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel23" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="spiValor209" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel24" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="spiValor210" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel25" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="spiValor211" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="btnReturnBreakfast" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
-                  <Component id="jSeparator5" min="-2" pref="10" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jSeparator1" alignment="0" min="-2" pref="236" max="-2" attributes="0"/>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jLabel26" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel27" alignment="1" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jLabel29" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="spiValor220" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jLabel30" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="spiValor221" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="spiValor217" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="1" attributes="0">
-                                      <Component id="spiValor218" alignment="1" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel5" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                                          <Component id="jLabel28" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="spiValor219" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                              </Group>
-                          </Group>
-                      </Group>
-                      <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="spiValor212" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="spiValor213" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="spiValor214" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jLabel16" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="spiValor215" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="spiValor216" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Component id="jSeparator3" alignment="1" min="-2" pref="210" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-                          <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
-                          <Component id="txtDescription" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace max="32767" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="btnReturn" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="bntOrderBreakfast" alignment="0" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
+                  <Component id="txtDescription" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -432,7 +516,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bntOrderBreakfastActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="btnReturn">
+        <Component class="javax.swing.JButton" name="btnReturnBreakfast">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="18" style="0"/>
@@ -440,17 +524,12 @@
             <Property name="text" type="java.lang.String" value="Return"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnReturnActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnReturnBreakfastActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="txtDescription">
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel7">
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabel12">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="  "/>
-          </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel11">
           <Properties>
@@ -618,7 +697,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Consolas" size="14" style="3"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="JUGO DE MORA.........................$0,75"/>
+            <Property name="text" type="java.lang.String" value="JUGO DE MORA.......................$0,75"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel24">
@@ -626,7 +705,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Consolas" size="14" style="3"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="JUGO DE NARANJILLA...................$0,75"/>
+            <Property name="text" type="java.lang.String" value="JUGO DE NARANJILLA.................$0,75"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel25">
@@ -634,7 +713,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Consolas" size="14" style="3"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="JUGO DE TOMATE DE ARBOL..............$0,75"/>
+            <Property name="text" type="java.lang.String" value="JUGO DE TOMATE DE ARBOL............$0,75"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JSpinner" name="spiValor209">
@@ -720,6 +799,159 @@
         <Component class="javax.swing.JSpinner" name="spiValor221">
         </Component>
         <Component class="javax.swing.JSeparator" name="jSeparator5">
+        </Component>
+        <Component class="javax.swing.JLabel" name="jIntegralBread">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jBreadWithJam">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jBlackberryJuice">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jSimpleBread">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jMilkCoffee">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jCoffeWater">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLemonTea">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jTreeTomato">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jNaranjillasq">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jboiledEgg">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jWarmEgg">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jOmelette">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jPear">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jBanano">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jApple1">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jBeefStew">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jChickenStew">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder/>
+              </Border>
+            </Property>
+          </Properties>
         </Component>
       </SubComponents>
     </Container>
@@ -853,7 +1085,7 @@
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Component id="jSeparator9" min="-2" pref="1194" max="-2" attributes="0"/>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="btnReturn2" min="-2" pref="158" max="-2" attributes="0"/>
+                                  <Component id="btnReturnLunch" min="-2" pref="158" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
                                   <Component id="btnOrderLunch" min="-2" pref="158" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="208" max="-2" attributes="0"/>
@@ -992,7 +1224,7 @@
                   <Component id="jSeparator9" min="-2" pref="10" max="-2" attributes="0"/>
                   <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="btnReturn2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnReturnLunch" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="btnOrderLunch" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -1262,7 +1494,7 @@
             <Property name="text" type="java.lang.String" value="LOCRO DE PAPAS CON QUESO Y AGUACATE.................................................$1,25"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="btnReturn2">
+        <Component class="javax.swing.JButton" name="btnReturnLunch">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="18" style="0"/>
@@ -1270,7 +1502,7 @@
             <Property name="text" type="java.lang.String" value="Return"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnReturn2ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnReturnLunchActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JSpinner" name="spiValor227">
@@ -1314,9 +1546,9 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="bntReturn" min="-2" pref="113" max="-2" attributes="0"/>
+                              <Component id="bntReturnSnack" min="-2" pref="113" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
-                              <Component id="btnAdd4" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnAddOrderSnack" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="200" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
@@ -1544,8 +1776,8 @@
                       <Component id="jSeparator20" min="-2" pref="14" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="btnAdd4" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="bntReturn" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnAddOrderSnack" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="bntReturnSnack" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -1650,7 +1882,7 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="btnAdd4">
+        <Component class="javax.swing.JButton" name="btnAddOrderSnack">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="18" style="0"/>
@@ -1658,7 +1890,7 @@
             <Property name="text" type="java.lang.String" value="Add Order"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAdd4ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAddOrderSnackActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jCheeseburger">
@@ -1670,7 +1902,7 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="bntReturn">
+        <Component class="javax.swing.JButton" name="bntReturnSnack">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="18" style="0"/>
@@ -1678,7 +1910,7 @@
             <Property name="text" type="java.lang.String" value="Return"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bntReturnActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bntReturnSnackActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jBaconCheeseBurger">
@@ -1975,7 +2207,7 @@
               </Group>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
-                  <Component id="btnReturn5" min="-2" pref="113" max="-2" attributes="0"/>
+                  <Component id="btnReturnCoffee" min="-2" pref="113" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
                   <Component id="btnOrderCoffee" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
@@ -2155,7 +2387,7 @@
                   <Component id="jSeparator10" min="-2" pref="25" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="btnReturn5" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnReturnCoffee" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="btnOrderCoffee" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
@@ -2208,7 +2440,7 @@
             <Property name="text" type="java.lang.String" value="Big...............$5,00"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="btnReturn5">
+        <Component class="javax.swing.JButton" name="btnReturnCoffee">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="18" style="0"/>
@@ -2216,7 +2448,7 @@
             <Property name="text" type="java.lang.String" value="Return"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnReturn5ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnReturnCoffeeActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JSpinner" name="spiValor246">
@@ -3158,7 +3390,7 @@
               </Group>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
-                  <Component id="btnReturn7" min="-2" pref="113" max="-2" attributes="0"/>
+                  <Component id="btnReturnSoda" min="-2" pref="113" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
                   <Component id="btnOrderSoda" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="117" max="-2" attributes="0"/>
@@ -3241,7 +3473,7 @@
                   <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="btnOrderSoda" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="btnReturn7" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnReturnSoda" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
               </Group>
@@ -3291,7 +3523,7 @@
         </Component>
         <Component class="javax.swing.JSpinner" name="spiValor273">
         </Component>
-        <Component class="javax.swing.JButton" name="btnReturn7">
+        <Component class="javax.swing.JButton" name="btnReturnSoda">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="18" style="0"/>
@@ -3299,7 +3531,7 @@
             <Property name="text" type="java.lang.String" value="Return"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnReturn7ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnReturnSodaActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JSpinner" name="spiValor276">
@@ -3820,9 +4052,9 @@
               </Group>
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
-                  <Component id="btnReturn8" min="-2" pref="113" max="-2" attributes="0"/>
+                  <Component id="btnReturnDessert" min="-2" pref="113" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
-                  <Component id="btnAdd3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnAddOrderDessert" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
@@ -4157,8 +4389,8 @@
                   <Component id="jSeparator18" min="-2" pref="10" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="btnAdd3" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="btnReturn8" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnAddOrderDessert" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnReturnDessert" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" max="-2" attributes="0"/>
               </Group>
@@ -4698,7 +4930,7 @@
             <Property name="text" type="java.lang.String" value="DESSERTS"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="btnAdd3">
+        <Component class="javax.swing.JButton" name="btnAddOrderDessert">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="18" style="0"/>
@@ -4706,10 +4938,10 @@
             <Property name="text" type="java.lang.String" value="Add Order"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAdd3ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAddOrderDessertActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="btnReturn8">
+        <Component class="javax.swing.JButton" name="btnReturnDessert">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="18" style="0"/>
@@ -4717,7 +4949,7 @@
             <Property name="text" type="java.lang.String" value="Return"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnReturn8ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnReturnDessertActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel153">
@@ -5642,6 +5874,11 @@
       </SubComponents>
     </Container>
     <Container class="javax.swing.JDialog" name="OptionsDrink">
+      <Properties>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[444, 444]"/>
+        </Property>
+      </Properties>
 
       <Layout>
         <DimensionLayout dim="0">
@@ -5655,15 +5892,17 @@
                           <Component id="btnJuice" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="btnSoda" alignment="1" min="-2" max="-2" attributes="0"/>
-                              <Component id="btnReturn6" alignment="1" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                          <EmptySpace min="-2" pref="102" max="-2" attributes="0"/>
+                          <Component id="btnReturnOptionDrink" min="-2" max="-2" attributes="0"/>
                           <EmptySpace pref="107" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="155" max="-2" attributes="0"/>
+                  <Component id="btnSoda" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -5675,11 +5914,11 @@
                       <Component id="btnJuice" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="btnCoffee" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="38" max="32767" attributes="0"/>
+                  <EmptySpace pref="54" max="32767" attributes="0"/>
                   <Component id="btnSoda" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
-                  <Component id="btnReturn6" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="82" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
+                  <Component id="btnReturnOptionDrink" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -5696,12 +5935,12 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSodaActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="btnReturn6">
+        <Component class="javax.swing.JButton" name="btnReturnOptionDrink">
           <Properties>
             <Property name="text" type="java.lang.String" value="Return"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnReturn6ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnReturnOptionDrinkActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnCoffee">
