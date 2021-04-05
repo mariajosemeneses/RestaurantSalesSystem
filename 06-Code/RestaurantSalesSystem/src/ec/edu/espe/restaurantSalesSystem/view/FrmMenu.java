@@ -384,13 +384,13 @@ public class FrmMenu extends javax.swing.JFrame {
         jLabel130 = new javax.swing.JLabel();
         jLabel131 = new javax.swing.JLabel();
         jLabel132 = new javax.swing.JLabel();
-        spiValor69 = new javax.swing.JSpinner();
-        spiValor70 = new javax.swing.JSpinner();
-        spiValor71 = new javax.swing.JSpinner();
-        spiValor72 = new javax.swing.JSpinner();
-        spiValor73 = new javax.swing.JSpinner();
-        spiValor74 = new javax.swing.JSpinner();
-        spiValor75 = new javax.swing.JSpinner();
+        spiValor306 = new javax.swing.JSpinner();
+        spiValor307 = new javax.swing.JSpinner();
+        spiValor308 = new javax.swing.JSpinner();
+        spiValor309 = new javax.swing.JSpinner();
+        spiValor310 = new javax.swing.JSpinner();
+        spiValor311 = new javax.swing.JSpinner();
+        spiValor312 = new javax.swing.JSpinner();
         spiValor294 = new javax.swing.JSpinner();
         spiValor295 = new javax.swing.JSpinner();
         spiValor296 = new javax.swing.JSpinner();
@@ -416,9 +416,9 @@ public class FrmMenu extends javax.swing.JFrame {
         spiValor299 = new javax.swing.JSpinner();
         jLabel139 = new javax.swing.JLabel();
         spiValor298 = new javax.swing.JSpinner();
-        spiValor94 = new javax.swing.JSpinner();
+        spiValor313 = new javax.swing.JSpinner();
         spiValor297 = new javax.swing.JSpinner();
-        spiValor96 = new javax.swing.JSpinner();
+        spiValor314 = new javax.swing.JSpinner();
         jSeparator15 = new javax.swing.JSeparator();
         spiValor280 = new javax.swing.JSpinner();
         jLabel140 = new javax.swing.JLabel();
@@ -2664,15 +2664,15 @@ public class FrmMenu extends javax.swing.JFrame {
                                             .addGroup(MenuDessertLayout.createSequentialGroup()
                                                 .addComponent(jLabel114)
                                                 .addGap(18, 18, 18)
-                                                .addComponent(spiValor94, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addComponent(spiValor313, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGroup(MenuDessertLayout.createSequentialGroup()
                                                 .addComponent(jLabel113)
                                                 .addGap(18, 18, 18)
-                                                .addComponent(spiValor75, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addComponent(spiValor312, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGroup(MenuDessertLayout.createSequentialGroup()
                                                 .addComponent(jLabel115)
                                                 .addGap(18, 18, 18)
-                                                .addComponent(spiValor96, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                                .addComponent(spiValor314, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))))
                                     .addComponent(jLabel112, javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, MenuDessertLayout.createSequentialGroup()
                                         .addComponent(jNutella, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2683,9 +2683,9 @@ public class FrmMenu extends javax.swing.JFrame {
                                             .addComponent(jLabel164, javax.swing.GroupLayout.Alignment.TRAILING))
                                         .addGap(18, 18, 18)
                                         .addGroup(MenuDessertLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(spiValor70)
-                                            .addComponent(spiValor71)
-                                            .addComponent(spiValor69, javax.swing.GroupLayout.DEFAULT_SIZE, 61, Short.MAX_VALUE)))
+                                            .addComponent(spiValor307)
+                                            .addComponent(spiValor308)
+                                            .addComponent(spiValor306, javax.swing.GroupLayout.DEFAULT_SIZE, 61, Short.MAX_VALUE)))
                                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, MenuDessertLayout.createSequentialGroup()
                                         .addGroup(MenuDessertLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                             .addComponent(jLabel123, javax.swing.GroupLayout.DEFAULT_SIZE, 78, Short.MAX_VALUE)
@@ -2695,15 +2695,15 @@ public class FrmMenu extends javax.swing.JFrame {
                                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, MenuDessertLayout.createSequentialGroup()
                                                 .addComponent(jLabel126)
                                                 .addGap(18, 18, 18)
-                                                .addComponent(spiValor73, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addComponent(spiValor310, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, MenuDessertLayout.createSequentialGroup()
                                                 .addComponent(jLabel124)
                                                 .addGap(18, 18, 18)
-                                                .addComponent(spiValor72, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addComponent(spiValor309, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, MenuDessertLayout.createSequentialGroup()
                                                 .addComponent(jLabel128)
                                                 .addGap(18, 18, 18)
-                                                .addComponent(spiValor74, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                                .addComponent(spiValor311, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                             .addGroup(MenuDessertLayout.createSequentialGroup()
                                 .addGap(20, 20, 20)
                                 .addComponent(jLabel163)))
@@ -2916,15 +2916,15 @@ public class FrmMenu extends javax.swing.JFrame {
                                 .addGap(28, 28, 28)
                                 .addGroup(MenuDessertLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel164)
-                                    .addComponent(spiValor69, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(spiValor306, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(MenuDessertLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel154)
-                                    .addComponent(spiValor70, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(spiValor307, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(MenuDessertLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel161)
-                                    .addComponent(spiValor71, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(spiValor308, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(MenuDessertLayout.createSequentialGroup()
                                 .addComponent(jLabel163)
                                 .addGap(18, 18, 18)
@@ -2938,15 +2938,15 @@ public class FrmMenu extends javax.swing.JFrame {
                             .addGroup(MenuDessertLayout.createSequentialGroup()
                                 .addGroup(MenuDessertLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel124)
-                                    .addComponent(spiValor72, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(spiValor309, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(MenuDessertLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel126)
-                                    .addComponent(spiValor73, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(spiValor310, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(MenuDessertLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel128)
-                                    .addComponent(spiValor74, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(spiValor311, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGap(32, 32, 32)
                         .addComponent(jLabel112)
                         .addGroup(MenuDessertLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2956,15 +2956,15 @@ public class FrmMenu extends javax.swing.JFrame {
                             .addGroup(MenuDessertLayout.createSequentialGroup()
                                 .addGroup(MenuDessertLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel113)
-                                    .addComponent(spiValor75, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(spiValor312, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(MenuDessertLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel114)
-                                    .addComponent(spiValor94, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(spiValor313, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(MenuDessertLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel115)
-                                    .addComponent(spiValor96, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                    .addComponent(spiValor314, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(MenuDessertLayout.createSequentialGroup()
                         .addComponent(jLabel159)
                         .addGroup(MenuDessertLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -5116,6 +5116,8 @@ public class FrmMenu extends javax.swing.JFrame {
 
     private void btnAdd3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdd3ActionPerformed
 DefaultTableModel model = (DefaultTableModel) datosTable.getModel();
+
+        
        if (spiValor280.getValue().hashCode() > 0) {
             String x = "Portion Limon Pie";
             float y = (float) 2.80;
@@ -5265,12 +5267,12 @@ DefaultTableModel model = (DefaultTableModel) datosTable.getModel();
             float y = (float) 0.35;
             model.addRow(new Object[]{x, y, spiValor305.getValue().hashCode()});
         }
-
-        if (spiValor306.getValue().hashCode() > 0) {
+          if (spiValor306.getValue().hashCode() > 0) {
             String x = " Porción de tarta de queso Nutella  ";
             float y = (float) 3.80;
             model.addRow(new Object[]{x, y, spiValor306.getValue().hashCode()});
         }
+        
 
         if (spiValor307.getValue().hashCode() > 0) {
             String x = "Cheescake Medium Nutella ";
@@ -5317,9 +5319,6 @@ DefaultTableModel model = (DefaultTableModel) datosTable.getModel();
             float y = (float) 25.50;
             model.addRow(new Object[]{x, y, spiValor314.getValue().hashCode()});
         }
-
-
-
 
         Order.setVisible(true);
         MenuDessert.dispose();
@@ -5880,15 +5879,15 @@ DefaultTableModel model = (DefaultTableModel) datosTable.getModel();
     private javax.swing.JSpinner spiValor303;
     private javax.swing.JSpinner spiValor304;
     private javax.swing.JSpinner spiValor305;
-    private javax.swing.JSpinner spiValor69;
-    private javax.swing.JSpinner spiValor70;
-    private javax.swing.JSpinner spiValor71;
-    private javax.swing.JSpinner spiValor72;
-    private javax.swing.JSpinner spiValor73;
-    private javax.swing.JSpinner spiValor74;
-    private javax.swing.JSpinner spiValor75;
-    private javax.swing.JSpinner spiValor94;
-    private javax.swing.JSpinner spiValor96;
+    private javax.swing.JSpinner spiValor306;
+    private javax.swing.JSpinner spiValor307;
+    private javax.swing.JSpinner spiValor308;
+    private javax.swing.JSpinner spiValor309;
+    private javax.swing.JSpinner spiValor310;
+    private javax.swing.JSpinner spiValor311;
+    private javax.swing.JSpinner spiValor312;
+    private javax.swing.JSpinner spiValor313;
+    private javax.swing.JSpinner spiValor314;
     private javax.swing.JLabel teConLimon;
     private javax.swing.JLabel txtBreakfast;
     private javax.swing.JLabel txtDescription;
