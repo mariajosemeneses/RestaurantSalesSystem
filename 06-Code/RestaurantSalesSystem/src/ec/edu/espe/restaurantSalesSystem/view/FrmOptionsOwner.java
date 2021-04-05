@@ -73,6 +73,15 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
         txtDataToDelete = new javax.swing.JTextField();
         jLabel17 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
+        ReportSale = new javax.swing.JFrame();
+        btnSalesReport_Table = new javax.swing.JButton();
+        btnNumSales = new javax.swing.JButton();
+        Sales = new javax.swing.JDialog();
+        jLabel3 = new javax.swing.JLabel();
+        jButton28 = new javax.swing.JButton();
+        tablenumber = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        txtNumTableSales = new javax.swing.JTextPane();
         jPanel1 = new javax.swing.JPanel();
         btnExit = new javax.swing.JButton();
         btnEditMenu = new javax.swing.JButton();
@@ -328,6 +337,105 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
             .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, 270, Short.MAX_VALUE)
         );
 
+        btnSalesReport_Table.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnSalesReport_Table.setForeground(new java.awt.Color(255, 51, 204));
+        btnSalesReport_Table.setText("SALES REPORT BY TABLE");
+        btnSalesReport_Table.setContentAreaFilled(false);
+        btnSalesReport_Table.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnSalesReport_Table.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnSalesReport_Table.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalesReport_TableActionPerformed(evt);
+            }
+        });
+
+        btnNumSales.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnNumSales.setForeground(new java.awt.Color(255, 0, 51));
+        btnNumSales.setText("NUMERO DE VENTAS REALIZADAS");
+        btnNumSales.setContentAreaFilled(false);
+        btnNumSales.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnNumSales.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnNumSales.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNumSalesActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout ReportSaleLayout = new javax.swing.GroupLayout(ReportSale.getContentPane());
+        ReportSale.getContentPane().setLayout(ReportSaleLayout);
+        ReportSaleLayout.setHorizontalGroup(
+            ReportSaleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ReportSaleLayout.createSequentialGroup()
+                .addGap(47, 47, 47)
+                .addGroup(ReportSaleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(btnNumSales, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnSalesReport_Table, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(73, Short.MAX_VALUE))
+        );
+        ReportSaleLayout.setVerticalGroup(
+            ReportSaleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ReportSaleLayout.createSequentialGroup()
+                .addGap(51, 51, 51)
+                .addComponent(btnSalesReport_Table, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(47, 47, 47)
+                .addComponent(btnNumSales, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(122, Short.MAX_VALUE))
+        );
+
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("RESUMEN DE VENTAS pitaks");
+
+        jButton28.setBackground(java.awt.Color.white);
+        jButton28.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jButton28.setText("VER VENTAS");
+        jButton28.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton28.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton28ActionPerformed(evt);
+            }
+        });
+
+        tablenumber.setText("TABLE NUMBER:");
+
+        jScrollPane1.setViewportView(txtNumTableSales);
+
+        javax.swing.GroupLayout SalesLayout = new javax.swing.GroupLayout(Sales.getContentPane());
+        Sales.getContentPane().setLayout(SalesLayout);
+        SalesLayout.setHorizontalGroup(
+            SalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SalesLayout.createSequentialGroup()
+                .addGroup(SalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(SalesLayout.createSequentialGroup()
+                        .addGap(23, 23, 23)
+                        .addComponent(tablenumber)
+                        .addGap(18, 18, 18)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(SalesLayout.createSequentialGroup()
+                        .addGap(89, 89, 89)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(SalesLayout.createSequentialGroup()
+                        .addGap(155, 155, 155)
+                        .addComponent(jButton28, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(111, Short.MAX_VALUE))
+        );
+        SalesLayout.setVerticalGroup(
+            SalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SalesLayout.createSequentialGroup()
+                .addGap(48, 48, 48)
+                .addComponent(jLabel3)
+                .addGroup(SalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(SalesLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(SalesLayout.createSequentialGroup()
+                        .addGap(59, 59, 59)
+                        .addComponent(tablenumber)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 89, Short.MAX_VALUE)
+                .addComponent(jButton28, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(53, 53, 53))
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
@@ -564,13 +672,72 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
     private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnExitActionPerformed
-    public void emptyFields() {
 
-        cmbTypeOfProduct.setSelectedIndex(0);
-        txtDescription.setText("");
-        txtPrice.setText("");
+    private void btnSalesReport_TableActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalesReport_TableActionPerformed
+        Sales.setVisible(true);
+        Sales.setLocationRelativeTo(null);
+    }//GEN-LAST:event_btnSalesReport_TableActionPerformed
 
-    }
+    private void btnNumSalesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNumSalesActionPerformed
+        
+        
+        
+        JOptionPane.showMessageDialog(null, "Today they were made" + contador + " ventas. sales. With a total of: " + suma, JOptionPane.INFORMATION_MESSAGE);
+        
+        
+//         String typeProduct = cmbTypeOfProduct.getSelectedItem().toString();
+//        String description = txtDescription.getText();
+//        float price = Float.parseFloat(txtPrice.getText());
+//
+//        String dataToSave = "Do you want to save this information?: \n Procustc" + "\nType Of Product: " + typeProduct
+//                + "\nDescription: " + description + "\nPrice: " + txtPrice.getText();
+//
+//        int selection = JOptionPane.showConfirmDialog(null, dataToSave, "Product added successfully",
+//                JOptionPane.YES_NO_CANCEL_OPTION);
+//
+//        switch (selection) {
+//            case 0:
+//                JOptionPane.showMessageDialog(null, "Information was saved", cmbTypeOfProduct.getSelectedItem() + "Saved",
+//                        JOptionPane.INFORMATION_MESSAGE);
+//
+//                OwnerController ownerController = new OwnerController();
+//                Product product = new Product(typeProduct, description, price);
+//                ownerController.createProduct(product);
+//                emptyFields();
+//                break;
+//            case 1:
+//                JOptionPane.showMessageDialog(null, "Information was NOT saved", cmbTypeOfProduct.getSelectedItem() + "NOT saved",
+//                        JOptionPane.INFORMATION_MESSAGE);
+//                emptyFields();
+//                break;
+//            default:
+//                JOptionPane.showMessageDialog(null, "Action was cancelled", cmbTypeOfProduct.getSelectedItem() + "Cancelled",
+//                        JOptionPane.INFORMATION_MESSAGE);
+//                break;
+//
+//        }
+//
+//                                          
+
+    
+    
+    }//GEN-LAST:event_btnNumSalesActionPerformed
+
+    private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
+        int index = Integer.parseInt(txtNumTableSales.getText()) + 1;
+        String t = TOTALtot.getText();
+
+        if (Integer.parseInt(numMesa2.getText()) == index) {
+            JOptionPane.showMessageDialog(null, "The table " + index + " had sales of " + t, "", JOptionPane.INFORMATION_MESSAGE);
+
+        } else {
+            JOptionPane.showMessageDialog(null, "The table " + index + " has not made any sales. TOTAL = 0", "", JOptionPane.INFORMATION_MESSAGE);
+        }
+
+    }//GEN-LAST:event_jButton28ActionPerformed
+
+
+   
 
     /**
      * @param args the command line arguments
@@ -612,6 +779,8 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JFrame FrmStockProducts;
+    private javax.swing.JFrame ReportSale;
+    private javax.swing.JDialog Sales;
     private javax.swing.JButton btnAdd;
     private javax.swing.JButton btnAddProduct1;
     private javax.swing.JButton btnDelete;
@@ -619,20 +788,24 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
     private javax.swing.JButton btnEditMenu;
     private javax.swing.JButton btnExit;
     private javax.swing.JButton btnFindProducts;
+    private javax.swing.JButton btnNumSales;
     private javax.swing.JButton btnRegisterEmployee;
     private javax.swing.JButton btnReportSale;
+    private javax.swing.JButton btnSalesReport_Table;
     private javax.swing.JButton btnViewProducts1;
     private javax.swing.JComboBox<String> cmbTypeOfProduct;
     private javax.swing.JLabel description2;
     private javax.swing.JDialog dlgAddProduct;
     private javax.swing.JDialog dlgDeleteProduct;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton28;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -641,11 +814,14 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JLabel products;
+    private javax.swing.JLabel tablenumber;
     private javax.swing.JTable tblProducts;
     private javax.swing.JTextField txtDataToDelete;
     private javax.swing.JTextField txtDescription;
+    private javax.swing.JTextPane txtNumTableSales;
     private javax.swing.JTextField txtPrice;
     private javax.swing.JTextField txtProducts;
     // End of variables declaration//GEN-END:variables

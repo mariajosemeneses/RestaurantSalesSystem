@@ -12,11 +12,11 @@ package ec.edu.espe.restaurantsalessystem.model;
  */
 public class Bill {
 
- private Double iva;
+    private Double iva;
 
-  private float propina;
+    private float propina;
 
-   private float precio;
+    private float precio;
 
     private String concepto;
 
@@ -27,51 +27,53 @@ public class Bill {
 
     public Bill() {
     }
-    
 
-    public int getNumventas(){
+    public int getNumventas() {
         return numventas;
     }
-    public void setNumventas(){
-        this.numventas= numventas;
+
+    public void setNumventas() {
+        this.numventas = numventas;
     }
 
     public Double getIva() {
         return iva;
-        
-    }
-    public void setIva(Double iva) {
-        this.iva = iva;
-        
+
     }
 
-    
+    public void setIva(Double iva) {
+        this.iva = iva;
+
+    }
+
     public float getPropina() {
         return propina;
     }
+
     public void setPropina(float propina) {
         this.propina = propina;
     }
 
-    
     public float getPrecio() {
         return precio;
     }
+
     public void setPrecio(float precio) {
         this.precio = precio;
     }
-    
-     public void setConcepto(String concepto) {
+
+    public void setConcepto(String concepto) {
         this.concepto = concepto;
     }
-    
+
     public String getConcepto() {
         return concepto;
     }
-    
+
     public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
     }
+
     public int getCantidad() {
         return cantidad;
     }
@@ -79,10 +81,9 @@ public class Bill {
     public float getTotal() {
         return total;
     }
+
     public void setTotal(float total) {
         this.total = total;
     }
 
- 
-    
 }

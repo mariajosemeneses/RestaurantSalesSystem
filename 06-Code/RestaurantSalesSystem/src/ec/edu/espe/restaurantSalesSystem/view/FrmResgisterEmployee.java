@@ -10,8 +10,9 @@ import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
 import com.mongodb.DBObject;
 import com.mongodb.MongoClient;
-import static ec.edu.espe.Connection.utils.Conection.createConnection;
 import ec.edu.espe.restaurantSalesSystem.controller.OwnerController;
+import ec.edu.espe.restaurantSalesSystem.utils.MongoManager;
+import ec.edu.espe.restaurantSalesSystem.utils.NoSQL;
 import ec.edu.espe.restaurantsalessystem.model.Cashier;
 import java.util.Random;
 import javax.swing.JOptionPane;
@@ -23,7 +24,9 @@ import javax.swing.table.DefaultTableModel;
  */
 public class FrmResgisterEmployee extends javax.swing.JFrame {
 
-    MongoClient mongo = createConnection();
+    MongoManager mongoManager = new MongoManager();
+    String URL = "mongodb+srv://unitedByCode:group3@data.j0bvg.mongodb.net/<dbname>?retryWrites=true&w=majority";
+    MongoClient mongo = mongoManager.openConnection(URL);
 
     public FrmResgisterEmployee() {
 
@@ -59,7 +62,7 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
         txtEmail = new javax.swing.JTextField();
         txtCell = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        btnGenerate = new javax.swing.JButton();
         btnClean = new javax.swing.JButton();
         btnSave = new javax.swing.JButton();
         btnView = new javax.swing.JButton();
@@ -152,10 +155,10 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
 
         jLabel5.setText("Cellphone:");
 
-        jButton1.setText("Generate");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnGenerate.setText("Generate");
+        btnGenerate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnGenerateActionPerformed(evt);
             }
         });
 
@@ -202,7 +205,7 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(txtId)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton1))
+                        .addComponent(btnGenerate))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txtCell, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -233,7 +236,7 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
                     .addComponent(id)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(txtId, javax.swing.GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE)
-                        .addComponent(jButton1)))
+                        .addComponent(btnGenerate)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
@@ -439,6 +442,9 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
         txtCell.setText("");
         txtAge.setText("");
         txtId.setText("");
+        txtData.setText("");
+        txtNewdata.setText("");
+        txtField.setText("");
     }
     private void cmbEmployeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbEmployeeActionPerformed
 
@@ -448,6 +454,13 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
         FrmOptionsOwner frmOptionsOwner = new FrmOptionsOwner();
         this.setVisible(false);
         frmOptionsOwner.setVisible(true);
+        NoSQL nosql;
+        nosql = new MongoManager();
+        if (nosql.closeConnection(mongo)) {
+            System.out.println("\nCONNECTION CLOSED");
+        } else {
+            System.out.println("\nCONNECTION COULD NOT BE CLOSED");
+        }
     }//GEN-LAST:event_btnReturnActionPerformed
 
     private void txtAddressActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAddressActionPerformed
@@ -459,8 +472,36 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
         String dataToFind = txtData.getText();
         String field = txtField.getText().toLowerCase();
 
-        OwnerController ownerController = new OwnerController();
-        ownerController.deleteEmployee(typeEmployee, dataToFind, field);
+        if (dataToFind.isEmpty() || field.isEmpty()) {
+            JOptionPane.showMessageDialog(null, "FILL ALL THE FIELDS");
+        } else {
+            String dataToDelete = "Do you want to delete document with this information? \nEmployee: " + typeEmployee
+                    + "\n" + field + ": " + dataToFind;
+
+            int selection = JOptionPane.showConfirmDialog(null, dataToDelete, "Employee Deleting",
+                    JOptionPane.YES_NO_CANCEL_OPTION);
+
+            switch (selection) {
+                case 0:
+                    JOptionPane.showMessageDialog(null, "Information was deleted", typeEmployee + "deleted",
+                            JOptionPane.INFORMATION_MESSAGE);
+
+                    OwnerController ownerController = new OwnerController();
+                    ownerController.deleteEmployee(typeEmployee, dataToFind, field);
+                    emptyFields();
+                    break;
+
+                case 1:
+                    JOptionPane.showMessageDialog(null, "Information was NOT deleted", typeEmployee + "NOT deleted",
+                            JOptionPane.INFORMATION_MESSAGE);
+                    emptyFields();
+                    break;
+                default:
+                    JOptionPane.showMessageDialog(null, "Action was cancelled", typeEmployee + "Cancelled",
+                            JOptionPane.INFORMATION_MESSAGE);
+                    break;
+            }
+        }
     }//GEN-LAST:event_btnDeleteActionPerformed
 
     private void btnEditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditActionPerformed
@@ -469,15 +510,42 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
         String field = txtField.getText().toLowerCase();
         String newData = txtNewdata.getText();
 
-        OwnerController ownerController = new OwnerController();
-        ownerController.updateEmployee(typeEmployee, dataToFind, newData, field);
+        if (dataToFind.isEmpty() || field.isEmpty() || newData.isEmpty()) {
+            JOptionPane.showMessageDialog(null, "FILL ALL THE FIELDS");
+        } else {
+            String dataToUpdate = "Do you want to edit information? \nEmployee: " + typeEmployee
+                    + "\n" + field + ": " + dataToFind;
+
+            int selection = JOptionPane.showConfirmDialog(null, dataToUpdate, "Employee Deleting",
+                    JOptionPane.YES_NO_CANCEL_OPTION);
+
+            switch (selection) {
+                case 0:
+                    JOptionPane.showMessageDialog(null, "Information was updated", typeEmployee + "updated",
+                            JOptionPane.INFORMATION_MESSAGE);
+                    OwnerController ownerController = new OwnerController();
+                    ownerController.updateEmployee(typeEmployee, dataToFind, newData, field);
+                    emptyFields();
+                    break;
+
+                case 1:
+                    JOptionPane.showMessageDialog(null, "Information was NOT updated", typeEmployee + "NOT updated",
+                            JOptionPane.INFORMATION_MESSAGE);
+                    emptyFields();
+                    break;
+                default:
+                    JOptionPane.showMessageDialog(null, "Action was cancelled", typeEmployee + "Cancelled",
+                            JOptionPane.INFORMATION_MESSAGE);
+                    break;
+            }
+        }
     }//GEN-LAST:event_btnEditActionPerformed
 
     private void txtFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFieldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtFieldActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnGenerateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerateActionPerformed
         Random rnd = new Random();
         int random = 0;
         random = ((int) (rnd.nextInt(9999 - 0 + 1) + 0));
@@ -488,7 +556,7 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
         } else if (random >= 1000 && random <= 9990) {
             txtId.setText("L00" + random);
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnGenerateActionPerformed
 
     private void txtNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNameActionPerformed
 
@@ -624,13 +692,13 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
     private javax.swing.JButton btnClean;
     private javax.swing.JButton btnDelete;
     private javax.swing.JButton btnEdit;
+    private javax.swing.JButton btnGenerate;
     private javax.swing.JButton btnReturn;
     private javax.swing.JButton btnSave;
     private javax.swing.JButton btnView;
     private javax.swing.JComboBox<String> cmbEmployee;
     private javax.swing.JLabel employee;
     private javax.swing.JLabel id;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
