@@ -6,8 +6,9 @@
 package ec.edu.espe.restaurantSalesSystem.view;
 
 import com.mongodb.MongoClient;
-import static ec.edu.espe.Connection.utils.Conection.createConnection;
+import ec.edu.espe.restaurantSalesSystem.controller.SuggestionController;
 import ec.edu.espe.restaurantSalesSystem.utils.MongoManager;
+import ec.edu.espe.restaurantSalesSystem.utils.NoSQL;
 import javax.swing.JOptionPane;
 
 /**
@@ -15,17 +16,19 @@ import javax.swing.JOptionPane;
  * @author Sebas
  */
 public class FrmMainScreen extends javax.swing.JFrame {
- MongoClient mongo = createConnection();
+
+    MongoManager mongoManager = new MongoManager();
+    String URL = "mongodb+srv://unitedByCode:group3@data.j0bvg.mongodb.net/<dbname>?retryWrites=true&w=majority";
+    MongoClient mongo = mongoManager.openConnection(URL);
+
     /**
      * Creates new form FrmMainScreen1
      */
     public FrmMainScreen() {
         initComponents();
-        
-         
-    
-     this.setLocationRelativeTo(null);
-                rsscalelabel.RSScaleLabel.setScaleLabel(jlogo,"src/ec/edu/espe/restaurantSalesSystem/images/logo.jpg" );
+
+        this.setLocationRelativeTo(null);
+        rsscalelabel.RSScaleLabel.setScaleLabel(jlogo, "src/ec/edu/espe/restaurantSalesSystem/images/logo.jpg");
     }
 
     /**
@@ -55,6 +58,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
         itmMnuCustomer = new javax.swing.JMenuItem();
 
         Suggestions.setTitle("Suggestions");
+        Suggestions.setMinimumSize(new java.awt.Dimension(478, 300));
 
         txtSuggestions.setColumns(20);
         txtSuggestions.setRows(5);
@@ -119,6 +123,8 @@ public class FrmMainScreen extends javax.swing.JFrame {
                         .addComponent(jSuggestions, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(21, 21, 21))
         );
+
+        Suggestions.getAccessibleContext().setAccessibleParent(null);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Main Screen");
@@ -227,16 +233,19 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
     private void itmSuggestionsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmSuggestionsActionPerformed
         Suggestions.setVisible(true);
-       Suggestions.setLocationRelativeTo(null);
-       this.setLocationRelativeTo(null);
-            rsscalelabel.RSScaleLabel.setScaleLabel(jSuggestions,"src/ec/edu/espe/restaurantSalesSystem/images/sugerencia.jpg" );
+        Suggestions.setLocationRelativeTo(null);
+        this.setLocationRelativeTo(null);
+        this.setVisible(false);
+        rsscalelabel.RSScaleLabel.setScaleLabel(jSuggestions, "src/ec/edu/espe/restaurantSalesSystem/images/sugerencia.jpg");
     }//GEN-LAST:event_itmSuggestionsActionPerformed
 
     private void btnSendActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSendActionPerformed
-        if(txtSuggestions.getText().isEmpty()) {
+        String suggestion = txtSuggestions.getText();
+        
+        if (suggestion.isEmpty()) {
             JOptionPane.showMessageDialog(null, "FILL ALL THE FIELDS");
         } else {
-            String dataToSave = "Want to send suggestion?: \nSuggestion:" + txtSuggestions.getText();
+            String dataToSave = "Want to send suggestion?: \nSuggestion: " + suggestion;
 
             int selection = JOptionPane.showConfirmDialog(null, dataToSave, "Suggestion",
                     JOptionPane.YES_NO_CANCEL_OPTION);
@@ -245,14 +254,15 @@ public class FrmMainScreen extends javax.swing.JFrame {
                 case 0:
                     JOptionPane.showMessageDialog(null, "Suggestion sent ", txtSuggestions.getText(),
                             JOptionPane.INFORMATION_MESSAGE);
-                                    MongoManager.createSuggestions(mongo, "Sugestions", "Sugestion", txtSuggestions.getText());
+                    SuggestionController suggestionController = new SuggestionController();
+                    suggestionController.add(suggestion);
                     emptyFields();
                     FrmMainScreen frmMainScreen = new FrmMainScreen();
-                    this.setVisible(false);
+                    Suggestions.setVisible(false);
                     frmMainScreen.setVisible(true);
                     break;
                 case 1:
-                    JOptionPane.showMessageDialog(null, "Suggestion not sent ",txtSuggestions.getText(),
+                    JOptionPane.showMessageDialog(null, "Suggestion not sent ", txtSuggestions.getText(),
                             JOptionPane.INFORMATION_MESSAGE);
                     emptyFields();
                     break;
@@ -265,15 +275,22 @@ public class FrmMainScreen extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSendActionPerformed
 
     private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturnActionPerformed
-        this.setVisible(false);
+        Suggestions.setVisible(false);
         FrmMainScreen frmMainScreen = new FrmMainScreen();
         frmMainScreen.setVisible(true);
+
+        NoSQL nosql;
+        nosql = new MongoManager();
+        if (nosql.closeConnection(mongo)) {
+            System.out.println("\nCONNECTION CLOSED");
+        } else {
+            System.out.println("\nCONNECTION COULD NOT BE CLOSED");
+        }
     }//GEN-LAST:event_btnReturnActionPerformed
-public void emptyFields() {
+    public void emptyFields() {
         txtSuggestions.setText("");
-        
-}
-                                
+    }
+
     /**
      * @param args the command line arguments
      */

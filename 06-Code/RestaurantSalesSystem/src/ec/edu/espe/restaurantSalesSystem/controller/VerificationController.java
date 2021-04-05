@@ -23,7 +23,7 @@ public class VerificationController {
         String readLine;
         Persistence persistence;
         persistence = new FileManager();
-        readLine = persistence.read("","Users.json");
+        readLine = persistence.read("", "Users.json");
 
         Gson gson = new Gson();
 

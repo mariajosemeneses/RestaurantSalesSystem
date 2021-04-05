@@ -168,8 +168,8 @@ public class FrmLoginScreen extends javax.swing.JFrame {
         String user = txtUsername.getText();
         String password = txtPassword.getText();
         Verification verification;
-        VerificationController verificationController = new VerificationController();
-        verification = new Verification(user, password);
+        VerificationController verificationController = new VerificationController();        
+        verification = Verification.getInstance(user, password);
         if (verificationController.login(verification, user, password)) {
             dispose();
         }
