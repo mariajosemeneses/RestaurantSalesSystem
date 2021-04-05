@@ -3988,6 +3988,45 @@ public class FrmMenu extends javax.swing.JFrame {
         sendOrder(spiValor270, "Jarra Jugo de Limonada");
         sendOrder(spiValor271, "Vaso Jugo de Limonada");
 
+        //Dessert
+        sendOrder(spiValor280, "Portion pai de Limon");
+        sendOrder(spiValor281, "Medium pai de Limon ");
+        sendOrder(spiValor282, "Big pai de limon");
+        sendOrder(spiValor283, "Portion pai de Manzana ");
+        sendOrder(spiValor284, "Medium pai de Manzana ");
+        sendOrder(spiValor285, "Big pai de Manzana ");
+        sendOrder(spiValor286, "Portion pai de Chocolate");
+        sendOrder(spiValor287, "Medium pai de Chocolate");
+        sendOrder(spiValor288, "Big pai de Chocolate");
+        sendOrder(spiValor289, "Portion cake de Chocolate");
+        sendOrder(spiValor290, "Medium cake de Chocolate");
+        sendOrder(spiValor291, "Big cake de Chocolate");
+        sendOrder(spiValor292, "Portion cake de Vainilla");
+        sendOrder(spiValor293, "Medium cake de Vainilla");
+        sendOrder(spiValor294, "Big cake de Vainilla");
+        sendOrder(spiValor295, "Portion cake de Naranja");
+        sendOrder(spiValor296, "Medium cake de Naranja");
+        sendOrder(spiValor297, "Big cake de Naranja");
+        sendOrder(spiValor298, "Humitas de Sal ");
+        sendOrder(spiValor299, " Humitas de Dulce");
+        sendOrder(spiValor300, "Tamal Lojano de Pollo");
+        sendOrder(spiValor301, "Tamal Lojano de Chancho");
+        sendOrder(spiValor302, "Tamal Lojano de Chichcarron");
+        sendOrder(spiValor303, "Bolon de Queso");
+        sendOrder(spiValor304, "Bolon Mixto");
+        sendOrder(spiValor305, "Quimbolito ");
+        sendOrder(spiValor306, "Porción de tarta de queso Nutella");
+        sendOrder(spiValor307, "Medium de tarta de queso Nutella");
+        sendOrder(spiValor308, "Big de tarta de queso Nutella");
+        sendOrder(spiValor309, "Brownie de porción de tarta de queso");
+        sendOrder(spiValor310, "Medium Brownie de tarta de queso");
+        sendOrder(spiValor311, "Big Brownie de porción de tarta de queso");
+        sendOrder(spiValor312, " Porción de tarta de queso Coco, caramelo y almendra ");
+        sendOrder(spiValor313, " Medium de tarta de queso Coco, caramelo y almendra ");
+        sendOrder(spiValor314, " Big de tarta de queso Coco, caramelo y almendra ");
+
+
+        
         viewOrder.setVisible(true);
         Order.setVisible(false);
     }//GEN-LAST:event_btnSendOrderActionPerformed
@@ -5285,7 +5324,7 @@ DefaultTableModel model = (DefaultTableModel) datosTable.getModel();
         }
 
         if (spiValor306.getValue().hashCode() > 0) {
-            String x = " Cheescake Portion Nutella";
+            String x = " Porción de tarta de queso Nutella  ";
             float y = (float) 3.80;
             model.addRow(new Object[]{x, y, spiValor306.getValue().hashCode()});
         }
