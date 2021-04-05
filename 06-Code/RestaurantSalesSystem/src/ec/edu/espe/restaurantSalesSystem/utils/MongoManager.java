@@ -78,6 +78,14 @@ public class MongoManager implements NoSQL {
         }
         dbCollection.insert(document1);
     }
+    public static void createSuggestions(MongoClient mongo, String dataBase, String collection, String suggestion) {
+
+        DB db = mongo.getDB(dataBase);
+        DBCollection dbCollection = db.getCollection(collection);
+        BasicDBObject document = new BasicDBObject();
+            document.put("Sugestion ", suggestion);
+        dbCollection.insert(document);
+    }
 
     @Override
     public MongoClient openConnection(String URL) {
@@ -106,6 +114,22 @@ public class MongoManager implements NoSQL {
 
     @Override
     public boolean create(String data, String table, BasicDBObject document) {
+        boolean created = false;
+        try {
+            MongoClient mongo = openConnection("mongodb+srv://unitedByCode:group3@data.j0bvg.mongodb.net"
+                    + "/<dbname>?retryWrites=true&w=majority");
+            DB db = mongo.getDB(data);
+            DBCollection dbCollection = db.getCollection(table);
+            dbCollection.insert(document);
+        } catch (Exception ex) {
+            System.out.println("Could not create");
+            created = false;
+        }
+        return created;
+    }
+   
+    
+    public boolean createReportSale(String data, String table, BasicDBObject document, int numTable, float total ) {
         boolean created = false;
         try {
             MongoClient mongo = openConnection("mongodb+srv://unitedByCode:group3@data.j0bvg.mongodb.net"

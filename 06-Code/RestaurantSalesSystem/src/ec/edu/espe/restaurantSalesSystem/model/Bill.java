@@ -11,18 +11,20 @@ package ec.edu.espe.restaurantsalessystem.model;
  * @author Group3
  */
 public class Bill {
+    
 
- private Double iva;
+    private Double iva;
 
-  private float propina;
+    private float tip;
 
-   private float precio;
+    private float price;
 
-    private String concepto;
+    private String description;
 
-    private int cantidad;
+    private int quantity;
 
-    private float total;
+    private float numberSales;
+       
     public int numventas;
 
     public Bill() {
@@ -47,40 +49,40 @@ public class Bill {
 
     
     public float getPropina() {
-        return propina;
+        return tip;
     }
     public void setPropina(float propina) {
-        this.propina = propina;
+        this.tip = propina;
     }
 
     
     public float getPrecio() {
-        return precio;
+        return price;
     }
     public void setPrecio(float precio) {
-        this.precio = precio;
+        this.price = precio;
     }
     
      public void setConcepto(String concepto) {
-        this.concepto = concepto;
+        this.description = concepto;
     }
     
     public String getConcepto() {
-        return concepto;
+        return description;
     }
     
     public void setCantidad(int cantidad) {
-        this.cantidad = cantidad;
+        this.quantity = cantidad;
     }
     public int getCantidad() {
-        return cantidad;
+        return quantity;
     }
 
     public float getTotal() {
-        return total;
+        return numberSales;
     }
     public void setTotal(float total) {
-        this.total = total;
+        this.numberSales = total;
     }
 
  
