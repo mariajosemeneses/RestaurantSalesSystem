@@ -11,14 +11,22 @@ package ec.edu.espe.restaurantSalesSystem.controller;
  */
 public class Verification {
 
+    private static Verification instance;
     private String user;
     private String password;
 
-    public Verification(String user, String password) {
+    Verification(String user, String password) {
         this.user = user;
         this.password = password;
     }
 
+    public static Verification getInstance(String user, String password) {
+        if (instance == null) {
+            instance = new Verification(user, password);
+        }
+        return instance;
+    }
+       
     /**
      * @return the user
      */

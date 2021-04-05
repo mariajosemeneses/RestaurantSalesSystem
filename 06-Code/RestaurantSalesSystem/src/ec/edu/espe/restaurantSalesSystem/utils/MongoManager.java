@@ -17,76 +17,6 @@ import com.mongodb.MongoClientURI;
  */
 public class MongoManager implements NoSQL {
 
-    public void create(MongoClient mongo, String dataBase, String collection, String continental, float priceContinental,
-            String full, float priceFull) {
-
-        DB db = mongo.getDB(dataBase);
-        DBCollection dbCollection = db.getCollection(collection);
-        BasicDBObject document = new BasicDBObject();
-
-        document.put("Continental", continental);
-        document.put("Price Continental", priceContinental);
-        document.put("Full", full);
-        document.put("Price Full", priceFull);
-        dbCollection.insert(document);
-    }
-
-    public void create(MongoClient mongo, String dataBase, String collection, String soup, String mainCourse,
-            String drink, String dessert, float priceLunch) {
-
-        DB db = mongo.getDB(dataBase);
-        DBCollection dbCollection = db.getCollection(collection);
-        BasicDBObject document = new BasicDBObject();
-
-        document.put("Soup", soup);
-        document.put("Main Course", mainCourse);
-        document.put("Drink", drink);
-        document.put("Dessert", dessert);
-        document.put("Price", priceLunch);
-        dbCollection.insert(document);
-    }
-
-    public void create(MongoClient mongo, String dataBase, String collection, int number, String dessert, float price) {
-
-        DB db = mongo.getDB(dataBase);
-        DBCollection dbCollection = db.getCollection(collection);
-        BasicDBObject document = new BasicDBObject();
-
-        document.put("Number", number);
-        document.put("Dessert", dessert);
-        document.put("Price", price);
-        dbCollection.insert(document);
-    }
-
-    public void create(MongoClient mongo, String dataBase, String collection1, String name, String id,
-            String quantity, String price) {
-
-        DB db = mongo.getDB(dataBase);
-        DBCollection dbCollection = db.getCollection(collection1);
-        BasicDBObject document1 = new BasicDBObject();
-        if (dataBase.equals("Order")) {
-            document1.put("name", name);
-            document1.put("id", id);
-            document1.put("quantity", quantity);
-            document1.put("price", price);
-
-        } else {
-            document1.put("name", name);
-            document1.put("id", id);
-            document1.put("quantity", quantity);
-            document1.put("price", price);
-        }
-        dbCollection.insert(document1);
-    }
-    public static void createSuggestions(MongoClient mongo, String dataBase, String collection, String suggestion) {
-
-        DB db = mongo.getDB(dataBase);
-        DBCollection dbCollection = db.getCollection(collection);
-        BasicDBObject document = new BasicDBObject();
-            document.put("Sugestion ", suggestion);
-        dbCollection.insert(document);
-    }
-
     @Override
     public MongoClient openConnection(String URL) {
         try {
@@ -127,9 +57,8 @@ public class MongoManager implements NoSQL {
         }
         return created;
     }
-   
-    
-    public boolean createReportSale(String data, String table, BasicDBObject document, int numTable, float total ) {
+
+    public boolean createReportSale(String data, String table, BasicDBObject document, int numTable, float total) {
         boolean created = false;
         try {
             MongoClient mongo = openConnection("mongodb+srv://unitedByCode:group3@data.j0bvg.mongodb.net"
