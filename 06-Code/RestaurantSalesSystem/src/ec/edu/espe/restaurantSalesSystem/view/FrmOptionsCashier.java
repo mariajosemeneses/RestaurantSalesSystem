@@ -27,21 +27,11 @@ public class FrmOptionsCashier extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btnRegisterCustomer = new javax.swing.JButton();
         btnGenerateBill = new javax.swing.JButton();
         btnReturn = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        btnRegisterOrder = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        btnRegisterCustomer.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        btnRegisterCustomer.setText("Register Customer");
-        btnRegisterCustomer.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnRegisterCustomerActionPerformed(evt);
-            }
-        });
 
         btnGenerateBill.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btnGenerateBill.setText("Generate Bill");
@@ -57,14 +47,6 @@ public class FrmOptionsCashier extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Monospaced", 0, 24)); // NOI18N
         jLabel1.setText("CASHIER MENU");
 
-        btnRegisterOrder.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        btnRegisterOrder.setText("Register Order");
-        btnRegisterOrder.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnRegisterOrderActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -75,54 +57,34 @@ public class FrmOptionsCashier extends javax.swing.JFrame {
                         .addGap(93, 93, 93)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(110, 110, 110)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnRegisterOrder, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnRegisterCustomer)
-                            .addComponent(btnGenerateBill, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(141, 141, 141)
-                        .addComponent(btnReturn)))
+                        .addGap(106, 106, 106)
+                        .addComponent(btnGenerateBill, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(97, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(btnReturn)
+                .addGap(139, 139, 139))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(30, 30, 30)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(33, 33, 33)
-                .addComponent(btnRegisterCustomer)
-                .addGap(37, 37, 37)
-                .addComponent(btnRegisterOrder)
-                .addGap(33, 33, 33)
+                .addGap(80, 80, 80)
                 .addComponent(btnGenerateBill)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
+                .addGap(75, 75, 75)
                 .addComponent(btnReturn)
-                .addGap(32, 32, 32))
+                .addContainerGap(76, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnRegisterCustomerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegisterCustomerActionPerformed
-        this.setVisible(false);
-        FrmRegisterOrder frmRegisterCustomer = new FrmRegisterOrder();
-        frmRegisterCustomer.setVisible(true);
-    }//GEN-LAST:event_btnRegisterCustomerActionPerformed
 
     private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturnActionPerformed
         this.setVisible(false);
         FrmMainScreen frmMainScreen = new FrmMainScreen();
         frmMainScreen.setVisible(true);
     }//GEN-LAST:event_btnReturnActionPerformed
-
-    private void btnRegisterOrderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegisterOrderActionPerformed
-        // FrmRegisterOrder
-        this.setVisible(false);
-        FrmRegisterOrder frmRegisterOrder = new FrmRegisterOrder();
-        frmRegisterOrder.setVisible(true);
-        
-    }//GEN-LAST:event_btnRegisterOrderActionPerformed
 
     /**
      * @param args the command line arguments
@@ -161,8 +123,6 @@ public class FrmOptionsCashier extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnGenerateBill;
-    private javax.swing.JButton btnRegisterCustomer;
-    private javax.swing.JButton btnRegisterOrder;
     private javax.swing.JButton btnReturn;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
