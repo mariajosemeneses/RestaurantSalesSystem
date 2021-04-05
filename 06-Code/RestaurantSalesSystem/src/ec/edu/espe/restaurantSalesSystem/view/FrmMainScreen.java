@@ -47,6 +47,10 @@ public class FrmMainScreen extends javax.swing.JFrame {
         jSuggestions = new javax.swing.JLabel();
         btnSend = new javax.swing.JButton();
         btnReturn = new javax.swing.JButton();
+        OptionsCashier = new javax.swing.JFrame();
+        btnGenerateBill1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        btnReturn1 = new javax.swing.JButton();
         jlogo = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         mnuSystem = new javax.swing.JMenu();
@@ -125,6 +129,49 @@ public class FrmMainScreen extends javax.swing.JFrame {
         );
 
         Suggestions.getAccessibleContext().setAccessibleParent(null);
+
+        btnGenerateBill1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btnGenerateBill1.setText("Generate Bill");
+
+        jLabel1.setFont(new java.awt.Font("Monospaced", 0, 24)); // NOI18N
+        jLabel1.setText("CASHIER MENU");
+
+        btnReturn1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btnReturn1.setText("Return");
+        btnReturn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnReturn1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout OptionsCashierLayout = new javax.swing.GroupLayout(OptionsCashier.getContentPane());
+        OptionsCashier.getContentPane().setLayout(OptionsCashierLayout);
+        OptionsCashierLayout.setHorizontalGroup(
+            OptionsCashierLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(OptionsCashierLayout.createSequentialGroup()
+                .addContainerGap(123, Short.MAX_VALUE)
+                .addGroup(OptionsCashierLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OptionsCashierLayout.createSequentialGroup()
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(99, 99, 99))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OptionsCashierLayout.createSequentialGroup()
+                        .addComponent(btnGenerateBill1, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(124, 124, 124))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OptionsCashierLayout.createSequentialGroup()
+                        .addComponent(btnReturn1)
+                        .addGap(156, 156, 156))))
+        );
+        OptionsCashierLayout.setVerticalGroup(
+            OptionsCashierLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(OptionsCashierLayout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(70, 70, 70)
+                .addComponent(btnGenerateBill1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 80, Short.MAX_VALUE)
+                .addComponent(btnReturn1)
+                .addGap(47, 47, 47))
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Main Screen");
@@ -217,8 +264,8 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
     private void itmMnuCashierActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmMnuCashierActionPerformed
         this.setVisible(false);
-        FrmOptionsCashier frmOptionsCashier = new FrmOptionsCashier();
-        frmOptionsCashier.setVisible(true);
+       OptionsCashier.setVisible(true);
+       OptionsCashier.setLocationRelativeTo(null);
     }//GEN-LAST:event_itmMnuCashierActionPerformed
 
     private void itmMnuExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmMnuExitActionPerformed
@@ -287,6 +334,12 @@ public class FrmMainScreen extends javax.swing.JFrame {
             System.out.println("\nCONNECTION COULD NOT BE CLOSED");
         }
     }//GEN-LAST:event_btnReturnActionPerformed
+
+    private void btnReturn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturn1ActionPerformed
+        this.setVisible(false);
+        FrmMainScreen frmMainScreen = new FrmMainScreen();
+        frmMainScreen.setVisible(true);
+    }//GEN-LAST:event_btnReturn1ActionPerformed
     public void emptyFields() {
         txtSuggestions.setText("");
     }
@@ -328,14 +381,18 @@ public class FrmMainScreen extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JFrame OptionsCashier;
     private javax.swing.JDialog Suggestions;
+    private javax.swing.JButton btnGenerateBill1;
     private javax.swing.JButton btnReturn;
+    private javax.swing.JButton btnReturn1;
     private javax.swing.JButton btnSend;
     private javax.swing.JMenuItem itmMnuCashier;
     private javax.swing.JMenuItem itmMnuCustomer;
     private javax.swing.JMenuItem itmMnuExit;
     private javax.swing.JMenuItem itmMnuOwner;
     private javax.swing.JMenuItem itmSuggestions;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JScrollPane jScrollPane1;
