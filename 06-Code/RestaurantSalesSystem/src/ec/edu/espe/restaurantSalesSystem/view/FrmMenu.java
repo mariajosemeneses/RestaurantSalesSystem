@@ -384,13 +384,13 @@ public class FrmMenu extends javax.swing.JFrame {
         jLabel130 = new javax.swing.JLabel();
         jLabel131 = new javax.swing.JLabel();
         jLabel132 = new javax.swing.JLabel();
-        spiValor69 = new javax.swing.JSpinner();
-        spiValor70 = new javax.swing.JSpinner();
-        spiValor71 = new javax.swing.JSpinner();
-        spiValor72 = new javax.swing.JSpinner();
-        spiValor73 = new javax.swing.JSpinner();
-        spiValor74 = new javax.swing.JSpinner();
-        spiValor75 = new javax.swing.JSpinner();
+        spiValor306 = new javax.swing.JSpinner();
+        spiValor307 = new javax.swing.JSpinner();
+        spiValor308 = new javax.swing.JSpinner();
+        spiValor309 = new javax.swing.JSpinner();
+        spiValor310 = new javax.swing.JSpinner();
+        spiValor311 = new javax.swing.JSpinner();
+        spiValor312 = new javax.swing.JSpinner();
         spiValor294 = new javax.swing.JSpinner();
         spiValor295 = new javax.swing.JSpinner();
         spiValor296 = new javax.swing.JSpinner();
@@ -416,9 +416,9 @@ public class FrmMenu extends javax.swing.JFrame {
         spiValor299 = new javax.swing.JSpinner();
         jLabel139 = new javax.swing.JLabel();
         spiValor298 = new javax.swing.JSpinner();
-        spiValor94 = new javax.swing.JSpinner();
+        spiValor313 = new javax.swing.JSpinner();
         spiValor297 = new javax.swing.JSpinner();
-        spiValor96 = new javax.swing.JSpinner();
+        spiValor314 = new javax.swing.JSpinner();
         jSeparator15 = new javax.swing.JSeparator();
         spiValor280 = new javax.swing.JSpinner();
         jLabel140 = new javax.swing.JLabel();
@@ -2664,15 +2664,15 @@ public class FrmMenu extends javax.swing.JFrame {
                                             .addGroup(MenuDessertLayout.createSequentialGroup()
                                                 .addComponent(jLabel114)
                                                 .addGap(18, 18, 18)
-                                                .addComponent(spiValor94, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addComponent(spiValor313, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGroup(MenuDessertLayout.createSequentialGroup()
                                                 .addComponent(jLabel113)
                                                 .addGap(18, 18, 18)
-                                                .addComponent(spiValor75, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addComponent(spiValor312, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGroup(MenuDessertLayout.createSequentialGroup()
                                                 .addComponent(jLabel115)
                                                 .addGap(18, 18, 18)
-                                                .addComponent(spiValor96, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                                .addComponent(spiValor314, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))))
                                     .addComponent(jLabel112, javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, MenuDessertLayout.createSequentialGroup()
                                         .addComponent(jNutella, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2683,9 +2683,9 @@ public class FrmMenu extends javax.swing.JFrame {
                                             .addComponent(jLabel164, javax.swing.GroupLayout.Alignment.TRAILING))
                                         .addGap(18, 18, 18)
                                         .addGroup(MenuDessertLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(spiValor70)
-                                            .addComponent(spiValor71)
-                                            .addComponent(spiValor69, javax.swing.GroupLayout.DEFAULT_SIZE, 61, Short.MAX_VALUE)))
+                                            .addComponent(spiValor307)
+                                            .addComponent(spiValor308)
+                                            .addComponent(spiValor306, javax.swing.GroupLayout.DEFAULT_SIZE, 61, Short.MAX_VALUE)))
                                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, MenuDessertLayout.createSequentialGroup()
                                         .addGroup(MenuDessertLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                             .addComponent(jLabel123, javax.swing.GroupLayout.DEFAULT_SIZE, 78, Short.MAX_VALUE)
@@ -2695,15 +2695,15 @@ public class FrmMenu extends javax.swing.JFrame {
                                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, MenuDessertLayout.createSequentialGroup()
                                                 .addComponent(jLabel126)
                                                 .addGap(18, 18, 18)
-                                                .addComponent(spiValor73, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addComponent(spiValor310, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, MenuDessertLayout.createSequentialGroup()
                                                 .addComponent(jLabel124)
                                                 .addGap(18, 18, 18)
-                                                .addComponent(spiValor72, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addComponent(spiValor309, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, MenuDessertLayout.createSequentialGroup()
                                                 .addComponent(jLabel128)
                                                 .addGap(18, 18, 18)
-                                                .addComponent(spiValor74, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                                .addComponent(spiValor311, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                             .addGroup(MenuDessertLayout.createSequentialGroup()
                                 .addGap(20, 20, 20)
                                 .addComponent(jLabel163)))
@@ -2916,15 +2916,15 @@ public class FrmMenu extends javax.swing.JFrame {
                                 .addGap(28, 28, 28)
                                 .addGroup(MenuDessertLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel164)
-                                    .addComponent(spiValor69, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(spiValor306, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(MenuDessertLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel154)
-                                    .addComponent(spiValor70, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(spiValor307, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(MenuDessertLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel161)
-                                    .addComponent(spiValor71, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(spiValor308, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(MenuDessertLayout.createSequentialGroup()
                                 .addComponent(jLabel163)
                                 .addGap(18, 18, 18)
@@ -2938,15 +2938,15 @@ public class FrmMenu extends javax.swing.JFrame {
                             .addGroup(MenuDessertLayout.createSequentialGroup()
                                 .addGroup(MenuDessertLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel124)
-                                    .addComponent(spiValor72, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(spiValor309, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(MenuDessertLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel126)
-                                    .addComponent(spiValor73, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(spiValor310, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(MenuDessertLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel128)
-                                    .addComponent(spiValor74, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(spiValor311, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGap(32, 32, 32)
                         .addComponent(jLabel112)
                         .addGroup(MenuDessertLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2956,15 +2956,15 @@ public class FrmMenu extends javax.swing.JFrame {
                             .addGroup(MenuDessertLayout.createSequentialGroup()
                                 .addGroup(MenuDessertLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel113)
-                                    .addComponent(spiValor75, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(spiValor312, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(MenuDessertLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel114)
-                                    .addComponent(spiValor94, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(spiValor313, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(MenuDessertLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel115)
-                                    .addComponent(spiValor96, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                    .addComponent(spiValor314, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(MenuDessertLayout.createSequentialGroup()
                         .addComponent(jLabel159)
                         .addGroup(MenuDessertLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3741,17 +3741,11 @@ public class FrmMenu extends javax.swing.JFrame {
         MenuLunch.setLocationRelativeTo(null);
         this.setLocationRelativeTo(null);
 
-        rsscalelabel.RSScaleLabel.setScaleLabel(jLocro,
-                "src/ec/edu/espe/restaurantSalesSystem/images/Locro.jpg");
+        rsscalelabel.RSScaleLabel.setScaleLabel(jLocro,"src/ec/edu/espe/restaurantSalesSystem/images/Locro.jpg");
+        rsscalelabel.RSScaleLabel.setScaleLabel(jCremaTomato,"src/ec/edu/espe/restaurantSalesSystem/images/CremaTomato.jpg");
+        rsscalelabel.RSScaleLabel.setScaleLabel(jCaldoGallina,"src/ec/edu/espe/restaurantSalesSystem/images/CaldoGallina.jpg");
 
-        rsscalelabel.RSScaleLabel.setScaleLabel(jCremaTomato,
-                "src/ec/edu/espe/restaurantSalesSystem/images/CremaTomato.jpg");
-
-        rsscalelabel.RSScaleLabel.setScaleLabel(jCaldoGallina,
-                "src/ec/edu/espe/restaurantSalesSystem/images/CaldoGallina.jpg");
-
-        rsscalelabel.RSScaleLabel.setScaleLabel(jChuleta,
-                "src/ec/edu/espe/restaurantSalesSystem/images/Chuleta.jpg");
+        rsscalelabel.RSScaleLabel.setScaleLabel(jChuleta,"src/ec/edu/espe/restaurantSalesSystem/images/Chuleta.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jCamaron,
                 "src/ec/edu/espe/restaurantSalesSystem/images/Camaron.jpg");
@@ -3911,68 +3905,17 @@ public class FrmMenu extends javax.swing.JFrame {
         sendOrder(spiValor231, "Brownie");
         sendOrder(spiValor232, "ChesseCake");
         sendOrder(spiValor233, "Pastel Tres Leches");
-
         //Snack
-        if (spiValor234.getValue().hashCode() > 0) {
-            String x = "Hamburguesa de Queso";
-            if (Integer.parseInt(numMesa.getText()) >= 0) {
-                model2.addRow(new Object[]{x, spiValor234.getValue(), numMesa.getText()});
-            }
-        }
-        if (spiValor235.getValue().hashCode() > 0) {
-            String x = "Hamburguesa Simple";
-            if (Integer.parseInt(numMesa.getText()) >= 0) {
-                model2.addRow(new Object[]{x, spiValor235.getValue(), numMesa.getText()});
-            }
-        }
-        if (spiValor236.getValue().hashCode() > 0) {
-            String x = "Hamburguesa de Queso y Tocino";
-            if (Integer.parseInt(numMesa.getText()) >= 0) {
-                model2.addRow(new Object[]{x, spiValor236.getValue(), numMesa.getText()});
-            }
-        }
-        if (spiValor237.getValue().hashCode() > 0) {
-            String x = "Hamburguesa de Pollo";
-            if (Integer.parseInt(numMesa.getText()) >= 0) {
-                model2.addRow(new Object[]{x, spiValor237.getValue(), numMesa.getText()});
-            }
-        }
-        if (spiValor238.getValue().hashCode() > 0) {
-            String x = "Hamburguesa Jack Daniels";
-            if (Integer.parseInt(numMesa.getText()) >= 0) {
-                model2.addRow(new Object[]{x, spiValor238.getValue(), numMesa.getText()});
-            }
-        }
-        if (spiValor239.getValue().hashCode() > 0) {
-            String x = "Alitas BBQ";
-            if (Integer.parseInt(numMesa.getText()) >= 0) {
-                model2.addRow(new Object[]{x, spiValor239.getValue(), numMesa.getText()});
-            }
-        }
-        if (spiValor240.getValue().hashCode() > 0) {
-            String x = "Alitas Picantes";
-            if (Integer.parseInt(numMesa.getText()) >= 0) {
-                model2.addRow(new Object[]{x, spiValor240.getValue(), numMesa.getText()});
-            }
-        }
-        if (spiValor241.getValue().hashCode() > 0) {
-            String x = "Alitas Maracuya";
-            if (Integer.parseInt(numMesa.getText()) >= 0) {
-                model2.addRow(new Object[]{x, spiValor241.getValue(), numMesa.getText()});
-            }
-        }
-        if (spiValor242.getValue().hashCode() > 0) {
-            String x = "Nachos con Queso Chedar";
-            if (Integer.parseInt(numMesa.getText()) >= 0) {
-                model2.addRow(new Object[]{x, spiValor242.getValue(), numMesa.getText()});
-            }
-        }
-        if (spiValor243.getValue().hashCode() > 0) {
-            String x = "Nachos con Guacamole";
-            if (Integer.parseInt(numMesa.getText()) >= 0) {
-                model2.addRow(new Object[]{x, spiValor243.getValue(), numMesa.getText()});
-            }
-        }
+        sendOrder(spiValor234, "Hamburguesa de Queso");
+        sendOrder(spiValor235, "Hamburguesa Simple");
+        sendOrder(spiValor236, "Hamburguesa de Queso y Tocino");
+        sendOrder(spiValor237, "Hamburguesa de Pollo");
+        sendOrder(spiValor238, "Hamburguesa Jack Daniels");
+        sendOrder(spiValor239, "Alitas BBQ");
+        sendOrder(spiValor240, "Alitas Picantes");
+        sendOrder(spiValor241, "Alitas Maracuya");
+        sendOrder(spiValor242, "Nachos con Queso Chedar");
+        sendOrder(spiValor243, "Nachos con Guacamole");
 
         //Juice
         sendOrder(spiValor260, "Jarra Jugo de Papaya");
@@ -3988,11 +3931,49 @@ public class FrmMenu extends javax.swing.JFrame {
         sendOrder(spiValor270, "Jarra Jugo de Limonada");
         sendOrder(spiValor271, "Vaso Jugo de Limonada");
 
+        //Dessert
+        sendOrder(spiValor280, "Portion pai de Limon");
+        sendOrder(spiValor281, "Medium pai de Limon ");
+        sendOrder(spiValor282, "Big pai de limon");
+        sendOrder(spiValor283, "Portion pai de Manzana ");
+        sendOrder(spiValor284, "Medium pai de Manzana ");
+        sendOrder(spiValor285, "Big pai de Manzana ");
+        sendOrder(spiValor286, "Portion pai de Chocolate");
+        sendOrder(spiValor287, "Medium pai de Chocolate");
+        sendOrder(spiValor288, "Big pai de Chocolate");
+        sendOrder(spiValor289, "Portion cake de Chocolate");
+        sendOrder(spiValor290, "Medium cake de Chocolate");
+        sendOrder(spiValor291, "Big cake de Chocolate");
+        sendOrder(spiValor292, "Portion cake de Vainilla");
+        sendOrder(spiValor293, "Medium cake de Vainilla");
+        sendOrder(spiValor294, "Big cake de Vainilla");
+        sendOrder(spiValor295, "Portion cake de Naranja");
+        sendOrder(spiValor296, "Medium cake de Naranja");
+        sendOrder(spiValor297, "Big cake de Naranja");
+        sendOrder(spiValor298, "Humitas de Sal ");
+        sendOrder(spiValor299, " Humitas de Dulce");
+        sendOrder(spiValor300, "Tamal Lojano de Pollo");
+        sendOrder(spiValor301, "Tamal Lojano de Chancho");
+        sendOrder(spiValor302, "Tamal Lojano de Chichcarron");
+        sendOrder(spiValor303, "Bolon de Queso");
+        sendOrder(spiValor304, "Bolon Mixto");
+        sendOrder(spiValor305, "Quimbolito ");
+        sendOrder(spiValor306, "Porción de tarta de queso Nutella");
+        sendOrder(spiValor307, "Medium de tarta de queso Nutella");
+        sendOrder(spiValor308, "Big de tarta de queso Nutella");
+        sendOrder(spiValor309, "Brownie de porción de tarta de queso");
+        sendOrder(spiValor310, "Medium Brownie de tarta de queso");
+        sendOrder(spiValor311, "Big Brownie de porción de tarta de queso");
+        sendOrder(spiValor312, " Porción de tarta de queso Coco, caramelo y almendra ");
+        sendOrder(spiValor313, " Medium de tarta de queso Coco, caramelo y almendra ");
+        sendOrder(spiValor314, " Big de tarta de queso Coco, caramelo y almendra ");
+
+
+        
         viewOrder.setVisible(true);
         Order.setVisible(false);
     }//GEN-LAST:event_btnSendOrderActionPerformed
 
-    //ADD ORDER
     public void addOrder(JSpinner spinner, String product, float price) {
         DefaultTableModel model = (DefaultTableModel) datosTable.getModel();
 
@@ -4003,7 +3984,6 @@ public class FrmMenu extends javax.swing.JFrame {
         }
     }
 
-    //SEND ORDER
     public void sendOrder(JSpinner spinner, String product) {
         DefaultTableModel model = (DefaultTableModel) datosTable2.getModel();
 
@@ -4015,33 +3995,6 @@ public class FrmMenu extends javax.swing.JFrame {
             }
         }
     }
-
-    //GENERATE BILL
-    public float generateBill(JSpinner spinner, String product, float price, float contTotal) {
-
-        int cant = spinner.getValue().hashCode();
-
-        if (cant > 0) {
-
-            Bill fact = new Bill();
-            fact.setConcepto(product);
-
-            float precio = price;
-            fact.setPrecio(precio);
-            fact.setCantidad(cant);
-
-            float total = cant * precio;
-            fact.setTotal(total);
-            contTotal = (float) (contTotal + total);
-
-            DefaultTableModel model = (DefaultTableModel) factTable.getModel();
-            model.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
-            factTable.setModel(model);
-        }
-
-        return contTotal;
-    }
-
 
     private void btnOtherOrderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOtherOrderActionPerformed
 
@@ -4130,59 +4083,877 @@ public class FrmMenu extends javax.swing.JFrame {
     private void btngenerateBillActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btngenerateBillActionPerformed
         //Bill
         float contTotal = (float) 0.0;
-
         int c1 = Integer.parseInt(numMesa.getText()), c2 = Integer.parseInt(txtTableNumber.getText());
+        int cant = spiValor201.getValue().hashCode(), cant2 = spiValor202.getValue().hashCode(),
+                cant3 = spiValor203.getValue().hashCode(), cant4 = spiValor204.getValue().hashCode();
+        int cant5 = spiValor205.getValue().hashCode(), cant6 = spiValor206.getValue().hashCode(),
+                cant7 = spiValor207.getValue().hashCode(), cant8 = spiValor208.getValue().hashCode();
+        int cant9 = spiValor209.getValue().hashCode(), cant10 = spiValor210.getValue().hashCode(),
+                cant11 = spiValor211.getValue().hashCode();
+        int cant12 = spiValor212.getValue().hashCode(), cant13 = spiValor213.getValue().hashCode(),
+                cant14 = spiValor214.getValue().hashCode(), cant15 = spiValor215.getValue().hashCode(), cant16 = spiValor216.getValue().hashCode();
+        int cant17 = spiValor217.getValue().hashCode(), cant18 = spiValor218.getValue().hashCode(), cant19 = spiValor219.getValue().hashCode();
+        int cant20 = spiValor220.getValue().hashCode(), cant21 = spiValor221.getValue().hashCode();
+        //lunch
+        int cant22 = spiValor222.getValue().hashCode(), cant23 = spiValor223.getValue().hashCode();
+        int cant24 = spiValor224.getValue().hashCode(), cant25 = spiValor225.getValue().hashCode();
+        int cant26 = spiValor226.getValue().hashCode(), cant27 = spiValor227.getValue().hashCode();
+        int cant28 = spiValor228.getValue().hashCode(), cant29 = spiValor229.getValue().hashCode();
+        int cant30 = spiValor230.getValue().hashCode(), cant31 = spiValor231.getValue().hashCode();
+        int cant32 = spiValor232.getValue().hashCode(), cant1 = spiValor233.getValue().hashCode();
+        int cant34 = spiValor234.getValue().hashCode(), cant35 = spiValor235.getValue().hashCode();
+        int cant36 = spiValor236.getValue().hashCode(), cant37 = spiValor237.getValue().hashCode();
+        int cant38 = spiValor238.getValue().hashCode(), cant39 = spiValor239.getValue().hashCode();
+        int cant40 = spiValor240.getValue().hashCode(), cant41 = spiValor241.getValue().hashCode();
+        int cant42 = spiValor242.getValue().hashCode(), cant43 = spiValor243.getValue().hashCode();
 
         if (c1 == c2) {
-            limpiarTabla(factTable);
-            contTotal = generateBill(spiValor201, "Cafe en Agua", (float) 0.50, contTotal);
-            contTotal = generateBill(spiValor202, "Cafe en Leche", (float) 0.75, contTotal);
-            contTotal = generateBill(spiValor203, "Te con Limon", (float) 0.50, contTotal);
-            contTotal = generateBill(spiValor204, "Leche", (float) 0.60, contTotal);
-            contTotal = generateBill(spiValor205, "Pan Simple", (float) 0.10, contTotal);
-            contTotal = generateBill(spiValor206, "Pan con Jamon", (float) 0.25, contTotal);
-            contTotal = generateBill(spiValor207, "Pan con Mortadela", (float) 0.25, contTotal);
-            contTotal = generateBill(spiValor208, "Pan Integral", (float) 0.25, contTotal);
-            contTotal = generateBill(spiValor209, "Jugo de Mora", (float) 0.75, contTotal);
-            contTotal = generateBill(spiValor210, "Jugo de Naranjilla", (float) 0.75, contTotal);
-            contTotal = generateBill(spiValor211, "Jugo de Tomate de Arbol", (float) 0.75, contTotal);
-            contTotal = generateBill(spiValor212, "Huevos Cocidos", (float) 0.20, contTotal);
-            contTotal = generateBill(spiValor213, "Huevos Tibios", (float) 0.20, contTotal);
-            contTotal = generateBill(spiValor214, "Huevos Torta de Huevo", (float) 0.20, contTotal);
-            contTotal = generateBill(spiValor215, "Huevos Fritos", (float) 0.20, contTotal);
-            contTotal = generateBill(spiValor216, "Huevos Revueltos", (float) 0.20, contTotal);
-            contTotal = generateBill(spiValor217, "Manzana", (float) 0.35, contTotal);
-            contTotal = generateBill(spiValor218, "Pera", (float) 0.25, contTotal);
-            contTotal = generateBill(spiValor219, "Banana", (float) 0.25, contTotal);
-            contTotal = generateBill(spiValor220, "Estofado de Carne", (float) 1.50, contTotal);
-            contTotal = generateBill(spiValor221, "Estofado de Pollo", (float) 1.50, contTotal);
+            if (cant > 0) {
+
+                String x = "Cafe en Agua";
+                float y;
+                y = (float) 0.50;
+                ;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+
+                fact.setCantidad(cant);
+
+                float total = precio * cant;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total); //contador total
+
+                //valores de cada columna de la tabla
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+            }
+
+            if (cant2 > 0) {
+
+                String x = "Cafe en Leche";
+                float y = (float) 0.75;;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant2);
+
+                float total = cant2 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+            }
+
+            if (cant3 > 0) {
+                String x = "Te con Limon";
+                float y = (float) 0.50;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant3);
+
+                float total = cant3 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+
+            }
+
+            if (cant4 > 0) {
+                String x = "Leche";
+                float y = (float) 0.60;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant4);
+
+                float total = cant4 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+            }
+            if (cant5 > 0) {
+                String x = "Pan Simple";
+                float y = (float) 0.10;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant5);
+
+                float total = cant5 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+
+            }
+            if (cant6 > 0) {
+                String x = "Pan con Jamón";
+                float y = (float) 0.25;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant6);
+
+                float total = cant6 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+
+            }
+            if (cant7 > 0) {
+                String x = "Pan con Mortadela";
+                float y = (float) 0.25;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant7);
+
+                float total = cant7 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+
+            }
+            if (cant8 > 0) {
+                String x = "Pan Integral";
+                float y = (float) 0.25;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant8);
+
+                float total = cant8 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+
+            }
+            if (cant9 > 0) {
+                String x = "Jugo de Mora";
+                float y = (float) 0.75;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant9);
+
+                float total = cant9 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+
+            }
+            if (cant10 > 0) {
+                String x = "Jugo de Naranjilla";
+                float y = (float) 0.75;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant10);
+
+                float total = cant10 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+
+            }
+            if (cant11 > 0) {
+                String x = "Jugo de Tomate de Arbol";
+                float y = (float) 0.75;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant11);
+
+                float total = cant11 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+
+            }
+            if (cant12 > 0) {
+                String x = "Huevos Cocidos";
+                float y = (float) 0.20;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant12);
+
+                float total = cant12 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+
+            }
+            if (cant13 > 0) {
+                String x = "Huevos Tibios";
+                float y = (float) 0.20;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant13);
+
+                float total = cant13 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+
+            }
+            if (cant14 > 0) {
+                String x = "Torta de Huevo";
+                float y = (float) 0.20;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant14);
+
+                float total = cant14 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+
+            }
+            if (cant15 > 0) {
+                String x = "Huevos Fritos";
+                float y = (float) 0.20;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant15);
+
+                float total = cant15 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+
+            }
+            if (cant16 > 0) {
+                String x = "Hevos Rvueltos";
+                float y = (float) 0.20;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant16);
+
+                float total = cant16 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+
+            }
+            if (cant17 > 0) {
+                String x = "Manzana";
+                float y = (float) 0.35;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant17);
+
+                float total = cant17 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+
+            }
+            if (cant18 > 0) {
+                String x = "Pera";
+                float y = (float) 0.25;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant18);
+
+                float total = cant18 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+
+            }
+            if (cant19 > 0) {
+                String x = "Banana";
+                float y = (float) 0.25;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant19);
+
+                float total = cant19 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+
+            }
+            if (cant20 > 0) {
+                String x = "Estofado de carne";
+                float y = (float) 1.50;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant20);
+
+                float total = cant20 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+
+            }
+            if (cant21 > 0) {
+                String x = "Estofado de Pollo";
+                float y = (float) 1.50;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant21);
+
+                float total = cant21 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+            }
 
             //lunch
-            contTotal = generateBill(spiValor222, "Locro de Papas", (float) 1.25, contTotal);
-            contTotal = generateBill(spiValor223, "Crema de Tomate", (float) 1.25, contTotal);
-            contTotal = generateBill(spiValor224, "Caldo de Gallina", (float) 1.25, contTotal);
-            contTotal = generateBill(spiValor225, "Chuleta de Cerdo", (float) 2.00, contTotal);
-            contTotal = generateBill(spiValor226, "Camarones Apanados", (float) 2.20, contTotal);
-            contTotal = generateBill(spiValor227, "Lasaña de Pollo", (float) 3.20, contTotal);
-            contTotal = generateBill(spiValor228, "Jugo de Piña", (float) 0.50, contTotal);
-            contTotal = generateBill(spiValor229, "Jugo de Babaco", (float) 0.50, contTotal);
-            contTotal = generateBill(spiValor230, "Jugo de Naranjilla", (float) 0.50, contTotal);
-            contTotal = generateBill(spiValor231, "Brownie", (float) 0.75, contTotal);
-            contTotal = generateBill(spiValor232, "ChesseCake", (float) 0.75, contTotal);
-            contTotal = generateBill(spiValor233, "Pastel Tres Leches", (float) 0.75, contTotal);
+            if (cant22 > 0) {
+                String x = "Locro de papas";
+                float y = (float) 1.25;
 
-            //Snack
-            contTotal = generateBill(spiValor234, "Hamburguesa de Queso", (float) 5.75, contTotal);
-            contTotal = generateBill(spiValor235, "Hamburguesa Simple", (float) 5.25, contTotal);
-            contTotal = generateBill(spiValor236, "Hamburguesa de Queso y Tocino", (float) 6.90, contTotal);
-            contTotal = generateBill(spiValor237, "Hamburguesa de Pollo", (float) 6.50, contTotal);
-            contTotal = generateBill(spiValor238, "Hamburguesa Jack Daniels", (float) 7.99, contTotal);
-            contTotal = generateBill(spiValor239, "Alitas BBQ", (float) 13.50, contTotal);
-            contTotal = generateBill(spiValor240, "Alitas Picantes", (float) 13.50, contTotal);
-            contTotal = generateBill(spiValor241, "Alitas Maracuya", (float) 13.50, contTotal);
-            contTotal = generateBill(spiValor242, "Nachos con Queso Chedar", (float) 6.25, contTotal);
-            contTotal = generateBill(spiValor243, "Nachos con Guacamole", (float) 6.25, contTotal);
-                       
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant22);
+
+                float total = cant22 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+            }
+            if (cant23 > 0) {
+                String x = "Crema de Tomate";
+                float y = (float) 1.25;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant23);
+
+                float total = cant23 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+            }
+            if (cant24 > 0) {
+                String x = "Caldo de Gallina";
+                float y = (float) 1.25;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant24);
+
+                float total = cant24 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+            }
+            if (cant25 > 0) {
+                String x = "Chuleta de Cerdo";
+                float y = (float) 2.00;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant25);
+
+                float total = cant25 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+            }
+            if (cant26 > 0) {
+                String x = "Camarones Apanados";
+                float y = (float) 2.20;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant26);
+
+                float total = cant26 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+            }
+            if (cant27 > 0) {
+                String x = "Lasaña de Pollo";
+                float y = (float) 3.20;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant27);
+
+                float total = cant27 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+            }
+            if (cant28 > 0) {
+                String x = "Jugo de Piña";
+                float y = (float) 0.50;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant28);
+
+                float total = cant28 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+            }
+            if (cant29 > 0) {
+                String x = "Jugo de Babaco";
+                float y = (float) 0.50;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant29);
+
+                float total = cant29 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+            }
+            if (cant30 > 0) {
+                String x = "Jugo de Naranjilla";
+                float y = (float) 0.50;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant30);
+
+                float total = cant30 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+            }
+            if (cant31 > 0) {
+                String x = "Brownie";
+                float y = (float) 0.75;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant31);
+
+                float total = cant31 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+            }
+            if (cant32 > 0) {
+                String x = "ChesseCake";
+                float y = (float) 0.75;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant32);
+
+                float total = cant32 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+            }
+            if (cant1 > 0) {
+                String x = "Pastel Tres Leches";
+                float y = (float) 0.75;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant1);
+
+                float total = cant1 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+            }
+            if (cant34 > 0) {
+                String x = "Hamburquesa de Queso";
+                float y = (float) 5.75;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant34);
+
+                float total = cant34 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+            }
+            if (cant35 > 0) {
+                String x = "Hamburquesa Simple";
+                float y = (float) 5.25;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant35);
+
+                float total = cant35 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+            }
+            if (cant36 > 0) {
+                String x = "Hamburguesa de Queso y Tocino";
+                float y = (float) 6.90;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant36);
+
+                float total = cant36 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+            }
+            if (cant37 > 0) {
+                String x = "Hamburguesa de Pollo";
+                float y = (float) 6.50;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant37);
+
+                float total = cant37 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+            }
+            if (cant38 > 0) {
+                String x = "Hamburguesa Jack Daniels";
+                float y = (float) 7.99;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant38);
+
+                float total = cant38 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+            }
+            if (cant39 > 0) {
+                String x = "Alitas BBQ";
+                float y = (float) 13.50;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant39);
+
+                float total = cant39 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+            }
+            if (cant40 > 0) {
+                String x = "Alitas Picantes";
+                float y = (float) 13.50;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant40);
+
+                float total = cant40 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+            }
+            if (cant41 > 0) {
+                String x = "Alitas Maracuya";
+                float y = (float) 13.50;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant41);
+
+                float total = cant41 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+            }
+            if (cant42 > 0) {
+                String x = "Nachos con Queso Chedar";
+                float y = (float) 6.25;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant42);
+
+                float total = cant42 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+            }
+            if (cant43 > 0) {
+                String x = "Nachos con Guacamole";
+                float y = (float) 6.25;
+
+                Bill fact = new Bill();
+                fact.setConcepto(x);
+
+                float precio = y;
+                fact.setPrecio(precio);
+                fact.setCantidad(cant43);
+
+                float total = cant43 * precio;
+                fact.setTotal(total);
+                contTotal = (float) (contTotal + total);
+
+                DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
+                model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+                factTable.setModel(model3);
+            }
+
             //iva prop y total a labels factura
             Double iva = contTotal * 0.12;
             Double prop = contTotal * 0.05;
@@ -4344,8 +5115,10 @@ public class FrmMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_btnAdd2ActionPerformed
 
     private void btnAdd3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdd3ActionPerformed
-        DefaultTableModel model = (DefaultTableModel) datosTable.getModel();
-        if (spiValor280.getValue().hashCode() > 0) {
+DefaultTableModel model = (DefaultTableModel) datosTable.getModel();
+
+        
+       if (spiValor280.getValue().hashCode() > 0) {
             String x = "Portion Limon Pie";
             float y = (float) 2.80;
             model.addRow(new Object[]{x, y, spiValor280.getValue().hashCode()});
@@ -4396,6 +5169,8 @@ public class FrmMenu extends javax.swing.JFrame {
             float y = (float) 25.80;
             model.addRow(new Object[]{x, y, spiValor288.getValue().hashCode()});
         }
+
+
 
         if (spiValor289.getValue().hashCode() > 0) {
             String x = "Portion Chocolate Cake";
@@ -4449,6 +5224,7 @@ public class FrmMenu extends javax.swing.JFrame {
             model.addRow(new Object[]{x, y, spiValor297.getValue().hashCode()});
         }
 
+
         if (spiValor298.getValue().hashCode() > 0) {
             String x = " Humitas de Sal  ";
             float y = (float) 0.35;
@@ -4481,22 +5257,22 @@ public class FrmMenu extends javax.swing.JFrame {
             float y = (float) 0.50;
             model.addRow(new Object[]{x, y, spiValor303.getValue().hashCode()});
         }
-        if (spiValor304.getValue().hashCode() > 0) {
+         if (spiValor304.getValue().hashCode() > 0) {
             String x = "Bolon de Mixto   ";
             float y = (float) 1.25;
             model.addRow(new Object[]{x, y, spiValor304.getValue().hashCode()});
         }
-        if (spiValor305.getValue().hashCode() > 0) {
+         if (spiValor305.getValue().hashCode() > 0) {
             String x = "Quimbolito   ";
             float y = (float) 0.35;
             model.addRow(new Object[]{x, y, spiValor305.getValue().hashCode()});
         }
-
-        if (spiValor306.getValue().hashCode() > 0) {
-            String x = " Cheescake Portion Nutella";
+          if (spiValor306.getValue().hashCode() > 0) {
+            String x = " Porción de tarta de queso Nutella  ";
             float y = (float) 3.80;
             model.addRow(new Object[]{x, y, spiValor306.getValue().hashCode()});
         }
+        
 
         if (spiValor307.getValue().hashCode() > 0) {
             String x = "Cheescake Medium Nutella ";
@@ -4547,6 +5323,8 @@ public class FrmMenu extends javax.swing.JFrame {
         Order.setVisible(true);
         MenuDessert.dispose();
 
+
+
         // TODO add your handling code here:
     }//GEN-LAST:event_btnAdd3ActionPerformed
 
@@ -4557,59 +5335,19 @@ public class FrmMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_btnReturn8ActionPerformed
 
     private void btnAdd4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdd4ActionPerformed
+        
         DefaultTableModel model = (DefaultTableModel) datosTable.getModel();
-
-        if (spiValor234.getValue().hashCode() > 0) {
-            String x = "Hamburguesa de Queso";
-            float y = (float) 5.75;
-            model.addRow(new Object[]{x, y, spiValor234.getValue().hashCode()});
-        }
-
-        if (spiValor235.getValue().hashCode() > 0) {
-            String x = "Hamburguesa Simple";
-            float y = (float) 5.25;
-            model.addRow(new Object[]{x, y, spiValor235.getValue().hashCode()});
-        }
-        if (spiValor236.getValue().hashCode() > 0) {
-            String x = "Hamburguesa de Queso y Tocino";
-            float y = (float) 6.90;
-            model.addRow(new Object[]{x, y, spiValor236.getValue().hashCode()});
-        }
-        if (spiValor237.getValue().hashCode() > 0) {
-            String x = "Hamburguesa de Pollo";
-            float y = (float) 6.50;
-            model.addRow(new Object[]{x, y, spiValor237.getValue().hashCode()});
-        }
-        if (spiValor238.getValue().hashCode() > 0) {
-            String x = "Hamburguesa Jack Daniels";
-            float y = (float) 7.99;
-            model.addRow(new Object[]{x, y, spiValor238.getValue().hashCode()});
-        }
-        if (spiValor239.getValue().hashCode() > 0) {
-            String x = "Alitas BBQ";
-            float y = (float) 13.50;
-            model.addRow(new Object[]{x, y, spiValor239.getValue().hashCode()});
-        }
-        if (spiValor240.getValue().hashCode() > 0) {
-            String x = "Alitas Picantes";
-            float y = (float) 13.50;
-            model.addRow(new Object[]{x, y, spiValor240.getValue().hashCode()});
-        }
-        if (spiValor241.getValue().hashCode() > 0) {
-            String x = "Alitas Maracuya";
-            float y = (float) 13.50;
-            model.addRow(new Object[]{x, y, spiValor241.getValue().hashCode()});
-        }
-        if (spiValor242.getValue().hashCode() > 0) {
-            String x = "Nachos con Queso Chedar";
-            float y = (float) 6.25;
-            model.addRow(new Object[]{x, y, spiValor242.getValue().hashCode()});
-        }
-        if (spiValor243.getValue().hashCode() > 0) {
-            String x = "Nachos con Guacamole";
-            float y = (float) 6.25;
-            model.addRow(new Object[]{x, y, spiValor243.getValue().hashCode()});
-        }
+        
+        addOrder(spiValor234, "Hamburguesa de Queso", (float) 5.75);
+        addOrder(spiValor235, "Hamburguesa Simple", (float) 5.25);
+        addOrder(spiValor236, "Hamburguesa de Queso y Tocino", (float) 6.90);
+        addOrder(spiValor237, "Hamburguesa de Pollo", (float) 6.50);
+        addOrder(spiValor238, "Hamburguesa Jack Daniels", (float) 7.99);
+        addOrder(spiValor239, "Alitas BBQ", (float) 13.50);
+        addOrder(spiValor240, "Alitas Picantes", (float) 13.50);
+        addOrder(spiValor241, "Alitas Maracuya", (float) 13.50);
+        addOrder(spiValor242, "Nachos con Queso Chedar", (float) 6.25);
+        addOrder(spiValor243, "Nachos con Guacamole", (float) 6.25);
 
         Order.setVisible(true);
         MenuSnack.dispose();
@@ -4674,7 +5412,7 @@ public class FrmMenu extends javax.swing.JFrame {
         addOrder(spiValor269, "Vaso Jugo de Mora", (float) 0.75);
         addOrder(spiValor270, "Jarra Jugo de Limonada", (float) 1.50);
         addOrder(spiValor271, "Vaso Jugo de Limonada", (float) 0.75);
-
+        
         Order.setVisible(true);
         MenuLunch.dispose();
     }//GEN-LAST:event_btnOrderJuiceActionPerformed
@@ -5141,15 +5879,15 @@ public class FrmMenu extends javax.swing.JFrame {
     private javax.swing.JSpinner spiValor303;
     private javax.swing.JSpinner spiValor304;
     private javax.swing.JSpinner spiValor305;
-    private javax.swing.JSpinner spiValor69;
-    private javax.swing.JSpinner spiValor70;
-    private javax.swing.JSpinner spiValor71;
-    private javax.swing.JSpinner spiValor72;
-    private javax.swing.JSpinner spiValor73;
-    private javax.swing.JSpinner spiValor74;
-    private javax.swing.JSpinner spiValor75;
-    private javax.swing.JSpinner spiValor94;
-    private javax.swing.JSpinner spiValor96;
+    private javax.swing.JSpinner spiValor306;
+    private javax.swing.JSpinner spiValor307;
+    private javax.swing.JSpinner spiValor308;
+    private javax.swing.JSpinner spiValor309;
+    private javax.swing.JSpinner spiValor310;
+    private javax.swing.JSpinner spiValor311;
+    private javax.swing.JSpinner spiValor312;
+    private javax.swing.JSpinner spiValor313;
+    private javax.swing.JSpinner spiValor314;
     private javax.swing.JLabel teConLimon;
     private javax.swing.JLabel txtBreakfast;
     private javax.swing.JLabel txtDescription;
