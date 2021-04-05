@@ -11,9 +11,10 @@ import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
 import com.mongodb.DBObject;
 import com.mongodb.MongoClient;
-import static ec.edu.espe.Connection.utils.Conection.createConnection;
 import ec.edu.espe.restaurantSalesSystem.controller.OwnerController;
 import ec.edu.espe.restaurantSalesSystem.model.Product;
+import ec.edu.espe.restaurantSalesSystem.utils.MongoManager;
+import ec.edu.espe.restaurantSalesSystem.utils.NoSQL;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -23,7 +24,9 @@ import javax.swing.table.DefaultTableModel;
  */
 public class FrmOptionsOwner extends javax.swing.JFrame {
 
-    MongoClient mongo = createConnection();
+    MongoManager mongoManager = new MongoManager();
+    String URL = "mongodb+srv://unitedByCode:group3@data.j0bvg.mongodb.net/<dbname>?retryWrites=true&w=majority";
+    MongoClient mongo = mongoManager.openConnection(URL);
 
     /**
      * Creates new form frmOptions
@@ -46,6 +49,7 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
         jPanel4 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
         btnFindProducts = new javax.swing.JButton();
+        btnReturn = new javax.swing.JButton();
         txtProducts = new javax.swing.JTextField();
         btnAddProduct1 = new javax.swing.JButton();
         btnDeleteProduct1 = new javax.swing.JButton();
@@ -54,7 +58,6 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
         jScrollPane4 = new javax.swing.JScrollPane();
         tblProducts = new javax.swing.JTable();
         jLabel4 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
         dlgAddProduct = new javax.swing.JDialog();
         jPanel7 = new javax.swing.JPanel();
         jLabel12 = new javax.swing.JLabel();
@@ -111,6 +114,15 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
         });
         jPanel6.add(btnFindProducts);
         btnFindProducts.setBounds(360, 190, 140, 30);
+
+        btnReturn.setText("Return");
+        btnReturn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnReturnActionPerformed(evt);
+            }
+        });
+        jPanel6.add(btnReturn);
+        btnReturn.setBounds(500, 510, 65, 23);
         jPanel6.add(txtProducts);
         txtProducts.setBounds(200, 190, 140, 30);
 
@@ -172,10 +184,6 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/restaurantSalesSystem/images/fondo-product_1.jpg"))); // NOI18N
         jPanel6.add(jLabel4);
         jLabel4.setBounds(0, 0, 620, 620);
-
-        jButton1.setText("jButton1");
-        jPanel6.add(jButton1);
-        jButton1.setBounds(500, 520, 73, 23);
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -298,7 +306,7 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
             }
         });
         jPanel8.add(btnDelete);
-        btnDelete.setBounds(210, 150, 87, 25);
+        btnDelete.setBounds(210, 160, 87, 25);
 
         jLabel16.setFont(new java.awt.Font("Perpetua Titling MT", 3, 24)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(255, 255, 255));
@@ -314,13 +322,13 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
             }
         });
         jPanel8.add(txtDataToDelete);
-        txtDataToDelete.setBounds(210, 90, 170, 30);
+        txtDataToDelete.setBounds(210, 110, 170, 30);
 
         jLabel17.setFont(new java.awt.Font("Perpetua Titling MT", 3, 12)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(255, 255, 255));
         jLabel17.setText("Description:");
         jPanel8.add(jLabel17);
-        jLabel17.setBounds(110, 100, 90, 16);
+        jLabel17.setBounds(110, 120, 90, 16);
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/restaurantSalesSystem/images/fondo-Addproduct.jpg"))); // NOI18N
         jPanel8.add(jLabel5);
@@ -572,6 +580,12 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
 
     }//GEN-LAST:event_btnAddActionPerformed
 
+    public void emptyFields() {
+        txtDescription.setText("");
+        cmbTypeOfProduct.setSelectedIndex(0);
+        txtPrice.setText("");
+    }
+    
     private void cmbTypeOfProductActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbTypeOfProductActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cmbTypeOfProductActionPerformed
@@ -670,7 +684,16 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
     }//GEN-LAST:event_txtDataToDeleteActionPerformed
 
     private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
-        // TODO add your handling code here:
+        this.setVisible(false);
+        FrmLoginScreen frmLoginScreen = new FrmLoginScreen();
+        frmLoginScreen.setVisible(true);
+        NoSQL nosql;
+        nosql = new MongoManager();
+        if (nosql.closeConnection(mongo)) {
+            System.out.println("\nCONNECTION CLOSED");
+        } else {
+            System.out.println("\nCONNECTION COULD NOT BE CLOSED");
+        }
     }//GEN-LAST:event_btnExitActionPerformed
 
     private void btnSalesReport_TableActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalesReport_TableActionPerformed
@@ -736,6 +759,12 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jButton28ActionPerformed
 
+    private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturnActionPerformed
+        FrmStockProducts.setVisible(false);        
+        FrmOptionsOwner frmOptionsOwner = new FrmOptionsOwner();
+        frmOptionsOwner.setVisible(true);
+    }//GEN-LAST:event_btnReturnActionPerformed
+
 
    
 
@@ -791,13 +820,13 @@ public class FrmOptionsOwner extends javax.swing.JFrame {
     private javax.swing.JButton btnNumSales;
     private javax.swing.JButton btnRegisterEmployee;
     private javax.swing.JButton btnReportSale;
+    private javax.swing.JButton btnReturn;
     private javax.swing.JButton btnSalesReport_Table;
     private javax.swing.JButton btnViewProducts1;
     private javax.swing.JComboBox<String> cmbTypeOfProduct;
     private javax.swing.JLabel description2;
     private javax.swing.JDialog dlgAddProduct;
     private javax.swing.JDialog dlgDeleteProduct;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton28;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel12;
