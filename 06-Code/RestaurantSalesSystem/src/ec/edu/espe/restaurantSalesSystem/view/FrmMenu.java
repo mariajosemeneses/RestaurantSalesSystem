@@ -10,7 +10,9 @@ import ec.edu.espe.restaurantsalessystem.model.Bill;
 import java.awt.event.KeyEvent;
 import java.util.Date;
 import javax.swing.JOptionPane;
+import javax.swing.JSpinner;
 import javax.swing.JTable;
+import javax.swing.SpinnerNumberModel;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -20,11 +22,56 @@ import javax.swing.table.DefaultTableModel;
 public class FrmMenu extends javax.swing.JFrame {
     int contador = 0;
     int suma = 0;
+    
+    
+    public static void validationSpinner(JSpinner spinner) {
+        SpinnerNumberModel nm = new SpinnerNumberModel();
+        nm.setMaximum(100);
+        nm.setMinimum(0);
+        nm.setStepSize(1);
+        spinner.setModel(nm);
+    }
     /**
      * Creates new form FrmOptionsMenuCustumer
      */
     public FrmMenu() {
         initComponents();
+            //Validation Brakfast
+            validationSpinner(spiValor);
+            validationSpinner(spiValor2);
+            validationSpinner(spiValor3);
+            validationSpinner(spiValor4);
+            validationSpinner(spiValor5);
+            validationSpinner(spiValor6);
+            validationSpinner(spiValor7);
+            validationSpinner(spiValor8);
+            validationSpinner(spiValor9);
+            validationSpinner(spiValor10);
+            validationSpinner(spiValor11);
+            validationSpinner(spiValor12);
+            validationSpinner(spiValor13);
+            validationSpinner(spiValor14);
+            validationSpinner(spiValor15);
+            validationSpinner(spiValor16);
+            validationSpinner(spiValor17);
+            validationSpinner(spiValor18);
+            validationSpinner(spiValor19);
+            validationSpinner(spiValor20);
+            validationSpinner(spiValor21);
+            //Validation Lunch
+            validationSpinner(spiValor22);
+            validationSpinner(spiValor23);
+            validationSpinner(spiValor24);
+            validationSpinner(spiValor25);
+            validationSpinner(spiValor26);
+            validationSpinner(spiValor27);
+            validationSpinner(spiValor28);
+            validationSpinner(spiValor29);
+            validationSpinner(spiValor30);
+            validationSpinner(spiValor31);
+            validationSpinner(spiValor32);
+            validationSpinner(spiValor1);
+            
     }
 
     /**
@@ -3369,6 +3416,8 @@ public class FrmMenu extends javax.swing.JFrame {
     private void btnBreakfastActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBreakfastActionPerformed
        MenuBreakfast.setVisible(true);
        MenuBreakfast.setLocationRelativeTo(null);
+            
+      
     }//GEN-LAST:event_btnBreakfastActionPerformed
 
     private void btnLunchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLunchActionPerformed
