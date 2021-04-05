@@ -72,10 +72,92 @@ public class FrmMenu extends javax.swing.JFrame {
         validationSpinner(spiValor231);
         validationSpinner(spiValor232);
         validationSpinner(spiValor233);
+        //Validation Snack
         validationSpinner(spiValor234);
         validationSpinner(spiValor235);
         validationSpinner(spiValor236);
-
+        validationSpinner(spiValor237);
+        validationSpinner(spiValor238);
+        validationSpinner(spiValor239);
+        validationSpinner(spiValor240);
+        validationSpinner(spiValor241);
+        validationSpinner(spiValor242);
+        validationSpinner(spiValor243);
+        //Validation Coffee
+        validationSpinner(spiValor244);
+        validationSpinner(spiValor245);
+        validationSpinner(spiValor246);
+        validationSpinner(spiValor247);
+        validationSpinner(spiValor248);
+        validationSpinner(spiValor249);
+        validationSpinner(spiValor250);
+        validationSpinner(spiValor251);
+        validationSpinner(spiValor252);
+        validationSpinner(spiValor253);
+        validationSpinner(spiValor254);
+        validationSpinner(spiValor255);
+        validationSpinner(spiValor256);
+        validationSpinner(spiValor257);
+        validationSpinner(spiValor258);
+        validationSpinner(spiValor259);
+        //Validation Juice
+        validationSpinner(spiValor260);
+        validationSpinner(spiValor261);
+        validationSpinner(spiValor262);
+        validationSpinner(spiValor263);
+        validationSpinner(spiValor264);
+        validationSpinner(spiValor265);
+        validationSpinner(spiValor266);
+        validationSpinner(spiValor267);
+        validationSpinner(spiValor268);
+        validationSpinner(spiValor269);
+        validationSpinner(spiValor270);
+        validationSpinner(spiValor271);
+        //Validation Soda
+        validationSpinner(spiValor272);
+        validationSpinner(spiValor273);
+        validationSpinner(spiValor274);
+        validationSpinner(spiValor275);
+        validationSpinner(spiValor276);
+        validationSpinner(spiValor277);
+        validationSpinner(spiValor278);
+        validationSpinner(spiValor279);
+        //Validation Dessert
+        validationSpinner(spiValor280);
+        validationSpinner(spiValor281);
+        validationSpinner(spiValor282);
+        validationSpinner(spiValor283);
+        validationSpinner(spiValor284);
+        validationSpinner(spiValor285);
+        validationSpinner(spiValor286);
+        validationSpinner(spiValor287);
+        validationSpinner(spiValor288);
+        validationSpinner(spiValor289);
+        validationSpinner(spiValor290);
+        validationSpinner(spiValor291);
+        validationSpinner(spiValor292);
+        validationSpinner(spiValor293);
+        validationSpinner(spiValor294);
+        validationSpinner(spiValor295);
+        validationSpinner(spiValor296);
+        validationSpinner(spiValor297);
+        validationSpinner(spiValor298);
+        validationSpinner(spiValor299);
+        validationSpinner(spiValor300);
+        validationSpinner(spiValor301);
+        validationSpinner(spiValor302);
+        validationSpinner(spiValor303);
+        validationSpinner(spiValor304);
+        validationSpinner(spiValor305);
+        validationSpinner(spiValor306);
+        validationSpinner(spiValor307);
+        validationSpinner(spiValor308);
+        validationSpinner(spiValor309);
+        validationSpinner(spiValor310);
+        validationSpinner(spiValor311);
+        validationSpinner(spiValor312);
+        validationSpinner(spiValor313);
+        validationSpinner(spiValor314);
     }
 
     /**
