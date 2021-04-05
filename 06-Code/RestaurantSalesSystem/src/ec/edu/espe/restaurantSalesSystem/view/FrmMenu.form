@@ -5222,6 +5222,510 @@
         </Component>
       </SubComponents>
     </Container>
+    <Container class="javax.swing.JFrame" name="MenuSnack">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="1164" max="32767" attributes="0"/>
+              <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="bntReturn" min="-2" pref="113" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="btnAdd4" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="200" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <EmptySpace min="269" pref="269" max="-2" attributes="0"/>
+                                                      <Component id="jLabel173" min="-2" pref="96" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                                      <Group type="102" alignment="1" attributes="0">
+                                                          <Component id="jBBQ" min="-2" pref="87" max="-2" attributes="0"/>
+                                                          <EmptySpace min="-2" pref="249" max="-2" attributes="0"/>
+                                                          <Component id="jHot" min="-2" pref="87" max="-2" attributes="0"/>
+                                                          <EmptySpace max="32767" attributes="0"/>
+                                                          <Component id="jpassionFruit" min="-2" pref="87" max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <Group type="103" alignment="1" groupAlignment="1" max="-2" attributes="0">
+                                                          <Group type="103" alignment="1" groupAlignment="1" max="-2" attributes="0">
+                                                              <Group type="102" alignment="0" attributes="0">
+                                                                  <Component id="jLabel176" min="-2" max="-2" attributes="0"/>
+                                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                                  <Component id="spiValor111" min="-2" pref="60" max="-2" attributes="0"/>
+                                                              </Group>
+                                                              <Group type="102" alignment="0" attributes="0">
+                                                                  <Component id="jLabel166" min="-2" max="-2" attributes="0"/>
+                                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                                  <Component id="spiValor113" min="-2" pref="60" max="-2" attributes="0"/>
+                                                              </Group>
+                                                          </Group>
+                                                          <Group type="102" alignment="0" attributes="0">
+                                                              <Component id="jLabel165" min="-2" max="-2" attributes="0"/>
+                                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                              <Component id="spiValor112" min="-2" pref="60" max="-2" attributes="0"/>
+                                                          </Group>
+                                                      </Group>
+                                                  </Group>
+                                              </Group>
+                                              <EmptySpace max="32767" attributes="0"/>
+                                              <Component id="jSeparator19" min="-2" pref="11" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Group type="102" alignment="1" attributes="0">
+                                                      <EmptySpace max="32767" attributes="0"/>
+                                                      <Group type="103" groupAlignment="1" attributes="0">
+                                                          <Component id="jLabel167" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="jLabel177" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                      <Group type="103" groupAlignment="0" attributes="0">
+                                                          <Component id="spiValor106" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                                                          <Component id="spiValor107" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                                                      </Group>
+                                                  </Group>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <EmptySpace min="-2" pref="108" max="-2" attributes="0"/>
+                                                      <Component id="jLabel174" min="-2" pref="104" max="-2" attributes="0"/>
+                                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                                                      <Component id="jNachosWithCheese" min="-2" pref="87" max="-2" attributes="0"/>
+                                                      <EmptySpace max="32767" attributes="0"/>
+                                                      <Component id="jNachosWithGuacamole" min="-2" pref="87" max="-2" attributes="0"/>
+                                                      <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                          </Group>
+                                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <Component id="jBaconCheeseBurger" min="-2" pref="87" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="159" max="-2" attributes="0"/>
+                                                  <Component id="jClassicBurger" min="-2" pref="87" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="181" max="-2" attributes="0"/>
+                                                  <Component id="jChickenBurguer" min="-2" pref="87" max="-2" attributes="0"/>
+                                                  <EmptySpace max="32767" attributes="0"/>
+                                                  <Component id="jCheeseburger" min="-2" pref="87" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="182" max="-2" attributes="0"/>
+                                                  <Component id="jJackDanielsBurger" min="-2" pref="87" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="jLabel172" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="jLabel170" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="jLabel171" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="jLabel168" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="jLabel169" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                      <Component id="spiValor105" alignment="0" max="32767" attributes="0"/>
+                                                      <Component id="spiValor104" alignment="0" max="32767" attributes="0"/>
+                                                      <Component id="spiValor110" alignment="0" max="32767" attributes="0"/>
+                                                      <Component id="spiValor109" alignment="0" max="32767" attributes="0"/>
+                                                      <Component id="spiValor108" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="txtSnack" min="-2" pref="111" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="335" max="-2" attributes="0"/>
+                                      <Component id="jLabel175" min="-2" pref="214" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace pref="14" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="jSeparator20" alignment="1" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="598" max="32767" attributes="0"/>
+              <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtSnack" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                          <Component id="jLabel175" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel171" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="spiValor108" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="spiValor109" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel170" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="spiValor110" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel172" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="spiValor104" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel168" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="spiValor105" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel169" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jClassicBurger" alignment="0" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="jCheeseburger" alignment="0" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="jChickenBurguer" alignment="0" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="jBaconCheeseBurger" alignment="0" min="-2" pref="73" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="jLabel174" min="-2" pref="35" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="jLabel167" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="spiValor106" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="jLabel177" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="spiValor107" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Component id="jNachosWithGuacamole" alignment="1" min="-2" pref="73" max="-2" attributes="0"/>
+                                          <Component id="jNachosWithCheese" alignment="1" min="-2" pref="73" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace pref="42" max="32767" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jSeparator19" alignment="0" max="32767" attributes="0"/>
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Component id="jLabel173" min="-2" pref="37" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="jLabel165" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="spiValor112" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="jLabel166" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="spiValor113" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Group type="102" alignment="1" attributes="0">
+                                                      <Group type="103" groupAlignment="3" attributes="0">
+                                                          <Component id="jLabel176" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="spiValor111" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                      <Group type="103" groupAlignment="0" attributes="0">
+                                                          <Component id="jBBQ" alignment="0" min="-2" pref="73" max="-2" attributes="0"/>
+                                                          <Component id="jHot" alignment="0" min="-2" pref="73" max="-2" attributes="0"/>
+                                                      </Group>
+                                                  </Group>
+                                                  <Component id="jpassionFruit" alignment="1" min="-2" pref="73" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jJackDanielsBurger" min="-2" pref="73" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jSeparator20" min="-2" pref="14" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="btnAdd4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="bntReturn" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JSpinner" name="spiValor104">
+        </Component>
+        <Component class="javax.swing.JSpinner" name="spiValor105">
+        </Component>
+        <Component class="javax.swing.JSpinner" name="spiValor106">
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel165">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Consolas" size="13" style="2"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Alitas BBQ: 12 alitas, porcion de papas, tiras de apio, zanahoria, salsa BBQ..................$13,50"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JSpinner" name="spiValor107">
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel166">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Consolas" size="13" style="2"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Alitas Picantes: 12 alitas, porcion de papas, tiras de apio, zanahoria, salsa picante.........$13,50"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jBBQ">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel167">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Consolas" size="13" style="2"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Nachos con queso chedar.........$6,25"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jHot">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JSeparator" name="jSeparator19">
+          <Properties>
+            <Property name="orientation" type="int" value="1"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel168">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Consolas" size="13" style="2"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Pollo (Pechuga de Pollo ahumado, Salsas, cebolla, Champi&#xf1;ones, lechuga, Tomate, Champi&#xf1;ones, Aceitunas, Cebolla Caramelizada, Cebolla Cruda).......$6,50"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel169">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Consolas" size="13" style="2"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Jack Daniels (Carne de res a la parrilla, Tocino, Queso Holand&#xe9;s, Cebolla Crispy, Lechuga, Tomate, salsa JACK DANIELS).............................$7,99"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JSpinner" name="spiValor108">
+        </Component>
+        <Component class="javax.swing.JLabel" name="txtSnack">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Baskerville Old Face" size="24" style="3"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="SNACKS"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JSpinner" name="spiValor109">
+        </Component>
+        <Component class="javax.swing.JSeparator" name="jSeparator20">
+        </Component>
+        <Component class="javax.swing.JSpinner" name="spiValor110">
+        </Component>
+        <Component class="javax.swing.JLabel" name="jNachosWithGuacamole">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnAdd4">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Add Order"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAdd4ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jCheeseburger">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="bntReturn">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Return"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bntReturnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jBaconCheeseBurger">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jJackDanielsBurger">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JSpinner" name="spiValor111">
+        </Component>
+        <Component class="javax.swing.JSpinner" name="spiValor112">
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel170">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Consolas" size="13" style="2"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Simple (Carne de res, salsas, lechuga, Tomate, Pickles, Champi&#xf1;ones, Aceitunas, Pico de Gallo).....................................................$5,25"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel171">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Consolas" size="13" style="2"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Queso (Carne de res, queso cheddar, salsas, lechuga, Tomate, Champi&#xf1;ones, Cebolla Caramelizada, Cebolla Cruda, Pico de Gallo, Aceitunas)...........$5,75"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel172">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Consolas" size="13" style="2"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Queso y Tocino (carne de res, queso cheedar, tocino, salsas, Lechuga, Tomate, Champi&#xf1;ones, Pickles, Aceitunas, Cebolla Caramelizada)...............$6,90"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel173">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Pristina" size="24" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="ALITAS"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jpassionFruit">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel174">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Pristina" size="24" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="NACHOS"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jNachosWithCheese">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel175">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Pristina" size="24" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="HAMBURGUESAS"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jChickenBurguer">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel176">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Consolas" size="13" style="2"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Alitas de maracuya: 12 alitas, porcion de papas, tiras de apio, zanahoria, salsa de maracuya..$13,50"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jClassicBurger">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel177">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Consolas" size="13" style="2"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Nachos con guacamole............$6,25"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JSpinner" name="spiValor113">
+        </Component>
+      </SubComponents>
+    </Container>
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
