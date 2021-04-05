@@ -5,17 +5,27 @@
  */
 package ec.edu.espe.restaurantSalesSystem.view;
 
+import com.mongodb.MongoClient;
+import static ec.edu.espe.Connection.utils.Conection.createConnection;
+import ec.edu.espe.restaurantSalesSystem.utils.MongoManager;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Sebas
  */
 public class FrmMainScreen extends javax.swing.JFrame {
-
+ MongoClient mongo = createConnection();
     /**
      * Creates new form FrmMainScreen1
      */
     public FrmMainScreen() {
         initComponents();
+        
+         
+    
+     this.setLocationRelativeTo(null);
+                rsscalelabel.RSScaleLabel.setScaleLabel(jlogo,"src/ec/edu/espe/restaurantSalesSystem/images/logo.jpg" );
     }
 
     /**
@@ -27,24 +37,96 @@ public class FrmMainScreen extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        Suggestions = new javax.swing.JDialog();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        txtSuggestions = new javax.swing.JTextArea();
+        jLabel3 = new javax.swing.JLabel();
+        jSuggestions = new javax.swing.JLabel();
+        btnSend = new javax.swing.JButton();
+        btnReturn = new javax.swing.JButton();
+        jlogo = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         mnuSystem = new javax.swing.JMenu();
         itmMnuExit = new javax.swing.JMenuItem();
+        itmSuggestions = new javax.swing.JMenuItem();
         mnuLogin = new javax.swing.JMenu();
         itmMnuOwner = new javax.swing.JMenuItem();
         itmMnuCashier = new javax.swing.JMenuItem();
         itmMnuCustomer = new javax.swing.JMenuItem();
-        jMenu3 = new javax.swing.JMenu();
+
+        Suggestions.setTitle("Suggestions");
+
+        txtSuggestions.setColumns(20);
+        txtSuggestions.setRows(5);
+        jScrollPane1.setViewportView(txtSuggestions);
+
+        jLabel3.setFont(new java.awt.Font("Baskerville Old Face", 3, 18)); // NOI18N
+        jLabel3.setText("SUGGESTIONS:");
+
+        btnSend.setFont(new java.awt.Font("Calibri Light", 3, 14)); // NOI18N
+        btnSend.setText("SEND");
+        btnSend.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSendActionPerformed(evt);
+            }
+        });
+
+        btnReturn.setFont(new java.awt.Font("Calibri", 3, 14)); // NOI18N
+        btnReturn.setText("RETURN");
+        btnReturn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnReturnActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout SuggestionsLayout = new javax.swing.GroupLayout(Suggestions.getContentPane());
+        Suggestions.getContentPane().setLayout(SuggestionsLayout);
+        SuggestionsLayout.setHorizontalGroup(
+            SuggestionsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SuggestionsLayout.createSequentialGroup()
+                .addGap(48, 48, 48)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(SuggestionsLayout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addComponent(jSuggestions, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
+                .addGroup(SuggestionsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SuggestionsLayout.createSequentialGroup()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SuggestionsLayout.createSequentialGroup()
+                        .addComponent(btnReturn)
+                        .addGap(79, 79, 79)
+                        .addComponent(btnSend)
+                        .addGap(39, 39, 39))))
+        );
+        SuggestionsLayout.setVerticalGroup(
+            SuggestionsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SuggestionsLayout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jLabel3)
+                .addGroup(SuggestionsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(SuggestionsLayout.createSequentialGroup()
+                        .addGap(34, 34, 34)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
+                        .addGroup(SuggestionsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnSend)
+                            .addComponent(btnReturn)))
+                    .addGroup(SuggestionsLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jSuggestions, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(21, 21, 21))
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Main Screen");
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 3, 24)); // NOI18N
-        jLabel1.setText("WELCOME");
+        jlogo.setFont(new java.awt.Font("Tahoma", 3, 24)); // NOI18N
+        jlogo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 3, 24)); // NOI18N
-        jLabel2.setText("RESTAURANT SALES SYSTEM");
+        jMenuBar1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 0, 0), new java.awt.Color(0, 0, 0), new java.awt.Color(0, 0, 0), new java.awt.Color(0, 0, 0)));
 
         mnuSystem.setText("System");
 
@@ -56,6 +138,15 @@ public class FrmMainScreen extends javax.swing.JFrame {
             }
         });
         mnuSystem.add(itmMnuExit);
+
+        itmSuggestions.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.CTRL_MASK));
+        itmSuggestions.setText("Suggestions");
+        itmSuggestions.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                itmSuggestionsActionPerformed(evt);
+            }
+        });
+        mnuSystem.add(itmSuggestions);
 
         jMenuBar1.add(mnuSystem);
 
@@ -90,9 +181,6 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
         jMenuBar1.add(mnuLogin);
 
-        jMenu3.setText("Suggestions");
-        jMenuBar1.add(jMenu3);
-
         setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -100,23 +188,16 @@ public class FrmMainScreen extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(171, 171, 171)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(49, 49, 49)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 365, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(74, Short.MAX_VALUE))
+                .addGap(38, 38, 38)
+                .addComponent(jlogo, javax.swing.GroupLayout.PREFERRED_SIZE, 365, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(49, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(100, 100, 100)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel2)
-                .addContainerGap(125, Short.MAX_VALUE))
+                .addGap(54, 54, 54)
+                .addComponent(jlogo, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(62, Short.MAX_VALUE))
         );
 
         pack();
@@ -144,6 +225,55 @@ public class FrmMainScreen extends javax.swing.JFrame {
         frmLoginScreen.setVisible(true);
     }//GEN-LAST:event_itmMnuOwnerActionPerformed
 
+    private void itmSuggestionsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmSuggestionsActionPerformed
+        Suggestions.setVisible(true);
+       Suggestions.setLocationRelativeTo(null);
+       this.setLocationRelativeTo(null);
+            rsscalelabel.RSScaleLabel.setScaleLabel(jSuggestions,"src/ec/edu/espe/restaurantSalesSystem/images/sugerencia.jpg" );
+    }//GEN-LAST:event_itmSuggestionsActionPerformed
+
+    private void btnSendActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSendActionPerformed
+        if(txtSuggestions.getText().isEmpty()) {
+            JOptionPane.showMessageDialog(null, "FILL ALL THE FIELDS");
+        } else {
+            String dataToSave = "Want to send suggestion?: \nSuggestion:" + txtSuggestions.getText();
+
+            int selection = JOptionPane.showConfirmDialog(null, dataToSave, "Suggestion",
+                    JOptionPane.YES_NO_CANCEL_OPTION);
+
+            switch (selection) {
+                case 0:
+                    JOptionPane.showMessageDialog(null, "Suggestion sent ", txtSuggestions.getText(),
+                            JOptionPane.INFORMATION_MESSAGE);
+                                    MongoManager.createSuggestions(mongo, "Sugestions", "Sugestion", txtSuggestions.getText());
+                    emptyFields();
+                    FrmMainScreen frmMainScreen = new FrmMainScreen();
+                    this.setVisible(false);
+                    frmMainScreen.setVisible(true);
+                    break;
+                case 1:
+                    JOptionPane.showMessageDialog(null, "Suggestion not sent ",txtSuggestions.getText(),
+                            JOptionPane.INFORMATION_MESSAGE);
+                    emptyFields();
+                    break;
+                default:
+                    JOptionPane.showMessageDialog(null, "Action was cancelled ", txtSuggestions.getText(),
+                            JOptionPane.INFORMATION_MESSAGE);
+                    break;
+            }
+        }
+    }//GEN-LAST:event_btnSendActionPerformed
+
+    private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturnActionPerformed
+        this.setVisible(false);
+        FrmMainScreen frmMainScreen = new FrmMainScreen();
+        frmMainScreen.setVisible(true);
+    }//GEN-LAST:event_btnReturnActionPerformed
+public void emptyFields() {
+        txtSuggestions.setText("");
+        
+}
+                                
     /**
      * @param args the command line arguments
      */
@@ -181,15 +311,21 @@ public class FrmMainScreen extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JDialog Suggestions;
+    private javax.swing.JButton btnReturn;
+    private javax.swing.JButton btnSend;
     private javax.swing.JMenuItem itmMnuCashier;
     private javax.swing.JMenuItem itmMnuCustomer;
     private javax.swing.JMenuItem itmMnuExit;
     private javax.swing.JMenuItem itmMnuOwner;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenuItem itmSuggestions;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel jSuggestions;
+    private javax.swing.JLabel jlogo;
     private javax.swing.JMenu mnuLogin;
     private javax.swing.JMenu mnuSystem;
+    private javax.swing.JTextArea txtSuggestions;
     // End of variables declaration//GEN-END:variables
 }
