@@ -5,7 +5,6 @@
  */
 package ec.edu.espe.restaurantSalesSystem.view;
 
-
 import ec.edu.espe.restaurantsalessystem.model.Bill;
 import java.awt.event.KeyEvent;
 import java.util.Date;
@@ -17,13 +16,14 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  * factTable.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+ *
  * @author Maria José Meneses
  */
 public class FrmMenu extends javax.swing.JFrame {
+
     int contador = 0;
     int suma = 0;
-    
-    
+
     public static void validationSpinner(JSpinner spinner) {
         SpinnerNumberModel nm = new SpinnerNumberModel();
         nm.setMaximum(100);
@@ -31,52 +31,51 @@ public class FrmMenu extends javax.swing.JFrame {
         nm.setStepSize(1);
         spinner.setModel(nm);
     }
+
     /**
      * Creates new form FrmOptionsMenuCustumer
      */
     public FrmMenu() {
         initComponents();
-            
-            validationSpinner(spiValor201);
-            validationSpinner(spiValor202);
-            validationSpinner(spiValor203);
-            validationSpinner(spiValor204);
-            validationSpinner(spiValor205);
-            validationSpinner(spiValor206);
-            validationSpinner(spiValor207);
-            validationSpinner(spiValor208);
-            validationSpinner(spiValor209);
-            validationSpinner(spiValor210);
-            validationSpinner(spiValor211);
-            validationSpinner(spiValor212);
-            validationSpinner(spiValor213);
-            validationSpinner(spiValor214);
-            validationSpinner(spiValor215);
-            validationSpinner(spiValor216);
-            validationSpinner(spiValor217);
-            validationSpinner(spiValor218);
-            validationSpinner(spiValor219);
-            validationSpinner(spiValor220);
-            validationSpinner(spiValor221);
-            //Validation Lunch
-            validationSpinner(spiValor222);
-            validationSpinner(spiValor223);
-            validationSpinner(spiValor224);
-            validationSpinner(spiValor225);
-            validationSpinner(spiValor226);
-            validationSpinner(spiValor227);
-            validationSpinner(spiValor228);
-            validationSpinner(spiValor229);
-            validationSpinner(spiValor230);
-            validationSpinner(spiValor231);
-            validationSpinner(spiValor232);
-            validationSpinner(spiValor233);
-            validationSpinner(spiValor234);
-            validationSpinner(spiValor235);
-            validationSpinner(spiValor236);
-            
-            
-            
+
+        validationSpinner(spiValor201);
+        validationSpinner(spiValor202);
+        validationSpinner(spiValor203);
+        validationSpinner(spiValor204);
+        validationSpinner(spiValor205);
+        validationSpinner(spiValor206);
+        validationSpinner(spiValor207);
+        validationSpinner(spiValor208);
+        validationSpinner(spiValor209);
+        validationSpinner(spiValor210);
+        validationSpinner(spiValor211);
+        validationSpinner(spiValor212);
+        validationSpinner(spiValor213);
+        validationSpinner(spiValor214);
+        validationSpinner(spiValor215);
+        validationSpinner(spiValor216);
+        validationSpinner(spiValor217);
+        validationSpinner(spiValor218);
+        validationSpinner(spiValor219);
+        validationSpinner(spiValor220);
+        validationSpinner(spiValor221);
+        //Validation Lunch
+        validationSpinner(spiValor222);
+        validationSpinner(spiValor223);
+        validationSpinner(spiValor224);
+        validationSpinner(spiValor225);
+        validationSpinner(spiValor226);
+        validationSpinner(spiValor227);
+        validationSpinner(spiValor228);
+        validationSpinner(spiValor229);
+        validationSpinner(spiValor230);
+        validationSpinner(spiValor231);
+        validationSpinner(spiValor232);
+        validationSpinner(spiValor233);
+        validationSpinner(spiValor234);
+        validationSpinner(spiValor235);
+        validationSpinner(spiValor236);
+
     }
 
     /**
@@ -385,13 +384,13 @@ public class FrmMenu extends javax.swing.JFrame {
         jLabel130 = new javax.swing.JLabel();
         jLabel131 = new javax.swing.JLabel();
         jLabel132 = new javax.swing.JLabel();
-        spiValor69 = new javax.swing.JSpinner();
-        spiValor70 = new javax.swing.JSpinner();
-        spiValor71 = new javax.swing.JSpinner();
-        spiValor72 = new javax.swing.JSpinner();
-        spiValor73 = new javax.swing.JSpinner();
-        spiValor74 = new javax.swing.JSpinner();
-        spiValor75 = new javax.swing.JSpinner();
+        spiValor306 = new javax.swing.JSpinner();
+        spiValor307 = new javax.swing.JSpinner();
+        spiValor308 = new javax.swing.JSpinner();
+        spiValor309 = new javax.swing.JSpinner();
+        spiValor310 = new javax.swing.JSpinner();
+        spiValor311 = new javax.swing.JSpinner();
+        spiValor312 = new javax.swing.JSpinner();
         spiValor294 = new javax.swing.JSpinner();
         spiValor295 = new javax.swing.JSpinner();
         spiValor296 = new javax.swing.JSpinner();
@@ -417,9 +416,9 @@ public class FrmMenu extends javax.swing.JFrame {
         spiValor299 = new javax.swing.JSpinner();
         jLabel139 = new javax.swing.JLabel();
         spiValor298 = new javax.swing.JSpinner();
-        spiValor94 = new javax.swing.JSpinner();
+        spiValor313 = new javax.swing.JSpinner();
         spiValor297 = new javax.swing.JSpinner();
-        spiValor96 = new javax.swing.JSpinner();
+        spiValor314 = new javax.swing.JSpinner();
         jSeparator15 = new javax.swing.JSeparator();
         spiValor280 = new javax.swing.JSpinner();
         jLabel140 = new javax.swing.JLabel();
@@ -2660,15 +2659,15 @@ public class FrmMenu extends javax.swing.JFrame {
                                             .addGroup(MenuDessertLayout.createSequentialGroup()
                                                 .addComponent(jLabel114)
                                                 .addGap(18, 18, 18)
-                                                .addComponent(spiValor94, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addComponent(spiValor313, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGroup(MenuDessertLayout.createSequentialGroup()
                                                 .addComponent(jLabel113)
                                                 .addGap(18, 18, 18)
-                                                .addComponent(spiValor75, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addComponent(spiValor312, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGroup(MenuDessertLayout.createSequentialGroup()
                                                 .addComponent(jLabel115)
                                                 .addGap(18, 18, 18)
-                                                .addComponent(spiValor96, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                                .addComponent(spiValor314, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))))
                                     .addComponent(jLabel112, javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, MenuDessertLayout.createSequentialGroup()
                                         .addComponent(jNutella, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2679,9 +2678,9 @@ public class FrmMenu extends javax.swing.JFrame {
                                             .addComponent(jLabel164, javax.swing.GroupLayout.Alignment.TRAILING))
                                         .addGap(18, 18, 18)
                                         .addGroup(MenuDessertLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(spiValor70)
-                                            .addComponent(spiValor71)
-                                            .addComponent(spiValor69, javax.swing.GroupLayout.DEFAULT_SIZE, 61, Short.MAX_VALUE)))
+                                            .addComponent(spiValor307)
+                                            .addComponent(spiValor308)
+                                            .addComponent(spiValor306, javax.swing.GroupLayout.DEFAULT_SIZE, 61, Short.MAX_VALUE)))
                                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, MenuDessertLayout.createSequentialGroup()
                                         .addGroup(MenuDessertLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                             .addComponent(jLabel123, javax.swing.GroupLayout.DEFAULT_SIZE, 78, Short.MAX_VALUE)
@@ -2691,15 +2690,15 @@ public class FrmMenu extends javax.swing.JFrame {
                                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, MenuDessertLayout.createSequentialGroup()
                                                 .addComponent(jLabel126)
                                                 .addGap(18, 18, 18)
-                                                .addComponent(spiValor73, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addComponent(spiValor310, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, MenuDessertLayout.createSequentialGroup()
                                                 .addComponent(jLabel124)
                                                 .addGap(18, 18, 18)
-                                                .addComponent(spiValor72, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addComponent(spiValor309, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, MenuDessertLayout.createSequentialGroup()
                                                 .addComponent(jLabel128)
                                                 .addGap(18, 18, 18)
-                                                .addComponent(spiValor74, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                                .addComponent(spiValor311, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                             .addGroup(MenuDessertLayout.createSequentialGroup()
                                 .addGap(20, 20, 20)
                                 .addComponent(jLabel163)))
@@ -2912,15 +2911,15 @@ public class FrmMenu extends javax.swing.JFrame {
                                 .addGap(28, 28, 28)
                                 .addGroup(MenuDessertLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel164)
-                                    .addComponent(spiValor69, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(spiValor306, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(MenuDessertLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel154)
-                                    .addComponent(spiValor70, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(spiValor307, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(MenuDessertLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel161)
-                                    .addComponent(spiValor71, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(spiValor308, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(MenuDessertLayout.createSequentialGroup()
                                 .addComponent(jLabel163)
                                 .addGap(18, 18, 18)
@@ -2934,15 +2933,15 @@ public class FrmMenu extends javax.swing.JFrame {
                             .addGroup(MenuDessertLayout.createSequentialGroup()
                                 .addGroup(MenuDessertLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel124)
-                                    .addComponent(spiValor72, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(spiValor309, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(MenuDessertLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel126)
-                                    .addComponent(spiValor73, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(spiValor310, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(MenuDessertLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel128)
-                                    .addComponent(spiValor74, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(spiValor311, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGap(32, 32, 32)
                         .addComponent(jLabel112)
                         .addGroup(MenuDessertLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2952,15 +2951,15 @@ public class FrmMenu extends javax.swing.JFrame {
                             .addGroup(MenuDessertLayout.createSequentialGroup()
                                 .addGroup(MenuDessertLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel113)
-                                    .addComponent(spiValor75, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(spiValor312, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(MenuDessertLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel114)
-                                    .addComponent(spiValor94, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(spiValor313, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(MenuDessertLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel115)
-                                    .addComponent(spiValor96, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                    .addComponent(spiValor314, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(MenuDessertLayout.createSequentialGroup()
                         .addComponent(jLabel159)
                         .addGroup(MenuDessertLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3414,7 +3413,7 @@ public class FrmMenu extends javax.swing.JFrame {
             }
         });
         jPanel11.add(btnCellphoneCostumer);
-        btnCellphoneCostumer.setBounds(110, 70, 160, 20);
+        btnCellphoneCostumer.setBounds(110, 70, 160, 22);
 
         txtIdCostumer.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -3422,7 +3421,7 @@ public class FrmMenu extends javax.swing.JFrame {
             }
         });
         jPanel11.add(txtIdCostumer);
-        txtIdCostumer.setBounds(110, 40, 160, 20);
+        txtIdCostumer.setBounds(110, 40, 160, 22);
 
         jLabel37.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         jLabel37.setText("Cellphone:");
@@ -3450,7 +3449,7 @@ public class FrmMenu extends javax.swing.JFrame {
             }
         });
         jPanel11.add(txtNameCostumer);
-        txtNameCostumer.setBounds(110, 10, 160, 20);
+        txtNameCostumer.setBounds(110, 10, 160, 22);
 
         jPanel10.add(jPanel11);
         jPanel11.setBounds(170, 80, 310, 110);
@@ -3725,162 +3724,154 @@ public class FrmMenu extends javax.swing.JFrame {
     }
 
     private void btnBreakfastActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBreakfastActionPerformed
-       MenuBreakfast.setVisible(true);
-       MenuBreakfast.setLocationRelativeTo(null);
-            
-      
+        MenuBreakfast.setVisible(true);
+        MenuBreakfast.setLocationRelativeTo(null);
+
+
     }//GEN-LAST:event_btnBreakfastActionPerformed
 
     private void btnLunchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLunchActionPerformed
-       
-       MenuLunch.setVisible(true);
-       MenuLunch.setLocationRelativeTo(null);
-       this.setLocationRelativeTo(null);
-        
+
+        MenuLunch.setVisible(true);
+        MenuLunch.setLocationRelativeTo(null);
+        this.setLocationRelativeTo(null);
+
         rsscalelabel.RSScaleLabel.setScaleLabel(jLocro,
-        "src/ec/edu/espe/restaurantSalesSystem/images/Locro.jpg");
-        
+                "src/ec/edu/espe/restaurantSalesSystem/images/Locro.jpg");
+
         rsscalelabel.RSScaleLabel.setScaleLabel(jCremaTomato,
-        "src/ec/edu/espe/restaurantSalesSystem/images/CremaTomato.jpg");
-        
+                "src/ec/edu/espe/restaurantSalesSystem/images/CremaTomato.jpg");
+
         rsscalelabel.RSScaleLabel.setScaleLabel(jCaldoGallina,
-        "src/ec/edu/espe/restaurantSalesSystem/images/CaldoGallina.jpg");
-        
+                "src/ec/edu/espe/restaurantSalesSystem/images/CaldoGallina.jpg");
+
         rsscalelabel.RSScaleLabel.setScaleLabel(jChuleta,
-        "src/ec/edu/espe/restaurantSalesSystem/images/Chuleta.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/Chuleta.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jCamaron,
-        "src/ec/edu/espe/restaurantSalesSystem/images/Camaron.jpg");
-        
+                "src/ec/edu/espe/restaurantSalesSystem/images/Camaron.jpg");
+
         rsscalelabel.RSScaleLabel.setScaleLabel(jLasaña,
-        "src/ec/edu/espe/restaurantSalesSystem/images/Lasaña.jpg");
-        
-        
+                "src/ec/edu/espe/restaurantSalesSystem/images/Lasaña.jpg");
+
         rsscalelabel.RSScaleLabel.setScaleLabel(jPineapple,
-        "src/ec/edu/espe/restaurantSalesSystem/images/Pineapple.jpg");
-        
+                "src/ec/edu/espe/restaurantSalesSystem/images/Pineapple.jpg");
+
         rsscalelabel.RSScaleLabel.setScaleLabel(jBabaco,
-        "src/ec/edu/espe/restaurantSalesSystem/images/Babaco.jpg");
-        
+                "src/ec/edu/espe/restaurantSalesSystem/images/Babaco.jpg");
+
         rsscalelabel.RSScaleLabel.setScaleLabel(jNaranjilla,
-        "src/ec/edu/espe/restaurantSalesSystem/images/Naranjillas.jpg");
-        
+                "src/ec/edu/espe/restaurantSalesSystem/images/Naranjillas.jpg");
+
         rsscalelabel.RSScaleLabel.setScaleLabel(jBrownies,
-        "src/ec/edu/espe/restaurantSalesSystem/images/Brownie.jpg");
-        
+                "src/ec/edu/espe/restaurantSalesSystem/images/Brownie.jpg");
+
         rsscalelabel.RSScaleLabel.setScaleLabel(jChesecake,
-        "src/ec/edu/espe/restaurantSalesSystem/images/Chesecake.jpg");
-        
+                "src/ec/edu/espe/restaurantSalesSystem/images/Chesecake.jpg");
+
         rsscalelabel.RSScaleLabel.setScaleLabel(jThreeMilksCake,
-        "src/ec/edu/espe/restaurantSalesSystem/images/ThreeMilksCake.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/ThreeMilksCake.jpg");
     }//GEN-LAST:event_btnLunchActionPerformed
 
     private void btnSnackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSnackActionPerformed
         MenuSnack.setVisible(true);
         MenuSnack.setLocationRelativeTo(null);
-        
+
         this.setLocationRelativeTo(null);
-        
+
         rsscalelabel.RSScaleLabel.setScaleLabel(jClassicBurger,
-        "src/ec/edu/espe/restaurantSalesSystem/images/classicBurger.jpg" );
-        
+                "src/ec/edu/espe/restaurantSalesSystem/images/classicBurger.jpg");
+
         rsscalelabel.RSScaleLabel.setScaleLabel(jCheeseburger,
-        "src/ec/edu/espe/restaurantSalesSystem/images/Cheeseburger.jpg" );
-        
+                "src/ec/edu/espe/restaurantSalesSystem/images/Cheeseburger.jpg");
+
         rsscalelabel.RSScaleLabel.setScaleLabel(jBaconCheeseBurger,
-        "src/ec/edu/espe/restaurantSalesSystem/images/BaconCheeseBurger.jpg" );
-        
+                "src/ec/edu/espe/restaurantSalesSystem/images/BaconCheeseBurger.jpg");
+
         rsscalelabel.RSScaleLabel.setScaleLabel(jChickenBurguer,
-        "src/ec/edu/espe/restaurantSalesSystem/images/ChickenBurguer.jpg" );
+                "src/ec/edu/espe/restaurantSalesSystem/images/ChickenBurguer.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jJackDanielsBurger,
-        "src/ec/edu/espe/restaurantSalesSystem/images/JackDanielsBurger.jpg" );
-        
-        
-        
+                "src/ec/edu/espe/restaurantSalesSystem/images/JackDanielsBurger.jpg");
+
         rsscalelabel.RSScaleLabel.setScaleLabel(jBBQ,
-        "src/ec/edu/espe/restaurantSalesSystem/images/BBQWings.jpg" );
-        
+                "src/ec/edu/espe/restaurantSalesSystem/images/BBQWings.jpg");
+
         rsscalelabel.RSScaleLabel.setScaleLabel(jHot,
-        "src/ec/edu/espe/restaurantSalesSystem/images/HotWings.jpg" );
-        
+                "src/ec/edu/espe/restaurantSalesSystem/images/HotWings.jpg");
+
         rsscalelabel.RSScaleLabel.setScaleLabel(jpassionFruit,
-        "src/ec/edu/espe/restaurantSalesSystem/images/PassionFruitWings.jpg" );
-        
+                "src/ec/edu/espe/restaurantSalesSystem/images/PassionFruitWings.jpg");
+
         rsscalelabel.RSScaleLabel.setScaleLabel(jNachosWithCheese,
-        "src/ec/edu/espe/restaurantSalesSystem/images/NachosWithCheese.jpg" );
-        
+                "src/ec/edu/espe/restaurantSalesSystem/images/NachosWithCheese.jpg");
+
         rsscalelabel.RSScaleLabel.setScaleLabel(jNachosWithGuacamole,
-        "src/ec/edu/espe/restaurantSalesSystem/images/NachosWithGuacamole.jpg" );
-        
-        
+                "src/ec/edu/espe/restaurantSalesSystem/images/NachosWithGuacamole.jpg");
+
+
     }//GEN-LAST:event_btnSnackActionPerformed
 
     private void btnDrinkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDrinkActionPerformed
-          this.setVisible(false);
+        this.setVisible(false);
         OptionsDrink.setVisible(true);
         OptionsDrink.setLocationRelativeTo(null);;
     }//GEN-LAST:event_btnDrinkActionPerformed
 
     private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
-            this.setVisible(false);
+        this.setVisible(false);
         FrmMainScreen frmMainScreen = new FrmMainScreen();
         frmMainScreen.setVisible(true);
     }//GEN-LAST:event_btnExitActionPerformed
 
     private void btnDessertActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDessertActionPerformed
-         MenuDessert.setVisible(true);
+        MenuDessert.setVisible(true);
         MenuDessert.setLocationRelativeTo(null);
-        
+
         this.setLocationRelativeTo(null);
-        
+
         rsscalelabel.RSScaleLabel.setScaleLabel(jNutella,
-        "src/ec/edu/espe/restaurantSalesSystem/images/CheesecakeNutella.jpg" );
+                "src/ec/edu/espe/restaurantSalesSystem/images/CheesecakeNutella.jpg");
         rsscalelabel.RSScaleLabel.setScaleLabel(jBrownie,
-        "src/ec/edu/espe/restaurantSalesSystem/images/CheesecakeBrownie.jpg" );
+                "src/ec/edu/espe/restaurantSalesSystem/images/CheesecakeBrownie.jpg");
         rsscalelabel.RSScaleLabel.setScaleLabel(jCoconutCaramelAlmond,
-        "src/ec/edu/espe/restaurantSalesSystem/images/CheesecakeCoco.jpg" );
-        
-        
-        
+                "src/ec/edu/espe/restaurantSalesSystem/images/CheesecakeCoco.jpg");
+
         rsscalelabel.RSScaleLabel.setScaleLabel(jLemon,
-        "src/ec/edu/espe/restaurantSalesSystem/images/PieLemon.jpg" );
+                "src/ec/edu/espe/restaurantSalesSystem/images/PieLemon.jpg");
         rsscalelabel.RSScaleLabel.setScaleLabel(jApple,
-        "src/ec/edu/espe/restaurantSalesSystem/images/PieApple.jpg" );
+                "src/ec/edu/espe/restaurantSalesSystem/images/PieApple.jpg");
         rsscalelabel.RSScaleLabel.setScaleLabel(jChocolate,
-        "src/ec/edu/espe/restaurantSalesSystem/images/PieChocolate.jpg" );
-        
-        
-        
+                "src/ec/edu/espe/restaurantSalesSystem/images/PieChocolate.jpg");
+
         rsscalelabel.RSScaleLabel.setScaleLabel(jCakeChocolate,
-        "src/ec/edu/espe/restaurantSalesSystem/images/CakeChocolate.jpg" );
+                "src/ec/edu/espe/restaurantSalesSystem/images/CakeChocolate.jpg");
         rsscalelabel.RSScaleLabel.setScaleLabel(jVanilla,
-        "src/ec/edu/espe/restaurantSalesSystem/images/CakeVanilla.jpg" );
+                "src/ec/edu/espe/restaurantSalesSystem/images/CakeVanilla.jpg");
         rsscalelabel.RSScaleLabel.setScaleLabel(jOrange,
-        "src/ec/edu/espe/restaurantSalesSystem/images/CakeOrange.jpg" );
-        
-        
+                "src/ec/edu/espe/restaurantSalesSystem/images/CakeOrange.jpg");
+
         rsscalelabel.RSScaleLabel.setScaleLabel(jHumita,
-        "src/ec/edu/espe/restaurantSalesSystem/images/Humita.jpg" );
+                "src/ec/edu/espe/restaurantSalesSystem/images/Humita.jpg");
         rsscalelabel.RSScaleLabel.setScaleLabel(jLojanoTamale,
-        "src/ec/edu/espe/restaurantSalesSystem/images/LojanoTamale.jpg" );
+                "src/ec/edu/espe/restaurantSalesSystem/images/LojanoTamale.jpg");
         rsscalelabel.RSScaleLabel.setScaleLabel(jBolon,
-        "src/ec/edu/espe/restaurantSalesSystem/images/Bolon.jpg" );
+                "src/ec/edu/espe/restaurantSalesSystem/images/Bolon.jpg");
         rsscalelabel.RSScaleLabel.setScaleLabel(jQuimbolito,
-        "src/ec/edu/espe/restaurantSalesSystem/images/Quimbolito.jpg" );
+                "src/ec/edu/espe/restaurantSalesSystem/images/Quimbolito.jpg");
     }//GEN-LAST:event_btnDessertActionPerformed
 
     private void bntOrderBreakfastActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntOrderBreakfastActionPerformed
 
         DefaultTableModel model = (DefaultTableModel) datosTable.getModel();
-    
+
         if (spiValor201.getValue().hashCode() > 0) {
             String x = "Cafe en Agua";
             float y;
-            y = (float) 0.50 ;
-            model.addRow(new Object[]{x, y,spiValor201.getValue().hashCode()});
+            y = (float) 0.50;
+            model.addRow(new Object[]{x, y, spiValor201.getValue().hashCode()});
         }
-        if (spiValor202.getValue().hashCode()> 0) {
+        if (spiValor202.getValue().hashCode() > 0) {
             String x = "Cafe en Leche";
             float y;
             y = (float) 0.75;
@@ -3890,16 +3881,16 @@ public class FrmMenu extends javax.swing.JFrame {
             String x = "Te con Limon";
             float y = (float) 0.50;
             model.addRow(new Object[]{x, y, spiValor203.getValue().hashCode()});
-        } 
+        }
         if (spiValor204.getValue().hashCode() > 0) {
             String x = "Leche";
-            float y =(float) 0.60;
+            float y = (float) 0.60;
             model.addRow(new Object[]{x, y, spiValor204.getValue().hashCode()});
         }
         if (spiValor205.getValue().hashCode() > 0) {
             String x = "Pan Simple";
             float y = (float) 0.10;
-            model.addRow(new Object[]{x, y, spiValor205.getValue().hashCode() });
+            model.addRow(new Object[]{x, y, spiValor205.getValue().hashCode()});
         }
         if (spiValor206.getValue().hashCode() > 0) {
             String x = "Pan con Jamón";
@@ -3944,7 +3935,7 @@ public class FrmMenu extends javax.swing.JFrame {
         if (spiValor214.getValue().hashCode() > 0) {
             String x = "Torta de Huevo";
             float y = (float) 0.20;
-            model.addRow(new Object[]{x, y, spiValor214.getValue().hashCode() });
+            model.addRow(new Object[]{x, y, spiValor214.getValue().hashCode()});
         }
         if (spiValor215.getValue().hashCode() > 0) {
             String x = "Huevos Fritos";
@@ -3976,11 +3967,12 @@ public class FrmMenu extends javax.swing.JFrame {
             float y = (float) 1.50;
             model.addRow(new Object[]{x, y, spiValor220.getValue().hashCode()});
         }
-         if (spiValor221.getValue().hashCode() > 0) {
+        if (spiValor221.getValue().hashCode() > 0) {
             String x = "Estofado de pollo";
             float y = (float) 1.50;
             model.addRow(new Object[]{x, y, spiValor221.getValue().hashCode()});
         }
+
         Order.setVisible(true);
         MenuBreakfast.dispose();
     }//GEN-LAST:event_bntOrderBreakfastActionPerformed
@@ -3997,19 +3989,19 @@ public class FrmMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_btnReturn4ActionPerformed
 
     private void btnSendOrderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSendOrderActionPerformed
-    if (numMesa.getText().equals("")) {
+        if (numMesa.getText().equals("")) {
             JOptionPane.showMessageDialog(null, "You must enter the table number");
         }
-       
+
         DefaultTableModel model2 = (DefaultTableModel) datosTable2.getModel();
- 
+
         if (spiValor201.getValue().hashCode() > 0) {
             String x = "Cafe en Agua";
             if (Integer.parseInt(numMesa.getText()) >= 0) {
                 model2.addRow(new Object[]{x, spiValor201.getValue().hashCode(), numMesa.getText()});
             }
         }
-        if (spiValor202.getValue().hashCode()> 0) {
+        if (spiValor202.getValue().hashCode() > 0) {
             String x = "Cafe en Leche";
             if (Integer.parseInt(numMesa.getText()) >= 0) {
                 model2.addRow(new Object[]{x, spiValor202.getValue().hashCode(), numMesa.getText()});
@@ -4100,7 +4092,7 @@ public class FrmMenu extends javax.swing.JFrame {
                 model2.addRow(new Object[]{x, spiValor216.getValue(), numMesa.getText()});
             }
         }
-        
+
         if (spiValor217.getValue().hashCode() > 0) {
             String x = "Manzana";
             if (Integer.parseInt(numMesa.getText()) >= 0) {
@@ -4131,14 +4123,14 @@ public class FrmMenu extends javax.swing.JFrame {
                 model2.addRow(new Object[]{x, spiValor221.getValue(), numMesa.getText()});
             }
         }
-         //lunch
+        //lunch
         if (spiValor222.getValue().hashCode() > 0) {
             String x = "Locro de Papas";
             if (Integer.parseInt(numMesa.getText()) >= 0) {
                 model2.addRow(new Object[]{x, spiValor222.getValue(), numMesa.getText()});
             }
         }
-         if (spiValor223.getValue().hashCode() > 0) {
+        if (spiValor223.getValue().hashCode() > 0) {
             String x = "Crema de Tomate";
             if (Integer.parseInt(numMesa.getText()) >= 0) {
                 model2.addRow(new Object[]{x, spiValor223.getValue(), numMesa.getText()});
@@ -4203,7 +4195,18 @@ public class FrmMenu extends javax.swing.JFrame {
             if (Integer.parseInt(numMesa.getText()) >= 0) {
                 model2.addRow(new Object[]{x, spiValor233.getValue(), numMesa.getText()});
             }
-        }   
+        }
+        
+        if (spiValor233.getValue().hashCode() > 0) {
+            String x = "Pastel Tres Leches";
+            if (Integer.parseInt(numMesa.getText()) >= 0) {
+                model2.addRow(new Object[]{x, spiValor233.getValue(), numMesa.getText()});
+            }
+        }
+        
+        
+        
+        
         viewOrder.setVisible(true);
         Order.setVisible(false);
     }//GEN-LAST:event_btnSendOrderActionPerformed
@@ -4212,13 +4215,13 @@ public class FrmMenu extends javax.swing.JFrame {
 
         //Reset valores de pedido tabla de pedidos
         this.setVisible(false);
-       
+
         limpiarTabla(datosTable);
         numMesa.getText();
-        
+
         FrmMenu frmMenu = new FrmMenu();
         frmMenu.setVisible(true);
-        
+
         viewOrder.setVisible(false);
         spiValor201.getValue();
         spiValor202.getValue();
@@ -4253,7 +4256,7 @@ public class FrmMenu extends javax.swing.JFrame {
         spiValor231.getValue();
         spiValor232.getValue();
         spiValor233.getValue();
-        
+
     }//GEN-LAST:event_btnOtherOrderActionPerformed
 
     private void btnGenerateBillActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerateBillActionPerformed
@@ -4283,34 +4286,33 @@ public class FrmMenu extends javax.swing.JFrame {
 
     private void btngenerateBillActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btngenerateBillActionPerformed
         //Bill
-        float contTotal = (float)0.0;
+        float contTotal = (float) 0.0;
         int c1 = Integer.parseInt(numMesa.getText()), c2 = Integer.parseInt(txtTableNumber.getText());
-        int cant = spiValor201.getValue().hashCode(),cant2 = spiValor202.getValue().hashCode(),
-            cant3 = spiValor203.getValue().hashCode(),cant4 = spiValor204.getValue().hashCode();
-        int cant5 = spiValor205.getValue().hashCode(),cant6 = spiValor206.getValue().hashCode(),
-            cant7 = spiValor207.getValue().hashCode(),cant8 = spiValor208.getValue().hashCode();
-        int cant9 = spiValor209.getValue().hashCode(),cant10 = spiValor210.getValue().hashCode(),
-            cant11 = spiValor211.getValue().hashCode();
-        int cant12 = spiValor212.getValue().hashCode(),cant13 = spiValor213.getValue().hashCode(),
-            cant14 = spiValor214.getValue().hashCode(),cant15 = spiValor215.getValue().hashCode(),cant16 = spiValor216.getValue().hashCode();   
-        int cant17 = spiValor217.getValue().hashCode(),cant18 = spiValor218.getValue().hashCode(),cant19 = spiValor219.getValue().hashCode();
-        int cant20 = spiValor220.getValue().hashCode(),cant21 = spiValor221.getValue().hashCode();
+        int cant = spiValor201.getValue().hashCode(), cant2 = spiValor202.getValue().hashCode(),
+                cant3 = spiValor203.getValue().hashCode(), cant4 = spiValor204.getValue().hashCode();
+        int cant5 = spiValor205.getValue().hashCode(), cant6 = spiValor206.getValue().hashCode(),
+                cant7 = spiValor207.getValue().hashCode(), cant8 = spiValor208.getValue().hashCode();
+        int cant9 = spiValor209.getValue().hashCode(), cant10 = spiValor210.getValue().hashCode(),
+                cant11 = spiValor211.getValue().hashCode();
+        int cant12 = spiValor212.getValue().hashCode(), cant13 = spiValor213.getValue().hashCode(),
+                cant14 = spiValor214.getValue().hashCode(), cant15 = spiValor215.getValue().hashCode(), cant16 = spiValor216.getValue().hashCode();
+        int cant17 = spiValor217.getValue().hashCode(), cant18 = spiValor218.getValue().hashCode(), cant19 = spiValor219.getValue().hashCode();
+        int cant20 = spiValor220.getValue().hashCode(), cant21 = spiValor221.getValue().hashCode();
         //lunch
-        int cant22=spiValor222.getValue().hashCode(), cant23 = spiValor223.getValue().hashCode();
-        int cant24=spiValor224.getValue().hashCode(), cant25=spiValor225.getValue().hashCode();
-        int cant26=spiValor226.getValue().hashCode(), cant27=spiValor227.getValue().hashCode();
-        int cant28=spiValor228.getValue().hashCode(), cant29=spiValor229.getValue().hashCode();
-        int cant30=spiValor230.getValue().hashCode(), cant31=spiValor231.getValue().hashCode();
-        int cant32=spiValor232.getValue().hashCode(), cant1=spiValor233.getValue().hashCode();
-        
-   
+        int cant22 = spiValor222.getValue().hashCode(), cant23 = spiValor223.getValue().hashCode();
+        int cant24 = spiValor224.getValue().hashCode(), cant25 = spiValor225.getValue().hashCode();
+        int cant26 = spiValor226.getValue().hashCode(), cant27 = spiValor227.getValue().hashCode();
+        int cant28 = spiValor228.getValue().hashCode(), cant29 = spiValor229.getValue().hashCode();
+        int cant30 = spiValor230.getValue().hashCode(), cant31 = spiValor231.getValue().hashCode();
+        int cant32 = spiValor232.getValue().hashCode(), cant1 = spiValor233.getValue().hashCode();
+
         if (c1 == c2) {
             if (cant > 0) {
 
-            String x = "Cafe en Agua";
-            float y;
-            y = (float) 0.50 ;
-;
+                String x = "Cafe en Agua";
+                float y;
+                y = (float) 0.50;
+                ;
 
                 Bill fact = new Bill();
                 fact.setConcepto(x);
@@ -4329,13 +4331,12 @@ public class FrmMenu extends javax.swing.JFrame {
                 model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
                 factTable.setModel(model3);
             }
- 
 
             if (cant2 > 0) {
 
                 String x = "Cafe en Leche";
-                float  y = (float) 0.75;;
-               
+                float y = (float) 0.75;;
+
                 Bill fact = new Bill();
                 fact.setConcepto(x);
 
@@ -4375,8 +4376,8 @@ public class FrmMenu extends javax.swing.JFrame {
 
             if (cant4 > 0) {
                 String x = "Leche";
-                float y =(float) 0.60;
-                
+                float y = (float) 0.60;
+
                 Bill fact = new Bill();
                 fact.setConcepto(x);
 
@@ -4395,7 +4396,7 @@ public class FrmMenu extends javax.swing.JFrame {
             if (cant5 > 0) {
                 String x = "Pan Simple";
                 float y = (float) 0.10;
-                
+
                 Bill fact = new Bill();
                 fact.setConcepto(x);
 
@@ -4410,10 +4411,11 @@ public class FrmMenu extends javax.swing.JFrame {
                 DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
                 model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
                 factTable.setModel(model3);
-                
-            }if (cant6 > 0) {
-               String x = "Pan con Jamón";
-               float y = (float) 0.25;
+
+            }
+            if (cant6 > 0) {
+                String x = "Pan con Jamón";
+                float y = (float) 0.25;
 
                 Bill fact = new Bill();
                 fact.setConcepto(x);
@@ -4429,12 +4431,12 @@ public class FrmMenu extends javax.swing.JFrame {
                 DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
                 model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
                 factTable.setModel(model3);
-                
-            }if (cant7 > 0) {
+
+            }
+            if (cant7 > 0) {
                 String x = "Pan con Mortadela";
                 float y = (float) 0.25;
 
-                
                 Bill fact = new Bill();
                 fact.setConcepto(x);
 
@@ -4449,12 +4451,12 @@ public class FrmMenu extends javax.swing.JFrame {
                 DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
                 model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
                 factTable.setModel(model3);
-                
-            }if (cant8 > 0) {
+
+            }
+            if (cant8 > 0) {
                 String x = "Pan Integral";
                 float y = (float) 0.25;
 
-                
                 Bill fact = new Bill();
                 fact.setConcepto(x);
 
@@ -4469,12 +4471,12 @@ public class FrmMenu extends javax.swing.JFrame {
                 DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
                 model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
                 factTable.setModel(model3);
-                
-            }if (cant9 > 0) {
+
+            }
+            if (cant9 > 0) {
                 String x = "Jugo de Mora";
                 float y = (float) 0.75;
 
-                
                 Bill fact = new Bill();
                 fact.setConcepto(x);
 
@@ -4489,8 +4491,9 @@ public class FrmMenu extends javax.swing.JFrame {
                 DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
                 model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
                 factTable.setModel(model3);
-                
-            }if (cant10 > 0) {
+
+            }
+            if (cant10 > 0) {
                 String x = "Jugo de Naranjilla";
                 float y = (float) 0.75;
 
@@ -4508,12 +4511,12 @@ public class FrmMenu extends javax.swing.JFrame {
                 DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
                 model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
                 factTable.setModel(model3);
-                
-            }if (cant11 > 0) {
+
+            }
+            if (cant11 > 0) {
                 String x = "Jugo de Tomate de Arbol";
                 float y = (float) 0.75;
 
-                
                 Bill fact = new Bill();
                 fact.setConcepto(x);
 
@@ -4528,12 +4531,12 @@ public class FrmMenu extends javax.swing.JFrame {
                 DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
                 model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
                 factTable.setModel(model3);
-                
-            }if (cant12 > 0) {
+
+            }
+            if (cant12 > 0) {
                 String x = "Huevos Cocidos";
                 float y = (float) 0.20;
 
-                
                 Bill fact = new Bill();
                 fact.setConcepto(x);
 
@@ -4548,8 +4551,9 @@ public class FrmMenu extends javax.swing.JFrame {
                 DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
                 model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
                 factTable.setModel(model3);
-                
-            }if (cant13 > 0) {
+
+            }
+            if (cant13 > 0) {
                 String x = "Huevos Tibios";
                 float y = (float) 0.20;
 
@@ -4567,8 +4571,9 @@ public class FrmMenu extends javax.swing.JFrame {
                 DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
                 model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
                 factTable.setModel(model3);
-                
-            }if (cant14 > 0) {
+
+            }
+            if (cant14 > 0) {
                 String x = "Torta de Huevo";
                 float y = (float) 0.20;
 
@@ -4586,8 +4591,9 @@ public class FrmMenu extends javax.swing.JFrame {
                 DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
                 model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
                 factTable.setModel(model3);
-                
-            }if (cant15 > 0) {
+
+            }
+            if (cant15 > 0) {
                 String x = "Huevos Fritos";
                 float y = (float) 0.20;
 
@@ -4605,12 +4611,12 @@ public class FrmMenu extends javax.swing.JFrame {
                 DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
                 model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
                 factTable.setModel(model3);
-                
-            }if (cant16 > 0) {
+
+            }
+            if (cant16 > 0) {
                 String x = "Hevos Rvueltos";
                 float y = (float) 0.20;
 
-                
                 Bill fact = new Bill();
                 fact.setConcepto(x);
 
@@ -4625,12 +4631,12 @@ public class FrmMenu extends javax.swing.JFrame {
                 DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
                 model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
                 factTable.setModel(model3);
-                
-            }if (cant17 > 0) {
+
+            }
+            if (cant17 > 0) {
                 String x = "Manzana";
                 float y = (float) 0.35;
 
-                
                 Bill fact = new Bill();
                 fact.setConcepto(x);
 
@@ -4645,11 +4651,12 @@ public class FrmMenu extends javax.swing.JFrame {
                 DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
                 model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
                 factTable.setModel(model3);
-                
-            }if (cant18 > 0) {
+
+            }
+            if (cant18 > 0) {
                 String x = "Pera";
                 float y = (float) 0.25;
-            
+
                 Bill fact = new Bill();
                 fact.setConcepto(x);
 
@@ -4664,12 +4671,12 @@ public class FrmMenu extends javax.swing.JFrame {
                 DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
                 model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
                 factTable.setModel(model3);
-                
-            }if (cant19 > 0) {
+
+            }
+            if (cant19 > 0) {
                 String x = "Banana";
                 float y = (float) 0.25;
 
-                
                 Bill fact = new Bill();
                 fact.setConcepto(x);
 
@@ -4684,12 +4691,12 @@ public class FrmMenu extends javax.swing.JFrame {
                 DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
                 model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
                 factTable.setModel(model3);
-                
-            }if (cant20 > 0) {
+
+            }
+            if (cant20 > 0) {
                 String x = "Estofado de carne";
                 float y = (float) 1.50;
 
-                
                 Bill fact = new Bill();
                 fact.setConcepto(x);
 
@@ -4704,12 +4711,12 @@ public class FrmMenu extends javax.swing.JFrame {
                 DefaultTableModel model3 = (DefaultTableModel) factTable.getModel();
                 model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
                 factTable.setModel(model3);
-                
-            }if (cant21 > 0) {
+
+            }
+            if (cant21 > 0) {
                 String x = "Estofado de Pollo";
                 float y = (float) 1.50;
 
-                
                 Bill fact = new Bill();
                 fact.setConcepto(x);
 
@@ -4725,12 +4732,12 @@ public class FrmMenu extends javax.swing.JFrame {
                 model3.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
                 factTable.setModel(model3);
             }
-            
+
             //lunch
             if (cant22 > 0) {
-                String x ="Locro de papas";
+                String x = "Locro de papas";
                 float y = (float) 1.25;
-           
+
                 Bill fact = new Bill();
                 fact.setConcepto(x);
 
@@ -4750,7 +4757,6 @@ public class FrmMenu extends javax.swing.JFrame {
                 String x = "Crema de Tomate";
                 float y = (float) 1.25;
 
-                
                 Bill fact = new Bill();
                 fact.setConcepto(x);
 
@@ -4770,7 +4776,6 @@ public class FrmMenu extends javax.swing.JFrame {
                 String x = "Caldo de Gallina";
                 float y = (float) 1.25;
 
-                
                 Bill fact = new Bill();
                 fact.setConcepto(x);
 
@@ -4790,7 +4795,6 @@ public class FrmMenu extends javax.swing.JFrame {
                 String x = "Chuleta de Cerdo";
                 float y = (float) 2.00;
 
-                
                 Bill fact = new Bill();
                 fact.setConcepto(x);
 
@@ -4810,7 +4814,6 @@ public class FrmMenu extends javax.swing.JFrame {
                 String x = "Camarones Apanados";
                 float y = (float) 2.20;
 
-                
                 Bill fact = new Bill();
                 fact.setConcepto(x);
 
@@ -4830,7 +4833,6 @@ public class FrmMenu extends javax.swing.JFrame {
                 String x = "Lasaña de Pollo";
                 float y = (float) 3.20;
 
-                
                 Bill fact = new Bill();
                 fact.setConcepto(x);
 
@@ -4850,7 +4852,6 @@ public class FrmMenu extends javax.swing.JFrame {
                 String x = "Jugo de Piña";
                 float y = (float) 0.50;
 
-                
                 Bill fact = new Bill();
                 fact.setConcepto(x);
 
@@ -4870,7 +4871,6 @@ public class FrmMenu extends javax.swing.JFrame {
                 String x = "Jugo de Babaco";
                 float y = (float) 0.50;
 
-                
                 Bill fact = new Bill();
                 fact.setConcepto(x);
 
@@ -4890,7 +4890,6 @@ public class FrmMenu extends javax.swing.JFrame {
                 String x = "Jugo de Naranjilla";
                 float y = (float) 0.50;
 
-                
                 Bill fact = new Bill();
                 fact.setConcepto(x);
 
@@ -4910,7 +4909,6 @@ public class FrmMenu extends javax.swing.JFrame {
                 String x = "Brownie";
                 float y = (float) 0.75;
 
-                
                 Bill fact = new Bill();
                 fact.setConcepto(x);
 
@@ -4930,7 +4928,6 @@ public class FrmMenu extends javax.swing.JFrame {
                 String x = "ChesseCake";
                 float y = (float) 0.75;
 
-                
                 Bill fact = new Bill();
                 fact.setConcepto(x);
 
@@ -4950,7 +4947,6 @@ public class FrmMenu extends javax.swing.JFrame {
                 String x = "Pastel Tres Leches";
                 float y = (float) 0.75;
 
-                
                 Bill fact = new Bill();
                 fact.setConcepto(x);
 
@@ -4967,8 +4963,6 @@ public class FrmMenu extends javax.swing.JFrame {
                 factTable.setModel(model3);
             }
 
-
-           
             //iva prop y total a labels factura
             Double iva = contTotal * 0.12;
             Double prop = contTotal * 0.05;
@@ -5122,7 +5116,7 @@ public class FrmMenu extends javax.swing.JFrame {
             float y = (float) 0.75;
             model.addRow(new Object[]{x, y, spiValor233.getValue().hashCode()});
         }
-        
+
         Order.setVisible(true);
         MenuLunch.dispose();
     }//GEN-LAST:event_btnOrderLunchActionPerformed
@@ -5152,22 +5146,22 @@ public class FrmMenu extends javax.swing.JFrame {
     private void btnJuiceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJuiceActionPerformed
         MenuJuice.setVisible(true);
         MenuJuice.setLocationRelativeTo(null);
-        
+
         this.setLocationRelativeTo(null);
-                rsscalelabel.RSScaleLabel.setScaleLabel(jimage,"src/ec/edu/espe/restaurantSalesSystem/images/papaya.jpg" );
-                rsscalelabel.RSScaleLabel.setScaleLabel(jimage2,"src/ec/edu/espe/restaurantSalesSystem/images/sandia.png" );
-                rsscalelabel.RSScaleLabel.setScaleLabel(jimage3,"src/ec/edu/espe/restaurantSalesSystem/images/naranjilla.jpg" );
-                rsscalelabel.RSScaleLabel.setScaleLabel(jimage4,"src/ec/edu/espe/restaurantSalesSystem/images/tomate de arbol.jpg" );
-                rsscalelabel.RSScaleLabel.setScaleLabel(jimage5,"src/ec/edu/espe/restaurantSalesSystem/images/JUGO-DE-MORA.jpg" );
-                rsscalelabel.RSScaleLabel.setScaleLabel(jimage6,"src/ec/edu/espe/restaurantSalesSystem/images/limonada.jpg" );
+        rsscalelabel.RSScaleLabel.setScaleLabel(jimage, "src/ec/edu/espe/restaurantSalesSystem/images/papaya.jpg");
+        rsscalelabel.RSScaleLabel.setScaleLabel(jimage2, "src/ec/edu/espe/restaurantSalesSystem/images/sandia.png");
+        rsscalelabel.RSScaleLabel.setScaleLabel(jimage3, "src/ec/edu/espe/restaurantSalesSystem/images/naranjilla.jpg");
+        rsscalelabel.RSScaleLabel.setScaleLabel(jimage4, "src/ec/edu/espe/restaurantSalesSystem/images/tomate de arbol.jpg");
+        rsscalelabel.RSScaleLabel.setScaleLabel(jimage5, "src/ec/edu/espe/restaurantSalesSystem/images/JUGO-DE-MORA.jpg");
+        rsscalelabel.RSScaleLabel.setScaleLabel(jimage6, "src/ec/edu/espe/restaurantSalesSystem/images/limonada.jpg");
     }//GEN-LAST:event_btnJuiceActionPerformed
 
     private void btnReturn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturn7ActionPerformed
-        
+
     }//GEN-LAST:event_btnReturn7ActionPerformed
 
     private void btnReturn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturn5ActionPerformed
-       
+
     }//GEN-LAST:event_btnReturn5ActionPerformed
 
     private void btnAdd1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdd1ActionPerformed
@@ -5179,7 +5173,218 @@ public class FrmMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_btnAdd2ActionPerformed
 
     private void btnAdd3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdd3ActionPerformed
-        // TODO add your handling code here:
+
+        DefaultTableModel model = (DefaultTableModel) datosTable.getModel();
+       if (spiValor280.getValue().hashCode() > 0) {
+            String x = "Portion Limon Pie";
+            float y = (float) 2.80;
+            model.addRow(new Object[]{x, y, spiValor280.getValue().hashCode()});
+        }
+
+        if (spiValor281.getValue().hashCode() > 0) {
+            String x = "Medium Limon Pie ";
+            float y = (float) 13.25;
+            model.addRow(new Object[]{x, y, spiValor281.getValue().hashCode()});
+        }
+
+        if (spiValor282.getValue().hashCode() > 0) {
+            String x = "Big  Limon Pie";
+            float y = (float) 21.80;
+            model.addRow(new Object[]{x, y, spiValor282.getValue().hashCode()});
+        }
+        if (spiValor283.getValue().hashCode() > 0) {
+            String x = "Portion Manzana Pie";
+            float y = (float) 1.80;
+            model.addRow(new Object[]{x, y, spiValor283.getValue().hashCode()});
+        }
+
+        if (spiValor284.getValue().hashCode() > 0) {
+            String x = "Medium  Manzana Pie";
+            float y = (float) 13.25;
+            model.addRow(new Object[]{x, y, spiValor284.getValue().hashCode()});
+        }
+
+        if (spiValor285.getValue().hashCode() > 0) {
+            String x = "Big  Manzana Pie";
+            float y = (float) 21.80;
+            model.addRow(new Object[]{x, y, spiValor285.getValue().hashCode()});
+        }
+        if (spiValor286.getValue().hashCode() > 0) {
+            String x = "Portion Chocolate Pie";
+            float y = (float) 4.50;
+            model.addRow(new Object[]{x, y, spiValor286.getValue().hashCode()});
+        }
+
+        if (spiValor287.getValue().hashCode() > 0) {
+            String x = "Medium Chocolate Pie ";
+            float y = (float) 15.20;
+            model.addRow(new Object[]{x, y, spiValor287.getValue().hashCode()});
+        }
+
+        if (spiValor288.getValue().hashCode() > 0) {
+            String x = "Big Chocolate Pie ";
+            float y = (float) 25.80;
+            model.addRow(new Object[]{x, y, spiValor288.getValue().hashCode()});
+        }
+        
+        
+        
+        if (spiValor289.getValue().hashCode() > 0) {
+            String x = "Portion Chocolate Cake";
+            float y = (float) 1.50;
+            model.addRow(new Object[]{x, y, spiValor289.getValue().hashCode()});
+        }
+
+        if (spiValor290.getValue().hashCode() > 0) {
+            String x = "Medium Chocolate Cake ";
+            float y = (float) 15.50;
+            model.addRow(new Object[]{x, y, spiValor290.getValue().hashCode()});
+        }
+
+        if (spiValor291.getValue().hashCode() > 0) {
+            String x = "Big Chocolate Cake ";
+            float y = (float) 23.50;
+            model.addRow(new Object[]{x, y, spiValor291.getValue().hashCode()});
+        }
+        if (spiValor292.getValue().hashCode() > 0) {
+            String x = "Portion Vainilla Cake";
+            float y = (float) 1.25;
+            model.addRow(new Object[]{x, y, spiValor292.getValue().hashCode()});
+        }
+
+        if (spiValor293.getValue().hashCode() > 0) {
+            String x = "Medium  Vainilla Cake";
+            float y = (float) 15.20;
+            model.addRow(new Object[]{x, y, spiValor293.getValue().hashCode()});
+        }
+
+        if (spiValor294.getValue().hashCode() > 0) {
+            String x = "Big  Vainilla Cake";
+            float y = (float) 20.00;
+            model.addRow(new Object[]{x, y, spiValor294.getValue().hashCode()});
+        }
+        if (spiValor295.getValue().hashCode() > 0) {
+            String x = "Portion Naranja Cake";
+            float y = (float) 1.25;
+            model.addRow(new Object[]{x, y, spiValor295.getValue().hashCode()});
+        }
+
+        if (spiValor296.getValue().hashCode() > 0) {
+            String x = "Medium Naranja Cake ";
+            float y = (float) 15.20;
+            model.addRow(new Object[]{x, y, spiValor296.getValue().hashCode()});
+        }
+
+        if (spiValor297.getValue().hashCode() > 0) {
+            String x = "Big Naranja Cake ";
+            float y = (float) 20.00;
+            model.addRow(new Object[]{x, y, spiValor297.getValue().hashCode()});
+        }
+        
+        
+        if (spiValor298.getValue().hashCode() > 0) {
+            String x = " Humitas de Sal  ";
+            float y = (float) 0.35;
+            model.addRow(new Object[]{x, y, spiValor298.getValue().hashCode()});
+        }
+        
+        if (spiValor299.getValue().hashCode() > 0) {
+            String x = "Humitas de Dulce  ";
+            float y = (float) 0.35;
+            model.addRow(new Object[]{x, y, spiValor299.getValue().hashCode()});
+        }
+        
+        if (spiValor300.getValue().hashCode() > 0) {
+            String x = "Tamal Lojano de Pollo   ";
+            float y = (float) 1.25;
+            model.addRow(new Object[]{x, y, spiValor300.getValue().hashCode()});
+        }
+        if (spiValor301.getValue().hashCode() > 0) {
+            String x = "Tamal Lojano de Chancho   ";
+            float y = (float) 1.50;
+            model.addRow(new Object[]{x, y, spiValor301.getValue().hashCode()});
+        }
+        if (spiValor302.getValue().hashCode() > 0) {
+            String x = "Tamal Lojano de Chicharron   ";
+            float y = (float) 0.75;
+            model.addRow(new Object[]{x, y, spiValor302.getValue().hashCode()});
+        }
+        if (spiValor303.getValue().hashCode() > 0) {
+            String x = "Bolon de Queso   ";
+            float y = (float) 0.50;
+            model.addRow(new Object[]{x, y, spiValor303.getValue().hashCode()});
+        }
+         if (spiValor304.getValue().hashCode() > 0) {
+            String x = "Bolon de Mixto   ";
+            float y = (float) 1.25;
+            model.addRow(new Object[]{x, y, spiValor304.getValue().hashCode()});
+        }
+         if (spiValor305.getValue().hashCode() > 0) {
+            String x = "Quimbolito   ";
+            float y = (float) 0.35;
+            model.addRow(new Object[]{x, y, spiValor305.getValue().hashCode()});
+        }
+         
+        if (spiValor306.getValue().hashCode() > 0) {
+            String x = " Cheescake Portion Nutella";
+            float y = (float) 3.80;
+            model.addRow(new Object[]{x, y, spiValor306.getValue().hashCode()});
+        }
+
+        if (spiValor307.getValue().hashCode() > 0) {
+            String x = "Cheescake Medium Nutella ";
+            float y = (float) 14.00;
+            model.addRow(new Object[]{x, y, spiValor307.getValue().hashCode()});
+        }
+
+        if (spiValor308.getValue().hashCode() > 0) {
+            String x = "Cheescake Big Nutella ";
+            float y = (float) 25.00;
+            model.addRow(new Object[]{x, y, spiValor308.getValue().hashCode()});
+        }
+        if (spiValor309.getValue().hashCode() > 0) {
+            String x = "Cheescake Portion Brownie";
+            float y = (float) 1.80;
+            model.addRow(new Object[]{x, y, spiValor309.getValue().hashCode()});
+        }
+
+        if (spiValor310.getValue().hashCode() > 0) {
+            String x = "Cheescake Medium Brownie ";
+            float y = (float) 6.20;
+            model.addRow(new Object[]{x, y, spiValor310.getValue().hashCode()});
+        }
+
+        if (spiValor311.getValue().hashCode() > 0) {
+            String x = "Cheescake Big Brownie ";
+            float y = (float) 14.50;
+            model.addRow(new Object[]{x, y, spiValor311.getValue().hashCode()});
+        }
+        if (spiValor312.getValue().hashCode() > 0) {
+            String x = "Cheescake Portion Coco, caramelo y almendra ";
+            float y = (float) 4.80;
+            model.addRow(new Object[]{x, y, spiValor312.getValue().hashCode()});
+        }
+
+        if (spiValor313.getValue().hashCode() > 0) {
+            String x = "Cheescake Medium Coco, caramelo y almendra ";
+            float y = (float) 16.00;
+            model.addRow(new Object[]{x, y, spiValor313.getValue().hashCode()});
+        }
+
+        if (spiValor314.getValue().hashCode() > 0) {
+            String x = "Cheescake Big Coco, caramelo y almendra ";
+            float y = (float) 25.50;
+            model.addRow(new Object[]{x, y, spiValor314.getValue().hashCode()});
+        }
+        
+        
+        
+        
+        Order.setVisible(true);
+        MenuDessert.dispose();
+        
+        
+
     }//GEN-LAST:event_btnAdd3ActionPerformed
 
     private void btnReturn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturn8ActionPerformed
@@ -5189,7 +5394,7 @@ public class FrmMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_btnReturn8ActionPerformed
 
     private void btnAdd4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdd4ActionPerformed
-       
+
     }//GEN-LAST:event_btnAdd4ActionPerformed
 
     private void bntReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntReturnActionPerformed
@@ -5660,15 +5865,15 @@ public class FrmMenu extends javax.swing.JFrame {
     private javax.swing.JSpinner spiValor303;
     private javax.swing.JSpinner spiValor304;
     private javax.swing.JSpinner spiValor305;
-    private javax.swing.JSpinner spiValor69;
-    private javax.swing.JSpinner spiValor70;
-    private javax.swing.JSpinner spiValor71;
-    private javax.swing.JSpinner spiValor72;
-    private javax.swing.JSpinner spiValor73;
-    private javax.swing.JSpinner spiValor74;
-    private javax.swing.JSpinner spiValor75;
-    private javax.swing.JSpinner spiValor94;
-    private javax.swing.JSpinner spiValor96;
+    private javax.swing.JSpinner spiValor306;
+    private javax.swing.JSpinner spiValor307;
+    private javax.swing.JSpinner spiValor308;
+    private javax.swing.JSpinner spiValor309;
+    private javax.swing.JSpinner spiValor310;
+    private javax.swing.JSpinner spiValor311;
+    private javax.swing.JSpinner spiValor312;
+    private javax.swing.JSpinner spiValor313;
+    private javax.swing.JSpinner spiValor314;
     private javax.swing.JLabel teConLimon;
     private javax.swing.JLabel txtBreakfast;
     private javax.swing.JLabel txtDescription;
@@ -5680,6 +5885,5 @@ public class FrmMenu extends javax.swing.JFrame {
     private javax.swing.JTextField txtTableNumber;
     private javax.swing.JDialog viewOrder;
     // End of variables declaration//GEN-END:variables
-
 
 }

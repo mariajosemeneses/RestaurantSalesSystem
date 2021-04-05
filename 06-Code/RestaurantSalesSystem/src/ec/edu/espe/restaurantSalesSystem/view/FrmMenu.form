@@ -3514,17 +3514,17 @@
                                               <Group type="102" alignment="0" attributes="0">
                                                   <Component id="jLabel114" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="spiValor94" min="-2" pref="61" max="-2" attributes="0"/>
+                                                  <Component id="spiValor313" min="-2" pref="61" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
                                                   <Component id="jLabel113" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="spiValor75" min="-2" pref="61" max="-2" attributes="0"/>
+                                                  <Component id="spiValor312" min="-2" pref="61" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
                                                   <Component id="jLabel115" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="spiValor96" min="-2" pref="61" max="-2" attributes="0"/>
+                                                  <Component id="spiValor314" min="-2" pref="61" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
@@ -3539,9 +3539,9 @@
                                           </Group>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                              <Component id="spiValor70" alignment="0" max="32767" attributes="0"/>
-                                              <Component id="spiValor71" alignment="0" max="32767" attributes="0"/>
-                                              <Component id="spiValor69" alignment="0" pref="61" max="32767" attributes="0"/>
+                                              <Component id="spiValor307" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="spiValor308" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="spiValor306" alignment="0" pref="61" max="32767" attributes="0"/>
                                           </Group>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
@@ -3554,17 +3554,17 @@
                                               <Group type="102" alignment="0" attributes="0">
                                                   <Component id="jLabel126" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="spiValor73" min="-2" pref="61" max="-2" attributes="0"/>
+                                                  <Component id="spiValor310" min="-2" pref="61" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
                                                   <Component id="jLabel124" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="spiValor72" min="-2" pref="61" max="-2" attributes="0"/>
+                                                  <Component id="spiValor309" min="-2" pref="61" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
                                                   <Component id="jLabel128" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="spiValor74" min="-2" pref="61" max="-2" attributes="0"/>
+                                                  <Component id="spiValor311" min="-2" pref="61" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
@@ -3846,17 +3846,17 @@
                                   <EmptySpace min="28" pref="28" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel164" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="spiValor69" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="spiValor306" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel154" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="spiValor70" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="spiValor307" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel161" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="spiValor71" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="spiValor308" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
@@ -3875,17 +3875,17 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel124" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="spiValor72" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="spiValor309" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel126" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="spiValor73" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="spiValor310" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel128" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="spiValor74" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="spiValor311" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -3899,17 +3899,17 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel113" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="spiValor75" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="spiValor312" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel114" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="spiValor94" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="spiValor313" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel115" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="spiValor96" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="spiValor314" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -4328,19 +4328,19 @@
             <Property name="text" type="java.lang.String" value="Portion.....$1,25"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JSpinner" name="spiValor69">
+        <Component class="javax.swing.JSpinner" name="spiValor306">
         </Component>
-        <Component class="javax.swing.JSpinner" name="spiValor70">
+        <Component class="javax.swing.JSpinner" name="spiValor307">
         </Component>
-        <Component class="javax.swing.JSpinner" name="spiValor71">
+        <Component class="javax.swing.JSpinner" name="spiValor308">
         </Component>
-        <Component class="javax.swing.JSpinner" name="spiValor72">
+        <Component class="javax.swing.JSpinner" name="spiValor309">
         </Component>
-        <Component class="javax.swing.JSpinner" name="spiValor73">
+        <Component class="javax.swing.JSpinner" name="spiValor310">
         </Component>
-        <Component class="javax.swing.JSpinner" name="spiValor74">
+        <Component class="javax.swing.JSpinner" name="spiValor311">
         </Component>
-        <Component class="javax.swing.JSpinner" name="spiValor75">
+        <Component class="javax.swing.JSpinner" name="spiValor312">
         </Component>
         <Component class="javax.swing.JSpinner" name="spiValor294">
         </Component>
@@ -4434,11 +4434,11 @@
         </Component>
         <Component class="javax.swing.JSpinner" name="spiValor298">
         </Component>
-        <Component class="javax.swing.JSpinner" name="spiValor94">
+        <Component class="javax.swing.JSpinner" name="spiValor313">
         </Component>
         <Component class="javax.swing.JSpinner" name="spiValor297">
         </Component>
-        <Component class="javax.swing.JSpinner" name="spiValor96">
+        <Component class="javax.swing.JSpinner" name="spiValor314">
         </Component>
         <Component class="javax.swing.JSeparator" name="jSeparator15">
           <Properties>
