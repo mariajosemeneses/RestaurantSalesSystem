@@ -3780,6 +3780,43 @@ public class FrmMenu extends javax.swing.JFrame {
     private void btnDessertActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDessertActionPerformed
          MenuDessert.setVisible(true);
         MenuDessert.setLocationRelativeTo(null);
+        
+        this.setLocationRelativeTo(null);
+        
+        rsscalelabel.RSScaleLabel.setScaleLabel(jNutella,
+        "src/ec/edu/espe/restaurantSalesSystem/images/CheesecakeNutella.jpg" );
+        rsscalelabel.RSScaleLabel.setScaleLabel(jBrownie,
+        "src/ec/edu/espe/restaurantSalesSystem/images/CheesecakeBrownie.jpg" );
+        rsscalelabel.RSScaleLabel.setScaleLabel(jCoconutCaramelAlmond,
+        "src/ec/edu/espe/restaurantSalesSystem/images/CheesecakeCoco.jpg" );
+        
+        
+        
+        rsscalelabel.RSScaleLabel.setScaleLabel(jLemon,
+        "src/ec/edu/espe/restaurantSalesSystem/images/PieLemon.jpg" );
+        rsscalelabel.RSScaleLabel.setScaleLabel(jApple,
+        "src/ec/edu/espe/restaurantSalesSystem/images/PieApple.jpg" );
+        rsscalelabel.RSScaleLabel.setScaleLabel(jChocolate,
+        "src/ec/edu/espe/restaurantSalesSystem/images/PieChocolate.jpg" );
+        
+        
+        
+        rsscalelabel.RSScaleLabel.setScaleLabel(jCakeChocolate,
+        "src/ec/edu/espe/restaurantSalesSystem/images/CakeChocolate.jpg" );
+        rsscalelabel.RSScaleLabel.setScaleLabel(jVanilla,
+        "src/ec/edu/espe/restaurantSalesSystem/images/CakeVanilla.jpg" );
+        rsscalelabel.RSScaleLabel.setScaleLabel(jOrange,
+        "src/ec/edu/espe/restaurantSalesSystem/images/CakeOrange.jpg" );
+        
+        
+        rsscalelabel.RSScaleLabel.setScaleLabel(jHumita,
+        "src/ec/edu/espe/restaurantSalesSystem/images/Humita.jpg" );
+        rsscalelabel.RSScaleLabel.setScaleLabel(jLojanoTamale,
+        "src/ec/edu/espe/restaurantSalesSystem/images/LojanoTamale.jpg" );
+        rsscalelabel.RSScaleLabel.setScaleLabel(jBolon,
+        "src/ec/edu/espe/restaurantSalesSystem/images/Bolon.jpg" );
+        rsscalelabel.RSScaleLabel.setScaleLabel(jQuimbolito,
+        "src/ec/edu/espe/restaurantSalesSystem/images/Quimbolito.jpg" );
     }//GEN-LAST:event_btnDessertActionPerformed
 
     private void bntOrderBreakfastActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntOrderBreakfastActionPerformed
@@ -5064,6 +5101,14 @@ public class FrmMenu extends javax.swing.JFrame {
     private void btnJuiceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJuiceActionPerformed
         MenuJuice.setVisible(true);
         MenuJuice.setLocationRelativeTo(null);
+        
+        this.setLocationRelativeTo(null);
+                rsscalelabel.RSScaleLabel.setScaleLabel(jimage,"src/ec/edu/espe/restaurantSalesSystem/images/papaya.jpg" );
+                rsscalelabel.RSScaleLabel.setScaleLabel(jimage2,"src/ec/edu/espe/restaurantSalesSystem/images/sandia.png" );
+                rsscalelabel.RSScaleLabel.setScaleLabel(jimage3,"src/ec/edu/espe/restaurantSalesSystem/images/naranjilla.jpg" );
+                rsscalelabel.RSScaleLabel.setScaleLabel(jimage4,"src/ec/edu/espe/restaurantSalesSystem/images/tomate de arbol.jpg" );
+                rsscalelabel.RSScaleLabel.setScaleLabel(jimage5,"src/ec/edu/espe/restaurantSalesSystem/images/JUGO-DE-MORA.jpg" );
+                rsscalelabel.RSScaleLabel.setScaleLabel(jimage6,"src/ec/edu/espe/restaurantSalesSystem/images/limonada.jpg" );
     }//GEN-LAST:event_btnJuiceActionPerformed
 
     private void btnReturn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturn7ActionPerformed
@@ -5093,35 +5138,7 @@ public class FrmMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_btnReturn8ActionPerformed
 
     private void btnAdd4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdd4ActionPerformed
-        String dataToSave = "Do you want to save this information?: \nJuice ---->  "+ btnOptions.getSelectedItem();
-        int selection = JOptionPane.showConfirmDialog(null, dataToSave, "Juice  Saving",
-            JOptionPane.YES_NO_CANCEL_OPTION);
-
-        collection1 = db.getCollection("generateOrder");
-        if (btnOptions.getSelectedItem().equals("1")){
-            document1.put("Name Product", ""+txtSnack.getText() );
-            document1.put("Option "," "+ btnOptions.getSelectedItem());
-            document1.put("Description: ", "Alitas"+txtDescription.getText() );
-            document1.put( "Quantity ",""+ txtQ.getText()+"");
-            collection1.insert(document1);
-        } else if(btnOptions.getSelectedItem().equals("2")){
-            document1.put("Name Product", ""+txtSnack.getText() );
-            document1.put("Option ", " Nachos con queso" + btnOptions.getSelectedItem());
-            document1.put("Description: ", ""+txtDescription.getText() );
-            document1.put( "Quantity",""+ txtQ.getText()+"");
-            collection1.insert(document1);
-        }else if (btnOptions.getSelectedItem().equals("3")){
-            document1.put("Name Product", ""+txtSnack.getText() );
-            document1.put("Option ", " " + btnOptions.getSelectedItem());
-            document1.put("Description: ", "Picaditas"+txtDescription.getText() );
-            document1.put( "Quantity",""+ txtQ.getText()+"");
-            collection1.insert(document1);
-        }else{
-            document1.put("Name Product", ""+txtSnack.getText() );
-            document1.put("Option ", " " + btnOptions.getSelectedItem());
-            document1.put("Description: ", "Hamburguesa"+txtDescription.getText() );
-            document1.put( "Quantity",""+ txtQ.getText()+"");
-            collection1.insert(document1);
+       
     }//GEN-LAST:event_btnAdd4ActionPerformed
 
     private void bntReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntReturnActionPerformed
