@@ -199,10 +199,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
         jLabel191 = new javax.swing.JLabel();
         OptionsCashier = new javax.swing.JFrame();
         jLabel1 = new javax.swing.JLabel();
-        btnReturn1 = new javax.swing.JButton();
         jLabel192 = new javax.swing.JLabel();
-        btnGenerateBillCashier = new javax.swing.JButton();
-        jLabel193 = new javax.swing.JLabel();
         OptionsOwner = new javax.swing.JFrame();
         jPanel1 = new javax.swing.JPanel();
         btnExit = new javax.swing.JButton();
@@ -680,7 +677,9 @@ public class FrmMainScreen extends javax.swing.JFrame {
         jPanel12 = new javax.swing.JPanel();
         jLabel181 = new javax.swing.JLabel();
         txtTableNumber = new javax.swing.JTextField();
-        btngenerateBill = new javax.swing.JButton();
+        btngenerateBillCashier = new javax.swing.JButton();
+        btnReturn1 = new javax.swing.JButton();
+        jGenerateBill = new javax.swing.JLabel();
         Bill = new javax.swing.JDialog();
         jPanel10 = new javax.swing.JPanel();
         jScrollPane5 = new javax.swing.JScrollPane();
@@ -838,37 +837,10 @@ public class FrmMainScreen extends javax.swing.JFrame {
         jLabel1.setText("CASHIER MENU");
         OptionsCashier.getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(98, 49, 220, 23));
 
-        btnReturn1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        btnReturn1.setText("Return");
-        btnReturn1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnReturn1ActionPerformed(evt);
-            }
-        });
-        OptionsCashier.getContentPane().add(btnReturn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 300, -1, -1));
-
         jLabel192.setFont(new java.awt.Font("Baskerville Old Face", 3, 14)); // NOI18N
         jLabel192.setForeground(new java.awt.Color(102, 255, 255));
         jLabel192.setText("Generate Bill");
         OptionsCashier.getContentPane().add(jLabel192, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, 90, -1));
-
-        btnGenerateBillCashier.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/restaurantSalesSystem/images/bill.png"))); // NOI18N
-        btnGenerateBillCashier.setContentAreaFilled(false);
-        btnGenerateBillCashier.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnGenerateBillCashier.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                btnGenerateBillCashierMouseMoved(evt);
-            }
-        });
-        btnGenerateBillCashier.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnGenerateBillCashierActionPerformed(evt);
-            }
-        });
-        OptionsCashier.getContentPane().add(btnGenerateBillCashier, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 90, 150, 140));
-
-        jLabel193.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/restaurantSalesSystem/images/ABll.jpg"))); // NOI18N
-        OptionsCashier.getContentPane().add(jLabel193, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 350));
 
         OptionsOwner.setTitle("Options Owner");
         OptionsOwner.setMinimumSize(new java.awt.Dimension(468, 413));
@@ -4208,7 +4180,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
                 btnSendOrderActionPerformed(evt);
             }
         });
-        jPanel3.add(btnSendOrder, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 200, 190, 30));
+        jPanel3.add(btnSendOrder, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 260, 190, 30));
         jPanel3.add(numMesa, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 120, 100, 30));
 
         javax.swing.GroupLayout OrderLayout = new javax.swing.GroupLayout(Order.getContentPane());
@@ -4228,7 +4200,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
         jPanel9.setBackground(new java.awt.Color(0, 0, 0));
         jPanel9.setMaximumSize(new java.awt.Dimension(781, 393));
-        jPanel9.setMinimumSize(new java.awt.Dimension(781, 393));
+        jPanel9.setMinimumSize(new java.awt.Dimension(899, 393));
         jPanel9.setLayout(null);
 
         datosTable2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
@@ -4313,14 +4285,14 @@ public class FrmMainScreen extends javax.swing.JFrame {
         viewOrder.getContentPane().setLayout(viewOrderLayout);
         viewOrderLayout.setHorizontalGroup(
             viewOrderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, 928, Short.MAX_VALUE)
+            .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, 899, Short.MAX_VALUE)
         );
         viewOrderLayout.setVerticalGroup(
             viewOrderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, 393, Short.MAX_VALUE)
         );
 
-        GenerateBill.setMinimumSize(new java.awt.Dimension(366, 181));
+        GenerateBill.setMinimumSize(new java.awt.Dimension(412, 328));
         GenerateBill.setUndecorated(true);
         GenerateBill.setResizable(false);
 
@@ -4346,27 +4318,43 @@ public class FrmMainScreen extends javax.swing.JFrame {
         jPanel12.add(txtTableNumber);
         txtTableNumber.setBounds(190, 40, 70, 30);
 
-        btngenerateBill.setBackground(java.awt.Color.white);
-        btngenerateBill.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        btngenerateBill.setText("Generate");
-        btngenerateBill.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btngenerateBill.addActionListener(new java.awt.event.ActionListener() {
+        btngenerateBillCashier.setBackground(java.awt.Color.white);
+        btngenerateBillCashier.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        btngenerateBillCashier.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/restaurantSalesSystem/images/bill.png"))); // NOI18N
+        btngenerateBillCashier.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(51, 51, 255), new java.awt.Color(255, 255, 255), new java.awt.Color(51, 51, 255), java.awt.Color.white));
+        btngenerateBillCashier.setContentAreaFilled(false);
+        btngenerateBillCashier.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btngenerateBillCashier.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btngenerateBillActionPerformed(evt);
+                btngenerateBillCashierActionPerformed(evt);
             }
         });
-        jPanel12.add(btngenerateBill);
-        btngenerateBill.setBounds(90, 90, 140, 30);
+        jPanel12.add(btngenerateBillCashier);
+        btngenerateBillCashier.setBounds(140, 100, 140, 140);
+
+        btnReturn1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btnReturn1.setText("Return");
+        btnReturn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnReturn1ActionPerformed(evt);
+            }
+        });
+        jPanel12.add(btnReturn1);
+        btnReturn1.setBounds(160, 260, 75, 25);
+
+        jGenerateBill.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/restaurantSalesSystem/images/ABll.jpg"))); // NOI18N
+        jPanel12.add(jGenerateBill);
+        jGenerateBill.setBounds(0, 0, 410, 330);
 
         javax.swing.GroupLayout GenerateBillLayout = new javax.swing.GroupLayout(GenerateBill.getContentPane());
         GenerateBill.getContentPane().setLayout(GenerateBillLayout);
         GenerateBillLayout.setHorizontalGroup(
             GenerateBillLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, 366, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, 412, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         GenerateBillLayout.setVerticalGroup(
             GenerateBillLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel12, javax.swing.GroupLayout.DEFAULT_SIZE, 181, Short.MAX_VALUE)
+            .addComponent(jPanel12, javax.swing.GroupLayout.DEFAULT_SIZE, 328, Short.MAX_VALUE)
         );
 
         Bill.setTitle("FACTURA");
@@ -4781,8 +4769,8 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
     private void itmMnuCashierActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmMnuCashierActionPerformed
         this.setVisible(false);
-       OptionsCashier.setVisible(true);
-       OptionsCashier.setLocationRelativeTo(null);
+       GenerateBill.setVisible(true);
+       GenerateBill.setLocationRelativeTo(null);
     }//GEN-LAST:event_itmMnuCashierActionPerformed
 
     private void itmMnuExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmMnuExitActionPerformed
@@ -4854,7 +4842,6 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
     private void btnReturn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturn1ActionPerformed
         this.setVisible(false);
-        OptionsCashier.setVisible(false);
         FrmMainScreen frmMainScreen = new FrmMainScreen();
         frmMainScreen.setVisible(true);
     }//GEN-LAST:event_btnReturn1ActionPerformed
@@ -5162,7 +5149,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
     }//GEN-LAST:event_btnBreakfastActionPerformed
 
     private void btnLunchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLunchActionPerformed
-         this.setVisible(false);
+        
         MenuLunch.setVisible(true);
         MenuLunch.setLocationRelativeTo(null);
 
@@ -5236,7 +5223,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSnackActionPerformed
 
     private void btnDrinkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDrinkActionPerformed
-        this.setVisible(false);
+       
         OptionsDrink.setVisible(true);
         OptionsDrink.setLocationRelativeTo(null);;
     }//GEN-LAST:event_btnDrinkActionPerformed
@@ -5589,8 +5576,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
         int filas = datosTable2.getRowCount();
 
         GenerateBill.setVisible(false);
-        Menu.setVisible(true);
-        Menu.setLocationRelativeTo(null);
+        GenerateBill.setLocationRelativeTo(null);
         viewOrder.setVisible(false);
     }//GEN-LAST:event_btnGenerateBillActionPerformed
 
@@ -5751,7 +5737,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_txtTableNumberKeyTyped
 
-    private void btngenerateBillActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btngenerateBillActionPerformed
+    private void btngenerateBillCashierActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btngenerateBillCashierActionPerformed
         
         //Bill
         float contTotal = (float) 0.0;
@@ -5912,7 +5898,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
         if (txtTableNumber.getText().equals("")) {
             JOptionPane.showMessageDialog(null, "You have not entered a table number to generate an invoice.");
         }
-    }//GEN-LAST:event_btngenerateBillActionPerformed
+    }//GEN-LAST:event_btngenerateBillCashierActionPerformed
 
     private void btnCellphoneCostumerKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btnCellphoneCostumerKeyTyped
         int k = (int) evt.getKeyChar();
@@ -6056,16 +6042,6 @@ public class FrmMainScreen extends javax.swing.JFrame {
          this.setVisible(false);
         OptionsOwner.setVisible(true);
     }//GEN-LAST:event_btnReturn6ActionPerformed
-
-    private void btnGenerateBillCashierMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnGenerateBillCashierMouseMoved
-        btnGenerateBillCashier.setToolTipText("*REGISTRAR PAGO");
-    }//GEN-LAST:event_btnGenerateBillCashierMouseMoved
-
-    private void btnGenerateBillCashierActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerateBillCashierActionPerformed
-        GenerateBill.setVisible(true);
-        GenerateBill.setLocationRelativeTo(null);
-        OptionsCashier.setVisible(false);
-    }//GEN-LAST:event_btnGenerateBillCashierActionPerformed
     
 
     /**
@@ -6146,7 +6122,6 @@ public class FrmMainScreen extends javax.swing.JFrame {
     private javax.swing.JButton btnExit2;
     private javax.swing.JButton btnFindProducts;
     private javax.swing.JButton btnGenerateBill;
-    private javax.swing.JButton btnGenerateBillCashier;
     private javax.swing.JButton btnJuice;
     private javax.swing.JButton btnLogin;
     private javax.swing.JButton btnLunch;
@@ -6178,7 +6153,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
     private javax.swing.JButton btnSnack;
     private javax.swing.JButton btnSoda;
     private javax.swing.JButton btnViewProducts1;
-    private javax.swing.JButton btngenerateBill;
+    private javax.swing.JButton btngenerateBillCashier;
     private javax.swing.JLabel cafeEnAgua;
     private javax.swing.JLabel cafeEnLeche;
     private javax.swing.JComboBox<String> cmbTypeOfProduct;
@@ -6227,6 +6202,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
     private javax.swing.JLabel jExpressoRistretto;
     private javax.swing.JLabel jFrapuccino;
     private javax.swing.JLabel jFrocaccino;
+    private javax.swing.JLabel jGenerateBill;
     private javax.swing.JLabel jHot;
     private javax.swing.JLabel jHumita;
     private javax.swing.JLabel jIntegralBread;
@@ -6335,7 +6311,6 @@ public class FrmMainScreen extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel190;
     private javax.swing.JLabel jLabel191;
     private javax.swing.JLabel jLabel192;
-    private javax.swing.JLabel jLabel193;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
