@@ -1011,7 +1011,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("PRODUCTS");
         jPanel6.add(jLabel4);
-        jLabel4.setBounds(210, 10, 230, 47);
+        jLabel4.setBounds(210, 10, 230, 44);
 
         tblProducts.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         tblProducts.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
@@ -1146,19 +1146,19 @@ public class FrmMainScreen extends javax.swing.JFrame {
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("NEW PRODUCT");
         jPanel7.add(jLabel12);
-        jLabel12.setBounds(280, 10, 220, 32);
+        jLabel12.setBounds(280, 10, 220, 30);
 
         description2.setFont(new java.awt.Font("Perpetua Titling MT", 3, 12)); // NOI18N
         description2.setForeground(new java.awt.Color(255, 255, 255));
         description2.setText("Description:");
         jPanel7.add(description2);
-        description2.setBounds(160, 130, 70, 16);
+        description2.setBounds(160, 130, 89, 16);
 
         jLabel13.setFont(new java.awt.Font("Perpetua Titling MT", 3, 12)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("Price:");
         jPanel7.add(jLabel13);
-        jLabel13.setBounds(170, 190, 34, 16);
+        jLabel13.setBounds(170, 190, 41, 16);
 
         txtPrice.setBackground(new java.awt.Color(0, 0, 0));
         txtPrice.setForeground(new java.awt.Color(255, 255, 255));
@@ -1200,7 +1200,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
         products.setForeground(new java.awt.Color(255, 255, 255));
         products.setText("Type Of Product:");
         jPanel7.add(products);
-        products.setBounds(160, 70, 96, 16);
+        products.setBounds(160, 70, 126, 16);
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/restaurantSalesSystem/images/fondo-Addproduct.jpg"))); // NOI18N
         jPanel7.add(jLabel6);
@@ -1309,7 +1309,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
         jLabel16.setForeground(new java.awt.Color(255, 255, 255));
         jLabel16.setText("DELETE PRODUCT");
         jPanel8.add(jLabel16);
-        jLabel16.setBounds(150, 20, 250, 32);
+        jLabel16.setBounds(150, 20, 250, 30);
 
         txtDataToDelete.setBackground(new java.awt.Color(0, 0, 0));
         txtDataToDelete.setForeground(new java.awt.Color(255, 255, 255));
@@ -4226,7 +4226,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
         viewOrder.setMinimumSize(new java.awt.Dimension(928, 393));
         viewOrder.setResizable(false);
 
-        jPanel9.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel9.setBackground(new java.awt.Color(0, 0, 0));
         jPanel9.setMaximumSize(new java.awt.Dimension(781, 393));
         jPanel9.setMinimumSize(new java.awt.Dimension(781, 393));
         jPanel9.setLayout(null);
@@ -4261,8 +4261,11 @@ public class FrmMainScreen extends javax.swing.JFrame {
         jPanel9.add(jScrollPane3);
         jScrollPane3.setBounds(110, 60, 430, 300);
 
-        btnGenerateBill.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        btnGenerateBill.setText("GENERAR FACTURA");
+        btnGenerateBill.setFont(new java.awt.Font("Baskerville Old Face", 3, 14)); // NOI18N
+        btnGenerateBill.setForeground(new java.awt.Color(255, 255, 255));
+        btnGenerateBill.setText("BIll");
+        btnGenerateBill.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 0, 255), new java.awt.Color(204, 255, 255), new java.awt.Color(0, 0, 255), new java.awt.Color(204, 255, 255)));
+        btnGenerateBill.setContentAreaFilled(false);
         btnGenerateBill.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnGenerateBill.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4272,13 +4275,16 @@ public class FrmMainScreen extends javax.swing.JFrame {
         jPanel9.add(btnGenerateBill);
         btnGenerateBill.setBounds(620, 180, 230, 40);
 
-        jLabel180.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel180.setFont(new java.awt.Font("Baskerville Old Face", 3, 18)); // NOI18N
         jLabel180.setForeground(new java.awt.Color(255, 255, 255));
         jLabel180.setText("Orders:");
         jPanel9.add(jLabel180);
-        jLabel180.setBounds(90, 30, 100, 17);
+        jLabel180.setBounds(90, 30, 100, 19);
 
+        btnReturn3.setFont(new java.awt.Font("Baskerville Old Face", 3, 14)); // NOI18N
+        btnReturn3.setForeground(new java.awt.Color(255, 255, 255));
         btnReturn3.setText("Return");
+        btnReturn3.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(204, 255, 255), new java.awt.Color(0, 51, 255)));
         btnReturn3.setContentAreaFilled(false);
         btnReturn3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnReturn3.addActionListener(new java.awt.event.ActionListener() {
@@ -4289,8 +4295,11 @@ public class FrmMainScreen extends javax.swing.JFrame {
         jPanel9.add(btnReturn3);
         btnReturn3.setBounds(10, 331, 80, 50);
 
-        btnOtherOrder.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        btnOtherOrder.setFont(new java.awt.Font("Baskerville Old Face", 3, 14)); // NOI18N
+        btnOtherOrder.setForeground(new java.awt.Color(255, 255, 255));
         btnOtherOrder.setText("REGISTER OTHER ORDER");
+        btnOtherOrder.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 0, 255), new java.awt.Color(204, 255, 255), new java.awt.Color(0, 0, 255), new java.awt.Color(204, 255, 255)));
+        btnOtherOrder.setContentAreaFilled(false);
         btnOtherOrder.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnOtherOrder.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4743,18 +4752,18 @@ public class FrmMainScreen extends javax.swing.JFrame {
         if (cant > 0) {
 
             Bill fact = new Bill();
-            fact.setConcepto(product);
+            fact.setDescription(product);
 
             float precio = price;
-            fact.setPrecio(precio);
-            fact.setCantidad(cant);
+            fact.setPrice(precio);
+            fact.setQuantity(cant);
 
             float total = cant * precio;
             fact.setTotal(total);
             contTotal = (float) (contTotal + total);
 
             DefaultTableModel model = (DefaultTableModel) factTable.getModel();
-            model.addRow(new Object[]{fact.getConcepto(), fact.getPrecio(), fact.getCantidad(), fact.getTotal()});
+            model.addRow(new Object[]{fact.getDescription(), fact.getPrice(), fact.getQuantity(), fact.getTotal()});
             factTable.setModel(model);
         }
 
@@ -5579,8 +5588,9 @@ public class FrmMainScreen extends javax.swing.JFrame {
     private void btnGenerateBillActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerateBillActionPerformed
         int filas = datosTable2.getRowCount();
 
-        GenerateBill.setVisible(true);
-        GenerateBill.setLocationRelativeTo(null);
+        GenerateBill.setVisible(false);
+        Menu.setVisible(true);
+        Menu.setLocationRelativeTo(null);
         viewOrder.setVisible(false);
     }//GEN-LAST:event_btnGenerateBillActionPerformed
 
@@ -5942,7 +5952,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
         //BOTON FINALIZA FACTURA
         Bill f = new Bill();
-        f.numventas = 0;
+        f.numSales = 0;
 
         if ((txtNameCostumer.getText().equals("")) && (txtIdCostumer.getText().equals("")) && (btnCellphoneCostumer.getText().equals(""))) {
             JOptionPane.showMessageDialog(null, "You have not filled in the customer information");
@@ -5952,7 +5962,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
         if (((!txtNameCostumer.getText().equals("")) && (!txtIdCostumer.getText().equals("")) && (!btnCellphoneCostumer.getText().equals("")))) {
             contador++;
             suma = (int) (suma + Double.parseDouble(TOTALtot.getText()));
-            f.numventas = f.numventas + 1;
+            f.numSales = f.numSales + 1;
             JOptionPane.showMessageDialog(null, "The payment has been made successfully. SEE YOU LATER");
             Bill.setVisible(false);
             this.setVisible(true);
@@ -6052,7 +6062,9 @@ public class FrmMainScreen extends javax.swing.JFrame {
     }//GEN-LAST:event_btnGenerateBillCashierMouseMoved
 
     private void btnGenerateBillCashierActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerateBillCashierActionPerformed
-      
+        GenerateBill.setVisible(true);
+        GenerateBill.setLocationRelativeTo(null);
+        OptionsCashier.setVisible(false);
     }//GEN-LAST:event_btnGenerateBillCashierActionPerformed
     
 

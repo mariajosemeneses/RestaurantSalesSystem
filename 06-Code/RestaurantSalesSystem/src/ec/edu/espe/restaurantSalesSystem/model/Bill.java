@@ -14,26 +14,26 @@ public class Bill {
 
     private Double iva;
 
-    private float propina;
+    private float tip;
 
-    private float precio;
+    private float price;
 
-    private String concepto;
+    private String description;
 
-    private int cantidad;
+    private int quantity;
 
     private float total;
-    public int numventas;
+    public int numSales;
 
     public Bill() {
     }
 
-    public int getNumventas() {
-        return numventas;
+    public int getNumSales() {
+        return numSales;
     }
 
-    public void setNumventas() {
-        this.numventas = numventas;
+    public void setNumSales() {
+        this.numSales = numSales;
     }
 
     public Double getIva() {
@@ -46,36 +46,36 @@ public class Bill {
 
     }
 
-    public float getPropina() {
-        return propina;
+    public float getTip() {
+        return tip;
     }
 
-    public void setPropina(float propina) {
-        this.propina = propina;
+    public void setTip(float tip) {
+        this.tip = tip;
     }
 
-    public float getPrecio() {
-        return precio;
+    public float getPrice() {
+        return price;
     }
 
-    public void setPrecio(float precio) {
-        this.precio = precio;
+    public void setPrice(float price) {
+        this.price = price;
     }
 
-    public void setConcepto(String concepto) {
-        this.concepto = concepto;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
-    public String getConcepto() {
-        return concepto;
+    public String getDescription() {
+        return description;
     }
 
-    public void setCantidad(int cantidad) {
-        this.cantidad = cantidad;
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 
-    public int getCantidad() {
-        return cantidad;
+    public int getQuantity() {
+        return quantity;
     }
 
     public float getTotal() {
