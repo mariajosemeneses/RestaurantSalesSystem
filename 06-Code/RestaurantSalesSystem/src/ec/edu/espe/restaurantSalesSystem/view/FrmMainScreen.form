@@ -791,7 +791,7 @@
                   <Color blue="cc" green="cc" red="cc" type="rgb"/>
                 </Property>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="12">
+                  <StringArray count="19">
                     <StringItem index="0" value="Select"/>
                     <StringItem index="1" value="SOUP"/>
                     <StringItem index="2" value="MAIN COURSE"/>
@@ -802,8 +802,15 @@
                     <StringItem index="7" value="FRUIT"/>
                     <StringItem index="8" value="EGG"/>
                     <StringItem index="9" value="BREAD"/>
-                    <StringItem index="10" value=" "/>
-                    <StringItem index="11" value=" "/>
+                    <StringItem index="10" value="HAMBURGUESAS"/>
+                    <StringItem index="11" value="ALITAS"/>
+                    <StringItem index="12" value="NACHOS"/>
+                    <StringItem index="13" value="COFFEE"/>
+                    <StringItem index="14" value="SODA"/>
+                    <StringItem index="15" value="CHESECAKE"/>
+                    <StringItem index="16" value="PIES"/>
+                    <StringItem index="17" value="CAKES"/>
+                    <StringItem index="18" value="ESPECIALES"/>
                   </StringArray>
                 </Property>
               </Properties>

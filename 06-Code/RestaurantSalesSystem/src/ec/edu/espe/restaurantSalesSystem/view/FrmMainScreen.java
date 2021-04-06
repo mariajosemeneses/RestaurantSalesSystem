@@ -1011,7 +1011,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("PRODUCTS");
         jPanel6.add(jLabel4);
-        jLabel4.setBounds(210, 10, 230, 44);
+        jLabel4.setBounds(210, 10, 230, 47);
 
         tblProducts.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         tblProducts.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
@@ -1117,19 +1117,19 @@ public class FrmMainScreen extends javax.swing.JFrame {
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("NEW PRODUCT");
         jPanel7.add(jLabel12);
-        jLabel12.setBounds(280, 10, 220, 30);
+        jLabel12.setBounds(280, 10, 220, 32);
 
         description2.setFont(new java.awt.Font("Perpetua Titling MT", 3, 12)); // NOI18N
         description2.setForeground(new java.awt.Color(255, 255, 255));
         description2.setText("Description:");
         jPanel7.add(description2);
-        description2.setBounds(160, 130, 89, 16);
+        description2.setBounds(160, 130, 70, 16);
 
         jLabel13.setFont(new java.awt.Font("Perpetua Titling MT", 3, 12)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("Price:");
         jPanel7.add(jLabel13);
-        jLabel13.setBounds(170, 190, 41, 16);
+        jLabel13.setBounds(170, 190, 34, 16);
 
         txtPrice.setBackground(new java.awt.Color(0, 0, 0));
         txtPrice.setForeground(new java.awt.Color(255, 255, 255));
@@ -1152,14 +1152,14 @@ public class FrmMainScreen extends javax.swing.JFrame {
         btnAdd.setBounds(330, 260, 63, 25);
 
         cmbTypeOfProduct.setBackground(new java.awt.Color(204, 204, 204));
-        cmbTypeOfProduct.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select", "SOUP", "MAIN COURSE", "JUICE", "DRINK", "DESSERT", "STEW", "FRUIT", "EGG", "BREAD", " ", " " }));
+        cmbTypeOfProduct.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select", "SOUP", "MAIN COURSE", "JUICE", "DRINK", "DESSERT", "STEW", "FRUIT", "EGG", "BREAD", "HAMBURGUESAS", "ALITAS", "NACHOS", "COFFEE", "SODA", "CHESECAKE", "PIES", "CAKES", "ESPECIALES" }));
         cmbTypeOfProduct.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmbTypeOfProductActionPerformed(evt);
             }
         });
         jPanel7.add(cmbTypeOfProduct);
-        cmbTypeOfProduct.setBounds(330, 70, 95, 20);
+        cmbTypeOfProduct.setBounds(330, 70, 106, 20);
 
         txtDescription.setBackground(new java.awt.Color(0, 0, 0));
         txtDescription.setForeground(new java.awt.Color(255, 255, 255));
@@ -1171,7 +1171,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
         products.setForeground(new java.awt.Color(255, 255, 255));
         products.setText("Type Of Product:");
         jPanel7.add(products);
-        products.setBounds(160, 70, 126, 16);
+        products.setBounds(160, 70, 96, 16);
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/restaurantSalesSystem/images/fondo-Addproduct.jpg"))); // NOI18N
         jPanel7.add(jLabel6);
@@ -1280,7 +1280,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
         jLabel16.setForeground(new java.awt.Color(255, 255, 255));
         jLabel16.setText("DELETE PRODUCT");
         jPanel8.add(jLabel16);
-        jLabel16.setBounds(150, 20, 250, 30);
+        jLabel16.setBounds(150, 20, 250, 32);
 
         txtDataToDelete.setBackground(new java.awt.Color(0, 0, 0));
         txtDataToDelete.setForeground(new java.awt.Color(255, 255, 255));
