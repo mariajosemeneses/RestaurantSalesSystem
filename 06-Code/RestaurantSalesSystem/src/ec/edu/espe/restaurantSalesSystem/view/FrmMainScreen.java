@@ -706,6 +706,8 @@ public class FrmMainScreen extends javax.swing.JFrame {
         itmMnuCashier = new javax.swing.JMenuItem();
         itmMnuCustomer = new javax.swing.JMenuItem();
 
+        OptionsCashier.setTitle("Options Cashier");
+
         btnGenerateBill1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btnGenerateBill1.setText("Generate Bill");
 
@@ -749,7 +751,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
                 .addGap(47, 47, 47))
         );
 
-        OptionsOwner.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        OptionsOwner.setTitle("Options Owner");
         OptionsOwner.setUndecorated(true);
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -4748,8 +4750,10 @@ public class FrmMainScreen extends javax.swing.JFrame {
     }//GEN-LAST:event_btnExitActionPerformed
 
     private void btnEditMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditMenuActionPerformed
+        
         FrmStockProducts.setVisible(true);
         FrmStockProducts.setLocationRelativeTo(null);
+       
     }//GEN-LAST:event_btnEditMenuActionPerformed
 
     private void btnRegisterEmployeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegisterEmployeeActionPerformed
@@ -4759,7 +4763,8 @@ public class FrmMainScreen extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRegisterEmployeeActionPerformed
 
     private void btnReportSaleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReportSaleActionPerformed
-          ReportSale.setVisible(true);
+       
+        ReportSale.setVisible(true);
         ReportSale.setLocationRelativeTo(null);
     }//GEN-LAST:event_btnReportSaleActionPerformed
 
@@ -4874,6 +4879,12 @@ public class FrmMainScreen extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnAddActionPerformed
 
+    public void emptyFields() {
+        txtDescription.setText("");
+        cmbTypeOfProduct.setSelectedIndex(0);
+        txtPrice.setText("");
+        txtSuggestions.setText("");
+    }
     private void cmbTypeOfProductActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbTypeOfProductActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cmbTypeOfProductActionPerformed
@@ -4939,7 +4950,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton28ActionPerformed
 
     private void btnDessertActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDessertActionPerformed
-        this.setVisible(false);
+        
         MenuDessert.setVisible(true);
         MenuDessert.setLocationRelativeTo(null);
 
@@ -4983,10 +4994,9 @@ public class FrmMainScreen extends javax.swing.JFrame {
     }//GEN-LAST:event_btnExit1ActionPerformed
 
     private void btnBreakfastActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBreakfastActionPerformed
-        this.setVisible(false);
+       
         MenuBreakfast.setVisible(true);
         MenuBreakfast.setLocationRelativeTo(null);
-        this.setLocationRelativeTo(null);
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jCoffeWater,
             "src/ec/edu/espe/restaurantSalesSystem/images/WaterCoffee.jpg");
@@ -5042,10 +5052,9 @@ public class FrmMainScreen extends javax.swing.JFrame {
     }//GEN-LAST:event_btnBreakfastActionPerformed
 
     private void btnLunchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLunchActionPerformed
-        this.setVisible(false);
+         this.setVisible(false);
         MenuLunch.setVisible(true);
         MenuLunch.setLocationRelativeTo(null);
-        this.setLocationRelativeTo(null);
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jLocro, "src/ec/edu/espe/restaurantSalesSystem/images/Locro.jpg");
         rsscalelabel.RSScaleLabel.setScaleLabel(jCremaTomato, "src/ec/edu/espe/restaurantSalesSystem/images/CremaTomato.jpg");
@@ -5079,9 +5088,10 @@ public class FrmMainScreen extends javax.swing.JFrame {
     }//GEN-LAST:event_btnLunchActionPerformed
 
     private void btnSnackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSnackActionPerformed
-        this.setVisible(false);
+       
         MenuSnack.setVisible(true);
         MenuSnack.setLocationRelativeTo(null);
+        
         this.setLocationRelativeTo(null);
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jClassicBurger,
@@ -5174,6 +5184,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
     }//GEN-LAST:event_btnOrderLunchActionPerformed
 
     private void btnReturnLunchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturnLunchActionPerformed
+        
         MenuLunch.setVisible(false);
         Menu.setVisible(true);
     }//GEN-LAST:event_btnReturnLunchActionPerformed
@@ -5486,7 +5497,6 @@ public class FrmMainScreen extends javax.swing.JFrame {
         numMesa.getText();
         
         Menu.setVisible(true);
-
         viewOrder.setVisible(false);
 
         //Breakfast
@@ -5903,9 +5913,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
         rsscalelabel.RSScaleLabel.setScaleLabel(jimage5, "src/ec/edu/espe/restaurantSalesSystem/images/sandia.png");
         rsscalelabel.RSScaleLabel.setScaleLabel(jimage6, "src/ec/edu/espe/restaurantSalesSystem/images/Naranjillas.jpg");
     }//GEN-LAST:event_btnJuiceActionPerformed
-    public void emptyFields() {
-        txtSuggestions.setText("");
-    }
+    
 
     /**
      * @param args the command line arguments
