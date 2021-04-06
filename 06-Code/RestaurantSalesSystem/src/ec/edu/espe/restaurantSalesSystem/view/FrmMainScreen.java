@@ -13,6 +13,8 @@ import com.mongodb.DBObject;
 import com.mongodb.MongoClient;
 import ec.edu.espe.restaurantSalesSystem.controller.OwnerController;
 import ec.edu.espe.restaurantSalesSystem.controller.SuggestionController;
+import ec.edu.espe.restaurantSalesSystem.controller.Verification;
+import ec.edu.espe.restaurantSalesSystem.controller.VerificationController;
 import ec.edu.espe.restaurantSalesSystem.model.Product;
 import ec.edu.espe.restaurantSalesSystem.utils.MongoManager;
 import ec.edu.espe.restaurantSalesSystem.utils.NoSQL;
@@ -181,6 +183,16 @@ public class FrmMainScreen extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        Login = new javax.swing.JFrame();
+        jPanel2 = new javax.swing.JPanel();
+        btnLogin = new javax.swing.JButton();
+        btnExit2 = new javax.swing.JButton();
+        jPanel5 = new javax.swing.JPanel();
+        jLabel189 = new javax.swing.JLabel();
+        jLabel190 = new javax.swing.JLabel();
+        txtUserName = new javax.swing.JTextField();
+        txtPassword = new javax.swing.JPasswordField();
+        jLabel191 = new javax.swing.JLabel();
         OptionsCashier = new javax.swing.JFrame();
         btnGenerateBill1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -706,6 +718,113 @@ public class FrmMainScreen extends javax.swing.JFrame {
         itmMnuCashier = new javax.swing.JMenuItem();
         itmMnuCustomer = new javax.swing.JMenuItem();
 
+        btnLogin.setText("Log in");
+        btnLogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLoginActionPerformed(evt);
+            }
+        });
+
+        btnExit2.setText("Return");
+        btnExit2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnExit2ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addComponent(btnLogin)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 179, Short.MAX_VALUE)
+                .addComponent(btnExit2)
+                .addGap(35, 35, 35))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(32, 32, 32)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnLogin)
+                    .addComponent(btnExit2))
+                .addContainerGap(29, Short.MAX_VALUE))
+        );
+
+        jLabel189.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel189.setText("Username:");
+
+        jLabel190.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel190.setText("Password:");
+
+        txtUserName.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtUserNameActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(32, 32, 32)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel190)
+                    .addComponent(jLabel189))
+                .addGap(41, 41, 41)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(txtUserName)
+                    .addComponent(txtPassword, javax.swing.GroupLayout.DEFAULT_SIZE, 156, Short.MAX_VALUE))
+                .addContainerGap(42, Short.MAX_VALUE))
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel189)
+                    .addComponent(txtUserName))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, 27, Short.MAX_VALUE)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel190)
+                    .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
+        );
+
+        jLabel191.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel191.setText("Restaurant Sales System");
+
+        javax.swing.GroupLayout LoginLayout = new javax.swing.GroupLayout(Login.getContentPane());
+        Login.getContentPane().setLayout(LoginLayout);
+        LoginLayout.setHorizontalGroup(
+            LoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(LoginLayout.createSequentialGroup()
+                .addGroup(LoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(LoginLayout.createSequentialGroup()
+                        .addGap(36, 36, 36)
+                        .addGroup(LoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(LoginLayout.createSequentialGroup()
+                        .addGap(130, 130, 130)
+                        .addComponent(jLabel191)))
+                .addContainerGap(40, Short.MAX_VALUE))
+        );
+        LoginLayout.setVerticalGroup(
+            LoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(LoginLayout.createSequentialGroup()
+                .addContainerGap(57, Short.MAX_VALUE)
+                .addComponent(jLabel191)
+                .addGap(38, 38, 38)
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30))
+        );
+
         OptionsCashier.setTitle("Options Cashier");
 
         btnGenerateBill1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -752,6 +871,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
         );
 
         OptionsOwner.setTitle("Options Owner");
+        OptionsOwner.setMinimumSize(new java.awt.Dimension(400, 675));
         OptionsOwner.setUndecorated(true);
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -809,17 +929,21 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/restaurantSalesSystem/images/fondo_ownerOptionsq.jpg"))); // NOI18N
         jLabel2.setToolTipText("");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-80, -90, 490, 463));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 460, 360));
 
         javax.swing.GroupLayout OptionsOwnerLayout = new javax.swing.GroupLayout(OptionsOwner.getContentPane());
         OptionsOwner.getContentPane().setLayout(OptionsOwnerLayout);
         OptionsOwnerLayout.setHorizontalGroup(
             OptionsOwnerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(OptionsOwnerLayout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 468, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         OptionsOwnerLayout.setVerticalGroup(
             OptionsOwnerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(OptionsOwnerLayout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 413, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         FrmStockProducts.setTitle("STOCK");
@@ -4669,8 +4793,8 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
     private void itmMnuOwnerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmMnuOwnerActionPerformed
         this.setVisible(false);
-        FrmLoginScreen frmLoginScreen = new FrmLoginScreen();
-        frmLoginScreen.setVisible(true);
+        Login.setVisible(true);
+        Login.setLocationRelativeTo(null);
     }//GEN-LAST:event_itmMnuOwnerActionPerformed
 
     private void itmSuggestionsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmSuggestionsActionPerformed
@@ -4738,8 +4862,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
     private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
         this.setVisible(false);
-        FrmLoginScreen frmLoginScreen = new FrmLoginScreen();
-        frmLoginScreen.setVisible(true);
+        Login.setVisible(true);
         NoSQL nosql;
         nosql = new MongoManager();
         if (nosql.closeConnection(mongo)) {
@@ -4752,6 +4875,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
     private void btnEditMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditMenuActionPerformed
         
         FrmStockProducts.setVisible(true);
+        this.dispose();
         FrmStockProducts.setLocationRelativeTo(null);
        
     }//GEN-LAST:event_btnEditMenuActionPerformed
@@ -4764,8 +4888,9 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
     private void btnReportSaleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReportSaleActionPerformed
        
-        ReportSale.setVisible(true);
-        ReportSale.setLocationRelativeTo(null);
+       ReportSale.setVisible(true);
+        this.dispose();
+       ReportSale.setLocationRelativeTo(null);
     }//GEN-LAST:event_btnReportSaleActionPerformed
 
     private void btnFindProductsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFindProductsActionPerformed
@@ -4799,9 +4924,9 @@ public class FrmMainScreen extends javax.swing.JFrame {
     }//GEN-LAST:event_btnFindProductsActionPerformed
 
     private void btnReturn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturn2ActionPerformed
-        FrmStockProducts.setVisible(false);
-        FrmOptionsOwner frmOptionsOwner = new FrmOptionsOwner();
-        frmOptionsOwner.setVisible(true);
+       
+        OptionsOwner.setVisible(true);
+        OptionsOwner.setLocationRelativeTo(null);
     }//GEN-LAST:event_btnReturn2ActionPerformed
 
     private void btnAddProduct1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddProduct1ActionPerformed
@@ -5785,7 +5910,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
             PROPINA.setText(String.valueOf(prop));
             TOTALtot.setText(String.valueOf(tot));
 
-            FrmLoginScreen vp = new FrmLoginScreen();
+            
             String c = txtTableNumber.getText();
             numMesa2.setText(c);
             Bill.setVisible(true);
@@ -5913,6 +6038,31 @@ public class FrmMainScreen extends javax.swing.JFrame {
         rsscalelabel.RSScaleLabel.setScaleLabel(jimage5, "src/ec/edu/espe/restaurantSalesSystem/images/sandia.png");
         rsscalelabel.RSScaleLabel.setScaleLabel(jimage6, "src/ec/edu/espe/restaurantSalesSystem/images/Naranjillas.jpg");
     }//GEN-LAST:event_btnJuiceActionPerformed
+
+    static String name;
+    private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
+       
+        if (txtUserName.getText().isEmpty() || txtPassword.getText().isEmpty()) {
+            JOptionPane.showMessageDialog(null, "FILL ALL THE FIELDS");
+        } else if((txtUserName.getText().equals("admin")) && (txtPassword.getText().equals("admin123"))) {
+            name = "admin";
+            JOptionPane.showMessageDialog(null, "Welcome " + name);
+                Login.setVisible(false);
+                OptionsOwner.setVisible(true);
+        }else {
+                JOptionPane.showMessageDialog(null, "Incorrect data, check again.");
+            }
+    }//GEN-LAST:event_btnLoginActionPerformed
+
+    private void btnExit2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExit2ActionPerformed
+        this.setVisible(false);
+        FrmMainScreen frmMainScreen = new FrmMainScreen();
+        frmMainScreen.setVisible(true);
+    }//GEN-LAST:event_btnExit2ActionPerformed
+
+    private void txtUserNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUserNameActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtUserNameActionPerformed
     
 
     /**
@@ -5956,6 +6106,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
     private javax.swing.JFrame FrmStockProducts;
     private javax.swing.JDialog GenerateBill;
     private javax.swing.JLabel IVA;
+    private javax.swing.JFrame Login;
     private javax.swing.JFrame Menu;
     private javax.swing.JFrame MenuBreakfast;
     private javax.swing.JFrame MenuCoffee;
@@ -5989,10 +6140,12 @@ public class FrmMainScreen extends javax.swing.JFrame {
     private javax.swing.JButton btnEditMenu;
     private javax.swing.JButton btnExit;
     private javax.swing.JButton btnExit1;
+    private javax.swing.JButton btnExit2;
     private javax.swing.JButton btnFindProducts;
     private javax.swing.JButton btnGenerateBill;
     private javax.swing.JButton btnGenerateBill1;
     private javax.swing.JButton btnJuice;
+    private javax.swing.JButton btnLogin;
     private javax.swing.JButton btnLunch;
     private javax.swing.JButton btnNumSales;
     private javax.swing.JButton btnOrderCoffee;
@@ -6175,7 +6328,10 @@ public class FrmMainScreen extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel186;
     private javax.swing.JLabel jLabel187;
     private javax.swing.JLabel jLabel188;
+    private javax.swing.JLabel jLabel189;
     private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel190;
+    private javax.swing.JLabel jLabel191;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
@@ -6284,8 +6440,10 @@ public class FrmMainScreen extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
@@ -6470,11 +6628,13 @@ public class FrmMainScreen extends javax.swing.JFrame {
     private javax.swing.JTextField txtNameCashier;
     private javax.swing.JTextField txtNameCostumer;
     private javax.swing.JTextPane txtNumTableSales;
+    private javax.swing.JPasswordField txtPassword;
     private javax.swing.JTextField txtPrice;
     private javax.swing.JTextField txtProducts;
     private javax.swing.JLabel txtSnack;
     private javax.swing.JTextArea txtSuggestions;
     private javax.swing.JTextField txtTableNumber;
+    private javax.swing.JTextField txtUserName;
     private javax.swing.JDialog viewOrder;
     // End of variables declaration//GEN-END:variables
 }
