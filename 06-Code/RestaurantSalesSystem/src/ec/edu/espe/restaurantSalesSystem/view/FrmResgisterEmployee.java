@@ -451,9 +451,9 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
     }//GEN-LAST:event_cmbEmployeeActionPerformed
 
     private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturnActionPerformed
-        FrmOptionsOwner frmOptionsOwner = new FrmOptionsOwner();
+        OptionsOwner optionsOwner = new OptionsOwner();
         this.setVisible(false);
-        frmOptionsOwner.setVisible(true);
+        OptionsOwner.setVisible(true);
         NoSQL nosql;
         nosql = new MongoManager();
         if (nosql.closeConnection(mongo)) {
