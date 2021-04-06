@@ -17,6 +17,7 @@ import ec.edu.espe.restaurantSalesSystem.model.Product;
 import ec.edu.espe.restaurantSalesSystem.utils.MongoManager;
 import ec.edu.espe.restaurantSalesSystem.utils.NoSQL;
 import ec.edu.espe.restaurantsalessystem.model.Bill;
+import java.awt.Menu;
 import javax.swing.JOptionPane;
 import javax.swing.JSpinner;
 import javax.swing.table.DefaultTableModel;
@@ -201,7 +202,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
         btnDeleteProduct1 = new javax.swing.JButton();
         btnViewProducts1 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
-        jScrollPane4 = new javax.swing.JScrollPane();
+        jScrollPane1 = new javax.swing.JScrollPane();
         tblProducts = new javax.swing.JTable();
         jLabel5 = new javax.swing.JLabel();
         ReportSale = new javax.swing.JFrame();
@@ -219,7 +220,6 @@ public class FrmMainScreen extends javax.swing.JFrame {
         products = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         Suggestions = new javax.swing.JDialog();
-        jScrollPane1 = new javax.swing.JScrollPane();
         txtSuggestions = new javax.swing.JTextArea();
         jLabel3 = new javax.swing.JLabel();
         jSuggestions = new javax.swing.JLabel();
@@ -236,7 +236,6 @@ public class FrmMainScreen extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jButton28 = new javax.swing.JButton();
         tablenumber = new javax.swing.JLabel();
-        jScrollPane2 = new javax.swing.JScrollPane();
         txtNumTableSales = new javax.swing.JTextPane();
         Menu = new javax.swing.JFrame();
         btnDessert = new javax.swing.JButton();
@@ -649,14 +648,14 @@ public class FrmMainScreen extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jLabel178 = new javax.swing.JLabel();
         btnReturn4 = new javax.swing.JButton();
-        jScrollPane3 = new javax.swing.JScrollPane();
+        jScrollPane2 = new javax.swing.JScrollPane();
         datosTable = new javax.swing.JTable();
         jLabel179 = new javax.swing.JLabel();
         btnSendOrder = new javax.swing.JButton();
         numMesa = new javax.swing.JTextField();
         viewOrder = new javax.swing.JDialog();
         jPanel9 = new javax.swing.JPanel();
-        jScrollPane5 = new javax.swing.JScrollPane();
+        jScrollPane3 = new javax.swing.JScrollPane();
         datosTable2 = new javax.swing.JTable();
         btnGenerateBill = new javax.swing.JButton();
         jLabel180 = new javax.swing.JLabel();
@@ -669,7 +668,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
         btngenerateBill = new javax.swing.JButton();
         Bill = new javax.swing.JDialog();
         jPanel10 = new javax.swing.JPanel();
-        jScrollPane6 = new javax.swing.JScrollPane();
+        jScrollPane5 = new javax.swing.JScrollPane();
         factTable = new javax.swing.JTable();
         jPanel11 = new javax.swing.JPanel();
         btnCellphoneCostumer = new javax.swing.JTextField();
@@ -905,10 +904,10 @@ public class FrmMainScreen extends javax.swing.JFrame {
                 tblProductsMouseClicked(evt);
             }
         });
-        jScrollPane4.setViewportView(tblProducts);
+        jScrollPane1.setViewportView(tblProducts);
 
-        jPanel6.add(jScrollPane4);
-        jScrollPane4.setBounds(140, 240, 380, 230);
+        jPanel6.add(jScrollPane1);
+        jScrollPane1.setBounds(140, 240, 380, 230);
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/restaurantSalesSystem/images/fondo-product_1.jpg"))); // NOI18N
         jPanel6.add(jLabel5);
@@ -1068,7 +1067,6 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
         txtSuggestions.setColumns(20);
         txtSuggestions.setRows(5);
-        jScrollPane1.setViewportView(txtSuggestions);
 
         jLabel3.setFont(new java.awt.Font("Baskerville Old Face", 3, 18)); // NOI18N
         jLabel3.setText("SUGGESTIONS:");
@@ -1100,16 +1098,16 @@ public class FrmMainScreen extends javax.swing.JFrame {
             .addGroup(SuggestionsLayout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addComponent(jSuggestions, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
-                .addGroup(SuggestionsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SuggestionsLayout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SuggestionsLayout.createSequentialGroup()
-                        .addComponent(btnReturn)
-                        .addGap(79, 79, 79)
-                        .addComponent(btnSend)
-                        .addGap(39, 39, 39))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
+                .addComponent(btnReturn)
+                .addGap(79, 79, 79)
+                .addComponent(btnSend)
+                .addGap(39, 39, 39))
+            .addGroup(SuggestionsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(SuggestionsLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(txtSuggestions, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
         SuggestionsLayout.setVerticalGroup(
             SuggestionsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1118,9 +1116,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
                 .addComponent(jLabel3)
                 .addGroup(SuggestionsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(SuggestionsLayout.createSequentialGroup()
-                        .addGap(34, 34, 34)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(SuggestionsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnSend)
                             .addComponent(btnReturn)))
@@ -1128,6 +1124,11 @@ public class FrmMainScreen extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jSuggestions, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(21, 21, 21))
+            .addGroup(SuggestionsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(SuggestionsLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(txtSuggestions, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
 
         Suggestions.getAccessibleContext().setAccessibleParent(null);
@@ -1201,8 +1202,6 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
         tablenumber.setText("TABLE NUMBER:");
 
-        jScrollPane2.setViewportView(txtNumTableSales);
-
         javax.swing.GroupLayout SalesLayout = new javax.swing.GroupLayout(Sales.getContentPane());
         Sales.getContentPane().setLayout(SalesLayout);
         SalesLayout.setHorizontalGroup(
@@ -1215,25 +1214,23 @@ public class FrmMainScreen extends javax.swing.JFrame {
                     .addGroup(SalesLayout.createSequentialGroup()
                         .addGap(89, 89, 89)
                         .addComponent(tablenumber)
-                        .addGap(30, 30, 30)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addComponent(txtNumTableSales, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(SalesLayout.createSequentialGroup()
                         .addGap(145, 145, 145)
                         .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(154, Short.MAX_VALUE))
+                .addContainerGap(168, Short.MAX_VALUE))
         );
         SalesLayout.setVerticalGroup(
             SalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SalesLayout.createSequentialGroup()
                 .addGap(41, 41, 41)
                 .addComponent(jLabel8)
-                .addGap(61, 61, 61)
+                .addGap(69, 69, 69)
                 .addGroup(SalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(SalesLayout.createSequentialGroup()
-                        .addGap(8, 8, 8)
-                        .addComponent(tablenumber)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 86, Short.MAX_VALUE)
+                    .addComponent(tablenumber)
+                    .addComponent(txtNumTableSales, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 80, Short.MAX_VALUE)
                 .addComponent(jButton28, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(53, 53, 53))
         );
@@ -4088,9 +4085,9 @@ public class FrmMainScreen extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane3.setViewportView(datosTable);
+        jScrollPane2.setViewportView(datosTable);
 
-        jPanel3.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 200, 400, 230));
+        jPanel3.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 200, 400, 230));
 
         jLabel179.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
         jLabel179.setText("ORDER");
@@ -4152,10 +4149,10 @@ public class FrmMainScreen extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane5.setViewportView(datosTable2);
+        jScrollPane3.setViewportView(datosTable2);
 
-        jPanel9.add(jScrollPane5);
-        jScrollPane5.setBounds(110, 60, 430, 300);
+        jPanel9.add(jScrollPane3);
+        jScrollPane3.setBounds(110, 60, 430, 300);
 
         btnGenerateBill.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         btnGenerateBill.setText("GENERAR FACTURA");
@@ -4275,11 +4272,11 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
             },
             new String [] {
-                "DESCRIPCION", "            PRICE", "  QUANTITY", "         SUBTOTAL"
+                "DESCRIPTION", "            PRICE", "  QUANTITY", "         SUBTOTAL"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.String.class, java.lang.Double.class, java.lang.Integer.class, java.lang.Double.class
+                java.lang.String.class, java.lang.Float.class, java.lang.Integer.class, java.lang.Float.class
             };
             boolean[] canEdit = new boolean [] {
                 false, false, false, false
@@ -4293,11 +4290,10 @@ public class FrmMainScreen extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        factTable.setSelectionMode();
-        jScrollPane6.setViewportView(factTable);
+        jScrollPane5.setViewportView(factTable);
 
-        jPanel10.add(jScrollPane6);
-        jScrollPane6.setBounds(50, 330, 590, 150);
+        jPanel10.add(jScrollPane5);
+        jScrollPane5.setBounds(50, 330, 590, 150);
 
         jPanel11.setBackground(new java.awt.Color(255, 255, 255));
         jPanel11.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(204, 204, 204), null, null));
@@ -4753,7 +4749,6 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
     private void btnEditMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditMenuActionPerformed
         FrmStockProducts.setVisible(true);
-        this.dispose();
         FrmStockProducts.setLocationRelativeTo(null);
     }//GEN-LAST:event_btnEditMenuActionPerformed
 
@@ -4764,7 +4759,8 @@ public class FrmMainScreen extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRegisterEmployeeActionPerformed
 
     private void btnReportSaleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReportSaleActionPerformed
-        // TODO add your handling code here:
+          ReportSale.setVisible(true);
+        ReportSale.setLocationRelativeTo(null);
     }//GEN-LAST:event_btnReportSaleActionPerformed
 
     private void btnFindProductsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFindProductsActionPerformed
@@ -5155,8 +5151,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
     private void btnReturnBreakfastActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturnBreakfastActionPerformed
         MenuBreakfast.setVisible(false);
-        FrmMenu frmMenu = new FrmMenu();
-        frmMenu.setVisible(true);
+        Menu.setVisible(true);
     }//GEN-LAST:event_btnReturnBreakfastActionPerformed
 
     private void btnOrderLunchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOrderLunchActionPerformed
@@ -5180,8 +5175,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
     private void btnReturnLunchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturnLunchActionPerformed
         MenuLunch.setVisible(false);
-        FrmMenu frmOptionsMenuCustomer = new FrmMenu();
-        frmOptionsMenuCustomer.setVisible(true);
+        Menu.setVisible(true);
     }//GEN-LAST:event_btnReturnLunchActionPerformed
 
     private void btnAddOrderSnackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddOrderSnackActionPerformed
@@ -5205,8 +5199,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
     private void bntReturnSnackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntReturnSnackActionPerformed
         MenuSnack.setVisible(false);
-        FrmMenu frmOptionsMenuCustomer = new FrmMenu();
-        frmOptionsMenuCustomer.setVisible(true);
+        Menu.setVisible(true);
     }//GEN-LAST:event_bntReturnSnackActionPerformed
 
     private void btnReturnCoffeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturnCoffeeActionPerformed
@@ -5326,8 +5319,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
     private void btnReturnDessertActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturnDessertActionPerformed
         MenuDessert.setVisible(false);
-        FrmMenu frmOptionsMenuCustomer = new FrmMenu();
-        frmOptionsMenuCustomer.setVisible(true);
+        Menu.setVisible(true);
     }//GEN-LAST:event_btnReturnDessertActionPerformed
 
     private void btnReturn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturn4ActionPerformed
@@ -5492,9 +5484,8 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
         limpiarTabla(datosTable);
         numMesa.getText();
-
-        FrmMenu frmMenu = new FrmMenu();
-        frmMenu.setVisible(true);
+        
+        Menu.setVisible(true);
 
         viewOrder.setVisible(false);
 
@@ -5640,6 +5631,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
     }//GEN-LAST:event_txtTableNumberKeyTyped
 
     private void btngenerateBillActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btngenerateBillActionPerformed
+        
         //Bill
         float contTotal = (float) 0.0;
         int c1 = Integer.parseInt(numMesa.getText()), c2 = Integer.parseInt(txtTableNumber.getText());
@@ -5776,9 +5768,9 @@ public class FrmMainScreen extends javax.swing.JFrame {
             contTotal = generateBill(spiValor314, " Big de tarta de queso Coco, caramelo y almendra ", (float) 25.50, contTotal);
 
             //iva prop y total a labels factura
-            Double iva = contTotal * 0.12;
-            Double prop = contTotal * 0.05;
-            Double tot = iva + prop + contTotal;
+            float iva = (float) (contTotal * 0.12);
+            float prop = (float) (contTotal * 0.05);
+            float tot = iva + prop + contTotal;
             IVA.setText(String.valueOf(iva));
             PROPINA.setText(String.valueOf(prop));
             TOTALtot.setText(String.valueOf(tot));
@@ -5816,7 +5808,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
     }//GEN-LAST:event_txtIdCostumerKeyTyped
 
     private void txtNameCostumerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNameCostumerActionPerformed
-        JOptionPane.showMessageDialog(null, "El pago se ha realizado satisfactoriamente.");
+        JOptionPane.showMessageDialog(null, "The payment has been made successfully.");
         txtIdCostumer.setText("");
         txtNameCostumer.setText("");
         btnCellphoneCostumer.setText("");
@@ -5879,8 +5871,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
     private void btnReturnOptionDrinkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturnOptionDrinkActionPerformed
         OptionsDrink.setVisible(false);
-        FrmMenu frmOptionsMenuCustomer = new FrmMenu();
-        frmOptionsMenuCustomer.setVisible(true);
+        Menu.setVisible(true);
     }//GEN-LAST:event_btnReturnOptionDrinkActionPerformed
 
     private void btnCoffeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCoffeeActionPerformed
@@ -6297,9 +6288,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
-    private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator10;
     private javax.swing.JSeparator jSeparator11;
