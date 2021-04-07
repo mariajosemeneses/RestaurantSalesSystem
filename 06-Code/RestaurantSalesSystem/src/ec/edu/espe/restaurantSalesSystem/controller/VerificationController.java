@@ -28,20 +28,18 @@ public class VerificationController {
 
         verification = gson.fromJson(readLine, Verification.class);
 
-//        if (user.isEmpty() || password.isEmpty()) {
-//            JOptionPane.showMessageDialog(null, "FILL ALL THE FIELDS");
-//        } else if (user.equals(verification.getUser()) == false && password.equals(verification.getPassword()) == false) {
-//            JOptionPane.showMessageDialog(null, "User and Password are incorrect");
-//        } else if (user.equals(verification.getUser()) == false) {
-//            JOptionPane.showMessageDialog(null, "User incorrect");
-//        } else if (password.equals(verification.getPassword()) == false) {
-//            JOptionPane.showMessageDialog(null, "Password incorrect");
-//        } else {
-//            JOptionPane.showMessageDialog(null, "Welcome " + user);
-//            FrmOptionsOwner frmOptions = new FrmOptionsOwner();
-//            frmOptions.setVisible(true);
-//            logged = true;
-//        }
+        if (user.isEmpty() || password.isEmpty()) {
+            JOptionPane.showMessageDialog(null, "FILL ALL THE FIELDS");
+        } else if (user.equals(verification.getUser()) == false && password.equals(verification.getPassword()) == false) {
+            JOptionPane.showMessageDialog(null, "User and Password are incorrect");
+        } else if (user.equals(verification.getUser()) == false) {
+            JOptionPane.showMessageDialog(null, "User incorrect");
+        } else if (password.equals(verification.getPassword()) == false) {
+            JOptionPane.showMessageDialog(null, "Password incorrect");
+        } else {
+            JOptionPane.showMessageDialog(null, "Welcome " + user);
+            logged = true;
+        }
 
         return logged;
 
