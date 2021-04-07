@@ -5,115 +5,192 @@
  */
 package ec.edu.espe.restaurantSalesSystem.model;
 
+import java.util.ArrayList;
+import junit.framework.Assert;
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
  *
- * @author Group 3
+ * @author DAVID
  */
 public class BreakfastTest {
-
+    
     public BreakfastTest() {
     }
-
-    /**
-     * Test of getContinental method, of class Breakfast.
-     */
-    @Test
-    public void testGetContinental() {
-        System.out.println("getContinental");
-        Breakfast instance = new Breakfast("", "", 0, 0, "", 0, 0);
-        String expResult = "coffee" + ", bread " + "and Fruits";
-        String result = instance.getContinental();
-        assertEquals(expResult, result, result);
-
+    
+    @BeforeClass
+    public static void setUpClass() {
+    }
+    
+    @AfterClass
+    public static void tearDownClass() {
+    }
+    
+    @Before
+    public void setUp() {
+    }
+    
+    @After
+    public void tearDown() {
     }
 
     /**
-     * Test of setContinental method, of class Breakfast.
+     * Test of getDrinks method, of class Breakfast.
      */
     @Test
-    public void testSetContinental() {
-        System.out.println("setContinental");
-        String continental = "coffee, bread and Fruits";
-        Breakfast instance = new Breakfast("", "", 0, 0, "", 0, 0);
-        instance.setContinental(continental);
-
+    public void testGetDrinks() {
+        System.out.println("getDrinks");
+        ArrayList<String> drinks = new ArrayList<>();
+        Assert.assertEquals(0 , drinks.size());
+        drinks.add("1. Cafe en agua");
+        drinks.add("2. Cafe en leche");
+        Assert.assertEquals(2 , drinks.size());
+    
     }
 
     /**
-     * Test of getFull method, of class Breakfast.
+     * Test of setDrinks method, of class Breakfast.
      */
     @Test
-    public void testGetFull() {
-        System.out.println("getFull");
-        Breakfast instance = new Breakfast("", "", 0, 0, "", 0, 0);
-        String expResult = "Rice with chicken, coffee and Bolon";
-        String result = instance.getFull();
-        assertEquals(expResult, result, result);
-
+    public void testSetDrinks() {
+        System.out.println("setDrinks");
+        ArrayList<String> drinks = new ArrayList<>();
+        Assert.assertEquals(0 , drinks.size());
+        drinks.add("1. Te con limon");
+        drinks.add("2. Leche");
+        Assert.assertEquals(2 , drinks.size());
     }
 
     /**
-     * Test of setFull method, of class Breakfast.
+     * Test of getJuices method, of class Breakfast.
      */
     @Test
-    public void testSetFull() {
-        System.out.println("setFull");
-        String full = "Rice with chicken, coffee and Bolon";
-        Breakfast instance = new Breakfast("", "", 0, 0, "", 0, 0);
-        instance.setFull(full);
-
+    public void testGetJuices() {
+        System.out.println("getJuices");
+        ArrayList<String> juices = new ArrayList<>();
+        Assert.assertEquals(0 , juices.size());
+        juices.add("1. Jugo de mora");
+        juices.add("2. Jugo de naranjilla");
+        Assert.assertEquals(2 , juices.size());
     }
 
     /**
-     * Test of getPriceContinental method, of class Breakfast.
+     * Test of setJuices method, of class Breakfast.
      */
     @Test
-    public void testGetPriceContinental() {
-        System.out.println("getPriceContinental");
-        Breakfast instance = new Breakfast("", "", 0, 0, "", 0, 0);
-        float expResult = 2.5F;
-        float result = instance.getPriceContinental();
-        assertEquals(expResult, result, 2.5);
-        
+    public void testSetJuices() {
+        System.out.println("setJuices");
+        ArrayList<String> juices = new ArrayList<>();
+        Assert.assertEquals(0 , juices.size());
+        juices.add("1. Jugo de tomate de arbol");
+        Assert.assertEquals(1 , juices.size());
     }
 
     /**
-     * Test of setPriceContinental method, of class Breakfast.
+     * Test of getBreads method, of class Breakfast.
      */
     @Test
-    public void testSetPriceContinental() {
-        System.out.println("setPriceContinental");
-        float priceContinental = 2.5F;
-        Breakfast instance = new Breakfast("", "", 0, 0, "", 0, 0);
-        instance.setPriceContinental(priceContinental);
-        
+    public void testGetBreads() {
+        System.out.println("getBreads");
+        ArrayList<String> breads = new ArrayList<>();
+        Assert.assertEquals(0 , breads.size());
+        breads.add("1. Simple");
+        breads.add("2. Pan con jamon");
+        Assert.assertEquals(2 , breads.size());
     }
 
     /**
-     * Test of getPriceFull method, of class Breakfast.
+     * Test of setBreads method, of class Breakfast.
      */
     @Test
-    public void testGetPriceFull() {
-        System.out.println("getPriceFull");
-        Breakfast instance = new Breakfast("", "", 0, 0, "", 0, 0);
-        float expResult = 5.5F;
-        float result = instance.getPriceFull();
-        assertEquals(expResult, result, 5.5);
-
+    public void testSetBreads() {
+        System.out.println("setBreads");
+        ArrayList<String> breads = new ArrayList<>();
+        Assert.assertEquals(0 , breads.size());
+        breads.add("1. Pan con mortadela");
+        breads.add("2. Pan integral");
+        Assert.assertEquals(2 , breads.size());
     }
 
     /**
-     * Test of setPriceFull method, of class Breakfast.
+     * Test of getEggs method, of class Breakfast.
      */
     @Test
-    public void testSetPriceFull() {
-        System.out.println("setPriceFull");
-        float priceFull = 5.5F;
-        Breakfast instance = new Breakfast("", "", 0, 0, "", 0, 0);
-        instance.setPriceFull(priceFull);
+    public void testGetEggs() {
+        System.out.println("getEggs");
+        ArrayList<String> eggs = new ArrayList<>();
+        Assert.assertEquals(0 , eggs.size());
+        eggs.add("1. Huevos cocidos");
+        eggs.add("2. Huevos tibios");
+        eggs.add("2. Torta de huevo");
+        Assert.assertEquals(3 , eggs.size());
     }
 
+    /**
+     * Test of setEggs method, of class Breakfast.
+     */
+    @Test
+    public void testSetEggs() {
+        System.out.println("setEggs");
+        ArrayList<String> eggs = new ArrayList<>();
+        Assert.assertEquals(0 , eggs.size());
+        eggs.add("1. Huevos fritos");
+        eggs.add("2. Huevos revueltos");
+        Assert.assertEquals(2 , eggs.size());
+    }
+
+    /**
+     * Test of getFruits method, of class Breakfast.
+     */
+    @Test
+    public void testGetFruits() {
+        System.out.println("getFruits");
+        ArrayList<String> fruits = new ArrayList<>();
+        Assert.assertEquals(0 , fruits.size());
+        fruits.add("1. Manzana");
+        fruits.add("2. Pera");
+        Assert.assertEquals(2 , fruits.size());
+    }
+
+    /**
+     * Test of setFruits method, of class Breakfast.
+     */
+    @Test
+    public void testSetFruits() {
+        System.out.println("setFruits");
+        ArrayList<String> fruits = new ArrayList<>();
+        Assert.assertEquals(0 , fruits.size());
+        fruits.add("1. Banano");
+        Assert.assertEquals(1 , fruits.size());
+    }
+
+    /**
+     * Test of getStews method, of class Breakfast.
+     */
+    @Test
+    public void testGetStews() {
+        System.out.println("getStews");
+        ArrayList<String> stews = new ArrayList<>();
+        Assert.assertEquals(0 , stews.size());
+        stews.add("1. Estofado de carne");
+        Assert.assertEquals(1 , stews.size());
+    }
+
+    /**
+     * Test of setStews method, of class Breakfast.
+     */
+    @Test
+    public void testSetStews() {
+        System.out.println("setStews");
+        ArrayList<String> stews = new ArrayList<>();
+        Assert.assertEquals(0 , stews.size());
+        stews.add("1. Estofado de pollo");
+        Assert.assertEquals(1 , stews.size());
+    }
+    
 }

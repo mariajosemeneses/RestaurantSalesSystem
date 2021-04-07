@@ -15,7 +15,7 @@ public class Verification {
     private String user;
     private String password;
 
-    Verification(String user, String password) {
+    private Verification(String user, String password) {
         this.user = user;
         this.password = password;
     }

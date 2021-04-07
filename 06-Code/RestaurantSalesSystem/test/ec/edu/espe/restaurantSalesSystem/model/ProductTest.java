@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Maria José Meneses
+ * @author Group 3
  */
 public class ProductTest {
     
@@ -38,25 +38,57 @@ public class ProductTest {
     }
 
     /**
-     * Test of getName method, of class Product.
+     * Test of getTypeOfProduct method, of class Product.
      */
     @Test
-    public void testGetName() {
-        System.out.println("getName");
-        Product instance = new ProductImpl();
-        String expResult = "Frutillas con crema";
-        String result = instance.getName();
+    public void testGetTypeOfProduct() {
+        System.out.println("getTypeOfProduct");
+        Product instance = null;
+        String expResult = "";
+        String result = instance.getTypeOfProduct();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
-     * Test of setName method, of class Product.
+     * Test of setTypeOfProduct method, of class Product.
      */
     @Test
-    public void testSetName() {
-        System.out.println("setName");
-        String name = "Frutillas con crema";
-        Product instance = new ProductImpl();
-        instance.setName(name);
+    public void testSetTypeOfProduct() {
+        System.out.println("setTypeOfProduct");
+        String typeOfProduct = "";
+        Product instance = null;
+        instance.setTypeOfProduct(typeOfProduct);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of getDescription method, of class Product.
+     */
+    @Test
+    public void testGetDescription() {
+        System.out.println("getDescription");
+        Product instance = null;
+        String expResult = "";
+        String result = instance.getDescription();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of setDescription method, of class Product.
+     */
+    @Test
+    public void testSetDescription() {
+        System.out.println("setDescription");
+        String description = "";
+        Product instance = null;
+        instance.setDescription(description);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -65,9 +97,12 @@ public class ProductTest {
     @Test
     public void testGetPrice() {
         System.out.println("getPrice");
-        Product instance = new ProductImpl();
-        float expResult = 1.50F;
+        Product instance = null;
+        float expResult = 0.0F;
         float result = instance.getPrice();
+        assertEquals(expResult, result, 0.0);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -76,34 +111,11 @@ public class ProductTest {
     @Test
     public void testSetPrice() {
         System.out.println("setPrice");
-        float price = 1.50F;
-        Product instance = new ProductImpl();
+        float price = 0.0F;
+        Product instance = null;
         instance.setPrice(price);
-    }
-
-    /**
-     * Test of getQuantity method, of class Product.
-     */
-    @Test
-    public void testGetQuantity() {
-        System.out.println("getQuantity");
-        Product instance = new ProductImpl();
-        int expResult = 2;
-        int result = instance.getQuantity();
-    }
-
-    /**
-     * Test of setQuantity method, of class Product.
-     */
-    @Test
-    public void testSetQuantity() {
-        System.out.println("setQuantity");
-        int quantity = 2;
-        Product instance = new ProductImpl();
-        instance.setQuantity(quantity);
-    }
-
-    public class ProductImpl extends Product {
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
     
 }

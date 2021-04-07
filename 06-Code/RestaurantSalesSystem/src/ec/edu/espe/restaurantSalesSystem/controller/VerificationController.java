@@ -8,7 +8,6 @@ package ec.edu.espe.restaurantSalesSystem.controller;
 import com.google.gson.Gson;
 import ec.edu.espe.restaurantSalesSystem.utils.FileManager;
 import ec.edu.espe.restaurantSalesSystem.utils.Persistence;
-import ec.edu.espe.restaurantSalesSystem.view.FrmOptionsOwner;
 import javax.swing.JOptionPane;
 
 /**
@@ -39,8 +38,6 @@ public class VerificationController {
             JOptionPane.showMessageDialog(null, "Password incorrect");
         } else {
             JOptionPane.showMessageDialog(null, "Welcome " + user);
-            FrmOptionsOwner frmOptions = new FrmOptionsOwner();
-            frmOptions.setVisible(true);
             logged = true;
         }
 
