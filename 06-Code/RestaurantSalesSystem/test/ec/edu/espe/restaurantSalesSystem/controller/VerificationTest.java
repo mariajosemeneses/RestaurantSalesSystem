@@ -38,15 +38,32 @@ public class VerificationTest {
     }
 
     /**
+     * Test of getInstance method, of class Verification.
+     */
+    @Test
+    public void testGetInstance() {
+        System.out.println("getInstance");
+        String user = "";
+        String password = "";
+        Verification expResult = null;
+        Verification result = Verification.getInstance(user, password);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
      * Test of getUser method, of class Verification.
      */
     @Test
     public void testGetUser() {
         System.out.println("getUser");
-        Verification instance = new Verification("admin","");
-        String expResult = "admin";
+        Verification instance = null;
+        String expResult = "";
         String result = instance.getUser();
         assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -55,9 +72,11 @@ public class VerificationTest {
     @Test
     public void testSetUser() {
         System.out.println("setUser");
-        String user = "admin";
-        Verification instance = new Verification(user,"");
+        String user = "";
+        Verification instance = null;
         instance.setUser(user);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -66,10 +85,12 @@ public class VerificationTest {
     @Test
     public void testGetPassword() {
         System.out.println("getPassword");
-        Verification instance = new Verification("","admin123");
-        String expResult = "admin123";
+        Verification instance = null;
+        String expResult = "";
         String result = instance.getPassword();
         assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -78,9 +99,11 @@ public class VerificationTest {
     @Test
     public void testSetPassword() {
         System.out.println("setPassword");
-        String password = "admin123";
-        Verification instance = new Verification("",password);
+        String password = "";
+        Verification instance = null;
         instance.setPassword(password);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
     
 }
