@@ -47,7 +47,7 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
         jScrollPane4 = new javax.swing.JScrollPane();
         tblEmployee = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
-        btnReturn = new javax.swing.JButton();
+        btnExit = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         employee = new javax.swing.JLabel();
         txtName = new javax.swing.JTextField();
@@ -94,10 +94,10 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Perpetua Titling MT", 0, 18)); // NOI18N
         jLabel1.setText("Register Employee");
 
-        btnReturn.setText("Return");
-        btnReturn.addActionListener(new java.awt.event.ActionListener() {
+        btnExit.setText("Exit");
+        btnExit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnReturnActionPerformed(evt);
+                btnExitActionPerformed(evt);
             }
         });
 
@@ -300,7 +300,7 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(btnReturn)
+                .addComponent(btnExit)
                 .addGap(60, 60, 60))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
@@ -373,7 +373,7 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
                         .addGap(54, 54, 54)))
                 .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
-                .addComponent(btnReturn)
+                .addComponent(btnExit)
                 .addContainerGap())
         );
 
@@ -450,10 +450,10 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
 
     }//GEN-LAST:event_cmbEmployeeActionPerformed
 
-    private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturnActionPerformed
-        OptionsOwner optionsOwner = new OptionsOwner();
+    private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
+        FrmMainScreen frmMainScreen = new FrmMainScreen();
         this.setVisible(false);
-        OptionsOwner.setVisible(true);
+        frmMainScreen.setVisible(true);
         NoSQL nosql;
         nosql = new MongoManager();
         if (nosql.closeConnection(mongo)) {
@@ -461,7 +461,7 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
         } else {
             System.out.println("\nCONNECTION COULD NOT BE CLOSED");
         }
-    }//GEN-LAST:event_btnReturnActionPerformed
+    }//GEN-LAST:event_btnExitActionPerformed
 
     private void txtAddressActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAddressActionPerformed
         // TODO add your handling code here:
@@ -692,8 +692,8 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
     private javax.swing.JButton btnClean;
     private javax.swing.JButton btnDelete;
     private javax.swing.JButton btnEdit;
+    private javax.swing.JButton btnExit;
     private javax.swing.JButton btnGenerate;
-    private javax.swing.JButton btnReturn;
     private javax.swing.JButton btnSave;
     private javax.swing.JButton btnView;
     private javax.swing.JComboBox<String> cmbEmployee;
