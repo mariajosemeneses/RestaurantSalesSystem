@@ -11,6 +11,7 @@ import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
 import com.mongodb.DBObject;
 import com.mongodb.MongoClient;
+import ec.edu.espe.restaurantSalesSystem.controller.CashierController;
 import ec.edu.espe.restaurantSalesSystem.controller.OwnerController;
 import ec.edu.espe.restaurantSalesSystem.controller.SuggestionController;
 import ec.edu.espe.restaurantSalesSystem.controller.Verification;
@@ -20,7 +21,6 @@ import ec.edu.espe.restaurantSalesSystem.utils.MongoManager;
 import ec.edu.espe.restaurantSalesSystem.utils.NoSQL;
 import ec.edu.espe.restaurantsalessystem.model.Bill;
 import java.awt.Image;
-import java.awt.Menu;
 import javax.swing.JOptionPane;
 import javax.swing.JSpinner;
 import javax.swing.table.DefaultTableModel;
@@ -32,7 +32,6 @@ import javax.swing.JButton;
 import javax.swing.JTable;
 import javax.swing.SpinnerNumberModel;
 
-
 /**
  *
  * @author Grupo 3
@@ -42,9 +41,9 @@ public class FrmMainScreen extends javax.swing.JFrame {
     MongoManager mongoManager = new MongoManager();
     String URL = "mongodb+srv://unitedByCode:group3@data.j0bvg.mongodb.net/<dbname>?retryWrites=true&w=majority";
     MongoClient mongo = mongoManager.openConnection(URL);
-    
+
     int contador = 0;
-    int suma = 0;
+    double suma = 0;
 
     /**
      * Creates new form FrmMainScreen1
@@ -54,7 +53,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
         this.setLocationRelativeTo(null);
         rsscalelabel.RSScaleLabel.setScaleLabel(jlogo, "src/ec/edu/espe/restaurantSalesSystem/images/logo.jpg");
-        
+
         validationSpinner(spiValor201);
         validationSpinner(spiValor202);
         validationSpinner(spiValor203);
@@ -175,7 +174,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
         validationSpinner(spiValor312);
         validationSpinner(spiValor313);
         validationSpinner(spiValor314);
-    
+
     }
 
     /**
@@ -685,7 +684,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
         jScrollPane5 = new javax.swing.JScrollPane();
         factTable = new javax.swing.JTable();
         jPanel11 = new javax.swing.JPanel();
-        btnCellphoneCostumer = new javax.swing.JTextField();
+        txtCellphoneCostumer = new javax.swing.JTextField();
         txtIdCostumer = new javax.swing.JTextField();
         jLabel182 = new javax.swing.JLabel();
         jLabel183 = new javax.swing.JLabel();
@@ -4406,13 +4405,13 @@ public class FrmMainScreen extends javax.swing.JFrame {
         jPanel11.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(204, 204, 204), null, null));
         jPanel11.setLayout(null);
 
-        btnCellphoneCostumer.addKeyListener(new java.awt.event.KeyAdapter() {
+        txtCellphoneCostumer.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                btnCellphoneCostumerKeyTyped(evt);
+                txtCellphoneCostumerKeyTyped(evt);
             }
         });
-        jPanel11.add(btnCellphoneCostumer);
-        btnCellphoneCostumer.setBounds(110, 70, 160, 20);
+        jPanel11.add(txtCellphoneCostumer);
+        txtCellphoneCostumer.setBounds(110, 70, 160, 20);
 
         txtIdCostumer.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -4694,7 +4693,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-    
+
     //Validation Spinner
     public static void validationSpinner(JSpinner spinner) {
         SpinnerNumberModel nm = new SpinnerNumberModel();
@@ -4703,14 +4702,16 @@ public class FrmMainScreen extends javax.swing.JFrame {
         nm.setStepSize(1);
         spinner.setModel(nm);
     }
-    public Icon setIcon(String url, JButton button){
+
+    public Icon setIcon(String url, JButton button) {
         ImageIcon icon = new ImageIcon(getClass().getResource(url));
-        
+
         int width = button.getWidth();
         int height = button.getHeight();
-        ImageIcon icono = new ImageIcon(icon.getImage().getScaledInstance(width, height,Image.SCALE_DEFAULT));
+        ImageIcon icono = new ImageIcon(icon.getImage().getScaledInstance(width, height, Image.SCALE_DEFAULT));
         return icono;
     }
+
     //ADD ORDER
     public void addOrder(JSpinner spinner, String product, float price) {
         DefaultTableModel model = (DefaultTableModel) datosTable.getModel();
@@ -4734,8 +4735,8 @@ public class FrmMainScreen extends javax.swing.JFrame {
             }
         }
     }
-    
-     //GENERATE BILL
+
+    //GENERATE BILL
     public float generateBill(JSpinner spinner, String product, float price, float contTotal) {
 
         int cant = spinner.getValue().hashCode();
@@ -4760,6 +4761,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
         return contTotal;
     }
+
     void limpiarTabla(JTable table) {
         DefaultTableModel model = (DefaultTableModel) table.getModel();
         model.setRowCount(0);
@@ -4772,8 +4774,8 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
     private void itmMnuCashierActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmMnuCashierActionPerformed
         this.setVisible(false);
-       GenerateBill.setVisible(true);
-       GenerateBill.setLocationRelativeTo(null);
+        GenerateBill.setVisible(true);
+        GenerateBill.setLocationRelativeTo(null);
     }//GEN-LAST:event_itmMnuCashierActionPerformed
 
     private void itmMnuExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmMnuExitActionPerformed
@@ -4796,7 +4798,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
     private void btnSendActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSendActionPerformed
         String suggestion = txtSuggestions.getText();
-        
+
         if (suggestion.isEmpty()) {
             JOptionPane.showMessageDialog(null, "FILL ALL THE FIELDS");
         } else {
@@ -4867,7 +4869,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
         FrmStockProducts.setVisible(true);
         this.dispose();
         FrmStockProducts.setLocationRelativeTo(null);
-       
+
     }//GEN-LAST:event_btnEditMenuActionPerformed
 
     private void btnRegisterEmployeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegisterEmployeeActionPerformed
@@ -4878,11 +4880,11 @@ public class FrmMainScreen extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRegisterEmployeeActionPerformed
 
     private void btnReportSaleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReportSaleActionPerformed
-       OptionsOwner.setVisible(false);
-       ReportSale.setVisible(true);
-       ReportSale.setLocationRelativeTo(null);
-       
-     // btnNumSales.setIcon(setIcon("src/ec/edu/espe/restaurantSalesSystem/images/reportSale.jpg",btnNumSales));
+        OptionsOwner.setVisible(false);
+        ReportSale.setVisible(true);
+        ReportSale.setLocationRelativeTo(null);
+
+        // btnNumSales.setIcon(setIcon("src/ec/edu/espe/restaurantSalesSystem/images/reportSale.jpg",btnNumSales));
     }//GEN-LAST:event_btnReportSaleActionPerformed
 
     private void btnFindProductsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFindProductsActionPerformed
@@ -4916,7 +4918,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
     }//GEN-LAST:event_btnFindProductsActionPerformed
 
     private void btnReturn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturn2ActionPerformed
-       
+
         OptionsOwner.setVisible(true);
         OptionsOwner.setLocationRelativeTo(null);
     }//GEN-LAST:event_btnReturn2ActionPerformed
@@ -4968,30 +4970,30 @@ public class FrmMainScreen extends javax.swing.JFrame {
         float price = Float.parseFloat(txtPrice.getText());
 
         String dataToSave = "Do you want to save this information?: \n Procustc" + "\nType Of Product: " + typeProduct
-        + "\nDescription: " + description + "\nPrice: " + txtPrice.getText();
+                + "\nDescription: " + description + "\nPrice: " + txtPrice.getText();
 
         int selection = JOptionPane.showConfirmDialog(null, dataToSave, "Product added successfully",
-            JOptionPane.YES_NO_CANCEL_OPTION);
+                JOptionPane.YES_NO_CANCEL_OPTION);
 
         switch (selection) {
             case 0:
-            JOptionPane.showMessageDialog(null, "Information was saved", cmbTypeOfProduct.getSelectedItem() + "Saved",
-                JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Information was saved", cmbTypeOfProduct.getSelectedItem() + "Saved",
+                        JOptionPane.INFORMATION_MESSAGE);
 
-            OwnerController ownerController = new OwnerController();
-            Product product = new Product(typeProduct, description, price);
-            ownerController.createProduct(product);
-            emptyFields();
-            break;
+                OwnerController ownerController = new OwnerController();
+                Product product = new Product(typeProduct, description, price);
+                ownerController.createProduct(product);
+                emptyFields();
+                break;
             case 1:
-            JOptionPane.showMessageDialog(null, "Information was NOT saved", cmbTypeOfProduct.getSelectedItem() + "NOT saved",
-                JOptionPane.INFORMATION_MESSAGE);
-            emptyFields();
-            break;
+                JOptionPane.showMessageDialog(null, "Information was NOT saved", cmbTypeOfProduct.getSelectedItem() + "NOT saved",
+                        JOptionPane.INFORMATION_MESSAGE);
+                emptyFields();
+                break;
             default:
-            JOptionPane.showMessageDialog(null, "Action was cancelled", cmbTypeOfProduct.getSelectedItem() + "Cancelled",
-                JOptionPane.INFORMATION_MESSAGE);
-            break;
+                JOptionPane.showMessageDialog(null, "Action was cancelled", cmbTypeOfProduct.getSelectedItem() + "Cancelled",
+                        JOptionPane.INFORMATION_MESSAGE);
+                break;
 
         }
     }//GEN-LAST:event_btnAddActionPerformed
@@ -5001,6 +5003,10 @@ public class FrmMainScreen extends javax.swing.JFrame {
         cmbTypeOfProduct.setSelectedIndex(0);
         txtPrice.setText("");
         txtSuggestions.setText("");
+        txtNameCostumer.setText("");
+        txtIdCostumer.setText("");
+        txtCellphoneCostumer.setText("");
+        numMesa2.setText("");
     }
     private void cmbTypeOfProductActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbTypeOfProductActionPerformed
         // TODO add your handling code here:
@@ -5015,25 +5021,25 @@ public class FrmMainScreen extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "FILL ALL THE FIELDS");
         } else {
             int selection = JOptionPane.showConfirmDialog(null, dataToDelete, "Speaker deleting",
-                JOptionPane.YES_NO_CANCEL_OPTION);
+                    JOptionPane.YES_NO_CANCEL_OPTION);
 
             switch (selection) {
                 case 0:
-                JOptionPane.showMessageDialog(null, "Information was deleting", txtDataToDelete.getText() + "Deleted",
-                    JOptionPane.INFORMATION_MESSAGE);
-                OwnerController ownerController = new OwnerController();
-                ownerController.deleteProduct(product);
-                txtDataToDelete.setText("");
-                break;
+                    JOptionPane.showMessageDialog(null, "Information was deleting", txtDataToDelete.getText() + "Deleted",
+                            JOptionPane.INFORMATION_MESSAGE);
+                    OwnerController ownerController = new OwnerController();
+                    ownerController.deleteProduct(product);
+                    txtDataToDelete.setText("");
+                    break;
                 case 1:
-                JOptionPane.showMessageDialog(null, "Information was NOT deleted", txtDataToDelete.getText() + "NOT deleted",
-                    JOptionPane.INFORMATION_MESSAGE);
-                txtDataToDelete.setText("");
-                break;
+                    JOptionPane.showMessageDialog(null, "Information was NOT deleted", txtDataToDelete.getText() + "NOT deleted",
+                            JOptionPane.INFORMATION_MESSAGE);
+                    txtDataToDelete.setText("");
+                    break;
                 default:
-                JOptionPane.showMessageDialog(null, "Action was cancelled", txtDataToDelete.getText() + "Cancelled",
-                    JOptionPane.INFORMATION_MESSAGE);
-                break;
+                    JOptionPane.showMessageDialog(null, "Action was cancelled", txtDataToDelete.getText() + "Cancelled",
+                            JOptionPane.INFORMATION_MESSAGE);
+                    break;
             }
         }
     }//GEN-LAST:event_btnDeleteActionPerformed
@@ -5044,47 +5050,47 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
     private void btnNumSalesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNumSalesActionPerformed
 
-        JOptionPane.showMessageDialog(null, "Today they were made" + contador + " ventas. sales. With a total of: " + suma,"", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, "Today they were made" + contador + " ventas. sales. With a total of: " + suma, "", JOptionPane.INFORMATION_MESSAGE);
 
-        
+
     }//GEN-LAST:event_btnNumSalesActionPerformed
 
     private void btnDessertActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDessertActionPerformed
-        
+
         MenuDessert.setVisible(true);
         MenuDessert.setLocationRelativeTo(null);
 
         this.setLocationRelativeTo(null);
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jNutella,
-            "src/ec/edu/espe/restaurantSalesSystem/images/CheesecakeNutella.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/CheesecakeNutella.jpg");
         rsscalelabel.RSScaleLabel.setScaleLabel(jBrownie,
-            "src/ec/edu/espe/restaurantSalesSystem/images/CheesecakeBrownie.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/CheesecakeBrownie.jpg");
         rsscalelabel.RSScaleLabel.setScaleLabel(jCoconutCaramelAlmond,
-            "src/ec/edu/espe/restaurantSalesSystem/images/CheesecakeCoco.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/CheesecakeCoco.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jLemon,
-            "src/ec/edu/espe/restaurantSalesSystem/images/PieLemon.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/PieLemon.jpg");
         rsscalelabel.RSScaleLabel.setScaleLabel(jApple,
-            "src/ec/edu/espe/restaurantSalesSystem/images/PieApple.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/PieApple.jpg");
         rsscalelabel.RSScaleLabel.setScaleLabel(jChocolate,
-            "src/ec/edu/espe/restaurantSalesSystem/images/PieChocolate.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/PieChocolate.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jCakeChocolate,
-            "src/ec/edu/espe/restaurantSalesSystem/images/CakeChocolate.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/CakeChocolate.jpg");
         rsscalelabel.RSScaleLabel.setScaleLabel(jVanilla,
-            "src/ec/edu/espe/restaurantSalesSystem/images/CakeVanilla.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/CakeVanilla.jpg");
         rsscalelabel.RSScaleLabel.setScaleLabel(jOrange,
-            "src/ec/edu/espe/restaurantSalesSystem/images/CakeOrange.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/CakeOrange.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jHumita,
-            "src/ec/edu/espe/restaurantSalesSystem/images/Humita.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/Humita.jpg");
         rsscalelabel.RSScaleLabel.setScaleLabel(jLojanoTamale,
-            "src/ec/edu/espe/restaurantSalesSystem/images/LojanoTamale.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/LojanoTamale.jpg");
         rsscalelabel.RSScaleLabel.setScaleLabel(jBolon,
-            "src/ec/edu/espe/restaurantSalesSystem/images/Bolon.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/Bolon.jpg");
         rsscalelabel.RSScaleLabel.setScaleLabel(jQuimbolito,
-            "src/ec/edu/espe/restaurantSalesSystem/images/Quimbolito.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/Quimbolito.jpg");
     }//GEN-LAST:event_btnDessertActionPerformed
 
     private void btnExit1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExit1ActionPerformed
@@ -5094,65 +5100,65 @@ public class FrmMainScreen extends javax.swing.JFrame {
     }//GEN-LAST:event_btnExit1ActionPerformed
 
     private void btnBreakfastActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBreakfastActionPerformed
-       
+
         MenuBreakfast.setVisible(true);
         MenuBreakfast.setLocationRelativeTo(null);
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jCoffeWater,
-            "src/ec/edu/espe/restaurantSalesSystem/images/WaterCoffee.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/WaterCoffee.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jMilkCoffee,
-            "src/ec/edu/espe/restaurantSalesSystem/images/MilkCoffee.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/MilkCoffee.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jLemonTea,
-            "src/ec/edu/espe/restaurantSalesSystem/images/LemonTea.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/LemonTea.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jSimpleBread,
-            "src/ec/edu/espe/restaurantSalesSystem/images/SimpleBread.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/SimpleBread.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jBreadWithJam,
-            "src/ec/edu/espe/restaurantSalesSystem/images/BreadWithJam.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/BreadWithJam.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jIntegralBread,
-            "src/ec/edu/espe/restaurantSalesSystem/images/IntegralBread.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/IntegralBread.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jBlackberryJuice,
-            "src/ec/edu/espe/restaurantSalesSystem/images/BlackberryJuice.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/BlackberryJuice.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jNaranjillasq,
-            "src/ec/edu/espe/restaurantSalesSystem/images/Naranjillas.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/Naranjillas.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jTreeTomato,
-            "src/ec/edu/espe/restaurantSalesSystem/images/TreeTomato.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/TreeTomato.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jboiledEgg,
-            "src/ec/edu/espe/restaurantSalesSystem/images/BoiledEgg.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/BoiledEgg.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jWarmEgg,
-            "src/ec/edu/espe/restaurantSalesSystem/images/WarmEgg.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/WarmEgg.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jOmelette,
-            "src/ec/edu/espe/restaurantSalesSystem/images/Omelette.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/Omelette.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jApple1,
-            "src/ec/edu/espe/restaurantSalesSystem/images/Apple.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/Apple.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jPear,
-            "src/ec/edu/espe/restaurantSalesSystem/images/Pear.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/Pear.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jBanano,
-            "src/ec/edu/espe/restaurantSalesSystem/images/Banano.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/Banano.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jBeefStew,
-            "src/ec/edu/espe/restaurantSalesSystem/images/BeefStew.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/BeefStew.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jChickenStew,
-            "src/ec/edu/espe/restaurantSalesSystem/images/ChickenStew.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/ChickenStew.jpg");
 
     }//GEN-LAST:event_btnBreakfastActionPerformed
 
     private void btnLunchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLunchActionPerformed
-        
+
         MenuLunch.setVisible(true);
         MenuLunch.setLocationRelativeTo(null);
 
@@ -5163,70 +5169,70 @@ public class FrmMainScreen extends javax.swing.JFrame {
         rsscalelabel.RSScaleLabel.setScaleLabel(jChuleta, "src/ec/edu/espe/restaurantSalesSystem/images/Chuleta.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jCamaron,
-            "src/ec/edu/espe/restaurantSalesSystem/images/Camaron.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/Camaron.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jLasaña,
-            "src/ec/edu/espe/restaurantSalesSystem/images/Lasaña.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/Lasaña.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jPineapple,
-            "src/ec/edu/espe/restaurantSalesSystem/images/Pineapple.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/Pineapple.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jBabaco,
-            "src/ec/edu/espe/restaurantSalesSystem/images/Babaco.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/Babaco.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jNaranjilla,
-            "src/ec/edu/espe/restaurantSalesSystem/images/Naranjillas.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/Naranjillas.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jBrownies,
-            "src/ec/edu/espe/restaurantSalesSystem/images/Brownie.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/Brownie.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jChesecake,
-            "src/ec/edu/espe/restaurantSalesSystem/images/Chesecake.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/Chesecake.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jThreeMilksCake,
-            "src/ec/edu/espe/restaurantSalesSystem/images/ThreeMilksCake.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/ThreeMilksCake.jpg");
     }//GEN-LAST:event_btnLunchActionPerformed
 
     private void btnSnackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSnackActionPerformed
-       
+
         MenuSnack.setVisible(true);
         MenuSnack.setLocationRelativeTo(null);
-        
+
         this.setLocationRelativeTo(null);
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jClassicBurger,
-            "src/ec/edu/espe/restaurantSalesSystem/images/classicBurger.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/classicBurger.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jCheeseburger,
-            "src/ec/edu/espe/restaurantSalesSystem/images/Cheeseburger.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/Cheeseburger.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jBaconCheeseBurger,
-            "src/ec/edu/espe/restaurantSalesSystem/images/BaconCheeseBurger.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/BaconCheeseBurger.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jChickenBurguer,
-            "src/ec/edu/espe/restaurantSalesSystem/images/ChickenBurguer.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/ChickenBurguer.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jJackDanielsBurger,
-            "src/ec/edu/espe/restaurantSalesSystem/images/JackDanielsBurger.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/JackDanielsBurger.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jBBQ,
-            "src/ec/edu/espe/restaurantSalesSystem/images/BBQWings.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/BBQWings.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jHot,
-            "src/ec/edu/espe/restaurantSalesSystem/images/HotWings.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/HotWings.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jpassionFruit,
-            "src/ec/edu/espe/restaurantSalesSystem/images/PassionFruitWings.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/PassionFruitWings.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jNachosWithCheese,
-            "src/ec/edu/espe/restaurantSalesSystem/images/NachosWithCheese.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/NachosWithCheese.jpg");
 
         rsscalelabel.RSScaleLabel.setScaleLabel(jNachosWithGuacamole,
-            "src/ec/edu/espe/restaurantSalesSystem/images/NachosWithGuacamole.jpg");
+                "src/ec/edu/espe/restaurantSalesSystem/images/NachosWithGuacamole.jpg");
     }//GEN-LAST:event_btnSnackActionPerformed
 
     private void btnDrinkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDrinkActionPerformed
-       
+
         OptionsDrink.setVisible(true);
         OptionsDrink.setLocationRelativeTo(null);;
     }//GEN-LAST:event_btnDrinkActionPerformed
@@ -5284,7 +5290,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
     }//GEN-LAST:event_btnOrderLunchActionPerformed
 
     private void btnReturnLunchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturnLunchActionPerformed
-        
+
         MenuLunch.setVisible(false);
         Menu.setVisible(true);
     }//GEN-LAST:event_btnReturnLunchActionPerformed
@@ -5595,7 +5601,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
         limpiarTabla(datosTable);
         numMesa.getText();
-        
+
         Menu.setVisible(true);
         viewOrder.setVisible(false);
 
@@ -5741,7 +5747,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
     }//GEN-LAST:event_txtTableNumberKeyTyped
 
     private void btngenerateBillCashierActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btngenerateBillCashierActionPerformed
-        
+
         //Bill
         float contTotal = (float) 0.0;
         int c1 = Integer.parseInt(numMesa.getText()), c2 = Integer.parseInt(txtTableNumber.getText());
@@ -5885,7 +5891,6 @@ public class FrmMainScreen extends javax.swing.JFrame {
             PROPINA.setText(String.valueOf(prop));
             TOTALtot.setText(String.valueOf(tot));
 
-            
             String c = txtTableNumber.getText();
             numMesa2.setText(c);
             Bill.setVisible(true);
@@ -5903,12 +5908,12 @@ public class FrmMainScreen extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btngenerateBillCashierActionPerformed
 
-    private void btnCellphoneCostumerKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btnCellphoneCostumerKeyTyped
+    private void txtCellphoneCostumerKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCellphoneCostumerKeyTyped
         int k = (int) evt.getKeyChar();
         if (k >= 97 && k <= 122 || k >= 65 && k <= 90) {
             evt.setKeyChar((char) KeyEvent.VK_CLEAR);
         }
-    }//GEN-LAST:event_btnCellphoneCostumerKeyTyped
+    }//GEN-LAST:event_txtCellphoneCostumerKeyTyped
 
     private void txtIdCostumerKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtIdCostumerKeyTyped
         int k = (int) evt.getKeyChar();
@@ -5921,7 +5926,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(null, "The payment has been made successfully.");
         txtIdCostumer.setText("");
         txtNameCostumer.setText("");
-        btnCellphoneCostumer.setText("");
+        txtCellphoneCostumer.setText("");
         infoFact.setText("");
     }//GEN-LAST:event_txtNameCostumerActionPerformed
 
@@ -5939,27 +5944,30 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
     private void btnPayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPayActionPerformed
 
+        String name = txtNameCostumer.getText();
+        String id = txtIdCostumer.getText();
+        String cellPhone = txtCellphoneCostumer.getText();
+        
         //BOTON FINALIZA FACTURA
         Bill f = new Bill();
+        CashierController cashierController = new CashierController();
+        
         f.numSales = 0;
 
-        if ((txtNameCostumer.getText().equals("")) && (txtIdCostumer.getText().equals("")) && (btnCellphoneCostumer.getText().equals(""))) {
+        if ((name.equals("")) && (id.equals("")) && (cellPhone.equals(""))) {
             JOptionPane.showMessageDialog(null, "You have not filled in the customer information");
 
         }
 
-        if (((!txtNameCostumer.getText().equals("")) && (!txtIdCostumer.getText().equals("")) && (!btnCellphoneCostumer.getText().equals("")))) {
+        if (((!name.equals("")) && (!id.equals("")) && (!cellPhone.equals("")))) {
             contador++;
-            suma = (int) (suma + Double.parseDouble(TOTALtot.getText()));
-            f.numSales = f.numSales + 1;
-            JOptionPane.showMessageDialog(null, "The payment has been made successfully. SEE YOU LATER");
+            suma = (double) (suma + Double.parseDouble(TOTALtot.getText()));
+            f.numSales = f.numSales + 1;           
+            JOptionPane.showMessageDialog(null, "The payment has been made successfully. SEE YOU LATER");            
+            cashierController.registerCustomer(name, id, cellPhone, suma);
             Bill.setVisible(false);
             this.setVisible(true);
-
-            txtNameCostumer.setText("");
-            txtIdCostumer.setText("");
-            btnCellphoneCostumer.setText("");
-            numMesa2.setText("");
+            emptyFields();
             limpiarTabla(datosTable);
             limpiarTabla(factTable);
             limpiarTabla(datosTable2);
@@ -6014,20 +6022,18 @@ public class FrmMainScreen extends javax.swing.JFrame {
         rsscalelabel.RSScaleLabel.setScaleLabel(jimage6, "src/ec/edu/espe/restaurantSalesSystem/images/Naranjillas.jpg");
     }//GEN-LAST:event_btnJuiceActionPerformed
 
-    static String name;
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
-       
-        if (txtUserName.getText().isEmpty() || txtPassword.getText().isEmpty()) {
-            JOptionPane.showMessageDialog(null, "FILL ALL THE FIELDS");
-        } else if((txtUserName.getText().equals("admin")) && (txtPassword.getText().equals("admin123"))) {
-            name = "admin";
-            JOptionPane.showMessageDialog(null, "Welcome " + name);
-                Login.setVisible(false);
-                OptionsOwner.setVisible(true);
-                OptionsOwner.setLocationRelativeTo(null);
-        }else {
-                JOptionPane.showMessageDialog(null, "Incorrect data, check again.");
-            }
+
+        String user = txtUserName.getText();
+        String password = txtPassword.getText();
+        Verification verification;
+        VerificationController verificationController = new VerificationController();
+        verification = Verification.getInstance(user, password);
+        if (verificationController.login(verification, user, password)) {
+            Login.setVisible(false);
+            OptionsOwner.setVisible(true);
+            OptionsOwner.setLocationRelativeTo(null);
+        }
     }//GEN-LAST:event_btnLoginActionPerformed
 
     private void btnExit2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExit2ActionPerformed
@@ -6042,10 +6048,9 @@ public class FrmMainScreen extends javax.swing.JFrame {
     }//GEN-LAST:event_txtUserNameActionPerformed
 
     private void btnReturn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturn6ActionPerformed
-         this.setVisible(false);
+        this.setVisible(false);
         OptionsOwner.setVisible(true);
     }//GEN-LAST:event_btnReturn6ActionPerformed
-    
 
     /**
      * @param args the command line arguments
@@ -6083,7 +6088,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
         });
     }
 
-    
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JDialog Bill;
     private javax.swing.JFrame FrmStockProducts;
@@ -6113,7 +6118,6 @@ public class FrmMainScreen extends javax.swing.JFrame {
     private javax.swing.JButton btnAddOrderSnack;
     private javax.swing.JButton btnAddProduct1;
     private javax.swing.JButton btnBreakfast;
-    private javax.swing.JTextField btnCellphoneCostumer;
     private javax.swing.JButton btnCoffee;
     private javax.swing.JButton btnDelete;
     private javax.swing.JButton btnDeleteProduct1;
@@ -6602,6 +6606,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
     private javax.swing.JTable tblProducts;
     private javax.swing.JLabel teConLimon;
     private javax.swing.JLabel txtBreakfast;
+    private javax.swing.JTextField txtCellphoneCostumer;
     private javax.swing.JTextField txtDataToDelete;
     private javax.swing.JTextField txtDescription;
     private javax.swing.JLabel txtDescription1;
