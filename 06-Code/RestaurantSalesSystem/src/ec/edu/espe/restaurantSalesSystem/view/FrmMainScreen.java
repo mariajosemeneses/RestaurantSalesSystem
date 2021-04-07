@@ -5120,9 +5120,10 @@ public class FrmMainScreen extends javax.swing.JFrame {
     }//GEN-LAST:event_btnDessertActionPerformed
 
     private void btnExit1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExit1ActionPerformed
-        this.setVisible(false);
+        
         FrmMainScreen frmMainScreen = new FrmMainScreen();
         frmMainScreen.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_btnExit1ActionPerformed
 
     private void btnBreakfastActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBreakfastActionPerformed
