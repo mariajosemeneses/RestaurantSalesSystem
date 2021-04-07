@@ -15,7 +15,7 @@ import ec.edu.espe.restaurantSalesSystem.utils.NoSQL;
  */
 public class CashierController {
     
-    public void registerCustomer(String name, String id, String cellPhone, double pay) {
+    public void generateBill(String name, String id, String cellPhone, String date, String cashier, double pay) {
         
         NoSQL nosql;
         nosql = new MongoManager();
@@ -25,8 +25,10 @@ public class CashierController {
         document.put("name", name);
         document.put("id", id);
         document.put("cellPhone", cellPhone);    
+        document.put("date", date); 
+        document.put("cashier", cashier); 
         document.put("totalPay", pay);
 
-        nosql.create("Person", "customers", document);
+        nosql.create("Bill", "customers", document);
     }
 }

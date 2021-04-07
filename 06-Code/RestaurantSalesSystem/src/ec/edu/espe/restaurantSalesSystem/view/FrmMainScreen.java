@@ -25,6 +25,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JSpinner;
 import javax.swing.table.DefaultTableModel;
 import java.awt.event.KeyEvent;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Random;
 import javax.swing.Icon;
@@ -703,7 +704,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
         PROPINA = new javax.swing.JLabel();
         btnPay = new javax.swing.JButton();
         txtNameCashier = new javax.swing.JTextField();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
+        dateChooser = new com.toedter.calendar.JDateChooser();
         OptionsDrink = new javax.swing.JDialog();
         btnSoda = new javax.swing.JButton();
         btnReturnOptionDrink = new javax.swing.JButton();
@@ -969,7 +970,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("PRODUCTS");
         jPanel6.add(jLabel4);
-        jLabel4.setBounds(210, 10, 230, 47);
+        jLabel4.setBounds(210, 10, 230, 44);
 
         tblProducts.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         tblProducts.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
@@ -1104,19 +1105,19 @@ public class FrmMainScreen extends javax.swing.JFrame {
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("NEW PRODUCT");
         jPanel7.add(jLabel12);
-        jLabel12.setBounds(280, 10, 220, 32);
+        jLabel12.setBounds(280, 10, 220, 30);
 
         description2.setFont(new java.awt.Font("Perpetua Titling MT", 3, 12)); // NOI18N
         description2.setForeground(new java.awt.Color(255, 255, 255));
         description2.setText("Description:");
         jPanel7.add(description2);
-        description2.setBounds(160, 130, 70, 16);
+        description2.setBounds(160, 130, 89, 16);
 
         jLabel13.setFont(new java.awt.Font("Perpetua Titling MT", 3, 12)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("Price:");
         jPanel7.add(jLabel13);
-        jLabel13.setBounds(170, 190, 34, 16);
+        jLabel13.setBounds(170, 190, 41, 16);
 
         txtPrice.setBackground(new java.awt.Color(0, 0, 0));
         txtPrice.setForeground(new java.awt.Color(255, 255, 255));
@@ -1163,7 +1164,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
         products.setForeground(new java.awt.Color(255, 255, 255));
         products.setText("Type Of Product:");
         jPanel7.add(products);
-        products.setBounds(160, 70, 96, 16);
+        products.setBounds(160, 70, 126, 16);
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/restaurantSalesSystem/images/fondo-Addproduct.jpg"))); // NOI18N
         jPanel7.add(jLabel6);
@@ -1269,7 +1270,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
         jLabel16.setForeground(new java.awt.Color(255, 255, 255));
         jLabel16.setText("DELETE PRODUCT");
         jPanel8.add(jLabel16);
-        jLabel16.setBounds(150, 20, 250, 32);
+        jLabel16.setBounds(150, 20, 250, 30);
 
         txtDataToDelete.setBackground(new java.awt.Color(0, 0, 0));
         txtDataToDelete.setForeground(new java.awt.Color(255, 255, 255));
@@ -4556,10 +4557,15 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
         txtNameCashier.setBackground(new java.awt.Color(204, 204, 204));
         txtNameCashier.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        txtNameCashier.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNameCashierActionPerformed(evt);
+            }
+        });
         jPanel10.add(txtNameCashier);
         txtNameCashier.setBounds(470, 290, 150, 30);
-        jPanel10.add(jDateChooser1);
-        jDateChooser1.setBounds(470, 250, 150, 30);
+        jPanel10.add(dateChooser);
+        dateChooser.setBounds(470, 250, 150, 30);
 
         Bill.getContentPane().add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 680, 710));
 
@@ -5968,11 +5974,15 @@ public class FrmMainScreen extends javax.swing.JFrame {
         String name = txtNameCostumer.getText();
         String id = txtIdCostumer.getText();
         String cellPhone = txtCellphoneCostumer.getText();
-        
+        String day = Integer.toString(dateChooser.getCalendar().get(Calendar.DAY_OF_MONTH));
+        String month = Integer.toString(dateChooser.getCalendar().get(Calendar.MONTH) + 1);
+        String year = Integer.toString(dateChooser.getCalendar().get(Calendar.YEAR));
+        String date = (year + "/" + month + "/" + day);
+        String cashier = txtNameCashier.getText();
         //BOTON FINALIZA FACTURA
         Bill f = new Bill();
         CashierController cashierController = new CashierController();
-        
+
         f.numSales = 0;
 
         if ((name.equals("")) && (id.equals("")) && (cellPhone.equals(""))) {
@@ -5983,9 +5993,9 @@ public class FrmMainScreen extends javax.swing.JFrame {
         if (((!name.equals("")) && (!id.equals("")) && (!cellPhone.equals("")))) {
             contador++;
             suma = (double) (suma + Double.parseDouble(TOTALtot.getText()));
-            f.numSales = f.numSales + 1;           
-            JOptionPane.showMessageDialog(null, "The payment has been made successfully. SEE YOU LATER");            
-            cashierController.registerCustomer(name, id, cellPhone, suma);
+            f.numSales = f.numSales + 1;
+            JOptionPane.showMessageDialog(null, "The payment has been made successfully. SEE YOU LATER");
+            cashierController.generateBill(name, id, cellPhone, date, cashier, suma);
             Bill.setVisible(false);
             this.setVisible(true);
             emptyFields();
@@ -6075,7 +6085,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
     private void txtDataToDeleteKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtDataToDeleteKeyTyped
         // TODO add your handling code here:
-        char caracter=evt.getKeyChar();
+        char caracter = evt.getKeyChar();
         if (Character.isLowerCase(caracter));
         {
             evt.setKeyChar(Character.toUpperCase(caracter));
@@ -6084,7 +6094,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
     private void txtDescriptionKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtDescriptionKeyTyped
         // TODO add your handling code here:
-        char caracter=evt.getKeyChar();
+        char caracter = evt.getKeyChar();
         if (Character.isLowerCase(caracter));
         {
             evt.setKeyChar(Character.toUpperCase(caracter));
@@ -6097,8 +6107,12 @@ public class FrmMainScreen extends javax.swing.JFrame {
         int random = 0;
         random = ((int) (rnd.nextInt(10 - 1 + 1) + 1));
         numMesa.setText("" + random);
-        
+
     }//GEN-LAST:event_btnNumbertableActionPerformed
+
+    private void txtNameCashierActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNameCashierActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNameCashierActionPerformed
 
     /**
      * @param args the command line arguments
@@ -6212,6 +6226,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
     private javax.swing.JLabel cafeEnAgua;
     private javax.swing.JLabel cafeEnLeche;
     private javax.swing.JComboBox<String> cmbTypeOfProduct;
+    private com.toedter.calendar.JDateChooser dateChooser;
     private javax.swing.JTable datosTable;
     private javax.swing.JTable datosTable2;
     private javax.swing.JLabel description2;
@@ -6254,7 +6269,6 @@ public class FrmMainScreen extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jCremaTomato;
-    private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jExpressoRistretto;
     private javax.swing.JLabel jFrapuccino;
     private javax.swing.JLabel jFrocaccino;

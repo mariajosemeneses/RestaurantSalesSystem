@@ -38,7 +38,7 @@ public class CashierControllerTest {
     }
 
     /**
-     * Test of registerCustomer method, of class CashierController.
+     * Test of generateBill method, of class CashierController.
      */
     @Test
     public void testRegisterCustomer() {
