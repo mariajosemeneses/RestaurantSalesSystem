@@ -71,10 +71,10 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         btnDelete = new javax.swing.JButton();
         txtData = new javax.swing.JTextField();
-        txtField = new javax.swing.JTextField();
         txtNewdata = new javax.swing.JTextField();
         btnEdit = new javax.swing.JButton();
         cmbEmployee = new javax.swing.JComboBox<>();
+        cmbfield = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -261,7 +261,7 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
                 .addGap(32, 32, 32))
         );
 
-        jLabel6.setText("Data:");
+        jLabel6.setText("Data to find:");
 
         jLabel7.setText("Field:");
 
@@ -271,12 +271,6 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
         btnDelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDeleteActionPerformed(evt);
-            }
-        });
-
-        txtField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtFieldActionPerformed(evt);
             }
         });
 
@@ -294,6 +288,8 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
             }
         });
 
+        cmbfield.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Name", "Id", "Age", "Address", "Email", "Cellphone" }));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -309,33 +305,31 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(46, 46, 46)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btnEdit, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(128, 128, 128))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btnDelete)
-                                .addGap(124, 124, 124))))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                 .addGap(59, 59, 59)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(jLabel6)
-                                    .addComponent(jLabel8)
-                                    .addComponent(jLabel7))
+                                    .addComponent(jLabel7)
+                                    .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.LEADING))
                                 .addGap(18, 18, 18)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtData, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(txtNewdata, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtField, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(cmbfield, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(txtData, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                                        .addComponent(btnDelete))))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(cmbEmployee, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap(40, Short.MAX_VALUE))))
+                        .addGap(18, 18, 18))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnEdit, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(168, 168, 168))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
@@ -354,23 +348,22 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(8, 8, 8)
                         .addComponent(cmbEmployee, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(33, 33, 33)
+                        .addGap(36, 36, 36)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel7)
-                            .addComponent(txtField, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(cmbfield, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(txtData, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel6))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnDelete)
-                        .addGap(18, 18, 18)
+                            .addComponent(jLabel6)
+                            .addComponent(btnDelete))
+                        .addGap(24, 24, 24)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(txtNewdata, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel8))
+                            .addComponent(jLabel8)
+                            .addComponent(txtNewdata, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addComponent(btnEdit)
-                        .addGap(54, 54, 54)))
+                        .addGap(77, 77, 77)))
                 .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
                 .addComponent(btnExit)
@@ -444,7 +437,6 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
         txtId.setText("");
         txtData.setText("");
         txtNewdata.setText("");
-        txtField.setText("");
     }
     private void cmbEmployeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbEmployeeActionPerformed
 
@@ -470,9 +462,9 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
     private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
         String typeEmployee = cmbEmployee.getSelectedItem().toString();
         String dataToFind = txtData.getText();
-        String field = txtField.getText().toLowerCase();
+        String field = cmbfield.getSelectedItem().toString().toLowerCase();
 
-        if (dataToFind.isEmpty() || field.isEmpty()) {
+        if (dataToFind.isEmpty()) {
             JOptionPane.showMessageDialog(null, "FILL ALL THE FIELDS");
         } else {
             String dataToDelete = "Do you want to delete document with this information? \nEmployee: " + typeEmployee
@@ -507,10 +499,10 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
     private void btnEditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditActionPerformed
         String typeEmployee = cmbEmployee.getSelectedItem().toString();
         String dataToFind = txtData.getText();
-        String field = txtField.getText().toLowerCase();
         String newData = txtNewdata.getText();
+        String field = cmbfield.getSelectedItem().toString().toLowerCase();
 
-        if (dataToFind.isEmpty() || field.isEmpty() || newData.isEmpty()) {
+        if (dataToFind.isEmpty() || newData.isEmpty()) {
             JOptionPane.showMessageDialog(null, "FILL ALL THE FIELDS");
         } else {
             String dataToUpdate = "Do you want to edit information? \nEmployee: " + typeEmployee
@@ -540,10 +532,6 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
             }
         }
     }//GEN-LAST:event_btnEditActionPerformed
-
-    private void txtFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtFieldActionPerformed
 
     private void btnGenerateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerateActionPerformed
         Random rnd = new Random();
@@ -697,6 +685,7 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
     private javax.swing.JButton btnSave;
     private javax.swing.JButton btnView;
     private javax.swing.JComboBox<String> cmbEmployee;
+    private javax.swing.JComboBox<String> cmbfield;
     private javax.swing.JLabel employee;
     private javax.swing.JLabel id;
     private javax.swing.JLabel jLabel1;
@@ -717,7 +706,6 @@ public class FrmResgisterEmployee extends javax.swing.JFrame {
     private javax.swing.JTextField txtCell;
     private javax.swing.JTextField txtData;
     private javax.swing.JTextField txtEmail;
-    private javax.swing.JTextField txtField;
     private javax.swing.JTextField txtId;
     private javax.swing.JTextField txtName;
     private javax.swing.JTextField txtNewdata;

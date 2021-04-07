@@ -1148,6 +1148,11 @@ public class FrmMainScreen extends javax.swing.JFrame {
         txtDescription.setBackground(new java.awt.Color(0, 0, 0));
         txtDescription.setForeground(new java.awt.Color(255, 255, 255));
         txtDescription.setToolTipText("Name and Lastname");
+        txtDescription.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtDescriptionKeyTyped(evt);
+            }
+        });
         jPanel7.add(txtDescription);
         txtDescription.setBounds(340, 110, 370, 50);
 
@@ -6065,6 +6070,15 @@ public class FrmMainScreen extends javax.swing.JFrame {
             evt.setKeyChar(Character.toUpperCase(caracter));
         }
     }//GEN-LAST:event_txtDataToDeleteKeyTyped
+
+    private void txtDescriptionKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtDescriptionKeyTyped
+        // TODO add your handling code here:
+        char caracter=evt.getKeyChar();
+        if (Character.isLowerCase(caracter));
+        {
+            evt.setKeyChar(Character.toUpperCase(caracter));
+        }
+    }//GEN-LAST:event_txtDescriptionKeyTyped
 
     /**
      * @param args the command line arguments
