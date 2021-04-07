@@ -847,7 +847,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
         btnEditMenu.setBackground(new java.awt.Color(255, 255, 102));
         btnEditMenu.setFont(new java.awt.Font("Baskerville Old Face", 3, 14)); // NOI18N
         btnEditMenu.setForeground(new java.awt.Color(255, 255, 204));
-        btnEditMenu.setText("EDIT MENU");
+        btnEditMenu.setText("EDIT PRODUCTS");
         btnEditMenu.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
         btnEditMenu.setContentAreaFilled(false);
         btnEditMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -856,7 +856,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
                 btnEditMenuActionPerformed(evt);
             }
         });
-        jPanel1.add(btnEditMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 140, 30));
+        jPanel1.add(btnEditMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 160, 30));
 
         btnRegisterEmployee.setBackground(new java.awt.Color(255, 255, 102));
         btnRegisterEmployee.setFont(new java.awt.Font("Baskerville Old Face", 3, 14)); // NOI18N
@@ -5603,7 +5603,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
     private void btnGenerateBillActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerateBillActionPerformed
         int filas = datosTable2.getRowCount();
-
+        this.setVisible(true);
         GenerateBill.setVisible(false);
         GenerateBill.setLocationRelativeTo(null);
         viewOrder.setVisible(false);
@@ -5621,6 +5621,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
         limpiarTabla(datosTable);
         numMesa.getText();
+        limpiarTabla(datosTable2);
 
         Menu.setVisible(true);
         viewOrder.setVisible(false);
