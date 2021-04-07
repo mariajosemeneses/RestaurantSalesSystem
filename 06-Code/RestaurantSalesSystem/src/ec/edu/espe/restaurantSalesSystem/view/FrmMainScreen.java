@@ -19,6 +19,7 @@ import ec.edu.espe.restaurantSalesSystem.model.Product;
 import ec.edu.espe.restaurantSalesSystem.utils.MongoManager;
 import ec.edu.espe.restaurantSalesSystem.utils.NoSQL;
 import ec.edu.espe.restaurantsalessystem.model.Bill;
+import java.awt.Dimension;
 import java.awt.Image;
 import java.awt.Menu;
 import javax.swing.JOptionPane;
@@ -51,7 +52,8 @@ public class FrmMainScreen extends javax.swing.JFrame {
      */
     public FrmMainScreen() {
         initComponents();
-
+            
+     //   this.setSize(new Dimension(3000, 3000));
         this.setLocationRelativeTo(null);
         rsscalelabel.RSScaleLabel.setScaleLabel(jlogo, "src/ec/edu/espe/restaurantSalesSystem/images/logo.jpg");
         
@@ -5097,7 +5099,6 @@ public class FrmMainScreen extends javax.swing.JFrame {
        
         MenuBreakfast.setVisible(true);
         MenuBreakfast.setLocationRelativeTo(null);
-
         rsscalelabel.RSScaleLabel.setScaleLabel(jCoffeWater,
             "src/ec/edu/espe/restaurantSalesSystem/images/WaterCoffee.jpg");
 
@@ -5188,7 +5189,8 @@ public class FrmMainScreen extends javax.swing.JFrame {
     }//GEN-LAST:event_btnLunchActionPerformed
 
     private void btnSnackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSnackActionPerformed
-       
+        
+        this.setMinimumSize(new Dimension(1180, 732));
         MenuSnack.setVisible(true);
         MenuSnack.setLocationRelativeTo(null);
         
