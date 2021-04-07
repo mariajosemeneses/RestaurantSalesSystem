@@ -5,115 +5,199 @@
  */
 package ec.edu.espe.restaurantSalesSystem.model;
 
+import java.util.ArrayList;
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
  *
- * @author Group 3
+ * @author DAVID
  */
 public class BreakfastTest {
-
+    
     public BreakfastTest() {
     }
-
-    /**
-     * Test of getContinental method, of class Breakfast.
-     */
-    @Test
-    public void testGetContinental() {
-        System.out.println("getContinental");
-        Breakfast instance = new Breakfast("", "", 0, 0, "", 0, 0);
-        String expResult = "coffee" + ", bread " + "and Fruits";
-        String result = instance.getContinental();
-        assertEquals(expResult, result, result);
-
+    
+    @BeforeClass
+    public static void setUpClass() {
+    }
+    
+    @AfterClass
+    public static void tearDownClass() {
+    }
+    
+    @Before
+    public void setUp() {
+    }
+    
+    @After
+    public void tearDown() {
     }
 
     /**
-     * Test of setContinental method, of class Breakfast.
+     * Test of getDrinks method, of class Breakfast.
      */
     @Test
-    public void testSetContinental() {
-        System.out.println("setContinental");
-        String continental = "coffee, bread and Fruits";
-        Breakfast instance = new Breakfast("", "", 0, 0, "", 0, 0);
-        instance.setContinental(continental);
-
+    public void testGetDrinks() {
+        System.out.println("getDrinks");
+        Breakfast instance = null;
+        ArrayList<String> expResult = null;
+        ArrayList<String> result = instance.getDrinks();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
-     * Test of getFull method, of class Breakfast.
+     * Test of setDrinks method, of class Breakfast.
      */
     @Test
-    public void testGetFull() {
-        System.out.println("getFull");
-        Breakfast instance = new Breakfast("", "", 0, 0, "", 0, 0);
-        String expResult = "Rice with chicken, coffee and Bolon";
-        String result = instance.getFull();
-        assertEquals(expResult, result, result);
-
+    public void testSetDrinks() {
+        System.out.println("setDrinks");
+        ArrayList<String> drinks = null;
+        Breakfast instance = null;
+        instance.setDrinks(drinks);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
-     * Test of setFull method, of class Breakfast.
+     * Test of getJuices method, of class Breakfast.
      */
     @Test
-    public void testSetFull() {
-        System.out.println("setFull");
-        String full = "Rice with chicken, coffee and Bolon";
-        Breakfast instance = new Breakfast("", "", 0, 0, "", 0, 0);
-        instance.setFull(full);
-
+    public void testGetJuices() {
+        System.out.println("getJuices");
+        Breakfast instance = null;
+        ArrayList<String> expResult = null;
+        ArrayList<String> result = instance.getJuices();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
-     * Test of getPriceContinental method, of class Breakfast.
+     * Test of setJuices method, of class Breakfast.
      */
     @Test
-    public void testGetPriceContinental() {
-        System.out.println("getPriceContinental");
-        Breakfast instance = new Breakfast("", "", 0, 0, "", 0, 0);
-        float expResult = 2.5F;
-        float result = instance.getPriceContinental();
-        assertEquals(expResult, result, 2.5);
-        
+    public void testSetJuices() {
+        System.out.println("setJuices");
+        ArrayList<String> juices = null;
+        Breakfast instance = null;
+        instance.setJuices(juices);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
-     * Test of setPriceContinental method, of class Breakfast.
+     * Test of getBreads method, of class Breakfast.
      */
     @Test
-    public void testSetPriceContinental() {
-        System.out.println("setPriceContinental");
-        float priceContinental = 2.5F;
-        Breakfast instance = new Breakfast("", "", 0, 0, "", 0, 0);
-        instance.setPriceContinental(priceContinental);
-        
+    public void testGetBreads() {
+        System.out.println("getBreads");
+        Breakfast instance = null;
+        ArrayList<String> expResult = null;
+        ArrayList<String> result = instance.getBreads();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
-     * Test of getPriceFull method, of class Breakfast.
+     * Test of setBreads method, of class Breakfast.
      */
     @Test
-    public void testGetPriceFull() {
-        System.out.println("getPriceFull");
-        Breakfast instance = new Breakfast("", "", 0, 0, "", 0, 0);
-        float expResult = 5.5F;
-        float result = instance.getPriceFull();
-        assertEquals(expResult, result, 5.5);
-
+    public void testSetBreads() {
+        System.out.println("setBreads");
+        ArrayList<String> breads = null;
+        Breakfast instance = null;
+        instance.setBreads(breads);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
-     * Test of setPriceFull method, of class Breakfast.
+     * Test of getEggs method, of class Breakfast.
      */
     @Test
-    public void testSetPriceFull() {
-        System.out.println("setPriceFull");
-        float priceFull = 5.5F;
-        Breakfast instance = new Breakfast("", "", 0, 0, "", 0, 0);
-        instance.setPriceFull(priceFull);
+    public void testGetEggs() {
+        System.out.println("getEggs");
+        Breakfast instance = null;
+        ArrayList<String> expResult = null;
+        ArrayList<String> result = instance.getEggs();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
+    /**
+     * Test of setEggs method, of class Breakfast.
+     */
+    @Test
+    public void testSetEggs() {
+        System.out.println("setEggs");
+        ArrayList<String> eggs = null;
+        Breakfast instance = null;
+        instance.setEggs(eggs);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of getFruits method, of class Breakfast.
+     */
+    @Test
+    public void testGetFruits() {
+        System.out.println("getFruits");
+        Breakfast instance = null;
+        ArrayList<String> expResult = null;
+        ArrayList<String> result = instance.getFruits();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of setFruits method, of class Breakfast.
+     */
+    @Test
+    public void testSetFruits() {
+        System.out.println("setFruits");
+        ArrayList<String> fruits = null;
+        Breakfast instance = null;
+        instance.setFruits(fruits);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of getStews method, of class Breakfast.
+     */
+    @Test
+    public void testGetStews() {
+        System.out.println("getStews");
+        Breakfast instance = null;
+        ArrayList<String> expResult = null;
+        ArrayList<String> result = instance.getStews();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of setStews method, of class Breakfast.
+     */
+    @Test
+    public void testSetStews() {
+        System.out.println("setStews");
+        ArrayList<String> stews = null;
+        Breakfast instance = null;
+        instance.setStews(stews);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+    
 }

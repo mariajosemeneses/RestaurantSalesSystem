@@ -5,79 +5,71 @@
  */
 package ec.edu.espe.restaurantSalesSystem.model;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Group3
  */
 public class Breakfast extends Food {
 
-    private String continental;
-    private String full;
-    private float priceContinental;
-    private float priceFull;
+    ArrayList<String> drinks = new ArrayList();
+    ArrayList<String> juices = new ArrayList();
+    ArrayList<String> breads = new ArrayList();
+    ArrayList<String> eggs = new ArrayList();
+    ArrayList<String> fruits = new ArrayList();
+    ArrayList<String> stews = new ArrayList();
 
-    public Breakfast(String continental, String full, float priceContinental, float priceFull, String typeOfProduct, String description, float price) {
+    public Breakfast(String typeOfProduct, String description, float price) {
         super(typeOfProduct, description, price);
-        this.continental = continental;
-        this.full = full;
-        this.priceContinental = priceContinental;
-        this.priceFull = priceFull;
     }
 
-    /**
-     * @return the continental
-     */
-    public String getContinental() {
-        return continental;
+    public ArrayList<String> getDrinks() {
+        return drinks;
     }
 
-    /**
-     * @param continental the continental to set
-     */
-    public void setContinental(String continental) {
-        this.continental = continental;
+    public void setDrinks(ArrayList<String> drinks) {
+        this.drinks = drinks;
     }
 
-    /**
-     * @return the full
-     */
-    public String getFull() {
-        return full;
+    public ArrayList<String> getJuices() {
+        return juices;
     }
 
-    /**
-     * @param full the full to set
-     */
-    public void setFull(String full) {
-        this.full = full;
+    public void setJuices(ArrayList<String> juices) {
+        this.juices = juices;
     }
 
-    /**
-     * @return the priceContinental
-     */
-    public float getPriceContinental() {
-        return priceContinental;
+    public ArrayList<String> getBreads() {
+        return breads;
     }
 
-    /**
-     * @param priceContinental the priceContinental to set
-     */
-    public void setPriceContinental(float priceContinental) {
-        this.priceContinental = priceContinental;
+    public void setBreads(ArrayList<String> breads) {
+        this.breads = breads;
     }
 
-    /**
-     * @return the priceFull
-     */
-    public float getPriceFull() {
-        return priceFull;
+    public ArrayList<String> getEggs() {
+        return eggs;
     }
 
-    /**
-     * @param priceFull the priceFull to set
-     */
-    public void setPriceFull(float priceFull) {
-        this.priceFull = priceFull;
+    public void setEggs(ArrayList<String> eggs) {
+        this.eggs = eggs;
     }
 
+    public ArrayList<String> getFruits() {
+        return fruits;
+    }
+
+    public void setFruits(ArrayList<String> fruits) {
+        this.fruits = fruits;
+    }
+
+    public ArrayList<String> getStews() {
+        return stews;
+    }
+
+    public void setStews(ArrayList<String> stews) {
+        this.stews = stews;
+    }
+    
 }

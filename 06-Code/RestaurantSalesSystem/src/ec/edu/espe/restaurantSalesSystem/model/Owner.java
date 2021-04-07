@@ -16,8 +16,6 @@ public class Owner extends Person {
     private ArrayList<Cashier> cashiers = new ArrayList();
     private ArrayList<Customer> customers = new ArrayList();
     private ArrayList<Product> products = new ArrayList();
-    private ArrayList<Chef> chefs = new ArrayList();
-    private ArrayList<Waiter> waiters = new ArrayList();
 
     public Owner(String id, int age, String name, String address, String email, String cellPhone) {
         super(id, age, name, address, email, cellPhone);
@@ -48,22 +46,6 @@ public class Owner extends Person {
 
     public void setCourses(ArrayList<Product> products) {
         this.products = products;
-    }
-
-    public ArrayList<Chef> getChefs() {
-        return chefs;
-    }
-
-    public void setChefs(ArrayList<Chef> chefs) {
-        this.chefs = chefs;
-    }
-
-    public ArrayList<Waiter> getWaiters() {
-        return waiters;
-    }
-
-    public void setWaiters(ArrayList<Waiter> waiters) {
-        this.waiters = waiters;
     }
 
 }

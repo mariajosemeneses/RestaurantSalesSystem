@@ -10,7 +10,6 @@ package ec.edu.espe.restaurantSalesSystem.model;
  * @author Group3
  */
 public class Product {
-
     private String typeOfProduct;
     private String description;
     private float price;
@@ -44,5 +43,5 @@ public class Product {
     public void setPrice(float price) {
         this.price = price;
     }
-
+    
 }

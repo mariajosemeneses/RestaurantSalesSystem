@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package ec.edu.espe.restaurantSalesSystem.model;
 
 import ec.edu.espe.restaurantsalessystem.model.Bill;
@@ -18,124 +14,211 @@ import static org.junit.Assert.*;
  * @author Group 3
  */
 public class BillTest {
-
+    
     public BillTest() {
     }
-
+    
     @BeforeClass
     public static void setUpClass() {
     }
-
+    
     @AfterClass
     public static void tearDownClass() {
     }
-
+    
     @Before
     public void setUp() {
     }
-
+    
     @After
     public void tearDown() {
     }
 
     /**
-     * Test of getName method, of class Bill.
+     * Test of getNumSales method, of class Bill.
      */
     @Test
-    public void testGetName() {
-        System.out.println("getName");
+    public void testGetNumSales() {
+        System.out.println("getNumSales");
         Bill instance = new Bill();
-        String expResult = "Jose";
-        String result = instance.getName();
-        assertEquals(expResult, result, null);
+        int expResult = 0;
+        int result = instance.getNumSales();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
 
     }
 
     /**
-     * Test of setName method, of class Bill.
+     * Test of setNumSales method, of class Bill.
      */
     @Test
-    public void testSetName() {
-        System.out.println("setName");
-        String name = "Jose";
+    public void testSetNumSales() {
+        System.out.println("setNumSales");
         Bill instance = new Bill();
-        instance.setName(name);
+        instance.setNumSales();
+        // TODO review the generated test code and remove the default call to fail.
 
     }
 
     /**
-     * Test of getDate method, of class Bill.
+     * Test of getIva method, of class Bill.
      */
     @Test
-    public void testGetDate() {
-        System.out.println("getDate");
+    public void testGetIva() {
+        System.out.println("getIva");
         Bill instance = new Bill();
-        String expResult = "2021/03/17";
-        String result = instance.getDate();
-        assertEquals(expResult, result, null);
+        Double expResult = null;
+        Double result = instance.getIva();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
 
     }
 
     /**
-     * Test of setDate method, of class Bill.
+     * Test of setIva method, of class Bill.
      */
     @Test
-    public void testSetDate() {
-        System.out.println("setDate");
-        String date = "2021/03/17";
+    public void testSetIva() {
+        System.out.println("setIva");
+        Double iva = null;
         Bill instance = new Bill();
-        instance.setDate(date);
+        instance.setIva(iva);
+        // TODO review the generated test code and remove the default call to fail.
 
     }
 
     /**
-     * Test of getIdentificationCard method, of class Bill.
+     * Test of getTip method, of class Bill.
      */
     @Test
-    public void testGetIdentificationCard() {
-        System.out.println("getIdentificationCard");
+    public void testGetTip() {
+        System.out.println("getTip");
         Bill instance = new Bill();
-        int expResult = 44857;
-        int result = instance.getIdentificationCard();
-        assertEquals(expResult, result, 44857);
+        float expResult = 0.0F;
+        float result = instance.getTip();
+        assertEquals(expResult, result, 0.0);
+        // TODO review the generated test code and remove the default call to fail.
 
     }
 
     /**
-     * Test of setIdentificationCard method, of class Bill.
+     * Test of setTip method, of class Bill.
      */
     @Test
-    public void testSetIdentificationCard() {
-        System.out.println("setIdentificationCard");
-        int identificationCard = 44857;
+    public void testSetTip() {
+        System.out.println("setTip");
+        float tip = 0.0F;
         Bill instance = new Bill();
-        instance.setIdentificationCard(identificationCard);
+        instance.setTip(tip);
+        // TODO review the generated test code and remove the default call to fail.
 
     }
 
     /**
-     * Test of getCellPhone method, of class Bill.
+     * Test of getPrice method, of class Bill.
      */
     @Test
-    public void testGetCellPhone() {
-        System.out.println("getCellPhone");
+    public void testGetPrice() {
+        System.out.println("getPrice");
         Bill instance = new Bill();
-        String expResult = "0983023247";
-        String result = instance.getCellPhone();
-        assertEquals(expResult, result, null);
+        float expResult = 0.0F;
+        float result = instance.getPrice();
+        assertEquals(expResult, result, 0.0);
+        // TODO review the generated test code and remove the default call to fail.
 
     }
 
     /**
-     * Test of setCellPhone method, of class Bill.
+     * Test of setPrice method, of class Bill.
      */
     @Test
-    public void testSetCellPhone() {
-        System.out.println("setCellPhone");
-        String cellPhone = "0983023247";
+    public void testSetPrice() {
+        System.out.println("setPrice");
+        float price = 0.0F;
         Bill instance = new Bill();
-        instance.setCellPhone(cellPhone);
+        instance.setPrice(price);
+        // TODO review the generated test code and remove the default call to fail.
 
     }
 
+    /**
+     * Test of setDescription method, of class Bill.
+     */
+    @Test
+    public void testSetDescription() {
+        System.out.println("setDescription");
+        String description = "";
+        Bill instance = new Bill();
+        instance.setDescription(description);
+        // TODO review the generated test code and remove the default call to fail.
+
+    }
+
+    /**
+     * Test of getDescription method, of class Bill.
+     */
+    @Test
+    public void testGetDescription() {
+        System.out.println("getDescription");
+        Bill instance = new Bill();
+        String expResult = "";
+        String result = instance.getDescription();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+
+    }
+
+    /**
+     * Test of setQuantity method, of class Bill.
+     */
+    @Test
+    public void testSetQuantity() {
+        System.out.println("setQuantity");
+        int quantity = 0;
+        Bill instance = new Bill();
+        instance.setQuantity(quantity);
+        // TODO review the generated test code and remove the default call to fail.
+
+    }
+
+    /**
+     * Test of getQuantity method, of class Bill.
+     */
+    @Test
+    public void testGetQuantity() {
+        System.out.println("getQuantity");
+        Bill instance = new Bill();
+        int expResult = 0;
+        int result = instance.getQuantity();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+
+    }
+
+    /**
+     * Test of getTotal method, of class Bill.
+     */
+    @Test
+    public void testGetTotal() {
+        System.out.println("getTotal");
+        Bill instance = new Bill();
+        float expResult = 0.0F;
+        float result = instance.getTotal();
+        assertEquals(expResult, result, 0.0);
+        // TODO review the generated test code and remove the default call to fail.
+
+    }
+
+    /**
+     * Test of setTotal method, of class Bill.
+     */
+    @Test
+    public void testSetTotal() {
+        System.out.println("setTotal");
+        float total = 0.0F;
+        Bill instance = new Bill();
+        instance.setTotal(total);
+        // TODO review the generated test code and remove the default call to fail.
+    }
+    
 }

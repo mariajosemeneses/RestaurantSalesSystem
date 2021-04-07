@@ -15,15 +15,14 @@ public class Lunch extends Food {
 
     ArrayList<String> soups = new ArrayList();
     ArrayList<String> mainCourses = new ArrayList();
-    Drink drink;
-    Dessert dessert;
+    ArrayList<String> drinks = new ArrayList();
+    ArrayList<String> desserts = new ArrayList();
 
-    public Lunch(Drink drink, Dessert dessert, String typeOfProduct, String description, float price) {
-        super(typeOfProduct, description, price);
-        this.drink = drink;
-        this.dessert = dessert;
-    }
     
+    public Lunch(String typeOfProduct, String description, float price) {
+        super(typeOfProduct, description, price);
+    }
+
     public ArrayList<String> getSoups() {
         return soups;
     }
@@ -40,20 +39,22 @@ public class Lunch extends Food {
         this.mainCourses = mainCourses;
     }
 
-    public Drink getDrink() {
-        return drink;
+    public ArrayList<String> getDrinks() {
+        return drinks;
     }
 
-    public void setDrink(Drink drink) {
-        this.drink = drink;
+    public void setDrinks(ArrayList<String> drinks) {
+        this.drinks = drinks;
     }
 
-    public Dessert getDessert() {
-        return dessert;
+    public ArrayList<String> getDesserts() {
+        return desserts;
     }
 
-    public void setDessert(Dessert dessert) {
-        this.dessert = dessert;
+    public void setDesserts(ArrayList<String> desserts) {
+        this.desserts = desserts;
     }
-
+    
+    
 }
+
