@@ -26,6 +26,7 @@ import javax.swing.JSpinner;
 import javax.swing.table.DefaultTableModel;
 import java.awt.event.KeyEvent;
 import java.util.Date;
+import java.util.Random;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -661,6 +662,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
         jLabel179 = new javax.swing.JLabel();
         btnSendOrder = new javax.swing.JButton();
         numMesa = new javax.swing.JTextField();
+        btnNumbertable = new javax.swing.JButton();
         viewOrder = new javax.swing.JDialog();
         jPanel9 = new javax.swing.JPanel();
         jScrollPane3 = new javax.swing.JScrollPane();
@@ -701,6 +703,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
         PROPINA = new javax.swing.JLabel();
         btnPay = new javax.swing.JButton();
         txtNameCashier = new javax.swing.JTextField();
+        jDateChooser1 = new com.toedter.calendar.JDateChooser();
         OptionsDrink = new javax.swing.JDialog();
         btnSoda = new javax.swing.JButton();
         btnReturnOptionDrink = new javax.swing.JButton();
@@ -1229,15 +1232,12 @@ public class FrmMainScreen extends javax.swing.JFrame {
             .addGroup(SuggestionsLayout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(SuggestionsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(SuggestionsLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(SuggestionsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btnSend)
-                            .addComponent(btnReturn)))
-                    .addGroup(SuggestionsLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jSuggestions, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SuggestionsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(btnSend)
+                        .addComponent(btnReturn))
+                    .addComponent(jSuggestions, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(21, 21, 21))
             .addGroup(SuggestionsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(SuggestionsLayout.createSequentialGroup()
@@ -4195,6 +4195,14 @@ public class FrmMainScreen extends javax.swing.JFrame {
         jPanel3.add(btnSendOrder, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 260, 190, 30));
         jPanel3.add(numMesa, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 120, 100, 30));
 
+        btnNumbertable.setText("Generate");
+        btnNumbertable.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNumbertableActionPerformed(evt);
+            }
+        });
+        jPanel3.add(btnNumbertable, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 120, 80, 30));
+
         javax.swing.GroupLayout OrderLayout = new javax.swing.GroupLayout(Order.getContentPane());
         Order.getContentPane().setLayout(OrderLayout);
         OrderLayout.setHorizontalGroup(
@@ -4421,7 +4429,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
             }
         });
         jPanel11.add(txtCellphoneCostumer);
-        txtCellphoneCostumer.setBounds(110, 70, 160, 20);
+        txtCellphoneCostumer.setBounds(110, 90, 160, 30);
 
         txtIdCostumer.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -4429,22 +4437,22 @@ public class FrmMainScreen extends javax.swing.JFrame {
             }
         });
         jPanel11.add(txtIdCostumer);
-        txtIdCostumer.setBounds(110, 40, 160, 20);
+        txtIdCostumer.setBounds(110, 50, 160, 30);
 
         jLabel182.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         jLabel182.setText("Cellphone:");
         jPanel11.add(jLabel182);
-        jLabel182.setBounds(10, 70, 90, 20);
+        jLabel182.setBounds(10, 100, 90, 20);
 
         jLabel183.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         jLabel183.setText("Id:");
         jPanel11.add(jLabel183);
-        jLabel183.setBounds(10, 44, 90, 20);
+        jLabel183.setBounds(10, 60, 90, 20);
 
         jLabel184.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         jLabel184.setText("Name:");
         jPanel11.add(jLabel184);
-        jLabel184.setBounds(10, 14, 90, 20);
+        jLabel184.setBounds(10, 10, 90, 20);
 
         txtNameCostumer.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4457,10 +4465,10 @@ public class FrmMainScreen extends javax.swing.JFrame {
             }
         });
         jPanel11.add(txtNameCostumer);
-        txtNameCostumer.setBounds(110, 10, 160, 20);
+        txtNameCostumer.setBounds(110, 10, 160, 30);
 
         jPanel10.add(jPanel11);
-        jPanel11.setBounds(170, 80, 310, 110);
+        jPanel11.setBounds(170, 80, 340, 140);
 
         btnReturn5.setText("return");
         btnReturn5.setToolTipText("Volver");
@@ -4472,7 +4480,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
             }
         });
         jPanel10.add(btnReturn5);
-        btnReturn5.setBounds(50, 570, 70, 70);
+        btnReturn5.setBounds(70, 590, 70, 70);
 
         infoFact.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         infoFact.setText("Cashier:");
@@ -4550,6 +4558,8 @@ public class FrmMainScreen extends javax.swing.JFrame {
         txtNameCashier.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel10.add(txtNameCashier);
         txtNameCashier.setBounds(470, 290, 150, 30);
+        jPanel10.add(jDateChooser1);
+        jDateChooser1.setBounds(470, 250, 150, 30);
 
         Bill.getContentPane().add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 680, 710));
 
@@ -6080,6 +6090,15 @@ public class FrmMainScreen extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_txtDescriptionKeyTyped
 
+    private void btnNumbertableActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNumbertableActionPerformed
+        // TODO add your handling code here:
+        Random rnd = new Random();
+        int random = 0;
+        random = ((int) (rnd.nextInt(10 - 1 + 1) + 1));
+        numMesa.setText("" + random);
+        
+    }//GEN-LAST:event_btnNumbertableActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -6160,6 +6179,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
     private javax.swing.JButton btnLogin;
     private javax.swing.JButton btnLunch;
     private javax.swing.JButton btnNumSales;
+    private javax.swing.JButton btnNumbertable;
     private javax.swing.JButton btnOrderCoffee;
     private javax.swing.JButton btnOrderJuice;
     private javax.swing.JButton btnOrderLunch;
@@ -6233,6 +6253,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jCremaTomato;
+    private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jExpressoRistretto;
     private javax.swing.JLabel jFrapuccino;
     private javax.swing.JLabel jFrocaccino;
