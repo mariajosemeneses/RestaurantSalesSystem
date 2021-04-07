@@ -4873,6 +4873,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
     private void btnReturn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturn1ActionPerformed
         this.setVisible(false);
+        GenerateBill.setVisible(false);
         FrmMainScreen frmMainScreen = new FrmMainScreen();
         frmMainScreen.setVisible(true);
     }//GEN-LAST:event_btnReturn1ActionPerformed
@@ -4944,7 +4945,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
     }//GEN-LAST:event_btnFindProductsActionPerformed
 
     private void btnReturn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturn2ActionPerformed
-
+        FrmStockProducts.setVisible(false);
         OptionsOwner.setVisible(true);
         OptionsOwner.setLocationRelativeTo(null);
     }//GEN-LAST:event_btnReturn2ActionPerformed
@@ -5120,7 +5121,7 @@ public class FrmMainScreen extends javax.swing.JFrame {
     }//GEN-LAST:event_btnDessertActionPerformed
 
     private void btnExit1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExit1ActionPerformed
-        
+
         FrmMainScreen frmMainScreen = new FrmMainScreen();
         frmMainScreen.setVisible(true);
         this.setVisible(false);
@@ -5778,162 +5779,167 @@ public class FrmMainScreen extends javax.swing.JFrame {
 
         //Bill
         float contTotal = (float) 0.0;
-        int c1 = Integer.parseInt(numMesa.getText()), c2 = Integer.parseInt(txtTableNumber.getText());
+        
 
-        if (c1 == c2) {
-            limpiarTabla(factTable);
+        try {
+            int c1 = Integer.parseInt(numMesa.getText()), c2 = Integer.parseInt(txtTableNumber.getText());
+            if (c1 == c2) {
+                limpiarTabla(factTable);
 
-            //Breakfast
-            contTotal = generateBill(spiValor201, "Cafe en Agua", (float) 0.50, contTotal);
-            contTotal = generateBill(spiValor202, "Cafe en Leche", (float) 0.75, contTotal);
-            contTotal = generateBill(spiValor203, "Te con Limon", (float) 0.50, contTotal);
-            contTotal = generateBill(spiValor204, "Leche", (float) 0.60, contTotal);
-            contTotal = generateBill(spiValor205, "Pan Simple", (float) 0.10, contTotal);
-            contTotal = generateBill(spiValor206, "Pan con Jamon", (float) 0.25, contTotal);
-            contTotal = generateBill(spiValor207, "Pan con Mortadela", (float) 0.25, contTotal);
-            contTotal = generateBill(spiValor208, "Pan Integral", (float) 0.25, contTotal);
-            contTotal = generateBill(spiValor209, "Jugo de Mora", (float) 0.75, contTotal);
-            contTotal = generateBill(spiValor210, "Jugo de Naranjilla", (float) 0.75, contTotal);
-            contTotal = generateBill(spiValor211, "Jugo de Tomate de Arbol", (float) 0.75, contTotal);
-            contTotal = generateBill(spiValor212, "Huevos Cocidos", (float) 0.20, contTotal);
-            contTotal = generateBill(spiValor213, "Huevos Tibios", (float) 0.20, contTotal);
-            contTotal = generateBill(spiValor214, "Huevos Torta de Huevo", (float) 0.20, contTotal);
-            contTotal = generateBill(spiValor215, "Huevos Fritos", (float) 0.20, contTotal);
-            contTotal = generateBill(spiValor216, "Huevos Revueltos", (float) 0.20, contTotal);
-            contTotal = generateBill(spiValor217, "Manzana", (float) 0.35, contTotal);
-            contTotal = generateBill(spiValor218, "Pera", (float) 0.25, contTotal);
-            contTotal = generateBill(spiValor219, "Banana", (float) 0.25, contTotal);
-            contTotal = generateBill(spiValor220, "Estofado de Carne", (float) 1.50, contTotal);
-            contTotal = generateBill(spiValor221, "Estofado de Pollo", (float) 1.50, contTotal);
+                //Breakfast
+                contTotal = generateBill(spiValor201, "Cafe en Agua", (float) 0.50, contTotal);
+                contTotal = generateBill(spiValor202, "Cafe en Leche", (float) 0.75, contTotal);
+                contTotal = generateBill(spiValor203, "Te con Limon", (float) 0.50, contTotal);
+                contTotal = generateBill(spiValor204, "Leche", (float) 0.60, contTotal);
+                contTotal = generateBill(spiValor205, "Pan Simple", (float) 0.10, contTotal);
+                contTotal = generateBill(spiValor206, "Pan con Jamon", (float) 0.25, contTotal);
+                contTotal = generateBill(spiValor207, "Pan con Mortadela", (float) 0.25, contTotal);
+                contTotal = generateBill(spiValor208, "Pan Integral", (float) 0.25, contTotal);
+                contTotal = generateBill(spiValor209, "Jugo de Mora", (float) 0.75, contTotal);
+                contTotal = generateBill(spiValor210, "Jugo de Naranjilla", (float) 0.75, contTotal);
+                contTotal = generateBill(spiValor211, "Jugo de Tomate de Arbol", (float) 0.75, contTotal);
+                contTotal = generateBill(spiValor212, "Huevos Cocidos", (float) 0.20, contTotal);
+                contTotal = generateBill(spiValor213, "Huevos Tibios", (float) 0.20, contTotal);
+                contTotal = generateBill(spiValor214, "Huevos Torta de Huevo", (float) 0.20, contTotal);
+                contTotal = generateBill(spiValor215, "Huevos Fritos", (float) 0.20, contTotal);
+                contTotal = generateBill(spiValor216, "Huevos Revueltos", (float) 0.20, contTotal);
+                contTotal = generateBill(spiValor217, "Manzana", (float) 0.35, contTotal);
+                contTotal = generateBill(spiValor218, "Pera", (float) 0.25, contTotal);
+                contTotal = generateBill(spiValor219, "Banana", (float) 0.25, contTotal);
+                contTotal = generateBill(spiValor220, "Estofado de Carne", (float) 1.50, contTotal);
+                contTotal = generateBill(spiValor221, "Estofado de Pollo", (float) 1.50, contTotal);
 
-            //lunch
-            contTotal = generateBill(spiValor222, "Locro de Papas", (float) 1.25, contTotal);
-            contTotal = generateBill(spiValor223, "Crema de Tomate", (float) 1.25, contTotal);
-            contTotal = generateBill(spiValor224, "Caldo de Gallina", (float) 1.25, contTotal);
-            contTotal = generateBill(spiValor225, "Chuleta de Cerdo", (float) 2.00, contTotal);
-            contTotal = generateBill(spiValor226, "Camarones Apanados", (float) 2.20, contTotal);
-            contTotal = generateBill(spiValor227, "Lasaña de Pollo", (float) 3.20, contTotal);
-            contTotal = generateBill(spiValor228, "Jugo de Piña", (float) 0.50, contTotal);
-            contTotal = generateBill(spiValor229, "Jugo de Babaco", (float) 0.50, contTotal);
-            contTotal = generateBill(spiValor230, "Jugo de Naranjilla", (float) 0.50, contTotal);
-            contTotal = generateBill(spiValor231, "Brownie", (float) 0.75, contTotal);
-            contTotal = generateBill(spiValor232, "ChesseCake", (float) 0.75, contTotal);
-            contTotal = generateBill(spiValor233, "Pastel Tres Leches", (float) 0.75, contTotal);
+                //lunch
+                contTotal = generateBill(spiValor222, "Locro de Papas", (float) 1.25, contTotal);
+                contTotal = generateBill(spiValor223, "Crema de Tomate", (float) 1.25, contTotal);
+                contTotal = generateBill(spiValor224, "Caldo de Gallina", (float) 1.25, contTotal);
+                contTotal = generateBill(spiValor225, "Chuleta de Cerdo", (float) 2.00, contTotal);
+                contTotal = generateBill(spiValor226, "Camarones Apanados", (float) 2.20, contTotal);
+                contTotal = generateBill(spiValor227, "Lasaña de Pollo", (float) 3.20, contTotal);
+                contTotal = generateBill(spiValor228, "Jugo de Piña", (float) 0.50, contTotal);
+                contTotal = generateBill(spiValor229, "Jugo de Babaco", (float) 0.50, contTotal);
+                contTotal = generateBill(spiValor230, "Jugo de Naranjilla", (float) 0.50, contTotal);
+                contTotal = generateBill(spiValor231, "Brownie", (float) 0.75, contTotal);
+                contTotal = generateBill(spiValor232, "ChesseCake", (float) 0.75, contTotal);
+                contTotal = generateBill(spiValor233, "Pastel Tres Leches", (float) 0.75, contTotal);
 
-            //Snack
-            contTotal = generateBill(spiValor234, "Hamburguesa de Queso", (float) 5.75, contTotal);
-            contTotal = generateBill(spiValor235, "Hamburguesa Simple", (float) 5.25, contTotal);
-            contTotal = generateBill(spiValor236, "Hamburguesa de Queso y Tocino", (float) 6.90, contTotal);
-            contTotal = generateBill(spiValor237, "Hamburguesa de Pollo", (float) 6.50, contTotal);
-            contTotal = generateBill(spiValor238, "Hamburguesa Jack Daniels", (float) 7.99, contTotal);
-            contTotal = generateBill(spiValor239, "Alitas BBQ", (float) 13.50, contTotal);
-            contTotal = generateBill(spiValor240, "Alitas Picantes", (float) 13.50, contTotal);
-            contTotal = generateBill(spiValor241, "Alitas Maracuya", (float) 13.50, contTotal);
-            contTotal = generateBill(spiValor242, "Nachos con Queso Chedar", (float) 6.25, contTotal);
-            contTotal = generateBill(spiValor243, "Nachos con Guacamole", (float) 6.25, contTotal);
+                //Snack
+                contTotal = generateBill(spiValor234, "Hamburguesa de Queso", (float) 5.75, contTotal);
+                contTotal = generateBill(spiValor235, "Hamburguesa Simple", (float) 5.25, contTotal);
+                contTotal = generateBill(spiValor236, "Hamburguesa de Queso y Tocino", (float) 6.90, contTotal);
+                contTotal = generateBill(spiValor237, "Hamburguesa de Pollo", (float) 6.50, contTotal);
+                contTotal = generateBill(spiValor238, "Hamburguesa Jack Daniels", (float) 7.99, contTotal);
+                contTotal = generateBill(spiValor239, "Alitas BBQ", (float) 13.50, contTotal);
+                contTotal = generateBill(spiValor240, "Alitas Picantes", (float) 13.50, contTotal);
+                contTotal = generateBill(spiValor241, "Alitas Maracuya", (float) 13.50, contTotal);
+                contTotal = generateBill(spiValor242, "Nachos con Queso Chedar", (float) 6.25, contTotal);
+                contTotal = generateBill(spiValor243, "Nachos con Guacamole", (float) 6.25, contTotal);
 
-            //Coffee
-            contTotal = generateBill(spiValor244, "American Small", (float) 3.00, contTotal);
-            contTotal = generateBill(spiValor245, "American Big", (float) 6.00, contTotal);
-            contTotal = generateBill(spiValor246, "Tinto Small", (float) 2.00, contTotal);
-            contTotal = generateBill(spiValor247, "Tinto Big", (float) 5.00, contTotal);
-            contTotal = generateBill(spiValor248, "Expresso Ristretto Small", (float) 2.00, contTotal);
-            contTotal = generateBill(spiValor249, "Expresso Ristretto Big", (float) 5.00, contTotal);
-            contTotal = generateBill(spiValor250, "Capuccino Small", (float) 3.25, contTotal);
-            contTotal = generateBill(spiValor251, "Capuccino Big", (float) 7.25, contTotal);
-            contTotal = generateBill(spiValor252, "Latte Macchaiato Small", (float) 2.50, contTotal);
-            contTotal = generateBill(spiValor253, "Latte Macchaiato Big", (float) 4.50, contTotal);
-            contTotal = generateBill(spiValor254, "Frapuccino Small", (float) 3.00, contTotal);
-            contTotal = generateBill(spiValor255, "Frapuccino Big", (float) 6.20, contTotal);
-            contTotal = generateBill(spiValor256, "Fropaccino Small", (float) 3.00, contTotal);
-            contTotal = generateBill(spiValor257, "Fropuccino Big", (float) 6.20, contTotal);
-            contTotal = generateBill(spiValor258, "Mocaccino Small", (float) 3.50, contTotal);
-            contTotal = generateBill(spiValor259, "Mocaccino Big", (float) 6.20, contTotal);
+                //Coffee
+                contTotal = generateBill(spiValor244, "American Small", (float) 3.00, contTotal);
+                contTotal = generateBill(spiValor245, "American Big", (float) 6.00, contTotal);
+                contTotal = generateBill(spiValor246, "Tinto Small", (float) 2.00, contTotal);
+                contTotal = generateBill(spiValor247, "Tinto Big", (float) 5.00, contTotal);
+                contTotal = generateBill(spiValor248, "Expresso Ristretto Small", (float) 2.00, contTotal);
+                contTotal = generateBill(spiValor249, "Expresso Ristretto Big", (float) 5.00, contTotal);
+                contTotal = generateBill(spiValor250, "Capuccino Small", (float) 3.25, contTotal);
+                contTotal = generateBill(spiValor251, "Capuccino Big", (float) 7.25, contTotal);
+                contTotal = generateBill(spiValor252, "Latte Macchaiato Small", (float) 2.50, contTotal);
+                contTotal = generateBill(spiValor253, "Latte Macchaiato Big", (float) 4.50, contTotal);
+                contTotal = generateBill(spiValor254, "Frapuccino Small", (float) 3.00, contTotal);
+                contTotal = generateBill(spiValor255, "Frapuccino Big", (float) 6.20, contTotal);
+                contTotal = generateBill(spiValor256, "Fropaccino Small", (float) 3.00, contTotal);
+                contTotal = generateBill(spiValor257, "Fropuccino Big", (float) 6.20, contTotal);
+                contTotal = generateBill(spiValor258, "Mocaccino Small", (float) 3.50, contTotal);
+                contTotal = generateBill(spiValor259, "Mocaccino Big", (float) 6.20, contTotal);
 
-            //Juice
-            contTotal = generateBill(spiValor260, "Jarra Jugo de Papaya", (float) 1.50, contTotal);
-            contTotal = generateBill(spiValor261, "Vaso Jugo de Papaya", (float) 0.75, contTotal);
-            contTotal = generateBill(spiValor262, "Jarra Jugo de Sandia", (float) 1.50, contTotal);
-            contTotal = generateBill(spiValor263, "Vaso Jugo de Sandia", (float) 0.75, contTotal);
-            contTotal = generateBill(spiValor264, "Jarra Jugo de Naranjilla", (float) 1.50, contTotal);
-            contTotal = generateBill(spiValor265, "Vaso Jugo de Naranjilla", (float) 0.75, contTotal);
-            contTotal = generateBill(spiValor266, "Jarra Jugo de Tomate de arbol", (float) 1.50, contTotal);
-            contTotal = generateBill(spiValor267, "Vaso Jugo de Tomate de arbol", (float) 0.75, contTotal);
-            contTotal = generateBill(spiValor268, "Jarra Jugo de Mora", (float) 1.50, contTotal);
-            contTotal = generateBill(spiValor269, "Vaso Jugo de Mora", (float) 0.75, contTotal);
-            contTotal = generateBill(spiValor270, "Jarra Jugo de Limonada", (float) 1.50, contTotal);
-            contTotal = generateBill(spiValor271, "Vaso Jugo de Limonada", (float) 0.75, contTotal);
+                //Juice
+                contTotal = generateBill(spiValor260, "Jarra Jugo de Papaya", (float) 1.50, contTotal);
+                contTotal = generateBill(spiValor261, "Vaso Jugo de Papaya", (float) 0.75, contTotal);
+                contTotal = generateBill(spiValor262, "Jarra Jugo de Sandia", (float) 1.50, contTotal);
+                contTotal = generateBill(spiValor263, "Vaso Jugo de Sandia", (float) 0.75, contTotal);
+                contTotal = generateBill(spiValor264, "Jarra Jugo de Naranjilla", (float) 1.50, contTotal);
+                contTotal = generateBill(spiValor265, "Vaso Jugo de Naranjilla", (float) 0.75, contTotal);
+                contTotal = generateBill(spiValor266, "Jarra Jugo de Tomate de arbol", (float) 1.50, contTotal);
+                contTotal = generateBill(spiValor267, "Vaso Jugo de Tomate de arbol", (float) 0.75, contTotal);
+                contTotal = generateBill(spiValor268, "Jarra Jugo de Mora", (float) 1.50, contTotal);
+                contTotal = generateBill(spiValor269, "Vaso Jugo de Mora", (float) 0.75, contTotal);
+                contTotal = generateBill(spiValor270, "Jarra Jugo de Limonada", (float) 1.50, contTotal);
+                contTotal = generateBill(spiValor271, "Vaso Jugo de Limonada", (float) 0.75, contTotal);
 
-            //Soda
-            contTotal = generateBill(spiValor272, "Coca Cola Personal", (float) 0.50, contTotal);
-            contTotal = generateBill(spiValor273, "Coca Cola 1 lt", (float) 1.35, contTotal);
-            contTotal = generateBill(spiValor274, "Fanta Personal", (float) 0.50, contTotal);
-            contTotal = generateBill(spiValor275, "Fanta 1 lt", (float) 1.20, contTotal);
-            contTotal = generateBill(spiValor276, "Big Cola Personal", (float) 0.50, contTotal);
-            contTotal = generateBill(spiValor277, "Big Cola 1 lt", (float) 1.35, contTotal);
-            contTotal = generateBill(spiValor278, "Sprite Personal", (float) 0.50, contTotal);
-            contTotal = generateBill(spiValor279, "Sprite 1 lt", (float) 1.35, contTotal);
+                //Soda
+                contTotal = generateBill(spiValor272, "Coca Cola Personal", (float) 0.50, contTotal);
+                contTotal = generateBill(spiValor273, "Coca Cola 1 lt", (float) 1.35, contTotal);
+                contTotal = generateBill(spiValor274, "Fanta Personal", (float) 0.50, contTotal);
+                contTotal = generateBill(spiValor275, "Fanta 1 lt", (float) 1.20, contTotal);
+                contTotal = generateBill(spiValor276, "Big Cola Personal", (float) 0.50, contTotal);
+                contTotal = generateBill(spiValor277, "Big Cola 1 lt", (float) 1.35, contTotal);
+                contTotal = generateBill(spiValor278, "Sprite Personal", (float) 0.50, contTotal);
+                contTotal = generateBill(spiValor279, "Sprite 1 lt", (float) 1.35, contTotal);
 
-            //Dessert
-            contTotal = generateBill(spiValor280, "Portion Limon Pie", (float) 2.80, contTotal);
-            contTotal = generateBill(spiValor281, "Medium Limon Pie", (float) 13.25, contTotal);
-            contTotal = generateBill(spiValor282, "Big Limon Pie", (float) 21.80, contTotal);
-            contTotal = generateBill(spiValor283, "Portion Manzana Pie", (float) 1.80, contTotal);
-            contTotal = generateBill(spiValor284, "Medium Manzana Pie", (float) 13.25, contTotal);
-            contTotal = generateBill(spiValor285, "Big Manzana Pie", (float) 21.80, contTotal);
-            contTotal = generateBill(spiValor286, "Portion Chocolate Pie", (float) 4.50, contTotal);
-            contTotal = generateBill(spiValor287, "Medium Chocolate Pie", (float) 15.20, contTotal);
-            contTotal = generateBill(spiValor288, "Big Chocolate Pie", (float) 25.80, contTotal);
-            contTotal = generateBill(spiValor289, "Portion Chocolate Cake", (float) 1.50, contTotal);
-            contTotal = generateBill(spiValor290, "Medium Chocolate Cake", (float) 15.50, contTotal);
-            contTotal = generateBill(spiValor291, "Big Chocolate Cake", (float) 23.50, contTotal);
-            contTotal = generateBill(spiValor292, "Portion Vainilla Cake", (float) 1.25, contTotal);
-            contTotal = generateBill(spiValor293, "Medium Vainilla Cake", (float) 15.20, contTotal);
-            contTotal = generateBill(spiValor294, "Big Vainilla Cake", (float) 20.00, contTotal);
-            contTotal = generateBill(spiValor295, "Portion Naranja Cake", (float) 1.25, contTotal);
-            contTotal = generateBill(spiValor296, "Medium Naranja Cake", (float) 15.20, contTotal);
-            contTotal = generateBill(spiValor297, "Big Naranja Cake", (float) 20.00, contTotal);
-            contTotal = generateBill(spiValor298, "Humitas de Sal", (float) 0.35, contTotal);
-            contTotal = generateBill(spiValor299, "Humitas de Dulce", (float) 0.35, contTotal);
-            contTotal = generateBill(spiValor300, "Tamal Lojano de Pollo", (float) 1.25, contTotal);
-            contTotal = generateBill(spiValor301, "Tamal Lojano de Chancho", (float) 1.50, contTotal);
-            contTotal = generateBill(spiValor302, "Tamal Lojano de Chicharron", (float) 0.75, contTotal);
-            contTotal = generateBill(spiValor303, "Bolon de Queso ", (float) 0.50, contTotal);
-            contTotal = generateBill(spiValor304, "Bolon Mixto", (float) 1.25, contTotal);
-            contTotal = generateBill(spiValor305, "Quimbolito", (float) 0.35, contTotal);
-            contTotal = generateBill(spiValor306, "Porción de tarta de queso Nutella", (float) 3.80, contTotal);
-            contTotal = generateBill(spiValor307, "Medium de tarta de queso Nutella", (float) 14.00, contTotal);
-            contTotal = generateBill(spiValor308, "Big de tarta de queso Nutella", (float) 25.00, contTotal);
-            contTotal = generateBill(spiValor309, "Brownie de porción de tarta de queso", (float) 1.80, contTotal);
-            contTotal = generateBill(spiValor310, "Medium Brownie de tarta de queso", (float) 6.20, contTotal);
-            contTotal = generateBill(spiValor311, "Big Brownie de tarta de queso", (float) 14.50, contTotal);
-            contTotal = generateBill(spiValor312, " Porción de tarta de queso Coco, caramelo y almendra ", (float) 4.80, contTotal);
-            contTotal = generateBill(spiValor313, " Medium de tarta de queso Coco, caramelo y almendra ", (float) 16.00, contTotal);
-            contTotal = generateBill(spiValor314, " Big de tarta de queso Coco, caramelo y almendra ", (float) 25.50, contTotal);
+                //Dessert
+                contTotal = generateBill(spiValor280, "Portion Limon Pie", (float) 2.80, contTotal);
+                contTotal = generateBill(spiValor281, "Medium Limon Pie", (float) 13.25, contTotal);
+                contTotal = generateBill(spiValor282, "Big Limon Pie", (float) 21.80, contTotal);
+                contTotal = generateBill(spiValor283, "Portion Manzana Pie", (float) 1.80, contTotal);
+                contTotal = generateBill(spiValor284, "Medium Manzana Pie", (float) 13.25, contTotal);
+                contTotal = generateBill(spiValor285, "Big Manzana Pie", (float) 21.80, contTotal);
+                contTotal = generateBill(spiValor286, "Portion Chocolate Pie", (float) 4.50, contTotal);
+                contTotal = generateBill(spiValor287, "Medium Chocolate Pie", (float) 15.20, contTotal);
+                contTotal = generateBill(spiValor288, "Big Chocolate Pie", (float) 25.80, contTotal);
+                contTotal = generateBill(spiValor289, "Portion Chocolate Cake", (float) 1.50, contTotal);
+                contTotal = generateBill(spiValor290, "Medium Chocolate Cake", (float) 15.50, contTotal);
+                contTotal = generateBill(spiValor291, "Big Chocolate Cake", (float) 23.50, contTotal);
+                contTotal = generateBill(spiValor292, "Portion Vainilla Cake", (float) 1.25, contTotal);
+                contTotal = generateBill(spiValor293, "Medium Vainilla Cake", (float) 15.20, contTotal);
+                contTotal = generateBill(spiValor294, "Big Vainilla Cake", (float) 20.00, contTotal);
+                contTotal = generateBill(spiValor295, "Portion Naranja Cake", (float) 1.25, contTotal);
+                contTotal = generateBill(spiValor296, "Medium Naranja Cake", (float) 15.20, contTotal);
+                contTotal = generateBill(spiValor297, "Big Naranja Cake", (float) 20.00, contTotal);
+                contTotal = generateBill(spiValor298, "Humitas de Sal", (float) 0.35, contTotal);
+                contTotal = generateBill(spiValor299, "Humitas de Dulce", (float) 0.35, contTotal);
+                contTotal = generateBill(spiValor300, "Tamal Lojano de Pollo", (float) 1.25, contTotal);
+                contTotal = generateBill(spiValor301, "Tamal Lojano de Chancho", (float) 1.50, contTotal);
+                contTotal = generateBill(spiValor302, "Tamal Lojano de Chicharron", (float) 0.75, contTotal);
+                contTotal = generateBill(spiValor303, "Bolon de Queso ", (float) 0.50, contTotal);
+                contTotal = generateBill(spiValor304, "Bolon Mixto", (float) 1.25, contTotal);
+                contTotal = generateBill(spiValor305, "Quimbolito", (float) 0.35, contTotal);
+                contTotal = generateBill(spiValor306, "Porción de tarta de queso Nutella", (float) 3.80, contTotal);
+                contTotal = generateBill(spiValor307, "Medium de tarta de queso Nutella", (float) 14.00, contTotal);
+                contTotal = generateBill(spiValor308, "Big de tarta de queso Nutella", (float) 25.00, contTotal);
+                contTotal = generateBill(spiValor309, "Brownie de porción de tarta de queso", (float) 1.80, contTotal);
+                contTotal = generateBill(spiValor310, "Medium Brownie de tarta de queso", (float) 6.20, contTotal);
+                contTotal = generateBill(spiValor311, "Big Brownie de tarta de queso", (float) 14.50, contTotal);
+                contTotal = generateBill(spiValor312, " Porción de tarta de queso Coco, caramelo y almendra ", (float) 4.80, contTotal);
+                contTotal = generateBill(spiValor313, " Medium de tarta de queso Coco, caramelo y almendra ", (float) 16.00, contTotal);
+                contTotal = generateBill(spiValor314, " Big de tarta de queso Coco, caramelo y almendra ", (float) 25.50, contTotal);
 
-            //iva prop y total a labels factura
-            float iva = (float) (contTotal * 0.12);
-            float prop = (float) (contTotal * 0.05);
-            float tot = iva + prop + contTotal;
-            IVA.setText(String.valueOf(iva));
-            PROPINA.setText(String.valueOf(prop));
-            TOTALtot.setText(String.valueOf(tot));
+                //iva prop y total a labels factura
+                float iva = (float) (contTotal * 0.12);
+                float prop = (float) (contTotal * 0.05);
+                float tot = iva + prop + contTotal;
+                IVA.setText(String.valueOf(iva));
+                PROPINA.setText(String.valueOf(prop));
+                TOTALtot.setText(String.valueOf(tot));
 
-            String c = txtTableNumber.getText();
-            numMesa2.setText(c);
-            Bill.setVisible(true);
-            Bill.setLocationRelativeTo(null);
-            GenerateBill.setVisible(false);
-            String fecha1 = (new Date()).toString();
+                String c = txtTableNumber.getText();
+                numMesa2.setText(c);
+                Bill.setVisible(true);
+                Bill.setLocationRelativeTo(null);
+                GenerateBill.setVisible(false);
 
-        } else {
-            JOptionPane.showMessageDialog(null, "Tables do not match, check again");
-            txtTableNumber.setText("");
+            } else {
+                JOptionPane.showMessageDialog(null, "Tables do not match, check again");
+                txtTableNumber.setText("");
+            }
+
+            if (txtTableNumber.getText().equals("")) {
+                JOptionPane.showMessageDialog(null, "You have not entered a table number to generate an invoice.");
+            }
+        } catch (NumberFormatException ex) {
+            System.out.println("Error in tables");
         }
 
-        if (txtTableNumber.getText().equals("")) {
-            JOptionPane.showMessageDialog(null, "You have not entered a table number to generate an invoice.");
-        }
     }//GEN-LAST:event_btngenerateBillCashierActionPerformed
 
     private void txtCellphoneCostumerKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCellphoneCostumerKeyTyped
