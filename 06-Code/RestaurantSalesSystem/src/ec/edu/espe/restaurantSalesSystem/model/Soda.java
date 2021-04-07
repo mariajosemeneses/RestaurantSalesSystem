@@ -5,47 +5,27 @@
  */
 package ec.edu.espe.restaurantSalesSystem.model;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Group3
  */
 public class Soda extends Drink {
 
-    private String flavor;
-    private String brand;
+    private ArrayList<String> brands = new ArrayList();
 
-    public Soda(String flavor, String brand, String typeOfProduct, String description, float price) {
+    public Soda(String typeOfProduct, String description, float price) {
         super(typeOfProduct, description, price);
-        this.flavor = flavor;
-        this.brand = brand;
     }
 
-    /**
-     * @return the flavor
-     */
-    public String getFlavor() {
-        return flavor;
+    public ArrayList<String> getBrands() {
+        return brands;
     }
 
-    /**
-     * @param flavor the flavor to set
-     */
-    public void setFlavor(String flavor) {
-        this.flavor = flavor;
+    public void setBrands(ArrayList<String> brands) {
+        this.brands = brands;
     }
-
-    /**
-     * @return the brand
-     */
-    public String getBrand() {
-        return brand;
-    }
-
-    /**
-     * @param brand the brand to set
-     */
-    public void setBrand(String brand) {
-        this.brand = brand;
-    }
+    
 
 }

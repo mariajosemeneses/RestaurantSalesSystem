@@ -1314,6 +1314,9 @@ public class FrmMainScreen extends javax.swing.JFrame {
             .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, 270, Short.MAX_VALUE)
         );
 
+        Menu.setMinimumSize(new java.awt.Dimension(400, 377));
+        Menu.setResizable(false);
+
         btnDessert.setFont(new java.awt.Font("Baskerville Old Face", 0, 14)); // NOI18N
         btnDessert.setText("DESSERT");
         btnDessert.addActionListener(new java.awt.event.ActionListener() {

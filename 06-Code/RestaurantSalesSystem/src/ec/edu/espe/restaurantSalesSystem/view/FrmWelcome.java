@@ -11,7 +11,7 @@ import java.awt.Toolkit;
 
 /**
  *
- * @author Maria José Meneses
+ * @author Group 3
  */
 public class FrmWelcome extends javax.swing.JFrame {
              Load bar;

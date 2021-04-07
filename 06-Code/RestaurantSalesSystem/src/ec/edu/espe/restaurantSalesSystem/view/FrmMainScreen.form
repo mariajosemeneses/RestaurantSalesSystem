@@ -1139,6 +1139,12 @@
       </SubComponents>
     </Container>
     <Container class="javax.swing.JFrame" name="Menu">
+      <Properties>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[400, 377]"/>
+        </Property>
+        <Property name="resizable" type="boolean" value="false"/>
+      </Properties>
 
       <Layout>
         <DimensionLayout dim="0">
