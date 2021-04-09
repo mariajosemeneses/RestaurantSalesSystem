@@ -4978,17 +4978,17 @@
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Group type="102" alignment="0" attributes="0">
-                                                  <Component id="jLabel114" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jCoconutMedium" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                                   <Component id="spiValor313" min="-2" pref="61" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
-                                                  <Component id="jLabel113" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jCoconutPortion" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                                   <Component id="spiValor312" min="-2" pref="61" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
-                                                  <Component id="jLabel115" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jCoconutBig" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                                   <Component id="spiValor314" min="-2" pref="61" max="-2" attributes="0"/>
                                               </Group>
@@ -4999,9 +4999,9 @@
                                           <Component id="jNutella" min="-2" pref="78" max="-2" attributes="0"/>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jLabel154" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jLabel161" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jLabel164" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jNutellaMedium" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jNutellaBig" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jNutellaPortion" alignment="1" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -5018,17 +5018,17 @@
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="1" attributes="0">
                                               <Group type="102" alignment="0" attributes="0">
-                                                  <Component id="jLabel126" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jBrownieMedium" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                                   <Component id="spiValor310" min="-2" pref="61" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
-                                                  <Component id="jLabel124" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jBrowniePortion" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                                   <Component id="spiValor309" min="-2" pref="61" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
-                                                  <Component id="jLabel128" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jBrownieBig" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                                   <Component id="spiValor311" min="-2" pref="61" max="-2" attributes="0"/>
                                               </Group>
@@ -5054,17 +5054,17 @@
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
-                                          <Component id="jLabel158" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLemonMedium" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Component id="spiValor281" min="-2" pref="61" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
-                                          <Component id="jLabel122" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLemonBig" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Component id="spiValor282" min="-2" pref="61" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
-                                          <Component id="jLabel157" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLemonPortion" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Component id="spiValor280" min="-2" pref="61" max="-2" attributes="0"/>
                                       </Group>
@@ -5077,17 +5077,17 @@
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
-                                          <Component id="jLabel117" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jAppleMedium" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Component id="spiValor284" min="-2" pref="61" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
-                                          <Component id="jLabel133" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jAppleBig" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Component id="spiValor285" min="-2" pref="61" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
-                                          <Component id="jLabel116" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jApplePortion" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Component id="spiValor283" min="-2" pref="61" max="-2" attributes="0"/>
                                       </Group>
@@ -5101,17 +5101,17 @@
                                   <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
-                                          <Component id="jLabel136" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jChocolateMedium" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Component id="spiValor287" min="-2" pref="61" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
-                                          <Component id="jLabel134" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jChocolatePortion" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Component id="spiValor286" min="-2" pref="61" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
-                                          <Component id="jLabel138" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jChocolatePieBig" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Component id="spiValor288" min="-2" pref="61" max="-2" attributes="0"/>
                                       </Group>
@@ -5134,17 +5134,17 @@
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel130" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jChocolateCakeBig" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="spiValor291" min="-2" pref="61" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel129" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jChocolateCakeMedium" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="spiValor290" min="-2" pref="61" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel127" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jChocolateCakePortion" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="spiValor289" min="-2" pref="61" max="-2" attributes="0"/>
                               </Group>
@@ -5160,17 +5160,17 @@
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel118" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jVainillaMedium" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="spiValor293" min="-2" pref="61" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel119" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jVainillaBig" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="spiValor294" min="-2" pref="61" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel132" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jVainillaPortion" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="spiValor292" min="-2" pref="61" max="-2" attributes="0"/>
                               </Group>
@@ -5184,17 +5184,17 @@
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel135" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jOrangeMedium" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="spiValor296" min="-2" pref="61" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel121" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jOrangePortion" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="spiValor295" min="-2" pref="61" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel137" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jOrangeBig" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="spiValor297" min="-2" pref="61" max="-2" attributes="0"/>
                               </Group>
@@ -5216,9 +5216,9 @@
                                   <Component id="jBolon" min="-2" pref="78" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel145" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel144" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel150" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jBolonChesse" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jBolonPorkRind" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jBolonMixto" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
@@ -5231,7 +5231,7 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="jQuimbolito" min="-2" pref="78" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="jLabel141" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jQuimbolitoCU" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Component id="spiValor305" min="-2" pref="61" max="-2" attributes="0"/>
                               </Group>
@@ -5240,8 +5240,8 @@
                                   <Component id="jLojanoTamale" min="-2" pref="78" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel142" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel143" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLojanoTamaleChicken" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLojanoTamalePig" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
@@ -5257,12 +5257,12 @@
                                   <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
-                                          <Component id="jLabel139" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jHumitaSalt" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Component id="spiValor298" min="-2" pref="61" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
-                                          <Component id="jLabel140" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jHumitaCandy" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Component id="spiValor299" min="-2" pref="61" max="-2" attributes="0"/>
                                       </Group>
@@ -5311,17 +5311,17 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="28" pref="28" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jLabel164" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jNutellaPortion" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="spiValor306" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jLabel154" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jNutellaMedium" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="spiValor307" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jLabel161" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jNutellaBig" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="spiValor308" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
@@ -5340,17 +5340,17 @@
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jLabel124" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jBrowniePortion" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="spiValor309" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jLabel126" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jBrownieMedium" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="spiValor310" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jLabel128" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jBrownieBig" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="spiValor311" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
@@ -5364,17 +5364,17 @@
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jLabel113" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jCoconutPortion" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="spiValor312" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jLabel114" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jCoconutMedium" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="spiValor313" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jLabel115" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jCoconutBig" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="spiValor314" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
@@ -5392,17 +5392,17 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jLabel157" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLemonPortion" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="spiValor280" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jLabel158" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLemonMedium" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="spiValor281" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jLabel122" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLemonBig" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="spiValor282" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
@@ -5416,17 +5416,17 @@
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jLabel116" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jApplePortion" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="spiValor283" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jLabel117" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jAppleMedium" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="spiValor284" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jLabel133" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jAppleBig" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="spiValor285" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
@@ -5440,17 +5440,17 @@
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jLabel134" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jChocolatePortion" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="spiValor286" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel136" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jChocolateMedium" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Component id="spiValor287" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel138" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jChocolatePieBig" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Component id="spiValor288" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
@@ -5468,17 +5468,17 @@
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
                                           <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="jLabel127" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jChocolateCakePortion" alignment="3" min="-2" max="-2" attributes="0"/>
                                               <Component id="spiValor289" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="jLabel129" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jChocolateCakeMedium" alignment="3" min="-2" max="-2" attributes="0"/>
                                               <Component id="spiValor290" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="jLabel130" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jChocolateCakeBig" alignment="3" min="-2" max="-2" attributes="0"/>
                                               <Component id="spiValor291" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
@@ -5496,17 +5496,17 @@
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="jLabel132" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jVainillaPortion" alignment="3" min="-2" max="-2" attributes="0"/>
                                               <Component id="spiValor292" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="jLabel118" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jVainillaMedium" alignment="3" min="-2" max="-2" attributes="0"/>
                                               <Component id="spiValor293" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="jLabel119" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jVainillaBig" alignment="3" min="-2" max="-2" attributes="0"/>
                                               <Component id="spiValor294" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
@@ -5521,17 +5521,17 @@
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="jLabel121" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jOrangePortion" alignment="3" min="-2" max="-2" attributes="0"/>
                                               <Component id="spiValor295" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="jLabel135" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jOrangeMedium" alignment="3" min="-2" max="-2" attributes="0"/>
                                               <Component id="spiValor296" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="jLabel137" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jOrangeBig" alignment="3" min="-2" max="-2" attributes="0"/>
                                               <Component id="spiValor297" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
@@ -5546,11 +5546,11 @@
                                       <Group type="102" alignment="0" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Component id="spiValor298" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jLabel139" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jHumitaSalt" alignment="1" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="jLabel140" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jHumitaCandy" alignment="3" min="-2" max="-2" attributes="0"/>
                                               <Component id="spiValor299" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
@@ -5566,9 +5566,9 @@
                                           <Component id="spiValor301" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
-                                          <Component id="jLabel142" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLojanoTamaleChicken" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Component id="jLabel143" min="-2" pref="14" max="-2" attributes="0"/>
+                                          <Component id="jLojanoTamalePig" min="-2" pref="14" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
@@ -5581,17 +5581,17 @@
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="jLabel144" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jBolonPorkRind" alignment="3" min="-2" max="-2" attributes="0"/>
                                               <Component id="spiValor302" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="jLabel145" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jBolonChesse" alignment="3" min="-2" max="-2" attributes="0"/>
                                               <Component id="spiValor303" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="jLabel150" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jBolonMixto" alignment="3" min="-2" max="-2" attributes="0"/>
                                               <Component id="spiValor304" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
@@ -5603,7 +5603,7 @@
                                       <Component id="jQuimbolito" alignment="0" min="-2" pref="61" max="-2" attributes="0"/>
                                       <Group type="102" alignment="1" attributes="0">
                                           <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="jLabel141" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jQuimbolitoCU" alignment="3" min="-2" max="-2" attributes="0"/>
                                               <Component id="spiValor305" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
@@ -5634,7 +5634,7 @@
             <Property name="text" type="java.lang.String" value="Coco, caramelo y almendra"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel113">
+        <Component class="javax.swing.JLabel" name="jCoconutPortion">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Consolas" size="14" style="2"/>
@@ -5642,7 +5642,7 @@
             <Property name="text" type="java.lang.String" value="Portion.....$4,80"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel114">
+        <Component class="javax.swing.JLabel" name="jCoconutMedium">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Consolas" size="14" style="2"/>
@@ -5650,7 +5650,7 @@
             <Property name="text" type="java.lang.String" value="Medium.....$16,00"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel115">
+        <Component class="javax.swing.JLabel" name="jCoconutBig">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Consolas" size="14" style="2"/>
@@ -5658,7 +5658,7 @@
             <Property name="text" type="java.lang.String" value="Big........$25,50"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel116">
+        <Component class="javax.swing.JLabel" name="jApplePortion">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Consolas" size="14" style="2"/>
@@ -5666,7 +5666,7 @@
             <Property name="text" type="java.lang.String" value="Portion.....$2,80"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel117">
+        <Component class="javax.swing.JLabel" name="jAppleMedium">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Consolas" size="14" style="2"/>
@@ -5674,7 +5674,7 @@
             <Property name="text" type="java.lang.String" value="Medium.....$13,25"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel118">
+        <Component class="javax.swing.JLabel" name="jVainillaMedium">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Consolas" size="14" style="2"/>
@@ -5682,7 +5682,7 @@
             <Property name="text" type="java.lang.String" value="Medium.....$15,20"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel119">
+        <Component class="javax.swing.JLabel" name="jVainillaBig">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Consolas" size="14" style="2"/>
@@ -5698,7 +5698,7 @@
             <Property name="text" type="java.lang.String" value="Naranja"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel121">
+        <Component class="javax.swing.JLabel" name="jOrangePortion">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Consolas" size="14" style="2"/>
@@ -5706,7 +5706,7 @@
             <Property name="text" type="java.lang.String" value="Portion.....$1,25"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel122">
+        <Component class="javax.swing.JLabel" name="jLemonBig">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Consolas" size="14" style="2"/>
@@ -5722,7 +5722,7 @@
             <Property name="text" type="java.lang.String" value="Brownie"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel124">
+        <Component class="javax.swing.JLabel" name="jBrowniePortion">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Consolas" size="14" style="2"/>
@@ -5738,7 +5738,7 @@
             <Property name="text" type="java.lang.String" value="Chocolate"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel126">
+        <Component class="javax.swing.JLabel" name="jBrownieMedium">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Consolas" size="14" style="2"/>
@@ -5746,7 +5746,7 @@
             <Property name="text" type="java.lang.String" value="Medium......$6,20"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel127">
+        <Component class="javax.swing.JLabel" name="jChocolateCakePortion">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Consolas" size="14" style="2"/>
@@ -5754,7 +5754,7 @@
             <Property name="text" type="java.lang.String" value="Portion.....$1,50"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel128">
+        <Component class="javax.swing.JLabel" name="jBrownieBig">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Consolas" size="14" style="2"/>
@@ -5762,7 +5762,7 @@
             <Property name="text" type="java.lang.String" value="Big........$14,50"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel129">
+        <Component class="javax.swing.JLabel" name="jChocolateCakeMedium">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Consolas" size="14" style="2"/>
@@ -5770,7 +5770,7 @@
             <Property name="text" type="java.lang.String" value="Medium.....$15,50"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel130">
+        <Component class="javax.swing.JLabel" name="jChocolateCakeBig">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Consolas" size="14" style="2"/>
@@ -5786,7 +5786,7 @@
             <Property name="text" type="java.lang.String" value="Vainilla"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel132">
+        <Component class="javax.swing.JLabel" name="jVainillaPortion">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Consolas" size="14" style="2"/>
@@ -5814,7 +5814,7 @@
         </Component>
         <Component class="javax.swing.JSpinner" name="spiValor296">
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel133">
+        <Component class="javax.swing.JLabel" name="jAppleBig">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Consolas" size="14" style="2"/>
@@ -5822,7 +5822,7 @@
             <Property name="text" type="java.lang.String" value="Big........$21,80"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel134">
+        <Component class="javax.swing.JLabel" name="jChocolatePortion">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Consolas" size="14" style="2"/>
@@ -5830,7 +5830,7 @@
             <Property name="text" type="java.lang.String" value="Portion.....$4,50"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel135">
+        <Component class="javax.swing.JLabel" name="jOrangeMedium">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Consolas" size="14" style="2"/>
@@ -5838,7 +5838,7 @@
             <Property name="text" type="java.lang.String" value="Medium.....$15,20"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel136">
+        <Component class="javax.swing.JLabel" name="jChocolateMedium">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Consolas" size="14" style="2"/>
@@ -5846,7 +5846,7 @@
             <Property name="text" type="java.lang.String" value="Medium.....$15,20"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel137">
+        <Component class="javax.swing.JLabel" name="jOrangeBig">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Consolas" size="14" style="2"/>
@@ -5854,7 +5854,7 @@
             <Property name="text" type="java.lang.String" value="Big........$20,00"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel138">
+        <Component class="javax.swing.JLabel" name="jChocolatePieBig">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Consolas" size="14" style="2"/>
@@ -5890,7 +5890,7 @@
         </Component>
         <Component class="javax.swing.JSpinner" name="spiValor299">
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel139">
+        <Component class="javax.swing.JLabel" name="jHumitaSalt">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Consolas" size="14" style="2"/>
@@ -5913,7 +5913,7 @@
         </Component>
         <Component class="javax.swing.JSpinner" name="spiValor280">
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel140">
+        <Component class="javax.swing.JLabel" name="jHumitaCandy">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Consolas" size="14" style="2"/>
@@ -5921,7 +5921,7 @@
             <Property name="text" type="java.lang.String" value="Dulce c/u....$0,35"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel141">
+        <Component class="javax.swing.JLabel" name="jQuimbolitoCU">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Consolas" size="14" style="2"/>
@@ -5929,7 +5929,7 @@
             <Property name="text" type="java.lang.String" value="Quimbolito c/u...$0,35"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel142">
+        <Component class="javax.swing.JLabel" name="jLojanoTamaleChicken">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Consolas" size="14" style="2"/>
@@ -5937,7 +5937,7 @@
             <Property name="text" type="java.lang.String" value="Pollo c/u....$1,25"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel143">
+        <Component class="javax.swing.JLabel" name="jLojanoTamalePig">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Consolas" size="14" style="2"/>
@@ -5945,7 +5945,7 @@
             <Property name="text" type="java.lang.String" value="Chancho c/u..$1,50"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel144">
+        <Component class="javax.swing.JLabel" name="jBolonPorkRind">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Consolas" size="14" style="2"/>
@@ -5953,7 +5953,7 @@
             <Property name="text" type="java.lang.String" value="Chicharron c/u..$0,75"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel145">
+        <Component class="javax.swing.JLabel" name="jBolonChesse">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Consolas" size="14" style="2"/>
@@ -6013,7 +6013,7 @@
             <Property name="text" type="java.lang.String" value="Humitas"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel150">
+        <Component class="javax.swing.JLabel" name="jBolonMixto">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Consolas" size="14" style="2"/>
@@ -6188,7 +6188,7 @@
             <Property name="text" type="java.lang.String" value="CHESECAKE"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel154">
+        <Component class="javax.swing.JLabel" name="jNutellaMedium">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Consolas" size="14" style="2"/>
@@ -6212,7 +6212,7 @@
             <Property name="text" type="java.lang.String" value="Chocolate"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel157">
+        <Component class="javax.swing.JLabel" name="jLemonPortion">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Consolas" size="14" style="2"/>
@@ -6220,7 +6220,7 @@
             <Property name="text" type="java.lang.String" value="Portion.....$2,80"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel158">
+        <Component class="javax.swing.JLabel" name="jLemonMedium">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Consolas" size="14" style="2"/>
@@ -6244,7 +6244,7 @@
             <Property name="text" type="java.lang.String" value="ESPECIALES"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel161">
+        <Component class="javax.swing.JLabel" name="jNutellaBig">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Consolas" size="14" style="2"/>
@@ -6268,7 +6268,7 @@
             <Property name="text" type="java.lang.String" value="Nutella"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel164">
+        <Component class="javax.swing.JLabel" name="jNutellaPortion">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Consolas" size="14" style="2"/>
@@ -7171,13 +7171,6 @@
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                   <AbsoluteConstraints x="470" y="290" width="150" height="30"/>
-                </Constraint>
-              </Constraints>
-            </Component>
-            <Component class="com.toedter.calendar.JDateChooser" name="dateChooser">
-              <Constraints>
-                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="470" y="250" width="150" height="30"/>
                 </Constraint>
               </Constraints>
             </Component>
