@@ -5,6 +5,7 @@
  */
 package ec.edu.espe.restaurantSalesSystem.controller;
 
+import ec.edu.espe.restaurantSalesSystem.model.Verification;
 import com.google.gson.Gson;
 import ec.edu.espe.restaurantSalesSystem.utils.FileManager;
 import ec.edu.espe.restaurantSalesSystem.utils.Persistence;

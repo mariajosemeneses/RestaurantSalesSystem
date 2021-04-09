@@ -10,22 +10,22 @@ package ec.edu.espe.restaurantSalesSystem.model;
  * @author Group3
  */
 public class Product {
-    private String typeOfProduct;
+    private String type;
     private String description;
     private float price;
     
-    public Product(String typeOfProduct, String description, float price) {
-        this.typeOfProduct = typeOfProduct;
+    public Product(String type, String description, float price) {
+        this.type = type;
         this.description = description;
         this.price = price;
     }
 
-    public String getTypeOfProduct() {
-        return typeOfProduct;
+    public String getType() {
+        return type;
     }
 
-    public void setTypeOfProduct(String typeOfProduct) {
-        this.typeOfProduct = typeOfProduct;
+    public void setType(String type) {
+        this.type = type;
     }
 
     public String getDescription() {
