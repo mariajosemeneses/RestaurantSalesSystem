@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ec.edu.espe.restaurantSalesSystem.controller;
+package ec.edu.espe.restaurantSalesSystem.model;
 
 /**
  *
@@ -22,7 +22,7 @@ public class Verification {
 
     public static Verification getInstance(String user, String password) {
         if (instance == null) {
-            instance = new Verification(user, password);
+            setInstance(new Verification(user, password));
         }
         return instance;
     }
@@ -53,6 +53,13 @@ public class Verification {
      */
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    /**
+     * @param aInstance the instance to set
+     */
+    public static void setInstance(Verification aInstance) {
+        instance = aInstance;
     }
 
 }

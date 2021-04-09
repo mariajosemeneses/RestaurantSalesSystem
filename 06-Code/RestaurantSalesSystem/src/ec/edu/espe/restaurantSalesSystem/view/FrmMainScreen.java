@@ -14,7 +14,7 @@ import com.mongodb.MongoClient;
 import ec.edu.espe.restaurantSalesSystem.controller.CashierController;
 import ec.edu.espe.restaurantSalesSystem.controller.OwnerController;
 import ec.edu.espe.restaurantSalesSystem.controller.SuggestionController;
-import ec.edu.espe.restaurantSalesSystem.controller.Verification;
+import ec.edu.espe.restaurantSalesSystem.model.Verification;
 import ec.edu.espe.restaurantSalesSystem.controller.VerificationController;
 import ec.edu.espe.restaurantSalesSystem.model.Product;
 import ec.edu.espe.restaurantSalesSystem.utils.MongoManager;

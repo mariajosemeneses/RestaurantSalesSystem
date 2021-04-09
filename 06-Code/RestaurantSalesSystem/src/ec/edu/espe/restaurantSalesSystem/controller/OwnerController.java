@@ -53,7 +53,7 @@ public class OwnerController {
 
         BasicDBObject document = new BasicDBObject();
 
-        document.put("Type of Product", product.getTypeOfProduct());
+        document.put("Type of Product", product.getType());
         document.put("Description", product.getDescription());
         document.put("Price", product.getPrice());        
 

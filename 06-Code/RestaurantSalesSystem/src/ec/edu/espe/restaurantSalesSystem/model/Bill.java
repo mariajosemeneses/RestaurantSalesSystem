@@ -23,6 +23,7 @@ public class Bill {
     private int quantity;
 
     private float total;
+    
     public int numSales;
 
     public Bill() {
